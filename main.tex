@@ -136,7 +136,7 @@ RQ5 & What are the most pressing open research directions, and how should they b
 \subsection{Paper organization}
 \label{subsec:organization}
 
-The remainder of this paper is organized as follows. Section~\ref{sec:motivation} motivates the importance of cloud databases from five complementary perspectives. Section~\ref{sec:concepts} establishes key definitions and distinctions---from cloud-hosted to cloud-native databases, architectural paradigms, data models, and the data platform continuum. Section~\ref{sec:methodology} details the systematic review methodology, including search strategy, selection criteria, quality assessment, and results. Section~\ref{sec:discussion} presents the core contribution: a comprehensive discussion of challenges and research directions organized by cross-cutting themes and lifecycle phases. Section~\ref{sec:llm} examines the convergence of cloud databases and LLMs. Section~\ref{sec:roadmap} proposes a prioritized research roadmap, and Section~\ref{sec:conclusion} offers final remarks. Appendix~\ref{app:catalog} provides the complete catalog of surveyed papers.
+The remainder of this paper is organized as follows. Section~\ref{sec:motivation} motivates the importance of cloud databases from five complementary perspectives. Section~\ref{sec:concepts} establishes key definitions and distinctions---from cloud-hosted to cloud-native databases, architectural paradigms, data models, and the data platform continuum. Section~\ref{sec:methodology} details the systematic review methodology, including search strategy, selection criteria, quality assessment, and results. Section~\ref{sec:discussion} presents the core contribution: a comprehensive discussion of challenges and research directions organized by cross-cutting themes and lifecycle phases. Section~\ref{sec:llm} examines the convergence of cloud databases and LLMs. Section~\ref{sec:conclusion} offers final remarks and outlines future research directions. Appendix~\ref{app:catalog} provides the complete catalog of surveyed papers.
 
 
 %% ============================================================
@@ -1342,65 +1342,8 @@ The LLM--database convergence creates several overarching challenges:
 %% ============================================================
 %% SECTION 7: RESEARCH ROADMAP
 %% ============================================================
-\section{Research Roadmap}
-\label{sec:roadmap}
-
-Based on the analysis of 58 surveys and the challenges discussed in Sections~\ref{sec:discussion} and~\ref{sec:llm}, a prioritized research roadmap organized by time horizon is proposed. Table~\ref{tab:roadmap} summarizes the key directions.
-
-\begin{table}[t]
-\centering
-\caption{Research roadmap summary.}
-\label{tab:roadmap}
-\small
-\begin{tabular}{p{2.5cm} p{4.5cm} p{4.5cm}}
-\toprule
-\textbf{Time Horizon} & \textbf{Key Directions} & \textbf{Expected Impact} \\
-\midrule
-\textbf{Short-term} (1--3 years) & Cloud DB benchmarks; production learned optimizers; vector search maturity; text-to-SQL reliability & Improved evaluation standards; practical AI4DB deployment \\
-\addlinespace
-\textbf{Medium-term} (3--5 years) & Autonomous DBs with explainability; cross-cloud middleware; edge--cloud federation; privacy-preserving analytics & Reduced DBA burden; multi-cloud freedom; compliant analytics \\
-\addlinespace
-\textbf{Long-term} (5+ years) & Intent-driven databases; carbon-neutral operations; unified multi-model platforms; self-evolving schemas & Paradigm shift in DB interaction; sustainable data management \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\subsection{Short-term directions (1--3 years)}
-\label{subsec:shortterm}
-
-\textbf{Cloud-native database benchmarks.} Developing comprehensive benchmarks that capture cloud-specific characteristics---elasticity, multi-tenancy, disaggregated storage, pricing---is an immediate priority. These benchmarks should extend established suites (TPC, YCSB) with cloud-native metrics and enable fair cross-provider comparison~\cite{Rabl2019BenchmarkSurvey}.
-
-\textbf{Production-ready learned optimizers.} Transitioning learned query optimization~\cite{Marcus2021Bao}, learned indexes~\cite{Kraska2018LearnedIndex}, and ML-based knob tuning~\cite{Zhang2022CDBTune} from research prototypes to production-deployable systems requires solving safety, robustness, and maintenance challenges. Hybrid approaches that combine ML with traditional optimization offer a pragmatic path forward~\cite{Zhou2022AI4DB}.
-
-\textbf{Vector database maturity.} The vector database ecosystem needs standardization in APIs, indexing algorithms, quality metrics, and hybrid search capabilities. Integration with existing cloud database governance and management infrastructure is essential for enterprise adoption~\cite{Pan2024VectorDB}.
-
-\textbf{Reliable text-to-SQL.} Improving text-to-SQL systems for real-world enterprise schemas (large, complex, poorly documented) and establishing evaluation protocols beyond academic benchmarks are near-term priorities~\cite{Yu2018Spider}.
-
-\subsection{Medium-term directions (3--5 years)}
-\label{subsec:mediumterm}
-
-\textbf{Autonomous databases with explainability.} As databases become more autonomous, the ability to explain automated decisions (why an index was created, why a query plan was chosen, why a knob was changed) becomes critical for DBA trust and debugging. Connecting AI4DB with XAI research~\cite{Saeed2023XAI} is a fertile direction.
-
-\textbf{Cross-cloud middleware and portability.} Developing middleware layers, standardized APIs, and portable data formats that enable seamless operation across multiple cloud providers would reduce vendor lock-in and enable competitive pressure to drive down costs~\cite{Opara2017LockIn}.
-
-\textbf{Edge--cloud database federation.} Building database federation frameworks that seamlessly span edge devices, fog nodes, and cloud backends---with appropriate consistency, latency, and privacy trade-offs---will be essential for next-generation IoT and autonomous systems~\cite{Gomes2024EdgeFog}.
-
-\textbf{Privacy-preserving cloud analytics.} Practical deployment of privacy-enhancing technologies (differential privacy, homomorphic encryption, secure computation) in cloud databases for real-world analytical workloads at acceptable performance levels~\cite{Acar2018HE}.
-
-\subsection{Long-term directions (5+ years)}
-\label{subsec:longterm}
-
-\textbf{Intent-driven databases.} Moving from declarative query languages (SQL) to \emph{intent-driven} interfaces where users express what they need in natural language or high-level objectives, and the database autonomously determines the optimal data model, schema, query plan, and execution strategy.
-
-\textbf{Carbon-neutral database operations.} Designing cloud database systems that achieve carbon neutrality through energy-proportional computing, carbon-aware workload scheduling, and integration with renewable energy sources~\cite{IEA2024DataCenters}.
-
-\textbf{Unified multi-model platforms.} Converging relational, graph, document, vector, time-series, and streaming data models into truly unified platforms with a single query language, consistent transactional semantics, and integrated optimization~\cite{Lu2019MultiModel}.
-
-\textbf{Self-evolving schemas.} Databases that autonomously evolve their schemas in response to changing workload patterns, new data sources, and evolving application requirements, guided by knowledge engineering principles and formal schema evolution theories.
-
-
 %% ============================================================
-%% SECTION 8: FINAL REMARKS
+%% SECTION 7: FINAL REMARKS
 %% ============================================================
 \section{Final Remarks}
 \label{sec:conclusion}
@@ -1416,6 +1359,15 @@ Third, the convergence of cloud databases with large language models is creating
 Fourth, from a knowledge engineering perspective, cloud databases present rich opportunities for applying DKE techniques: knowledge graphs for metadata management, ontology-mediated data integration, formal models for consistency and cost reasoning, and knowledge-based approaches to schema evolution and migration.
 
 This meta-survey is intended to serve three purposes: (1)~as a comprehensive reference for researchers entering or working in the cloud database space, providing a structured map of the territory and its open problems; (2)~as a strategic guide for practitioners navigating cloud database technology selection, deployment, and evolution; and (3)~as a bridge between the cloud database community and the data and knowledge engineering community, highlighting opportunities for cross-pollination.
+
+\subsection*{Future work}
+
+Based on the analysis of 58 surveys and the challenges discussed in Sections~\ref{sec:discussion} and~\ref{sec:llm}, several priority research directions emerge:
+\begin{itemize}
+  \item \textbf{Near-term:} developing cloud-native benchmarks that capture elasticity, multi-tenancy, and pricing dimensions; transitioning learned optimizers, learned indexes, and ML-based tuning from prototypes to production-ready systems; and maturing the vector database ecosystem with standardized APIs and quality metrics.
+  \item \textbf{Medium-term:} building autonomous databases with explainable decision-making; designing cross-cloud middleware and portable data formats to reduce vendor lock-in; federating edge, fog, and cloud databases for IoT workloads; and deploying practical privacy-preserving analytics at scale.
+  \item \textbf{Long-term:} realizing intent-driven database interfaces where users express goals in natural language; achieving carbon-neutral database operations through energy-proportional computing; converging relational, graph, document, vector, and streaming models into truly unified platforms; and enabling self-evolving schemas that adapt autonomously to changing workloads and requirements.
+\end{itemize}
 
 \section*{Declaration of competing interest}
 The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
