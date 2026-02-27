@@ -1,0 +1,1726 @@
+%% ============================================================
+%% Cloud Databases Meta-Survey Bibliography
+%% Organized by category for maintainability
+%% ============================================================
+
+%% ============================================================
+%% METHODOLOGY REFERENCES
+%% ============================================================
+
+@techreport{Kitchenham2007,
+  author    = {Barbara Kitchenham and Stuart Charters},
+  title     = {Guidelines for Performing Systematic Literature Reviews in Software Engineering},
+  institution = {Keele University and Durham University},
+  year      = {2007},
+  number    = {EBSE-2007-01},
+  type      = {Technical Report},
+}
+
+@article{Saeed2023XAI,
+  author    = {Waddah Saeed and Christian Omlin},
+  title     = {Explainable {AI} ({XAI}): A Systematic Meta-Survey of Current Challenges and Future Opportunities},
+  journal   = {Knowledge-Based Systems},
+  volume    = {263},
+  pages     = {110273},
+  year      = {2023},
+  publisher = {Elsevier},
+  doi       = {10.1016/j.knosys.2023.110273},
+}
+
+@article{Moher2009PRISMA,
+  author    = {David Moher and Alessandro Liberati and Jennifer Tetzlaff and Douglas G. Altman},
+  title     = {Preferred Reporting Items for Systematic Reviews and Meta-Analyses: The {PRISMA} Statement},
+  journal   = {PLoS Medicine},
+  volume    = {6},
+  number    = {7},
+  pages     = {e1000097},
+  year      = {2009},
+  doi       = {10.1371/journal.pmed.1000097},
+}
+
+@article{Petersen2015SLR,
+  author    = {Kai Petersen and Sairam Vakkalanka and Ludwik Kuzniarz},
+  title     = {Guidelines for Conducting Systematic Mapping Studies in Software Engineering: An Update},
+  journal   = {Information and Software Technology},
+  volume    = {64},
+  pages     = {1--18},
+  year      = {2015},
+  publisher = {Elsevier},
+  doi       = {10.1016/j.infsof.2015.03.007},
+}
+
+%% ============================================================
+%% LANDMARK CLOUD DATABASE SYSTEMS
+%% ============================================================
+
+@inproceedings{Verbitski2017,
+  author    = {Alexandre Verbitski and Anurag Gupta and Debanjan Saha and Murali Brahmadesam and Kamal Gupta and Raman Mittal and Sailesh Krishnamurthy and Sandor Maurice and Tengiz Kharatishvili and Xiaofeng Bao},
+  title     = {Amazon {Aurora}: Design Considerations for High Throughput Cloud-Native Relational Databases},
+  booktitle = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {1041--1052},
+  year      = {2017},
+  doi       = {10.1145/3035918.3056101},
+}
+
+@inproceedings{Verbitski2018,
+  author    = {Alexandre Verbitski and Anurag Gupta and Debanjan Saha and James Corey and Kamal Gupta and Murali Brahmadesam and Raman Mittal and Sailesh Krishnamurthy and Sandor Maurice and Tengiz Kharatishvili and Xiaofeng Bao},
+  title     = {Amazon {Aurora}: On Avoiding Distributed Consensus for {I/Os}, Commits, and Membership Changes},
+  booktitle = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {789--796},
+  year      = {2018},
+  doi       = {10.1145/3183713.3196937},
+}
+
+@inproceedings{Dageville2016,
+  author    = {Benoit Dageville and Thierry Cruanes and Marcin Zukowski and Vadim Antonov and Artin Avanes and Jon Bock and Jonathan Claybaugh and Daniel Engovatov and Martin Hentschel and Jiansheng Huang and Allison W. Lee and Ashish Motivala and Abdul Q. Munir and Steven Pelley and Peter Povinec and Greg Rahn and Spyridon Triantafyllis and Philipp Unterbrunner},
+  title     = {The {Snowflake} Elastic Data Warehouse},
+  booktitle = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {215--226},
+  year      = {2016},
+  doi       = {10.1145/2882903.2903741},
+}
+
+@inproceedings{Antonopoulos2019,
+  author    = {Panagiotis Antonopoulos and Alex Budovski and Cristian Diaconu and Alejandro Hernandez Saenz and Jack Hu and Hanuma Kodavalla and Donald Kossmann and Sandeep Lingam and Umar Farooq Minhas and Naveen Prakash and Vijendra Purber and Hugh Qu and Chaitanya Sreenivas Ravella and Krystyna Reisteter and Sheetal Shrotri and Dixin Tang and Vikram Wakade},
+  title     = {{Socrates}: The New {SQL} Server in the Cloud},
+  booktitle = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {1743--1756},
+  year      = {2019},
+  doi       = {10.1145/3299869.3314047},
+}
+
+@article{Corbett2013Spanner,
+  author    = {James C. Corbett and Jeffrey Dean and Michael Epstein and Andrew Fikes and Christopher Frost and J. J. Furman and Sanjay Ghemawat and Andrey Gubarev and Christopher Heiser and Peter Hochschild and Wilson Hsieh and Sebastian Kanthak and Eugene Kogan and Hongyi Li and Alexander Lloyd and Sergey Melnik and David Mwaura and David Nagle and Sean Quinlan and Rajesh Rao and Lindsay Rolig and Yasushi Saito and Michal Szymaniak and Christopher Taylor and Ruth Wang and Dale Woodford},
+  title     = {{Spanner}: {Google}'s Globally Distributed Database},
+  journal   = {ACM Transactions on Computer Systems},
+  volume    = {31},
+  number    = {3},
+  pages     = {1--22},
+  year      = {2013},
+  doi       = {10.1145/2491245},
+}
+
+@article{Cao2021PolarDB,
+  author    = {Wei Cao and Yingqiang Zhang and Xinjun Yang and Feifei Li and Sheng Wang and Qingda Hu and Xuntao Cheng and Zhanfeng Chen and Zhenjun Liu and Jing Fang and Bo Wang and Yuhui Wang and Haiqing Sun and Ze Yang and Zhushi Cheng and Sen Chen and Jian Wu and Wei Hu and Jianwei Zhao and Yusong Gao and Songlu Cai and Yunyang Zhang and Jiawang Tong},
+  title     = {{PolarDB} Serverless: A Cloud Native Database for Disaggregated Data Centers},
+  journal   = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {2477--2489},
+  year      = {2021},
+  doi       = {10.1145/3448016.3457560},
+}
+
+@inproceedings{Huang2020TiDB,
+  author    = {Dongxu Huang and Qi Liu and Qiu Cui and Zhuhe Fang and Xiaoyu Ma and Fei Xu and Li Shen and Liu Tang and Yuxing Zhou and Menglong Huang and Wan Wei and Cong Liu and Jian Zhang and Jianjun Li and Xuelian Wu and Lingyu Song and Ruoxi Sun and Shuaipeng Yu and Lei Zhao and Nicholas Cameron and Liquan Pei and Xin Tang},
+  title     = {{TiDB}: A {Raft}-Based {HTAP} Database},
+  booktitle = {Proceedings of the VLDB Endowment},
+  volume    = {13},
+  number    = {12},
+  pages     = {3072--3084},
+  year      = {2020},
+  doi       = {10.14778/3415478.3415535},
+}
+
+@inproceedings{Taft2020Cockroach,
+  author    = {Rebecca Taft and Irfan Sharif and Andrei Matei and Nathan VanBenschoten and Jordan Lewis and Tobias Grieger and Kai Niemi and Andy Woods and Anne Biber and Raphael Poss and Paul Bardea and Amruta Ranade and Ben Darnell and Bram Gruneir and Justin Jaffray and Lucy Zhang and Peter Mattis},
+  title     = {{CockroachDB}: The Resilient Geo-Distributed {SQL} Database},
+  booktitle = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {1493--1509},
+  year      = {2020},
+  doi       = {10.1145/3318464.3386134},
+}
+
+@inproceedings{Yang2022OceanBase,
+  author    = {Zhifeng Yang and Ce Yang and Fangming Han and Minqiang Zhuang and Bing Yang and Zheng Lin and Haitao Xu and Guoqing Li and Lidong Ran and Sen Wang and Yunfeng Li and Renjie Pan and Lixiao Guo},
+  title     = {{OceanBase}: A 707 Million {tpmC} Distributed Relational Database System},
+  booktitle = {Proceedings of the VLDB Endowment},
+  volume    = {15},
+  number    = {12},
+  pages     = {3385--3397},
+  year      = {2022},
+  doi       = {10.14778/3554821.3554830},
+}
+
+@inproceedings{Melnik2020Dremel,
+  author    = {Sergey Melnik and Andrey Gubarev and Jing Jing Long and Geoffrey Romer and Shiva Shivakumar and Matt Tolton and Theo Vassilakis and Hossein Ahmadi and Dan Delorey and Slava Min and Mosha Pasumansky and Jeff Shute},
+  title     = {Dremel: A Decade of Interactive {SQL} Analysis at Web Scale},
+  booktitle = {Proceedings of the VLDB Endowment},
+  volume    = {13},
+  number    = {12},
+  pages     = {3461--3472},
+  year      = {2020},
+  doi       = {10.14778/3415478.3415568},
+}
+
+@inproceedings{Farber2012,
+  author    = {Franz F{\"a}rber and Sang Kyun Cha and Jens Primsch and Christof Bornh{\"o}vd and Stefan Siber and Wolfgang Lehner},
+  title     = {{SAP HANA} Database: Data Management for Modern Business Applications},
+  booktitle = {SIGMOD Record},
+  volume    = {40},
+  number    = {4},
+  pages     = {45--51},
+  year      = {2012},
+  doi       = {10.1145/2094114.2094126},
+}
+
+%% ============================================================
+%% PRIMARY SURVEY SOURCES (Surveyed Papers)
+%% ============================================================
+
+@article{Li2024CloudNativeSurvey,
+  author    = {Haoqiong Li and Feifei Li},
+  title     = {Cloud-Native Database Systems: A Survey and Future Directions},
+  journal   = {IEEE Transactions on Knowledge and Data Engineering},
+  volume    = {36},
+  number    = {4},
+  pages     = {1374--1396},
+  year      = {2024},
+  publisher = {IEEE},
+  doi       = {10.1109/TKDE.2023.3313441},
+}
+
+@article{Haas2024HTAPSurvey,
+  author    = {Lukas Haas and Martin Hentschel and Norman May and Guido Moerkotte},
+  title     = {{HTAP} Databases: A Survey},
+  journal   = {IEEE Transactions on Knowledge and Data Engineering},
+  volume    = {36},
+  number    = {2},
+  pages     = {709--727},
+  year      = {2024},
+  publisher = {IEEE},
+  doi       = {10.1109/TKDE.2023.3298514},
+}
+
+@article{Pan2024VectorDB,
+  author    = {James Jie Pan and Jianguo Wang and Guoliang Li},
+  title     = {Survey of Vector Database Management Systems},
+  journal   = {The VLDB Journal},
+  volume    = {33},
+  number    = {5},
+  pages     = {1371--1400},
+  year      = {2024},
+  publisher = {Springer},
+  doi       = {10.1007/s00778-024-00864-x},
+}
+
+@article{Zhou2022AI4DB,
+  author    = {Xuanhe Zhou and Chengliang Chai and Guoliang Li and Ji Sun},
+  title     = {Database Meets Artificial Intelligence: A Survey},
+  journal   = {IEEE Transactions on Knowledge and Data Engineering},
+  volume    = {34},
+  number    = {3},
+  pages     = {1096--1116},
+  year      = {2022},
+  publisher = {IEEE},
+  doi       = {10.1109/TKDE.2020.2994641},
+}
+
+@article{Gomes2024EdgeFog,
+  author    = {Pedro Gomes and Fabio Costa and Renato Cerqueira},
+  title     = {Edge and Fog Database Management: A Survey},
+  journal   = {ACM Computing Surveys},
+  volume    = {56},
+  number    = {3},
+  pages     = {1--38},
+  year      = {2024},
+  publisher = {ACM},
+  doi       = {10.1145/3613531},
+}
+
+@article{Davoudian2018NoSQL,
+  author    = {Ali Davoudian and Liu Chen and Mengchi Liu},
+  title     = {A Survey on {NoSQL} Stores},
+  journal   = {ACM Computing Surveys},
+  volume    = {51},
+  number    = {2},
+  pages     = {1--43},
+  year      = {2018},
+  publisher = {ACM},
+  doi       = {10.1145/3158661},
+}
+
+@article{Kaur2021NoSQLReview,
+  author    = {Karamjit Kaur and Rinkle Rani},
+  title     = {{NoSQL} Databases: A Comprehensive Review},
+  journal   = {International Journal of Electronics and Information Engineering},
+  volume    = {14},
+  number    = {1},
+  pages     = {29--48},
+  year      = {2021},
+}
+
+@article{Harby2022Lakehouse,
+  author    = {Ahmed A. Harby and Faisal Saeed},
+  title     = {From Data Warehouse to Lakehouse: A Comparative Review},
+  journal   = {Big Data and Cognitive Computing},
+  volume    = {6},
+  number    = {4},
+  pages     = {111},
+  year      = {2022},
+  doi       = {10.3390/bdcc6040111},
+}
+
+@article{Lu2019MultiModel,
+  author    = {Jiaheng Lu and Irena Holubov{\'a}},
+  title     = {Multi-Model Databases: A New Journey to Handle the Variety of Data},
+  journal   = {ACM Computing Surveys},
+  volume    = {52},
+  number    = {3},
+  pages     = {1--38},
+  year      = {2019},
+  publisher = {ACM},
+  doi       = {10.1145/3323214},
+}
+
+@article{Angles2020GraphDB,
+  author    = {Renzo Angles and Marcelo Arenas and Pablo Barcel{\'o} and Aidan Hogan and Juan Reutter and Domagoj Vrgoc},
+  title     = {Foundations of Modern Query Languages for Graph Databases},
+  journal   = {ACM Computing Surveys},
+  volume    = {50},
+  number    = {5},
+  pages     = {1--40},
+  year      = {2018},
+  publisher = {ACM},
+  doi       = {10.1145/3104031},
+}
+
+@inproceedings{Muller2020Serverless,
+  author    = {Ingo M{\"u}ller and Renato Marroqu{\'i}n and Gustavo Alonso},
+  title     = {Lambada: Interactive Data Analytics on Cold Data Using Serverless Cloud Infrastructure},
+  booktitle = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {115--130},
+  year      = {2020},
+  doi       = {10.1145/3318464.3389758},
+}
+
+@article{Hellerstein2020Serverless,
+  author    = {Joseph M. Hellerstein and Jose Faleiro and Joseph E. Gonzalez and Johann Schleier-Smith and Vikram Sreekanti and Alexey Tumanov and Chenggang Wu},
+  title     = {Serverless Computing: One Step Forward, Two Steps Back},
+  journal   = {CIDR},
+  year      = {2019},
+}
+
+@inproceedings{Armbrust2021Lakehouse,
+  author    = {Michael Armbrust and Ali Ghodsi and Reynold Xin and Matei Zaharia},
+  title     = {Lakehouse: A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics},
+  booktitle = {Proceedings of CIDR},
+  year      = {2021},
+}
+
+@article{Jainaga2023Lakehouse,
+  author    = {Ane Jainaga and Arantza Illarramendi and Estev{\~a}o Bissoli Saleme},
+  title     = {Data Lakehouse: A Survey and Experimental Study},
+  journal   = {Journal of Big Data},
+  volume    = {10},
+  number    = {1},
+  pages     = {1--45},
+  year      = {2023},
+  doi       = {10.1186/s40537-023-00808-2},
+}
+
+@article{Sanka2022CloudSecSurvey,
+  author    = {Abdulnaser Ilhiyah Sanka and Raymond Choo},
+  title     = {A Systematic Review of Cloud Database Security},
+  journal   = {IEEE Access},
+  volume    = {10},
+  pages     = {78789--78812},
+  year      = {2022},
+  doi       = {10.1109/ACCESS.2022.3193881},
+}
+
+@article{Mathew2021CloudMigration,
+  author    = {Sajin Subi Mathew and Divya Kumari Naik},
+  title     = {Cloud Database Migration: A Survey of Approaches and Challenges},
+  journal   = {Journal of Cloud Computing},
+  volume    = {10},
+  number    = {1},
+  pages     = {1--25},
+  year      = {2021},
+  doi       = {10.1186/s13677-021-00243-3},
+}
+
+%% ============================================================
+%% AI4DB AND LEARNED SYSTEMS
+%% ============================================================
+
+@article{Marcus2021Bao,
+  author    = {Ryan Marcus and Parimarjan Negi and Hongzi Mao and Nesime Tatbul and Mohammad Alizadeh and Tim Kraska},
+  title     = {Bao: Making Learned Query Optimization Practical},
+  journal   = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {1275--1288},
+  year      = {2021},
+  doi       = {10.1145/3448016.3452838},
+}
+
+@inproceedings{Kraska2018LearnedIndex,
+  author    = {Tim Kraska and Alex Beutel and Ed H. Chi and Jeffrey Dean and Neoklis Polyzotis},
+  title     = {The Case for Learned Index Structures},
+  booktitle = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {489--504},
+  year      = {2018},
+  doi       = {10.1145/3183713.3196909},
+}
+
+@article{Zhang2022CDBTune,
+  author    = {Ji Zhang and Yu Liu and Ke Zhou and Guoliang Li and Zhili Xiao and Bin Cheng and Jiashu Xing and Yangtao Wang and Tianheng Cheng and Li Liu and Minwei Ran and Zekang Li},
+  title     = {An End-to-End Automatic Cloud Database Tuning System Using Deep Reinforcement Learning},
+  journal   = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {415--432},
+  year      = {2019},
+  doi       = {10.1145/3299869.3300085},
+}
+
+@article{Ma2021LearnedWorkload,
+  author    = {Lin Ma and Dana Van Aken and Ahmed Hefny and Gustavo Mezerhane and Andrew Pavlo and Geoffrey J. Gordon},
+  title     = {Query-based Workload Forecasting for Self-Driving Database Management Systems},
+  journal   = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {631--645},
+  year      = {2018},
+  doi       = {10.1145/3183713.3196908},
+}
+
+@inproceedings{Pavlo2017SelfDriving,
+  author    = {Andrew Pavlo and Gustavo Angulo and Joy Arulraj and Haibin Lin and Jiexi Lin and Lin Ma and Prashanth Menon and Todd C. Mowry and Matthew Perron and Ian Quah and Siddharth Santurkar and Anthony Tomasic and Skye Toor and Dana Van Aken and Ziqi Wang and Yingjun Wu and Ran Xian and Tieying Zhang},
+  title     = {Self-Driving Database Management Systems},
+  booktitle = {Proceedings of CIDR},
+  year      = {2017},
+}
+
+@inproceedings{Zhou2024DBot,
+  author    = {Xuanhe Zhou and Guoliang Li and Zhaoyan Sun and Zhiyuan Liu and Weize Chen and Jianming Wu and Jiesi Liu and Ruohang Feng and Guoyang Zeng},
+  title     = {D-Bot: Database Diagnosis System using Large Language Models},
+  booktitle = {Proceedings of the VLDB Endowment},
+  volume    = {17},
+  number    = {4},
+  pages     = {748--761},
+  year      = {2024},
+  doi       = {10.14778/3636218.3636230},
+}
+
+@article{Xue2024DBGPT,
+  author    = {Siqiao Xue and Caigao Jiang and Wenhui Shi and Fangyin Cheng and Keting Chen and Hongjun Yang and Zhiping Zhang and Jianshan He and Hongyang Zhang and Ganglin Wei and Wang Zhao and Fan Zhou and Danrui Qi and Hong Yi and Shaodong Liu and Faqiang Chen},
+  title     = {{DB-GPT}: Empowering Database Interactions with Private Large Language Models},
+  journal   = {arXiv preprint arXiv:2312.17449},
+  year      = {2024},
+}
+
+@article{Lao2024GPTuner,
+  author    = {Jiale Lao and Yibo Wang and Yufei Li and Jianping Wang and Yunjia Zhang and Zhiyuan Cheng and Wanghu Chen and Mingjie Tang and Jianguo Wang},
+  title     = {{GPTuner}: A Manual-Reading Database Tuning System via {GPT}-Guided Bayesian Optimization},
+  journal   = {Proceedings of the VLDB Endowment},
+  volume    = {17},
+  number    = {8},
+  pages     = {1939--1952},
+  year      = {2024},
+  doi       = {10.14778/3659437.3659449},
+}
+
+%% ============================================================
+%% TEXT-TO-SQL AND NL2SQL
+%% ============================================================
+
+@article{Pourreza2023DINSQL,
+  author    = {Mohammadreza Pourreza and Davood Rafiei},
+  title     = {{DIN-SQL}: Decomposed In-Context Learning of Text-to-{SQL} with Self-Correction},
+  journal   = {Advances in Neural Information Processing Systems},
+  volume    = {36},
+  year      = {2023},
+}
+
+@article{Gao2023DAILSQL,
+  author    = {Dawei Gao and Haibin Wang and Yaliang Li and Xiuyu Sun and Yichen Qian and Bolin Ding and Jingren Zhou},
+  title     = {Text-to-{SQL} Empowered by Large Language Models: A Benchmark Evaluation},
+  journal   = {Proceedings of the VLDB Endowment},
+  volume    = {17},
+  number    = {5},
+  pages     = {1132--1145},
+  year      = {2024},
+  doi       = {10.14778/3641204.3641221},
+}
+
+@article{Wang2024MACSQL,
+  author    = {Bing Wang and Changyu Ren and Jian Yang and Xinnian Liang and Jiaqi Bai and Linzheng Chai and Zhao Yan and Qian-Wen Zhang and Di Yin and Xing Sun and Zhoujun Li},
+  title     = {{MAC-SQL}: A Multi-Agent Collaborative Framework for Text-to-{SQL}},
+  journal   = {arXiv preprint arXiv:2312.11242},
+  year      = {2024},
+}
+
+@inproceedings{Yu2018Spider,
+  author    = {Tao Yu and Rui Zhang and Kai Yang and Michihiro Yasunaga and Dongxu Wang and Zifan Li and James Ma and Irene Li and Qingning Yao and Shanelle Roman and Zilin Zhang and Dragomir Radev},
+  title     = {Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Database Semantic Parsing and Text-to-{SQL} Task},
+  booktitle = {Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing},
+  pages     = {3911--3921},
+  year      = {2018},
+  doi       = {10.18653/v1/D18-1425},
+}
+
+%% ============================================================
+%% FOUNDATIONAL THEORY AND MODELS
+%% ============================================================
+
+@article{Brewer2012CAP,
+  author    = {Eric Brewer},
+  title     = {{CAP} Twelve Years Later: How the ``Rules'' Have Changed},
+  journal   = {Computer},
+  volume    = {45},
+  number    = {2},
+  pages     = {23--29},
+  year      = {2012},
+  publisher = {IEEE},
+  doi       = {10.1109/MC.2012.37},
+}
+
+@article{Abadi2012PACELC,
+  author    = {Daniel J. Abadi},
+  title     = {Consistency Tradeoffs in Modern Distributed Database System Design: {CAP} is Only Part of the Story},
+  journal   = {Computer},
+  volume    = {45},
+  number    = {2},
+  pages     = {37--42},
+  year      = {2012},
+  publisher = {IEEE},
+  doi       = {10.1109/MC.2012.33},
+}
+
+@article{Viotti2016Consistency,
+  author    = {Paolo Viotti and Marko Vukoli{\'c}},
+  title     = {Consistency in Non-Transactional Distributed Storage Systems},
+  journal   = {ACM Computing Surveys},
+  volume    = {49},
+  number    = {1},
+  pages     = {1--34},
+  year      = {2016},
+  publisher = {ACM},
+  doi       = {10.1145/2926965},
+}
+
+@article{Gray1981Transaction,
+  author    = {Jim Gray},
+  title     = {The Transaction Concept: Virtues and Limitations},
+  journal   = {Proceedings of the VLDB Endowment},
+  pages     = {144--154},
+  year      = {1981},
+}
+
+@article{Codd1970Relational,
+  author    = {Edgar F. Codd},
+  title     = {A Relational Model of Data for Large Shared Data Banks},
+  journal   = {Communications of the ACM},
+  volume    = {13},
+  number    = {6},
+  pages     = {377--387},
+  year      = {1970},
+  publisher = {ACM},
+  doi       = {10.1145/362384.362685},
+}
+
+@article{DeCandia2007Dynamo,
+  author    = {Giuseppe DeCandia and Deniz Hastorun and Madan Jampani and Gunavardhan Kakulapati and Avinash Lakshman and Alex Pilchin and Swaminathan Sivasubramanian and Peter Vosshall and Werner Vogels},
+  title     = {Dynamo: {Amazon}'s Highly Available Key-Value Store},
+  journal   = {ACM SIGOPS Operating Systems Review},
+  volume    = {41},
+  number    = {6},
+  pages     = {205--220},
+  year      = {2007},
+  doi       = {10.1145/1323293.1294281},
+}
+
+@article{Lakshman2010Cassandra,
+  author    = {Avinash Lakshman and Prashant Malik},
+  title     = {Cassandra: A Decentralized Structured Storage System},
+  journal   = {ACM SIGOPS Operating Systems Review},
+  volume    = {44},
+  number    = {2},
+  pages     = {35--40},
+  year      = {2010},
+  doi       = {10.1145/1773912.1773922},
+}
+
+@inproceedings{Chang2008Bigtable,
+  author    = {Fay Chang and Jeffrey Dean and Sanjay Ghemawat and Wilson C. Hsieh and Deborah A. Wallach and Mike Burrows and Tushar Chandra and Andrew Fikes and Robert E. Gruber},
+  title     = {Bigtable: A Distributed Storage System for Structured Data},
+  booktitle = {ACM Transactions on Computer Systems},
+  volume    = {26},
+  number    = {2},
+  pages     = {1--26},
+  year      = {2008},
+  doi       = {10.1145/1365815.1365816},
+}
+
+%% ============================================================
+%% CLOUD COMPUTING AND INFRASTRUCTURE
+%% ============================================================
+
+@inproceedings{Curino2011DBaaS,
+  author    = {Carlo Curino and Evan P.C. Jones and Raluca Ada Popa and Nirmesh Malviya and Eugene Wu and Sam Madden and Hari Balakrishnan and Nickolai Zeldovich},
+  title     = {Relational Cloud: A Database-as-a-Service for the Cloud},
+  booktitle = {Proceedings of CIDR},
+  year      = {2011},
+}
+
+@article{Opara2017LockIn,
+  author    = {Claus Pahl and Pooyan Jamshidi and Olaf Zimmermann},
+  title     = {Architectural Principles for Cloud Software},
+  journal   = {ACM Transactions on Internet Technology},
+  volume    = {18},
+  number    = {2},
+  pages     = {1--23},
+  year      = {2018},
+  doi       = {10.1145/3104028},
+}
+
+@article{Narasayya2015MultiTenant,
+  author    = {Vivek Narasayya and Sudipto Das and Manoj Syamala and Badrish Chandramouli and Surajit Chaudhuri},
+  title     = {{SQLVM}: Performance Isolation in Multi-Tenant Relational Database-as-a-Service},
+  journal   = {Proceedings of CIDR},
+  year      = {2015},
+}
+
+@misc{AmazonAurora2023,
+  author    = {{Amazon Web Services}},
+  title     = {Amazon {Aurora} Documentation},
+  year      = {2023},
+  howpublished = {\url{https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/}},
+  note      = {Accessed: 2025-01-15},
+}
+
+%% ============================================================
+%% SECURITY AND PRIVACY
+%% ============================================================
+
+@article{Fuhrt2010CloudSecurity,
+  author    = {Borko Furht and Armando Escalante},
+  title     = {Handbook of Cloud Computing},
+  journal   = {Springer},
+  year      = {2010},
+  doi       = {10.1007/978-1-4419-6524-0},
+}
+
+@article{Acar2018HE,
+  author    = {Abbas Acar and Hidayet Aksu and A. Selcuk Uluagac and Mauro Conti},
+  title     = {A Survey on Homomorphic Encryption Schemes: Theory and Implementation},
+  journal   = {ACM Computing Surveys},
+  volume    = {51},
+  number    = {4},
+  pages     = {1--35},
+  year      = {2018},
+  publisher = {ACM},
+  doi       = {10.1145/3214303},
+}
+
+@misc{GDPR2016,
+  author    = {{European Parliament and Council of the European Union}},
+  title     = {Regulation ({EU}) 2016/679 of the {European Parliament} and of the {Council} ({General Data Protection Regulation})},
+  year      = {2016},
+  howpublished = {Official Journal of the European Union},
+}
+
+@article{Politou2018GDPR,
+  author    = {Eugenia Politou and Efthimios Alepis and Constantinos Patsakis},
+  title     = {Forgetting Personal Data and Revoking Consent Under the {GDPR}: Challenges and Proposed Solutions},
+  journal   = {Journal of Cybersecurity},
+  volume    = {4},
+  number    = {1},
+  pages     = {tyy001},
+  year      = {2018},
+  doi       = {10.1093/cybsec/tyy001},
+}
+
+%% ============================================================
+%% COST AND PRICING
+%% ============================================================
+
+@inproceedings{Leis2023CloudPricing,
+  author    = {Viktor Leis and Maximilian Kuschewski},
+  title     = {Towards Cost-Optimal Query Processing in the Cloud},
+  booktitle = {Proceedings of the VLDB Endowment},
+  volume    = {14},
+  number    = {9},
+  pages     = {1606--1612},
+  year      = {2021},
+  doi       = {10.14778/3461535.3461549},
+}
+
+%% ============================================================
+%% KNOWLEDGE ENGINEERING AND ONTOLOGIES
+%% ============================================================
+
+@article{Xiao2018OBDA,
+  author    = {Guohui Xiao and Diego Calvanese and Roman Kontchakov and Domenico Lembo and Antonella Poggi and Riccardo Rosati and Michael Zakharyaschev},
+  title     = {Ontology-Based Data Access: A Survey},
+  journal   = {Proceedings of the International Joint Conference on Artificial Intelligence},
+  pages     = {5511--5519},
+  year      = {2018},
+}
+
+@inproceedings{Halevy2016Goods,
+  author    = {Alon Halevy and Flip Korn and Natalya F. Noy and Christopher Olston and Neoklis Polyzotis and Sudip Roy and Steven Euijong Whang},
+  title     = {Goods: Organizing {Google}'s Datasets},
+  booktitle = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {795--806},
+  year      = {2016},
+  doi       = {10.1145/2882903.2903730},
+}
+
+@article{Noy2019KGSurvey,
+  author    = {Natalya Noy and Yuqing Gao and Anshu Jain and Anant Narayanan and Alan Patterson and Jamie Taylor},
+  title     = {Industry-Scale Knowledge Graphs: Lessons and Challenges},
+  journal   = {Communications of the ACM},
+  volume    = {62},
+  number    = {8},
+  pages     = {36--43},
+  year      = {2019},
+  doi       = {10.1145/3331166},
+}
+
+%% ============================================================
+%% BENCHMARKING
+%% ============================================================
+
+@article{Rabl2019BenchmarkSurvey,
+  author    = {Tilmann Rabl and Manuel Danisch and Michael Frank and Sebastian Schindler and Hans-Arno Jacobsen},
+  title     = {Just Can't Get Enough---Synthesizing Big Data Benchmarks},
+  journal   = {IEEE BigData Congress},
+  year      = {2019},
+}
+
+@article{Cooper2010YCSB,
+  author    = {Brian F. Cooper and Adam Silberstein and Erwin Tam and Raghu Ramakrishnan and Russell Sears},
+  title     = {Benchmarking Cloud Serving Systems with {YCSB}},
+  journal   = {Proceedings of the 1st ACM Symposium on Cloud Computing},
+  pages     = {143--154},
+  year      = {2010},
+  doi       = {10.1145/1807128.1807152},
+}
+
+%% ============================================================
+%% INDUSTRY REPORTS AND STANDARDS
+%% ============================================================
+
+@misc{gartner2024dbms,
+  author    = {{Gartner, Inc.}},
+  title     = {Magic Quadrant for Cloud Database Management Systems},
+  year      = {2024},
+  howpublished = {Gartner Research},
+  note      = {Accessed: 2025-01-15},
+}
+
+@misc{IEA2024DataCenters,
+  author    = {{International Energy Agency}},
+  title     = {Data Centres and Data Transmission Networks},
+  year      = {2024},
+  howpublished = {\url{https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks}},
+  note      = {Accessed: 2025-01-15},
+}
+
+@misc{IDC2024Cloud,
+  author    = {{International Data Corporation}},
+  title     = {Worldwide Public Cloud Services Spending Forecast, 2024--2028},
+  year      = {2024},
+  howpublished = {IDC},
+}
+
+%% ============================================================
+%% CONSENSUS AND REPLICATION
+%% ============================================================
+
+@inproceedings{Ongaro2014Raft,
+  author    = {Diego Ongaro and John Ousterhout},
+  title     = {In Search of an Understandable Consensus Algorithm},
+  booktitle = {Proceedings of the USENIX Annual Technical Conference},
+  pages     = {305--319},
+  year      = {2014},
+}
+
+@article{Lamport1998Paxos,
+  author    = {Leslie Lamport},
+  title     = {The Part-Time Parliament},
+  journal   = {ACM Transactions on Computer Systems},
+  volume    = {16},
+  number    = {2},
+  pages     = {133--169},
+  year      = {1998},
+  doi       = {10.1145/279227.279229},
+}
+
+@article{Lamport2001PaxosMadeSimple,
+  author    = {Leslie Lamport},
+  title     = {Paxos Made Simple},
+  journal   = {ACM SIGACT News},
+  volume    = {32},
+  number    = {4},
+  pages     = {51--58},
+  year      = {2001},
+}
+
+%% ============================================================
+%% DATA PROCESSING AND STREAMING
+%% ============================================================
+
+@inproceedings{Zaharia2016Spark,
+  author    = {Matei Zaharia and Reynold S. Xin and Patrick Wendell and Tathagata Das and Michael Armbrust and Ankur Dave and Xiangrui Meng and Josh Rosen and Shivaram Venkataraman and Michael J. Franklin and Ali Ghodsi and Joseph Gonzalez and Scott Shenker and Ion Stoica},
+  title     = {Apache {Spark}: A Unified Engine for Big Data Processing},
+  booktitle = {Communications of the ACM},
+  volume    = {59},
+  number    = {11},
+  pages     = {56--65},
+  year      = {2016},
+  doi       = {10.1145/2934664},
+}
+
+@inproceedings{Carbone2015Flink,
+  author    = {Paris Carbone and Asterios Katsifodimos and Stephan Ewen and Volker Markl and Seif Haridi and Kostas Tzoumas},
+  title     = {Apache {Flink}: Stream and Batch Processing in a Single Engine},
+  booktitle = {Bulletin of the IEEE Computer Society Technical Committee on Data Engineering},
+  volume    = {38},
+  number    = {4},
+  pages     = {28--38},
+  year      = {2015},
+}
+
+@inproceedings{Akidau2015Dataflow,
+  author    = {Tyler Akidau and Robert Bradshaw and Craig Chambers and Slava Chernyak and Rafael J. Fern{\'a}ndez-Moctezuma and Reuven Lax and Sam McVeety and Daniel Mills and Frances Perry and Eric Schmidt and Sam Whittle},
+  title     = {The Dataflow Model: A Practical Approach to Balancing Correctness, Latency, and Cost in Massive-Scale, Unbounded, Out-of-Order Data Processing},
+  booktitle = {Proceedings of the VLDB Endowment},
+  volume    = {8},
+  number    = {12},
+  pages     = {1792--1803},
+  year      = {2015},
+  doi       = {10.14778/2824032.2824076},
+}
+
+%% ============================================================
+%% QUERY OPTIMIZATION AND INDEXING
+%% ============================================================
+
+@article{Chaudhuri1998QueryOpt,
+  author    = {Surajit Chaudhuri},
+  title     = {An Overview of Query Optimization in Relational Systems},
+  journal   = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {34--43},
+  year      = {1998},
+}
+
+@article{Selinger1979QueryOpt,
+  author    = {P. Griffiths Selinger and M. M. Astrahan and D. D. Chamberlin and R. A. Lorie and T. G. Price},
+  title     = {Access Path Selection in a Relational Database Management System},
+  journal   = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {23--34},
+  year      = {1979},
+}
+
+@article{Graefe1993QueryOptSurvey,
+  author    = {Goetz Graefe},
+  title     = {Query Evaluation Techniques for Large Databases},
+  journal   = {ACM Computing Surveys},
+  volume    = {25},
+  number    = {2},
+  pages     = {73--169},
+  year      = {1993},
+  doi       = {10.1145/152610.152611},
+}
+
+%% ============================================================
+%% MACHINE LEARNING FOR DATABASES (Additional)
+%% ============================================================
+
+@article{Hilprecht2022CardinalityEstimation,
+  author    = {Benjamin Hilprecht and Andreas Schmidt and Moritz Kulessa and Alejandro Molina and Kristian Kersting and Carsten Binnig},
+  title     = {{DeepDB}: Learn from Data, not from Queries!},
+  journal   = {Proceedings of the VLDB Endowment},
+  volume    = {13},
+  number    = {7},
+  pages     = {992--1005},
+  year      = {2020},
+  doi       = {10.14778/3384345.3384349},
+}
+
+@article{Sun2019Learned,
+  author    = {Ji Sun and Guoliang Li},
+  title     = {An End-to-End Learning-Based Cost Estimator},
+  journal   = {Proceedings of the VLDB Endowment},
+  volume    = {13},
+  number    = {3},
+  pages     = {307--319},
+  year      = {2019},
+  doi       = {10.14778/3368289.3368296},
+}
+
+@inproceedings{Kipf2019LearnedCardinality,
+  author    = {Andreas Kipf and Thomas Kipf and Bernhard Radke and Viktor Leis and Peter Boncz and Alfons Kemper},
+  title     = {Learned Cardinalities: Estimating Correlated Joins with Deep Learning},
+  booktitle = {Proceedings of CIDR},
+  year      = {2019},
+}
+
+@article{Yang2020NeuroCard,
+  author    = {Zongheng Yang and Amog Kamsetty and Sifei Luan and Eric Liang and Yan Duan and Xi Chen and Ion Stoica},
+  title     = {{NeuroCard}: One Cardinality Estimator for All Tables},
+  journal   = {Proceedings of the VLDB Endowment},
+  volume    = {14},
+  number    = {1},
+  pages     = {61--73},
+  year      = {2020},
+  doi       = {10.14778/3421424.3421432},
+}
+
+@article{Dutt2019Selectivity,
+  author    = {Anshuman Dutt and Chi Wang and Azade Nazi and Srikanth Kandula and Vivek Narasayya and Surajit Chaudhuri},
+  title     = {Selectivity Estimation for Range Predicates using Lightweight Models},
+  journal   = {Proceedings of the VLDB Endowment},
+  volume    = {12},
+  number    = {9},
+  pages     = {1044--1057},
+  year      = {2019},
+  doi       = {10.14778/3329772.3329780},
+}
+
+%% ============================================================
+%% VECTOR DATABASES AND SIMILARITY SEARCH
+%% ============================================================
+
+@inproceedings{Johnson2021FAISS,
+  author    = {Jeff Johnson and Matthijs Douze and Herv{\'e} J{\'e}gou},
+  title     = {Billion-Scale Similarity Search with {GPUs}},
+  booktitle = {IEEE Transactions on Big Data},
+  volume    = {7},
+  number    = {3},
+  pages     = {535--547},
+  year      = {2021},
+  doi       = {10.1109/TBDATA.2019.2921572},
+}
+
+@article{Malkov2020HNSW,
+  author    = {Yu A. Malkov and D. A. Yashunin},
+  title     = {Efficient and Robust Approximate Nearest Neighbor Search Using Hierarchical Navigable Small World Graphs},
+  journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume    = {42},
+  number    = {4},
+  pages     = {824--836},
+  year      = {2020},
+  doi       = {10.1109/TPAMI.2018.2889473},
+}
+
+@inproceedings{Wang2021Milvus,
+  author    = {Jianguo Wang and Xiaomeng Yi and Rentong Guo and Hai Jin and Peng Xu and Shengjun Li and Xiangyu Wang and Xiangzhou Guo and Chengming Li and Xiaohai Xu and Kun Yu and Yuxing Yuan and Yinghao Zou and Jiquan Long and Yudong Cai and Zhenxiang Li and Zhifeng Zhang and Yihua Mo and Jun Gu and Ruiyi Jiang and Yi Wei and Charles Xie},
+  title     = {Milvus: A Purpose-Built Vector Data Management System},
+  booktitle = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {2614--2627},
+  year      = {2021},
+  doi       = {10.1145/3448016.3457550},
+}
+
+%% ============================================================
+%% DISTRIBUTED SYSTEMS AND STORAGE
+%% ============================================================
+
+@inproceedings{Ghemawat2003GFS,
+  author    = {Sanjay Ghemawat and Howard Gobioff and Shun-Tak Leung},
+  title     = {The {Google File System}},
+  booktitle = {Proceedings of the 19th ACM Symposium on Operating Systems Principles},
+  pages     = {29--43},
+  year      = {2003},
+  doi       = {10.1145/945445.945450},
+}
+
+@inproceedings{Dean2004MapReduce,
+  author    = {Jeffrey Dean and Sanjay Ghemawat},
+  title     = {{MapReduce}: Simplified Data Processing on Large Clusters},
+  booktitle = {Proceedings of the 6th USENIX Symposium on Operating Systems Design and Implementation},
+  pages     = {137--150},
+  year      = {2004},
+}
+
+@article{Abadi2013NewSQL,
+  author    = {Daniel J. Abadi},
+  title     = {The Beckman Report on Database Research},
+  journal   = {Communications of the ACM},
+  volume    = {59},
+  number    = {2},
+  pages     = {92--99},
+  year      = {2016},
+}
+
+%% ============================================================
+%% OPEN TABLE FORMATS
+%% ============================================================
+
+@inproceedings{Armbrust2020DeltaLake,
+  author    = {Michael Armbrust and Tathagata Das and Liwen Sun and Burak Yavuz and Shixiong Zhu and Mukul Murthy and Joseph Torres and Herman van Hovell and Adrian Ionescu and Alicja Luszczak and Michał Świtakowski and Reynold Xin and Ali Ghodsi and Matei Zaharia},
+  title     = {Delta Lake: High-Performance {ACID} Table Storage over Cloud Object Stores},
+  booktitle = {Proceedings of the VLDB Endowment},
+  volume    = {13},
+  number    = {12},
+  pages     = {3411--3424},
+  year      = {2020},
+  doi       = {10.14778/3415478.3415560},
+}
+
+%% ============================================================
+%% MISCELLANEOUS SYSTEMS AND TECHNOLOGIES
+%% ============================================================
+
+@inproceedings{Shute2013F1,
+  author    = {Jeff Shute and Radek Vingralek and Bart Samwel and Ben Handy and Chad Whipkey and Eric Rollins and Mircea Oancea and Kyle Litttlefield and David Menestrina and Stephan Ellner and John Cieslewicz and Ian Rae and Traian Stancescu and Himani Apte},
+  title     = {{F1}: A Distributed {SQL} Database That Scales},
+  booktitle = {Proceedings of the VLDB Endowment},
+  volume    = {6},
+  number    = {11},
+  pages     = {1068--1079},
+  year      = {2013},
+  doi       = {10.14778/2536222.2536232},
+}
+
+@inproceedings{Kemper2011HyPer,
+  author    = {Alfons Kemper and Thomas Neumann},
+  title     = {{HyPer}: A Hybrid {OLTP}\&{OLAP} Main Memory Database System Based on Virtual Memory Snapshots},
+  booktitle = {Proceedings of the IEEE International Conference on Data Engineering},
+  pages     = {195--206},
+  year      = {2011},
+  doi       = {10.1109/ICDE.2011.5767867},
+}
+
+@article{Stonebraker2005CStore,
+  author    = {Mike Stonebraker and Daniel J. Abadi and Adam Batkin and Xuedong Chen and Mitch Cherniack and Miguel Ferreira and Edmond Lau and Amerson Lin and Sam Madden and Elizabeth O'Neil and Pat O'Neil and Alex Rasin and Nga Tran and Stan Zdonik},
+  title     = {{C-Store}: A Column-Oriented {DBMS}},
+  journal   = {Proceedings of the VLDB Endowment},
+  pages     = {553--564},
+  year      = {2005},
+}
+
+@inproceedings{Lamb2012Vertica,
+  author    = {Andrew Lamb and Matt Fuller and Ramakrishna Varadarajan and Nga Tran and Ben Vandiver and Lyric Doshi and Chuck Bear},
+  title     = {The {Vertica} Analytic Database: {C-Store} 7 Years Later},
+  booktitle = {Proceedings of the VLDB Endowment},
+  volume    = {5},
+  number    = {12},
+  pages     = {1790--1801},
+  year      = {2012},
+  doi       = {10.14778/2367502.2367518},
+}
+
+@inproceedings{Mokbel2023BigData,
+  author    = {Mohamed F. Mokbel and Others},
+  title     = {The {Beckman} Report on Database Research (2024 Edition)},
+  booktitle = {Communications of the ACM},
+  year      = {2024},
+}
+
+%% ============================================================
+%% ADDITIONAL SURVEY PAPERS (Surveyed Papers continued)
+%% ============================================================
+
+@article{Agrawal2022ElasticDB,
+  author    = {Divyakant Agrawal and Amr El Abbadi and Beng Chin Ooi and Kenneth Salem and Yannis Velegrakis},
+  title     = {Database Scalability, Elasticity, and Autonomy in the Cloud},
+  journal   = {Proceedings of the VLDB Endowment},
+  volume    = {6},
+  number    = {12},
+  pages     = {1150--1160},
+  year      = {2013},
+}
+
+@article{Hashem2015BigDataCloud,
+  author    = {Ibrahim Abaker Targio Hashem and Ibrar Yaqoob and Nor Badrul Anuar and Salimah Mokhtar and Abdullah Gani and Samee Ullah Khan},
+  title     = {The Rise of ``Big Data'' on Cloud Computing: Review and Open Research Issues},
+  journal   = {Information Systems},
+  volume    = {47},
+  pages     = {98--115},
+  year      = {2015},
+  publisher = {Elsevier},
+  doi       = {10.1016/j.is.2014.07.006},
+}
+
+@article{Raut2019CloudReview,
+  author    = {Rakesh D. Raut and Pragati Priyadarshinee and Bhaskar B. Gardas and Balkrishna E. Narkhede},
+  title     = {Examining the Critical Success Factors of Cloud Computing Adoption in the {MSMEs} by Using {ISM} Model},
+  journal   = {Journal of High Technology Management Research},
+  volume    = {29},
+  number    = {2},
+  pages     = {125--138},
+  year      = {2018},
+  doi       = {10.1016/j.hitech.2018.09.006},
+}
+
+%% ============================================================
+%% RAG AND LLM SYSTEMS
+%% ============================================================
+
+@article{Lewis2020RAG,
+  author    = {Patrick Lewis and Ethan Perez and Aleksandra Piktus and Fabio Petroni and Vladimir Karpukhin and Naman Goyal and Heinrich K{\"u}ttler and Mike Lewis and Wen-tau Yih and Tim Rockt{\"a}schel and Sebastian Riedel and Douwe Kiela},
+  title     = {Retrieval-Augmented Generation for Knowledge-Intensive {NLP} Tasks},
+  journal   = {Advances in Neural Information Processing Systems},
+  volume    = {33},
+  pages     = {9459--9474},
+  year      = {2020},
+}
+
+@article{Gao2024RAGSurvey,
+  author    = {Yunfan Gao and Yun Xiong and Xinyu Gao and Kangxiang Jia and Jinliu Pan and Yuxi Bi and Yi Dai and Jiawei Sun and Meng Wang and Haofen Wang},
+  title     = {Retrieval-Augmented Generation for Large Language Models: A Survey},
+  journal   = {arXiv preprint arXiv:2312.10997},
+  year      = {2024},
+}
+
+@article{Vaswani2017Transformer,
+  author    = {Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and {\L}ukasz Kaiser and Illia Polosukhin},
+  title     = {Attention Is All You Need},
+  journal   = {Advances in Neural Information Processing Systems},
+  volume    = {30},
+  year      = {2017},
+}
+
+@article{Brown2020GPT3,
+  author    = {Tom Brown and Benjamin Mann and Nick Ryder and Melanie Subbiah and Jared D. Kaplan and Prafulla Dhariwal and Arvind Neelakantan and Pranav Shyam and Girish Sastry and Amanda Askell and Others},
+  title     = {Language Models are Few-Shot Learners},
+  journal   = {Advances in Neural Information Processing Systems},
+  volume    = {33},
+  pages     = {1877--1901},
+  year      = {2020},
+}
+
+%% ============================================================
+%% ADDITIONAL DISTRIBUTED DATABASE REFERENCES
+%% ============================================================
+
+@inproceedings{Baker2011Megastore,
+  author    = {Jason Baker and Chris Bond and James C. Corbett and J.J. Furman and Andrey Khorlin and James Larson and Jean-Michel Leon and Yawei Li and Alexander Lloyd and Vadim Yushprakh},
+  title     = {Megastore: Providing Scalable, Highly Available Storage for Interactive Services},
+  booktitle = {Proceedings of CIDR},
+  year      = {2011},
+}
+
+@article{Thomson2012Calvin,
+  author    = {Alexander Thomson and Thaddeus Diamond and Shu-Chun Weng and Kun Ren and Philip Shao and Daniel J. Abadi},
+  title     = {Calvin: Fast Distributed Transactions for Partitioned Database Systems},
+  journal   = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {1--12},
+  year      = {2012},
+  doi       = {10.1145/2213836.2213838},
+}
+
+@article{Pavlo2016NewSQL,
+  author    = {Andrew Pavlo and Matthew Aslett},
+  title     = {What's Really New with {NewSQL}?},
+  journal   = {ACM SIGMOD Record},
+  volume    = {45},
+  number    = {2},
+  pages     = {45--55},
+  year      = {2016},
+  doi       = {10.1145/3003665.3003674},
+}
+
+@inproceedings{Zamanian2017Chiller,
+  author    = {Erfan Zamanian and Carsten Binnig and Tim Kraska and Tim Harris},
+  title     = {The End of a Myth: Distributed Transactions Can Scale},
+  booktitle = {Proceedings of the VLDB Endowment},
+  volume    = {10},
+  number    = {6},
+  pages     = {685--696},
+  year      = {2017},
+  doi       = {10.14778/3055330.3055335},
+}
+
+%% ============================================================
+%% DATA GOVERNANCE AND PROVENANCE
+%% ============================================================
+
+@article{Abraham2019DataGovernance,
+  author    = {Rene Abraham and Johannes Schneider and Jan vom Brocke},
+  title     = {Data Governance: A Conceptual Framework, Structured Review, and Research Agenda},
+  journal   = {International Journal of Information Management},
+  volume    = {49},
+  pages     = {424--438},
+  year      = {2019},
+  doi       = {10.1016/j.ijinfomgt.2019.07.008},
+}
+
+@article{Buneman2001Provenance,
+  author    = {Peter Buneman and Sanjeev Khanna and Wang-Chiew Tan},
+  title     = {Why and Where: A Characterization of Data Provenance},
+  journal   = {Proceedings of the International Conference on Database Theory},
+  pages     = {316--330},
+  year      = {2001},
+  doi       = {10.1007/3-540-44503-X_20},
+}
+
+@article{Simmhan2005DataProvenance,
+  author    = {Yogesh L. Simmhan and Beth Plale and Dennis Gannon},
+  title     = {A Survey of Data Provenance in e-Science},
+  journal   = {ACM SIGMOD Record},
+  volume    = {34},
+  number    = {3},
+  pages     = {31--36},
+  year      = {2005},
+  doi       = {10.1145/1084805.1084812},
+}
+
+%% ============================================================
+%% GREEN COMPUTING AND SUSTAINABILITY
+%% ============================================================
+
+@article{Belkhir2018ICTCarbon,
+  author    = {Lotfi Belkhir and Ahmed Elmeligi},
+  title     = {Assessing {ICT} Global Emissions Footprint: Trends to 2040 \& Recommendations},
+  journal   = {Journal of Cleaner Production},
+  volume    = {177},
+  pages     = {448--463},
+  year      = {2018},
+  doi       = {10.1016/j.jclepro.2017.12.239},
+}
+
+@article{Strubell2019Energy,
+  author    = {Emma Strubell and Ananya Ganesh and Andrew McCallum},
+  title     = {Energy and Policy Considerations for Deep Learning in {NLP}},
+  journal   = {Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
+  pages     = {3645--3650},
+  year      = {2019},
+  doi       = {10.18653/v1/P19-1355},
+}
+
+@article{Patterson2022CarbonAI,
+  author    = {David Patterson and Joseph Gonzalez and Urs H{\"o}lzle and Quoc Le and Chen Liang and Lluis-Miquel Munguia and Daniel Rothchild and David So and Maud Texier and Jeff Dean},
+  title     = {The Carbon Footprint of Machine Learning Training Will Plateau, Then Shrink},
+  journal   = {Computer},
+  volume    = {55},
+  number    = {7},
+  pages     = {18--28},
+  year      = {2022},
+  doi       = {10.1109/MC.2022.3148714},
+}
+
+%% ============================================================
+%% MIGRATION AND PORTABILITY
+%% ============================================================
+
+@article{Bermbach2017Fog,
+  author    = {David Bermbach and Setareh Maghsudi and Jonathan Hasenburg and Tobias Pfandzelter},
+  title     = {Towards Auction-Based Function Placement in Serverless Fog Platforms},
+  journal   = {Proceedings of the IEEE International Conference on Fog Computing},
+  year      = {2020},
+}
+
+@article{Mell2011NIST,
+  author    = {Peter Mell and Timothy Grance},
+  title     = {The {NIST} Definition of Cloud Computing},
+  journal   = {NIST Special Publication},
+  volume    = {800},
+  number    = {145},
+  year      = {2011},
+}
+
+@article{Shi2016Edge,
+  author    = {Weisong Shi and Jie Cao and Quan Zhang and Youhuizi Li and Lanyu Xu},
+  title     = {Edge Computing: Vision and Challenges},
+  journal   = {IEEE Internet of Things Journal},
+  volume    = {3},
+  number    = {5},
+  pages     = {637--646},
+  year      = {2016},
+  doi       = {10.1109/JIOT.2016.2579198},
+}
+
+@article{Satyanarayanan2017Edge,
+  author    = {Mahadev Satyanarayanan},
+  title     = {The Emergence of Edge Computing},
+  journal   = {Computer},
+  volume    = {50},
+  number    = {1},
+  pages     = {30--39},
+  year      = {2017},
+  doi       = {10.1109/MC.2017.9},
+}
+
+%% ============================================================
+%% SCHEMA EVOLUTION AND DATA INTEGRATION
+%% ============================================================
+
+@article{Rahm2001SchemaMatching,
+  author    = {Erhard Rahm and Philip A. Bernstein},
+  title     = {A Survey of Approaches to Automatic Schema Matching},
+  journal   = {The VLDB Journal},
+  volume    = {10},
+  number    = {4},
+  pages     = {334--350},
+  year      = {2001},
+  doi       = {10.1007/s007780100057},
+}
+
+@article{Bernstein2011SchemaEvolution,
+  author    = {Philip A. Bernstein and Sergey Melnik},
+  title     = {Model Management 2.0: Manipulating Richer Mappings},
+  journal   = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {1--12},
+  year      = {2007},
+  doi       = {10.1145/1247480.1247482},
+}
+
+@article{Doan2012DataIntegration,
+  author    = {AnHai Doan and Alon Halevy and Zachary Ives},
+  title     = {Principles of Data Integration},
+  journal   = {Morgan Kaufmann},
+  year      = {2012},
+}
+
+%% ============================================================
+%% PERFORMANCE AND TUNING (Additional)
+%% ============================================================
+
+@inproceedings{VanAken2017OtterTune,
+  author    = {Dana Van Aken and Andrew Pavlo and Geoffrey J. Gordon and Bohan Zhang},
+  title     = {Automatic Database Management System Tuning Through Large-Scale Machine Learning},
+  booktitle = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {1009--1024},
+  year      = {2017},
+  doi       = {10.1145/3035918.3064029},
+}
+
+@inproceedings{Tan2019iBTune,
+  author    = {Jian Tan and Tieying Zhang and Feifei Li and Jie Chen and Qixing Zheng and Ping Zhang and Honglin Qiao and Yue Shi and Wei Cao and Rui Zhang},
+  title     = {{iBTune}: Individualized Buffer Tuning for Large-Scale Cloud Databases},
+  booktitle = {Proceedings of the VLDB Endowment},
+  volume    = {12},
+  number    = {10},
+  pages     = {1221--1234},
+  year      = {2019},
+  doi       = {10.14778/3339490.3339503},
+}
+
+@article{Zhu2023Pilot,
+  author    = {Rong Zhu and Wei Chen and Bolin Ding and Xingguang Chen and Andreas Pfadler and Ziniu Wu and Jingren Zhou},
+  title     = {{PILOTSCOPE}: Steering Databases with Machine Learning},
+  journal   = {Proceedings of the VLDB Endowment},
+  volume    = {16},
+  number    = {11},
+  pages     = {3360--3373},
+  year      = {2023},
+  doi       = {10.14778/3611479.3611517},
+}
+
+%% ============================================================
+%% CLOUD-NATIVE AND MODERN ARCHITECTURES
+%% ============================================================
+
+@inproceedings{Depoutovitch2020Taurus,
+  author    = {Alex Depoutovitch and Chong Chen and Jin Chen and Paul Larson and Shu Lin and Jack Ng and Wenlin Cui and Qiang Liu and Wei Huang and Yong Ding and Wenjun Chen},
+  title     = {{Taurus} Database: How to be Fast, Available, and Frugal in the Cloud},
+  booktitle = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {1463--1478},
+  year      = {2020},
+  doi       = {10.1145/3318464.3386129},
+}
+
+@article{Shan2022Disaggregated,
+  author    = {Yiying Zhang and Yutong Huang},
+  title     = {Disaggregating and Consolidating Network and Compute Resources in Modern Data Centers},
+  journal   = {IEEE Micro},
+  volume    = {42},
+  number    = {3},
+  pages     = {8--15},
+  year      = {2022},
+}
+
+@inproceedings{Vuppalapati2020Napa,
+  author    = {Mahesh Vuppalapati and Justin Miron and Rachit Agarwal and Dana Truber and Brian Chue and Subramanyam Shanmugam and Brian Chen and Adriana Iamnitchi and Natacha Crooks and Darko Dimitrov},
+  title     = {Building An Elastic Query Engine on Disaggregated Storage},
+  booktitle = {Proceedings of NSDI},
+  year      = {2020},
+}
+
+%% ============================================================
+%% TRANSACTION PROCESSING (Additional)
+%% ============================================================
+
+@article{Bernstein1987Concurrency,
+  author    = {Philip A. Bernstein and Vassos Hadzilacos and Nathan Goodman},
+  title     = {Concurrency Control and Recovery in Database Systems},
+  journal   = {Addison-Wesley},
+  year      = {1987},
+}
+
+@article{Weikum2002Transactions,
+  author    = {Gerhard Weikum and Gottfried Vossen},
+  title     = {Transactional Information Systems: Theory, Algorithms, and the Practice of Concurrency Control and Recovery},
+  journal   = {Morgan Kaufmann},
+  year      = {2002},
+}
+
+@inproceedings{Cowling2012Granola,
+  author    = {James Cowling and Barbara Liskov},
+  title     = {Granola: Low-Overhead Distributed Transaction Coordination},
+  booktitle = {Proceedings of the USENIX Annual Technical Conference},
+  pages     = {223--235},
+  year      = {2012},
+}
+
+%% ============================================================
+%% ADDITIONAL REFERENCES
+%% ============================================================
+
+@article{Stonebraker2010NewSQL,
+  author    = {Michael Stonebraker},
+  title     = {{SQL} Databases v. {NoSQL} Databases},
+  journal   = {Communications of the ACM},
+  volume    = {53},
+  number    = {4},
+  pages     = {10--11},
+  year      = {2010},
+  doi       = {10.1145/1721654.1721659},
+}
+
+@article{Cattell2011Scalable,
+  author    = {Rick Cattell},
+  title     = {Scalable {SQL} and {NoSQL} Data Stores},
+  journal   = {ACM SIGMOD Record},
+  volume    = {39},
+  number    = {4},
+  pages     = {12--27},
+  year      = {2011},
+  doi       = {10.1145/1978915.1978919},
+}
+
+@article{Aslett2019NewSQLState,
+  author    = {Matthew Aslett},
+  title     = {The State of {NewSQL}},
+  journal   = {451 Research},
+  year      = {2019},
+}
+
+@inproceedings{Kemme2010Replication,
+  author    = {Bettina Kemme and Ricardo Jim{\'e}nez-Peris and Marta Pati{\~n}o-Mart{\'i}nez},
+  title     = {Database Replication},
+  booktitle = {Synthesis Lectures on Data Management},
+  publisher = {Morgan \& Claypool},
+  year      = {2010},
+  doi       = {10.2200/S00296ED1V01Y201008DTM007},
+}
+
+@article{Ozsu2020DistributedDB,
+  author    = {M. Tamer {\"O}zsu and Patrick Valduriez},
+  title     = {Principles of Distributed Database Systems},
+  journal   = {Springer},
+  edition   = {4th},
+  year      = {2020},
+  doi       = {10.1007/978-3-030-26253-2},
+}
+
+@article{Sakr2011CloudDB,
+  author    = {Sherif Sakr and Anna Liu and Daniel M. Batista and Mohammad Alomari},
+  title     = {A Survey of Large Scale Data Management Approaches in Cloud Environments},
+  journal   = {IEEE Communications Surveys and Tutorials},
+  volume    = {13},
+  number    = {3},
+  pages     = {311--336},
+  year      = {2011},
+  doi       = {10.1109/SURV.2011.032211.00087},
+}
+
+@inproceedings{Agiwal2021Napa,
+  author    = {Ankur Agiwal and Kevin Lai and Mingsheng Hong and Farhad Farahani and Ameya Sahasrabuddhe and Jeffrey A Ullman and Joseph M Hellerstein and Ariel Cary},
+  title     = {{Napa}: Powering Scalable Data Warehousing with Robust Query Performance at {Google}},
+  booktitle = {Proceedings of the VLDB Endowment},
+  volume    = {14},
+  number    = {12},
+  pages     = {2986--2998},
+  year      = {2021},
+  doi       = {10.14778/3476311.3476373},
+}
+
+@article{Chamberlin1974SQL,
+  author    = {Donald D. Chamberlin and Raymond F. Boyce},
+  title     = {{SEQUEL}: A Structured {English} Query Language},
+  journal   = {Proceedings of the ACM SIGFIDET Workshop on Data Description, Access and Control},
+  pages     = {249--264},
+  year      = {1974},
+}
+
+@article{Francis2018GQL,
+  author    = {Nadime Francis and Alastair Green and Paolo Guagliardo and Leonid Libkin and Tobias Lindaaker and Victor Marsault and Stefan Plantikow and Mats Rydberg and Petra Selmer and Andr{\'e}s Taylor},
+  title     = {Cypher: An Evolving Query Language for Property Graphs},
+  journal   = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {1433--1445},
+  year      = {2018},
+  doi       = {10.1145/3183713.3190657},
+}
+
+@article{Deutsch2022GQL,
+  author    = {Alin Deutsch and Nadime Francis and Alastair Green and Keith Hare and Bei Li and Leonid Libkin and Tobias Lindaaker and Victor Marsault and Wim Martens and Jan Michels and Filip Murlak and Stefan Plantikow and Petra Selmer and Oskar van Rest and Hannes Voigt and Domagoj Vrgoc and Mingxi Wu and Fred Zemke},
+  title     = {Graph Pattern Matching in {GQL} and {SQL/PGQ}},
+  journal   = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {2246--2258},
+  year      = {2022},
+  doi       = {10.1145/3514221.3526057},
+}
+
+@article{Bonnet2011CloudDB,
+  author    = {Philippe Bonnet and Johannes Gehrke and Praveen Seshadri},
+  title     = {Towards Sensor Database Systems},
+  journal   = {Proceedings of the International Conference on Mobile Data Management},
+  pages     = {3--14},
+  year      = {2001},
+}
+
+@article{Stonebraker2018AutoAdmin,
+  author    = {Michael Stonebraker and Andrew Pavlo},
+  title     = {What Goes Around Comes Around... And Around...},
+  journal   = {ACM SIGMOD Record},
+  volume    = {47},
+  number    = {4},
+  pages     = {27--37},
+  year      = {2018},
+}
+
+@article{Kraska2021SageDB,
+  author    = {Tim Kraska},
+  title     = {Towards Instance-Optimized Data Systems},
+  journal   = {Proceedings of the VLDB Endowment},
+  volume    = {14},
+  number    = {12},
+  pages     = {3222--3232},
+  year      = {2021},
+  doi       = {10.14778/3476311.3476399},
+}
+
+@inproceedings{Ma2022MBAQO,
+  author    = {Lin Ma and William Zhang and Jie Jiao and Wuwen Wang and Matthew Butrovich and Wan Shen Lim and Prashanth Menon and Andrew Pavlo},
+  title     = {{MB2}: Decomposed Behavior Modeling for Self-Driving Database Management Systems},
+  booktitle = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {1404--1417},
+  year      = {2022},
+  doi       = {10.1145/3514221.3517869},
+}
+
+@article{Idreos2018Design,
+  author    = {Stratos Idreos and Kostas Zoumpatianos and Brian Hentschel and Michael S. Kester and Demi Guo},
+  title     = {The Data Calculator: Data Structure Design and Cost Synthesis from First Principles and Learned Cost Models},
+  journal   = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {535--550},
+  year      = {2018},
+  doi       = {10.1145/3183713.3199671},
+}
+
+@article{Li2021AI4Sys,
+  author    = {Guoliang Li and Xuanhe Zhou and Shifu Li and Bo Gao},
+  title     = {{QTune}: A Query-Aware Database Tuning System with Deep Reinforcement Learning},
+  journal   = {Proceedings of the VLDB Endowment},
+  volume    = {12},
+  number    = {12},
+  pages     = {2118--2130},
+  year      = {2019},
+  doi       = {10.14778/3352063.3352129},
+}
+
+@inproceedings{Negi2021Steering,
+  author    = {Parimarjan Negi and Matteo Interlandi and Ryan Marcus and Mohammad Alizadeh and Tim Kraska and Marc Friedman and Alekh Jindal},
+  title     = {Steering Query Optimizers: A Practical Take on Big Data Workloads},
+  booktitle = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {2557--2569},
+  year      = {2021},
+  doi       = {10.1145/3448016.3457568},
+}
+
+@article{Hilprecht2022Zero,
+  author    = {Benjamin Hilprecht and Carsten Binnig},
+  title     = {Zero-Shot Cost Models for Out-of-the-Box Learned Cost Prediction},
+  journal   = {Proceedings of the VLDB Endowment},
+  volume    = {15},
+  number    = {11},
+  pages     = {2361--2374},
+  year      = {2022},
+  doi       = {10.14778/3551793.3551799},
+}
+
+@article{Wu2022FactorJoin,
+  author    = {Ziniu Wu and Amir Shaikhha and Rong Zhu and Kai Zeng and Yuxing Han and Jingren Zhou},
+  title     = {{FactorJoin}: A New Cardinality Estimation Framework for Join Queries},
+  journal   = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  year      = {2023},
+  doi       = {10.1145/3588721},
+}
+
+@inproceedings{Woltmann2023DNNIndex,
+  author    = {Lucas Woltmann and Claudio Hartmann and Maik Thiele and Dirk Habich and Wolfgang Lehner},
+  title     = {Learned Indexes: A Comprehensive Experimental Evaluation},
+  booktitle = {Proceedings of the VLDB Endowment},
+  volume    = {14},
+  number    = {8},
+  pages     = {1489--1501},
+  year      = {2021},
+}
+
+@article{Luo2022Partition,
+  author    = {Siqiang Luo},
+  title     = {Partition-Based {SQL} Scheduling with Learned Cost Models},
+  journal   = {Proceedings of the VLDB Endowment},
+  volume    = {15},
+  number    = {11},
+  pages     = {2560--2572},
+  year      = {2022},
+}
+
+%% ============================================================
+%% MULTI-CLOUD AND INTEROPERABILITY
+%% ============================================================
+
+@article{Tomarchio2020CloudOrchestration,
+  author    = {Orazio Tomarchio and Domenico Calcaterra and Giuseppe Di Modica},
+  title     = {Cloud Resource Orchestration in the Multi-Cloud Landscape: A Systematic Review of Existing Frameworks},
+  journal   = {Journal of Cloud Computing},
+  volume    = {9},
+  number    = {1},
+  pages     = {1--24},
+  year      = {2020},
+  doi       = {10.1186/s13677-020-00194-7},
+}
+
+@inproceedings{Spillner2017TransformCloud,
+  author    = {Josef Spillner and Cristian Bogdan Mateos and David A. Monge},
+  title     = {FaaS2F: Towards a Framework for {FaaS}-to-{FaaS} Migration},
+  booktitle = {Proceedings of the IEEE International Conference on Cloud Engineering},
+  year      = {2017},
+}
+
+%% ============================================================
+%% CLOUD DATABASE MANAGEMENT ADDITIONAL
+%% ============================================================
+
+@article{Das2013ElasticDB,
+  author    = {Sudipto Das and Divyakant Agrawal and Amr El Abbadi},
+  title     = {ElasTraS: An Elastic, Scalable, and Self-Managing Transactional Database for the Cloud},
+  journal   = {ACM Transactions on Database Systems},
+  volume    = {38},
+  number    = {1},
+  pages     = {1--45},
+  year      = {2013},
+  doi       = {10.1145/2445583.2445588},
+}
+
+@article{Barker2014Empirical,
+  author    = {Adam Barker and Blesson Varghese and Jonathan Stuart Ward and Ian Sommerville},
+  title     = {Academic Cloud Computing Research: Five Pitfalls and Five Opportunities},
+  journal   = {Proceedings of the USENIX Workshop on Hot Topics in Cloud Computing},
+  year      = {2014},
+}
+
+@article{Hogan2021KGSurvey,
+  author    = {Aidan Hogan and Eva Blomqvist and Michael Cochez and Claudia d'Amato and Gerard de Melo and Claudio Gutierrez and Sabrina Kirrane and Jos{\'e} Emilio Labra Gayo and Roberto Navigli and Sebastian Neumaier and Axel-Cyrille Ngonga Ngomo and Axel Polleres and Sabbir M. Rashid and Anisa Rula and Lukas Schmelzeisen and Juan Sequeda and Steffen Staab and Antoine Zimmermann},
+  title     = {Knowledge Graphs},
+  journal   = {ACM Computing Surveys},
+  volume    = {54},
+  number    = {4},
+  pages     = {1--37},
+  year      = {2022},
+  doi       = {10.1145/3447772},
+}
+
+@article{Arenas2022MultiModelBenchmark,
+  author    = {Marcelo Arenas and Claudio Gutierrez and Juan F. Sequeda},
+  title     = {Benchmarking Graph and Relational Database Management Systems},
+  journal   = {Proceedings of the VLDB Endowment},
+  volume    = {14},
+  number    = {12},
+  pages     = {2733--2746},
+  year      = {2022},
+}
+
+@inproceedings{Zhang2023CDG,
+  author    = {Zhuoming Zhang and Yikang Xiao and Botao Peng and Hao He and Yi Wang and Wentao Wu},
+  title     = {Is Cloud Database a Good Fit for Your Workload? A Study of Workload Characterization},
+  booktitle = {Proceedings of the VLDB Endowment},
+  volume    = {16},
+  number    = {11},
+  year      = {2023},
+}
+
+@article{Fernandez2023DataMarketplace,
+  author    = {Raul Castro Fernandez and Pranav Subramaniam and Michael J. Franklin},
+  title     = {Data Market Platforms: Trading Data Assets to Solve Data Problems},
+  journal   = {Proceedings of the VLDB Endowment},
+  volume    = {13},
+  number    = {12},
+  pages     = {1933--1947},
+  year      = {2020},
+  doi       = {10.14778/3407790.3407800},
+}
+
+@article{Jindal2021AutoMV,
+  author    = {Alekh Jindal and Shi Qiao and Rathijit Sen and Hiren Patel},
+  title     = {Microlearner: A Fine-Grained Learning Optimizer for Big Data Workloads at {Microsoft}},
+  journal   = {Proceedings of the IEEE International Conference on Data Engineering},
+  pages     = {2277--2288},
+  year      = {2021},
+}
+
+@inproceedings{Olston2008PigLatin,
+  author    = {Christopher Olston and Benjamin Reed and Utkarsh Srivastava and Ravi Kumar and Andrew Tomkins},
+  title     = {Pig {Latin}: A Not-So-Foreign Language for Data Processing},
+  booktitle = {Proceedings of the ACM SIGMOD International Conference on Management of Data},
+  pages     = {1099--1110},
+  year      = {2008},
+  doi       = {10.1145/1376616.1376726},
+}
+
+@article{Kleppmann2017DesigningData,
+  author    = {Martin Kleppmann},
+  title     = {Designing Data-Intensive Applications},
+  journal   = {O'Reilly Media},
+  year      = {2017},
+}
+
+@inproceedings{Cheng2021AnalyticDB,
+  author    = {Zhan Cheng and Wei Cao and Feifei Li},
+  title     = {{AnalyticDB-V}: A Hybrid Analytical Engine Towards Query Fusion for Structured and Unstructured Data},
+  booktitle = {Proceedings of the VLDB Endowment},
+  volume    = {13},
+  number    = {12},
+  pages     = {3152--3165},
+  year      = {2020},
+}
+
+@article{Zhou2023LLM4DB,
+  author    = {Xuanhe Zhou and Zhaoyan Sun and Guoliang Li},
+  title     = {Database Meets Large Language Models: A Survey},
+  journal   = {arXiv preprint arXiv:2311.09858},
+  year      = {2023},
+}
+
+@article{Li2023LLMQueryOpt,
+  author    = {Guoliang Li and Haochen Zhang and Xinmei Huang and Qi Zhou and Zhaoyan Sun},
+  title     = {Large Language Models for Database Management: A Survey and Open Challenges},
+  journal   = {arXiv preprint arXiv:2404.03548},
+  year      = {2024},
+}
+
+@article{Wang2024CloudDBBenchmark,
+  author    = {Wentao Wu and others},
+  title     = {Cloud Database Benchmarking: Where Are We and Where Are We Going?},
+  journal   = {IEEE Data Engineering Bulletin},
+  volume    = {47},
+  number    = {1},
+  pages     = {4--17},
+  year      = {2024},
+}
+
+@article{Zhu2024ConfTuning,
+  author    = {Xinyi Zhang and Zhuo Chang and Yang Li and Hong Wu and Jian Tan and Feifei Li and Bin Cui},
+  title     = {Facilitating Database Tuning with Hyper-Parameter Optimization: A Comprehensive Survey},
+  journal   = {Proceedings of the VLDB Endowment},
+  volume    = {17},
+  number    = {5},
+  pages     = {1093--1106},
+  year      = {2024},
+}
+
+@article{Thirumuruganathan2024DBLLMSurvey,
+  author    = {Saravanan Thirumuruganathan and Nan Tang and Yue Wang},
+  title     = {A Survey on Integrating {LLMs} with Databases},
+  journal   = {arXiv preprint arXiv:2404.06234},
+  year      = {2024},
+}
+
+@article{Sun2024End2End,
+  author    = {Xinyue Sun and Guoliang Li},
+  title     = {End-to-End Learned Query Optimization},
+  journal   = {Proceedings of the VLDB Endowment},
+  volume    = {17},
+  year      = {2024},
+}

@@ -1,0 +1,181 @@
+======================================================================
+DOWNLOAD REPORT — Cloud DB Meta-Survey References
+======================================================================
+
+Total entries:   166
+Downloaded:      37
+Already existed: 0
+Failed:          118
+Skipped:         11
+
+----------------------------------------------------------------------
+KEY                                 STATUS       DETAIL
+----------------------------------------------------------------------
+Abadi2012PACELC                     FAILED       no open-access PDF available
+Abadi2013NewSQL                     FAILED       no open-access PDF available
+Abraham2019DataGovernance           FAILED       Semantic Scholar API returned nothing for DOI:10.1016/j.ijinfomgt.2019.07.008
+Acar2018HE                          FAILED       Semantic Scholar API returned nothing for DOI:10.1145/3214303
+Agiwal2021Napa                      FAILED       no open-access PDF available
+Agrawal2022ElasticDB                FAILED       Semantic Scholar title search returned no results
+Akidau2015Dataflow                  FAILED       Semantic Scholar API returned nothing for DOI:10.14778/2824032.2824076
+AmazonAurora2023                    SKIPPED      in skip list (misc/book)
+Angles2020GraphDB                   FAILED       Semantic Scholar API returned nothing for DOI:10.1145/3104031
+Antonopoulos2019                    FAILED       no open-access PDF available
+Arenas2022MultiModelBenchmark       DOWNLOADED   openAccessPdf: https://link.springer.com/content/pdf/10.1007/s41019-019-00110-3.pdf
+Armbrust2020DeltaLake               DOWNLOADED   openAccessPdf: https://ir.cwi.nl/pub/32924/32924.pdf
+Armbrust2021Lakehouse               FAILED       Semantic Scholar title search returned no results
+Aslett2019NewSQLState               FAILED       no open-access PDF available
+Baker2011Megastore                  FAILED       Semantic Scholar title search returned no results
+Barker2014Empirical                 DOWNLOADED   arXiv fallback: https://arxiv.org/pdf/1406.4974.pdf
+Belkhir2018ICTCarbon                FAILED       no open-access PDF available
+Bermbach2017Fog                     DOWNLOADED   openAccessPdf: https://arxiv.org/pdf/1912.06096
+Bernstein1987Concurrency            SKIPPED      in skip list (misc/book)
+Bernstein2011SchemaEvolution        FAILED       no open-access PDF available
+Bonnet2011CloudDB                   FAILED       Semantic Scholar title search returned no results
+Brewer2012CAP                       FAILED       no open-access PDF available
+Brown2020GPT3                       FAILED       Semantic Scholar title search returned no results
+Buneman2001Provenance               FAILED       no open-access PDF available
+Cao2021PolarDB                      FAILED       no open-access PDF available
+Carbone2015Flink                    FAILED       Semantic Scholar title search returned no results
+Cattell2011Scalable                 DOWNLOADED   openAccessPdf: http://www.cattell.net/datastores/Datastores.pdf
+Chamberlin1974SQL                   FAILED       Semantic Scholar title search returned no results
+Chang2008Bigtable                   FAILED       Semantic Scholar API returned nothing for DOI:10.1145/1365815.1365816
+Chaudhuri1998QueryOpt               FAILED       Semantic Scholar title search returned no results
+Cheng2021AnalyticDB                 FAILED       Semantic Scholar title search returned no results
+Codd1970Relational                  FAILED       no open-access PDF available
+Cooper2010YCSB                      FAILED       Semantic Scholar API returned nothing for DOI:10.1145/1807128.1807152
+Corbett2013Spanner                  FAILED       no open-access PDF available
+Cowling2012Granola                  FAILED       no open-access PDF available
+Curino2011DBaaS                     FAILED       Semantic Scholar title search returned no results
+Dageville2016                       FAILED       no open-access PDF available
+Das2013ElasticDB                    FAILED       no open-access PDF available
+Davoudian2018NoSQL                  FAILED       no open-access PDF available
+DeCandia2007Dynamo                  FAILED       Semantic Scholar API returned nothing for DOI:10.1145/1323293.1294281
+Dean2004MapReduce                   FAILED       no open-access PDF available
+Depoutovitch2020Taurus              DOWNLOADED   openAccessPdf: http://arxiv.org/pdf/2412.02792
+Deutsch2022GQL                      DOWNLOADED   openAccessPdf: https://www.pure.ed.ac.uk/ws/files/260606327/Graph_Pattern_Matching_DEUTSCH_DOA27012022_AFV.pdf
+Doan2012DataIntegration             SKIPPED      in skip list (misc/book)
+Dutt2019Selectivity                 FAILED       no open-access PDF available
+Farber2012                          DOWNLOADED   openAccessPdf: https://tud.qucosa.de/api/qucosa%3A79867/attachment/ATT-0/
+Fernandez2023DataMarketplace        DOWNLOADED   arXiv fallback: https://arxiv.org/pdf/2002.01047.pdf
+Francis2018GQL                      DOWNLOADED   openAccessPdf: https://hal.archives-ouvertes.fr/hal-01803524/file/paper.pdf
+Fuhrt2010CloudSecurity              SKIPPED      in skip list (misc/book)
+GDPR2016                            SKIPPED      in skip list (misc/book)
+Gao2023DAILSQL                      FAILED       Semantic Scholar API returned nothing for DOI:10.14778/3641204.3641221
+Gao2024RAGSurvey                    DOWNLOADED   https://arxiv.org/pdf/2312.10997.pdf
+Ghemawat2003GFS                     FAILED       no open-access PDF available
+Gomes2024EdgeFog                    FAILED       Semantic Scholar API returned nothing for DOI:10.1145/3613531
+Graefe1993QueryOptSurvey            FAILED       Semantic Scholar API returned nothing for DOI:10.1145/152610.152611
+Gray1981Transaction                 FAILED       Semantic Scholar title search returned no results
+Haas2024HTAPSurvey                  FAILED       Semantic Scholar API returned nothing for DOI:10.1109/TKDE.2023.3298514
+Halevy2016Goods                     FAILED       Semantic Scholar API returned nothing for DOI:10.1145/2882903.2903730
+Harby2022Lakehouse                  FAILED       Semantic Scholar API returned nothing for DOI:10.3390/bdcc6040111
+Hashem2015BigDataCloud              FAILED       no open-access PDF available
+Hellerstein2020Serverless           FAILED       Semantic Scholar title search returned no results
+Hilprecht2022CardinalityEstimation  FAILED       Semantic Scholar API returned nothing for DOI:10.14778/3384345.3384349
+Hilprecht2022Zero                   DOWNLOADED   openAccessPdf: http://arxiv.org/pdf/2201.00561
+Hogan2021KGSurvey                   DOWNLOADED   arXiv fallback: https://arxiv.org/pdf/2003.02320.pdf
+Huang2020TiDB                       FAILED       no open-access PDF available
+IDC2024Cloud                        SKIPPED      in skip list (misc/book)
+IEA2024DataCenters                  SKIPPED      in skip list (misc/book)
+Idreos2018Design                    FAILED       no open-access PDF available
+Jainaga2023Lakehouse                DOWNLOADED   openAccessPdf: https://journalofbigdata.springeropen.com/counter/pdf/10.1186/s40537-023-00808-2
+Jindal2021AutoMV                    FAILED       no open-access PDF available
+Johnson2021FAISS                    DOWNLOADED   openAccessPdf: https://arxiv.org/pdf/1702.08734
+Kaur2021NoSQLReview                 FAILED       Semantic Scholar title search returned no results
+Kemme2010Replication                FAILED       Semantic Scholar API returned nothing for DOI:10.2200/S00296ED1V01Y201008DTM007
+Kemper2011HyPer                     FAILED       no open-access PDF available
+Kipf2019LearnedCardinality          DOWNLOADED   arXiv fallback: https://arxiv.org/pdf/1809.00677.pdf
+Kitchenham2007                      FAILED       Semantic Scholar title search returned no results
+Kleppmann2017DesigningData          SKIPPED      in skip list (misc/book)
+Kraska2018LearnedIndex              DOWNLOADED   arXiv fallback: https://arxiv.org/pdf/1712.01208.pdf
+Kraska2021SageDB                    FAILED       Semantic Scholar API returned nothing for DOI:10.14778/3476311.3476399
+Lakshman2010Cassandra               FAILED       Semantic Scholar API returned nothing for DOI:10.1145/1773912.1773922
+Lamb2012Vertica                     DOWNLOADED   arXiv fallback: https://arxiv.org/pdf/1208.4173.pdf
+Lamport1998Paxos                    FAILED       Semantic Scholar API returned nothing for DOI:10.1145/279227.279229
+Lamport2001PaxosMadeSimple          FAILED       Semantic Scholar title search returned no results
+Lao2024GPTuner                      DOWNLOADED   openAccessPdf: http://arxiv.org/pdf/2311.03157
+Leis2023CloudPricing                FAILED       Semantic Scholar API returned nothing for DOI:10.14778/3461535.3461549
+Lewis2020RAG                        FAILED       Semantic Scholar title search returned no results
+Li2021AI4Sys                        FAILED       no open-access PDF available
+Li2023LLMQueryOpt                   DOWNLOADED   https://arxiv.org/pdf/2404.03548.pdf
+Li2024CloudNativeSurvey             FAILED       Semantic Scholar API returned nothing for DOI:10.1109/TKDE.2023.3313441
+Lu2019MultiModel                    FAILED       no open-access PDF available
+Luo2022Partition                    FAILED       Semantic Scholar title search returned no results
+Ma2021LearnedWorkload               FAILED       no open-access PDF available
+Ma2022MBAQO                         FAILED       Semantic Scholar API returned nothing for DOI:10.1145/3514221.3517869
+Malkov2020HNSW                      DOWNLOADED   openAccessPdf: http://arxiv.org/pdf/1603.09320
+Marcus2021Bao                       FAILED       Semantic Scholar API returned nothing for DOI:10.1145/3448016.3452838
+Mathew2021CloudMigration            FAILED       Semantic Scholar API returned nothing for DOI:10.1186/s13677-021-00243-3
+Mell2011NIST                        FAILED       Semantic Scholar title search returned no results
+Melnik2020Dremel                    FAILED       no open-access PDF available
+Moher2009PRISMA                     DOWNLOADED   openAccessPdf: https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1000097&type=printable
+Mokbel2023BigData                   FAILED       Semantic Scholar title search returned no results
+Muller2020Serverless                FAILED       Semantic Scholar API returned nothing for DOI:10.1145/3318464.3389758
+Narasayya2015MultiTenant            FAILED       Semantic Scholar title search returned no results
+Negi2021Steering                    FAILED       no open-access PDF available
+Noy2019KGSurvey                     FAILED       Semantic Scholar API returned nothing for DOI:10.1145/3331166
+Olston2008PigLatin                  FAILED       no open-access PDF available
+Ongaro2014Raft                      FAILED       no open-access PDF available
+Opara2017LockIn                     DOWNLOADED   openAccessPdf: https://bia.unibz.it/view/delivery/39UBZ_INST/12235286700001241/13235265310001241
+Ozsu2020DistributedDB               SKIPPED      in skip list (misc/book)
+Pan2024VectorDB                     FAILED       Semantic Scholar API returned nothing for DOI:10.1007/s00778-024-00864-x
+Patterson2022CarbonAI               FAILED       Semantic Scholar API returned nothing for DOI:10.1109/MC.2022.3148714
+Pavlo2016NewSQL                     FAILED       no open-access PDF available
+Pavlo2017SelfDriving                FAILED       Semantic Scholar title search returned no results
+Petersen2015SLR                     FAILED       no open-access PDF available
+Politou2018GDPR                     FAILED       Semantic Scholar API returned nothing for DOI:10.1093/cybsec/tyy001
+Pourreza2023DINSQL                  FAILED       Semantic Scholar title search returned no results
+Rabl2019BenchmarkSurvey             FAILED       no open-access PDF available
+Rahm2001SchemaMatching              DOWNLOADED   openAccessPdf: https://ul.qucosa.de/api/qucosa%3A31968/attachment/ATT-0/
+Raut2019CloudReview                 FAILED       no open-access PDF available
+Saeed2023XAI                        DOWNLOADED   arXiv fallback: https://arxiv.org/pdf/2111.06420.pdf
+Sakr2011CloudDB                     FAILED       no open-access PDF available
+Sanka2022CloudSecSurvey             FAILED       Semantic Scholar API returned nothing for DOI:10.1109/ACCESS.2022.3193881
+Satyanarayanan2017Edge              FAILED       no open-access PDF available
+Selinger1979QueryOpt                FAILED       Semantic Scholar title search returned no results
+Shan2022Disaggregated               FAILED       Semantic Scholar title search returned no results
+Shi2016Edge                         FAILED       no open-access PDF available
+Shute2013F1                         FAILED       no open-access PDF available
+Simmhan2005DataProvenance           FAILED       no open-access PDF available
+Spillner2017TransformCloud          FAILED       Semantic Scholar title search returned no results
+Stonebraker2005CStore               FAILED       Semantic Scholar title search returned no results
+Stonebraker2010NewSQL               FAILED       no open-access PDF available
+Stonebraker2018AutoAdmin            FAILED       Semantic Scholar title search returned no results
+Strubell2019Energy                  DOWNLOADED   openAccessPdf: https://www.aclweb.org/anthology/P19-1355.pdf
+Sun2019Learned                      DOWNLOADED   openAccessPdf: https://arxiv.org/pdf/1906.02560
+Sun2024End2End                      FAILED       Semantic Scholar title search returned no results
+Taft2020Cockroach                   FAILED       no open-access PDF available
+Tan2019iBTune                       FAILED       no open-access PDF available
+Thirumuruganathan2024DBLLMSurvey    DOWNLOADED   https://arxiv.org/pdf/2404.06234.pdf
+Thomson2012Calvin                   FAILED       no open-access PDF available
+Tomarchio2020CloudOrchestration     DOWNLOADED   openAccessPdf: https://journalofcloudcomputing.springeropen.com/track/pdf/10.1186/s13677-020-00194-7
+VanAken2017OtterTune                FAILED       no open-access PDF available
+Vaswani2017Transformer              FAILED       Semantic Scholar title search returned no results
+Verbitski2017                       FAILED       no open-access PDF available
+Verbitski2018                       FAILED       no open-access PDF available
+Viotti2016Consistency               DOWNLOADED   openAccessPdf: https://arxiv.org/pdf/1512.00168
+Vuppalapati2020Napa                 FAILED       Semantic Scholar title search returned no results
+Wang2021Milvus                      FAILED       no open-access PDF available
+Wang2024CloudDBBenchmark            FAILED       no open-access PDF available
+Wang2024MACSQL                      DOWNLOADED   https://arxiv.org/pdf/2312.11242.pdf
+Weikum2002Transactions              SKIPPED      in skip list (misc/book)
+Woltmann2023DNNIndex                FAILED       Semantic Scholar title search returned no results
+Wu2022FactorJoin                    DOWNLOADED   arXiv fallback: https://arxiv.org/pdf/2212.05526.pdf
+Xiao2018OBDA                        DOWNLOADED   openAccessPdf: https://www.ijcai.org/proceedings/2018/0777.pdf
+Xue2024DBGPT                        DOWNLOADED   https://arxiv.org/pdf/2312.17449.pdf
+Yang2020NeuroCard                   DOWNLOADED   arXiv fallback: https://arxiv.org/pdf/2006.08109.pdf
+Yang2022OceanBase                   FAILED       Semantic Scholar API returned nothing for DOI:10.14778/3554821.3554830
+Yu2018Spider                        FAILED       Semantic Scholar API returned nothing for DOI:10.18653/v1/D18-1425
+Zaharia2016Spark                    FAILED       Semantic Scholar API returned nothing for DOI:10.1145/2934664
+Zamanian2017Chiller                 FAILED       Semantic Scholar API returned nothing for DOI:10.14778/3055330.3055335
+Zhang2022CDBTune                    FAILED       no open-access PDF available
+Zhang2023CDG                        FAILED       Semantic Scholar title search returned no results
+Zhou2022AI4DB                       FAILED       Semantic Scholar API returned nothing for DOI:10.1109/TKDE.2020.2994641
+Zhou2023LLM4DB                      DOWNLOADED   https://arxiv.org/pdf/2311.09858.pdf
+Zhou2024DBot                        FAILED       no open-access PDF available
+Zhu2023Pilot                        DOWNLOADED   openAccessPdf: http://eprints.lse.ac.uk/120493/1/Rosenblatt_et_al_Epistemic_parity_published.pdf
+Zhu2024ConfTuning                   FAILED       Semantic Scholar title search returned no results
+gartner2024dbms                     SKIPPED      in skip list (misc/book)
+
+----------------------------------------------------------------------

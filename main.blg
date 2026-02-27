@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: elsarticle-num.bst
+Database file #1: cloud-db-metasurvey.bib
+Warning--empty pages in Armbrust2021Lakehouse
+Warning--can't use both volume and number fields in Huang2020TiDB
+Warning--can't use both volume and number fields in Yang2022OceanBase
+Warning--can't use both volume and number fields in Farber2012
+Warning--can't use both volume and number fields in Leis2023CloudPricing
+Warning--empty pages in Curino2011DBaaS
+Warning--empty pages in Pavlo2017SelfDriving
+Warning--can't use both volume and number fields in Melnik2020Dremel
+Warning--can't use both volume and number fields in Zhou2024DBot
+You've used 56 entries,
+            2952 wiz_defined-function locations,
+            1045 strings with 19207 characters,
+and the built_in function-call counts, 22334 in all, are:
+= -- 1972
+> -- 1196
+< -- 21
++ -- 436
+- -- 380
+* -- 1841
+:= -- 3128
+add.period$ -- 93
+call.type$ -- 56
+change.case$ -- 59
+chr.to.int$ -- 0
+cite$ -- 65
+duplicate$ -- 633
+empty$ -- 2186
+format.name$ -- 430
+if$ -- 5528
+int.to.chr$ -- 0
+int.to.str$ -- 56
+missing$ -- 51
+newline$ -- 213
+num.names$ -- 56
+pop$ -- 346
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1389
+stack$ -- 0
+substring$ -- 1132
+swap$ -- 274
+text.length$ -- 21
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 9
+while$ -- 151
+width$ -- 58
+write$ -- 553
+(There were 9 warnings)
