@@ -46,28 +46,20 @@
 
 \title{Cloud Databases: A Systematic Meta-Survey of Current Challenges, Emerging Paradigms, and Future Research Directions}
 
-\author[inst1]{Author One\corref{cor1}}
-\ead{author.one@university.edu}
-\author[inst1]{Author Two}
-\ead{author.two@university.edu}
+\author[inst1]{Abdulhakeem Ibrahim\corref{cor1}}
+\ead{hakeem.ibrahim@dmu.ac.uk}
+% \author[inst1]{Author Two}
+% \ead{author.two@university.edu}
 
-\cortext[cor1]{Corresponding author.}
+% \cortext[cor1]{Corresponding author.}
 
-\affiliation[inst1]{organization={Department of Computer Science, University Name},
-            city={City},
-            country={Country}}
+\affiliation[inst1]{organization={Department of Computer Science, De Montfort University},
+            city={Leicester},
+            country={United Kingdom}}
 
 \begin{abstract}
-Cloud databases have become the backbone of modern data-driven applications, enabling organizations to store, process, and analyze data at unprecedented scale and elasticity. Over the past seven years (2019--2025), more than 50 survey papers have examined various facets of cloud database technology---spanning cloud-native architectures, hybrid transactional/analytical processing (HTAP), serverless databases, vector databases, AI-for-database optimization (AI4DB), data lakehouses, NoSQL/NewSQL systems, and edge--cloud data management. However, the challenges, open problems, and research directions identified in these surveys remain fragmented across disparate communities and publication venues. This paper presents the first \emph{systematic meta-survey} of cloud database research: a survey of surveys that synthesizes findings from 58 carefully selected survey papers using a rigorous methodology grounded in the Kitchenham--Charters systematic literature review protocol. We organize the scattered landscape of cloud database challenges into a structured, dual-theme taxonomy: (1)~\emph{eighteen cross-cutting challenges} that transcend individual system categories, including scalability, consistency trade-offs, security, cost optimization, AI--database convergence, and sustainability; and (2)~\emph{five lifecycle-phase challenges} spanning design, deployment, operation, optimization, and evolution of cloud database systems. We further examine the convergence of cloud databases with large language models (LLMs) as an illustrative case study, and propose a prioritized research roadmap with short-, medium-, and long-term directions. By providing a consolidated, thematically organized view of the field, this meta-survey serves as both a comprehensive reference for researchers entering the cloud database space and a strategic guide for practitioners navigating the rapidly evolving landscape of cloud data management.
+Cloud databases have become the backbone of modern data-driven applications, enabling organizations to store, process, and analyze data at unprecedented scale and elasticity. Over the past seven years (2019--2025), more than 50 survey papers have examined various facets of cloud database technology---spanning cloud-native architectures, hybrid transactional and/or analytical processing (HTAP), serverless databases, vector databases, AI-for-database optimization (AI4DB), data lakehouses, NoSQL/NewSQL systems, and edge--cloud data management. However, the challenges, open problems, and research directions identified in these surveys remain fragmented across disparate communities and publication venues. This paper presents the first \emph{systematic meta-survey} of cloud database research: a survey of surveys that synthesizes findings from carefully selected survey papers using a rigorous methodology grounded in the Kitchenham--Charters systematic literature review protocol. We organize the scattered landscape of cloud database challenges into a structured, dual-theme taxonomy: (1)~\emph{eighteen cross-cutting challenges} that transcend individual system categories, including scalability, consistency trade-offs, security, cost optimization, AI--database convergence, and sustainability; and (2)~\emph{five lifecycle-phase challenges} spanning design, deployment, operation, optimization, and evolution of cloud database systems. We further examine the convergence of cloud databases with large language models (LLMs) as an illustrative case study, and propose a prioritized research roadmap with short-, medium-, and long-term directions. By providing a consolidated, thematically organized view of the field, this meta-survey serves as both a comprehensive reference for researchers entering the cloud database space and a strategic guide for practitioners navigating the rapidly evolving landscape of cloud data management.
 \end{abstract}
-
-\begin{highlights}
-\item First systematic meta-survey synthesizing 58 cloud database surveys published between 2019 and 2025
-\item Dual-theme taxonomy organizing challenges into 18 cross-cutting topics and 5 lifecycle phases
-\item Analysis of the LLM--cloud database convergence as an emerging paradigm
-\item Prioritized research roadmap with short-, medium-, and long-term directions
-\item Knowledge engineering perspective connecting cloud databases to data and knowledge engineering
-\end{highlights}
 
 \begin{keyword}
 cloud databases \sep systematic meta-survey \sep cloud-native databases \sep database-as-a-service \sep distributed databases \sep data lakehouse \sep AI4DB \sep survey of surveys
@@ -90,7 +82,7 @@ Despite this wealth of individual surveys, the field lacks a \emph{meta-level sy
 \subsection{Contributions and novelty}
 \label{subsec:contributions}
 
-This paper addresses the gap by presenting the \textbf{first systematic meta-survey of cloud database research}---a survey of surveys. Inspired by the methodological approach of Saeed and Omlin~\cite{Saeed2023XAI}, who conducted a meta-survey of 73 surveys on Explainable AI (XAI), we apply a rigorous systematic literature review (SLR) protocol based on the Kitchenham--Charters guidelines~\cite{Kitchenham2007} to identify, evaluate, and synthesize cloud database surveys. Our contributions are as follows:
+This paper addresses the gap by presenting the \textbf{first systematic meta-survey of cloud database research}---a survey of surveys. We apply a rigorous systematic literature review (SLR) protocol based on the Kitchenham--Charters guidelines~\cite{Kitchenham2007} to identify, evaluate, and synthesize cloud database surveys. Our contributions are as follows:
 
 \begin{enumerate}[label=\textbf{C\arabic*}]
     \item \textbf{Systematic identification and classification.} We systematically search eight digital libraries and identify 58 survey papers on cloud databases published between 2019 and 2025, classifying them by topic, scope, methodology, and venue.
