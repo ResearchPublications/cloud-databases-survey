@@ -182,7 +182,7 @@ Simultaneously, the rise of \emph{HTAP} (Hybrid Transactional/Analytical Process
 Cloud databases play a crucial role in knowledge engineering, making this topic directly relevant to the \emph{Data \& Knowledge Engineering} (DKE) community. Several connections are worth highlighting:
 
 \begin{itemize}
-    \item \textbf{Knowledge graphs in the cloud.} Large-scale knowledge graphs (KGs) such as Google Knowledge Graph, Wikidata, and enterprise KGs are increasingly stored and queried using cloud-hosted graph databases (e.g., Amazon Neptune, Azure Cosmos DB with Gremlin API, Neo4j Aura)~\cite{Angles2020GraphDB}. The scalability, consistency, and query optimization challenges of cloud graph databases directly impact KG applications.
+    \item \textbf{Knowledge graphs in the cloud.} Large-scale knowledge graphs (KGs) such as Google Knowledge Graph, Wikidata, and enterprise KGs are increasingly stored and queried using cloud-hosted graph databases (e.g., Amazon Neptune, Azure Cosmos DB with Gremlin API, Neo4j Aura)~\cite{Angles2020GraphDB,Elbattah2015Freebase,Coimbra2025GraphDB}. The scalability, consistency, and query optimization challenges of cloud graph databases directly impact KG applications.
 
     \item \textbf{Ontology-mediated data access.} Cloud environments with heterogeneous data sources benefit from ontology-based data integration (OBDI) techniques~\cite{Xiao2018OBDA}, where ontologies provide a unified conceptual layer over distributed cloud databases.
 
@@ -194,7 +194,7 @@ Cloud databases play a crucial role in knowledge engineering, making this topic 
 \subsection{Economic and cost perspective}
 \label{subsec:cost}
 
-Cloud databases introduce novel economic dynamics compared to on-premises deployments. The shift from capital expenditure (CapEx) to operational expenditure (OpEx) models, combined with pay-per-use pricing and complex multi-dimensional billing (compute, storage, I/O, network egress, backups), creates significant challenges in cost prediction and optimization~\cite{Leis2023CloudPricing}.
+Cloud databases introduce novel economic dynamics compared to on-premises deployments. The shift from capital expenditure (CapEx) to operational expenditure (OpEx) models, combined with pay-per-use pricing and complex multi-dimensional billing (compute, storage, I/O, network egress, backups), creates significant challenges in cost prediction and optimization~\cite{Leis2023CloudPricing,Mateljan2010ROI}.
 
 Research has shown that cloud database costs can vary by orders of magnitude depending on configuration choices, query patterns, and pricing model selection~\cite{Leis2023CloudPricing}. The total cost of ownership (TCO) analysis becomes particularly complex for multi-cloud or hybrid cloud deployments. Several surveys touch on cost-related challenges~\cite{Li2024CloudNativeSurvey,Muller2020Serverless}, but a consolidated analysis is lacking.
 
@@ -248,7 +248,7 @@ The term ``cloud database'' encompasses a spectrum of architectures with fundame
 \subsection{Database-as-a-Service (DBaaS) spectrum}
 \label{subsec:dbaas}
 
-Database-as-a-Service (DBaaS) represents the fully managed end of the cloud database spectrum, where the cloud provider handles provisioning, patching, scaling, backup, and high availability~\cite{Curino2011DBaaS}. The DBaaS model has evolved along several dimensions:
+Database-as-a-Service (DBaaS) represents the fully managed end of the cloud database spectrum, where the cloud provider handles provisioning, patching, scaling, backup, and high availability~\cite{Curino2011DBaaS,Lehner2010DBaaS,AlShehri2013DBaaS,Grolinger2013CloudData,Deka2014CloudDBSurvey}. The DBaaS model has evolved along several dimensions:
 
 \begin{itemize}
     \item \textbf{Managed databases}: Provider-managed instances of open-source or commercial engines (e.g., Amazon RDS, Azure Database for PostgreSQL).
@@ -315,7 +315,7 @@ Cloud database architectures have evolved through three major paradigms, illustr
 \subsection{Data models in the cloud}
 \label{subsec:datamodels}
 
-Cloud platforms support a diverse ecosystem of data models, each optimized for different workload characteristics. Table~\ref{tab:datamodels} compares the major data models available in cloud database services.
+Cloud platforms support a diverse ecosystem of data models, each optimized for different workload characteristics~\cite{Gessert2016NoSQL,Khasawneh2020SQLNewSQL,Han2011NoSQL,Tudorica2011NoSQLCmp,Bader2017TSDB,Ozsoyoglu1995Temporal}. Table~\ref{tab:datamodels} compares the major data models available in cloud database services.
 
 \begin{table}[H]
 \centering
@@ -400,7 +400,7 @@ The cloud data management landscape has converged around three complementary par
 
 \textbf{Data lakes} (e.g., Amazon S3 + Athena, Azure Data Lake Storage) offer cost-effective storage for raw, semi-structured, and unstructured data, enabling schema-on-read flexibility for data science and ML workloads.
 
-\textbf{Data lakehouses}~\cite{Armbrust2021Lakehouse} combine the best of both paradigms by adding ACID transactions, schema enforcement, and data governance to open data lake storage through open table formats such as Delta Lake, Apache Iceberg, and Apache Hudi~\cite{Jainaga2023Lakehouse}.
+\textbf{Data lakehouses}~\cite{Armbrust2021Lakehouse} combine the best of both paradigms by adding ACID transactions, schema enforcement, and data governance to open data lake storage through open table formats such as Delta Lake, Apache Iceberg, and Apache Hudi~\cite{Jainaga2023Lakehouse,Pohl2024LakehouseTS}.
 
 
 %% ============================================================
@@ -908,7 +908,7 @@ Graph/specialized surveys (S3, S14, S15) highlight query language fragmentation 
 
 \textbf{Context.} Scalability---the ability to handle growing workloads by adding resources---and elasticity---the ability to dynamically provision and release resources in response to demand fluctuations---are foundational requirements for cloud databases~\cite{Li2024CloudNativeSurvey,Davoudian2018NoSQL}.
 
-\textbf{Current state.} Cloud-native databases like Aurora~\cite{Verbitski2017} and Snowflake~\cite{Dageville2016} achieve storage elasticity through disaggregation, while compute elasticity is provided by auto-scaling mechanisms. Serverless databases~\cite{Muller2020Serverless} push elasticity further by scaling to zero. However, surveys report that true fine-grained elasticity---scaling individual components (e.g., a single query operator) rather than entire instances---remains an open challenge~\cite{Li2024CloudNativeSurvey}.
+\textbf{Current state.} Cloud-native databases like Aurora~\cite{Verbitski2017} and Snowflake~\cite{Dageville2016} achieve storage elasticity through disaggregation, while compute elasticity is provided by auto-scaling and data-replication mechanisms~\cite{Thara2013DaaSPerf}. Serverless databases~\cite{Muller2020Serverless} push elasticity further by scaling to zero. However, surveys report that true fine-grained elasticity---scaling individual components (e.g., a single query operator) rather than entire instances---remains an open challenge~\cite{Li2024CloudNativeSurvey}.
 
 \textbf{Open problems.}
 \begin{itemize}
@@ -941,7 +941,7 @@ Graph/specialized surveys (S3, S14, S15) highlight query language fragmentation 
 
 \textbf{Context.} Performance optimization in cloud databases spans query optimization, indexing, caching, resource allocation, and workload management. Benchmarking provides the empirical foundation for evaluating and comparing systems~\cite{Rabl2019BenchmarkSurvey}.
 
-\textbf{Current state.} Surveys on AI4DB~\cite{Zhou2022AI4DB} and cloud-native databases~\cite{Li2024CloudNativeSurvey} highlight significant progress in learned query optimization~\cite{Marcus2021Bao}, learned indexes~\cite{Kraska2018LearnedIndex}, and automated knob tuning~\cite{Zhang2022CDBTune}. However, cloud-specific factors---network latency, storage disaggregation overhead, multi-tenant interference, and cold-start effects---complicate traditional optimization approaches. Existing benchmarks (TPC-C, TPC-H, YCSB) are criticized for not capturing cloud-specific characteristics~\cite{Rabl2019BenchmarkSurvey}.
+\textbf{Current state.} Surveys on AI4DB~\cite{Zhou2022AI4DB} and cloud-native databases~\cite{Li2024CloudNativeSurvey} highlight significant progress in learned query optimization~\cite{Marcus2021Bao}, learned indexes~\cite{Kraska2018LearnedIndex}, and automated knob tuning~\cite{Zhang2022CDBTune}. However, cloud-specific factors---network latency, storage disaggregation overhead, multi-tenant interference, and cold-start effects---complicate traditional optimization approaches. Existing benchmarks (TPC-C, TPC-H, YCSB) are criticized for not capturing cloud-specific characteristics~\cite{Rabl2019BenchmarkSurvey,Taipalus2024DBMSPerf,Samarta2024SQLNoSQL,Daundasekara2025MultiCloud}.
 
 \textbf{Open problems.}
 \begin{itemize}
@@ -955,9 +955,9 @@ Graph/specialized surveys (S3, S14, S15) highlight query language fragmentation 
 \subsubsection{Security and privacy}
 \label{subsubsec:security}
 
-\textbf{Context.} Cloud databases introduce unique security challenges compared to on-premises systems: shared infrastructure, network-based access, provider trust, and the expanded attack surface of distributed systems~\cite{Fuhrt2010CloudSecurity}.
+\textbf{Context.} Cloud databases introduce unique security challenges compared to on-premises systems: shared infrastructure, network-based access, provider trust, and the expanded attack surface of distributed systems~\cite{Fuhrt2010CloudSecurity,Zubi2009DistSec,Waghmare2015CloudDBSec}.
 
-\textbf{Current state.} Surveys on cloud database security~\cite{Fuhrt2010CloudSecurity,Sanka2022CloudSecSurvey} cover encryption at rest and in transit, access control, audit logging, and vulnerability management. Advanced topics include homomorphic encryption for query processing on encrypted data~\cite{Acar2018HE}, secure multi-party computation, and confidential computing (e.g., Intel SGX enclaves for database operations).
+\textbf{Current state.} Surveys on cloud database security~\cite{Fuhrt2010CloudSecurity,Sanka2022CloudSecSurvey,Ferrari2009DBaaSSec,Munir2015DBaaSSec,Khan2019DaaSAnalytic} cover encryption at rest and in transit, access control, audit logging, and vulnerability management. Advanced topics include homomorphic encryption for query processing on encrypted data~\cite{Acar2018HE,Ravan2013EncQuery}, secure multi-party computation, and confidential computing (e.g., Intel SGX enclaves for database operations).
 
 \textbf{Open problems.}
 \begin{itemize}
@@ -1003,9 +1003,9 @@ Graph/specialized surveys (S3, S14, S15) highlight query language fragmentation 
 \subsubsection{Data model diversity and multi-model integration}
 \label{subsubsec:multimodel}
 
-\textbf{Context.} The proliferation of specialized data models (relational, document, graph, key-value, wide-column, vector, time-series) in cloud environments creates challenges for applications that need to query across multiple models~\cite{Lu2019MultiModel}.
+\textbf{Context.} The proliferation of specialized data models (relational, document, graph, key-value, wide-column, vector, time-series) in cloud environments creates challenges for applications that need to query across multiple models~\cite{Lu2019MultiModel,Baralis2017Geospatial,Mahmood2019NoSQLLog}.
 
-\textbf{Current state.} Multi-model databases like Azure Cosmos DB, ArangoDB, and SurrealDB offer multiple data model interfaces over a single backend. Surveys on NoSQL~\cite{Davoudian2018NoSQL} and multi-model systems~\cite{Lu2019MultiModel} report growing adoption but highlight limitations in cross-model query optimization and unified transaction semantics.
+\textbf{Current state.} Multi-model databases like Azure Cosmos DB, ArangoDB, and SurrealDB offer multiple data model interfaces over a single backend. Surveys on NoSQL~\cite{Davoudian2018NoSQL,Tu2024CassandraMongo,Hendricks2019NoSQLReview,Tripathi2025NoSQLEdu} and multi-model systems~\cite{Lu2019MultiModel} report growing adoption but highlight limitations in cross-model query optimization and unified transaction semantics.
 
 \textbf{Open problems.}
 \begin{itemize}
@@ -1019,7 +1019,7 @@ Graph/specialized surveys (S3, S14, S15) highlight query language fragmentation 
 \subsubsection{Query processing across heterogeneous engines}
 \label{subsubsec:queryprocessing}
 
-\textbf{Context.} Modern cloud data architectures often involve multiple specialized database engines (OLTP, OLAP, graph, search, vector) that must be queried in concert. Federated query processing and data virtualization are key enablers~\cite{Haas2024HTAPSurvey}.
+\textbf{Context.} Modern cloud data architectures often involve multiple specialized database engines (OLTP, OLAP, graph, search, vector) that must be queried in concert. Federated query processing and data virtualization are key enablers~\cite{Haas2024HTAPSurvey,Sheng2025MQRLD}.
 
 \textbf{Current state.} Systems like Presto/Trino, BigQuery Omni, and AWS Lake Formation provide federated query capabilities. HTAP surveys~\cite{Haas2024HTAPSurvey} discuss the challenges of routing queries to appropriate engines. However, cross-engine optimization remains primitive---typically limited to simple predicate pushdown.
 
@@ -1110,7 +1110,7 @@ Graph/specialized surveys (S3, S14, S15) highlight query language fragmentation 
 
 \textbf{Context.} The convergence of AI and databases manifests in two complementary directions: AI4DB (using AI to optimize database systems) and DB4AI (using database techniques to support AI/ML workloads)~\cite{Zhou2022AI4DB}.
 
-\textbf{Current state.} AI4DB surveys~\cite{Zhou2022AI4DB} document progress in learned query optimization~\cite{Marcus2021Bao}, learned indexes~\cite{Kraska2018LearnedIndex}, automated knob tuning~\cite{Zhang2022CDBTune}, learned cardinality estimation, and workload forecasting~\cite{Ma2021LearnedWorkload}. DB4AI encompasses in-database ML (e.g., Google BigQuery ML, Amazon Redshift ML) and optimized data serving for training pipelines.
+\textbf{Current state.} AI4DB surveys~\cite{Zhou2022AI4DB,Dritsas2026MLDB} document progress in learned query optimization~\cite{Marcus2021Bao}, learned indexes~\cite{Kraska2018LearnedIndex,Zhao2026SpatialIndex}, automated knob tuning~\cite{Zhang2022CDBTune}, learned cardinality estimation, and workload forecasting~\cite{Ma2021LearnedWorkload}. DB4AI encompasses in-database ML (e.g., Google BigQuery ML, Amazon Redshift ML) and optimized data serving for training pipelines.
 
 \textbf{Open problems.}
 \begin{itemize}
@@ -1225,7 +1225,7 @@ Complementing the cross-cutting perspective, challenges are organized by the fiv
 
 The design phase encompasses decisions made before a cloud database is deployed, including schema design, data model selection, workload characterization, and compliance architecture.
 
-\textbf{Schema design for cloud-native environments.} Traditional schema design principles (normalization, ER modeling) must be adapted for cloud databases where denormalization may improve performance due to the cost of distributed joins~\cite{Li2024CloudNativeSurvey}. Document and wide-column stores require fundamentally different schema design approaches centered on access patterns rather than entity relationships~\cite{Davoudian2018NoSQL}.
+\textbf{Schema design for cloud-native environments.} Traditional schema design principles (normalization, ER modeling) must be adapted for cloud databases where denormalization may improve performance due to the cost of distributed joins~\cite{Li2024CloudNativeSurvey}. Document and wide-column stores require fundamentally different schema design approaches centered on access patterns rather than entity relationships~\cite{Davoudian2018NoSQL,Mouhibha2025NoSQLDW,Ferreira2023NoSQLMD,Mouhibha2026Clustering}.
 
 \textbf{Workload characterization.} Accurate workload modeling is essential for selecting the right cloud database service, configuring resources, and estimating costs. Surveys on AI4DB~\cite{Zhou2022AI4DB} discuss workload forecasting using ML, but applying these techniques during the design phase---before production data exists---remains challenging.
 
@@ -1297,7 +1297,7 @@ The convergence of cloud databases and large language models (LLMs) represents o
 \subsection{LLM-augmented database interfaces}
 \label{subsec:nl2sql}
 
-Natural language interfaces to databases (NLIDB) have been a long-standing research goal. The advent of LLMs has dramatically improved text-to-SQL accuracy, with systems like DIN-SQL~\cite{Pourreza2023DINSQL}, DAIL-SQL~\cite{Gao2023DAILSQL}, and MAC-SQL~\cite{Wang2024MACSQL} achieving over 85\% execution accuracy on the Spider benchmark~\cite{Yu2018Spider}.
+Natural language interfaces to databases (NLIDB) have been a long-standing research goal~\cite{Affolter2019NLIDB}. The advent of LLMs has dramatically improved text-to-SQL accuracy, with systems like DIN-SQL~\cite{Pourreza2023DINSQL}, DAIL-SQL~\cite{Gao2023DAILSQL}, and MAC-SQL~\cite{Wang2024MACSQL} achieving over 85\% execution accuracy on the Spider benchmark~\cite{Yu2018Spider}.
 
 \textbf{Current capabilities.} LLM-based text-to-SQL systems leverage schema-aware prompting, few-shot in-context learning, and chain-of-thought reasoning to translate natural language queries into SQL. Cloud vendors are integrating these capabilities: Amazon Q for databases, Azure AI integration with SQL, and Google Duet AI for BigQuery.
 

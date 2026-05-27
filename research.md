@@ -192,6 +192,41 @@ DKE requests a ≤100-word bio and a passport-style photo per author.
 
 ---
 
+## Reference integration log (2026-05-27)
+
+The user downloaded ~43 real reference PDFs into `references/` and asked for them to be
+studied and integrated, while the user concurrently removes the AI-generated catalog
+entries. Decisions: **additive now, catalog swap later**; **widen the inclusion window**
+(applied during the deferred catalog rebuild — here, pre-2017 surveys are cited as
+foundational background only).
+
+**Done this pass (additive):**
+- Added **37 verified BibTeX entries** (with DOIs/arXiv ids where available) to
+  `cloud-db-metasurvey.bib` under a "NEWLY VERIFIED REFERENCES" block.
+- Wired **35** of them into the prose (1–2 cites per point) across: DBaaS spectrum (§3.2),
+  data-model landscape (§3.4), lakehouse (§3.5), KE/knowledge-graphs (§2.3), cost (§2.4),
+  and challenges C1 (scalability), C3 (performance/benchmarking), C4 (security), C7 (data
+  models), C8 (heterogeneous QP), C14 (AI–DB), design-phase schema, and the LLM/NLIDB
+  section (§6.1).
+- `Stefanidis2011Prefs` (query preferences — tangential) left in the `.bib` uncited,
+  available if needed.
+- Confirmed the two pre-existing entries that now have real PDFs — `Pan2024VectorDB` (S3)
+  and `Zhou2022AI4DB` (S4, "Database Meets AI") — already carry correct metadata + DOIs;
+  no change needed.
+- Build: clean compile, **no undefined citations**, 74 pages.
+
+**Excluded (off-topic / superseded):** traffic-safety SLR (`S0022437526000800`, mis-download),
+Object-Oriented Databases survey (1995), Tourism Knowledge Graphs SLR (domain-specific).
+
+**Deferred — catalog rebuild (after the user flags the AI-generated entries):**
+1. Replace AI-generated `S1–S58` entries with verified surveys (many of the new ones are
+   catalog-eligible under the widened window).
+2. Update IC3 + abstract/intro window text to the finalized widened range.
+3. Regenerate the three demographic figures (year/topic/venue) and all counts from the
+   rebuilt catalog.
+4. Update the coverage (Table `challenge-coverage`) and synthesis (Table
+   `challenge-synthesis`) `S`-IDs to match.
+
 ## Sources (DKE author guidance)
 - [Guide for authors — Data & Knowledge Engineering (Elsevier/ScienceDirect)](https://www.sciencedirect.com/journal/data-and-knowledge-engineering/publish/guide-for-authors)
 - [DKE journal home / aims & scope](https://www.sciencedirect.com/journal/data-and-knowledge-engineering)

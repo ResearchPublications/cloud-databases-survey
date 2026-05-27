@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.20)  27 MAY 2026 16:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.20)  27 MAY 2026 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1083,9 +1083,9 @@ c-tional databases
 
 
 [5]
-Overfull \hbox (8.03177pt too wide) in paragraph at lines 197--198
+Overfull \hbox (4.76869pt too wide) in paragraph at lines 197--198
 \T1/cmr/m/n/12 back-ups), cre-ates sig-nif-i-cant chal-lenges in cost pre-dic-t
-ion and op-ti-miza-tion [[]]. 
+ion and op-ti-miza-tion [[],
  []
 
 
@@ -1097,14 +1097,14 @@ MySQL/PostgreSQL
  []
 
 
+
+[7]
 Overfull \hbox (5.09097pt too wide) in paragraph at lines 227--228
 \T1/cmr/m/n/12 rep-re-sent cloud-born ap-proaches for trans-ac-tional and Postg
 reSQL-compatible
  []
 
 
-
-[7]
 Overfull \hbox (5.71657pt too wide) in paragraph at lines 237--237
 []|\T1/cmr/bx/n/10.95 Characteristic| 
  []
@@ -1176,23 +1176,17 @@ t-greSQL).
  []
 
 
-Overfull \hbox (4.05104pt too wide) in paragraph at lines 262--263
-[]\T1/cmr/m/n/12 Cloud database ar-chi-tec-tures have evolved through three ma-
-jor paradigms,
- []
-
-
 
 [8
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.307 \end{figure}
-                  ]
-Overfull \hbox (1.01837pt too wide) in paragraph at lines 311--312
-[]\T1/cmr/bx/n/12 Shared-disk (cloud stor-age) \T1/cmr/m/n/12 ar-chi-tec-tures 
-de-cou-ple com-pute from stor-
+l.257 \end{itemize}
+                   ]
+Overfull \hbox (4.05104pt too wide) in paragraph at lines 262--263
+[]\T1/cmr/m/n/12 Cloud database ar-chi-tec-tures have evolved through three ma-
+jor paradigms,
  []
 
 
@@ -1202,9 +1196,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.313 \textbf{Fully disaggregated}
-                                   architectures further decompose the datab...
+l.311 \textbf{Shared-disk (cloud storage)}
+                                           architectures decouple compute fr...
 ]
+Overfull \hbox (1.01837pt too wide) in paragraph at lines 311--312
+[]\T1/cmr/bx/n/12 Shared-disk (cloud stor-age) \T1/cmr/m/n/12 ar-chi-tec-tures 
+de-cou-ple com-pute from stor-
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 327--327
 []|\T1/cmr/bx/n/10.95 Data
  []
@@ -2184,8 +2184,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1479--1479
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1479--1479
-\T1/cmr/m/n/12 Databases: Sus-
+Underfull \hbox (badness 2409) in paragraph at lines 1479--1479
+\T1/cmr/m/n/12 Databases: Sus-tain-
  []
 
 
@@ -2325,12 +2325,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1497--1497
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1499--1499
-[]|\T1/cmr/m/n/12 Cardinality Es-ti-
- []
-
-
-Underfull \hbox (badness 1810) in paragraph at lines 1499--1499
-\T1/cmr/m/n/12 ma-tion: A Learned
+[]|\T1/cmr/m/n/12 Cardinality Es-ti-ma-
  []
 
 
@@ -2369,8 +2364,13 @@ Overfull \hbox (17.93802pt too wide) in paragraph at lines 1503--1503
  []
 
 
-Underfull \hbox (badness 4686) in paragraph at lines 1505--1505
-[]|\T1/cmr/m/n/12 Data In-te-gra-tion in
+Underfull \hbox (badness 10000) in paragraph at lines 1505--1505
+[]|\T1/cmr/m/n/12 Data In-te-gra-tion
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 1505--1505
+\T1/cmr/m/n/12 in the Cloud: Sur-
  []
 
 
@@ -2648,30 +2648,38 @@ e/$[]\T1/cmr/m/n/12 , ac-
 [64]
 
 [65]
-Underfull \hbox (badness 1924) in paragraph at lines 342--345
-[]\T1/cmr/m/n/12 International En-ergy Agency, Data cen-tres and data trans-mis
--
- []
-
-
-Underfull \hbox (badness 1565) in paragraph at lines 342--345
-\T1/cmr/m/n/12 sion net-works, []$\T1/cmtt/m/n/12 https : / / www . iea . org /
- energy-[]system / buildings /
- []
-
-
 
 [66]
 
 [67]
 
 [68]
+Underfull \hbox (badness 1924) in paragraph at lines 530--533
+[]\T1/cmr/m/n/12 International En-ergy Agency, Data cen-tres and data trans-mis
+-
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 530--533
+\T1/cmr/m/n/12 sion net-works, []$\T1/cmtt/m/n/12 https : / / www . iea . org /
+ energy-[]system / buildings /
+ []
+
+
 
 [69]
 
-[70])
+[70]
 
-[71] (./main.aux)
+[71]
+
+[72]
+
+[73]
+
+[74])
+
+[75] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -2680,10 +2688,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C4A959CA20AA922B09EA6333ED5F1979;13258.
  ) 
 Here is how much of TeX's memory you used:
- 36299 strings out of 473190
- 836068 string characters out of 5715799
- 1373428 words of memory out of 5000000
- 58684 multiletter control sequences out of 15000+600000
+ 36447 strings out of 473190
+ 839832 string characters out of 5715799
+ 1374040 words of memory out of 5000000
+ 58792 multiletter control sequences out of 15000+600000
  577673 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,91p,1963b,2324s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2708,10 +2716,10 @@ mf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2025/texmf
 ist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2025/texmf-dis
 t/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2025/texmf-dist/
 fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (71 pages, 587322 bytes).
+Output written on main.pdf (75 pages, 601747 bytes).
 PDF statistics:
- 1190 PDF objects out of 1200 (max. 8388607)
- 1063 compressed objects within 11 object streams
- 266 named destinations out of 1000 (max. 500000)
+ 1311 PDF objects out of 1440 (max. 8388607)
+ 1179 compressed objects within 12 object streams
+ 306 named destinations out of 1000 (max. 500000)
  453 words of extra memory for PDF output out of 10000 (max. 10000000)
 
