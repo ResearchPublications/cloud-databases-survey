@@ -46,7 +46,7 @@ explicit. No scope concern.
 
 | Item | Requirement | Before | Status |
 |---|---|---|---|
-| Article class | `elsarticle`, `elsarticle-num` | Present | ✅ OK |
+| Article class | Elsevier CAS `cas-sc` (single-column) | converted from `elsarticle` | ✅ **Switched** to match the published DKE layout |
 | Keywords | ≤ 7, avoid multi-word | 8 keywords | ✅ **Fixed** → 7 |
 | Highlights | 3–5 bullets, ≤ 85 chars | Absent | ✅ **Added** (as versioned comment block) |
 | Declaration of generative AI | Required | Absent | ✅ **Added** (author must confirm wording) |
@@ -226,6 +226,24 @@ Object-Oriented Databases survey (1995), Tourism Knowledge Graphs SLR (domain-sp
    rebuilt catalog.
 4. Update the coverage (Table `challenge-coverage`) and synthesis (Table
    `challenge-synthesis`) `S`-IDs to match.
+
+## Template conversion (2026-05-27) — Elsevier CAS (`cas-sc`)
+
+Converted the manuscript from `elsarticle` to the **Elsevier CAS single-column class**
+(`cas-sc`) to match the published DKE layout (ARTICLE INFO / ABSTRACT block, ORCID-style
+author marks, highlights page).
+- Frontmatter rewritten with CAS macros: `\title[mode=title]`, `\author[1]{}`,
+  `\cormark`/`\cortext`, `\affiliation{organization=...}`, `\begin{abstract}`,
+  `\begin{highlights}`, `\begin{keywords}`, `\maketitle`.
+- Dropped packages CAS already provides (graphicx, amsmath/symb, booktabs, multirow,
+  array, makecell, xcolor, hyperref); kept the extras (tikz, pgfplots, longtable,
+  tabularx, rotating, pdflscape, enumitem, float, adjustbox).
+- Citations: `\usepackage[numbers]{natbib}` + `\bibliographystyle{elsarticle-num}` →
+  numbered `[n]` style (the bundled `model1-num-names.bst` is not installed).
+- `cas-sc.cls`, `cas-common.sty`, `cas-model2-names.bst` copied into the repo root so it
+  builds anywhere. Note: the `longmktitle` option is **not** used — it triggers a CAS bug
+  (deprecated `\vbox_unpack_clear:N`); the frontmatter fits without it.
+- Clean build: **39 pages**, no errors, no undefined citations.
 
 ## Sources (DKE author guidance)
 - [Guide for authors — Data & Knowledge Engineering (Elsevier/ScienceDirect)](https://www.sciencedirect.com/journal/data-and-knowledge-engineering/publish/guide-for-authors)
