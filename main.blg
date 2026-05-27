@@ -13,45 +13,45 @@ Warning--empty pages in Pavlo2017SelfDriving
 Warning--can't use both volume and number fields in Melnik2020Dremel
 Warning--can't use both volume and number fields in Zhou2024DBot
 Warning--can't use both volume and number fields in Woltmann2023DNNIndex
-You've used 102 entries,
+You've used 103 entries,
             2952 wiz_defined-function locations,
-            1296 strings with 27760 characters,
-and the built_in function-call counts, 37202 in all, are:
-= -- 3380
-> -- 1836
+            1304 strings with 28031 characters,
+and the built_in function-call counts, 37538 in all, are:
+= -- 3408
+> -- 1858
 < -- 23
-+ -- 680
-- -- 578
-* -- 3055
-:= -- 5229
-add.period$ -- 143
-call.type$ -- 102
-change.case$ -- 105
++ -- 688
+- -- 585
+* -- 3086
+:= -- 5282
+add.period$ -- 145
+call.type$ -- 103
+change.case$ -- 106
 chr.to.int$ -- 0
-cite$ -- 112
-duplicate$ -- 1015
-empty$ -- 3700
-format.name$ -- 674
-if$ -- 9195
+cite$ -- 113
+duplicate$ -- 1023
+empty$ -- 3730
+format.name$ -- 682
+if$ -- 9276
 int.to.chr$ -- 0
-int.to.str$ -- 102
-missing$ -- 97
-newline$ -- 355
-num.names$ -- 102
-pop$ -- 586
+int.to.str$ -- 103
+missing$ -- 98
+newline$ -- 359
+num.names$ -- 103
+pop$ -- 589
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2247
+skip$ -- 2267
 stack$ -- 0
-substring$ -- 2195
-swap$ -- 342
+substring$ -- 2204
+swap$ -- 345
 text.length$ -- 23
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 10
-while$ -- 281
-width$ -- 105
-write$ -- 929
+while$ -- 283
+width$ -- 106
+write$ -- 939
 (There were 10 warnings)

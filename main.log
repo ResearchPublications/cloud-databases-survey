@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.20)  27 FEB 2026 15:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.20)  27 MAY 2026 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -950,24 +950,24 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
 
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -994,23 +994,23 @@ e
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-Package hyperref Info: Link coloring OFF on input line 49.
+Package hyperref Info: Link coloring OFF on input line 52.
 (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 
-Overfull \hbox (2.35402pt too wide) in paragraph at lines 66--68
-\T1/cmr/m/n/12 technology---spanning cloud-native ar-chi-tec-tures, hy-brid tra
-ns-ac-tional and/or
+Overfull \hbox (1.41415pt too wide) in paragraph at lines 69--71
+\T1/cmr/m/n/12 op-ti-miza-tion (AI4DB), data lake-houses, NoSQL/NewSQL sys-tems
+, and edge--
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 74.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 89.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 89.
 
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1019,32 +1019,32 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 74.
+(hyperref)                removing `\<def>-command' on input line 89.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\cnotenum' on input line 74.
+(hyperref)                removing `\cnotenum' on input line 89.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 74.
+(hyperref)                removing `\<def>-command' on input line 89.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@corref' on input line 74.
+(hyperref)                removing `\@corref' on input line 89.
 
 [1
 
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-Overfull \hbox (5.62277pt too wide) in paragraph at lines 82--83
+Overfull \hbox (5.62277pt too wide) in paragraph at lines 97--98
 \T1/cmr/m/n/12 (AWS), Mi-crosoft Azure, Google Cloud Plat-form (GCP), and Al-ib
 aba Cloud---
  []
 
 
-Overfull \hbox (6.00858pt too wide) in paragraph at lines 84--85
+Overfull \hbox (6.00858pt too wide) in paragraph at lines 99--100
 \T1/cmr/m/n/12 top-ics: cloud-native database ar-chi-tec-tures [[]], hy-brid tr
 ans-ac-tional/analytical
  []
@@ -1052,13 +1052,13 @@ ans-ac-tional/analytical
 
 
 [2]
-Overfull \hbox (0.37909pt too wide) in paragraph at lines 94--95
+Overfull \hbox (0.37909pt too wide) in paragraph at lines 109--110
 []\T1/cmr/bx/n/12 Systematic iden-ti-fi-ca-tion and clas-si-fi-ca-tion. \T1/cmr
 /m/n/12 Eight dig-i-tal li-braries
  []
 
 
-Overfull \hbox (6.20453pt too wide) in paragraph at lines 94--95
+Overfull \hbox (6.20453pt too wide) in paragraph at lines 109--110
 \T1/cmr/m/n/12 are sys-tem-at-i-cally searched, yield-ing 58 sur-vey pa-pers on
  cloud databases
  []
@@ -1073,9 +1073,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.149 
+l.164 
       ]
-Overfull \hbox (10.7035pt too wide) in paragraph at lines 160--161
+Overfull \hbox (10.7035pt too wide) in paragraph at lines 175--176
 []\T1/cmr/m/n/12 Modern data ar-chi-tec-tures have evolved from sim-ple trans-a
 c-tional databases
  []
@@ -1083,7 +1083,7 @@ c-tional databases
 
 
 [5]
-Overfull \hbox (8.03177pt too wide) in paragraph at lines 182--183
+Overfull \hbox (8.03177pt too wide) in paragraph at lines 197--198
 \T1/cmr/m/n/12 back-ups), cre-ates sig-nif-i-cant chal-lenges in cost pre-dic-t
 ion and op-ti-miza-tion [[]]. 
  []
@@ -1091,13 +1091,13 @@ ion and op-ti-miza-tion [[]].
 
 
 [6]
-Overfull \hbox (7.92363pt too wide) in paragraph at lines 210--211
+Overfull \hbox (7.92363pt too wide) in paragraph at lines 225--226
 \T1/cmr/m/n/12 pli-fies this ap-proach: it re-implements the stor-age layer of 
 MySQL/PostgreSQL
  []
 
 
-Overfull \hbox (5.09097pt too wide) in paragraph at lines 212--213
+Overfull \hbox (5.09097pt too wide) in paragraph at lines 227--228
 \T1/cmr/m/n/12 rep-re-sent cloud-born ap-proaches for trans-ac-tional and Postg
 reSQL-compatible
  []
@@ -1105,78 +1105,78 @@ reSQL-compatible
 
 
 [7]
-Overfull \hbox (5.71657pt too wide) in paragraph at lines 222--222
+Overfull \hbox (5.71657pt too wide) in paragraph at lines 237--237
 []|\T1/cmr/bx/n/10.95 Characteristic| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--224
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
 []|\T1/cmr/m/n/10.95 Traditional DBMS
  []
 
 
-Underfull \hbox (badness 5726) in paragraph at lines 224--224
+Underfull \hbox (badness 5726) in paragraph at lines 239--239
 \T1/cmr/m/n/10.95 de-ployed on cloud
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--225
+Underfull \hbox (badness 10000) in paragraph at lines 240--240
 []|\T1/cmr/m/n/10.95 Monolithic, tightly
  []
 
 
-Underfull \hbox (badness 3471) in paragraph at lines 225--225
+Underfull \hbox (badness 3471) in paragraph at lines 240--240
 []|\T1/cmr/m/n/10.95 Disaggregated com-
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 225--226
+Underfull \hbox (badness 1147) in paragraph at lines 240--241
 []|\T1/cmr/m/n/10.95 Fully dis-ag-gre-gated,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--226
+Underfull \hbox (badness 10000) in paragraph at lines 241--241
 []|\T1/cmr/m/n/10.95 Automatic scal-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--228
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
 []|\T1/cmr/bx/n/10.95 State shar-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
 []|\T1/cmr/m/n/10.95 Disaggregated,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []|\T1/cmr/bx/n/10.95 Multi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []|\T1/cmr/m/n/10.95 Engine-level iso-la-
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 229--230
+Underfull \hbox (badness 2818) in paragraph at lines 244--245
 []|\T1/cmr/m/n/10.95 Native multi-tenant
  []
 
 
-Overfull \hbox (27.8858pt too wide) in paragraph at lines 220--232
+Overfull \hbox (27.8858pt too wide) in paragraph at lines 235--247
  [][] 
  []
 
 
-Overfull \hbox (11.96153pt too wide) in paragraph at lines 239--240
+Overfull \hbox (11.96153pt too wide) in paragraph at lines 254--255
 \T1/cmr/m/n/12 com-mer-cial en-gines (e.g., Ama-zon RDS, Azure Database for Pos
 t-greSQL). 
  []
 
 
-Overfull \hbox (4.05104pt too wide) in paragraph at lines 247--248
+Overfull \hbox (4.05104pt too wide) in paragraph at lines 262--263
 []\T1/cmr/m/n/12 Cloud database ar-chi-tec-tures have evolved through three ma-
 jor paradigms,
  []
@@ -1188,9 +1188,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.292 \end{figure}
+l.307 \end{figure}
                   ]
-Overfull \hbox (1.01837pt too wide) in paragraph at lines 296--297
+Overfull \hbox (1.01837pt too wide) in paragraph at lines 311--312
 []\T1/cmr/bx/n/12 Shared-disk (cloud stor-age) \T1/cmr/m/n/12 ar-chi-tec-tures 
 de-cou-ple com-pute from stor-
  []
@@ -1202,167 +1202,167 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.298 \textbf{Fully disaggregated}
+l.313 \textbf{Fully disaggregated}
                                    architectures further decompose the datab...
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 312--312
+Underfull \hbox (badness 10000) in paragraph at lines 327--327
 []|\T1/cmr/bx/n/10.95 Data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--312
+Underfull \hbox (badness 10000) in paragraph at lines 327--327
 []|\T1/cmr/bx/n/10.95 Cloud Ex-am-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--314
+Underfull \hbox (badness 10000) in paragraph at lines 329--329
 []|\T1/cmr/m/n/10.95 ACID, SQL,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--314
+Underfull \hbox (badness 10000) in paragraph at lines 329--329
 []|\T1/cmr/m/n/10.95 Aurora, Cloud
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 314--315
+Underfull \hbox (badness 2042) in paragraph at lines 329--330
 []|\T1/cmr/m/n/10.95 OLTP, ERP, fi-nan-cial
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--316
+Underfull \hbox (badness 10000) in paragraph at lines 331--331
 []|\T1/cmr/m/n/10.95 Schema flex-i-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--316
+Underfull \hbox (badness 10000) in paragraph at lines 331--331
 \T1/cmr/m/n/10.95 bil-ity, nested
  []
 
 
-Underfull \hbox (badness 2735) in paragraph at lines 316--316
+Underfull \hbox (badness 2735) in paragraph at lines 331--331
 []|\T1/cmr/m/n/10.95 MongoDB At-las,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--317
+Underfull \hbox (badness 10000) in paragraph at lines 331--332
 []|\T1/cmr/m/n/10.95 Content man-age-ment,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--318
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
 []|\T1/cmr/m/n/10.95 Ultra-low la-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--318
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
 \T1/cmr/m/n/10.95 tency, high
  []
 
 
-Underfull \hbox (badness 3861) in paragraph at lines 318--318
+Underfull \hbox (badness 3861) in paragraph at lines 333--333
 []|\T1/cmr/m/n/10.95 DynamoDB, Re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--320
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
 []|\T1/cmr/m/n/10.95 Wide-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--320
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
 []|\T1/cmr/m/n/10.95 High write
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--320
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
 \T1/cmr/m/n/10.95 through-put,
  []
 
 
-Underfull \hbox (badness 4024) in paragraph at lines 320--321
+Underfull \hbox (badness 4024) in paragraph at lines 335--336
 []|\T1/cmr/m/n/10.95 IoT, teleme-try, event
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--322
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
 []|\T1/cmr/m/n/10.95 Relationship
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--322
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
 []|\T1/cmr/m/n/10.95 Neptune, Neo4j
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--322
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
 \T1/cmr/m/n/10.95 Aura, Cos-mos
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
 []|\T1/cmr/m/n/10.95 Similarity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
 \T1/cmr/m/n/10.95 search, ANN
  []
 
 
-Underfull \hbox (badness 2435) in paragraph at lines 324--324
+Underfull \hbox (badness 2435) in paragraph at lines 339--339
 []|\T1/cmr/m/n/10.95 Pinecone, Weav-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
 \T1/cmr/m/n/10.95 i-ate, Mil-vus,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
 []|\T1/cmr/m/n/10.95 Temporal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
 []|\T1/cmr/m/n/10.95 TimescaleDB,
  []
 
 
-Underfull \hbox (badness 4454) in paragraph at lines 326--326
+Underfull \hbox (badness 4454) in paragraph at lines 341--341
 \T1/cmr/m/n/10.95 In-fluxDB Cloud,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
 []|\T1/cmr/m/n/10.95 Monitoring, fi-nan-cial
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
+Underfull \hbox (badness 10000) in paragraph at lines 343--343
 []|\T1/cmr/m/n/10.95 Multi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
+Underfull \hbox (badness 10000) in paragraph at lines 343--343
 []|\T1/cmr/m/n/10.95 Cosmos DB,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
+Underfull \hbox (badness 10000) in paragraph at lines 343--343
 \T1/cmr/m/n/10.95 ArangoDB, Sur-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
 []|\T1/cmr/m/n/10.95 Polyglot per-sis-tence,
  []
 
 
 
 [10]
-Overfull \hbox (21.69293pt too wide) in paragraph at lines 379--380
+Overfull \hbox (21.69293pt too wide) in paragraph at lines 394--395
  [][] 
  []
 
@@ -1373,7 +1373,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.382 \end{figure}
+l.397 \end{figure}
                   ]
 
 [12
@@ -1381,38 +1381,38 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.398 
+l.413 
       ]
-Underfull \hbox (badness 10000) in paragraph at lines 433--433
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
 []\T1/cmtt/m/n/10.95 ("cloud database" OR "cloud-native database" OR "DBaaS" OR
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--433
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
 \T1/cmtt/m/n/10.95 "database-as-a-service" OR "serverless database" OR "HTAP" O
 R
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--433
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
 \T1/cmtt/m/n/10.95 "NewSQL" OR "data lakehouse" OR "vector database" OR "AI4DB"
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--433
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
 \T1/cmtt/m/n/10.95 OR "learned index" OR "NoSQL" OR "distributed database" OR
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--433
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
 \T1/cmtt/m/n/10.95 "multi-model database" OR "graph database" OR "edge database
 "
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--433
+Underfull \hbox (badness 10000) in paragraph at lines 448--448
 \T1/cmtt/m/n/10.95 ("survey" OR "review" OR "tutorial" OR "taxonomy" OR "system
 atic"
  []
@@ -1424,7 +1424,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.465 \end{table}
+l.480 \end{table}
                  ]
 
 [14
@@ -1432,9 +1432,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.492 
+l.507 
       ]
-Overfull \hbox (8.63902pt too wide) in paragraph at lines 527--528
+Overfull \hbox (8.63902pt too wide) in paragraph at lines 542--543
  [][] 
  []
 
@@ -1445,9 +1445,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.531 
+l.546 
       ]
-Package pgfplots info on input line 553: Using 'lua backend=false' for axis: x 
+Package pgfplots info on input line 566: Using 'lua backend=false' for axis: x 
 coord trafo unsupported.
 
 
@@ -1456,9 +1456,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.560 
+l.573 
       ]
-Package pgfplots info on input line 600: Using 'lua backend=false' for axis: x 
+Package pgfplots info on input line 611: Using 'lua backend=false' for axis: x 
 coord trafo unsupported.
 
 
@@ -1467,9 +1467,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.624 
+l.635 
       ]
-Overfull \hbox (5.22154pt too wide) in paragraph at lines 625--626
+Overfull \hbox (5.22154pt too wide) in paragraph at lines 636--637
 \T1/cmr/m/n/12 count for the ma-jor-ity, fol-lowed by con-fer-ence pro-ceed-ing
 s and arXiv preprints. 
  []
@@ -1481,41 +1481,49 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.668 
-      
+l.672 \textbf{Construct validity.}
+                                   The search string and digital-library sel...
+
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.668 
-      ]
-Overfull \hbox (8.73853pt too wide) in paragraph at lines 698--699
+l.672 \textbf{Construct validity.}
+                                   The search string and digital-library sel...
+]
+Overfull \hbox (21.2144pt too wide) in paragraph at lines 678--679
+[]\T1/cmr/bx/n/12 Conclusion va-lid-ity. \T1/cmr/m/n/12 The chal-lenge tax-on-o
+my and the con-sen-sus/divergence
+ []
+
+
+Overfull \hbox (8.73853pt too wide) in paragraph at lines 718--719
  [][] 
  []
 
 
-Overfull \hbox (3.10254pt too wide) in paragraph at lines 706--707
+
+[19]
+Overfull \hbox (3.10254pt too wide) in paragraph at lines 726--727
 []\T1/cmr/m/n/12 Eighteen cross-cutting chal-lenges that re-cur across mul-ti-p
 le cloud database
  []
 
 
 
-[19
+[20
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.711 \begin{landscape}
+l.731 \begin{landscape}
                        ]
-
-[20]
-Overfull \hbox (5.60092pt too wide) in paragraph at lines 718--718
+Overfull \hbox (5.60092pt too wide) in paragraph at lines 738--738
 []\T1/cmr/m/n/10.95 Benchmarking 
  []
 
 
-Overfull \hbox (5.60092pt too wide) in paragraph at lines 723--723
+Overfull \hbox (5.60092pt too wide) in paragraph at lines 743--743
 []\T1/cmr/m/n/10.95 Benchmarking 
  []
 
@@ -1524,47 +1532,47 @@ Overfull \hbox (5.60092pt too wide) in paragraph at lines 723--723
 ] [22]
 
 [23]
-Overfull \hbox (73.697pt too wide) in alignment at lines 772--778
+Overfull \hbox (73.697pt too wide) in alignment at lines 792--798
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (73.697pt too wide) in alignment at lines 778--783
+Overfull \hbox (73.697pt too wide) in alignment at lines 798--803
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (73.697pt too wide) in alignment at lines 783--786
+Overfull \hbox (73.697pt too wide) in alignment at lines 803--806
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (73.697pt too wide) in alignment at lines 786--788
+Overfull \hbox (73.697pt too wide) in alignment at lines 806--808
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (10.56981pt too wide) in paragraph at lines 795--795
+Overfull \hbox (10.56981pt too wide) in paragraph at lines 815--815
 \T1/cmr/m/n/10.95 CAP/PACELC|  
  []
 
 
-Overfull \hbox (6.11713pt too wide) in paragraph at lines 826--826
+Overfull \hbox (6.11713pt too wide) in paragraph at lines 846--846
 []|\T1/cmr/m/n/10.95 Heterogeneous 
  []
 
 
-Overfull \hbox (2.79922pt too wide) in paragraph at lines 873--873
+Overfull \hbox (2.79922pt too wide) in paragraph at lines 893--893
 []|\T1/cmr/m/n/10.95 Sustainability|  
  []
 
 
-Overfull \hbox (13.01842pt too wide) in paragraph at lines 878--878
+Overfull \hbox (13.01842pt too wide) in paragraph at lines 898--898
 []|\T1/cmr/m/n/10.95 Standardization 
  []
 
 
-Overfull \hbox (73.697pt too wide) in alignment at lines 788--882
+Overfull \hbox (73.697pt too wide) in alignment at lines 808--902
  [] [] [] [] [] 
  []
 
@@ -1574,19 +1582,19 @@ Overfull \hbox (73.697pt too wide) in alignment at lines 788--882
 ] [25] [26] [27] [28]
 
 [29]
-Overfull \hbox (6.82237pt too wide) in paragraph at lines 897--898
+Overfull \hbox (6.82237pt too wide) in paragraph at lines 917--918
 []\T1/cmr/m/n/12 Predictive autoscaling---anticipating work-load spikes be-fore
  they occur---
  []
 
 
-Overfull \hbox (8.42343pt too wide) in paragraph at lines 898--899
+Overfull \hbox (8.42343pt too wide) in paragraph at lines 918--919
 []\T1/cmr/m/n/12 Cross-component elas-tic-ity in dis-ag-gre-gated ar-chi-tec-tu
 res (in-de-pen-dently
  []
 
 
-Overfull \hbox (6.72658pt too wide) in paragraph at lines 898--899
+Overfull \hbox (6.72658pt too wide) in paragraph at lines 918--919
 \T1/cmr/m/n/12 scal-ing query pro-cess-ing, trans-ac-tion man-age-ment, and sto
 r-age) is poorly
  []
@@ -1596,7 +1604,7 @@ r-age) is poorly
 [30
 
 ]
-Overfull \hbox (0.21802pt too wide) in paragraph at lines 924--925
+Overfull \hbox (0.21802pt too wide) in paragraph at lines 944--945
 \T1/cmr/m/n/12 dexes [[]], and au-to-mated knob tun-ing [[]]. How-ever, cloud-s
 pecific factors---
  []
@@ -1604,7 +1612,7 @@ pecific factors---
 
 
 [31]
-Overfull \hbox (1.63628pt too wide) in paragraph at lines 946--947
+Overfull \hbox (1.63628pt too wide) in paragraph at lines 966--967
 \T1/cmr/m/n/12 provider) are dif-fi-cult to mit-i-gate with-out sig-nif-i-cant 
 per-for-mance penal-
  []
@@ -1612,13 +1620,13 @@ per-for-mance penal-
 
 
 [32]
-Overfull \hbox (4.24236pt too wide) in paragraph at lines 962--963
+Overfull \hbox (4.24236pt too wide) in paragraph at lines 982--983
 []\T1/cmr/m/n/12 Multi-objective op-ti-miza-tion (cost vs. per-for-mance vs. co
 n-sis-tency) lacks
  []
 
 
-Overfull \hbox (18.38719pt too wide) in paragraph at lines 967--968
+Overfull \hbox (18.38719pt too wide) in paragraph at lines 987--988
 []\T1/cmr/bx/n/12 Research di-rec-tions. \T1/cmr/m/n/12 De-vel-op-ing for-mal \
 T1/cmr/m/it/12 cost knowl-edge mod-els\T1/cmr/m/n/12 ---ontologies
  []
@@ -1626,13 +1634,13 @@ T1/cmr/m/it/12 cost knowl-edge mod-els\T1/cmr/m/n/12 ---ontologies
 
 
 [33]
-Overfull \hbox (9.06723pt too wide) in paragraph at lines 988--989
+Overfull \hbox (9.06723pt too wide) in paragraph at lines 1008--1009
 []\T1/cmr/bx/n/12 Current state. \T1/cmr/m/n/12 Multi-model databases like Azur
 e Cos-mos DB, ArangoDB,
  []
 
 
-Overfull \hbox (1.04878pt too wide) in paragraph at lines 993--994
+Overfull \hbox (1.04878pt too wide) in paragraph at lines 1013--1014
 []\T1/cmr/m/n/12 Cross-model query optimization---optimizing queries that com-b
 ine, e.g.,
  []
@@ -1640,19 +1648,19 @@ ine, e.g.,
 
 
 [34]
-Overfull \hbox (2.35423pt too wide) in paragraph at lines 1013--1014
+Overfull \hbox (2.35423pt too wide) in paragraph at lines 1033--1034
 \T1/cmr/m/n/12 can pro-vide a prin-ci-pled frame-work for query-ing het-ero-ge-
 neous cloud database
  []
 
 
-Overfull \hbox (23.10736pt too wide) in paragraph at lines 1018--1019
+Overfull \hbox (23.10736pt too wide) in paragraph at lines 1038--1039
 \T1/cmr/m/n/12 in-de-pen-dently scal-able layers---is a defin-ing ar-chi-tec-tu
 ral trend in cloud databases.
  []
 
 
-Overfull \hbox (3.73251pt too wide) in paragraph at lines 1020--1021
+Overfull \hbox (3.73251pt too wide) in paragraph at lines 1040--1041
 []\T1/cmr/bx/n/12 Current state. \T1/cmr/m/n/12 Au-rora's in-no-va-tion of mak-
 ing the redo log the ``database''
  []
@@ -1660,7 +1668,7 @@ ing the redo log the ``database''
 
 
 [35]
-Overfull \hbox (2.75345pt too wide) in paragraph at lines 1048--1049
+Overfull \hbox (2.75345pt too wide) in paragraph at lines 1068--1069
 []\T1/cmr/bx/n/12 Current state. \T1/cmr/m/n/12 Mod-ern cloud databases achieve
  high avail-abil-ity through
  []
@@ -1670,19 +1678,19 @@ Overfull \hbox (2.75345pt too wide) in paragraph at lines 1048--1049
 [36]
 
 [37]
-Overfull \hbox (4.92989pt too wide) in paragraph at lines 1097--1098
+Overfull \hbox (4.92989pt too wide) in paragraph at lines 1117--1118
 []\T1/cmr/m/n/12 Deploying learned com-po-nents in pro-duc-tion cloud databases
  with safety
  []
 
 
-Overfull \hbox (5.99301pt too wide) in paragraph at lines 1103--1104
+Overfull \hbox (5.99301pt too wide) in paragraph at lines 1123--1124
 []\T1/cmr/bx/n/12 Research di-rec-tions. \T1/cmr/m/it/12 Knowl-edge en-gi-neer-
 ing for self-driving databases\T1/cmr/m/n/12 ---
  []
 
 
-Overfull \hbox (3.7247pt too wide) in paragraph at lines 1103--1104
+Overfull \hbox (3.7247pt too wide) in paragraph at lines 1123--1124
 \T1/cmr/m/n/12 integrating do-main knowl-edge about database in-ter-nals with l
 earned models---
  []
@@ -1690,7 +1698,7 @@ earned models---
 
 
 [38]
-Overfull \hbox (16.28531pt too wide) in paragraph at lines 1116--1117
+Overfull \hbox (16.28531pt too wide) in paragraph at lines 1136--1137
 []\T1/cmr/m/n/12 Full-stack au-ton-omy: in-te-grat-ing self-tuning, self-healin
 g, and self-securing
  []
@@ -1698,7 +1706,7 @@ g, and self-securing
 
 
 [39]
-Overfull \hbox (6.43095pt too wide) in paragraph at lines 1146--1147
+Overfull \hbox (6.43095pt too wide) in paragraph at lines 1166--1167
 []\T1/cmr/m/n/12 Benchmarking frame-works that in-clude en-ergy and car-bon met
 -rics along-
  []
@@ -1706,7 +1714,7 @@ Overfull \hbox (6.43095pt too wide) in paragraph at lines 1146--1147
 
 
 [40]
-Overfull \hbox (110.1582pt too wide) in paragraph at lines 1198--1199
+Overfull \hbox (110.1582pt too wide) in paragraph at lines 1218--1219
  [][] 
  []
 
@@ -1717,28 +1725,28 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1212 \textbf{Data model selection.}
+l.1232 \textbf{Data model selection.}
                                       Choosing between relational, document,...
 ]
-Overfull \hbox (4.16151pt too wide) in paragraph at lines 1214--1215
+Overfull \hbox (4.16151pt too wide) in paragraph at lines 1234--1235
 []\T1/cmr/bx/n/12 Compliance-by-design. \T1/cmr/m/n/12 In-cor-po-rat-ing reg-u-
 la-tory re-quire-ments (GDPR,
  []
 
 
-Overfull \hbox (15.61626pt too wide) in paragraph at lines 1214--1215
+Overfull \hbox (15.61626pt too wide) in paragraph at lines 1234--1235
 \T1/cmr/m/n/12 HIPAA, data sovereignty) into the ini-tial database de-sign rath
 er than retrofitting
  []
 
 
-Overfull \hbox (1.81213pt too wide) in paragraph at lines 1234--1235
+Overfull \hbox (1.81213pt too wide) in paragraph at lines 1254--1255
 []\T1/cmr/bx/n/12 Monitoring and ob-serv-abil-ity. \T1/cmr/m/n/12 Cloud databas
 es gen-er-ate vast amounts
  []
 
 
-Overfull \hbox (18.69127pt too wide) in paragraph at lines 1234--1235
+Overfull \hbox (18.69127pt too wide) in paragraph at lines 1254--1255
 \T1/cmr/m/n/12 events across dis-tributed com-po-nents [[]]. Sur-veys on au-ton
 omous databases [[]]
  []
@@ -1746,13 +1754,13 @@ omous databases [[]]
 
 
 [42]
-Overfull \hbox (10.90361pt too wide) in paragraph at lines 1247--1248
+Overfull \hbox (10.90361pt too wide) in paragraph at lines 1267--1268
 \T1/cmr/m/n/12 learn from work-load his-tory to gen-er-ate bet-ter query plans 
 rep-re-sent a paradigm
  []
 
 
-Overfull \hbox (3.75046pt too wide) in paragraph at lines 1249--1250
+Overfull \hbox (3.75046pt too wide) in paragraph at lines 1269--1270
 []\T1/cmr/bx/n/12 Automated in-dex and ma-te-ri-al-ized view se-lec-tion. \T1/c
 mr/m/n/12 Cloud databases
  []
@@ -1762,7 +1770,7 @@ mr/m/n/12 Cloud databases
 [43]
 
 [44]
-Overfull \hbox (3.86171pt too wide) in paragraph at lines 1282--1283
+Overfull \hbox (3.86171pt too wide) in paragraph at lines 1302--1303
 []\T1/cmr/bx/n/12 Current ca-pa-bil-i-ties. \T1/cmr/m/n/12 LLM-based text-to-SQ
 L sys-tems lever-age schema-
  []
@@ -1772,7 +1780,7 @@ L sys-tems lever-age schema-
 [45]
 
 [46]
-Overfull \hbox (6.33519pt too wide) in paragraph at lines 1351--1352
+Overfull \hbox (6.33519pt too wide) in paragraph at lines 1368--1369
 []\T1/cmr/m/n/12 This pa-per has pre-sented the first sys-tem-atic meta-survey 
 of cloud database
  []
@@ -1780,13 +1788,13 @@ of cloud database
 
 
 [47]
-Overfull \hbox (2.51527pt too wide) in paragraph at lines 1359--1360
+Overfull \hbox (2.51527pt too wide) in paragraph at lines 1376--1377
 []\T1/cmr/m/n/12 Fourth, from a knowl-edge en-gi-neer-ing per-spec-tive, cloud 
 databases present
  []
 
 
-Overfull \hbox (20.95921pt too wide) in paragraph at lines 1368--1369
+Overfull \hbox (20.95921pt too wide) in paragraph at lines 1385--1386
 []\T1/cmr/bx/n/12 Medium-term: \T1/cmr/m/n/12 build-ing au-tonomous databases w
 ith ex-plain-able decision-
  []
@@ -1796,448 +1804,293 @@ ith ex-plain-able decision-
 [48]
 
 [49]
-Underfull \hbox (badness 10000) in paragraph at lines 1395--1395
+Underfull \hbox (badness 10000) in paragraph at lines 1415--1415
 []|\T1/cmr/bx/n/12 Title (Ab-bre-vi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1395--1395
+Underfull \hbox (badness 10000) in paragraph at lines 1415--1415
 []|\T1/cmr/bx/n/12 Primary
  []
 
 
-Underfull \hbox (badness 3189) in paragraph at lines 1395--1396
+Underfull \hbox (badness 3189) in paragraph at lines 1415--1416
 []|\T1/cmr/bx/n/12 Lifecycle Phases Cov-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
-[]|\T1/cmr/bx/n/12 Title (Ab-bre-vi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
-[]|\T1/cmr/bx/n/12 Primary
- []
-
-
-Underfull \hbox (badness 3189) in paragraph at lines 1399--1400
-[]|\T1/cmr/bx/n/12 Lifecycle Phases Cov-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1407--1407
-[]|\T1/cmr/m/n/12 Cloud-Native
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1407--1407
-[]|\T1/cmr/m/n/12 Cloud-Native
- []
-
-
-Underfull \hbox (badness 2318) in paragraph at lines 1407--1408
-[]|\T1/cmr/m/n/12 Design, De-ploy, Op-er-ate,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1409--1409
-[]|\T1/cmr/m/n/12 HTAP Sys-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1411--1411
-[]|\T1/cmr/m/n/12 Survey of Vec-tor
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1411--1411
-\T1/cmr/m/n/12 Database Man-age-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1411--1411
-[]|\T1/cmr/m/n/12 Vector
- []
-
-
-Underfull \hbox (badness 4303) in paragraph at lines 1411--1411
-[]|\T1/cmr/m/n/12 VLDB Jour-
- []
-
-
-Underfull \hbox (badness 2680) in paragraph at lines 1413--1413
-[]|\T1/cmr/m/n/12 AI Meets Database:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1415--1415
-[]|\T1/cmr/m/n/12 Edge and Fog
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1415--1415
-[]|\T1/cmr/m/n/12 Edge/Fog
- []
-
-
-Underfull \hbox (badness 2285) in paragraph at lines 1415--1415
-[]|\T1/cmr/m/n/12 ACM Comp.
- []
-
-
-Underfull \hbox (badness 1418) in paragraph at lines 1417--1417
-[]|\T1/cmr/m/n/12 Data Lake-house: A
- []
-
-
-Underfull \hbox (badness 4686) in paragraph at lines 1417--1417
-\T1/cmr/m/n/12 Sur-vey and Ex-per-i-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1417--1417
-[]|\T1/cmr/m/n/12 Data Lake-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1419--1419
-[]|\T1/cmr/m/n/12 Survey on NoSQL
+[]|\T1/cmr/bx/n/12 Title (Ab-bre-vi-
  []
 
 
-Overfull \hbox (17.93802pt too wide) in paragraph at lines 1419--1419
-[]|\T1/cmr/m/n/12 NoSQL/NewSQL| 
+Underfull \hbox (badness 10000) in paragraph at lines 1419--1419
+[]|\T1/cmr/bx/n/12 Primary
  []
 
 
-Underfull \hbox (badness 2285) in paragraph at lines 1419--1419
-[]|\T1/cmr/m/n/12 ACM Comp.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1421--1421
-[]|\T1/cmr/m/n/12 NoSQL Database:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1421--1421
-\T1/cmr/m/n/12 A Com-pre-hen-sive
- []
-
-
-Overfull \hbox (17.93802pt too wide) in paragraph at lines 1421--1421
-[]|\T1/cmr/m/n/12 NoSQL/NewSQL| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1423--1423
-\T1/cmr/m/n/12 age-ment: Sur-vey
- []
-
-
-Underfull \hbox (badness 1817) in paragraph at lines 1423--1423
-\T1/cmr/m/n/12 and Re-search Di-rec-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1423--1423
-[]|\T1/cmr/m/n/12 Serverless
- []
-
-
-Underfull \hbox (badness 1163) in paragraph at lines 1425--1425
-\T1/cmr/m/n/12 miza-tion: A Sur-vey
- []
-
-
-Overfull \hbox (12.22556pt too wide) in paragraph at lines 1425--1425
-[]|\T1/cmr/m/n/12 AI4DB/Learned
+Underfull \hbox (badness 3189) in paragraph at lines 1419--1420
+[]|\T1/cmr/bx/n/12 Lifecycle Phases Cov-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1427--1427
-[]|\T1/cmr/m/n/12 Learned In-dexes:
+[]|\T1/cmr/m/n/12 Cloud-Native
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1427--1427
-\T1/cmr/m/n/12 A Com-pre-hen-sive
+[]|\T1/cmr/m/n/12 Cloud-Native
  []
 
 
-Overfull \hbox (12.22556pt too wide) in paragraph at lines 1427--1427
-[]|\T1/cmr/m/n/12 AI4DB/Learned
- []
-
-
-Underfull \hbox (badness 4303) in paragraph at lines 1427--1427
-[]|\T1/cmr/m/n/12 VLDB Jour-
- []
-
-
-Underfull \hbox (badness 1577) in paragraph at lines 1429--1429
-[]|\T1/cmr/m/n/12 Cloud Database Mi-
+Underfull \hbox (badness 2318) in paragraph at lines 1427--1428
+[]|\T1/cmr/m/n/12 Design, De-ploy, Op-er-ate,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1429--1429
-[]|\T1/cmr/m/n/12 J. Cloud
+[]|\T1/cmr/m/n/12 HTAP Sys-
  []
 
 
-Overfull \hbox (15.17471pt too wide) in paragraph at lines 1431--1431
-[]|\T1/cmr/m/n/12 Security/Privacy| 
+Underfull \hbox (badness 10000) in paragraph at lines 1431--1431
+[]|\T1/cmr/m/n/12 Survey of Vec-tor
  []
 
 
-Underfull \hbox (badness 6220) in paragraph at lines 1433--1433
-\T1/cmr/m/n/12 age-ment: Con-cepts
+Underfull \hbox (badness 10000) in paragraph at lines 1431--1431
+\T1/cmr/m/n/12 Database Man-age-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1433--1433
-[]|\T1/cmr/m/n/12 Graph
+Underfull \hbox (badness 10000) in paragraph at lines 1431--1431
+[]|\T1/cmr/m/n/12 Vector
  []
 
 
-Underfull \hbox (badness 2285) in paragraph at lines 1433--1433
-[]|\T1/cmr/m/n/12 ACM Comp.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1435--1435
-[]|\T1/cmr/m/n/12 Multi-Model Data
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1435--1435
-[]|\T1/cmr/m/n/12 Multi-Model
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1437--1437
-\T1/cmr/m/n/12 Man-age-ment Sys-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1437--1437
-[]|\T1/cmr/m/n/12 Autonomous
- []
-
-
-Underfull \hbox (badness 6477) in paragraph at lines 1439--1439
-[]|\T1/cmr/m/n/12 Automatic Database
- []
-
-
-Overfull \hbox (7.1698pt too wide) in paragraph at lines 1439--1439
-[]|\T1/cmr/m/n/12 AI4DB/Tuning| 
- []
-
-
-Underfull \hbox (badness 2384) in paragraph at lines 1441--1441
-[]|\T1/cmr/m/n/12 Benchmarking Cloud
- []
-
-
-Overfull \hbox (2.44873pt too wide) in paragraph at lines 1441--1441
-[]|\T1/cmr/m/n/12 Benchmarking| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1441--1441
-[]|\T1/cmr/m/n/12 IEEE Big-
- []
-
-
-Underfull \hbox (badness 2903) in paragraph at lines 1443--1443
-\T1/cmr/m/n/12 tion: A Sur-vey of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1443--1443
-[]|\T1/cmr/m/n/12 J. Cloud
- []
-
-
-Underfull \hbox (badness 2277) in paragraph at lines 1445--1445
-[]|\T1/cmr/m/n/12 Data Gov-er-nance in
- []
-
-
-Underfull \hbox (badness 2846) in paragraph at lines 1445--1445
-\T1/cmr/m/n/12 the Cloud: A Re-
- []
-
-
-Underfull \hbox (badness 5802) in paragraph at lines 1445--1445
-[]|\T1/cmr/m/n/12 Data Gov-er-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1447--1447
-[]|\T1/cmr/m/n/12 Distributed Trans-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1447--1447
-\T1/cmr/m/n/12 ac-tions in Cloud
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1447--1447
-[]|\T1/cmr/m/n/12 Cloud-Native
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1449--1449
-[]|\T1/cmr/m/n/12 Hybrid Cloud
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1449--1449
-\T1/cmr/m/n/12 Database Ar-chi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1449--1449
-[]|\T1/cmr/m/n/12 Cloud-Native
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1451--1451
-[]|\T1/cmr/m/n/12 Cloud-Native
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1453--1453
-[]|\T1/cmr/m/n/12 NewSQL Databases:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1453--1453
-\T1/cmr/m/n/12 A Sys-tem-atic Re-
- []
-
-
-Overfull \hbox (17.93802pt too wide) in paragraph at lines 1453--1453
-[]|\T1/cmr/m/n/12 NoSQL/NewSQL| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1453--1453
-[]|\T1/cmr/m/n/12 Computing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1455--1455
-[]|\T1/cmr/m/n/12 Time-Series
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1455--1455
-\T1/cmr/m/n/12 Databases in the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1455--1455
-[]|\T1/cmr/m/n/12 Cloud-Native
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1455--1455
-[]|\T1/cmr/m/n/12 IEEE IoT
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1457--1457
-[]|\T1/cmr/m/n/12 Privacy-Preserving
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1457--1457
-\T1/cmr/m/n/12 Data Man-age-ment:
- []
-
-
-Overfull \hbox (15.17471pt too wide) in paragraph at lines 1457--1457
-[]|\T1/cmr/m/n/12 Security/Privacy| 
- []
-
-
-Underfull \hbox (badness 4303) in paragraph at lines 1457--1457
+Underfull \hbox (badness 4303) in paragraph at lines 1431--1431
 []|\T1/cmr/m/n/12 VLDB Jour-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1459--1459
-[]|\T1/cmr/m/n/12 Green Cloud
+Underfull \hbox (badness 2680) in paragraph at lines 1433--1433
+[]|\T1/cmr/m/n/12 AI Meets Database:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1459--1459
-\T1/cmr/m/n/12 Databases: Sus-
+Underfull \hbox (badness 10000) in paragraph at lines 1435--1435
+[]|\T1/cmr/m/n/12 Edge and Fog
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
-[]|\T1/cmr/m/n/12 Vendor Lock-in in
+Underfull \hbox (badness 10000) in paragraph at lines 1435--1435
+[]|\T1/cmr/m/n/12 Edge/Fog
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
-[]|\T1/cmr/m/n/12 J. Cloud
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1463--1463
-[]|\T1/cmr/m/n/12 Stream Pro-cess-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1463--1463
-\T1/cmr/m/n/12 Sys-tems: A Sur-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1463--1463
-[]|\T1/cmr/m/n/12 Cloud-Native
- []
-
-
-Underfull \hbox (badness 2285) in paragraph at lines 1463--1463
+Underfull \hbox (badness 2285) in paragraph at lines 1435--1435
 []|\T1/cmr/m/n/12 ACM Comp.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1465--1465
-[]|\T1/cmr/m/n/12 Knowledge Graphs
+Underfull \hbox (badness 1418) in paragraph at lines 1437--1437
+[]|\T1/cmr/m/n/12 Data Lake-house: A
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1465--1465
-\T1/cmr/m/n/12 in Cloud En-vi-ron-
+Underfull \hbox (badness 4686) in paragraph at lines 1437--1437
+\T1/cmr/m/n/12 Sur-vey and Ex-per-i-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1465--1465
+Underfull \hbox (badness 10000) in paragraph at lines 1437--1437
+[]|\T1/cmr/m/n/12 Data Lake-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1439--1439
+[]|\T1/cmr/m/n/12 Survey on NoSQL
+ []
+
+
+Overfull \hbox (17.93802pt too wide) in paragraph at lines 1439--1439
+[]|\T1/cmr/m/n/12 NoSQL/NewSQL| 
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 1439--1439
+[]|\T1/cmr/m/n/12 ACM Comp.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1441--1441
+[]|\T1/cmr/m/n/12 NoSQL Database:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1441--1441
+\T1/cmr/m/n/12 A Com-pre-hen-sive
+ []
+
+
+Overfull \hbox (17.93802pt too wide) in paragraph at lines 1441--1441
+[]|\T1/cmr/m/n/12 NoSQL/NewSQL| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1443--1443
+\T1/cmr/m/n/12 age-ment: Sur-vey
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 1443--1443
+\T1/cmr/m/n/12 and Re-search Di-rec-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1443--1443
+[]|\T1/cmr/m/n/12 Serverless
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 1445--1445
+\T1/cmr/m/n/12 miza-tion: A Sur-vey
+ []
+
+
+Overfull \hbox (12.22556pt too wide) in paragraph at lines 1445--1445
+[]|\T1/cmr/m/n/12 AI4DB/Learned
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1447--1447
+[]|\T1/cmr/m/n/12 Learned In-dexes:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1447--1447
+\T1/cmr/m/n/12 A Com-pre-hen-sive
+ []
+
+
+Overfull \hbox (12.22556pt too wide) in paragraph at lines 1447--1447
+[]|\T1/cmr/m/n/12 AI4DB/Learned
+ []
+
+
+Underfull \hbox (badness 4303) in paragraph at lines 1447--1447
+[]|\T1/cmr/m/n/12 VLDB Jour-
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 1449--1449
+[]|\T1/cmr/m/n/12 Cloud Database Mi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1449--1449
+[]|\T1/cmr/m/n/12 J. Cloud
+ []
+
+
+Overfull \hbox (15.17471pt too wide) in paragraph at lines 1451--1451
+[]|\T1/cmr/m/n/12 Security/Privacy| 
+ []
+
+
+Underfull \hbox (badness 6220) in paragraph at lines 1453--1453
+\T1/cmr/m/n/12 age-ment: Con-cepts
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1453--1453
 []|\T1/cmr/m/n/12 Graph
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1465--1465
-[]|\T1/cmr/m/n/12 Semantic
+Underfull \hbox (badness 2285) in paragraph at lines 1453--1453
+[]|\T1/cmr/m/n/12 ACM Comp.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1455--1455
+[]|\T1/cmr/m/n/12 Multi-Model Data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1455--1455
+[]|\T1/cmr/m/n/12 Multi-Model
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1457--1457
+\T1/cmr/m/n/12 Man-age-ment Sys-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1457--1457
+[]|\T1/cmr/m/n/12 Autonomous
+ []
+
+
+Underfull \hbox (badness 6477) in paragraph at lines 1459--1459
+[]|\T1/cmr/m/n/12 Automatic Database
+ []
+
+
+Overfull \hbox (7.1698pt too wide) in paragraph at lines 1459--1459
+[]|\T1/cmr/m/n/12 AI4DB/Tuning| 
+ []
+
+
+Underfull \hbox (badness 2384) in paragraph at lines 1461--1461
+[]|\T1/cmr/m/n/12 Benchmarking Cloud
+ []
+
+
+Overfull \hbox (2.44873pt too wide) in paragraph at lines 1461--1461
+[]|\T1/cmr/m/n/12 Benchmarking| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
+[]|\T1/cmr/m/n/12 IEEE Big-
+ []
+
+
+Underfull \hbox (badness 2903) in paragraph at lines 1463--1463
+\T1/cmr/m/n/12 tion: A Sur-vey of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1463--1463
+[]|\T1/cmr/m/n/12 J. Cloud
+ []
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 1465--1465
+[]|\T1/cmr/m/n/12 Data Gov-er-nance in
+ []
+
+
+Underfull \hbox (badness 2846) in paragraph at lines 1465--1465
+\T1/cmr/m/n/12 the Cloud: A Re-
+ []
+
+
+Underfull \hbox (badness 5802) in paragraph at lines 1465--1465
+[]|\T1/cmr/m/n/12 Data Gov-er-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1467--1467
-[]|\T1/cmr/m/n/12 Cloud Data Ware-
+[]|\T1/cmr/m/n/12 Distributed Trans-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1467--1467
-\T1/cmr/m/n/12 house Op-ti-miza-tion:
+\T1/cmr/m/n/12 ac-tions in Cloud
  []
 
 
@@ -2246,308 +2099,328 @@ Underfull \hbox (badness 10000) in paragraph at lines 1467--1467
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1467--1467
-[]|\T1/cmr/m/n/12 IEEE Big-
+Underfull \hbox (badness 10000) in paragraph at lines 1469--1469
+[]|\T1/cmr/m/n/12 Hybrid Cloud
  []
 
 
-Underfull \hbox (badness 5741) in paragraph at lines 1469--1469
-[]|\T1/cmr/m/n/12 Text-to-SQL in the
+Underfull \hbox (badness 10000) in paragraph at lines 1469--1469
+\T1/cmr/m/n/12 Database Ar-chi-
  []
 
 
-Overfull \hbox (15.97182pt too wide) in paragraph at lines 1469--1469
-[]|\T1/cmr/m/n/12 AI4DB/NL2SQL| 
+Underfull \hbox (badness 10000) in paragraph at lines 1469--1469
+[]|\T1/cmr/m/n/12 Cloud-Native
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1471--1471
-[]|\T1/cmr/m/n/12 Workload Char-ac-
- []
-
-
-Underfull \hbox (badness 3118) in paragraph at lines 1471--1471
-\T1/cmr/m/n/12 ter-i-za-tion for Cloud
- []
-
-
-Overfull \hbox (2.44873pt too wide) in paragraph at lines 1471--1471
-[]|\T1/cmr/m/n/12 Benchmarking| 
+[]|\T1/cmr/m/n/12 Cloud-Native
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1473--1473
-[]|\T1/cmr/m/n/12 Multi-Tenant
+[]|\T1/cmr/m/n/12 NewSQL Databases:
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1473--1473
+\T1/cmr/m/n/12 A Sys-tem-atic Re-
+ []
+
+
+Overfull \hbox (17.93802pt too wide) in paragraph at lines 1473--1473
+[]|\T1/cmr/m/n/12 NoSQL/NewSQL| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1473--1473
+[]|\T1/cmr/m/n/12 Computing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1475--1475
+[]|\T1/cmr/m/n/12 Time-Series
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1475--1475
+\T1/cmr/m/n/12 Databases in the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1475--1475
 []|\T1/cmr/m/n/12 Cloud-Native
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1475--1475
-[]|\T1/cmr/m/n/12 Approximate Query
- []
-
-
-Underfull \hbox (badness 2393) in paragraph at lines 1475--1475
-\T1/cmr/m/n/12 Pro-cess-ing: A Sur-
- []
-
-
-Overfull \hbox (12.22556pt too wide) in paragraph at lines 1475--1475
-[]|\T1/cmr/m/n/12 AI4DB/Learned
- []
-
-
-Underfull \hbox (badness 2285) in paragraph at lines 1475--1475
-[]|\T1/cmr/m/n/12 ACM Comp.
+[]|\T1/cmr/m/n/12 IEEE IoT
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1477--1477
-[]|\T1/cmr/m/n/12 Cloud-Native
+[]|\T1/cmr/m/n/12 Privacy-Preserving
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1477--1477
-[]|\T1/cmr/m/n/12 Distributed
+\T1/cmr/m/n/12 Data Man-age-ment:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1479--1479
-[]|\T1/cmr/m/n/12 Cardinality Es-ti-
- []
-
-
-Underfull \hbox (badness 1810) in paragraph at lines 1479--1479
-\T1/cmr/m/n/12 ma-tion: A Learned
- []
-
-
-Overfull \hbox (12.22556pt too wide) in paragraph at lines 1479--1479
-[]|\T1/cmr/m/n/12 AI4DB/Learned
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1481--1481
-[]|\T1/cmr/m/n/12 Cloud-Native Stor-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1481--1481
-\T1/cmr/m/n/12 age Sys-tems: A
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1481--1481
-[]|\T1/cmr/m/n/12 Cloud-Native
- []
-
-
-Underfull \hbox (badness 2285) in paragraph at lines 1481--1481
-[]|\T1/cmr/m/n/12 ACM Comp.
- []
-
-
-Underfull \hbox (badness 3646) in paragraph at lines 1483--1483
-[]|\T1/cmr/m/n/12 NoSQL Query Lan-
- []
-
-
-Overfull \hbox (17.93802pt too wide) in paragraph at lines 1483--1483
-[]|\T1/cmr/m/n/12 NoSQL/NewSQL| 
- []
-
-
-Underfull \hbox (badness 4686) in paragraph at lines 1485--1485
-[]|\T1/cmr/m/n/12 Data In-te-gra-tion in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1485--1485
-[]|\T1/cmr/m/n/12 Multi-Model
- []
-
-
-Underfull \hbox (badness 4303) in paragraph at lines 1485--1485
-[]|\T1/cmr/m/n/12 VLDB Jour-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1487--1487
-[]|\T1/cmr/m/n/12 Autonomous Cloud
- []
-
-
-Overfull \hbox (35.9461pt too wide) in paragraph at lines 1487--1487
-[]|\T1/cmr/m/n/12 AI4DB/Autonomous| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1489--1489
-[]|\T1/cmr/m/n/12 Vector Sim-i-lar-ity
- []
-
-
-Underfull \hbox (badness 5119) in paragraph at lines 1489--1489
-\T1/cmr/m/n/12 Search: Al-go-rithms
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1489--1489
-[]|\T1/cmr/m/n/12 Vector
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1491--1491
-[]|\T1/cmr/m/n/12 Encryption Tech-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1491--1491
-\T1/cmr/m/n/12 niques for Cloud
- []
-
-
-Overfull \hbox (15.17471pt too wide) in paragraph at lines 1491--1491
+Overfull \hbox (15.17471pt too wide) in paragraph at lines 1477--1477
 []|\T1/cmr/m/n/12 Security/Privacy| 
  []
 
 
-Underfull \hbox (badness 2285) in paragraph at lines 1491--1491
+Underfull \hbox (badness 4303) in paragraph at lines 1477--1477
+[]|\T1/cmr/m/n/12 VLDB Jour-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1479--1479
+[]|\T1/cmr/m/n/12 Green Cloud
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1479--1479
+\T1/cmr/m/n/12 Databases: Sus-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1481--1481
+[]|\T1/cmr/m/n/12 Vendor Lock-in in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1481--1481
+[]|\T1/cmr/m/n/12 J. Cloud
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1483--1483
+[]|\T1/cmr/m/n/12 Stream Pro-cess-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1483--1483
+\T1/cmr/m/n/12 Sys-tems: A Sur-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1483--1483
+[]|\T1/cmr/m/n/12 Cloud-Native
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 1483--1483
 []|\T1/cmr/m/n/12 ACM Comp.
  []
 
 
-Overfull \hbox (2.44873pt too wide) in paragraph at lines 1493--1493
+Underfull \hbox (badness 10000) in paragraph at lines 1485--1485
+[]|\T1/cmr/m/n/12 Knowledge Graphs
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1485--1485
+\T1/cmr/m/n/12 in Cloud En-vi-ron-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1485--1485
+[]|\T1/cmr/m/n/12 Graph
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1485--1485
+[]|\T1/cmr/m/n/12 Semantic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1487--1487
+[]|\T1/cmr/m/n/12 Cloud Data Ware-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1487--1487
+\T1/cmr/m/n/12 house Op-ti-miza-tion:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1487--1487
+[]|\T1/cmr/m/n/12 Cloud-Native
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1487--1487
+[]|\T1/cmr/m/n/12 IEEE Big-
+ []
+
+
+Underfull \hbox (badness 5741) in paragraph at lines 1489--1489
+[]|\T1/cmr/m/n/12 Text-to-SQL in the
+ []
+
+
+Overfull \hbox (15.97182pt too wide) in paragraph at lines 1489--1489
+[]|\T1/cmr/m/n/12 AI4DB/NL2SQL| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1491--1491
+[]|\T1/cmr/m/n/12 Workload Char-ac-
+ []
+
+
+Underfull \hbox (badness 3118) in paragraph at lines 1491--1491
+\T1/cmr/m/n/12 ter-i-za-tion for Cloud
+ []
+
+
+Overfull \hbox (2.44873pt too wide) in paragraph at lines 1491--1491
 []|\T1/cmr/m/n/12 Benchmarking| 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1493--1493
-[]|\T1/cmr/m/n/12 J. Par-al-lel
+[]|\T1/cmr/m/n/12 Multi-Tenant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1493--1493
+[]|\T1/cmr/m/n/12 Cloud-Native
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1495--1495
-[]|\T1/cmr/m/n/12 Lakehouse Ar-chi-tec-
+[]|\T1/cmr/m/n/12 Approximate Query
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1495--1495
-[]|\T1/cmr/m/n/12 Data Lake-
+Underfull \hbox (badness 2393) in paragraph at lines 1495--1495
+\T1/cmr/m/n/12 Pro-cess-ing: A Sur-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1495--1495
-[]|\T1/cmr/m/n/12 IEEE Big-
+Overfull \hbox (12.22556pt too wide) in paragraph at lines 1495--1495
+[]|\T1/cmr/m/n/12 AI4DB/Learned
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 1495--1495
+[]|\T1/cmr/m/n/12 ACM Comp.
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1497--1497
-[]|\T1/cmr/m/n/12 HTAP Sys-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1499--1499
-[]|\T1/cmr/m/n/12 Consensus Pro-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1499--1499
-\T1/cmr/m/n/12 to-cols for Cloud
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1499--1499
 []|\T1/cmr/m/n/12 Cloud-Native
  []
 
 
-Underfull \hbox (badness 2285) in paragraph at lines 1499--1499
+Underfull \hbox (badness 10000) in paragraph at lines 1497--1497
+[]|\T1/cmr/m/n/12 Distributed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1499--1499
+[]|\T1/cmr/m/n/12 Cardinality Es-ti-
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 1499--1499
+\T1/cmr/m/n/12 ma-tion: A Learned
+ []
+
+
+Overfull \hbox (12.22556pt too wide) in paragraph at lines 1499--1499
+[]|\T1/cmr/m/n/12 AI4DB/Learned
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1501--1501
+[]|\T1/cmr/m/n/12 Cloud-Native Stor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1501--1501
+\T1/cmr/m/n/12 age Sys-tems: A
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1501--1501
+[]|\T1/cmr/m/n/12 Cloud-Native
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 1501--1501
 []|\T1/cmr/m/n/12 ACM Comp.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1501--1501
-[]|\T1/cmr/m/n/12 Edge/Fog
+Underfull \hbox (badness 3646) in paragraph at lines 1503--1503
+[]|\T1/cmr/m/n/12 NoSQL Query Lan-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1501--1501
-[]|\T1/cmr/m/n/12 J. Net-work
+Overfull \hbox (17.93802pt too wide) in paragraph at lines 1503--1503
+[]|\T1/cmr/m/n/12 NoSQL/NewSQL| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1503--1503
-[]|\T1/cmr/m/n/12 Schema Evo-lu-tion
- []
-
-
-Underfull \hbox (badness 1701) in paragraph at lines 1503--1503
-\T1/cmr/m/n/12 in Cloud Databases:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1503--1503
-[]|\T1/cmr/m/n/12 Data &
+Underfull \hbox (badness 4686) in paragraph at lines 1505--1505
+[]|\T1/cmr/m/n/12 Data In-te-gra-tion in
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1505--1505
-[]|\T1/cmr/m/n/12 Materialized View
+[]|\T1/cmr/m/n/12 Multi-Model
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1505--1505
-\T1/cmr/m/n/12 Se-lec-tion in Cloud
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1505--1505
-[]|\T1/cmr/m/n/12 Cloud-Native
+Underfull \hbox (badness 4303) in paragraph at lines 1505--1505
+[]|\T1/cmr/m/n/12 VLDB Jour-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1507--1507
-[]|\T1/cmr/m/n/12 Retrieval-Augmented
+[]|\T1/cmr/m/n/12 Autonomous Cloud
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1507--1507
-\T1/cmr/m/n/12 Gen-er-a-tion: Sur-
+Overfull \hbox (35.9461pt too wide) in paragraph at lines 1507--1507
+[]|\T1/cmr/m/n/12 AI4DB/Autonomous| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1507--1507
+Underfull \hbox (badness 10000) in paragraph at lines 1509--1509
+[]|\T1/cmr/m/n/12 Vector Sim-i-lar-ity
+ []
+
+
+Underfull \hbox (badness 5119) in paragraph at lines 1509--1509
+\T1/cmr/m/n/12 Search: Al-go-rithms
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1509--1509
 []|\T1/cmr/m/n/12 Vector
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 1509--1509
-[]|\T1/cmr/m/n/12 Cloud Database Ac-
+Underfull \hbox (badness 10000) in paragraph at lines 1511--1511
+[]|\T1/cmr/m/n/12 Encryption Tech-
  []
 
 
-Overfull \hbox (15.17471pt too wide) in paragraph at lines 1509--1509
+Underfull \hbox (badness 10000) in paragraph at lines 1511--1511
+\T1/cmr/m/n/12 niques for Cloud
+ []
+
+
+Overfull \hbox (15.17471pt too wide) in paragraph at lines 1511--1511
 []|\T1/cmr/m/n/12 Security/Privacy| 
- []
-
-
-Underfull \hbox (badness 2285) in paragraph at lines 1509--1509
-[]|\T1/cmr/m/n/12 ACM Comp.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1511--1511
-\T1/cmr/m/n/12 for Data Pro-cess-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1511--1511
-[]|\T1/cmr/m/n/12 Serverless
  []
 
 
@@ -2556,62 +2429,197 @@ Underfull \hbox (badness 2285) in paragraph at lines 1511--1511
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1513--1513
-[]|\T1/cmr/m/n/12 LLM-Augmented
+Overfull \hbox (2.44873pt too wide) in paragraph at lines 1513--1513
+[]|\T1/cmr/m/n/12 Benchmarking| 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1513--1513
-\T1/cmr/m/n/12 Database Sys-tems:
+[]|\T1/cmr/m/n/12 J. Par-al-lel
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1515--1515
-[]|\T1/cmr/m/n/12 Graph Query Lan-
+[]|\T1/cmr/m/n/12 Lakehouse Ar-chi-tec-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1515--1515
-[]|\T1/cmr/m/n/12 Graph
+[]|\T1/cmr/m/n/12 Data Lake-
  []
 
 
-Underfull \hbox (badness 2285) in paragraph at lines 1515--1515
+Underfull \hbox (badness 10000) in paragraph at lines 1515--1515
+[]|\T1/cmr/m/n/12 IEEE Big-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1517--1517
+[]|\T1/cmr/m/n/12 HTAP Sys-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1519--1519
+[]|\T1/cmr/m/n/12 Consensus Pro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1519--1519
+\T1/cmr/m/n/12 to-cols for Cloud
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1519--1519
+[]|\T1/cmr/m/n/12 Cloud-Native
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 1519--1519
 []|\T1/cmr/m/n/12 ACM Comp.
  []
 
 
-Underfull \hbox (badness 1117) in paragraph at lines 1517--1517
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1521
+[]|\T1/cmr/m/n/12 Edge/Fog
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1521
+[]|\T1/cmr/m/n/12 J. Net-work
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1523--1523
+[]|\T1/cmr/m/n/12 Schema Evo-lu-tion
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 1523--1523
+\T1/cmr/m/n/12 in Cloud Databases:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1523--1523
+[]|\T1/cmr/m/n/12 Data &
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1525--1525
+[]|\T1/cmr/m/n/12 Materialized View
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1525--1525
+\T1/cmr/m/n/12 Se-lec-tion in Cloud
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1525--1525
+[]|\T1/cmr/m/n/12 Cloud-Native
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1527--1527
+[]|\T1/cmr/m/n/12 Retrieval-Augmented
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1527--1527
+\T1/cmr/m/n/12 Gen-er-a-tion: Sur-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1527--1527
+[]|\T1/cmr/m/n/12 Vector
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 1529--1529
+[]|\T1/cmr/m/n/12 Cloud Database Ac-
+ []
+
+
+Overfull \hbox (15.17471pt too wide) in paragraph at lines 1529--1529
+[]|\T1/cmr/m/n/12 Security/Privacy| 
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 1529--1529
+[]|\T1/cmr/m/n/12 ACM Comp.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1531--1531
+\T1/cmr/m/n/12 for Data Pro-cess-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1531--1531
+[]|\T1/cmr/m/n/12 Serverless
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 1531--1531
+[]|\T1/cmr/m/n/12 ACM Comp.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1533--1533
+[]|\T1/cmr/m/n/12 LLM-Augmented
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1533--1533
+\T1/cmr/m/n/12 Database Sys-tems:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1535--1535
+[]|\T1/cmr/m/n/12 Graph Query Lan-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1535--1535
+[]|\T1/cmr/m/n/12 Graph
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 1535--1535
+[]|\T1/cmr/m/n/12 ACM Comp.
+ []
+
+
+Underfull \hbox (badness 1117) in paragraph at lines 1537--1537
 []|\T1/cmr/m/n/12 NoSQL Data Mi-gra-
  []
 
 
-Underfull \hbox (badness 2600) in paragraph at lines 1517--1517
+Underfull \hbox (badness 2600) in paragraph at lines 1537--1537
 \T1/cmr/m/n/12 tion Tools: A Re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1519--1519
+Underfull \hbox (badness 10000) in paragraph at lines 1539--1539
 []|\T1/cmr/m/n/12 Cost Mod-el-ing for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1519--1519
+Underfull \hbox (badness 10000) in paragraph at lines 1539--1539
 \T1/cmr/m/n/12 Cloud Data Ser-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1521--1521
+Underfull \hbox (badness 10000) in paragraph at lines 1541--1541
 []|\T1/cmr/m/n/12 Data Prove-nance
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1521--1521
+Underfull \hbox (badness 10000) in paragraph at lines 1541--1541
 \T1/cmr/m/n/12 in Cloud Com-put-
  []
 
 
-Underfull \hbox (badness 5802) in paragraph at lines 1521--1521
+Underfull \hbox (badness 5802) in paragraph at lines 1541--1541
 []|\T1/cmr/m/n/12 Data Gov-er-
  []
 
@@ -2638,20 +2646,20 @@ e/$[]\T1/cmr/m/n/12 , ac-
 [63]
 
 [64]
-Underfull \hbox (badness 1924) in paragraph at lines 336--339
+
+[65]
+Underfull \hbox (badness 1924) in paragraph at lines 342--345
 []\T1/cmr/m/n/12 International En-ergy Agency, Data cen-tres and data trans-mis
 -
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 336--339
+Underfull \hbox (badness 1565) in paragraph at lines 342--345
 \T1/cmr/m/n/12 sion net-works, []$\T1/cmtt/m/n/12 https : / / www . iea . org /
  energy-[]system / buildings /
  []
 
 
-
-[65]
 
 [66]
 
@@ -2669,39 +2677,41 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 59B3A099BD1E25E2D79BF2BCF39F43E0;13099.
+(rerunfilecheck)             Checksum: C4A959CA20AA922B09EA6333ED5F1979;13258.
  ) 
 Here is how much of TeX's memory you used:
- 36301 strings out of 473190
- 836124 string characters out of 5715799
- 1375714 words of memory out of 5000000
- 58690 multiletter control sequences out of 15000+600000
+ 36299 strings out of 473190
+ 836068 string characters out of 5715799
+ 1373428 words of memory out of 5000000
+ 58684 multiletter control sequences out of 15000+600000
  577673 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,91p,1977b,2378s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,91p,1963b,2324s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
-r/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/
-local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/lo
-cal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/loca
-l/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/
-texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/te
-xlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texl
-ive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texliv
-e/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/
-2025/texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb></usr/local/texlive/20
-25/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2025
-/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2025/t
-exmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2025/tex
-mf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2025/texmf
--dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2025/texmf-d
-ist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (71 pages, 572847 bytes).
+r/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
+local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/lo
+cal/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/loca
+l/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/
+texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/te
+xlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texl
+ive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texliv
+e/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/
+2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/20
+25/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2025
+/texmf-dist/fonts/type1/public/cm-super/sfti0700.pfb></usr/local/texlive/2025/t
+exmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2025/tex
+mf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2025/texmf
+-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2025/texmf-d
+ist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2025/texmf-dis
+t/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2025/texmf-dist/
+fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on main.pdf (71 pages, 587322 bytes).
 PDF statistics:
- 1163 PDF objects out of 1200 (max. 8388607)
- 1040 compressed objects within 11 object streams
- 262 named destinations out of 1000 (max. 500000)
- 445 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1190 PDF objects out of 1200 (max. 8388607)
+ 1063 compressed objects within 11 object streams
+ 266 named destinations out of 1000 (max. 500000)
+ 453 words of extra memory for PDF output out of 10000 (max. 10000000)
 

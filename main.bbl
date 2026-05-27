@@ -249,6 +249,12 @@ W.~Saeed, C.~Omlin, Explainable {AI} ({XAI}): A systematic meta-survey of
 \newblock \href {https://doi.org/10.1016/j.knosys.2023.110273}
   {\path{doi:10.1016/j.knosys.2023.110273}}.
 
+\bibitem{Page2021PRISMA}
+M.~J. Page, J.~E. McKenzie, P.~M. Bossuyt, I.~Boutron, T.~C. Hoffmann, C.~D.
+  Mulrow, et~al., The {PRISMA} 2020 statement: an updated guideline for
+  reporting systematic reviews, BMJ 372 (2021) n71.
+\newblock \href {https://doi.org/10.1136/bmj.n71} {\path{doi:10.1136/bmj.n71}}.
+
 \bibitem{Ma2021LearnedWorkload}
 L.~Ma, D.~V. Aken, A.~Hefny, G.~Mezerhane, A.~Pavlo, G.~J. Gordon, Query-based
   workload forecasting for self-driving database management systems,

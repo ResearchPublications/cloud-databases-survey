@@ -1,0 +1,9 @@
+# OS / editor clutter
+.DS_Store
+.idea/
+
+# LaTeX build output directory
+out/
+
+# Template archives
+*.zip

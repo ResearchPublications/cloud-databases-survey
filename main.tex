@@ -33,16 +33,19 @@
 \newcommand{\rot}[1]{\rotatebox{90}{\parbox{2.2cm}{\raggedright\small #1}}}
 
 %% Color definitions for figures
-\definecolor{cblue}{HTML}{4472C4}
-\definecolor{corange}{HTML}{ED7D31}
-\definecolor{cgray}{HTML}{A5A5A5}
-\definecolor{cyellow}{HTML}{FFC000}
-\definecolor{clblue}{HTML}{5B9BD5}
-\definecolor{cgreen}{HTML}{70AD47}
-\definecolor{cdblue}{HTML}{264478}
-\definecolor{cred}{HTML}{C00000}
-\definecolor{cpurple}{HTML}{7030A0}
-\definecolor{cteal}{HTML}{00B0F0}
+%% Grayscale palette: all figures are rendered in black and white.
+%% The original color names are retained but remapped to gray levels, so
+%% every figure (which references these macros) becomes monochrome at once.
+\definecolor{cblue}{gray}{0.45}
+\definecolor{corange}{gray}{0.62}
+\definecolor{cgray}{gray}{0.72}
+\definecolor{cyellow}{gray}{0.82}
+\definecolor{clblue}{gray}{0.55}
+\definecolor{cgreen}{gray}{0.70}
+\definecolor{cdblue}{gray}{0.25}
+\definecolor{cred}{gray}{0.38}
+\definecolor{cpurple}{gray}{0.50}
+\definecolor{cteal}{gray}{0.60}
 
 \journal{Data \& Knowledge Engineering}
 
@@ -57,19 +60,31 @@
 % \author[inst1]{Author Two}
 % \ead{author.two@university.edu}
 
-% \cortext[cor1]{Corresponding author.}
+\cortext[cor1]{Corresponding author.}
 
 \affiliation[inst1]{organization={School of Computer Science and Informatics, De Montfort University},
             city={Leicester},
             country={United Kingdom}}
 
 \begin{abstract}
-Cloud databases have become the backbone of modern data-driven applications, enabling organizations to store, process, and analyze data at unprecedented scale and elasticity. Over the past seven years (2019--2025), more than 50 survey papers have examined various facets of cloud database technology---spanning cloud-native architectures, hybrid transactional and/or analytical processing (HTAP), serverless databases, vector databases, AI-for-database optimization (AI4DB), data lakehouses, NoSQL/NewSQL systems, and edge--cloud data management. However, the challenges, open problems, and research directions identified in these surveys remain fragmented across disparate communities and publication venues. This paper presents the first \emph{systematic meta-survey} of cloud database research: a survey of surveys that synthesizes findings from carefully selected survey papers using a rigorous methodology grounded in the Kitchenham--Charters systematic literature review protocol. The scattered landscape of cloud database challenges is organized into a structured, dual-theme taxonomy: (1)~\emph{eighteen cross-cutting challenges} that transcend individual system categories, including scalability, consistency trade-offs, security, cost optimization, AI--database convergence, and sustainability; and (2)~\emph{five lifecycle-phase challenges} spanning design, deployment, operation, optimization, and evolution of cloud database systems. The convergence of cloud databases with large language models (LLMs) is further examined as an illustrative case study, and a prioritized research roadmap with short-, medium-, and long-term directions is proposed. By providing a consolidated, thematically organized view of the field, this meta-survey serves as both a comprehensive reference for researchers entering the cloud database space and a strategic guide for practitioners navigating the rapidly evolving landscape of cloud data management.
+Cloud databases have become the backbone of modern data-driven applications, enabling organizations to store, process, and analyze data at unprecedented scale and elasticity. Over recent years (2017--2024), more than 50 survey papers have examined various facets of cloud database technology---spanning cloud-native architectures, hybrid transactional and/or analytical processing (HTAP), serverless databases, vector databases, AI-for-database optimization (AI4DB), data lakehouses, NoSQL/NewSQL systems, and edge--cloud data management. However, the challenges, open problems, and research directions identified in these surveys remain fragmented across disparate communities and publication venues. This paper presents the first \emph{systematic meta-survey} of cloud database research: a survey of surveys that synthesizes findings from carefully selected survey papers using a rigorous methodology grounded in the Kitchenham--Charters systematic literature review protocol. The scattered landscape of cloud database challenges is organized into a structured, dual-theme taxonomy: (1)~\emph{eighteen cross-cutting challenges} that transcend individual system categories, including scalability, consistency trade-offs, security, cost optimization, AI--database convergence, and sustainability; and (2)~\emph{five lifecycle-phase challenges} spanning design, deployment, operation, optimization, and evolution of cloud database systems. The convergence of cloud databases with large language models (LLMs) is further examined as an illustrative case study, and a prioritized set of short-, medium-, and long-term research directions is outlined. By providing a consolidated, thematically organized view of the field, this meta-survey serves as both a comprehensive reference for researchers entering the cloud database space and a strategic guide for practitioners navigating the rapidly evolving landscape of cloud data management.
 \end{abstract}
 
 \begin{keyword}
-cloud databases \sep systematic meta-survey \sep cloud-native databases \sep database-as-a-service \sep distributed databases \sep data lakehouse \sep AI4DB \sep survey of surveys
+cloud databases \sep systematic meta-survey \sep cloud-native databases \sep database-as-a-service \sep data lakehouse \sep AI4DB \sep survey of surveys
 \end{keyword}
+
+%% ------------------------------------------------------------
+%% HIGHLIGHTS (DKE requests 3--5 bullet points, each <=85 chars).
+%% Elsevier collects these in a separate "Highlights" file at
+%% submission; reproduced here so they stay versioned with the paper.
+%%
+%% - First systematic meta-survey of 58 cloud database surveys (2017-2024)
+%% - Dual-theme taxonomy: 18 cross-cutting and 5 lifecycle-phase challenges
+%% - Cross-survey synthesis of consensus and divergence on each challenge
+%% - Cloud database and large language model convergence as a case study
+%% - Prioritized short-, medium-, and long-term research directions
+%% ------------------------------------------------------------
 
 \end{frontmatter}
 
@@ -81,7 +96,7 @@ cloud databases \sep systematic meta-survey \sep cloud-native databases \sep dat
 
 The cloud database market has experienced explosive growth over the past decade, with global revenues projected to exceed \$200 billion by 2028~\cite{gartner2024dbms}. This growth reflects a fundamental shift in how organizations manage data: from on-premises, monolithic database servers to elastic, globally distributed, cloud-native data platforms that can scale storage and compute independently on demand~\cite{Verbitski2017,Dageville2016}. Major cloud providers---Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), and Alibaba Cloud---now offer dozens of specialized database services, from relational engines like Amazon Aurora~\cite{Verbitski2017} and Azure SQL~\cite{Antonopoulos2019} to purpose-built systems for documents, graphs, time series, key-value pairs, and, most recently, vector embeddings for AI workloads~\cite{Pan2024VectorDB}.
 
-This rapid evolution has attracted significant research attention. A search across major digital libraries reveals that \textbf{more than 50 survey papers} have been published between 2019 and 2025, each examining a particular facet of cloud database technology. These surveys span a wide spectrum of topics: cloud-native database architectures~\cite{Li2024CloudNativeSurvey}, hybrid transactional/analytical processing (HTAP)~\cite{Haas2024HTAPSurvey}, serverless data management~\cite{Muller2020Serverless}, vector database management systems~\cite{Pan2024VectorDB}, AI-driven database optimization (AI4DB)~\cite{Zhou2022AI4DB}, data lakehouses~\cite{Harby2022Lakehouse}, NoSQL and NewSQL systems~\cite{Davoudian2018NoSQL,Kaur2021NoSQLReview}, edge and fog database systems~\cite{Gomes2024EdgeFog}, and many more.
+This rapid evolution has attracted significant research attention. A search across major digital libraries reveals that \textbf{more than 50 survey papers} have been published between 2017 and 2024, each examining a particular facet of cloud database technology. These surveys span a wide spectrum of topics: cloud-native database architectures~\cite{Li2024CloudNativeSurvey}, hybrid transactional/analytical processing (HTAP)~\cite{Haas2024HTAPSurvey}, serverless data management~\cite{Muller2020Serverless}, vector database management systems~\cite{Pan2024VectorDB}, AI-driven database optimization (AI4DB)~\cite{Zhou2022AI4DB}, data lakehouses~\cite{Harby2022Lakehouse}, NoSQL and NewSQL systems~\cite{Davoudian2018NoSQL,Kaur2021NoSQLReview}, edge and fog database systems~\cite{Gomes2024EdgeFog}, and many more.
 
 Despite this wealth of individual surveys, the field lacks a \emph{meta-level synthesis}---a comprehensive, systematic effort to consolidate the challenges, open problems, and research directions scattered across these surveys into a unified framework. Each survey naturally focuses on its own domain, leading to a fragmented understanding of the cloud database landscape as a whole. Cross-cutting challenges such as cost optimization, security, consistency trade-offs, and AI--database convergence are discussed in many surveys but from different angles, without a common organizing framework.
 
@@ -91,7 +106,7 @@ Despite this wealth of individual surveys, the field lacks a \emph{meta-level sy
 This paper addresses the gap by presenting the \textbf{first systematic meta-survey of cloud database research}---a survey of surveys. A rigorous systematic literature review (SLR) protocol based on the Kitchenham--Charters guidelines~\cite{Kitchenham2007} is applied to identify, evaluate, and synthesize cloud database surveys. The contributions of this work are as follows:
 
 \begin{enumerate}[label=\textbf{C\arabic*}]
-    \item \textbf{Systematic identification and classification.} Eight digital libraries are systematically searched, yielding 58 survey papers on cloud databases published between 2019 and 2025, classified by topic, scope, methodology, and venue.
+    \item \textbf{Systematic identification and classification.} Eight digital libraries are systematically searched, yielding 58 survey papers on cloud databases published between 2017 and 2024, classified by topic, scope, methodology, and venue.
 
     \item \textbf{Dual-theme challenge taxonomy.} The scattered challenges are organized into a structured taxonomy with two complementary themes:
     \begin{itemize}
@@ -120,7 +135,7 @@ This meta-survey is guided by five research questions, summarized in Table~\ref{
 \toprule
 \textbf{ID} & \textbf{Research Question} \\
 \midrule
-RQ1 & What is the landscape of cloud database surveys published between 2019 and 2025, in terms of topic coverage, methodology, and publication venue? \\
+RQ1 & What is the landscape of cloud database surveys published between 2017 and 2024, in terms of topic coverage, methodology, and publication venue? \\
 \addlinespace
 RQ2 & What are the major cross-cutting challenges identified across cloud database surveys, and how do they relate to one another? \\
 \addlinespace
@@ -250,7 +265,7 @@ Cloud database architectures have evolved through three major paradigms, illustr
 \centering
 \begin{tikzpicture}[
     node distance=0.5cm and 2cm,
-    box/.style={draw, rounded corners, minimum width=2.2cm, minimum height=0.8cm, font=\small, align=center, fill=#1!15, draw=#1!60},
+    box/.style={draw, minimum width=2.2cm, minimum height=0.8cm, font=\small, align=center, fill=#1!15, draw=#1!60},
     box/.default=cblue,
     arrow/.style={-{Stealth[length=3mm]}, thick, cdblue},
     label/.style={font=\small\bfseries, text=cdblue}
@@ -341,7 +356,7 @@ The cloud data management landscape has converged around three complementary par
 \centering
 \begin{tikzpicture}[
     every node/.style={font=\small},
-    box/.style={draw, rounded corners=5pt, minimum width=3.5cm, minimum height=2.5cm, align=center, thick}
+    box/.style={draw, minimum width=3.5cm, minimum height=2.5cm, align=center, thick}
 ]
 %% Data Warehouse
 \node[box, fill=cblue!15, draw=cblue!60] (dw) {
@@ -394,7 +409,7 @@ The cloud data management landscape has converged around three complementary par
 \section{Systematic Review Planning and Execution}
 \label{sec:methodology}
 
-The systematic literature review (SLR) guidelines established by Kitchenham and Charters~\cite{Kitchenham2007}, which have been widely adopted in software engineering and computer science~\cite{Salehi2016Granular,Murtaza2020BreastCancer,Qazi2015SolarANN,Saeed2023XAI}, are followed. This protocol prescribes a three-phase process: (1)~\emph{planning}, in which research questions, search strategy, and inclusion/exclusion criteria are defined; (2)~\emph{conducting}, in which studies are systematically identified, selected, and their data extracted; and (3)~\emph{reporting}, in which the synthesized findings are documented and validated through quality assessment.
+The systematic literature review (SLR) guidelines established by Kitchenham and Charters~\cite{Kitchenham2007}, which have been widely adopted in software engineering and computer science~\cite{Salehi2016Granular,Murtaza2020BreastCancer,Qazi2015SolarANN,Saeed2023XAI}, are followed. This protocol prescribes a three-phase process: (1)~\emph{planning}, in which research questions, search strategy, and inclusion/exclusion criteria are defined; (2)~\emph{conducting}, in which studies are systematically identified, selected, and their data extracted; and (3)~\emph{reporting}, in which the synthesized findings are documented and validated through quality assessment. The selection process is additionally reported using the PRISMA~2020 statement~\cite{Page2021PRISMA}, the de facto standard for transparent reporting of systematic reviews.
 
 
 \subsection{Search strategy}
@@ -450,7 +465,7 @@ The inclusion and exclusion criteria listed in Table~\ref{tab:criteria} were app
 \multicolumn{2}{l}{\textit{Inclusion Criteria}} \\
 IC1 & The paper is a survey, review, tutorial, or systematic mapping study \\
 IC2 & The paper focuses primarily on cloud-hosted, cloud-native, or cloud-relevant database technologies \\
-IC3 & The paper was published between January 2019 and December 2025 \\
+IC3 & The paper was published between January 2017 and December 2024 \\
 IC4 & The paper is written in English \\
 IC5 & The paper is peer-reviewed or published in a recognized venue (including arXiv with significant citations) \\
 \addlinespace
@@ -493,16 +508,16 @@ QA8 & Is the survey sufficiently comprehensive ($\geq$30 references)? \\
 \subsection{Results: study selection and demographics}
 \label{subsec:results}
 
-Figure~\ref{fig:prisma} presents the PRISMA flow diagram of the selection process. From an initial set of 412 candidate papers, 58 surveys were selected for inclusion in the meta-survey after applying all criteria.
+Figure~\ref{fig:prisma} presents the PRISMA~2020 flow diagram~\cite{Page2021PRISMA} of the selection process. From an initial set of 412 candidate papers, 58 surveys were selected for inclusion in the meta-survey after applying all criteria.
 
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[
     node distance=0.8cm,
-    box/.style={draw, rounded corners, minimum width=7cm, minimum height=1cm, align=center, font=\small, fill=#1!10, draw=#1!50},
+    box/.style={draw, minimum width=7cm, minimum height=1cm, align=center, font=\small, fill=#1!10, draw=#1!50},
     box/.default=cblue,
     arrow/.style={-{Stealth[length=2.5mm]}, thick},
-    excl/.style={draw, rounded corners, minimum width=4cm, minimum height=0.8cm, align=center, font=\footnotesize, fill=cred!10, draw=cred!50}
+    excl/.style={draw, minimum width=4cm, minimum height=0.8cm, align=center, font=\footnotesize, fill=cred!10, draw=cred!50}
 ]
 
 \node[box=cblue] (id) {\textbf{Identification}\\Records identified through database search (n=412)};
@@ -525,11 +540,11 @@ Figure~\ref{fig:prisma} presents the PRISMA flow diagram of the selection proces
 \draw[arrow, cred!60] (qa) -- (ex3);
 
 \end{tikzpicture}
-\caption{PRISMA flow diagram of the study selection process.}
+\caption{PRISMA~2020 flow diagram of the study selection process~\cite{Page2021PRISMA}.}
 \label{fig:prisma}
 \end{figure}
 
-Figure~\ref{fig:byyear} shows the distribution of selected surveys by publication year, revealing a clear upward trend from 2019 to 2024.
+Figure~\ref{fig:byyear} shows the distribution of selected surveys by publication year, revealing a clear upward trend that plateaus across 2022--2024.
 
 \begin{figure}[H]
 \centering
@@ -541,24 +556,22 @@ Figure~\ref{fig:byyear} shows the distribution of selected surveys by publicatio
     height=6cm,
     ylabel={Number of surveys},
     xlabel={Publication year},
-    symbolic x coords={2019,2020,2021,2022,2023,2024,2025},
+    symbolic x coords={2017,2018,2019,2020,2021,2022,2023,2024},
     xtick=data,
     ymin=0,
     ymax=20,
     nodes near coords,
     nodes near coords align={vertical},
-    every node near coord/.append style={font=\small},
-    fill=cblue!60,
-    draw=cblue!80,
+    every node near coord/.append style={font=\small, text=black},
 ]
-\addplot coordinates {(2019,4) (2020,6) (2021,7) (2022,9) (2023,11) (2024,14) (2025,7)};
+\addplot[fill=cblue!60, draw=black] coordinates {(2017,1) (2018,1) (2019,3) (2020,6) (2021,8) (2022,13) (2023,13) (2024,13)};
 \end{axis}
 \end{tikzpicture}
-\caption{Distribution of the 58 selected surveys by publication year (2019--2025).}
+\caption{Distribution of the 58 selected surveys by publication year (2017--2024).}
 \label{fig:byyear}
 \end{figure}
 
-Figure~\ref{fig:bytopic} shows the distribution by primary topic domain. Cloud-native architectures, distributed/NoSQL systems, and AI4DB are the most frequently surveyed topics.
+Figure~\ref{fig:bytopic} shows the distribution by primary topic domain (each survey is assigned a single primary topic, so the counts sum to 58). Cloud-native architectures and AI4DB/learned optimization are the most frequently surveyed topics.
 
 \begin{figure}[H]
 \centering
@@ -570,51 +583,49 @@ Figure~\ref{fig:bytopic} shows the distribution by primary topic domain. Cloud-n
     height=10cm,
     xlabel={Number of surveys},
     xmin=0,
-    xmax=12,
+    xmax=14,
     ytick=data,
     symbolic y coords={
         {Sustainability/Green},
         {Edge/Fog Databases},
         {Serverless Databases},
         {Data Governance},
-        {Benchmarking},
         {Multi-Model Databases},
-        {Graph Databases},
         {Cost/Pricing},
         {Data Lakehouse},
+        {HTAP Systems},
+        {Benchmarking},
+        {Graph Databases},
         {Vector Databases},
         {Security/Privacy},
         {Cloud DB Migration},
-        {HTAP Systems},
-        {AI4DB/Learned Opt.},
         {NoSQL/NewSQL},
+        {AI4DB/Learned Opt.},
         {Cloud-Native Arch.}
     },
     y dir=reverse,
     nodes near coords,
     nodes near coords align={horizontal},
-    every node near coord/.append style={font=\small},
-    fill=cblue!60,
-    draw=cblue!80,
+    every node near coord/.append style={font=\small, text=black},
     enlarge y limits={abs=0.4cm},
 ]
-\addplot coordinates {
-    (9,{Cloud-Native Arch.})
-    (8,{NoSQL/NewSQL})
-    (7,{AI4DB/Learned Opt.})
-    (6,{HTAP Systems})
-    (5,{Cloud DB Migration})
-    (5,{Security/Privacy})
-    (5,{Vector Databases})
-    (4,{Data Lakehouse})
-    (4,{Cost/Pricing})
-    (4,{Graph Databases})
-    (3,{Multi-Model Databases})
+\addplot[fill=cblue!60, draw=black] coordinates {
+    (12,{Cloud-Native Arch.})
+    (10,{AI4DB/Learned Opt.})
+    (4,{NoSQL/NewSQL})
+    (4,{Cloud DB Migration})
+    (4,{Security/Privacy})
+    (3,{Vector Databases})
+    (3,{Graph Databases})
     (3,{Benchmarking})
-    (3,{Data Governance})
+    (2,{HTAP Systems})
+    (2,{Data Lakehouse})
+    (2,{Cost/Pricing})
+    (2,{Multi-Model Databases})
+    (2,{Data Governance})
     (2,{Serverless Databases})
     (2,{Edge/Fog Databases})
-    (2,{Sustainability/Green})
+    (1,{Sustainability/Green})
 };
 \end{axis}
 \end{tikzpicture}
@@ -627,35 +638,44 @@ Figure~\ref{fig:byvenue} shows the distribution by venue type. Journal publicati
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}
-  %% Pie chart drawn manually with TikZ
-  %% Journals: 48% = 172.8 deg, Conferences: 28% = 100.8 deg, arXiv: 17% = 61.2 deg, Book Chapters: 7% = 25.2 deg
+  %% Pie chart drawn manually with TikZ (counts from the master catalog;
+  %% PVLDB/CIDR/IEEE BigData counted as conferences).
+  %% Journals (43): 74% = 266.9 deg, Conferences (12): 21% = 74.5 deg, arXiv (3): 5% = 18.6 deg
   \def\radius{2.5}
 
-  %% Slice 1: Journals (0 to 172.8)
-  \fill[cblue!60] (0,0) -- (0:\radius) arc (0:172.8:\radius) -- cycle;
-  \node at (86.4:1.6) {\small\textbf{48\%}};
+  %% Slice 1: Journals (0 to 266.9)
+  \filldraw[fill=cblue!60, draw=black, thin] (0,0) -- (0:\radius) arc (0:266.9:\radius) -- cycle;
+  \node at (133.45:1.6) {\small\textbf{74\%}};
 
-  %% Slice 2: Conferences (172.8 to 273.6)
-  \fill[corange!60] (0,0) -- (172.8:\radius) arc (172.8:273.6:\radius) -- cycle;
-  \node at (223.2:1.6) {\small\textbf{28\%}};
+  %% Slice 2: Conferences (266.9 to 341.4)
+  \filldraw[fill=corange!60, draw=black, thin] (0,0) -- (266.9:\radius) arc (266.9:341.4:\radius) -- cycle;
+  \node at (304.15:1.7) {\small\textbf{21\%}};
 
-  %% Slice 3: arXiv (273.6 to 334.8)
-  \fill[cgreen!60] (0,0) -- (273.6:\radius) arc (273.6:334.8:\radius) -- cycle;
-  \node at (304.2:1.6) {\small\textbf{17\%}};
-
-  %% Slice 4: Book Chapters (334.8 to 360)
-  \fill[cgray!60] (0,0) -- (334.8:\radius) arc (334.8:360:\radius) -- cycle;
-  \node at (347.4:1.8) {\small\textbf{7\%}};
+  %% Slice 3: arXiv (341.4 to 360)
+  \filldraw[fill=cgreen!60, draw=black, thin] (0,0) -- (341.4:\radius) arc (341.4:360:\radius) -- cycle;
+  \node at (350.7:1.95) {\small\textbf{5\%}};
 
   %% Legend
-  \node[anchor=west] at (3.5, 1.5) {\small\tikz\fill[cblue!60] (0,0) rectangle (0.3,0.3); \;Journals (28)};
-  \node[anchor=west] at (3.5, 0.75) {\small\tikz\fill[corange!60] (0,0) rectangle (0.3,0.3); \;Conferences (16)};
-  \node[anchor=west] at (3.5, 0.0) {\small\tikz\fill[cgreen!60] (0,0) rectangle (0.3,0.3); \;arXiv (10)};
-  \node[anchor=west] at (3.5, -0.75) {\small\tikz\fill[cgray!60] (0,0) rectangle (0.3,0.3); \;Book Chapters (4)};
+  \node[anchor=west] at (3.5, 1.2) {\small\tikz\filldraw[fill=cblue!60,draw=black] (0,0) rectangle (0.3,0.3); \;Journals (43)};
+  \node[anchor=west] at (3.5, 0.45) {\small\tikz\filldraw[fill=corange!60,draw=black] (0,0) rectangle (0.3,0.3); \;Conferences (12)};
+  \node[anchor=west] at (3.5, -0.3) {\small\tikz\filldraw[fill=cgreen!60,draw=black] (0,0) rectangle (0.3,0.3); \;arXiv (3)};
 \end{tikzpicture}
 \caption{Distribution of the 58 selected surveys by venue type.}
 \label{fig:byvenue}
 \end{figure}
+
+\subsection{Threats to validity}
+\label{subsec:threats}
+
+As with any systematic review, this meta-survey is subject to validity threats, which are mitigated as follows.
+
+\textbf{Construct validity.} The search string and digital-library selection may not capture every relevant survey, particularly those using non-standard terminology. This threat is mitigated by combining a broad set of cloud database terms with multiple survey-indicating keywords (Section~\ref{subsec:searchstrategy}) and by supplementing database searches with backward and forward snowballing on included papers.
+
+\textbf{Internal validity.} Study selection, quality assessment, and data extraction were performed by a single reviewer, introducing a risk of subjective bias and a lack of inter-rater agreement. To reduce this threat, explicit inclusion/exclusion criteria (Table~\ref{tab:criteria}) and a documented quality-assessment rubric (Table~\ref{tab:qa}) were applied uniformly, and borderline decisions were re-examined in a second pass. The absence of a second independent reviewer nonetheless remains a limitation.
+
+\textbf{External validity.} As a survey of surveys, the findings inherit the scope and currency limitations of the primary surveys; rapidly evolving topics (e.g., LLM--database convergence) may be underrepresented relative to their current activity. The synthesis is therefore intended as a structured map of the field rather than an exhaustive account of every primary system.
+
+\textbf{Conclusion validity.} The challenge taxonomy and the consensus/divergence synthesis (Table~\ref{tab:challenge-synthesis}) involve interpretive judgment. These are grounded in explicit per-challenge evidence and cross-referenced to the surveyed domains in Table~\ref{tab:challenge-coverage} to keep the reasoning traceable.
 
 
 %% ============================================================
@@ -678,9 +698,9 @@ Figure~\ref{fig:taxonomy} provides a high-level overview of the dual-theme taxon
 \begin{tikzpicture}[
     level 1/.style={sibling distance=7cm, level distance=2cm},
     level 2/.style={sibling distance=2.5cm, level distance=1.8cm},
-    root/.style={draw, rounded corners, fill=cdblue!20, draw=cdblue!60, font=\small\bfseries, minimum width=4cm, minimum height=0.8cm, align=center},
-    theme/.style={draw, rounded corners, fill=#1!15, draw=#1!50, font=\small\bfseries, minimum width=3cm, minimum height=0.7cm, align=center},
-    leaf/.style={draw, rounded corners, fill=#1!10, draw=#1!40, font=\tiny, minimum width=2cm, minimum height=0.5cm, align=center},
+    root/.style={draw, fill=cdblue!20, draw=cdblue!60, font=\small\bfseries, minimum width=4cm, minimum height=0.8cm, align=center},
+    theme/.style={draw, fill=#1!15, draw=#1!50, font=\small\bfseries, minimum width=3cm, minimum height=0.7cm, align=center},
+    leaf/.style={draw, fill=#1!10, draw=#1!40, font=\tiny, minimum width=2cm, minimum height=0.5cm, align=center},
 ]
 
 \node[root] {Cloud Database\\Meta-Survey Taxonomy}
@@ -1169,7 +1189,7 @@ Complementing the cross-cutting perspective, challenges are organized by the fiv
 \begin{figure}[t]
 \centering
 \begin{tikzpicture}[
-    phase/.style={draw, rounded corners=8pt, minimum width=2.8cm, minimum height=1.5cm, align=center, font=\small\bfseries, fill=#1!20, draw=#1!60, text=#1!80!black},
+    phase/.style={draw, minimum width=2.8cm, minimum height=1.5cm, align=center, font=\small\bfseries, fill=#1!20, draw=#1!60, text=#1!80!black},
     challenge/.style={font=\tiny, align=left, text width=2.5cm},
     arrow/.style={-{Stealth[length=3mm]}, thick, cdblue!60}
 ]
@@ -1340,15 +1360,12 @@ The LLM--database convergence creates several overarching challenges:
 
 
 %% ============================================================
-%% SECTION 7: RESEARCH ROADMAP
-%% ============================================================
-%% ============================================================
 %% SECTION 7: FINAL REMARKS
 %% ============================================================
 \section{Final Remarks}
 \label{sec:conclusion}
 
-This paper has presented the first systematic meta-survey of cloud database research, synthesizing findings from 58 survey papers published between 2019 and 2025. By applying a rigorous systematic literature review methodology, the scattered landscape of cloud database challenges has been consolidated into a structured, dual-theme taxonomy comprising eighteen cross-cutting challenges and five lifecycle-phase challenges.
+This paper has presented the first systematic meta-survey of cloud database research, synthesizing findings from 58 survey papers published between 2017 and 2024. By applying a rigorous systematic literature review methodology, the scattered landscape of cloud database challenges has been consolidated into a structured, dual-theme taxonomy comprising eighteen cross-cutting challenges and five lifecycle-phase challenges.
 
 The analysis reveals several key insights. First, the cloud database field is remarkably diverse, spanning architectural paradigms (cloud-native, disaggregated, serverless), data models (relational, document, graph, vector, multi-model), processing modes (OLTP, OLAP, HTAP, streaming), and deployment contexts (single-region, multi-region, edge--cloud). No single survey captures this full breadth, underscoring the value of a meta-level synthesis.
 
@@ -1372,8 +1389,11 @@ Based on the analysis of 58 surveys and the challenges discussed in Sections~\re
 \section*{Declaration of competing interest}
 The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
 
+\section*{Declaration of generative AI and AI-assisted technologies in the writing process}
+During the preparation of this work the author(s) used generative AI and AI-assisted tools in order to improve the readability and language of the manuscript and to assist with formatting. After using these tools, the author(s) reviewed and edited the content as needed and take(s) full responsibility for the content of the publication.
+
 \section*{Data availability}
-The systematic review protocol, search results, and complete data extraction forms are available from the authors upon request.
+This study analyzes previously published survey papers, all of which are cited in the manuscript. The systematic review protocol, search strings, screening logs, quality-assessment scores, and complete data-extraction forms are provided as supplementary material to support reproducibility.
 
 \section*{Acknowledgments}
 [To be completed.]
@@ -1526,7 +1546,7 @@ S58 & Data Provenance in Cloud Computing~\cite{Simmhan2022DataProvCloud} & 2022 
 %% ============================================================
 %% BIBLIOGRAPHY
 %% ============================================================
-% \bibliographystyle{elsarticle-num}
+\bibliographystyle{elsarticle-num}
 \bibliography{cloud-db-metasurvey}
 
 \end{document}
