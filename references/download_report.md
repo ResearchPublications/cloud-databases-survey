@@ -1,12 +1,12 @@
 # Download Report — Cloud DB Meta-Survey References
 
-Status of the 166 cited references after manual link verification and PDF download. Each verified entry links to its local PDF (named `<CitationKey>.pdf` in this folder) and to its DOI/source. Additional sources collected beyond the original 166 are listed in the final section.
+Status of the references after manual link verification and PDF download. Unverifiable orphan entries (never cited, not in the bibliography) have been removed; the remaining Missing entries are real, cited papers still lacking a local PDF. Each verified entry links to its local PDF (named `<CitationKey>.pdf` in this folder) and to its DOI/source. Additional sources collected beyond the original 166 are listed in the final section.
 
 ## Summary
 
-- **Total cited references:** 166
+- **Total tracked references:** 98
 - **✅ Verified (PDF on disk):** 86
-- **⚠️ Missing (no PDF):** 80
+- **⚠️ Missing (no PDF, but real & cited):** 12
 - **➕ Additional sources (not among the 166):** 47
 
 ## Cited references
@@ -14,11 +14,8 @@ Status of the 166 cited references after manual link verification and PDF downlo
 | Key | Title | Status | Local PDF | DOI / source |
 |-----|-------|--------|-----------|--------------|
 | `Abadi2012PACELC` | Consistency Tradeoffs in Modern Distributed Database System Design: CAP is Only Part of the Story | ✅ Verified | [Abadi2012PACELC.pdf](Abadi2012PACELC.pdf) | [10.1109/MC.2012.33](https://doi.org/10.1109/MC.2012.33) |
-| `Abadi2013NewSQL` | — | ⚠️ Missing | — | — |
 | `Abraham2019DataGovernance` | Data governance: A conceptual framework, structured review, and research agenda | ✅ Verified | [Abraham2019DataGovernance.pdf](Abraham2019DataGovernance.pdf) | [10.1016/j.ijinfomgt.2019.07.008](https://doi.org/10.1016/j.ijinfomgt.2019.07.008) |
 | `Acar2018HE` | A Survey on Homomorphic Encryption Schemes: Theory and Implementation | ✅ Verified | [Acar2018HE.pdf](Acar2018HE.pdf) | [10.1145/3214303](https://doi.org/10.1145/3214303) |
-| `Agiwal2021Napa` | — | ⚠️ Missing | — | — |
-| `Agrawal2022ElasticDB` | — | ⚠️ Missing | — | — |
 | `Akidau2015Dataflow` | — | ✅ Verified | [Akidau2015Dataflow.pdf](Akidau2015Dataflow.pdf) | [10.14778/2824032.2824076](https://doi.org/10.14778/2824032.2824076) |
 | `AmazonAurora2023` | Amazon Aurora Documentation | ⚠️ Missing | — | [link](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/) |
 | `Angles2020GraphDB` | Foundations of Modern Query Languages for Graph Databases | ✅ Verified | [Angles2020GraphDB.pdf](Angles2020GraphDB.pdf) | [10.1145/3104031](https://doi.org/10.1145/3104031) |
@@ -26,38 +23,20 @@ Status of the 166 cited references after manual link verification and PDF downlo
 | `Arenas2022MultiModelBenchmark` | — | ✅ Verified | [Arenas2022MultiModelBenchmark.pdf](Arenas2022MultiModelBenchmark.pdf) | [PDF](https://link.springer.com/content/pdf/10.1007/s41019-019-00110-3.pdf) |
 | `Armbrust2020DeltaLake` | — | ✅ Verified | [Armbrust2020DeltaLake.pdf](Armbrust2020DeltaLake.pdf) | [PDF](https://ir.cwi.nl/pub/32924/32924.pdf) |
 | `Armbrust2021Lakehouse` | Lakehouse: A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics | ⚠️ Missing | — | — |
-| `Aslett2019NewSQLState` | — | ⚠️ Missing | — | — |
-| `Baker2011Megastore` | — | ⚠️ Missing | — | — |
 | `Barker2014Empirical` | — | ✅ Verified | [Barker2014Empirical.pdf](Barker2014Empirical.pdf) | [arXiv:1406.4974](https://arxiv.org/pdf/1406.4974.pdf) |
-| `Belkhir2018ICTCarbon` | — | ⚠️ Missing | — | — |
 | `Bermbach2017Fog` | — | ✅ Verified | [Bermbach2017Fog.pdf](Bermbach2017Fog.pdf) | [arXiv:1912.06096](https://arxiv.org/pdf/1912.06096) |
-| `Bernstein1987Concurrency` | — | ⚠️ Missing | — | — |
-| `Bernstein2011SchemaEvolution` | — | ⚠️ Missing | — | — |
-| `Bonnet2011CloudDB` | — | ⚠️ Missing | — | — |
 | `Brewer2012CAP` | CAP Twelve Years Later: How the ``Rules'' Have Changed | ✅ Verified | [Brewer2012CAP.pdf](Brewer2012CAP.pdf) | [10.1109/MC.2012.37](https://doi.org/10.1109/MC.2012.37) |
-| `Brown2020GPT3` | — | ⚠️ Missing | — | — |
-| `Buneman2001Provenance` | — | ⚠️ Missing | — | — |
 | `Cao2021PolarDB` | PolarDB Serverless: A Cloud Native Database for Disaggregated Data Centers | ✅ Verified | [Cao2021PolarDB.pdf](Cao2021PolarDB.pdf) | [10.1145/3448016.3457560](https://doi.org/10.1145/3448016.3457560) |
-| `Carbone2015Flink` | — | ⚠️ Missing | — | — |
 | `Cattell2011Scalable` | — | ✅ Verified | [Cattell2011Scalable.pdf](Cattell2011Scalable.pdf) | [PDF](http://www.cattell.net/datastores/Datastores.pdf) |
-| `Chamberlin1974SQL` | — | ⚠️ Missing | — | — |
 | `Chang2008Bigtable` | — | ✅ Verified | [Chang2008Bigtable.pdf](Chang2008Bigtable.pdf) | [10.1145/1365815.1365816](https://doi.org/10.1145/1365815.1365816) |
-| `Chaudhuri1998QueryOpt` | — | ⚠️ Missing | — | — |
-| `Cheng2021AnalyticDB` | — | ⚠️ Missing | — | — |
-| `Codd1970Relational` | — | ⚠️ Missing | — | — |
 | `Cooper2010YCSB` | — | ✅ Verified | [Cooper2010YCSB.pdf](Cooper2010YCSB.pdf) | [10.1145/1807128.1807152](https://doi.org/10.1145/1807128.1807152) |
 | `Corbett2013Spanner` | Spanner: Google's Globally Distributed Database | ✅ Verified | [Corbett2013Spanner.pdf](Corbett2013Spanner.pdf) | [10.1145/2491245](https://doi.org/10.1145/2491245) |
-| `Cowling2012Granola` | — | ⚠️ Missing | — | — |
 | `Curino2011DBaaS` | Relational Cloud: A Database-as-a-Service for the Cloud | ✅ Verified | [Curino2011DBaaS.pdf](Curino2011DBaaS.pdf) | — |
 | `Dageville2016` | The Snowflake Elastic Data Warehouse | ✅ Verified | [Dageville2016.pdf](Dageville2016.pdf) | [10.1145/2882903.2903741](https://doi.org/10.1145/2882903.2903741) |
-| `Das2013ElasticDB` | — | ⚠️ Missing | — | — |
 | `Davoudian2018NoSQL` | A Survey on NoSQL Stores | ✅ Verified | [Davoudian2018NoSQL.pdf](Davoudian2018NoSQL.pdf) | [10.1145/3158661](https://doi.org/10.1145/3158661) |
 | `DeCandia2007Dynamo` | — | ✅ Verified | [DeCandia2007Dynamo.pdf](DeCandia2007Dynamo.pdf) | [10.1145/1323293.1294281](https://doi.org/10.1145/1323293.1294281) |
-| `Dean2004MapReduce` | — | ⚠️ Missing | — | — |
 | `Depoutovitch2020Taurus` | — | ✅ Verified | [Depoutovitch2020Taurus.pdf](Depoutovitch2020Taurus.pdf) | [arXiv:2412.02792](http://arxiv.org/pdf/2412.02792) |
 | `Deutsch2022GQL` | Graph Pattern Matching in GQL and SQL/PGQ | ✅ Verified | [Deutsch2022GQL.pdf](Deutsch2022GQL.pdf) | [10.1145/3514221.3526057](https://doi.org/10.1145/3514221.3526057) |
-| `Doan2012DataIntegration` | — | ⚠️ Missing | — | — |
-| `Dutt2019Selectivity` | — | ⚠️ Missing | — | — |
 | `Farber2012` | SAP HANA Database: Data Management for Modern Business Applications | ✅ Verified | [Farber2012.pdf](Farber2012.pdf) | [10.1145/2094114.2094126](https://doi.org/10.1145/2094114.2094126) |
 | `Fernandez2023DataMarketplace` | — | ✅ Verified | [Fernandez2023DataMarketplace.pdf](Fernandez2023DataMarketplace.pdf) | [arXiv:2002.01047](https://arxiv.org/pdf/2002.01047.pdf) |
 | `Francis2018GQL` | — | ✅ Verified | [Francis2018GQL.pdf](Francis2018GQL.pdf) | [PDF](https://hal.archives-ouvertes.fr/hal-01803524/file/paper.pdf) |
@@ -65,103 +44,58 @@ Status of the 166 cited references after manual link verification and PDF downlo
 | `GDPR2016` | Regulation (EU) 2016/679 of the European Parliament and of the Council (General Data Protection Regulation) | ✅ Verified | [GDPR2016.pdf](GDPR2016.pdf) | — |
 | `Gao2023DAILSQL` | Text-to-SQL Empowered by Large Language Models: A Benchmark Evaluation | ✅ Verified | [Gao2023DAILSQL.pdf](Gao2023DAILSQL.pdf) | [10.14778/3641204.3641221](https://doi.org/10.14778/3641204.3641221) |
 | `Gao2024RAGSurvey` | Retrieval-Augmented Generation for Large Language Models: A Survey | ✅ Verified | [Gao2024RAGSurvey.pdf](Gao2024RAGSurvey.pdf) | [arXiv:2312.10997](https://arxiv.org/abs/2312.10997) |
-| `Ghemawat2003GFS` | — | ⚠️ Missing | — | — |
 | `Gomes2024EdgeFog` | Edge and Fog Database Management: A Survey | ⚠️ Missing | — | [10.1145/3613531](https://doi.org/10.1145/3613531) |
 | `Graefe1993QueryOptSurvey` | — | ✅ Verified | [Graefe1993QueryOptSurvey.pdf](Graefe1993QueryOptSurvey.pdf) | [10.1145/152610.152611](https://doi.org/10.1145/152610.152611) |
-| `Gray1981Transaction` | — | ⚠️ Missing | — | — |
 | `Haas2024HTAPSurvey` | HTAP Databases: A Survey | ✅ Verified | [Haas2024HTAPSurvey.pdf](Haas2024HTAPSurvey.pdf) | [10.1109/TKDE.2023.3298514](https://doi.org/10.1109/TKDE.2023.3298514) |
 | `Halevy2016Goods` | Goods: Organizing Google's Datasets | ✅ Verified | [Halevy2016Goods.pdf](Halevy2016Goods.pdf) | [10.1145/2882903.2903730](https://doi.org/10.1145/2882903.2903730) |
 | `Harby2022Lakehouse` | From Data Warehouse to Lakehouse: A Comparative Review | ⚠️ Missing | — | [10.3390/bdcc6040111](https://doi.org/10.3390/bdcc6040111) |
-| `Hashem2015BigDataCloud` | — | ⚠️ Missing | — | — |
-| `Hellerstein2020Serverless` | — | ⚠️ Missing | — | — |
 | `Hilprecht2022CardinalityEstimation` | DeepDB: Learn from Data, not from Queries! | ✅ Verified | [Hilprecht2022CardinalityEstimation.pdf](Hilprecht2022CardinalityEstimation.pdf) | [10.14778/3384345.3384349](https://doi.org/10.14778/3384345.3384349) |
 | `Hilprecht2022Zero` | — | ✅ Verified | [Hilprecht2022Zero.pdf](Hilprecht2022Zero.pdf) | [arXiv:2201.00561](http://arxiv.org/pdf/2201.00561) |
 | `Hogan2021KGSurvey` | — | ✅ Verified | [Hogan2021KGSurvey.pdf](Hogan2021KGSurvey.pdf) | [arXiv:2003.02320](https://arxiv.org/pdf/2003.02320.pdf) |
 | `Huang2020TiDB` | TiDB: A Raft-Based HTAP Database | ✅ Verified | [Huang2020TiDB.pdf](Huang2020TiDB.pdf) | [10.14778/3415478.3415535](https://doi.org/10.14778/3415478.3415535) |
-| `IDC2024Cloud` | — | ⚠️ Missing | — | — |
 | `IEA2024DataCenters` | Data Centres and Data Transmission Networks | ⚠️ Missing | — | [link](https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks) |
-| `Idreos2018Design` | — | ⚠️ Missing | — | — |
 | `Jainaga2023Lakehouse` | Data Lakehouse: A Survey and Experimental Study | ✅ Verified | [Jainaga2023Lakehouse.pdf](Jainaga2023Lakehouse.pdf) | [10.1186/s40537-023-00808-2](https://doi.org/10.1186/s40537-023-00808-2) |
-| `Jindal2021AutoMV` | — | ⚠️ Missing | — | — |
 | `Johnson2021FAISS` | — | ✅ Verified | [Johnson2021FAISS.pdf](Johnson2021FAISS.pdf) | [arXiv:1702.08734](https://arxiv.org/pdf/1702.08734) |
 | `Kaur2021NoSQLReview` | NoSQL Databases: A Comprehensive Review | ⚠️ Missing | — | — |
-| `Kemme2010Replication` | — | ⚠️ Missing | — | [10.2200/S00296ED1V01Y201008DTM007](https://doi.org/10.2200/S00296ED1V01Y201008DTM007) |
-| `Kemper2011HyPer` | — | ⚠️ Missing | — | — |
 | `Kipf2019LearnedCardinality` | — | ✅ Verified | [Kipf2019LearnedCardinality.pdf](Kipf2019LearnedCardinality.pdf) | [arXiv:1809.00677](https://arxiv.org/pdf/1809.00677.pdf) |
 | `Kitchenham2007` | Guidelines for Performing Systematic Literature Reviews in Software Engineering | ⚠️ Missing | — | — |
-| `Kleppmann2017DesigningData` | — | ⚠️ Missing | — | — |
 | `Kraska2018LearnedIndex` | The Case for Learned Index Structures | ✅ Verified | [Kraska2018LearnedIndex.pdf](Kraska2018LearnedIndex.pdf) | [10.1145/3183713.3196909](https://doi.org/10.1145/3183713.3196909) |
-| `Kraska2021SageDB` | — | ⚠️ Missing | — | [10.14778/3476311.3476399](https://doi.org/10.14778/3476311.3476399) |
 | `Lakshman2010Cassandra` | — | ✅ Verified | [Lakshman2010Cassandra.pdf](Lakshman2010Cassandra.pdf) | [10.1145/1773912.1773922](https://doi.org/10.1145/1773912.1773922) |
 | `Lamb2012Vertica` | — | ✅ Verified | [Lamb2012Vertica.pdf](Lamb2012Vertica.pdf) | [arXiv:1208.4173](https://arxiv.org/pdf/1208.4173.pdf) |
 | `Lamport1998Paxos` | — | ✅ Verified | [Lamport1998Paxos.pdf](Lamport1998Paxos.pdf) | [10.1145/279227.279229](https://doi.org/10.1145/279227.279229) |
-| `Lamport2001PaxosMadeSimple` | — | ⚠️ Missing | — | — |
 | `Lao2024GPTuner` | GPTuner: A Manual-Reading Database Tuning System via GPT-Guided Bayesian Optimization | ✅ Verified | [Lao2024GPTuner.pdf](Lao2024GPTuner.pdf) | [10.14778/3659437.3659449](https://doi.org/10.14778/3659437.3659449) |
 | `Leis2023CloudPricing` | Towards Cost-Optimal Query Processing in the Cloud | ⚠️ Missing | — | [10.14778/3461535.3461549](https://doi.org/10.14778/3461535.3461549) |
-| `Lewis2020RAG` | — | ⚠️ Missing | — | — |
-| `Li2021AI4Sys` | — | ⚠️ Missing | — | — |
 | `Li2023LLMQueryOpt` | — | ✅ Verified | [Li2023LLMQueryOpt.pdf](Li2023LLMQueryOpt.pdf) | [arXiv:2404.03548](https://arxiv.org/pdf/2404.03548.pdf) |
 | `Li2024CloudNativeSurvey` | Cloud-Native Database Systems: A Survey and Future Directions | ✅ Verified | [Li2024CloudNativeSurvey.pdf](Li2024CloudNativeSurvey.pdf) | [10.1109/TKDE.2023.3313441](https://doi.org/10.1109/TKDE.2023.3313441) |
 | `Lu2019MultiModel` | Multi-Model Databases: A New Journey to Handle the Variety of Data | ✅ Verified | [Lu2019MultiModel.pdf](Lu2019MultiModel.pdf) | [10.1145/3323214](https://doi.org/10.1145/3323214) |
-| `Luo2022Partition` | — | ⚠️ Missing | — | — |
 | `Ma2021LearnedWorkload` | Query-based Workload Forecasting for Self-Driving Database Management Systems | ✅ Verified | [Ma2021LearnedWorkload.pdf](Ma2021LearnedWorkload.pdf) | [10.1145/3183713.3196908](https://doi.org/10.1145/3183713.3196908) |
 | `Ma2022MBAQO` | — | ✅ Verified | [Ma2022MBAQO.pdf](Ma2022MBAQO.pdf) | [10.1145/3514221.3517869](https://doi.org/10.1145/3514221.3517869) |
 | `Malkov2020HNSW` | — | ✅ Verified | [Malkov2020HNSW.pdf](Malkov2020HNSW.pdf) | [arXiv:1603.09320](http://arxiv.org/pdf/1603.09320) |
 | `Marcus2021Bao` | Bao: Making Learned Query Optimization Practical | ✅ Verified | [Marcus2021Bao.pdf](Marcus2021Bao.pdf) | [10.1145/3448016.3452838](https://doi.org/10.1145/3448016.3452838) |
 | `Mathew2021CloudMigration` | Cloud Database Migration: A Survey of Approaches and Challenges | ⚠️ Missing | — | [10.1186/s13677-021-00243-3](https://doi.org/10.1186/s13677-021-00243-3) |
-| `Mell2011NIST` | — | ⚠️ Missing | — | — |
 | `Melnik2020Dremel` | Dremel: A Decade of Interactive SQL Analysis at Web Scale | ✅ Verified | [Melnik2020Dremel.pdf](Melnik2020Dremel.pdf) | [10.14778/3415478.3415568](https://doi.org/10.14778/3415478.3415568) |
 | `Moher2009PRISMA` | — | ✅ Verified | [Moher2009PRISMA.pdf](Moher2009PRISMA.pdf) | [PDF](https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1000097&type=printable) |
-| `Mokbel2023BigData` | — | ⚠️ Missing | — | — |
 | `Muller2020Serverless` | Lambada: Interactive Data Analytics on Cold Data Using Serverless Cloud Infrastructure | ✅ Verified | [Muller2020Serverless.pdf](Muller2020Serverless.pdf) | [10.1145/3318464.3389758](https://doi.org/10.1145/3318464.3389758) |
 | `Narasayya2015MultiTenant` | SQLVM: Performance Isolation in Multi-Tenant Relational Database-as-a-Service | ⚠️ Missing | — | — |
-| `Negi2021Steering` | — | ⚠️ Missing | — | — |
 | `Noy2019KGSurvey` | — | ✅ Verified | [Noy2019KGSurvey.pdf](Noy2019KGSurvey.pdf) | [10.1145/3331166](https://doi.org/10.1145/3331166) |
-| `Olston2008PigLatin` | — | ⚠️ Missing | — | — |
-| `Ongaro2014Raft` | — | ⚠️ Missing | — | — |
 | `Opara2017LockIn` | Architectural Principles for Cloud Software | ✅ Verified | [Opara2017LockIn.pdf](Opara2017LockIn.pdf) | [10.1145/3104028](https://doi.org/10.1145/3104028) |
-| `Ozsu2020DistributedDB` | — | ⚠️ Missing | — | — |
 | `Pan2024VectorDB` | Survey of Vector Database Management Systems | ✅ Verified | [Pan2024VectorDB.pdf](Pan2024VectorDB.pdf) | [10.1007/s00778-024-00864-x](https://doi.org/10.1007/s00778-024-00864-x) |
 | `Patterson2022CarbonAI` | — | ✅ Verified | [Patterson2022CarbonAI.pdf](Patterson2022CarbonAI.pdf) | [10.1109/MC.2022.3148714](https://doi.org/10.1109/MC.2022.3148714) |
-| `Pavlo2016NewSQL` | — | ⚠️ Missing | — | — |
 | `Pavlo2017SelfDriving` | Self-Driving Database Management Systems | ✅ Verified | [Pavlo2017SelfDriving.pdf](Pavlo2017SelfDriving.pdf) | — |
-| `Petersen2015SLR` | — | ⚠️ Missing | — | — |
 | `Politou2018GDPR` | Forgetting Personal Data and Revoking Consent Under the GDPR: Challenges and Proposed Solutions | ✅ Verified | [Politou2018GDPR.pdf](Politou2018GDPR.pdf) | [10.1093/cybsec/tyy001](https://doi.org/10.1093/cybsec/tyy001) |
 | `Pourreza2023DINSQL` | DIN-SQL: Decomposed In-Context Learning of Text-to-SQL with Self-Correction | ✅ Verified | [Pourreza2023DINSQL.pdf](Pourreza2023DINSQL.pdf) | — |
 | `Rabl2019BenchmarkSurvey` | Just Can't Get Enough---Synthesizing Big Data Benchmarks | ✅ Verified | [Rabl2019BenchmarkSurvey.pdf](Rabl2019BenchmarkSurvey.pdf) | — |
 | `Rahm2001SchemaMatching` | — | ✅ Verified | [Rahm2001SchemaMatching.pdf](Rahm2001SchemaMatching.pdf) | [PDF](https://ul.qucosa.de/api/qucosa%3A31968/attachment/ATT-0/) |
-| `Raut2019CloudReview` | — | ⚠️ Missing | — | — |
 | `Saeed2023XAI` | Explainable AI (XAI): A Systematic Meta-Survey of Current Challenges and Future Opportunities | ✅ Verified | [Saeed2023XAI.pdf](Saeed2023XAI.pdf) | [10.1016/j.knosys.2023.110273](https://doi.org/10.1016/j.knosys.2023.110273) |
-| `Sakr2011CloudDB` | — | ⚠️ Missing | — | — |
 | `Sanka2022CloudSecSurvey` | A Systematic Review of Cloud Database Security | ⚠️ Missing | — | [10.1109/ACCESS.2022.3193881](https://doi.org/10.1109/ACCESS.2022.3193881) |
-| `Satyanarayanan2017Edge` | — | ⚠️ Missing | — | — |
-| `Selinger1979QueryOpt` | — | ⚠️ Missing | — | — |
-| `Shan2022Disaggregated` | — | ⚠️ Missing | — | — |
-| `Shi2016Edge` | — | ⚠️ Missing | — | — |
-| `Shute2013F1` | — | ⚠️ Missing | — | — |
-| `Simmhan2005DataProvenance` | — | ⚠️ Missing | — | — |
-| `Spillner2017TransformCloud` | — | ⚠️ Missing | — | — |
-| `Stonebraker2005CStore` | — | ⚠️ Missing | — | — |
-| `Stonebraker2010NewSQL` | — | ⚠️ Missing | — | — |
-| `Stonebraker2018AutoAdmin` | — | ⚠️ Missing | — | — |
 | `Strubell2019Energy` | — | ✅ Verified | [Strubell2019Energy.pdf](Strubell2019Energy.pdf) | [PDF](https://www.aclweb.org/anthology/P19-1355.pdf) |
 | `Sun2019Learned` | — | ✅ Verified | [Sun2019Learned.pdf](Sun2019Learned.pdf) | [arXiv:1906.02560](https://arxiv.org/pdf/1906.02560) |
-| `Sun2024End2End` | — | ⚠️ Missing | — | — |
 | `Taft2020Cockroach` | CockroachDB: The Resilient Geo-Distributed SQL Database | ✅ Verified | [Taft2020Cockroach.pdf](Taft2020Cockroach.pdf) | [10.1145/3318464.3386134](https://doi.org/10.1145/3318464.3386134) |
-| `Tan2019iBTune` | — | ⚠️ Missing | — | — |
 | `Thirumuruganathan2024DBLLMSurvey` | A Survey on Integrating LLMs with Databases | ✅ Verified | [Thirumuruganathan2024DBLLMSurvey.pdf](Thirumuruganathan2024DBLLMSurvey.pdf) | [arXiv:2404.06234](https://arxiv.org/abs/2404.06234) |
-| `Thomson2012Calvin` | — | ⚠️ Missing | — | — |
 | `Tomarchio2020CloudOrchestration` | — | ✅ Verified | [Tomarchio2020CloudOrchestration.pdf](Tomarchio2020CloudOrchestration.pdf) | [PDF](https://journalofcloudcomputing.springeropen.com/track/pdf/10.1186/s13677-020-00194-7) |
-| `VanAken2017OtterTune` | — | ⚠️ Missing | — | — |
-| `Vaswani2017Transformer` | — | ⚠️ Missing | — | — |
 | `Verbitski2017` | Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases | ✅ Verified | [Verbitski2017.pdf](Verbitski2017.pdf) | [10.1145/3035918.3056101](https://doi.org/10.1145/3035918.3056101) |
-| `Verbitski2018` | — | ⚠️ Missing | — | — |
 | `Viotti2016Consistency` | Consistency in Non-Transactional Distributed Storage Systems | ✅ Verified | [Viotti2016Consistency.pdf](Viotti2016Consistency.pdf) | [10.1145/2926965](https://doi.org/10.1145/2926965) |
-| `Vuppalapati2020Napa` | — | ⚠️ Missing | — | — |
-| `Wang2021Milvus` | — | ⚠️ Missing | — | — |
-| `Wang2024CloudDBBenchmark` | — | ⚠️ Missing | — | — |
 | `Wang2024MACSQL` | MAC-SQL: A Multi-Agent Collaborative Framework for Text-to-SQL | ✅ Verified | [Wang2024MACSQL.pdf](Wang2024MACSQL.pdf) | [arXiv:2312.11242](https://arxiv.org/abs/2312.11242) |
-| `Weikum2002Transactions` | — | ⚠️ Missing | — | — |
 | `Woltmann2023DNNIndex` | Learned Indexes: A Comprehensive Experimental Evaluation | ✅ Verified | [Woltmann2023DNNIndex.pdf](Woltmann2023DNNIndex.pdf) | — |
 | `Wu2022FactorJoin` | — | ✅ Verified | [Wu2022FactorJoin.pdf](Wu2022FactorJoin.pdf) | [arXiv:2212.05526](https://arxiv.org/pdf/2212.05526.pdf) |
 | `Xiao2018OBDA` | Ontology-Based Data Access: A Survey | ✅ Verified | [Xiao2018OBDA.pdf](Xiao2018OBDA.pdf) | [PDF](https://www.ijcai.org/proceedings/2018/0777.pdf) |
@@ -172,12 +106,10 @@ Status of the 166 cited references after manual link verification and PDF downlo
 | `Zaharia2016Spark` | — | ✅ Verified | [Zaharia2016Spark.pdf](Zaharia2016Spark.pdf) | [10.1145/2934664](https://doi.org/10.1145/2934664) |
 | `Zamanian2017Chiller` | — | ✅ Verified | [Zamanian2017Chiller.pdf](Zamanian2017Chiller.pdf) | [10.14778/3055330.3055335](https://doi.org/10.14778/3055330.3055335) |
 | `Zhang2022CDBTune` | An End-to-End Automatic Cloud Database Tuning System Using Deep Reinforcement Learning | ✅ Verified | [Zhang2022CDBTune.pdf](Zhang2022CDBTune.pdf) | [10.1145/3299869.3300085](https://doi.org/10.1145/3299869.3300085) |
-| `Zhang2023CDG` | — | ⚠️ Missing | — | — |
 | `Zhou2022AI4DB` | Database Meets Artificial Intelligence: A Survey | ✅ Verified | [Zhou2022AI4DB.pdf](Zhou2022AI4DB.pdf) | [10.1109/TKDE.2020.2994641](https://doi.org/10.1109/TKDE.2020.2994641) |
 | `Zhou2023LLM4DB` | — | ✅ Verified | [Zhou2023LLM4DB.pdf](Zhou2023LLM4DB.pdf) | [arXiv:2311.09858](https://arxiv.org/pdf/2311.09858.pdf) |
 | `Zhou2024DBot` | D-Bot: Database Diagnosis System using Large Language Models | ✅ Verified | [Zhou2024DBot.pdf](Zhou2024DBot.pdf) | [10.14778/3636218.3636230](https://doi.org/10.14778/3636218.3636230) |
 | `Zhu2023Pilot` | — | ✅ Verified | [Zhu2023Pilot.pdf](Zhu2023Pilot.pdf) | [PDF](http://eprints.lse.ac.uk/120493/1/Rosenblatt_et_al_Epistemic_parity_published.pdf) |
-| `Zhu2024ConfTuning` | — | ⚠️ Missing | — | — |
 | `gartner2024dbms` | Magic Quadrant for Cloud Database Management Systems | ⚠️ Missing | — | — |
 
 ## Additional sources (not in original 166)
