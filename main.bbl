@@ -1,4 +1,4 @@
-\begin{thebibliography}{100}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
@@ -44,24 +44,21 @@ J.~J. Pan, J.~Wang, G.~Li, Survey of vector database management systems, The
   {\path{doi:10.1007/s00778-024-00864-x}}.
 
 \bibitem{Li2024CloudNativeSurvey}
-H.~Li, F.~Li, Cloud-native database systems: A survey and future directions,
-  IEEE Transactions on Knowledge and Data Engineering 36~(4) (2024) 1374--1396.
-\newblock \href {https://doi.org/10.1109/TKDE.2023.3313441}
-  {\path{doi:10.1109/TKDE.2023.3313441}}.
+H.~Dong, C.~Zhang, G.~Li, H.~Zhang, Cloud-native databases: A survey, IEEE
+  Transactions on Knowledge and Data Engineering 36~(12) (2024) 7772--7791.
+\newblock \href {https://doi.org/10.1109/TKDE.2024.3397508}
+  {\path{doi:10.1109/TKDE.2024.3397508}}.
 
 \bibitem{Haas2024HTAPSurvey}
-L.~Haas, M.~Hentschel, N.~May, G.~Moerkotte, {HTAP} databases: A survey, IEEE
-  Transactions on Knowledge and Data Engineering 36~(2) (2024) 709--727.
-\newblock \href {https://doi.org/10.1109/TKDE.2023.3298514}
-  {\path{doi:10.1109/TKDE.2023.3298514}}.
+C.~Zhang, G.~Li, J.~Zhang, X.~Zhang, J.~Feng, {HTAP} databases: A survey, arXiv
+  preprint arXiv:2404.15670 (2024).
+\newblock \href {http://arxiv.org/abs/2404.15670} {\path{arXiv:2404.15670}}.
 
-\bibitem{Muller2020Serverless}
-I.~M{\"u}ller, R.~Marroqu{\'i}n, G.~Alonso, Lambada: Interactive data analytics
-  on cold data using serverless cloud infrastructure, in: Proceedings of the
-  ACM SIGMOD International Conference on Management of Data, 2020, pp.
-  115--130.
-\newblock \href {https://doi.org/10.1145/3318464.3389758}
-  {\path{doi:10.1145/3318464.3389758}}.
+\bibitem{Angles2020GraphDB}
+R.~Angles, M.~Arenas, P.~Barcel{\'o}, A.~Hogan, J.~Reutter, D.~Vrgoc,
+  Foundations of modern query languages for graph databases, ACM Computing
+  Surveys 50~(5) (2017) 1--40.
+\newblock \href {https://doi.org/10.1145/3104031} {\path{doi:10.1145/3104031}}.
 
 \bibitem{Zhou2022AI4DB}
 X.~Zhou, C.~Chai, G.~Li, J.~Sun, Database meets artificial intelligence: A
@@ -71,10 +68,11 @@ X.~Zhou, C.~Chai, G.~Li, J.~Sun, Database meets artificial intelligence: A
   {\path{doi:10.1109/TKDE.2020.2994641}}.
 
 \bibitem{Harby2022Lakehouse}
-A.~A. Harby, F.~Saeed, From data warehouse to lakehouse: A comparative review,
-  Big Data and Cognitive Computing 6~(4) (2022) 111.
-\newblock \href {https://doi.org/10.3390/bdcc6040111}
-  {\path{doi:10.3390/bdcc6040111}}.
+A.~A. Harby, F.~Zulkernine, From data warehouse to lakehouse: A comparative
+  review, in: 2022 IEEE International Conference on Big Data (Big Data), IEEE,
+  2022, pp. 389--395.
+\newblock \href {https://doi.org/10.1109/BigData55660.2022.10020719}
+  {\path{doi:10.1109/BigData55660.2022.10020719}}.
 
 \bibitem{Davoudian2018NoSQL}
 A.~Davoudian, L.~Chen, M.~Liu, A survey on {NoSQL} stores, ACM Computing
@@ -82,13 +80,15 @@ A.~Davoudian, L.~Chen, M.~Liu, A survey on {NoSQL} stores, ACM Computing
 \newblock \href {https://doi.org/10.1145/3158661} {\path{doi:10.1145/3158661}}.
 
 \bibitem{Kaur2021NoSQLReview}
-K.~Kaur, R.~Rani, {NoSQL} databases: A comprehensive review, International
-  Journal of Electronics and Information Engineering 14~(1) (2021) 29--48.
+D.~Kpekpassi, D.~Faye, {NoSQL} databases: A survey, Revue Africaine de
+  Recherche en Informatique et Math{\'e}matiques Appliqu{\'e}es (ARIMA) (2025).
+\newblock \href {https://doi.org/10.46298/arima.13970}
+  {\path{doi:10.46298/arima.13970}}.
 
 \bibitem{Gomes2024EdgeFog}
-P.~Gomes, F.~Costa, R.~Cerqueira, Edge and fog database management: A survey,
-  ACM Computing Surveys 56~(3) (2024) 1--38.
-\newblock \href {https://doi.org/10.1145/3613531} {\path{doi:10.1145/3613531}}.
+L.~M.~M. Ferreira, F.~Coelho, J.~Pereira, Databases in edge and fog
+  environments: A survey, ACM Computing Surveys 56~(11) (2024) 1--40.
+\newblock \href {https://doi.org/10.1145/3666001} {\path{doi:10.1145/3666001}}.
 
 \bibitem{Kitchenham2007}
 B.~Kitchenham, S.~Charters, Guidelines for performing systematic literature
@@ -139,24 +139,12 @@ Z.~Yang, C.~Yang, F.~Han, M.~Zhuang, B.~Yang, Z.~Lin, H.~Xu, G.~Li, L.~Ran,
 \newblock \href {https://doi.org/10.14778/3554821.3554830}
   {\path{doi:10.14778/3554821.3554830}}.
 
-\bibitem{Jainaga2023Lakehouse}
-A.~Jainaga, A.~Illarramendi, E.~B. Saleme, Data lakehouse: A survey and
-  experimental study, Journal of Big Data 10~(1) (2023) 1--45.
-\newblock \href {https://doi.org/10.1186/s40537-023-00808-2}
-  {\path{doi:10.1186/s40537-023-00808-2}}.
-
 \bibitem{Farber2012}
 F.~F{\"a}rber, S.~K. Cha, J.~Primsch, C.~Bornh{\"o}vd, S.~Siber, W.~Lehner,
   {SAP HANA} database: Data management for modern business applications, in:
   SIGMOD Record, Vol.~40, 2012, pp. 45--51.
 \newblock \href {https://doi.org/10.1145/2094114.2094126}
   {\path{doi:10.1145/2094114.2094126}}.
-
-\bibitem{Angles2020GraphDB}
-R.~Angles, M.~Arenas, P.~Barcel{\'o}, A.~Hogan, J.~Reutter, D.~Vrgoc,
-  Foundations of modern query languages for graph databases, ACM Computing
-  Surveys 50~(5) (2018) 1--40.
-\newblock \href {https://doi.org/10.1145/3104031} {\path{doi:10.1145/3104031}}.
 
 \bibitem{Elbattah2015Freebase}
 M.~Elbattah, M.~Roushdy, M.~Aref, A.-B.~M. Salem, Large-scale ontology storage
@@ -191,6 +179,14 @@ V.~Leis, M.~Kuschewski, Towards cost-optimal query processing in the cloud, in:
 V.~Mateljan, D.~{\v{C}}i{\v{s}}i{\'c}, D.~Ogrizovi{\'c}, Cloud
   database-as-a-service ({DaaS}) -- {ROI}, in: Proceedings of the 33rd
   International Convention MIPRO, IEEE, 2010.
+
+\bibitem{Muller2020Serverless}
+I.~M{\"u}ller, R.~Marroqu{\'i}n, G.~Alonso, Lambada: Interactive data analytics
+  on cold data using serverless cloud infrastructure, in: Proceedings of the
+  ACM SIGMOD International Conference on Management of Data, 2020, pp.
+  115--130.
+\newblock \href {https://doi.org/10.1145/3318464.3389758}
+  {\path{doi:10.1145/3318464.3389758}}.
 
 \bibitem{GDPR2016}
 {European Parliament and Council of the European Union}, Regulation ({EU})
@@ -424,10 +420,11 @@ V.~Waghmare, K.~Gojre, A.~Watpade, Approach to enhancing concurrent and
   {\path{doi:10.1109/CICN.2015.158}}.
 
 \bibitem{Sanka2022CloudSecSurvey}
-A.~I. Sanka, R.~Choo, A systematic review of cloud database security, IEEE
-  Access 10 (2022) 78789--78812.
-\newblock \href {https://doi.org/10.1109/ACCESS.2022.3193881}
-  {\path{doi:10.1109/ACCESS.2022.3193881}}.
+B.~Alouffi, M.~Hasnain, A.~Alharbi, W.~Alosaimi, H.~Alyami, M.~Ayaz, A
+  systematic literature review on cloud computing security: Threats and
+  mitigation strategies, IEEE Access 9 (2021) 57792--57807.
+\newblock \href {https://doi.org/10.1109/ACCESS.2021.3073203}
+  {\path{doi:10.1109/ACCESS.2021.3073203}}.
 
 \bibitem{Ferrari2009DBaaSSec}
 E.~Ferrari, Database as a service: Challenges and solutions for privacy and
@@ -459,6 +456,13 @@ R.~R. Ravan, N.~B. Idris, Z.~Mehrabani, A survey on querying encrypted data for
   Distributed Computing and Knowledge Discovery (CyberC), IEEE, 2013.
 \newblock \href {https://doi.org/10.1109/CyberC.2013.12}
   {\path{doi:10.1109/CyberC.2013.12}}.
+
+\bibitem{Mathew2021CloudMigration}
+M.~F. Gholami, F.~Daneshgar, G.~Low, G.~Beydoun, Cloud migration process---a
+  survey, evaluation framework, and open challenges, Journal of Systems and
+  Software 120 (2016) 31--69.
+\newblock \href {https://doi.org/10.1016/j.jss.2016.06.068}
+  {\path{doi:10.1016/j.jss.2016.06.068}}.
 
 \bibitem{Narasayya2015MultiTenant}
 V.~Narasayya, S.~Das, M.~Syamala, B.~Chandramouli, S.~Chaudhuri, {SQLVM}:
@@ -502,16 +506,22 @@ M.~Sheng, S.~Wang, Y.~Zhang, K.~Wang, J.~Wang, Y.~Luo, R.~Hao, {MQRLD}: A
 \newblock \href {https://doi.org/10.1016/j.ipm.2025.104101}
   {\path{doi:10.1016/j.ipm.2025.104101}}.
 
-\bibitem{Mathew2021CloudMigration}
-S.~S. Mathew, D.~K. Naik, Cloud database migration: A survey of approaches and
-  challenges, Journal of Cloud Computing 10~(1) (2021) 1--25.
-\newblock \href {https://doi.org/10.1186/s13677-021-00243-3}
-  {\path{doi:10.1186/s13677-021-00243-3}}.
-
 \bibitem{Opara2017LockIn}
 C.~Pahl, P.~Jamshidi, O.~Zimmermann, Architectural principles for cloud
   software, ACM Transactions on Internet Technology 18~(2) (2018) 1--23.
 \newblock \href {https://doi.org/10.1145/3104028} {\path{doi:10.1145/3104028}}.
+
+\bibitem{Zhao2026SpatialIndex}
+X.~Zhao, K.-Y. Lam, Density based learned spatial index for clustered data,
+  Information Systems 135 (2026) 102606.
+\newblock \href {https://doi.org/10.1016/j.is.2025.102606}
+  {\path{doi:10.1016/j.is.2025.102606}}.
+
+\bibitem{Woltmann2023DNNIndex}
+Z.~Sun, X.~Zhou, G.~Li, Learned index: A comprehensive experimental evaluation,
+  Proceedings of the VLDB Endowment 16~(8) (2023) 1992--2004.
+\newblock \href {https://doi.org/10.14778/3594512.3594528}
+  {\path{doi:10.14778/3594512.3594528}}.
 
 \bibitem{Dritsas2026MLDB}
 E.~Dritsas, M.~Trigka, Machine learning in modern database systems: Techniques,
@@ -519,12 +529,6 @@ E.~Dritsas, M.~Trigka, Machine learning in modern database systems: Techniques,
   Artificial Intelligence 170 (2026) 114225.
 \newblock \href {https://doi.org/10.1016/j.engappai.2026.114225}
   {\path{doi:10.1016/j.engappai.2026.114225}}.
-
-\bibitem{Zhao2026SpatialIndex}
-X.~Zhao, K.-Y. Lam, Density based learned spatial index for clustered data,
-  Information Systems 135 (2026) 102606.
-\newblock \href {https://doi.org/10.1016/j.is.2025.102606}
-  {\path{doi:10.1016/j.is.2025.102606}}.
 
 \bibitem{IEA2024DataCenters}
 {International Energy Agency}, Data centres and data transmission networks,
@@ -603,202 +607,16 @@ J.~Lao, Y.~Wang, Y.~Li, J.~Wang, Y.~Zhang, Z.~Cheng, W.~Chen, M.~Tang, J.~Wang,
 \newblock \href {https://doi.org/10.14778/3659437.3659449}
   {\path{doi:10.14778/3659437.3659449}}.
 
-\bibitem{Zhou2023LearnedQO}
-X.~Zhou, G.~Li, C.~Chai, J.~Feng, A learned query optimization system:
-  Achievements and the road ahead, IEEE Transactions on Knowledge and Data
-  Engineering 35~(11) (2023) 11322--11340.
-
-\bibitem{Woltmann2023DNNIndex}
-L.~Woltmann, C.~Hartmann, M.~Thiele, D.~Habich, W.~Lehner, Learned indexes: A
-  comprehensive experimental evaluation, in: Proceedings of the VLDB Endowment,
-  Vol.~14, 2021, pp. 1489--1501.
-
-\bibitem{Zhang2022KnobTuning}
-X.~Zhang, H.~Wu, Z.~Chang, S.~Jin, J.~Tan, F.~Li, T.~Zhang, B.~Cui, Automatic
-  database knob tuning: A survey, IEEE Transactions on Knowledge and Data
-  Engineering 34~(12) (2022) 5605--5622.
-
-\bibitem{Lee2023CloudCost}
-J.~Lee, S.~Kim, Y.~Park, Cloud cost optimization: A comprehensive survey of
-  strategies and best practices, Journal of Cloud Computing 12~(1) (2023)
-  1--28.
-
-\bibitem{Abraham2023DataGovCloud}
-R.~Abraham, J.~Schneider, J.~vom Brocke, Data governance in the cloud: A review
-  and research agenda, Information Systems 115 (2023) 102196.
-
-\bibitem{Lu2022DistTxn}
-Q.~Lu, X.~Zhou, G.~Li, Distributed transactions in cloud databases: Challenges
-  and opportunities, Proceedings of the VLDB Endowment 15~(12) (2022)
-  3558--3570.
-
-\bibitem{Wang2023HybridCloud}
-Y.~Wang, Z.~Cai, M.~Liu, Hybrid cloud database architectures: A comprehensive
-  survey, IEEE Transactions on Knowledge and Data Engineering 35~(8) (2023)
-  7832--7849.
-
-\bibitem{Zhang2021InMemoryCloud}
-H.~Zhang, G.~Chen, L.~Shou, In-memory databases in the cloud: A review of
-  modern approaches, Journal of Supercomputing 77~(9) (2021) 10274--10312.
-
-\bibitem{Kamal2020NewSQL}
-J.~Kamal, M.~Murtaza, B.~S. Yousafzai, {NewSQL} databases: A systematic review,
-  ACM Computing Surveys 52~(6) (2020) 1--36.
-
-\bibitem{Jensen2022TimeSeriesCloud}
-S.~K. Jensen, T.~B. Pedersen, C.~Thomsen, Time-series databases in the cloud: A
-  survey, IEEE Internet of Things Journal 9~(20) (2022) 20164--20183.
-
-\bibitem{Li2023PrivacyPreserving}
-N.~Li, T.~Li, S.~Venkatasubramanian, Privacy-preserving data management: A
-  survey of techniques and systems, The VLDB Journal 32~(2) (2023) 367--395.
-
-\bibitem{Chen2024GreenCloudDB}
-Y.~Chen, F.~Li, J.~Chen, Green cloud databases: A sustainability survey, IEEE
-  Access 12 (2024) 12345--12368.
-
-\bibitem{Opara2022VendorLockIn}
-E.~U. Opara-Martins, R.~Sahandi, F.~Tian, Vendor lock-in in cloud computing: A
-  comprehensive review, Journal of Cloud Computing 11~(1) (2022) 1--26.
-
-\bibitem{Hirzel2021StreamProcessing}
-M.~Hirzel, R.~Soul{\'e}, S.~Schneider, B.~Gedik, R.~Grimm, Stream processing
-  systems: A survey of design paradigms and implementations, ACM Computing
-  Surveys 54~(5) (2021) 1--36.
-
-\bibitem{Hogan2023KGCloud}
-A.~Hogan, E.~Blomqvist, M.~Cochez, C.~d'Amato, Knowledge graphs in cloud
-  environments: A survey, Semantic Web Journal 14~(3) (2023) 465--492.
-
-\bibitem{Gupta2022CloudDW}
-A.~Gupta, H.~Garcia-Molina, D.~Quass, Cloud data warehouse optimization: A
-  comprehensive survey, IEEE BigData (2022) 1--12.
-
-\bibitem{Katsogiannis2024TextToSQL}
-G.~Katsogiannis-Meimarakis, G.~Koutrika, A survey on text-to-{SQL} in the era
-  of large language models, arXiv preprint arXiv:2407.15186 (2024).
-
-\bibitem{Ma2021WorkloadCloud}
-L.~Ma, D.~V. Aken, A.~Hefny, G.~Mezerhane, A.~Pavlo, G.~J. Gordon, Workload
-  characterization for cloud databases, Proceedings of the VLDB Endowment
-  14~(5) (2021) 923--935.
-
-\bibitem{Narasayya2020MultiTenant}
-V.~Narasayya, S.~Chaudhuri, Multi-tenant database systems: A review of design
-  and management, Proceedings of the VLDB Endowment 13~(12) (2020) 3418--3430.
-
-\bibitem{Li2019AQP}
-K.~Li, Y.~Li, G.~Li, Approximate query processing: A survey, ACM Computing
-  Surveys 52~(4) (2019) 1--36.
-
-\bibitem{Kemme2023Replication}
-B.~Kemme, R.~Jim{\'e}nez-Peris, M.~Patino-Mart{\'i}nez, Database replication in
-  the cloud era: A survey, Distributed Computing 36~(2) (2023) 89--118.
-
-\bibitem{Hilprecht2022CardinalityEstimation}
-B.~Hilprecht, A.~Schmidt, M.~Kulessa, A.~Molina, K.~Kersting, C.~Binnig,
-  {DeepDB}: Learn from data, not from queries!, Proceedings of the VLDB
-  Endowment 13~(7) (2020) 992--1005.
-\newblock \href {https://doi.org/10.14778/3384345.3384349}
-  {\path{doi:10.14778/3384345.3384349}}.
-
-\bibitem{Liu2024CloudStorage}
-H.~Liu, J.~Li, W.~Wang, Cloud-native storage systems: A survey, ACM Computing
-  Surveys 56~(7) (2024) 1--40.
-
-\bibitem{Ongo2021NoSQLQL}
-G.~Ongo, G.~Mazzeo, {NoSQL} query languages: A comparative review, IEEE Access
-  9 (2021) 98710--98733.
-
-\bibitem{Dong2022DataIntCloud}
-X.~L. Dong, T.~Rekatsinas, Data integration in the cloud: A comprehensive
-  survey, The VLDB Journal 31~(4) (2022) 691--722.
-
-\bibitem{Zhou2024AutonomousDB}
-X.~Zhou, G.~Li, J.~Feng, L.~Liu, Autonomous cloud database administration: A
-  survey, IEEE Transactions on Knowledge and Data Engineering 36~(6) (2024)
-  2482--2499.
-
-\bibitem{Wang2024VectorSearch}
-M.~Wang, X.~Xu, Q.~Yue, Y.~Wang, A comprehensive survey and experimental
-  comparison of graph-based approximate nearest neighbor search, Proceedings of
-  the VLDB Endowment 17~(5) (2024) 1056--1069.
-
-\bibitem{Acar2020CloudEncryption}
-A.~Acar, H.~Aksu, A.~S. Uluagac, M.~Conti, Encryption techniques for cloud
-  database systems: A survey, ACM Computing Surveys 52~(2) (2020) 1--36.
-
-\bibitem{Kumar2023PerfTuning}
-A.~Kumar, Y.~Li, W.~Wang, Cloud database performance tuning: A review of
-  techniques and tools, Journal of Parallel and Distributed Computing 178
-  (2023) 14--31.
-
-\bibitem{Armbrust2024LakehouseArch}
-M.~Armbrust, A.~Ghodsi, R.~Xin, M.~Zaharia, Lakehouse architectures: A
-  systematic review, IEEE BigData (2024) 1--14.
-
-\bibitem{Raza2023HTAPCloud}
-A.~Raza, A.~C. Anadiotis, I.~Petrov, J.~Lu, {HTAP} on cloud: Architecture and
-  challenges, Proceedings of the VLDB Endowment 16~(12) (2023) 3814--3827.
-
-\bibitem{Howard2022Consensus}
-H.~Howard, R.~Mortier, Consensus protocols for cloud databases: A comprehensive
-  survey, ACM Computing Surveys 55~(4) (2022) 1--35.
-
-\bibitem{Bermbach2021FogData}
-D.~Bermbach, S.~Becker, E.~Wittern, Fog computing data management: A
-  comprehensive review, Journal of Network and Computer Applications 185 (2021)
-  103069.
-
-\bibitem{Curino2023SchemaEvol}
-C.~Curino, H.~J. Moon, A.~Deutsch, C.~Zaniolo, Schema evolution in cloud
-  databases: A survey of methods and tools, Data \& Knowledge Engineering 147
-  (2023) 102198.
-
-\bibitem{Jindal2022MVSelection}
-A.~Jindal, S.~Qiao, R.~Sen, H.~Patel, Materialized view selection in cloud data
-  warehouses: Techniques and tradeoffs, IEEE Transactions on Knowledge and Data
-  Engineering 34~(10) (2022) 4688--4703.
-
 \bibitem{Gao2024RAGSurvey}
 Y.~Gao, Y.~Xiong, X.~Gao, K.~Jia, J.~Pan, Y.~Bi, Y.~Dai, J.~Sun, M.~Wang,
   H.~Wang, Retrieval-augmented generation for large language models: A survey,
   arXiv preprint arXiv:2312.10997 (2024).
 
-\bibitem{Bertino2021AccessControl}
-E.~Bertino, R.~Sandhu, Cloud database access control: Models, policies, and
-  mechanisms, ACM Computing Surveys 54~(1) (2021) 1--38.
-
-\bibitem{Jonas2023ServerlessData}
-E.~Jonas, J.~Schleier-Smith, V.~Sreekanti, C.~che Tsai, A.~Khandelwal, Q.~Pu,
-  V.~Shankar, J.~Carreira, K.~Krauth, N.~Yadwadkar, J.~E. Gonzalez, R.~A. Popa,
-  I.~Stoica, D.~A. Patterson, Serverless computing for data-intensive
-  applications: A survey, ACM Computing Surveys 55~(9) (2023) 1--34.
-
-\bibitem{Thirumuruganathan2024DBLLMSurvey}
-S.~Thirumuruganathan, N.~Tang, Y.~Wang, A survey on integrating {LLMs} with
-  databases, arXiv preprint arXiv:2404.06234 (2024).
-
-\bibitem{Deutsch2022GQL}
-A.~Deutsch, N.~Francis, A.~Green, K.~Hare, B.~Li, L.~Libkin, T.~Lindaaker,
-  V.~Marsault, W.~Martens, J.~Michels, F.~Murlak, S.~Plantikow, P.~Selmer,
-  O.~van Rest, H.~Voigt, D.~Vrgoc, M.~Wu, F.~Zemke, Graph pattern matching in
-  {GQL} and {SQL/PGQ}, Proceedings of the ACM SIGMOD International Conference
-  on Management of Data (2022) 2246--2258\href
-  {https://doi.org/10.1145/3514221.3526057}
-  {\path{doi:10.1145/3514221.3526057}}.
-
-\bibitem{Sadalage2020NoSQLMigration}
-P.~J. Sadalage, M.~Fowler, {NoSQL} data migration tools and strategies: A
-  review, Journal of Big Data 7~(1) (2020) 1--22.
-
-\bibitem{Leis2024CostModeling}
-V.~Leis, B.~Radke, T.~Neumann, A.~Kemper, Cost modeling for cloud data
-  services: Principles and practice, Proceedings of the VLDB Endowment 17~(8)
-  (2024) 1923--1935.
-
-\bibitem{Simmhan2022DataProvCloud}
-Y.~Simmhan, B.~Plale, D.~Gannon, Data provenance in cloud computing: A survey,
-  IEEE Transactions on Knowledge and Data Engineering 34~(7) (2022) 3194--3213.
+\bibitem{Bhatti2017CloudDBReview}
+H.~J. Bhatti, B.~B. Rad, Databases in cloud computing: A literature review,
+  International Journal of Information Technology and Computer Science 9~(4)
+  (2017) 9--17.
+\newblock \href {https://doi.org/10.5815/ijitcs.2017.04.02}
+  {\path{doi:10.5815/ijitcs.2017.04.02}}.
 
 \end{thebibliography}

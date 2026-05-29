@@ -28,46 +28,45 @@ Warning--empty pages in Tu2024CassandraMongo
 Warning--empty pages in Hendricks2019NoSQLReview
 Warning--empty pages in Ferreira2023NoSQLMD
 Warning--can't use both volume and number fields in Zhou2024DBot
-Warning--can't use both volume and number fields in Woltmann2023DNNIndex
-You've used 139 entries,
+You've used 98 entries,
             2952 wiz_defined-function locations,
-            1531 strings with 36345 characters,
-and the built_in function-call counts, 48611 in all, are:
-= -- 4390
-> -- 2176
-< -- 28
-+ -- 818
-- -- 679
-* -- 3862
-:= -- 6671
-add.period$ -- 198
-call.type$ -- 139
-change.case$ -- 142
+            1318 strings with 29480 characters,
+and the built_in function-call counts, 35694 in all, are:
+= -- 3152
+> -- 1658
+< -- 27
++ -- 618
+- -- 520
+* -- 2801
+:= -- 4861
+add.period$ -- 158
+call.type$ -- 98
+change.case$ -- 101
 chr.to.int$ -- 0
-cite$ -- 165
-duplicate$ -- 1413
-empty$ -- 5163
-format.name$ -- 803
-if$ -- 12245
+cite$ -- 123
+duplicate$ -- 1083
+empty$ -- 3828
+format.name$ -- 603
+if$ -- 9056
 int.to.chr$ -- 0
-int.to.str$ -- 139
-missing$ -- 134
-newline$ -- 484
-num.names$ -- 139
-pop$ -- 883
+int.to.str$ -- 98
+missing$ -- 93
+newline$ -- 362
+num.names$ -- 98
+pop$ -- 675
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 3053
+skip$ -- 2311
 stack$ -- 0
-substring$ -- 2629
-swap$ -- 441
-text.length$ -- 28
+substring$ -- 1645
+swap$ -- 396
+text.length$ -- 27
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 26
-while$ -- 353
-width$ -- 142
-write$ -- 1267
-(There were 26 warnings)
+warning$ -- 25
+while$ -- 234
+width$ -- 100
+write$ -- 942
+(There were 25 warnings)

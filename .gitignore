@@ -7,3 +7,7 @@ out/
 
 # Template archives
 *.zip
+
+# latexmk transient files
+*.fdb_latexmk
+*.fls

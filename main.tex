@@ -20,6 +20,7 @@
 \usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc, patterns, fit, backgrounds, decorations.markings}
 \usepackage{enumitem}
 \usepackage{float}
+\restylefloat{figure} %% enable the [H] (exact placement) specifier for the CAS figure float
 \usepackage{adjustbox}
 
 %% Symbols for challenge coverage matrix
@@ -62,16 +63,16 @@
 \cortext[1]{Corresponding author.}
 
 \begin{abstract}
-Cloud databases have become the backbone of modern data-driven applications, enabling organizations to store, process, and analyze data at unprecedented scale and elasticity. Over recent years (2017--2024), 58 survey papers have examined various facets of cloud database technology---spanning cloud-native architectures, hybrid transactional and/or analytical processing (HTAP), serverless databases, vector databases, AI-for-database optimization (AI4DB), data lakehouses, NoSQL/NewSQL systems, and edge--cloud data management. However, the challenges, open problems, and research directions identified in these surveys remain fragmented across disparate communities and publication venues. This paper presents the first \emph{systematic meta-survey} of cloud database research: a survey of surveys that synthesizes findings from carefully selected survey papers using a rigorous methodology grounded in the Kitchenham--Charters systematic literature review protocol. The scattered landscape of cloud database challenges is organized into a structured, dual-theme taxonomy: (1)~\emph{eighteen cross-cutting challenges} that transcend individual system categories, including scalability, consistency trade-offs, security, cost optimization, AI--database convergence, and sustainability; and (2)~\emph{five lifecycle-phase challenges} spanning design, deployment, operation, optimization, and evolution of cloud database systems. The convergence of cloud databases with large language models (LLMs) is further examined as an illustrative case study, and a prioritized set of short-, medium-, and long-term research directions is outlined. By providing a consolidated, thematically organized view of the field, this meta-survey serves as both a comprehensive reference for researchers entering the cloud database space and a strategic guide for practitioners navigating the rapidly evolving landscape of cloud data management.
+Cloud databases have become the backbone of modern data-driven applications, enabling organizations to store, process, and analyze data at unprecedented scale and elasticity. Over recent years (2016--2025), 24 survey papers have examined various facets of cloud database technology---spanning cloud-native architectures, hybrid transactional and/or analytical processing (HTAP), NoSQL/NewSQL systems, vector and graph databases, AI-for-database optimization (AI4DB), data lakehouses, time-series databases, cloud database migration, and edge--cloud data management. However, the challenges, open problems, and research directions identified in these surveys remain fragmented across disparate communities and publication venues. This paper presents the first \emph{systematic meta-survey} of cloud database research: a survey of surveys that synthesizes findings from carefully selected survey papers using a rigorous methodology grounded in the Kitchenham--Charters systematic literature review protocol. The scattered landscape of cloud database challenges is organized into a structured, dual-theme taxonomy: (1)~\emph{eighteen cross-cutting challenges} that transcend individual system categories, including scalability, consistency trade-offs, security, cost optimization, AI--database convergence, and sustainability; and (2)~\emph{five lifecycle-phase challenges} spanning design, deployment, operation, optimization, and evolution of cloud database systems. The convergence of cloud databases with large language models (LLMs) is further examined as an illustrative case study, and a consolidated set of open research directions is distilled from the cross-survey synthesis. By providing a consolidated, thematically organized view of the field, this meta-survey serves as both a comprehensive reference for researchers entering the cloud database space and a strategic guide for practitioners navigating the rapidly evolving landscape of cloud data management.
 \end{abstract}
 
 %% Highlights are submitted to Elsevier as a separate file (not a manuscript page).
 %% Kept here for reference:
-%% - First systematic meta-survey of 58 cloud database surveys (2017--2024)
+%% - First systematic meta-survey of 24 cloud database surveys (2016--2025)
 %% - Dual-theme taxonomy: 18 cross-cutting and 5 lifecycle-phase challenges
 %% - Cross-survey synthesis of consensus and divergence on each challenge
 %% - Cloud database and large language model convergence as a case study
-%% - Prioritized short-, medium-, and long-term research directions
+%% - Consolidated cross-cutting research agenda distilled from the synthesis
 
 \begin{keywords}
 cloud databases \sep systematic meta-survey \sep cloud-native databases \sep database-as-a-service \sep data lakehouse \sep AI4DB \sep survey of surveys
@@ -87,7 +88,7 @@ cloud databases \sep systematic meta-survey \sep cloud-native databases \sep dat
 
 The cloud database market has experienced explosive growth over the past decade, with global revenues projected to exceed \$200 billion by 2028~\cite{gartner2024dbms}. This growth reflects a fundamental shift in how organizations manage data: from on-premises, monolithic database servers to elastic, globally distributed, cloud-native data platforms that can scale storage and compute independently on demand~\cite{Verbitski2017,Dageville2016}. Major cloud providers---Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), and Alibaba Cloud---now offer dozens of specialized database services, from relational engines like Amazon Aurora~\cite{Verbitski2017} and Azure SQL~\cite{Antonopoulos2019} to purpose-built systems for documents, graphs, time series, key-value pairs, and, most recently, vector embeddings for AI workloads~\cite{Pan2024VectorDB}.
 
-This rapid evolution has attracted significant research attention. A search across major digital libraries reveals that \textbf{58 survey papers} meeting the inclusion criteria were published between 2017 and 2024, each examining a particular facet of cloud database technology. These surveys span a wide spectrum of topics: cloud-native database architectures~\cite{Li2024CloudNativeSurvey}, hybrid transactional/analytical processing (HTAP)~\cite{Haas2024HTAPSurvey}, serverless data management~\cite{Muller2020Serverless}, vector database management systems~\cite{Pan2024VectorDB}, AI-driven database optimization (AI4DB)~\cite{Zhou2022AI4DB}, data lakehouses~\cite{Harby2022Lakehouse}, NoSQL and NewSQL systems~\cite{Davoudian2018NoSQL,Kaur2021NoSQLReview}, edge and fog database systems~\cite{Gomes2024EdgeFog}, and many more.
+This rapid evolution has attracted significant research attention. A search across major digital libraries reveals that \textbf{24 survey papers} meeting the inclusion criteria were published between 2016 and 2025, each examining a particular facet of cloud database technology. These surveys span a wide spectrum of topics: cloud-native database architectures~\cite{Li2024CloudNativeSurvey}, hybrid transactional/analytical processing (HTAP)~\cite{Haas2024HTAPSurvey}, graph databases~\cite{Angles2020GraphDB}, vector database management systems~\cite{Pan2024VectorDB}, AI-driven database optimization (AI4DB)~\cite{Zhou2022AI4DB}, data lakehouses~\cite{Harby2022Lakehouse}, NoSQL and NewSQL systems~\cite{Davoudian2018NoSQL,Kaur2021NoSQLReview}, edge and fog database systems~\cite{Gomes2024EdgeFog}, and many more.
 
 Despite this wealth of individual surveys, the field lacks a \emph{meta-level synthesis}---a comprehensive, systematic effort to consolidate the challenges, open problems, and research directions scattered across these surveys into a unified framework. Each survey naturally focuses on its own domain, leading to a fragmented understanding of the cloud database landscape as a whole. Cross-cutting challenges such as cost optimization, security, consistency trade-offs, and AI--database convergence are discussed in many surveys but from different angles, without a common organizing framework.
 
@@ -97,7 +98,7 @@ Despite this wealth of individual surveys, the field lacks a \emph{meta-level sy
 This paper addresses the gap by presenting the \textbf{first systematic meta-survey of cloud database research}---a survey of surveys. A rigorous systematic literature review (SLR) protocol based on the Kitchenham--Charters guidelines~\cite{Kitchenham2007} is applied to identify, evaluate, and synthesize cloud database surveys. The contributions of this work are as follows:
 
 \begin{enumerate}[label=\textbf{C\arabic*}]
-    \item \textbf{Systematic identification and classification.} Eight digital libraries are systematically searched, yielding 58 survey papers on cloud databases published between 2017 and 2024, classified by topic, scope, methodology, and venue.
+    \item \textbf{Systematic identification and classification.} Eight digital libraries are systematically searched, yielding 24 survey papers on cloud databases published between 2016 and 2025, classified by topic, scope, methodology, and venue.
 
     \item \textbf{Dual-theme challenge taxonomy.} The scattered challenges are organized into a structured taxonomy with two complementary themes:
     \begin{itemize}
@@ -107,7 +108,7 @@ This paper addresses the gap by presenting the \textbf{first systematic meta-sur
 
     \item \textbf{LLM--database convergence analysis.} The rapidly emerging intersection of large language models (LLMs) and cloud databases is examined as an illustrative case study, covering text-to-SQL, vector databases for retrieval-augmented generation (RAG), and LLM-based database administration.
 
-    \item \textbf{Research roadmap.} A prioritized research roadmap with short-term (1--3 years), medium-term (3--5 years), and long-term (5+ years) directions is proposed.
+    \item \textbf{Research agenda.} A consolidated, cross-cutting research agenda is distilled from the synthesis, grouping the open problems that recur most widely across the surveyed literature.
 
     \item \textbf{Knowledge engineering perspective.} Cloud database challenges are explicitly connected to data and knowledge engineering concerns---including knowledge graphs, ontologies, metadata management, and schema evolution---making this survey particularly relevant to the \emph{Data \& Knowledge Engineering} community.
 \end{enumerate}
@@ -126,7 +127,7 @@ This meta-survey is guided by five research questions, summarized in Table~\ref{
 \toprule
 \textbf{ID} & \textbf{Research Question} \\
 \midrule
-RQ1 & What is the landscape of cloud database surveys published between 2017 and 2024, in terms of topic coverage, methodology, and publication venue? \\
+RQ1 & What is the landscape of cloud database surveys published between 2016 and 2025, in terms of topic coverage, methodology, and publication venue? \\
 \addlinespace
 RQ2 & What are the major cross-cutting challenges identified across cloud database surveys, and how do they relate to one another? \\
 \addlinespace
@@ -134,7 +135,7 @@ RQ3 & How do cloud database challenges map to the lifecycle phases of designing,
 \addlinespace
 RQ4 & What is the current state and future trajectory of the convergence between cloud databases and AI/ML technologies, particularly large language models? \\
 \addlinespace
-RQ5 & What are the most pressing open research directions, and how should they be prioritized over the short, medium, and long term? \\
+RQ5 & What are the most pressing open research directions, and which of them recur most widely across the surveyed literature? \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -142,7 +143,28 @@ RQ5 & What are the most pressing open research directions, and how should they b
 \subsection{Paper organization}
 \label{subsec:organization}
 
-The remainder of this paper is organized as follows. Section~\ref{sec:motivation} motivates the importance of cloud databases from five complementary perspectives. Section~\ref{sec:concepts} establishes key definitions and distinctions---from cloud-hosted to cloud-native databases, architectural paradigms, data models, and the data platform continuum. Section~\ref{sec:methodology} details the systematic review methodology, including search strategy, selection criteria, quality assessment, and results. Section~\ref{sec:discussion} presents the core contribution: a comprehensive discussion of challenges and research directions organized by cross-cutting themes and lifecycle phases. Section~\ref{sec:llm} examines the convergence of cloud databases and LLMs. Section~\ref{sec:conclusion} offers final remarks and outlines future research directions. Appendix~\ref{app:catalog} provides the complete catalog of surveyed papers.
+The remainder of this paper is organized as shown in Figure~\ref{fig:organization}. Section~\ref{sec:motivation} motivates the importance of cloud databases from five complementary perspectives. Section~\ref{sec:concepts} establishes key definitions and distinctions---from cloud-hosted to cloud-native databases, architectural paradigms, data models, and the data platform continuum. Section~\ref{sec:methodology} details the systematic review methodology, including search strategy, selection criteria, quality assessment, and results. Section~\ref{sec:discussion} presents the core contribution: a comprehensive discussion of challenges and research directions organized by cross-cutting themes and lifecycle phases. Section~\ref{sec:llm} examines the convergence of cloud databases and LLMs. Section~\ref{sec:conclusion} concludes. Appendix~\ref{app:catalog} provides the complete catalog of surveyed papers.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=0.32cm,
+    secbox/.style={draw, fill=cgray!25, draw=cdblue!60, text width=11.2cm, minimum height=0.75cm, align=left, font=\small\bfseries, inner sep=5pt},
+    subbox/.style={draw, fill=cgray!10, draw=cgray!60, text width=9.8cm, minimum height=0.5cm, align=center, font=\footnotesize, inner sep=4pt}
+]
+\node[secbox] (s1) {Introduction \hfill [Section~\ref{sec:introduction}]};
+\node[secbox, below=of s1] (s2) {Why Cloud Databases Matter \hfill [Section~\ref{sec:motivation}]};
+\node[secbox, below=of s2] (s3) {From Cloud Databases to Cloud-Native Data Platforms \hfill [Section~\ref{sec:concepts}]};
+\node[secbox, below=of s3] (s4) {Systematic Review Planning and Execution \hfill [Section~\ref{sec:methodology}]};
+\node[secbox, below=of s4] (s5) {Discussion---Challenges and Research Directions \hfill [Section~\ref{sec:discussion}]};
+\node[subbox, below=0.12cm of s5] (s5a) {Theme 1: Eighteen cross-cutting challenges};
+\node[subbox, below=of s5a] (s5b) {Theme 2: Five lifecycle-phase challenges};
+\node[secbox, below=0.32cm of s5b] (s6) {Cloud Databases and LLMs---A Convergence Case Study \hfill [Section~\ref{sec:llm}]};
+\node[secbox, below=of s6] (s7) {Conclusions \hfill [Section~\ref{sec:conclusion}]};
+\end{tikzpicture}
+\caption{The organization of this meta-survey paper.}
+\label{fig:organization}
+\end{figure}
 
 
 %% ============================================================
@@ -151,7 +173,30 @@ The remainder of this paper is organized as follows. Section~\ref{sec:motivation
 \section{Why Cloud Databases Matter---A Multi-Perspective Motivation}
 \label{sec:motivation}
 
-Understanding the significance of cloud databases requires examining the topic from multiple viewpoints. In this section, the need for a meta-survey is motivated by discussing five complementary perspectives, each revealing why the scattered state of survey knowledge is problematic and why a unified synthesis is timely.
+Understanding the significance of cloud databases requires examining the topic from multiple viewpoints. In this section, the need for a meta-survey is motivated by discussing five complementary perspectives (Figure~\ref{fig:perspectives}), each revealing why the scattered state of survey knowledge is problematic and why a unified synthesis is timely.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    hub/.style={draw, circle, fill=cdblue!20, draw=cdblue!60, minimum size=2.0cm, align=center, font=\small\bfseries},
+    persp/.style={draw, circle, fill=cgray!18, draw=cgray!70, minimum size=2.5cm, align=center, font=\scriptsize},
+    spoke/.style={-, thick, cgray!70}
+]
+\node[hub] (h) at (0,0) {Perspectives};
+\node[persp] (p1) at (90:3.4cm) {\textbf{Industry}\\market shift\\to the cloud};
+\node[persp] (p2) at (162:3.4cm) {\textbf{Data}\\\textbf{engineering}\\lakehouse, HTAP};
+\node[persp] (p3) at (234:3.4cm) {\textbf{Knowledge}\\\textbf{engineering}\\KGs, ontologies};
+\node[persp] (p4) at (306:3.4cm) {\textbf{Economic}\\\textbf{\& cost}\\pricing, TCO};
+\node[persp] (p5) at (18:3.4cm) {\textbf{Regulatory}\\\textbf{\& compliance}\\GDPR, residency};
+\draw[spoke] (h) -- (p1);
+\draw[spoke] (h) -- (p2);
+\draw[spoke] (h) -- (p3);
+\draw[spoke] (h) -- (p4);
+\draw[spoke] (h) -- (p5);
+\end{tikzpicture}
+\caption{The five complementary perspectives motivating a systematic meta-survey of cloud databases.}
+\label{fig:perspectives}
+\end{figure}
 
 \subsection{Industry perspective}
 \label{subsec:industry}
@@ -163,7 +208,7 @@ The vendor landscape has also diversified significantly. Beyond the hyperscale c
 \subsection{Data engineering perspective}
 \label{subsec:dataeng}
 
-Modern data architectures have evolved from simple transactional databases to complex, multi-layered data ecosystems. The emergence of the \emph{data lakehouse} paradigm~\cite{Armbrust2021Lakehouse} exemplifies this evolution, combining the flexibility of data lakes with the governance and performance of data warehouses. Systems like Databricks Delta Lake, Apache Iceberg, and Apache Hudi have created a new ``open table format'' layer that bridges batch and streaming analytics~\cite{Jainaga2023Lakehouse}.
+Modern data architectures have evolved from simple transactional databases to complex, multi-layered data ecosystems. The emergence of the \emph{data lakehouse} paradigm~\cite{Armbrust2021Lakehouse} exemplifies this evolution, combining the flexibility of data lakes with the governance and performance of data warehouses. Systems like Databricks Delta Lake, Apache Iceberg, and Apache Hudi have created a new ``open table format'' layer that bridges batch and streaming analytics~\cite{Harby2022Lakehouse}.
 
 Simultaneously, the rise of \emph{HTAP} (Hybrid Transactional/Analytical Processing) systems~\cite{Haas2024HTAPSurvey} challenges the traditional separation between OLTP and OLAP workloads. Systems such as TiDB~\cite{Huang2020TiDB}, SAP HANA~\cite{Farber2012}, and Google AlloyDB promise unified engines that handle both transaction processing and analytical queries. Understanding the trade-offs, maturity, and open challenges of these paradigms requires synthesizing insights across multiple survey papers.
 
@@ -252,6 +297,12 @@ Database-as-a-Service (DBaaS) represents the fully managed end of the cloud data
 
 Cloud database architectures have evolved through three major paradigms, illustrated in Figure~\ref{fig:architecture}:
 
+\textbf{Shared-nothing} architectures partition data across independent nodes, each with its own CPU, memory, and disk. Traditional distributed databases (e.g., early Spanner~\cite{Corbett2013Spanner}, Cassandra) follow this model. While horizontally scalable, resharding and rebalancing are expensive.
+
+\textbf{Shared-disk (cloud storage)} architectures decouple compute from storage, allowing compute nodes to share a common cloud storage layer. Amazon Aurora~\cite{Verbitski2017} and Snowflake~\cite{Dageville2016} exemplify this paradigm, enabling independent scaling of compute and storage.
+
+\textbf{Fully disaggregated} architectures further decompose the database engine into independently scalable microservices---query processing, transaction management, logging, metadata management, and storage~\cite{Antonopoulos2019}. Microsoft Socrates and emerging systems like PolarDB~\cite{Cao2021PolarDB} pursue this vision.
+
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[
@@ -296,12 +347,6 @@ Cloud database architectures have evolved through three major paradigms, illustr
 \caption{Evolution of cloud database architectures: from shared-nothing clusters to shared-disk (cloud storage) to fully disaggregated microservice architectures.}
 \label{fig:architecture}
 \end{figure}
-
-\textbf{Shared-nothing} architectures partition data across independent nodes, each with its own CPU, memory, and disk. Traditional distributed databases (e.g., early Spanner~\cite{Corbett2013Spanner}, Cassandra) follow this model. While horizontally scalable, resharding and rebalancing are expensive.
-
-\textbf{Shared-disk (cloud storage)} architectures decouple compute from storage, allowing compute nodes to share a common cloud storage layer. Amazon Aurora~\cite{Verbitski2017} and Snowflake~\cite{Dageville2016} exemplify this paradigm, enabling independent scaling of compute and storage.
-
-\textbf{Fully disaggregated} architectures further decompose the database engine into independently scalable microservices---query processing, transaction management, logging, metadata management, and storage~\cite{Antonopoulos2019}. Microsoft Socrates and emerging systems like PolarDB~\cite{Cao2021PolarDB} pursue this vision.
 
 \subsection{Data models in the cloud}
 \label{subsec:datamodels}
@@ -391,7 +436,7 @@ The cloud data management landscape has converged around three complementary par
 
 \textbf{Data lakes} (e.g., Amazon S3 + Athena, Azure Data Lake Storage) offer cost-effective storage for raw, semi-structured, and unstructured data, enabling schema-on-read flexibility for data science and ML workloads.
 
-\textbf{Data lakehouses}~\cite{Armbrust2021Lakehouse} combine the best of both paradigms by adding ACID transactions, schema enforcement, and data governance to open data lake storage through open table formats such as Delta Lake, Apache Iceberg, and Apache Hudi~\cite{Jainaga2023Lakehouse,Pohl2024LakehouseTS}.
+\textbf{Data lakehouses}~\cite{Armbrust2021Lakehouse} combine the best of both paradigms by adding ACID transactions, schema enforcement, and data governance to open data lake storage through open table formats such as Delta Lake, Apache Iceberg, and Apache Hudi~\cite{Harby2022Lakehouse,Pohl2024LakehouseTS}.
 
 
 %% ============================================================
@@ -456,7 +501,7 @@ The inclusion and exclusion criteria listed in Table~\ref{tab:criteria} were app
 \multicolumn{2}{l}{\textit{Inclusion Criteria}} \\
 IC1 & The paper is a survey, review, tutorial, or systematic mapping study \\
 IC2 & The paper focuses primarily on cloud-hosted, cloud-native, or cloud-relevant database technologies \\
-IC3 & The paper was published between January 2017 and December 2024 \\
+IC3 & The paper was published between January 2016 and December 2025 \\
 IC4 & The paper is written in English \\
 IC5 & The paper is peer-reviewed or published in a recognized venue (including arXiv with significant citations) \\
 \addlinespace
@@ -499,7 +544,7 @@ QA8 & Is the survey sufficiently comprehensive ($\geq$30 references)? \\
 \subsection{Results: study selection and demographics}
 \label{subsec:results}
 
-Figure~\ref{fig:prisma} presents the PRISMA~2020 flow diagram~\cite{Page2021PRISMA} of the selection process. From an initial set of 412 candidate papers, 58 surveys were selected for inclusion in the meta-survey after applying all criteria.
+Figure~\ref{fig:prisma} presents the PRISMA~2020 flow diagram~\cite{Page2021PRISMA} of the selection process. From an initial set of 486 records, 24 surveys were selected for inclusion in the meta-survey after applying all criteria.
 
 \begin{figure}[H]
 \centering
@@ -511,15 +556,15 @@ Figure~\ref{fig:prisma} presents the PRISMA~2020 flow diagram~\cite{Page2021PRIS
     excl/.style={draw, minimum width=4cm, minimum height=0.8cm, align=center, font=\footnotesize, fill=cred!10, draw=cred!50}
 ]
 
-\node[box=cblue] (id) {\textbf{Identification}\\Records identified through database search (n=412)};
-\node[excl, right=1cm of id, yshift=0cm] (dup) {Duplicates removed\\(n=87)};
-\node[box=corange, below=1cm of id] (sc) {\textbf{Screening}\\Records screened by title/abstract (n=325)};
-\node[excl, right=1cm of sc] (ex1) {Excluded after screening\\(n=198)};
-\node[box=cgreen, below=1cm of sc] (el) {\textbf{Eligibility}\\Full-text articles assessed (n=127)};
-\node[excl, right=1cm of el] (ex2) {Excluded after full-text\\assessment (n=49)};
-\node[box=cgray, below=1cm of el] (qa) {\textbf{Quality Assessment}\\Papers assessed for quality (n=78)};
-\node[excl, right=1cm of qa] (ex3) {Below quality threshold\\(n=20)};
-\node[box=cpurple, below=1cm of qa] (inc) {\textbf{Included}\\Surveys included in meta-survey (n=58)};
+\node[box=cblue] (id) {\textbf{Identification}\\Records identified through database search (n=486)};
+\node[excl, right=1cm of id, yshift=0cm] (dup) {Duplicates removed\\(n=92)};
+\node[box=corange, below=1cm of id] (sc) {\textbf{Screening}\\Records screened by title/abstract (n=394)};
+\node[excl, right=1cm of sc] (ex1) {Excluded after screening\\(n=300)};
+\node[box=cgreen, below=1cm of sc] (el) {\textbf{Eligibility}\\Full-text articles assessed (n=94)};
+\node[excl, right=1cm of el] (ex2) {Excluded after full-text\\assessment (n=52)};
+\node[box=cgray, below=1cm of el] (qa) {\textbf{Quality Assessment}\\Papers assessed for quality (n=42)};
+\node[excl, right=1cm of qa] (ex3) {Below quality threshold\\(n=18)};
+\node[box=cpurple, below=1cm of qa] (inc) {\textbf{Included}\\Surveys included in meta-survey (n=24)};
 
 \draw[arrow] (id) -- (sc);
 \draw[arrow] (sc) -- (el);
@@ -535,7 +580,7 @@ Figure~\ref{fig:prisma} presents the PRISMA~2020 flow diagram~\cite{Page2021PRIS
 \label{fig:prisma}
 \end{figure}
 
-Figure~\ref{fig:byyear} shows the distribution of selected surveys by publication year, revealing a clear upward trend that plateaus across 2022--2024.
+Figure~\ref{fig:byyear} shows the distribution of selected surveys by publication year, revealing an upward trend that intensifies markedly in 2024.
 
 \begin{figure}[H]
 \centering
@@ -547,22 +592,22 @@ Figure~\ref{fig:byyear} shows the distribution of selected surveys by publicatio
     height=6cm,
     ylabel={Number of surveys},
     xlabel={Publication year},
-    symbolic x coords={2017,2018,2019,2020,2021,2022,2023,2024},
+    symbolic x coords={2016,2017,2018,2019,2020,2021,2022,2023,2024,2025},
     xtick=data,
     ymin=0,
-    ymax=20,
+    ymax=11,
     nodes near coords,
     nodes near coords align={vertical},
     every node near coord/.append style={font=\small, text=black},
 ]
-\addplot[fill=cblue!60, draw=black] coordinates {(2017,1) (2018,1) (2019,3) (2020,6) (2021,8) (2022,13) (2023,13) (2024,13)};
+\addplot[fill=cblue!60, draw=black] coordinates {(2016,1) (2017,3) (2018,1) (2019,3) (2020,1) (2021,1) (2022,2) (2023,1) (2024,9) (2025,2)};
 \end{axis}
 \end{tikzpicture}
-\caption{Distribution of the 58 selected surveys by publication year (2017--2024).}
+\caption{Distribution of the 24 selected surveys by publication year (2016--2025).}
 \label{fig:byyear}
 \end{figure}
 
-Figure~\ref{fig:bytopic} shows the distribution by primary topic domain (each survey is assigned a single primary topic, so the counts sum to 58). Cloud-native architectures and AI4DB/learned optimization are the most frequently surveyed topics.
+Figure~\ref{fig:bytopic} shows the distribution by primary topic domain (each survey is assigned a single primary topic, so the counts sum to 24). NoSQL/NewSQL systems are the most frequently surveyed topic, reflecting the maturity and breadth of that body of literature.
 
 \begin{figure}[H]
 \centering
@@ -574,25 +619,23 @@ Figure~\ref{fig:bytopic} shows the distribution by primary topic domain (each su
     height=10cm,
     xlabel={Number of surveys},
     xmin=0,
-    xmax=14,
+    xmax=7,
     ytick=data,
     symbolic y coords={
-        {Sustainability/Green},
-        {Edge/Fog Databases},
-        {Serverless Databases},
-        {Data Governance},
-        {Multi-Model Databases},
-        {Cost/Pricing},
-        {Data Lakehouse},
-        {HTAP Systems},
+        {Cloud DB Migration},
         {Benchmarking},
+        {Edge/Fog Databases},
+        {Time-Series Databases},
+        {Multi-Model Databases},
         {Graph Databases},
         {Vector Databases},
+        {HTAP Systems},
+        {NL/LLM Interfaces},
         {Security/Privacy},
-        {Cloud DB Migration},
-        {NoSQL/NewSQL},
+        {Data Lakehouse},
         {AI4DB/Learned Opt.},
-        {Cloud-Native Arch.}
+        {Cloud-Native Arch.},
+        {NoSQL/NewSQL}
     },
     y dir=reverse,
     nodes near coords,
@@ -601,26 +644,24 @@ Figure~\ref{fig:bytopic} shows the distribution by primary topic domain (each su
     enlarge y limits={abs=0.4cm},
 ]
 \addplot[fill=cblue!60, draw=black] coordinates {
-    (12,{Cloud-Native Arch.})
-    (10,{AI4DB/Learned Opt.})
-    (4,{NoSQL/NewSQL})
-    (4,{Cloud DB Migration})
-    (4,{Security/Privacy})
-    (3,{Vector Databases})
-    (3,{Graph Databases})
-    (3,{Benchmarking})
-    (2,{HTAP Systems})
+    (6,{NoSQL/NewSQL})
+    (2,{Cloud-Native Arch.})
+    (2,{AI4DB/Learned Opt.})
     (2,{Data Lakehouse})
-    (2,{Cost/Pricing})
-    (2,{Multi-Model Databases})
-    (2,{Data Governance})
-    (2,{Serverless Databases})
-    (2,{Edge/Fog Databases})
-    (1,{Sustainability/Green})
+    (2,{Security/Privacy})
+    (2,{NL/LLM Interfaces})
+    (1,{HTAP Systems})
+    (1,{Vector Databases})
+    (1,{Graph Databases})
+    (1,{Multi-Model Databases})
+    (1,{Time-Series Databases})
+    (1,{Edge/Fog Databases})
+    (1,{Benchmarking})
+    (1,{Cloud DB Migration})
 };
 \end{axis}
 \end{tikzpicture}
-\caption{Distribution of the 58 selected surveys by primary topic domain.}
+\caption{Distribution of the 24 selected surveys by primary topic domain.}
 \label{fig:bytopic}
 \end{figure}
 
@@ -630,28 +671,28 @@ Figure~\ref{fig:byvenue} shows the distribution by venue type. Journal publicati
 \centering
 \begin{tikzpicture}
   %% Pie chart drawn manually with TikZ (counts from the master catalog;
-  %% PVLDB/CIDR/IEEE BigData counted as conferences).
-  %% Journals (43): 74% = 266.9 deg, Conferences (12): 21% = 74.5 deg, arXiv (3): 5% = 18.6 deg
+  %% PVLDB and the IEEE BigData/ICICS/BDAI/ICIMCIS/BTW proceedings counted as conferences).
+  %% Journals (15): 62.5% = 225 deg, Conferences (7): 29.2% = 105 deg, arXiv (2): 8.3% = 30 deg
   \def\radius{2.5}
 
-  %% Slice 1: Journals (0 to 266.9)
-  \filldraw[fill=cblue!60, draw=black, thin] (0,0) -- (0:\radius) arc (0:266.9:\radius) -- cycle;
-  \node at (133.45:1.6) {\small\textbf{74\%}};
+  %% Slice 1: Journals (0 to 225)
+  \filldraw[fill=cblue!60, draw=black, thin] (0,0) -- (0:\radius) arc (0:225:\radius) -- cycle;
+  \node at (112.5:1.6) {\small\textbf{62.5\%}};
 
-  %% Slice 2: Conferences (266.9 to 341.4)
-  \filldraw[fill=corange!60, draw=black, thin] (0,0) -- (266.9:\radius) arc (266.9:341.4:\radius) -- cycle;
-  \node at (304.15:1.7) {\small\textbf{21\%}};
+  %% Slice 2: Conferences (225 to 330)
+  \filldraw[fill=corange!60, draw=black, thin] (0,0) -- (225:\radius) arc (225:330:\radius) -- cycle;
+  \node at (277.5:1.7) {\small\textbf{29.2\%}};
 
-  %% Slice 3: arXiv (341.4 to 360)
-  \filldraw[fill=cgreen!60, draw=black, thin] (0,0) -- (341.4:\radius) arc (341.4:360:\radius) -- cycle;
-  \node at (350.7:1.95) {\small\textbf{5\%}};
+  %% Slice 3: arXiv (330 to 360)
+  \filldraw[fill=cgreen!60, draw=black, thin] (0,0) -- (330:\radius) arc (330:360:\radius) -- cycle;
+  \node at (345:1.95) {\small\textbf{8.3\%}};
 
   %% Legend
-  \node[anchor=west] at (3.5, 1.2) {\small\tikz\filldraw[fill=cblue!60,draw=black] (0,0) rectangle (0.3,0.3); \;Journals (43)};
-  \node[anchor=west] at (3.5, 0.45) {\small\tikz\filldraw[fill=corange!60,draw=black] (0,0) rectangle (0.3,0.3); \;Conferences (12)};
-  \node[anchor=west] at (3.5, -0.3) {\small\tikz\filldraw[fill=cgreen!60,draw=black] (0,0) rectangle (0.3,0.3); \;arXiv (3)};
+  \node[anchor=west] at (3.5, 1.2) {\small\tikz\filldraw[fill=cblue!60,draw=black] (0,0) rectangle (0.3,0.3); \;Journals (15)};
+  \node[anchor=west] at (3.5, 0.45) {\small\tikz\filldraw[fill=corange!60,draw=black] (0,0) rectangle (0.3,0.3); \;Conferences (7)};
+  \node[anchor=west] at (3.5, -0.3) {\small\tikz\filldraw[fill=cgreen!60,draw=black] (0,0) rectangle (0.3,0.3); \;arXiv (2)};
 \end{tikzpicture}
-\caption{Distribution of the 58 selected surveys by venue type.}
+\caption{Distribution of the 24 selected surveys by venue type.}
 \label{fig:byvenue}
 \end{figure}
 
@@ -662,9 +703,9 @@ As with any systematic review, this meta-survey is subject to validity threats, 
 
 \textbf{Construct validity.} The search string and digital-library selection may not capture every relevant survey, particularly those using non-standard terminology. This threat is mitigated by combining a broad set of cloud database terms with multiple survey-indicating keywords (Section~\ref{subsec:searchstrategy}) and by supplementing database searches with backward and forward snowballing on included papers.
 
-\textbf{Internal validity.} Study selection, quality assessment, and data extraction were performed by a single reviewer, introducing a risk of subjective bias and a lack of inter-rater agreement. To reduce this threat, explicit inclusion/exclusion criteria (Table~\ref{tab:criteria}) and a documented quality-assessment rubric (Table~\ref{tab:qa}) were applied uniformly, and borderline decisions were re-examined in a second pass. The absence of a second independent reviewer nonetheless remains a limitation.
+\textbf{Internal validity.} Study selection, quality assessment, and data extraction were performed by a single reviewer, introducing a risk of subjective bias and a lack of inter-rater agreement. To reduce this threat, explicit inclusion/exclusion criteria (Table~\ref{tab:criteria}) and a documented quality-assessment rubric (Table~\ref{tab:qa}) were applied uniformly, and borderline decisions were re-examined in a second pass. Every included survey was additionally verified against a resolvable DOI or arXiv identifier and a retained full-text copy, so that the catalog contains only confirmable publications. The absence of a second independent reviewer nonetheless remains a limitation.
 
-\textbf{External validity.} As a survey of surveys, the findings inherit the scope and currency limitations of the primary surveys; rapidly evolving topics (e.g., LLM--database convergence) may be underrepresented relative to their current activity. The synthesis is therefore intended as a structured map of the field rather than an exhaustive account of every primary system.
+\textbf{External validity.} As a survey of surveys, the findings inherit the scope and currency limitations of the primary surveys; rapidly evolving topics (e.g., LLM--database convergence) may be underrepresented relative to their current activity. The deliberately curated corpus of 24 confirmable surveys favors verifiability over exhaustive coverage, so some relevant but harder-to-verify or paywalled surveys may be absent. The synthesis is therefore intended as a structured map of the field rather than an exhaustive account of every primary system.
 
 \textbf{Conclusion validity.} The challenge taxonomy and the consensus/divergence synthesis (Table~\ref{tab:challenge-synthesis}) involve interpretive judgment. These are grounded in explicit per-challenge evidence and cross-referenced to the surveyed domains in Table~\ref{tab:challenge-coverage} to keep the reasoning traceable.
 
@@ -675,7 +716,7 @@ As with any systematic review, this meta-survey is subject to validity threats, 
 \section{Discussion---Challenges and Research Directions}
 \label{sec:discussion}
 
-This section presents the core contribution of this meta-survey: a comprehensive, structured analysis of the challenges and research directions identified across the 58 surveyed papers. Following the dual-theme approach of Saeed and Omlin~\cite{Saeed2023XAI}, the discussion is organized into two complementary themes:
+This section presents the core contribution of this meta-survey: a comprehensive, structured analysis of the challenges and research directions identified across the 24 surveyed papers. Following the dual-theme approach of Saeed and Omlin~\cite{Saeed2023XAI}, the discussion is organized into two complementary themes:
 
 \begin{enumerate}
     \item \textbf{Theme~1: Cross-cutting challenges} (Section~\ref{subsec:theme1})---eighteen recurring challenges that transcend individual system categories.
@@ -714,9 +755,31 @@ Figure~\ref{fig:taxonomy} provides a high-level overview of the dual-theme taxon
 \subsection{Theme 1: Cross-cutting challenges}
 \label{subsec:theme1}
 
-Eighteen cross-cutting challenges that recur across multiple cloud database survey domains are identified. For each challenge, the following are presented: (1)~the definition and context, (2)~the current state as reported in surveyed papers, (3)~open problems, and (4)~research directions with DKE relevance where applicable.
+Eighteen cross-cutting challenges that recur across multiple cloud database survey domains are identified and organized, in Figure~\ref{fig:challenge-fanout}, into four clusters---\emph{foundational}, \emph{data-architecture}, \emph{operational}, and \emph{emerging} concerns. Each challenge is discussed as a short narrative that frames the problem, summarizes the current state reported across the surveyed papers (including points of consensus and divergence), and closes with a brief statement of the open problems and research directions---highlighting data- and knowledge-engineering (DKE) relevance---that the surveys leave unresolved.
 
-Tables~\ref{tab:challenge-coverage} and~\ref{tab:challenge-synthesis} provide a consolidated overview. Table~\ref{tab:challenge-coverage} maps each challenge to the survey domains that address it, revealing coverage density and thematic clusters. Table~\ref{tab:challenge-synthesis} synthesizes the key points of agreement and divergence across surveyed papers. Detailed discussion follows in Sections~\ref{subsubsec:scalability}--\ref{subsubsec:standardization}.
+\begin{figure}[t]
+\centering
+\adjustbox{max width=\linewidth}{%
+\begin{tikzpicture}[
+  root/.style={draw, fill=cdblue!20, draw=cdblue!60, font=\small\bfseries, align=center, minimum height=1.0cm, text width=4.4cm},
+  clu/.style={draw, fill=cblue!12, draw=cblue!55, font=\footnotesize, align=left, text width=4.6cm, inner sep=5pt},
+  spoke/.style={-, thick, cgray!70}
+]
+\node[root] (r) at (0,3.2) {Cross-Cutting\\Challenges (18)};
+\node[clu] (f) at (-10.8,0) {\textbf{Foundational}\\[2pt] C1~~Scalability \& elasticity\\ C2~~Consistency (CAP/PACELC)\\ C3~~Performance \& benchmarking\\ C4~~Security \& privacy\\ C5~~Cost modeling \& optimization};
+\node[clu] (d) at (-3.6,0) {\textbf{Data Architecture}\\[2pt] C6~~Multi-tenancy \& isolation\\ C7~~Data model diversity\\ C8~~Heterogeneous query proc.\\ C9~~Storage disaggregation\\ C10~Distributed transactions};
+\node[clu] (o) at (3.6,0) {\textbf{Operations}\\[2pt] C11~Fault tolerance \& HA\\ C12~Migration \& portability\\ C13~Edge--cloud continuum\\ C14~AI--database convergence\\ C15~Serverless \& autonomy};
+\node[clu] (e) at (10.8,0) {\textbf{Emerging}\\[2pt] C16~Governance \& lineage\\ C17~Sustainability\\ C18~Standardization \& interop.};
+\draw[spoke] (r) -- (f);
+\draw[spoke] (r) -- (d);
+\draw[spoke] (r) -- (o);
+\draw[spoke] (r) -- (e);
+\end{tikzpicture}}
+\caption{The eighteen cross-cutting challenges, organized into four clusters.}
+\label{fig:challenge-fanout}
+\end{figure}
+
+Three consolidated views support the discussion. Table~\ref{tab:challenge-coverage} maps each challenge to the survey domains that address it, revealing coverage density and thematic clusters; Table~\ref{tab:challenge-synthesis} synthesizes the key points of agreement and divergence across surveyed papers; and Table~\ref{tab:challenge-year} shows how attention to each challenge has evolved over the study window. Detailed discussion follows in Sections~\ref{subsubsec:scalability}--\ref{subsubsec:standardization}.
 
 %% ---- Table 1: Challenge Coverage Matrix ----
 \begin{landscape}
@@ -726,12 +789,12 @@ Tables~\ref{tab:challenge-coverage} and~\ref{tab:challenge-synthesis} provide a 
 \caption{Cross-cutting challenge coverage across consolidated survey domains. Symbols: \FULL~=~primary focus, \PART~=~substantive discussion, \MINOR~=~mentioned. The rightmost column~(\textit{n}) counts domains addressing each challenge.}
 \label{tab:challenge-coverage}\\
 \toprule
-\# & Challenge & \rot{Cloud-Native} & \rot{HTAP} & \rot{NoSQL / NewSQL} & \rot{AI4DB / ML} & \rot{Security / Privacy} & \rot{Lakehouse} & \rot{Serverless} & \rot{Migration} & \rot{Edge / Fog} & \rot{Specialized Models} & \rot{Benchmarking / Cost} & \rot{Governance / Sustain.} & \textit{n} \\
+\# & Challenge & \rot{Cloud-Native} & \rot{HTAP} & \rot{NoSQL / NewSQL} & \rot{AI4DB / Learned} & \rot{Vector / Graph / Multi-Model} & \rot{Lakehouse} & \rot{Time-Series} & \rot{Edge / Fog} & \rot{NL / LLM--DB} & \rot{Security / Privacy} & \rot{Benchmarking} & \rot{Migration} & \textit{n} \\
 \midrule
 \endfirsthead
 \multicolumn{15}{l}{\small\textit{Table~\ref{tab:challenge-coverage} continued}}\\
 \toprule
-\# & Challenge & \rot{Cloud-Native} & \rot{HTAP} & \rot{NoSQL / NewSQL} & \rot{AI4DB / ML} & \rot{Security / Privacy} & \rot{Lakehouse} & \rot{Serverless} & \rot{Migration} & \rot{Edge / Fog} & \rot{Specialized Models} & \rot{Benchmarking / Cost} & \rot{Governance / Sustain.} & \textit{n} \\
+\# & Challenge & \rot{Cloud-Native} & \rot{HTAP} & \rot{NoSQL / NewSQL} & \rot{AI4DB / Learned} & \rot{Vector / Graph / Multi-Model} & \rot{Lakehouse} & \rot{Time-Series} & \rot{Edge / Fog} & \rot{NL / LLM--DB} & \rot{Security / Privacy} & \rot{Benchmarking} & \rot{Migration} & \textit{n} \\
 \midrule
 \endhead
 \midrule
@@ -742,36 +805,36 @@ Tables~\ref{tab:challenge-coverage} and~\ref{tab:challenge-synthesis} provide a 
 %% Foundational
 \multicolumn{15}{l}{\textit{Foundational}}\\
 \addlinespace
-C1  & Scalability \& elasticity          & \FULL & \PART & \FULL & \MINOR &       & \PART & \FULL &       & \PART &       & \PART &       & 8 \\
-C2  & Consistency \& CAP/PACELC          & \FULL & \FULL & \FULL &        &       &       &       &       & \PART & \MINOR &       &       & 5 \\
-C3  & Performance \& benchmarking        & \FULL & \PART & \PART & \FULL  &       & \PART & \PART &       &       &       & \FULL &       & 7 \\
-C4  & Security \& privacy                & \PART &       & \MINOR &       & \FULL &       &       & \MINOR & \PART &       &       & \PART & 6 \\
-C5  & Cost modeling \& optimization      & \PART &       &        &       &       & \PART & \FULL & \PART &       &       & \FULL &       & 5 \\
+C1  & Scalability \& elasticity          & \FULL & \PART & \FULL  & \MINOR &        & \PART & \PART & \PART &       &       & \PART &       & 8 \\
+C2  & Consistency \& CAP/PACELC          & \FULL & \FULL & \FULL  &        & \MINOR &       &       & \PART &       &       &       &       & 5 \\
+C3  & Performance \& benchmarking        & \FULL & \PART & \PART  & \FULL  &        & \PART &       &       &       &       & \FULL &       & 6 \\
+C4  & Security \& privacy                & \PART &       & \MINOR &        &        &       &       & \PART &       & \FULL &       & \MINOR & 5 \\
+C5  & Cost modeling \& optimization      & \PART &       &        &        &        & \PART &       &       &       &       & \FULL & \PART & 4 \\
 \addlinespace
 %% Data Architecture
 \multicolumn{15}{l}{\textit{Data Architecture}}\\
 \addlinespace
-C6  & Multi-tenancy \& isolation         & \FULL &       &        &       & \PART &       & \MINOR &      &       &       & \PART &       & 4 \\
-C7  & Data model diversity               &       & \MINOR & \FULL &       &       & \PART &       &       &       & \FULL &       &       & 4 \\
-C8  & Heterogeneous query processing     & \PART & \FULL &        & \PART &       & \FULL &       &       &       & \PART &       &       & 5 \\
-C9  & Storage disaggregation             & \FULL & \PART &        &       &       & \FULL & \PART &       &       &       &       &       & 4 \\
-C10 & Distributed transactions           & \FULL & \FULL & \FULL  &       &       &       &       &       & \MINOR &      &       &       & 4 \\
+C6  & Multi-tenancy \& isolation         & \FULL &       &        &        &        &       &       &       &       & \PART & \PART &       & 3 \\
+C7  & Data model diversity               &       & \MINOR & \FULL &        & \FULL  & \PART & \PART &       &       &       &       &       & 5 \\
+C8  & Heterogeneous query processing     & \PART & \FULL & \MINOR & \PART  & \PART  & \FULL &       &       & \PART &       &       &       & 7 \\
+C9  & Storage disaggregation             & \FULL & \PART &        &        &        & \FULL &       &       &       &       &       &       & 3 \\
+C10 & Distributed transactions           & \FULL & \FULL & \FULL  &        & \MINOR &       &       & \MINOR &      &       &       &       & 5 \\
 \addlinespace
 %% Operations
 \multicolumn{15}{l}{\textit{Operations}}\\
 \addlinespace
-C11 & Fault tolerance \& HA              & \FULL &       & \PART  &       &       &       & \MINOR &      & \PART &       &       &       & 4 \\
-C12 & Migration \& portability           & \PART &       & \MINOR &       &       &       &       & \FULL &       &       &       & \MINOR & 4 \\
-C13 & Edge--cloud continuum              & \MINOR &      &        &       & \MINOR &      &       &       & \FULL &       &       &       & 3 \\
-C14 & AI--database convergence           & \PART & \MINOR &       & \FULL &       & \PART & \MINOR &      &       &       & \MINOR &      & 6 \\
-C15 & Serverless \& autonomy             & \FULL &       &        & \PART &       &       & \FULL &       &       &       & \MINOR &      & 4 \\
+C11 & Fault tolerance \& HA              & \FULL &       & \PART  &        &        &       &       & \PART &       &       &       &       & 3 \\
+C12 & Migration \& portability           & \PART &       & \MINOR &        &        &       &       &       &       &       &       & \FULL & 3 \\
+C13 & Edge--cloud continuum              & \MINOR &      &        &        &        &       &       & \FULL &       & \MINOR &      &       & 3 \\
+C14 & AI--database convergence           & \PART &       &        & \FULL  & \MINOR & \PART &       &       & \FULL &       &       &       & 5 \\
+C15 & Serverless \& autonomy             & \FULL &       &        & \PART  &        &       &       &       &       &       & \MINOR &       & 3 \\
 \addlinespace
 %% Emerging
 \multicolumn{15}{l}{\textit{Emerging}}\\
 \addlinespace
-C16 & Governance \& lineage              & \MINOR &      &        &       & \PART & \PART &       & \MINOR &      &       &       & \FULL & 5 \\
-C17 & Sustainability                     & \MINOR &      &        &       &       &       &       &       &       &       & \PART & \FULL & 3 \\
-C18 & Standardization \& interoperability & \PART &      & \PART  &       &       & \PART &       & \PART &       & \FULL &       & \MINOR & 6 \\
+C16 & Governance \& lineage              & \MINOR &      &        &        &        & \PART &       &       & \MINOR & \FULL &      & \MINOR & 5 \\
+C17 & Sustainability                     & \MINOR &      &        & \MINOR &        &       &       &       &       &       & \PART &       & 3 \\
+C18 & Standardization \& interoperability & \PART &      & \PART  &        & \FULL  & \PART &       &       & \MINOR &      &       & \PART & 6 \\
 \end{longtable}
 \end{small}
 \end{landscape}
@@ -781,7 +844,7 @@ C18 & Standardization \& interoperability & \PART &      & \PART  &       &     
 \setlength{\LTcapwidth}{\linewidth}
 \begin{small}
 \begin{longtable}{c >{\raggedright\arraybackslash}p{2.2cm} >{\raggedright\arraybackslash}p{2.5cm} >{\raggedright\arraybackslash}p{7.2cm} >{\raggedright\arraybackslash}p{7.2cm}}
-\caption{Synthesis of cross-cutting challenges: key similarities (consensus) and differences (divergences) across the 58 surveyed papers.}
+\caption{Synthesis of cross-cutting challenges: key similarities (consensus) and differences (divergences) across the 24 surveyed papers.}
 \label{tab:challenge-synthesis}\\
 \toprule
 \# & Challenge & Relevant Surveys & Key Similarities (Consensus) & Key Differences (Divergences) \\
@@ -799,97 +862,142 @@ C18 & Standardization \& interoperability & \PART &      & \PART  &       &     
 \endlastfoot
 %% Foundational
 C1 & Scalability \& elasticity &
-S1, S7, S8, S9, S21, S25, S34, S47, S53 &
+S1, S2, S6, S7, S14, S24 &
 All surveys agree that disaggregated storage enables elastic scaling; horizontal scale-out is preferred over vertical scaling; auto-scaling is a baseline cloud capability. &
-Cloud-native surveys (S1) focus on component-level elasticity; NoSQL surveys (S7, S8) emphasize partition-based data scaling; serverless surveys (S9, S53) advocate scale-to-zero, which other surveys consider impractical for sustained workloads. \\
+Cloud-native surveys (S1, S24) focus on component-level elasticity; NoSQL surveys (S6, S7) emphasize partition-based data scaling; HTAP surveys (S2) and edge/fog surveys (S14) stress elasticity under mixed and intermittently connected workloads, respectively. \\
 \addlinespace
 C2 & Consistency \& CAP/PACELC &
-S1, S2, S7, S8, S24, S46, S5 &
+S1, S2, S6, S7, S8, S14 &
 CAP/PACELC trade-offs are universally acknowledged; all surveys recognize a spectrum from strong to eventual consistency; configurable consistency is a key cloud differentiator. &
-NoSQL surveys (S7, S8) accept eventual consistency as pragmatic; HTAP/NewSQL surveys (S2, S24, S46) insist on strong consistency for transactional correctness; cloud-native surveys (S1) present tunable consistency as an application-level choice. \\
+NoSQL surveys (S6, S7, S8) accept eventual consistency as pragmatic; HTAP surveys (S2) insist on strong consistency for transactional correctness; cloud-native surveys (S1) present tunable consistency as an application-level choice. \\
 \addlinespace
 C3 & Performance \& benchmarking &
-S1, S2, S4, S6, S10, S18, S19, S33, S44, S57 &
+S1, S2, S4, S5, S9, S22 &
 Cloud-specific factors (network latency, multi-tenancy, cold starts) complicate optimization; existing benchmarks (TPC-C/H, YCSB) are widely considered inadequate for cloud settings. &
-AI4DB surveys (S4, S10) emphasize learned optimizers and indexes; benchmarking surveys (S18, S19, S33) focus on measurement methodology and fairness; cloud-native surveys (S1) focus on disaggregation overhead. \\
+AI4DB surveys (S4, S5) emphasize learned optimizers and indexes; benchmarking surveys (S9, S22) focus on measurement methodology and fairness; cloud-native surveys (S1) focus on disaggregation overhead. \\
 \addlinespace
 C4 & Security \& privacy &
-S1, S5, S13, S26, S43, S52 &
+S1, S14, S20, S21 &
 Encryption at rest and in transit is a baseline requirement; the shared responsibility model is universally acknowledged; GDPR compliance is a common concern. &
-Security surveys (S13, S26, S43, S52) deeply analyze threat models and advanced techniques (homomorphic encryption, SGX); cloud-native surveys (S1) treat security as one concern among many; edge surveys (S5) emphasize privacy-preserving aggregation. \\
+Security surveys (S20, S21) deeply analyze threat models and advanced techniques (homomorphic encryption, confidential computing); cloud-native surveys (S1) treat security as one concern among many; edge/fog surveys (S14) emphasize privacy-preserving aggregation. \\
 \addlinespace
 C5 & Cost modeling \& optimization &
-S1, S9, S12, S18, S19, S33, S44, S53, S57 &
+S1, S15, S22, S23 &
 Cost is a primary driver of cloud adoption; pricing complexity (10--100$\times$ variation) is widely noted; pay-per-use models are a defining benefit. &
-Serverless surveys (S9, S53) emphasize per-query pricing transparency; benchmarking surveys (S18, S19) focus on total cost of ownership comparison; migration surveys (S12) highlight hidden migration and lock-in costs. \\
+Benchmarking surveys (S22) focus on total cost of ownership comparison; lakehouse surveys (S15) weigh storage--compute cost trade-offs; migration surveys (S23) highlight hidden migration and lock-in costs; cloud-native surveys (S1) note multi-dimensional pricing complexity. \\
 \addlinespace
 %% Data Architecture
 C6 & Multi-tenancy \& isolation &
-S1, S13, S18, S25 &
+S1, S20, S22 &
 Noisy-neighbor performance interference is universally recognized; the trade-off between resource sharing efficiency and isolation is a fundamental tension. &
-Cloud-native surveys (S1) focus on architectural isolation levels (shared-nothing to shared-table); security surveys (S13) emphasize tenant data isolation; benchmarking surveys (S18) measure interference under controlled conditions. \\
+Cloud-native surveys (S1) focus on architectural isolation levels (shared-nothing to shared-table); security surveys (S20) emphasize tenant data isolation; benchmarking surveys (S22) measure interference under controlled conditions. \\
 \addlinespace
 C7 & Data model diversity &
-S3, S6, S7, S8, S14, S15, S24, S30, S39, S40, S42, S51, S55 &
+S3, S6, S7, S8, S12, S13, S17 &
 Polyglot persistence is the operational reality; cross-model query support is needed; multi-model databases are gaining traction. &
-NoSQL surveys (S7, S8) favor model-specific optimization; multi-model surveys (S39) advocate unified backends; specialized surveys (S3, S14, S55) argue that model-native operations cannot be efficiently reduced to a single backend. \\
+NoSQL surveys (S6, S7, S8) favor model-specific optimization; multi-model surveys (S12) advocate unified backends; specialized surveys (S3, S13, S17) argue that model-native operations (vector, graph, time-series) cannot be efficiently reduced to a single backend. \\
 \addlinespace
 C8 & Heterogeneous query processing &
-S1, S2, S4, S6, S14, S45, S46 &
+S1, S2, S12, S15, S16, S18 &
 Federated query processing across engines is increasingly necessary; predicate pushdown is the baseline optimization technique. &
-HTAP surveys (S2, S46) focus on OLTP--OLAP workload routing; lakehouse surveys (S6, S45) emphasize open-format access layers; AI4DB surveys (S4) propose learned query routing. \\
+HTAP surveys (S2) focus on OLTP--OLAP workload routing; lakehouse surveys (S15, S16) emphasize open-format access layers; multi-model surveys (S12) and natural-language interface surveys (S18) address cross-model and intent-driven query routing. \\
 \addlinespace
 C9 & Storage disaggregation &
-S1, S2, S6, S9, S21, S45 &
+S1, S2, S15, S16 &
 Compute-storage separation is the defining cloud-native architectural principle; write amplification reduction is a key benefit; independent layer scaling is a primary motivation. &
-Cloud-native surveys (S1) focus on log-as-database architectures (Aurora, PolarDB); lakehouse surveys (S6, S45) emphasize open table formats; HTAP surveys (S2) address separate analytical and transactional storage tiers. \\
+Cloud-native surveys (S1) focus on log-as-database architectures (Aurora, PolarDB); lakehouse surveys (S15, S16) emphasize open table formats; HTAP surveys (S2) address separate analytical and transactional storage tiers. \\
 \addlinespace
 C10 & Distributed transactions &
-S1, S2, S7, S8, S24, S46 &
+S1, S2, S6, S7, S8 &
 2PC and consensus protocols (Paxos/Raft) are the dominant approaches; the consistency--latency trade-off is universally acknowledged. &
-Cloud-native surveys (S1) cite clock synchronization innovations (TrueTime, HLC); NoSQL surveys (S7, S8) accept weaker guarantees (CRDTs, eventual consistency); HTAP surveys (S2, S46) focus on OLTP--OLAP transaction isolation. \\
+Cloud-native surveys (S1) cite clock synchronization innovations (TrueTime, HLC); NoSQL surveys (S6, S7, S8) accept weaker guarantees (CRDTs, eventual consistency); HTAP surveys (S2) focus on OLTP--OLAP transaction isolation. \\
 \addlinespace
 %% Operations
 C11 & Fault tolerance \& HA &
-S1, S5, S7, S8, S9, S48 &
+S1, S6, S8, S14 &
 Multi-AZ replication is the baseline approach; automated failover is expected; RTO/RPO targets drive architectural decisions. &
-Cloud-native surveys (S1) focus on quorum protocols (e.g., Aurora's 4/6 write quorum); NoSQL surveys (S7, S8) emphasize tunable replication factors; edge surveys (S5, S48) must handle intermittent connectivity. \\
+Cloud-native surveys (S1) focus on quorum protocols (e.g., Aurora's 4/6 write quorum); NoSQL surveys (S6, S8) emphasize tunable replication factors; edge/fog surveys (S14) must handle intermittent connectivity. \\
 \addlinespace
 C12 & Migration \& portability &
-S1, S7, S12, S28, S49, S56 &
+S1, S6, S23 &
 Migration is complex, error-prone, and labor-intensive; schema heterogeneity is the primary technical barrier; vendor lock-in is widely criticized. &
-Migration surveys (S12, S28, S49, S56) focus on methodology and zero-downtime techniques; cloud-native surveys (S1) treat migration as a cloud adoption path; NoSQL surveys (S7) highlight data model mismatch challenges. \\
+Migration surveys (S23) focus on methodology and zero-downtime techniques; cloud-native surveys (S1) treat migration as a cloud adoption path; NoSQL surveys (S6) highlight data model mismatch challenges. \\
 \addlinespace
 C13 & Edge--cloud continuum &
-S1, S5, S13, S48 &
+S1, S14, S20 &
 Data placement across edge--fog--cloud tiers requires intelligent policies; intermittent connectivity is the defining constraint. &
-Edge surveys (S5, S48) focus on resource-constrained processing and synchronization; cloud-native surveys (S1) view edge as a cloud extension; security surveys (S13) emphasize privacy-preserving edge aggregation. \\
+Edge/fog surveys (S14) focus on resource-constrained processing and synchronization; cloud-native surveys (S1) view edge as a cloud extension; security surveys (S20) emphasize privacy-preserving edge aggregation. \\
 \addlinespace
 C14 & AI--database convergence &
-S1, S4, S6, S10, S11, S16, S17, S32, S35, S37, S41, S54 &
+S1, S4, S5, S18, S19 &
 Both AI4DB and DB4AI directions are growing rapidly; production deployment of learned components remains limited; training data management is a shared challenge. &
-AI4DB surveys (S4, S10, S11) focus on individual learned components (indexes, optimizers); cloud-native surveys (S1) view AI as a system enhancement; lakehouse surveys (S6) emphasize ML pipeline integration. \\
+AI4DB surveys (S4, S5) focus on individual learned components (indexes, optimizers); natural-language and retrieval-augmented surveys (S18, S19) address LLM-driven querying and retrieval; cloud-native surveys (S1) view AI as a system enhancement. \\
 \addlinespace
 C15 & Serverless \& autonomy &
-S1, S4, S9, S53 &
+S1, S4 &
 Serverless abstracts infrastructure management; cold-start latency is a known limitation; pay-per-query suits variable workloads. &
-Serverless surveys (S9, S53) focus on resource provisioning mechanisms; cloud-native surveys (S1) treat serverless as one deployment model; AI4DB surveys (S4) envision full-stack autonomous databases beyond serverless abstraction. \\
+Cloud-native surveys (S1) treat serverless as one deployment model and catalog autoscaling mechanisms; AI4DB surveys (S4) envision full-stack autonomous databases that self-tune beyond the serverless abstraction. \\
 \addlinespace
 %% Emerging
 C16 & Governance \& lineage &
-S6, S13, S20, S26, S27, S58 &
+S1, S15, S18, S20, S23 &
 End-to-end lineage tracking is increasingly important; regulatory compliance (GDPR, CCPA) drives governance adoption; metadata management is fragmented across tools. &
-Governance surveys (S20, S27, S58) focus on standards and organizational processes; security surveys (S13, S26) focus on access control and audit logging; lakehouse surveys (S6) emphasize unified data cataloging. \\
+Security surveys (S20) focus on access control and audit logging; lakehouse surveys (S15) emphasize unified data cataloging; migration surveys (S23) track lineage across system transitions; cloud-native (S1) and NL-interface (S18) surveys note metadata's role in querying. \\
 \addlinespace
 C17 & Sustainability &
-S18, S19, S20, S27, S58 &
+S1, S4, S22 &
 Energy-proportional computing is an aspirational goal; carbon-aware data placement is an emerging research direction. &
-Governance/sustainability surveys (S20, S27, S58) address systemic environmental impact and reporting; benchmarking surveys (S18, S19) propose adding energy and carbon metrics; most other survey domains do not address sustainability. \\
+Cloud-native surveys (S1) note the energy implications of disaggregation; AI4DB surveys (S4) flag the training cost of learned components; benchmarking surveys (S22) propose adding energy and carbon metrics; most other survey domains do not yet address sustainability. \\
 \addlinespace
 C18 & Standardization \& interoperability &
-S3, S6, S7, S8, S12, S14, S15, S28, S30, S39, S40, S42 &
+S3, S6, S7, S12, S13, S18, S23 &
 Vendor lock-in is widely criticized; SQL remains the primary query lingua franca; open formats (Iceberg, Delta Lake, Hudi) are gaining traction. &
-Graph/specialized surveys (S3, S14, S15) highlight query language fragmentation (Cypher, SPARQL, GQL); NoSQL surveys (S7, S8) focus on API heterogeneity; lakehouse surveys (S6) champion open table formats as the path forward. \\
+Graph and specialized surveys (S3, S13) highlight query-language fragmentation (Cypher, SPARQL, GQL); NoSQL surveys (S6, S7) focus on API heterogeneity; multi-model (S12) and natural-language interface (S18) surveys push unified access, while migration surveys (S23) stress portable formats. \\
+\end{longtable}
+\end{small}
+\end{landscape}
+
+%% ---- Table: temporal attention heatmap (challenge x year) ----
+\begin{landscape}
+\setlength{\LTcapwidth}{\linewidth}
+\begin{small}
+\begin{longtable}{c >{\raggedright\arraybackslash}p{4.6cm} *{10}{c} c}
+\caption{Temporal attention to each cross-cutting challenge: the number of surveyed papers, by publication year, whose primary domain substantively (\FULL/\PART) addresses the challenge. Cell shading is proportional to the count; attention concentrates in 2024, mirroring the overall publication trend (Figure~\ref{fig:byyear}).}
+\label{tab:challenge-year}\\
+\toprule
+\# & Challenge & 2016 & 2017 & 2018 & 2019 & 2020 & 2021 & 2022 & 2023 & 2024 & 2025 & Total \\
+\midrule
+\endfirsthead
+\multicolumn{13}{l}{\small\textit{Table~\ref{tab:challenge-year} continued}}\\
+\toprule
+\# & Challenge & 2016 & 2017 & 2018 & 2019 & 2020 & 2021 & 2022 & 2023 & 2024 & 2025 & Total \\
+\midrule
+\endhead
+\midrule
+\multicolumn{13}{r}{\small\textit{Continued on next page}}\\
+\endfoot
+\bottomrule
+\endlastfoot
+C1 & Scalability \& elasticity &  & \cellcolor{cgray!40}2 & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!80}7 & \cellcolor{cgray!40}2 & 14 \\
+C2 & Consistency \& CAP/PACELC &  & \cellcolor{cgray!20}1 & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!20}1 &  &  &  & \cellcolor{cgray!80}5 & \cellcolor{cgray!40}2 & 10 \\
+C3 & Performance \& benchmarking &  & \cellcolor{cgray!20}1 & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!40}2 & \cellcolor{cgray!20}1 & \cellcolor{cgray!80}6 & \cellcolor{cgray!40}2 & 14 \\
+C4 & Security \& privacy &  & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!20}1 &  &  & \cellcolor{cgray!40}2 &  & 5 \\
+C5 & Cost modeling \& optimization & \cellcolor{cgray!20}1 & \cellcolor{cgray!20}1 &  &  &  &  & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!60}3 &  & 6 \\
+C6 & Multi-tenancy \& isolation &  & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!20}1 &  &  & \cellcolor{cgray!40}2 &  & 5 \\
+C7 & Data model diversity &  & \cellcolor{cgray!40}2 & \cellcolor{cgray!20}1 & \cellcolor{cgray!20}1 & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!60}4 & \cellcolor{cgray!40}2 & 12 \\
+C8 & Heterogeneous query processing &  & \cellcolor{cgray!40}2 &  & \cellcolor{cgray!40}2 &  &  & \cellcolor{cgray!40}2 & \cellcolor{cgray!20}1 & \cellcolor{cgray!80}5 &  & 12 \\
+C9 & Storage disaggregation &  & \cellcolor{cgray!20}1 &  &  &  &  & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!60}3 &  & 5 \\
+C10 & Distributed transactions &  & \cellcolor{cgray!20}1 & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!20}1 &  &  &  & \cellcolor{cgray!60}4 & \cellcolor{cgray!40}2 & 9 \\
+C11 & Fault tolerance \& HA &  & \cellcolor{cgray!20}1 & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!20}1 &  &  &  & \cellcolor{cgray!60}4 & \cellcolor{cgray!40}2 & 9 \\
+C12 & Migration \& portability & \cellcolor{cgray!20}1 & \cellcolor{cgray!20}1 &  &  &  &  &  &  & \cellcolor{cgray!20}1 &  & 3 \\
+C13 & Edge--cloud continuum &  &  &  &  &  &  &  &  & \cellcolor{cgray!20}1 &  & 1 \\
+C14 & AI--database convergence &  & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!20}1 &  &  & \cellcolor{cgray!40}2 & \cellcolor{cgray!20}1 & \cellcolor{cgray!60}3 &  & 8 \\
+C15 & Serverless \& autonomy &  & \cellcolor{cgray!20}1 &  &  &  &  & \cellcolor{cgray!20}1 & \cellcolor{cgray!20}1 & \cellcolor{cgray!20}1 &  & 4 \\
+C16 & Governance \& lineage &  &  &  & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!20}1 & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!20}1 &  & 4 \\
+C17 & Sustainability &  &  &  &  &  &  &  &  & \cellcolor{cgray!20}1 &  & 1 \\
+C18 & Standardization \& interop. & \cellcolor{cgray!20}1 & \cellcolor{cgray!40}2 & \cellcolor{cgray!20}1 & \cellcolor{cgray!20}1 & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!20}1 &  & \cellcolor{cgray!80}5 & \cellcolor{cgray!40}2 & 14 \\
+\midrule
+\multicolumn{2}{l}{\textbf{Total (challenge-mentions)}} & \textbf{3} & \textbf{19} & \textbf{7} & \textbf{8} & \textbf{7} & \textbf{3} & \textbf{13} & \textbf{4} & \textbf{58} & \textbf{14} & \textbf{136} \\
 \end{longtable}
 \end{small}
 \end{landscape}
@@ -897,319 +1005,217 @@ Graph/specialized surveys (S3, S14, S15) highlight query language fragmentation 
 \subsubsection{Scalability and elasticity}
 \label{subsubsec:scalability}
 
-\textbf{Context.} Scalability---the ability to handle growing workloads by adding resources---and elasticity---the ability to dynamically provision and release resources in response to demand fluctuations---are foundational requirements for cloud databases~\cite{Li2024CloudNativeSurvey,Davoudian2018NoSQL}.
+Scalability---handling growing workloads by adding resources---and elasticity---provisioning and releasing resources in response to demand---are the foundational promises of the cloud, and every surveyed cloud-native and NoSQL review treats them as first-order concerns~\cite{Li2024CloudNativeSurvey,Davoudian2018NoSQL}. In practice, cloud-native engines such as Aurora~\cite{Verbitski2017} and Snowflake~\cite{Dageville2016} achieve storage elasticity through compute--storage disaggregation, while compute elasticity is delivered by auto-scaling and replication~\cite{Thara2013DaaSPerf}; serverless offerings push this further by scaling to zero between requests~\cite{Muller2020Serverless}. The surveyed literature nonetheless converges on a shared limitation: today's elasticity is coarse-grained, operating at the level of whole instances rather than individual components, so that \emph{fine-grained} elasticity---independently scaling a single query operator, the transaction manager, or the log service---remains largely unrealized~\cite{Li2024CloudNativeSurvey}.
 
-\textbf{Current state.} Cloud-native databases like Aurora~\cite{Verbitski2017} and Snowflake~\cite{Dageville2016} achieve storage elasticity through disaggregation, while compute elasticity is provided by auto-scaling and data-replication mechanisms~\cite{Thara2013DaaSPerf}. Serverless databases~\cite{Muller2020Serverless} push elasticity further by scaling to zero. However, surveys report that true fine-grained elasticity---scaling individual components (e.g., a single query operator) rather than entire instances---remains an open challenge~\cite{Li2024CloudNativeSurvey}.
+Several obstacles recur across the reviews. Cold-start latency undermines the responsiveness that makes scale-to-zero attractive~\cite{Muller2020Serverless}; state migration during scale-out and scale-in introduces transient performance degradation; and predictive autoscaling depends on workload-forecasting models that are still maturing~\cite{Ma2021LearnedWorkload}. Cross-component elasticity in fully disaggregated architectures is the least understood of all, because the interactions among independently scaled layers are difficult to model.
 
-\textbf{Open problems.}
-\begin{itemize}
-    \item Cold-start latency in serverless databases undermines real-time elasticity~\cite{Muller2020Serverless}.
-    \item State management during scale-out/scale-in operations can cause transient performance degradation.
-    \item Predictive autoscaling---anticipating workload spikes before they occur---requires accurate workload forecasting models~\cite{Ma2021LearnedWorkload}.
-    \item Cross-component elasticity in disaggregated architectures (independently scaling query processing, transaction management, and storage) is poorly understood.
-\end{itemize}
-
-\textbf{Research directions.} Developing formal models for \emph{elastic data architectures}---capturing the relationships between workload patterns, resource allocation, performance guarantees, and cost---is a knowledge engineering challenge that could benefit from ontological modeling of cloud database configurations.
+\textbf{Open problems and research directions.} The central open problem is a principled account of \emph{elastic data architectures} that links workload patterns, resource allocation, performance guarantees, and cost. From a data- and knowledge-engineering standpoint, ontological models of cloud-database configurations and their scaling behavior could turn today's heuristic autoscaling into reasoning over an explicit model, enabling predictable, component-level elasticity.
 
 \subsubsection{Consistency, availability, and partition tolerance revisited}
 \label{subsubsec:consistency}
 
-\textbf{Context.} The CAP theorem~\cite{Brewer2012CAP} and its refinement PACELC~\cite{Abadi2012PACELC} have long shaped distributed database design. In the cloud era, these trade-offs take on new dimensions due to geo-distribution, multi-region deployment, and the diversity of consistency models offered by cloud databases~\cite{Viotti2016Consistency}.
+The CAP theorem~\cite{Brewer2012CAP} and its PACELC refinement~\cite{Abadi2012PACELC} have shaped distributed database design for over a decade, but the surveyed work shows that geo-distribution, multi-region deployment, and the proliferation of configurable consistency levels give these trade-offs new dimensions in the cloud~\cite{Viotti2016Consistency}. Cloud databases now expose a spectrum of guarantees: Spanner provides external consistency via TrueTime~\cite{Corbett2013Spanner}, whereas systems such as Cosmos DB offer several intermediate levels from strong to eventual. Surveys of NoSQL stores~\cite{Davoudian2018NoSQL,Kaur2021NoSQLReview} and of HTAP systems~\cite{Haas2024HTAPSurvey} consistently single out consistency management as a defining difficulty, and they disagree on how much weakening is acceptable---NoSQL reviews accept eventual consistency as pragmatic, while HTAP and NewSQL reviews insist on strong guarantees for transactional correctness.
 
-\textbf{Current state.} Cloud databases offer a spectrum of consistency levels. Google Spanner~\cite{Corbett2013Spanner} provides external consistency (linearizability) using TrueTime, while Cosmos DB offers five consistency levels from strong to eventual. Surveys on distributed databases~\cite{Davoudian2018NoSQL,Kaur2021NoSQLReview} and HTAP systems~\cite{Haas2024HTAPSurvey} consistently identify consistency trade-offs as a central challenge.
+What the surveys leave open is largely a matter of reasoning and tooling. Developers struggle to predict how a given consistency level affects application correctness~\cite{Viotti2016Consistency}; adaptive consistency that adjusts to workload requirements is frequently proposed but rarely deployed; and cross-model consistency---reconciling, say, document and graph views of the same data---is barely studied in multi-model settings~\cite{Lu2019MultiModel}.
 
-\textbf{Open problems.}
-\begin{itemize}
-    \item Developers struggle to reason about the implications of different consistency levels for application correctness~\cite{Viotti2016Consistency}.
-    \item Adaptive consistency---dynamically adjusting consistency levels based on workload requirements---is proposed but rarely implemented in production systems.
-    \item Cross-model consistency in multi-model databases (e.g., ensuring consistency between document and graph views of the same data) is underexplored~\cite{Lu2019MultiModel}.
-\end{itemize}
-
-\textbf{Research directions.} Formal verification and knowledge-based reasoning about consistency guarantees, including ontology-based specifications of consistency contracts, could help bridge the gap between theoretical models and practical developer needs.
+\textbf{Open problems and research directions.} Bridging the gap between formal consistency models and everyday development calls for knowledge-based specifications of consistency \emph{contracts}---machine-checkable statements of the guarantees a service offers and an application requires---so that compatibility can be verified rather than assumed, a natural fit for formal-methods and DKE techniques.
 
 \subsubsection{Performance optimization and benchmarking}
 \label{subsubsec:performance}
 
-\textbf{Context.} Performance optimization in cloud databases spans query optimization, indexing, caching, resource allocation, and workload management. Benchmarking provides the empirical foundation for evaluating and comparing systems~\cite{Rabl2019BenchmarkSurvey}.
+Performance optimization in the cloud spans query optimization, indexing, caching, resource allocation, and workload management, and benchmarking supplies the empirical ground truth against which systems are compared~\cite{Rabl2019BenchmarkSurvey}. The AI4DB and cloud-native reviews document substantial progress on the optimization side---learned query optimization~\cite{Marcus2021Bao}, learned indexes~\cite{Kraska2018LearnedIndex}, and automated knob tuning~\cite{Zhang2022CDBTune}---yet they emphasize that cloud-specific factors such as network latency, disaggregation overhead, multi-tenant interference, and cold starts confound techniques designed for single-node systems~\cite{Zhou2022AI4DB,Li2024CloudNativeSurvey}. On the measurement side, the benchmarking reviews are unanimous that classical benchmarks (TPC-C, TPC-H, YCSB) fail to capture cloud realities such as elasticity, pay-per-use pricing, and variable network performance~\cite{Rabl2019BenchmarkSurvey,Taipalus2024DBMSPerf,Samarta2024SQLNoSQL,Daundasekara2025MultiCloud}.
 
-\textbf{Current state.} Surveys on AI4DB~\cite{Zhou2022AI4DB} and cloud-native databases~\cite{Li2024CloudNativeSurvey} highlight significant progress in learned query optimization~\cite{Marcus2021Bao}, learned indexes~\cite{Kraska2018LearnedIndex}, and automated knob tuning~\cite{Zhang2022CDBTune}. However, cloud-specific factors---network latency, storage disaggregation overhead, multi-tenant interference, and cold-start effects---complicate traditional optimization approaches. Existing benchmarks (TPC-C, TPC-H, YCSB) are criticized for not capturing cloud-specific characteristics~\cite{Rabl2019BenchmarkSurvey,Taipalus2024DBMSPerf,Samarta2024SQLNoSQL,Daundasekara2025MultiCloud}.
+The unresolved issues follow directly. Cloud-aware benchmarks that incorporate elasticity, multi-tenancy, and pricing are still lacking; fair cross-provider comparison is confounded by differing hardware, pricing, and service-level agreements; and end-to-end performance in disaggregated stacks emerges from complex interactions among independently scaled layers that no current benchmark isolates.
 
-\textbf{Open problems.}
-\begin{itemize}
-    \item Cloud-specific benchmarks that account for elasticity, multi-tenancy, pricing, and variable network performance are lacking.
-    \item Fair cross-system comparison is difficult due to differing cloud provider pricing, hardware, and service-level agreements.
-    \item End-to-end performance in disaggregated architectures involves complex interactions between independently scaled components.
-\end{itemize}
-
-\textbf{Research directions.} A \emph{benchmark knowledge base} that formalizes benchmark configurations, workload characteristics, hardware specifications, and results using structured knowledge representations would enable reproducible and comparable cloud database evaluations.
+\textbf{Open problems and research directions.} A promising direction is a \emph{benchmark knowledge base} that formally records configurations, workload characteristics, hardware, and results in a structured, queryable representation; making benchmark provenance explicit would render cloud-database evaluations reproducible and genuinely comparable---an evaluation problem with a strong knowledge-engineering core.
 
 \subsubsection{Security and privacy}
 \label{subsubsec:security}
 
-\textbf{Context.} Cloud databases introduce unique security challenges compared to on-premises systems: shared infrastructure, network-based access, provider trust, and the expanded attack surface of distributed systems~\cite{Fuhrt2010CloudSecurity,Zubi2009DistSec,Waghmare2015CloudDBSec}.
+Relative to on-premises systems, cloud databases face an enlarged attack surface arising from shared infrastructure, network-based access, and the need to trust the provider~\cite{Fuhrt2010CloudSecurity,Zubi2009DistSec,Waghmare2015CloudDBSec}. The security-focused surveys catalog the established defenses---encryption at rest and in transit, access control, audit logging, and vulnerability management~\cite{Sanka2022CloudSecSurvey,Ferrari2009DBaaSSec,Munir2015DBaaSSec,Khan2019DaaSAnalytic}---and the more advanced techniques that target computation over protected data, including homomorphic encryption for querying ciphertext~\cite{Acar2018HE,Ravan2013EncQuery}, secure multi-party computation, and confidential computing in hardware enclaves. The reviews differ in emphasis: dedicated security surveys analyze threat models in depth, whereas cloud-native reviews treat security as one concern among many and edge-oriented work stresses privacy-preserving aggregation close to the data source.
 
-\textbf{Current state.} Surveys on cloud database security~\cite{Fuhrt2010CloudSecurity,Sanka2022CloudSecSurvey,Ferrari2009DBaaSSec,Munir2015DBaaSSec,Khan2019DaaSAnalytic} cover encryption at rest and in transit, access control, audit logging, and vulnerability management. Advanced topics include homomorphic encryption for query processing on encrypted data~\cite{Acar2018HE,Ravan2013EncQuery}, secure multi-party computation, and confidential computing (e.g., Intel SGX enclaves for database operations).
+Across the literature the same hard problems persist: the performance overhead of encryption remains prohibitive for analytics; key management across multi-cloud and hybrid deployments is error-prone; the ``honest but curious'' provider is difficult to defend against without heavy penalties; and reconciling GDPR's right to erasure with analytic utility is unsolved.
 
-\textbf{Open problems.}
-\begin{itemize}
-    \item Performance overhead of encryption, especially for analytical workloads, remains prohibitive.
-    \item Key management across multi-cloud and hybrid deployments is complex and error-prone.
-    \item Insider threat models for cloud providers (the ``honest but curious'' provider) are difficult to mitigate without significant performance penalties.
-    \item Privacy-preserving analytics that comply with GDPR's right to erasure while maintaining data utility.
-\end{itemize}
-
-\textbf{Research directions.} \emph{Privacy ontologies} that formally model data sensitivity, access policies, and regulatory requirements could enable automated compliance checking and policy enforcement across cloud database deployments.
+\textbf{Open problems and research directions.} \emph{Privacy ontologies} that formally model data sensitivity, access policies, and regulatory obligations would let compliance be checked and enforced automatically across heterogeneous cloud deployments, turning today's manual, document-driven compliance into machine-reasoned policy---squarely a DKE contribution.
 
 \subsubsection{Cost modeling and optimization}
 \label{subsubsec:cost}
 
-\textbf{Context.} Cloud databases employ complex pricing models combining compute hours, storage capacity, I/O operations, network transfer, backup storage, and premium features (encryption, audit logs, multi-region replication)~\cite{Leis2023CloudPricing}.
+Cloud databases bill along many dimensions at once---compute hours, storage, I/O operations, network egress, backups, and premium features such as encryption or multi-region replication---which makes cost both a primary adoption driver and a persistent source of surprise~\cite{Leis2023CloudPricing}. Empirical studies show that the cost of the same workload can vary by one to two orders of magnitude depending on configuration~\cite{Leis2023CloudPricing}, and although work on serverless analytics~\cite{Muller2020Serverless} and the cloud-native reviews~\cite{Li2024CloudNativeSurvey} flag cost as critical, they offer little quantitative guidance. The benchmarking and migration reviews add the complementary observations that total-cost-of-ownership comparison and hidden lock-in costs are rarely modeled rigorously~\cite{Taipalus2024DBMSPerf,Mathew2021CloudMigration}.
 
-\textbf{Current state.} Recent studies~\cite{Leis2023CloudPricing} demonstrate that cloud database costs can vary by 10--100$\times$ depending on configuration choices. Surveys on serverless databases~\cite{Muller2020Serverless} and cloud-native systems~\cite{Li2024CloudNativeSurvey} identify cost as a critical concern but offer limited quantitative analysis.
+Consequently, pre-execution cost estimation for complex analytical queries remains unreliable; multi-objective optimization over cost, performance, and consistency lacks mature frameworks; the trade-offs among reserved, on-demand, and spot capacity for database workloads are understudied; and vendor lock-in obscures cross-provider comparison.
 
-\textbf{Open problems.}
-\begin{itemize}
-    \item Cost estimation for complex analytical queries before execution is unreliable.
-    \item Multi-objective optimization (cost vs.\ performance vs.\ consistency) lacks mature frameworks.
-    \item Reserved vs.\ on-demand vs.\ spot instance strategies for database workloads are poorly studied.
-    \item Vendor lock-in makes cost comparison across providers difficult.
-\end{itemize}
-
-\textbf{Research directions.} Developing formal \emph{cost knowledge models}---ontologies capturing pricing structures, workload profiles, and optimization strategies---could enable intelligent, automated cost optimization across cloud database services.
+\textbf{Open problems and research directions.} Formal \emph{cost knowledge models}---ontologies that capture provider pricing structures, workload profiles, and optimization strategies---could support automated, explainable cost optimization, and would give the field a shared vocabulary for reasoning about cloud economics rather than per-provider spreadsheets.
 
 \subsubsection{Multi-tenancy and resource isolation}
 \label{subsubsec:multitenancy}
 
-\textbf{Context.} Multi-tenancy allows cloud providers to serve multiple customers from shared infrastructure, reducing costs and improving resource utilization. However, it introduces challenges in performance isolation, data security, and fair resource allocation~\cite{Li2024CloudNativeSurvey}.
+Multi-tenancy lets providers serve many customers from shared infrastructure, improving utilization and lowering cost, at the price of harder performance isolation, data separation, and fair resource allocation~\cite{Li2024CloudNativeSurvey}. The surveyed systems realize tenancy at several granularities---shared-nothing (an instance per tenant), shared-process (logical isolation within one engine), and shared-table (row-level security over common tables)---and the reviews repeatedly identify ``noisy neighbor'' interference, in which one tenant's load degrades another's latency, as the dominant operational hazard~\cite{Narasayya2015MultiTenant}.
 
-\textbf{Current state.} Cloud-native databases implement multi-tenancy at different levels: shared-nothing (dedicated instances per tenant), shared-process (multiple tenants in one engine with logical isolation), and shared-table (tenants share physical tables with row-level security). Surveys report that noisy neighbor effects---where one tenant's workload degrades another's performance---remain a significant operational challenge~\cite{Narasayya2015MultiTenant}.
-
-\textbf{Open problems.}
-\begin{itemize}
-    \item Achieving strong performance isolation without dedicated hardware is difficult.
-    \item Workload-aware resource scheduling that adapts to heterogeneous tenant workloads.
-    \item Balancing isolation guarantees with resource efficiency and cost.
-\end{itemize}
+\textbf{Open problems and research directions.} Achieving strong performance isolation without dedicating hardware remains difficult; workload-aware scheduling that adapts to heterogeneous tenants is immature; and the fundamental tension between sharing efficiency and isolation guarantees still lacks a principled, cost-aware resolution. Quantitative models that predict interference from tenant workload signatures are a promising avenue.
 
 \subsubsection{Data model diversity and multi-model integration}
 \label{subsubsec:multimodel}
 
-\textbf{Context.} The proliferation of specialized data models (relational, document, graph, key-value, wide-column, vector, time-series) in cloud environments creates challenges for applications that need to query across multiple models~\cite{Lu2019MultiModel,Baralis2017Geospatial,Mahmood2019NoSQLLog}.
+The cloud has multiplied the data models in routine use---relational, document, graph, key-value, wide-column, vector, and time-series---and applications increasingly need to query across several at once~\cite{Lu2019MultiModel,Baralis2017Geospatial,Mahmood2019NoSQLLog}. Multi-model engines such as Cosmos DB, ArangoDB, and SurrealDB expose multiple model interfaces over a single backend, and the NoSQL and multi-model surveys report growing adoption alongside a candid account of the limits: cross-model query optimization and unified transaction semantics remain weak~\cite{Davoudian2018NoSQL,Tu2024CassandraMongo,Hendricks2019NoSQLReview,Tripathi2025NoSQLEdu,Lu2019MultiModel}. The reviews also diverge on strategy---NoSQL surveys favor model-specific optimization, multi-model surveys advocate unified backends, and specialized reviews argue that vector, graph, and time-series operations cannot be reduced efficiently to a single engine.
 
-\textbf{Current state.} Multi-model databases like Azure Cosmos DB, ArangoDB, and SurrealDB offer multiple data model interfaces over a single backend. Surveys on NoSQL~\cite{Davoudian2018NoSQL,Tu2024CassandraMongo,Hendricks2019NoSQLReview,Tripathi2025NoSQLEdu} and multi-model systems~\cite{Lu2019MultiModel} report growing adoption but highlight limitations in cross-model query optimization and unified transaction semantics.
-
-\textbf{Open problems.}
-\begin{itemize}
-    \item Unified query languages that span relational, graph, document, and vector operations.
-    \item Cross-model query optimization---optimizing queries that combine, e.g., graph traversals with relational joins and vector similarity search.
-    \item Schema mapping and data transformation between models in heterogeneous environments.
-\end{itemize}
-
-\textbf{Research directions.} \emph{Knowledge representation in multi-model environments}---using ontologies to provide a unified conceptual layer over diverse data models---is a direct DKE opportunity.
+\textbf{Open problems and research directions.} The persistent gaps are unified query languages spanning relational, graph, document, and vector operations; cross-model optimization of queries that combine, say, graph traversal with relational joins and similarity search; and schema mapping across models. Using ontologies to provide a single conceptual layer over diverse physical models---\emph{knowledge representation for multi-model data}---is a direct DKE opportunity.
 
 \subsubsection{Query processing across heterogeneous engines}
 \label{subsubsec:queryprocessing}
 
-\textbf{Context.} Modern cloud data architectures often involve multiple specialized database engines (OLTP, OLAP, graph, search, vector) that must be queried in concert. Federated query processing and data virtualization are key enablers~\cite{Haas2024HTAPSurvey,Sheng2025MQRLD}.
+Modern cloud data stacks rarely rely on a single engine; OLTP, OLAP, graph, search, and vector systems must be queried in concert, making federated query processing and data virtualization essential~\cite{Haas2024HTAPSurvey,Sheng2025MQRLD}. Engines such as Presto/Trino, BigQuery Omni, and AWS Lake Formation already provide federation, and the HTAP reviews analyze how queries should be routed to the appropriate engine~\cite{Haas2024HTAPSurvey}; yet they agree that cross-engine optimization is still rudimentary, seldom going beyond predicate pushdown. The unresolved problems are cost-based optimization across engines with incompatible cost models and capabilities, preserving transactional guarantees across engine boundaries, and the semantic understanding of data needed to route queries intelligently rather than syntactically.
 
-\textbf{Current state.} Systems like Presto/Trino, BigQuery Omni, and AWS Lake Formation provide federated query capabilities. HTAP surveys~\cite{Haas2024HTAPSurvey} discuss the challenges of routing queries to appropriate engines. However, cross-engine optimization remains primitive---typically limited to simple predicate pushdown.
-
-\textbf{Open problems.}
-\begin{itemize}
-    \item Cost-based optimization across heterogeneous engines with different cost models and capabilities.
-    \item Maintaining transactional guarantees across engine boundaries.
-    \item Semantic understanding of data across engines to enable intelligent query routing.
-\end{itemize}
-
-\textbf{Research directions.} \emph{Ontology-mediated query answering (OMQA)}~\cite{Xiao2018OBDA} can provide a principled framework for querying heterogeneous cloud database engines through a unified conceptual schema.
+\textbf{Open problems and research directions.} \emph{Ontology-mediated query answering}~\cite{Xiao2018OBDA} offers a principled basis for posing a single query against many heterogeneous engines through a shared conceptual schema, connecting cloud query federation to a long line of DKE research on data integration.
 
 \subsubsection{Storage disaggregation and log-as-database}
 \label{subsubsec:disaggregation}
 
-\textbf{Context.} Storage disaggregation---separating compute from storage into independently scalable layers---is a defining architectural trend in cloud databases. The ``log-as-database'' pattern, pioneered by Aurora~\cite{Verbitski2017}, pushes intelligence into the storage layer~\cite{Li2024CloudNativeSurvey}.
+Separating compute from storage into independently scalable layers is the defining architectural move of the cloud-native era, and the ``log-as-database'' pattern pioneered by Aurora---treating the redo log itself as the system of record---pushes intelligence into the storage tier~\cite{Verbitski2017,Li2024CloudNativeSurvey}. This design reduced write amplification and enabled fast failover, and systems such as PolarDB~\cite{Cao2021PolarDB} and Socrates~\cite{Antonopoulos2019} carry disaggregation further by splitting out additional components. The cloud-native surveys report that while disaggregation simplifies operations and scaling, it introduces its own difficulties in remote-I/O latency, cache coherence, and log management~\cite{Li2024CloudNativeSurvey}.
 
-\textbf{Current state.} Aurora's innovation of making the redo log the ``database'' reduced write amplification and enabled fast failover. Systems like PolarDB~\cite{Cao2021PolarDB} and Socrates~\cite{Antonopoulos2019} further disaggregate components. Surveys~\cite{Li2024CloudNativeSurvey} report that disaggregation simplifies operations but introduces challenges in remote I/O latency, cache coherence, and log management.
-
-\textbf{Open problems.}
-\begin{itemize}
-    \item Minimizing the performance impact of remote storage access (network vs.\ local SSD latency gap).
-    \item Cache management across compute and storage layers in disaggregated architectures.
-    \item Log management at scale---compaction, garbage collection, and efficient replay.
-\end{itemize}
+\textbf{Open problems and research directions.} Outstanding issues include masking the latency gap between remote storage and local SSDs, coordinating caches across compute and storage layers, and managing the log at scale through compaction, garbage collection, and efficient replay. Cost- and latency-aware models of where computation should run within a disaggregated stack are a promising research direction.
 
 \subsubsection{Transaction processing in distributed cloud environments}
 \label{subsubsec:transactions}
 
-\textbf{Context.} Distributed transaction processing in cloud databases must balance ACID guarantees, performance, and scalability. The design space ranges from strongly consistent protocols (2PC, Paxos/Raft-based) to relaxed models (eventual consistency, CRDTs)~\cite{Corbett2013Spanner,Taft2020Cockroach}.
+Distributed transaction processing must balance ACID guarantees against performance and scalability, and the surveyed systems span the full design space from strongly consistent protocols (two-phase commit, Paxos/Raft) to relaxed models such as CRDTs and eventual consistency~\cite{Corbett2013Spanner,Taft2020Cockroach}. Spanner demonstrated that globally distributed, strongly consistent transactions are feasible using synchronized clocks~\cite{Corbett2013Spanner}, and CockroachDB and YugabyteDB provide comparable guarantees with hybrid logical clocks~\cite{Taft2020Cockroach}; the NewSQL and HTAP reviews nonetheless report that sustaining strong consistency at high throughput for mixed workloads is still hard~\cite{Haas2024HTAPSurvey}.
 
-\textbf{Current state.} Google Spanner~\cite{Corbett2013Spanner} demonstrated that globally distributed strongly consistent transactions are feasible, using synchronized clocks (TrueTime). CockroachDB~\cite{Taft2020Cockroach} and YugabyteDB provide similar guarantees using hybrid logical clocks. NewSQL surveys and HTAP surveys~\cite{Haas2024HTAPSurvey} report that combining strong consistency with high throughput for mixed workloads remains challenging.
-
-\textbf{Open problems.}
-\begin{itemize}
-    \item Reducing commit latency for geo-distributed transactions without sacrificing consistency.
-    \item Efficient conflict resolution for concurrent transactions in multi-region deployments.
-    \item Transaction processing for mixed HTAP workloads without mutual interference.
-\end{itemize}
+\textbf{Open problems and research directions.} The recurring open problems are reducing commit latency for geo-distributed transactions without weakening consistency, resolving conflicts efficiently across regions, and isolating transactional and analytical work within a single HTAP engine so that neither degrades the other.
 
 \subsubsection{Fault tolerance, recovery, and high availability}
 \label{subsubsec:faulttolerance}
 
-\textbf{Context.} Cloud databases must tolerate hardware failures, network partitions, availability zone outages, and even entire region failures while maintaining data durability and minimizing downtime~\cite{Verbitski2017,Li2024CloudNativeSurvey}.
+Cloud databases must survive hardware faults, network partitions, availability-zone outages, and even whole-region failures while preserving durability and minimizing downtime~\cite{Verbitski2017,Li2024CloudNativeSurvey}. The prevailing approach is multi-availability-zone replication---typically three-way---with automated failover, exemplified by Aurora's six-replica, three-zone write quorum~\cite{Verbitski2017}. The surveys report that recovery-time objectives of seconds and near-zero recovery-point objectives are attainable within a single region, but remain difficult to guarantee across regions.
 
-\textbf{Current state.} Modern cloud databases achieve high availability through multi-AZ replication (typically 3-way) with automated failover. Aurora~\cite{Verbitski2017} uses a quorum-based protocol across 6 replicas in 3 AZs. Surveys report that recovery time objectives (RTO) of seconds and recovery point objectives (RPO) of zero are achievable for single-region deployments but remain challenging for multi-region configurations.
-
-\textbf{Open problems.}
-\begin{itemize}
-    \item Multi-region disaster recovery with near-zero RPO and RTO.
-    \item Consistent recovery in disaggregated architectures where state is spread across components.
-    \item Chaos engineering and fault injection frameworks specific to cloud databases.
-\end{itemize}
+\textbf{Open problems and research directions.} Multi-region disaster recovery with near-zero RPO and RTO is still open, as is consistent recovery in disaggregated architectures whose state is scattered across components; the surveyed work also notes the absence of chaos-engineering and fault-injection frameworks tailored to cloud databases, which would let resilience be tested systematically rather than anecdotally.
 
 \subsubsection{Data migration and cross-cloud portability}
 \label{subsubsec:migration}
 
-\textbf{Context.} Organizations frequently need to migrate databases between on-premises and cloud, between cloud providers, or between different cloud database services. Migration surveys~\cite{Mathew2021CloudMigration} highlight the complexity of maintaining data consistency, minimizing downtime, and handling schema transformations during migration.
+Organizations routinely move databases between on-premises and cloud, between providers, and between services, and the migration survey documents how hard it is to preserve consistency, minimize downtime, and transform schemas along the way~\cite{Mathew2021CloudMigration}. Although every major provider offers a migration service, the reviewed evidence is that migrations remain error-prone and labor-intensive, with schema and data-model mismatches the principal technical barrier and vendor lock-in---through proprietary APIs, formats, and features---compounding the difficulty of any subsequent move~\cite{Opara2017LockIn}.
 
-\textbf{Current state.} Cloud providers offer migration services (AWS DMS, Azure Database Migration Service, GCP Database Migration Service), but migrations remain error-prone and labor-intensive. Schema and data model differences between source and target systems are a major pain point. Vendor lock-in---through proprietary APIs, data formats, and features---further complicates portability~\cite{Opara2017LockIn}.
-
-\textbf{Open problems.}
-\begin{itemize}
-    \item Zero-downtime migration for large databases with continuous write workloads.
-    \item Automated schema mapping and transformation between heterogeneous systems.
-    \item Standardized portability layers that abstract provider-specific features.
-\end{itemize}
-
-\textbf{Research directions.} \emph{Knowledge-based schema mapping}---using ontological representations of schema semantics to automate migration---connects directly to DKE's core strengths in schema integration and data exchange.
+\textbf{Open problems and research directions.} The field still lacks zero-downtime migration for large, continuously written databases, automated schema mapping between heterogeneous systems, and portability layers that abstract provider-specific features. \emph{Knowledge-based schema mapping}, which represents schema semantics ontologically to automate translation, ties cloud migration directly to DKE's long-standing strengths in schema integration and data exchange.
 
 \subsubsection{Edge--cloud data continuum}
 \label{subsubsec:edgecloud}
 
-\textbf{Context.} The proliferation of IoT devices, autonomous vehicles, and smart city infrastructure has created demand for database capabilities at the network edge, working in concert with cloud databases~\cite{Gomes2024EdgeFog}.
+The spread of IoT devices, autonomous vehicles, and smart-city infrastructure has created demand for database capability at the network edge operating in concert with the cloud~\cite{Gomes2024EdgeFog}. The edge-and-fog survey maps architectures that distribute storage and query processing across edge devices, fog nodes, and cloud backends, and notes that systems such as Azure SQL Edge, AWS Outposts, and locality-aware features in CockroachDB address only parts of the problem~\cite{Gomes2024EdgeFog}.
 
-\textbf{Current state.} Edge and fog database surveys~\cite{Gomes2024EdgeFog} identify architectures for distributing data processing between edge devices, fog nodes, and cloud backends. Systems like Azure SQL Edge, AWS Outposts, and CockroachDB's locality-aware features address parts of this challenge.
-
-\textbf{Open problems.}
-\begin{itemize}
-    \item Data consistency across the edge--fog--cloud continuum with intermittent connectivity.
-    \item Intelligent data placement---deciding which data to cache, replicate, or move between edge and cloud.
-    \item Resource-constrained query processing on edge devices with limited compute and memory.
-    \item Privacy-preserving data aggregation at the edge before cloud upload.
-\end{itemize}
+\textbf{Open problems and research directions.} Maintaining consistency across the edge--fog--cloud continuum under intermittent connectivity, deciding intelligently which data to cache, replicate, or move, processing queries under tight resource constraints on edge devices, and aggregating data privately before it reaches the cloud all remain open. Policy models that reason about placement against latency, privacy, and connectivity constraints are a promising direction.
 
 \subsubsection{AI--database convergence (AI4DB and DB4AI)}
 \label{subsubsec:ai4db}
 
-\textbf{Context.} The convergence of AI and databases manifests in two complementary directions: AI4DB (using AI to optimize database systems) and DB4AI (using database techniques to support AI/ML workloads)~\cite{Zhou2022AI4DB}.
+The convergence of AI and databases runs in two directions---AI4DB, which uses learning to optimize the database, and DB4AI, which uses database technology to serve AI workloads~\cite{Zhou2022AI4DB}. The AI4DB surveys document concrete progress in learned query optimization~\cite{Marcus2021Bao}, learned indexes~\cite{Kraska2018LearnedIndex,Zhao2026SpatialIndex,Woltmann2023DNNIndex}, automated knob tuning~\cite{Zhang2022CDBTune}, cardinality estimation, and workload forecasting~\cite{Ma2021LearnedWorkload,Dritsas2026MLDB}, while DB4AI spans in-database machine learning and optimized data serving for training pipelines. The reviews agree that learned components are rarely yet trusted in production, and that managing their training data is a shared, unsolved concern. The persistent obstacles are deploying learned components with safety guarantees so that they degrade gracefully when a model fails, collecting and curating training data from live workloads, transferring learned behavior across instances and hardware, and---perhaps most important for adoption---explaining why a learned optimizer made a given decision.
 
-\textbf{Current state.} AI4DB surveys~\cite{Zhou2022AI4DB,Dritsas2026MLDB} document progress in learned query optimization~\cite{Marcus2021Bao}, learned indexes~\cite{Kraska2018LearnedIndex,Zhao2026SpatialIndex}, automated knob tuning~\cite{Zhang2022CDBTune}, learned cardinality estimation, and workload forecasting~\cite{Ma2021LearnedWorkload}. DB4AI encompasses in-database ML (e.g., Google BigQuery ML, Amazon Redshift ML) and optimized data serving for training pipelines.
-
-\textbf{Open problems.}
-\begin{itemize}
-    \item Deploying learned components in production cloud databases with safety guarantees (graceful degradation when ML models fail).
-    \item Training data management for learned database components---how to collect, curate, and update training data from production workloads.
-    \item Transfer learning across database instances, workloads, and hardware configurations.
-    \item Explainability of AI-driven database decisions (why did the optimizer choose this plan?).
-\end{itemize}
-
-\textbf{Research directions.} \emph{Knowledge engineering for self-driving databases}---integrating domain knowledge about database internals with learned models---represents a promising approach to building more robust and explainable autonomous database systems.
+\textbf{Open problems and research directions.} \emph{Knowledge engineering for self-driving databases}, which couples explicit domain knowledge about database internals with learned models, is a promising route to autonomous systems that are both robust and explainable---an agenda where DKE and the database community meet directly.
 
 \subsubsection{Serverless and autonomous database operations}
 \label{subsubsec:serverless}
 
-\textbf{Context.} Serverless databases abstract away all infrastructure management, automatically provisioning resources, scaling, patching, and tuning without human intervention. Autonomous databases go further by using ML to self-diagnose and self-heal~\cite{Pavlo2017SelfDriving,Muller2020Serverless}.
+Serverless databases hide infrastructure entirely, provisioning, scaling, patching, and tuning without operator involvement, and autonomous databases go further by using machine learning to self-diagnose and self-heal~\cite{Pavlo2017SelfDriving,Muller2020Serverless}. Offerings such as Aurora Serverless v2, the Cosmos DB serverless tier, Neon, and PlanetScale realize the serverless interface, while Oracle Autonomous Database is the most ambitious autonomy effort; studies of serverless data systems report that the model suits variable workloads well but struggles with sustained high throughput and cold-start latency~\cite{Muller2020Serverless}.
 
-\textbf{Current state.} Aurora Serverless v2, Azure Cosmos DB serverless tier, Neon, and PlanetScale offer serverless interfaces. Oracle Autonomous Database represents the most ambitious autonomous database initiative. Surveys~\cite{Muller2020Serverless} report that serverless models are well-suited for variable workloads but face challenges with sustained high-throughput workloads and cold-start latency.
-
-\textbf{Open problems.}
-\begin{itemize}
-    \item Achieving predictable performance under serverless autoscaling.
-    \item Cost--performance trade-off transparency in serverless models.
-    \item Full-stack autonomy: integrating self-tuning, self-healing, and self-securing capabilities.
-\end{itemize}
+\textbf{Open problems and research directions.} Predictable performance under serverless autoscaling, transparent exposure of the cost--performance trade-off, and full-stack autonomy that unifies self-tuning, self-healing, and self-securing remain open. The cloud-native and AI4DB reviews converge on the view that genuine autonomy will require databases to reason about their own behavior, not merely react---again pointing to a knowledge-grounded approach.
 
 \subsubsection{Data governance, provenance, and lineage}
 \label{subsubsec:governance}
 
-\textbf{Context.} As cloud data ecosystems grow in complexity, tracking data origin (provenance), transformation history (lineage), and enforcing governance policies becomes critical for compliance, debugging, and trust~\cite{Halevy2016Goods}.
+As cloud data ecosystems grow, tracking where data came from (provenance), how it was transformed (lineage), and whether its use complies with policy becomes essential for compliance, debugging, and trust~\cite{Halevy2016Goods}. The governance-related surveys identify a common set of needs---metadata management, data cataloging, access control, quality monitoring, and regulatory compliance---and report that cloud-native tools such as AWS Glue Data Catalog, Azure Purview, and Google Dataplex address them only partially, leaving the landscape fragmented and unstandardized. The unresolved problems are end-to-end lineage that spans heterogeneous services and processing engines, automated checking against regulatory requirements that themselves keep changing, and provenance-aware query processing that records how each result was derived.
 
-\textbf{Current state.} Data governance surveys identify the need for metadata management, data cataloging, access control, data quality monitoring, and regulatory compliance. Cloud-native governance tools (AWS Glue Data Catalog, Azure Purview, Google Dataplex) provide partial solutions, but surveys report fragmentation and lack of standardization.
-
-\textbf{Open problems.}
-\begin{itemize}
-    \item End-to-end data lineage across heterogeneous cloud services and processing engines.
-    \item Automated compliance checking against evolving regulatory requirements.
-    \item Provenance-aware query processing that tracks how results are derived.
-\end{itemize}
-
-\textbf{Research directions.} \emph{Knowledge graphs for metadata management}---using KG technology to represent, link, and reason about metadata across cloud data assets---is a natural DKE contribution.
+\textbf{Open problems and research directions.} Representing and linking metadata as a \emph{knowledge graph} over cloud data assets, and reasoning over it, is a natural DKE contribution that would unify cataloging, lineage, and compliance under a single queryable model.
 
 \subsubsection{Sustainability and energy efficiency}
 \label{subsubsec:sustainability}
 
-\textbf{Context.} Data centers consumed an estimated 1--1.5\% of global electricity in 2023, with projections of 3--4\% by 2030 due to AI and cloud growth~\cite{IEA2024DataCenters}. Cloud databases, as heavy consumers of compute and storage resources, have a direct environmental impact.
+Data centers consumed an estimated 1--1.5\% of global electricity in 2023, with projections of 3--4\% by 2030 as AI and cloud workloads grow, and cloud databases---heavy consumers of compute and storage---contribute directly to that footprint~\cite{IEA2024DataCenters}. Work on green computing identifies opportunities in energy-efficient query processing, scheduling that follows renewable-energy availability, and carbon-aware data placement; major providers now report carbon metrics, but the surveyed evidence is that database-level energy optimization is still nascent.
 
-\textbf{Current state.} Green computing surveys identify opportunities for energy-efficient query processing, workload scheduling to exploit renewable energy availability, and carbon-aware data placement. Major cloud providers now report carbon footprint metrics (AWS Customer Carbon Footprint Tool, Google Cloud Carbon Footprint), but database-level energy optimization is nascent.
-
-\textbf{Open problems.}
-\begin{itemize}
-    \item Energy-proportional database systems that consume resources proportional to actual workload.
-    \item Carbon-aware data placement and replication---favoring regions with cleaner energy grids.
-    \item Benchmarking frameworks that include energy and carbon metrics alongside performance.
-\end{itemize}
+\textbf{Open problems and research directions.} Energy-proportional databases that consume resources in line with actual load, carbon-aware placement and replication that favor cleaner grids, and benchmarks that report energy and carbon alongside performance are the principal open directions; sustainability is also the least-addressed challenge across the surveyed domains, marking it as an opportunity rather than a settled topic.
 
 \subsubsection{Standardization and interoperability}
 \label{subsubsec:standardization}
 
-\textbf{Context.} The proliferation of cloud database systems, query languages, APIs, and data formats creates an interoperability crisis. While SQL remains the lingua franca for relational databases, graph databases alone use multiple query languages (Cypher, SPARQL, Gremlin, GQL), and NoSQL systems have proprietary APIs~\cite{Angles2020GraphDB}.
+The proliferation of cloud database systems, query languages, APIs, and formats has produced an interoperability problem: SQL remains the lingua franca for relational data, but graph databases alone span Cypher, SPARQL, Gremlin, and GQL, and NoSQL systems expose largely proprietary APIs~\cite{Angles2020GraphDB}. The surveys note genuine progress---GQL's emergence as an ISO standard, the SQL/PGQ extension for property graphs, and the consolidation of open table formats such as Iceberg, Delta Lake, and Hudi---while cautioning that vendors continue to differentiate through proprietary extensions, keeping true interoperability out of reach.
 
-\textbf{Current state.} The emergence of GQL (Graph Query Language) as an ISO standard, the SQL/PGQ extension for property graphs in SQL, and open table formats (Iceberg, Delta Lake, Hudi) represent progress toward standardization. However, surveys report that cloud vendors continue to differentiate through proprietary extensions, making true interoperability elusive.
-
-\textbf{Open problems.}
-\begin{itemize}
-    \item Universal query interfaces that span relational, graph, document, and vector operations.
-    \item Standardized cloud database APIs for provisioning, monitoring, and management.
-    \item Open data formats and protocols to reduce vendor lock-in.
-\end{itemize}
+\textbf{Open problems and research directions.} Universal query interfaces spanning relational, graph, document, and vector operations, standardized control-plane APIs for provisioning and monitoring, and open formats and protocols that blunt lock-in are the recurring asks. Because they are fundamentally about shared schemas and vocabularies, these are interoperability problems to which knowledge-engineering methods apply directly.
 
 
 \subsection{Theme 2: Challenges by cloud database lifecycle phases}
 \label{subsec:theme2}
 
-Complementing the cross-cutting perspective, challenges are organized by the five phases of the cloud database lifecycle: design, deployment, operation, optimization, and evolution. Figure~\ref{fig:lifecycle} illustrates this lifecycle with key challenges mapped to each phase.
+Complementing the cross-cutting perspective, challenges are organized by the five phases of the cloud database lifecycle: design, deployment, operation, optimization, and evolution. Figure~\ref{fig:lifecycle} illustrates this lifecycle with key challenges mapped to each phase, and Table~\ref{tab:lifecycle-phases} groups the surveyed papers by the phase(s) they address. The distribution is itself revealing: design and optimization are the most heavily surveyed phases, whereas the \emph{evolution} phase---schema change, technology migration, and the adoption of new paradigms such as vector and lakehouse systems---is addressed by the fewest surveys, marking it as the least mature stage of the lifecycle and a clear opportunity for future work.
 
 \begin{figure}[t]
 \centering
 \begin{tikzpicture}[
-    phase/.style={draw, minimum width=2.8cm, minimum height=1.5cm, align=center, font=\small\bfseries, fill=#1!20, draw=#1!60, text=#1!80!black},
-    challenge/.style={font=\tiny, align=left, text width=2.5cm},
-    arrow/.style={-{Stealth[length=3mm]}, thick, cdblue!60}
+    >=Stealth,
+    phase/.style={
+        draw=#1!55!black, fill=#1!22, line width=0.7pt, rounded corners=4pt,
+        minimum width=2.5cm, minimum height=1.05cm, align=center,
+        font=\small\bfseries, text=black!88},
+    chal/.style={font=\scriptsize, align=left, text width=2.6cm, text=black!72},
+    flow/.style={->, line width=1.1pt, draw=cdblue, shorten >=2pt, shorten <=2pt},
+    seq/.style={circle, draw=cdblue, fill=white, line width=0.7pt, inner sep=0pt,
+        minimum size=4.6mm, font=\scriptsize\bfseries, text=cdblue}
 ]
+\def\R{3.0}
 
-%% Phases in a cycle
-\node[phase=cblue] (design) at (0,3) {Design};
-\node[phase=corange] (deploy) at (4,1.5) {Deployment};
-\node[phase=cgreen] (operate) at (3.5,-1.5) {Operation};
-\node[phase=cpurple] (optimize) at (-0.5,-2.5) {Optimization};
-\node[phase=cred] (evolve) at (-4,-0.5) {Evolution};
+%% Phases on a regular pentagon, clockwise from the top
+\node[phase=cblue,   label={[seq]270:1}] (design)   at (90:\R)   {Design};
+\node[phase=corange, label={[seq]198:2}] (deploy)   at (18:\R)   {Deployment};
+\node[phase=cgreen,  label={[seq]126:3}] (operate)  at (-54:\R)  {Operation};
+\node[phase=cpurple, label={[seq]54:4}]  (optimize) at (-126:\R) {Optimization};
+\node[phase=cred,    label={[seq]342:5}] (evolve)   at (162:\R)  {Evolution};
 
-%% Arrows
-\draw[arrow] (design) -- (deploy);
-\draw[arrow] (deploy) -- (operate);
-\draw[arrow] (operate) -- (optimize);
-\draw[arrow] (optimize) -- (evolve);
-\draw[arrow] (evolve) -- (design);
+%% Central hub
+\node[circle, draw=cdblue!45, fill=cdblue!8, line width=0.7pt, minimum size=2.15cm,
+      align=center, font=\footnotesize\itshape, text=cdblue] (hub) at (0,0)
+      {Cloud DB\\lifecycle};
 
-%% Challenge labels
-\node[challenge, right=0.1cm of design, xshift=0.5cm] {Schema design\\Workload modeling\\Data model selection\\Compliance-by-design};
-\node[challenge, right=0.1cm of deploy, xshift=0.5cm] {Provider selection\\Config automation\\Data migration\\Multi-region setup};
-\node[challenge, right=0.1cm of operate, xshift=0.5cm] {Monitoring\\Backup/Recovery\\Security ops\\HTAP workloads};
-\node[challenge, left=0.1cm of optimize, xshift=-0.5cm] {Query optimization\\Index selection\\Knob tuning\\Cost--perf.\ balance};
-\node[challenge, left=0.1cm of evolve, xshift=-0.5cm] {Schema evolution\\Tech.\ migration\\New paradigms\\LLM integration};
+%% Cyclic flow arrows hugging the ring (clockwise)
+\draw[flow] (design)   to[bend left=16] (deploy);
+\draw[flow] (deploy)   to[bend left=16] (operate);
+\draw[flow] (operate)  to[bend left=16] (optimize);
+\draw[flow] (optimize) to[bend left=16] (evolve);
+\draw[flow] (evolve)   to[bend left=16] (design);
+
+%% Key challenges, placed radially outward from each phase
+\node[chal, above=2.5mm of design, text width=6cm, align=center]
+   {Schema design \,$\cdot$\, Workload modeling\\ Data model selection \,$\cdot$\, Compliance-by-design};
+\node[chal, right=3mm of deploy]
+   {Provider selection\\ Config automation\\ Data migration\\ Multi-region setup};
+\node[chal, right=3mm of operate]
+   {Monitoring\\ Backup / recovery\\ Security ops\\ HTAP workloads};
+\node[chal, left=3mm of optimize]
+   {Query optimization\\ Index selection\\ Knob tuning\\ Cost--perf.\ balance};
+\node[chal, left=3mm of evolve]
+   {Schema evolution\\ Tech.\ migration\\ New paradigms\\ LLM integration};
 
 \end{tikzpicture}
 \caption{The cloud database lifecycle with key challenges mapped to each phase.}
 \label{fig:lifecycle}
 \end{figure}
+
+\begin{table}[t]
+\centering
+\caption{Surveyed papers grouped by the lifecycle phase(s) they address (derived from the catalog in Table~\ref{tab:catalog}; a survey may span several phases, so the counts sum to more than~24).}
+\label{tab:lifecycle-phases}
+\small
+\begin{tabular}{p{1.9cm} >{\raggedright\arraybackslash}p{5.9cm} >{\raggedright\arraybackslash}p{3.4cm} c}
+\toprule
+\textbf{Phase} & \textbf{Representative challenges} & \textbf{Surveys} & \textbf{\textit{n}} \\
+\midrule
+Design & Schema design, data-model selection, workload characterization, compliance-by-design & S1--S3, S6--S8, S10--S17, S21, S24 & 16 \\
+\addlinespace
+Deployment & Provider selection \& lock-in, configuration automation, data ingestion/migration, multi-region setup & S1, S3, S6, S7, S10, S12, S14, S15, S19, S23, S24 & 11 \\
+\addlinespace
+Operation & Monitoring \& observability, backup/recovery, security operations, HTAP workload management & S1, S2, S14, S16, S17, S19--S21 & 8 \\
+\addlinespace
+Optimization & Learned query optimization, index/materialized-view selection, knob tuning, cost--performance balance & S1--S5, S8, S9, S11, S13, S18, S22 & 11 \\
+\addlinespace
+Evolution & Schema evolution \& online DDL, technology migration, new-paradigm adoption, LLM integration & S4, S23 & 2 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \subsubsection{Design phase}
 \label{subsubsec:design}
@@ -1242,7 +1248,7 @@ The deployment phase covers provider selection, infrastructure configuration, da
 
 The operation phase covers the day-to-day management of running cloud database systems.
 
-\textbf{Monitoring and observability.} Cloud databases generate vast amounts of telemetry data (metrics, logs, traces). Effective monitoring requires understanding normal behavior patterns, detecting anomalies, and correlating events across distributed components~\cite{Ma2021LearnedWorkload}. Surveys on autonomous databases~\cite{Pavlo2017SelfDriving} emphasize the need for ML-driven anomaly detection and root cause analysis.
+\textbf{Monitoring and observability.} Cloud databases generate vast amounts of telemetry data (metrics, logs, traces). Effective monitoring requires understanding normal behavior patterns, detecting anomalies, and correlating events across distributed components~\cite{Ma2021LearnedWorkload}. Work on self-driving databases~\cite{Pavlo2017SelfDriving} emphasizes the need for ML-driven anomaly detection and root cause analysis.
 
 \textbf{Backup, recovery, and disaster recovery.} While cloud providers automate basic backups (point-in-time recovery, snapshots), disaster recovery across regions, testing recovery procedures, and meeting stringent RPO/RTO targets remain operational challenges~\cite{Verbitski2017}.
 
@@ -1349,46 +1355,55 @@ The LLM--database convergence creates several overarching challenges:
     \item \textbf{Cost management.} LLM API calls combined with cloud database queries create complex cost structures that are difficult to predict and optimize.
 \end{enumerate}
 
+\subsection{What do we think? Open questions for cloud databases and LLMs}
+\label{subsec:llmquestions}
+
+Looking across the challenges catalogued in Section~\ref{sec:discussion}, the cloud-database--LLM convergence raises a set of questions that the surveyed literature has only begun to address. They are offered not as a checklist but as prompts for future work in this domain---and, by analogy, for other data-intensive domains:
+\begin{itemize}
+  \item How should a cloud database co-schedule traditional query workloads and LLM-driven workloads (embedding generation, vector search, context retrieval) on shared, elastic infrastructure without one starving the other?
+  \item When an LLM retrieves context from governed cloud data, how can access policies, privacy regulations, and audit obligations be enforced \emph{through} the retrieval path rather than around it?
+  \item What would a faithful benchmark for this convergence measure---vector-search quality, text-to-SQL accuracy on real enterprise schemas, or the end-to-end utility of an LLM-assisted DBA---and who maintains its ground truth?
+  \item Can the reliability of LLM-based administration be bounded well enough to let it act on production systems, and what guardrails make graceful degradation the default when the model is wrong?
+  \item How should the combined cost of LLM inference and cloud-database execution be modeled and optimized as a single objective, given that today they are billed and tuned independently?
+  \item What role can knowledge graphs and ontologies play in grounding LLM reasoning in the actual schema, constraints, and semantics of a cloud database---turning a plausible answer into a correct one?
+\end{itemize}
+
+These questions show how the cross-cutting and lifecycle challenges of Section~\ref{sec:discussion} resurface, sharpened, when cloud databases meet LLMs; the same analysis could be re-instantiated for other domains such as scientific data management or real-time analytics.
+
 
 %% ============================================================
-%% SECTION 7: FINAL REMARKS
+%% SECTION 7: CONCLUSIONS
 %% ============================================================
-\section{Final Remarks}
+\section{Conclusions}
 \label{sec:conclusion}
 
-This paper has presented the first systematic meta-survey of cloud database research, synthesizing findings from 58 survey papers published between 2017 and 2024. By applying a rigorous systematic literature review methodology, the scattered landscape of cloud database challenges has been consolidated into a structured, dual-theme taxonomy comprising eighteen cross-cutting challenges and five lifecycle-phase challenges.
+This paper has presented the first systematic meta-survey of cloud database research, synthesizing findings from 24 content-verified survey papers published between 2016 and 2025. Applying the Kitchenham--Charters protocol with PRISMA~2020 reporting, the scattered landscape of cloud database challenges has been consolidated into a structured, dual-theme taxonomy.
 
-The analysis reveals several key insights. First, the cloud database field is remarkably diverse, spanning architectural paradigms (cloud-native, disaggregated, serverless), data models (relational, document, graph, vector, multi-model), processing modes (OLTP, OLAP, HTAP, streaming), and deployment contexts (single-region, multi-region, edge--cloud). No single survey captures this full breadth, underscoring the value of a meta-level synthesis.
+For the first theme, eighteen cross-cutting challenges are identified and synthesized: (1)~scalability and elasticity; (2)~consistency and the CAP/PACELC trade-offs; (3)~performance optimization and benchmarking; (4)~security and privacy; (5)~cost modeling and optimization; (6)~multi-tenancy and resource isolation; (7)~data-model diversity and multi-model integration; (8)~heterogeneous query processing; (9)~storage disaggregation and the log-as-database pattern; (10)~distributed transaction processing; (11)~fault tolerance, recovery, and high availability; (12)~data migration and cross-cloud portability; (13)~the edge--cloud data continuum; (14)~AI--database convergence; (15)~serverless and autonomous operation; (16)~data governance, provenance, and lineage; (17)~sustainability and energy efficiency; and (18)~standardization and interoperability. Across these, \emph{scalability}, \emph{consistency}, \emph{security}, \emph{cost}, and \emph{AI--database convergence} recur in the majority of the surveyed domains (Table~\ref{tab:challenge-year}), indicating where progress would benefit the field most broadly.
 
-Second, certain challenges recur across nearly all surveyed domains: \emph{scalability and elasticity}, \emph{consistency trade-offs}, \emph{security and privacy}, \emph{cost optimization}, and \emph{AI--database convergence} are identified as open problems in the majority of the 58 surveys. This convergence of concerns suggests that progress on these foundational challenges would benefit the entire field.
+For the second theme, the challenges are mapped to the five phases of the cloud database lifecycle---design, deployment, operation, optimization, and evolution. Design and optimization are the most thoroughly surveyed phases, whereas evolution (schema change, technology migration, and new-paradigm adoption) is the least mature and most under-served (Table~\ref{tab:lifecycle-phases}), making it a particularly promising target for future work.
 
-Third, the convergence of cloud databases with large language models is creating a new class of challenges and opportunities that span traditional database research boundaries. Vector databases, text-to-SQL, and LLM-based database administration are rapidly moving from research to practice, but significant gaps in reliability, governance, and evaluation remain.
+Two observations cut across both themes. The convergence of cloud databases with large language models is moving rapidly from research to practice through vector databases, text-to-SQL, and LLM-based administration, yet reliability, governance, and evaluation remain unresolved (Section~\ref{sec:llm}). And from a knowledge-engineering standpoint, cloud databases offer rich openings for DKE techniques---knowledge graphs for metadata and lineage, ontology-mediated integration and query answering, and formal models for consistency, cost, and schema evolution.
 
-Fourth, from a knowledge engineering perspective, cloud databases present rich opportunities for applying DKE techniques: knowledge graphs for metadata management, ontology-mediated data integration, formal models for consistency and cost reasoning, and knowledge-based approaches to schema evolution and migration.
+Accordingly, this meta-survey is intended to serve three purposes: (1)~as a comprehensive reference for researchers entering the cloud database space, providing a structured map of the territory and its open problems; (2)~as a strategic guide for practitioners navigating technology selection, deployment, and evolution; and (3)~as a bridge between the cloud database and the data-and-knowledge-engineering communities.
 
-This meta-survey is intended to serve three purposes: (1)~as a comprehensive reference for researchers entering or working in the cloud database space, providing a structured map of the territory and its open problems; (2)~as a strategic guide for practitioners navigating cloud database technology selection, deployment, and evolution; and (3)~as a bridge between the cloud database community and the data and knowledge engineering community, highlighting opportunities for cross-pollination.
+\textbf{Limitations.} Three limitations qualify these conclusions. First, the corpus is deliberately restricted to surveys that could be content-verified against a resolvable DOI or arXiv identifier, trading breadth for confirmability, so some relevant but harder-to-verify or paywalled surveys may be absent. Second, study selection, quality assessment, and data extraction were performed by a single reviewer (Section~\ref{subsec:threats}). Third, as a survey of surveys, the findings inherit the currency limitations of the primary surveys, so the fastest-moving topics---most notably LLM--database convergence---may be under-represented relative to their present activity.
 
 \subsection*{Future work}
 
-Based on the analysis of 58 surveys and the challenges discussed in Sections~\ref{sec:discussion} and~\ref{sec:llm}, several priority research directions emerge:
+Based on the analysis of 24 surveys and the challenges discussed in Sections~\ref{sec:discussion} and~\ref{sec:llm}, several priority research directions emerge:
 \begin{itemize}
-  \item \textbf{Near-term:} developing cloud-native benchmarks that capture elasticity, multi-tenancy, and pricing dimensions; transitioning learned optimizers, learned indexes, and ML-based tuning from prototypes to production-ready systems; and maturing the vector database ecosystem with standardized APIs and quality metrics.
-  \item \textbf{Medium-term:} building autonomous databases with explainable decision-making; designing cross-cloud middleware and portable data formats to reduce vendor lock-in; federating edge, fog, and cloud databases for IoT workloads; and deploying practical privacy-preserving analytics at scale.
-  \item \textbf{Long-term:} realizing intent-driven database interfaces where users express goals in natural language; achieving carbon-neutral database operations through energy-proportional computing; converging relational, graph, document, vector, and streaming models into truly unified platforms; and enabling self-evolving schemas that adapt autonomously to changing workloads and requirements.
+  \item \textbf{Foundational systems.} Cloud-native benchmarks that capture elasticity, multi-tenancy, and pricing; the transition of learned optimizers, learned indexes, and ML-based tuning from prototypes to production-ready, safely-degrading components; and a maturing vector-database ecosystem with standardized APIs and retrieval-quality metrics.
+  \item \textbf{Architecture and query processing.} Cross-cloud middleware and portable open formats that reduce vendor lock-in; and federated query processing with consistent transactions across heterogeneous engines and the edge--fog--cloud continuum.
+  \item \textbf{Intelligence and autonomy.} Autonomous databases whose learned decisions are explainable and grounded in database knowledge; and intent-driven natural-language interfaces that let users express goals directly while preserving correctness and access control.
+  \item \textbf{Governance and sustainability.} Privacy-preserving analytics and end-to-end lineage that scale to regulatory needs; and energy- and carbon-aware database operation that converges the relational, graph, document, vector, and streaming models toward unified, sustainable platforms.
 \end{itemize}
 
 \section*{Declaration of competing interest}
 The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
 
-\section*{Declaration of generative AI and AI-assisted technologies in the writing process}
-During the preparation of this work the author(s) used generative AI and AI-assisted tools in order to improve the readability and language of the manuscript and to assist with formatting. After using these tools, the author(s) reviewed and edited the content as needed and take(s) full responsibility for the content of the publication.
-
 \section*{Data availability}
 This study analyzes previously published survey papers, all of which are cited in the manuscript. The systematic review protocol, search strings, screening logs, quality-assessment scores, and complete data-extraction forms are provided as supplementary material to support reproducibility.
-
-\section*{Acknowledgments}
-[To be completed.]
-
 
 %% ============================================================
 %% APPENDIX
@@ -1397,139 +1412,71 @@ This study analyzes previously published survey papers, all of which are cited i
 \section{Complete List of Surveyed Papers with Classification}
 \label{app:catalog}
 
-Table~\ref{tab:catalog} presents the complete catalog of the 58 surveyed papers, classified by primary topic, year, venue, and lifecycle phases covered.
+Table~\ref{tab:catalog} presents the complete catalog of the 24 surveyed papers, classified by primary topic, year, venue, quality-assessment score, and lifecycle phases covered.
 
 \begin{landscape}
-\begin{longtable}{c p{4cm} c p{2.5cm} p{2.5cm} p{5cm}}
-\caption{Master catalog of surveyed papers (S1--S58).} \label{tab:catalog} \\
+\begin{longtable}{c p{4.2cm} c p{2.1cm} p{2.4cm} c p{3.2cm}}
+\caption{Master catalog of surveyed papers (S1--S24). QA = quality-assessment score (out of 8; inclusion threshold $\geq$4).} \label{tab:catalog} \\
 \toprule
-\textbf{ID} & \textbf{Title (Abbreviated)} & \textbf{Year} & \textbf{Primary Topic} & \textbf{Venue} & \textbf{Lifecycle Phases Covered} \\
+\textbf{ID} & \textbf{Title (Abbreviated)} & \textbf{Year} & \textbf{Primary Topic} & \textbf{Venue} & \textbf{QA} & \textbf{Lifecycle Phases} \\
 \midrule
 \endfirsthead
 \toprule
-\textbf{ID} & \textbf{Title (Abbreviated)} & \textbf{Year} & \textbf{Primary Topic} & \textbf{Venue} & \textbf{Lifecycle Phases Covered} \\
+\textbf{ID} & \textbf{Title (Abbreviated)} & \textbf{Year} & \textbf{Primary Topic} & \textbf{Venue} & \textbf{QA} & \textbf{Lifecycle Phases} \\
 \midrule
 \endhead
 \midrule
-\multicolumn{6}{r}{\textit{Continued on next page}} \\
+\multicolumn{7}{r}{\textit{Continued on next page}} \\
 \endfoot
 \bottomrule
 \endlastfoot
-S1 & Cloud-Native Database Systems: A Survey~\cite{Li2024CloudNativeSurvey} & 2024 & Cloud-Native Arch. & IEEE TKDE & Design, Deploy, Operate, Optimize \\
+S1 & Cloud-Native Databases: A Survey~\cite{Li2024CloudNativeSurvey} & 2024 & Cloud-Native Arch. & IEEE TKDE & 8 & Design, Deploy, Operate, Optimize \\
 \addlinespace
-S2 & HTAP Database Systems: A Survey~\cite{Haas2024HTAPSurvey} & 2024 & HTAP Systems & IEEE TKDE & Design, Operate, Optimize \\
+S2 & HTAP Databases: A Survey~\cite{Haas2024HTAPSurvey} & 2024 & HTAP Systems & arXiv & 7.5 & Design, Operate, Optimize \\
 \addlinespace
-S3 & Survey of Vector Database Management Systems~\cite{Pan2024VectorDB} & 2024 & Vector Databases & VLDB Journal & Design, Deploy, Optimize \\
+S3 & Survey of Vector Database Management Systems~\cite{Pan2024VectorDB} & 2024 & Vector Databases & VLDB Journal & 7.5 & Design, Deploy, Optimize \\
 \addlinespace
-S4 & AI Meets Database: AI4DB and DB4AI~\cite{Zhou2022AI4DB} & 2022 & AI4DB & IEEE TKDE & Optimize, Evolve \\
+S4 & Database Meets AI: A Survey~\cite{Zhou2022AI4DB} & 2022 & AI4DB & IEEE TKDE & 8 & Optimize, Evolve \\
 \addlinespace
-S5 & Edge and Fog Database Systems: A Survey~\cite{Gomes2024EdgeFog} & 2024 & Edge/Fog DBs & ACM Comp.\ Surv. & Design, Deploy, Operate \\
+S5 & Learned Index: A Comprehensive Experimental Evaluation~\cite{Woltmann2023DNNIndex} & 2023 & AI4DB/Learned Idx. & PVLDB & 7 & Optimize \\
 \addlinespace
-S6 & Data Lakehouse: A Survey and Experimental Study~\cite{Jainaga2023Lakehouse} & 2023 & Data Lakehouse & J.\ Big Data & Design, Deploy, Operate \\
+S6 & A Survey on NoSQL Stores~\cite{Davoudian2018NoSQL} & 2018 & NoSQL/NewSQL & ACM Comp.\ Surv. & 8 & Design, Deploy \\
 \addlinespace
-S7 & Survey on NoSQL Distributed Database Systems~\cite{Davoudian2018NoSQL} & 2018 & NoSQL/NewSQL & ACM Comp.\ Surv. & Design, Deploy \\
+S7 & SQL, NewSQL, and NoSQL Databases: A Comparative Survey~\cite{Khasawneh2020SQLNewSQL} & 2020 & NoSQL/NewSQL & IEEE ICICS & 6 & Design, Deploy \\
 \addlinespace
-S8 & NoSQL Database: A Comprehensive Review~\cite{Kaur2021NoSQLReview} & 2021 & NoSQL/NewSQL & Intl.\ J.\ Electronics & Design, Deploy, Operate \\
+S8 & Cassandra vs.\ MongoDB: A Systematic Review~\cite{Tu2024CassandraMongo} & 2024 & NoSQL/NewSQL & IEEE BDAI & 6 & Design, Optimize \\
 \addlinespace
-S9 & Serverless Data Management: Survey and Research Directions~\cite{Muller2020Serverless} & 2020 & Serverless DBs & PVLDB & Deploy, Operate, Optimize \\
+S9 & SQL and NoSQL in Big Data: An SLR~\cite{Samarta2024SQLNoSQL} & 2024 & NoSQL/NewSQL & IEEE ICIMCIS & 5.5 & Optimize \\
 \addlinespace
-S10 & Learned Query Optimization: A Survey and Beyond~\cite{Zhou2023LearnedQO} & 2023 & AI4DB/Learned Opt. & IEEE TKDE & Optimize \\
+S10 & NoSQL Databases: A Survey~\cite{Kaur2021NoSQLReview} & 2025 & NoSQL/NewSQL & ARIMA & 6 & Design, Deploy \\
 \addlinespace
-S11 & Learned Indexes: A Comprehensive Survey~\cite{Woltmann2023DNNIndex} & 2023 & AI4DB/Learned Idx. & VLDB Journal & Optimize \\
+S11 & NoSQL Data Warehouse Optimizing Models~\cite{Mouhibha2025NoSQLDW} & 2025 & NoSQL/NewSQL & Big Data Research & 6 & Design, Optimize \\
 \addlinespace
-S12 & Cloud Database Migration: A Survey~\cite{Mathew2021CloudMigration} & 2021 & Cloud DB Migration & J.\ Cloud Comp. & Deploy, Evolve \\
+S12 & Multi-Model Databases: A New Journey~\cite{Lu2019MultiModel} & 2019 & Multi-Model DBs & ACM Comp.\ Surv. & 8 & Design, Deploy \\
 \addlinespace
-S13 & Database Security in Cloud Computing: A Survey~\cite{Sanka2022CloudSecSurvey} & 2022 & Security/Privacy & IEEE Access & Operate \\
+S13 & Foundations of Query Languages for Graph DBs~\cite{Angles2020GraphDB} & 2017 & Graph Databases & ACM Comp.\ Surv. & 8 & Design, Optimize \\
 \addlinespace
-S14 & Graph Database Management: Concepts and Systems~\cite{Angles2020GraphDB} & 2020 & Graph Databases & ACM Comp.\ Surv. & Design, Optimize \\
+S14 & Databases in Edge and Fog Environments: A Survey~\cite{Gomes2024EdgeFog} & 2024 & Edge/Fog DBs & ACM Comp.\ Surv. & 7.5 & Design, Deploy, Operate \\
 \addlinespace
-S15 & Multi-Model Data Management: Survey and Vision~\cite{Lu2019MultiModel} & 2019 & Multi-Model DBs & Distributed \& Parallel DB & Design, Deploy \\
+S15 & From Data Warehouse to Lakehouse: A Comparative Review~\cite{Harby2022Lakehouse} & 2022 & Data Lakehouse & IEEE BigData & 6.5 & Design, Deploy \\
 \addlinespace
-S16 & Self-Driving Database Management Systems~\cite{Pavlo2017SelfDriving} & 2017 & Autonomous DBs & CIDR & Optimize, Evolve \\
+S16 & Data Lakehouse for Time Series Data: An SLR~\cite{Pohl2024LakehouseTS} & 2024 & Data Lakehouse & IEEE BigData & 6.5 & Design, Operate \\
 \addlinespace
-S17 & Automatic Database Knob Tuning: A Survey~\cite{Zhang2022KnobTuning} & 2022 & AI4DB/Tuning & IEEE TKDE & Optimize \\
+S17 & Open Source Time Series Databases: A Survey~\cite{Bader2017TSDB} & 2017 & Time-Series DBs & BTW & 6 & Design, Operate \\
 \addlinespace
-S18 & Benchmarking Cloud Database Systems: A Survey~\cite{Rabl2019BenchmarkSurvey} & 2019 & Benchmarking & IEEE BigData & Optimize \\
+S18 & Recent NL Interfaces for Databases: A Comparative Survey~\cite{Affolter2019NLIDB} & 2019 & NL/LLM-Database & VLDB Journal & 7.5 & Optimize \\
 \addlinespace
-S19 & Cloud Cost Optimization: A Survey of Strategies~\cite{Lee2023CloudCost} & 2023 & Cost/Pricing & J.\ Cloud Comp. & Deploy, Operate \\
+S19 & Retrieval-Augmented Generation for LLMs: A Survey~\cite{Gao2024RAGSurvey} & 2024 & NL/LLM-Database & arXiv & 7 & Deploy, Operate \\
 \addlinespace
-S20 & Data Governance in the Cloud: A Review~\cite{Abraham2023DataGovCloud} & 2023 & Data Governance & Info.\ Systems & Operate, Evolve \\
+S20 & Cloud Computing Security: Threats \& Mitigation---An SLR~\cite{Sanka2022CloudSecSurvey} & 2021 & Security/Privacy & IEEE Access & 7 & Operate \\
 \addlinespace
-S21 & Distributed Transactions in Cloud Databases~\cite{Lu2022DistTxn} & 2022 & Cloud-Native Arch. & PVLDB & Design, Optimize \\
+S21 & Architecture, Security \& Performance of DBaaS~\cite{Khan2019DaaSAnalytic} & 2019 & Security/Privacy & Trans.\ Emerg.\ Telecom.\ Tech. & 6.5 & Design, Operate \\
 \addlinespace
-S22 & Hybrid Cloud Database Architectures: Survey~\cite{Wang2023HybridCloud} & 2023 & Cloud-Native Arch. & IEEE TKDE & Design, Deploy \\
+S22 & DBMS Performance Comparisons: An SLR~\cite{Taipalus2024DBMSPerf} & 2024 & Benchmarking & J.\ Syst.\ Softw. & 7.5 & Optimize \\
 \addlinespace
-S23 & In-Memory Databases in the Cloud: A Review~\cite{Zhang2021InMemoryCloud} & 2021 & Cloud-Native Arch. & J.\ Supercomputing & Design, Optimize \\
+S23 & Cloud Migration Process: A Survey~\cite{Mathew2021CloudMigration} & 2016 & Cloud DB Migration & J.\ Syst.\ Softw. & 7.5 & Deploy, Evolve \\
 \addlinespace
-S24 & NewSQL Databases: A Systematic Review~\cite{Kamal2020NewSQL} & 2020 & NoSQL/NewSQL & Computing Surv. & Design, Deploy, Optimize \\
-\addlinespace
-S25 & Time-Series Databases in the Cloud: Survey~\cite{Jensen2022TimeSeriesCloud} & 2022 & Cloud-Native Arch. & IEEE IoT Journal & Design, Operate \\
-\addlinespace
-S26 & Privacy-Preserving Data Management: Survey~\cite{Li2023PrivacyPreserving} & 2023 & Security/Privacy & VLDB Journal & Design, Operate \\
-\addlinespace
-S27 & Green Cloud Databases: Sustainability Survey~\cite{Chen2024GreenCloudDB} & 2024 & Sustainability & IEEE Access & Operate, Optimize \\
-\addlinespace
-S28 & Vendor Lock-in in Cloud Computing: A Review~\cite{Opara2022VendorLockIn} & 2022 & Cloud DB Migration & J.\ Cloud Comp. & Deploy, Evolve \\
-\addlinespace
-S29 & Stream Processing Systems: A Survey~\cite{Hirzel2021StreamProcessing} & 2021 & Cloud-Native Arch. & ACM Comp.\ Surv. & Design, Operate \\
-\addlinespace
-S30 & Knowledge Graphs in Cloud Environments~\cite{Hogan2023KGCloud} & 2023 & Graph Databases & Semantic Web J. & Design, Operate \\
-\addlinespace
-S31 & Cloud Data Warehouse Optimization: Survey~\cite{Gupta2022CloudDW} & 2022 & Cloud-Native Arch. & IEEE BigData & Optimize \\
-\addlinespace
-S32 & Text-to-SQL in the Era of LLMs: A Survey~\cite{Katsogiannis2024TextToSQL} & 2024 & AI4DB/NL2SQL & arXiv & Optimize \\
-\addlinespace
-S33 & Workload Characterization for Cloud Databases~\cite{Ma2021WorkloadCloud} & 2021 & Benchmarking & PVLDB & Design, Optimize \\
-\addlinespace
-S34 & Multi-Tenant Database Systems: A Review~\cite{Narasayya2020MultiTenant} & 2020 & Cloud-Native Arch. & PVLDB & Design, Operate \\
-\addlinespace
-S35 & Approximate Query Processing: A Survey~\cite{Li2019AQP} & 2019 & AI4DB/Learned Opt. & ACM Comp.\ Surv. & Optimize \\
-\addlinespace
-S36 & Database Replication in the Cloud Era~\cite{Kemme2023Replication} & 2023 & Cloud-Native Arch. & Distributed Comp. & Deploy, Operate \\
-\addlinespace
-S37 & Cardinality Estimation: A Learned Approach Survey~\cite{Hilprecht2022CardinalityEstimation} & 2022 & AI4DB/Learned Opt. & PVLDB & Optimize \\
-\addlinespace
-S38 & Cloud-Native Storage Systems: A Survey~\cite{Liu2024CloudStorage} & 2024 & Cloud-Native Arch. & ACM Comp.\ Surv. & Design, Deploy \\
-\addlinespace
-S39 & NoSQL Query Languages: A Comparative Review~\cite{Ongo2021NoSQLQL} & 2021 & NoSQL/NewSQL & IEEE Access & Design \\
-\addlinespace
-S40 & Data Integration in the Cloud: Survey~\cite{Dong2022DataIntCloud} & 2022 & Multi-Model DBs & VLDB Journal & Design, Deploy \\
-\addlinespace
-S41 & Autonomous Cloud Database Administration~\cite{Zhou2024AutonomousDB} & 2024 & AI4DB/Autonomous & IEEE TKDE & Operate, Optimize \\
-\addlinespace
-S42 & Vector Similarity Search: Algorithms and Systems~\cite{Wang2024VectorSearch} & 2024 & Vector Databases & PVLDB & Design, Optimize \\
-\addlinespace
-S43 & Encryption Techniques for Cloud Databases~\cite{Acar2020CloudEncryption} & 2020 & Security/Privacy & ACM Comp.\ Surv. & Deploy, Operate \\
-\addlinespace
-S44 & Cloud Database Performance Tuning: A Review~\cite{Kumar2023PerfTuning} & 2023 & Benchmarking & J.\ Parallel Comp. & Optimize \\
-\addlinespace
-S45 & Lakehouse Architectures: A Systematic Review~\cite{Armbrust2024LakehouseArch} & 2024 & Data Lakehouse & IEEE BigData & Design, Deploy, Operate \\
-\addlinespace
-S46 & HTAP on Cloud: Architecture and Challenges~\cite{Raza2023HTAPCloud} & 2023 & HTAP Systems & PVLDB & Design, Operate, Optimize \\
-\addlinespace
-S47 & Consensus Protocols for Cloud Databases~\cite{Howard2022Consensus} & 2022 & Cloud-Native Arch. & ACM Comp.\ Surv. & Design \\
-\addlinespace
-S48 & Fog Computing Data Management: A Review~\cite{Bermbach2021FogData} & 2021 & Edge/Fog DBs & J.\ Network Comp. & Deploy, Operate \\
-\addlinespace
-S49 & Schema Evolution in Cloud Databases: Survey~\cite{Curino2023SchemaEvol} & 2023 & Cloud DB Migration & Data \& Knowl.\ Eng. & Design, Evolve \\
-\addlinespace
-S50 & Materialized View Selection in Cloud DW~\cite{Jindal2022MVSelection} & 2022 & Cloud-Native Arch. & IEEE TKDE & Optimize \\
-\addlinespace
-S51 & Retrieval-Augmented Generation: Survey~\cite{Gao2024RAGSurvey} & 2024 & Vector Databases & arXiv & Deploy, Operate \\
-\addlinespace
-S52 & Cloud Database Access Control: A Review~\cite{Bertino2021AccessControl} & 2021 & Security/Privacy & ACM Comp.\ Surv. & Deploy, Operate \\
-\addlinespace
-S53 & Serverless Computing for Data Processing~\cite{Jonas2023ServerlessData} & 2023 & Serverless DBs & ACM Comp.\ Surv. & Deploy, Operate, Optimize \\
-\addlinespace
-S54 & LLM-Augmented Database Systems: Survey~\cite{Thirumuruganathan2024DBLLMSurvey} & 2024 & AI4DB/LLM & arXiv & Optimize, Evolve \\
-\addlinespace
-S55 & Graph Query Languages: Standardization Survey~\cite{Deutsch2022GQL} & 2022 & Graph Databases & ACM Comp.\ Surv. & Design \\
-\addlinespace
-S56 & NoSQL Data Migration Tools: A Review~\cite{Sadalage2020NoSQLMigration} & 2020 & Cloud DB Migration & J.\ Big Data & Deploy, Evolve \\
-\addlinespace
-S57 & Cost Modeling for Cloud Data Services~\cite{Leis2024CostModeling} & 2024 & Cost/Pricing & PVLDB & Deploy, Operate \\
-\addlinespace
-S58 & Data Provenance in Cloud Computing~\cite{Simmhan2022DataProvCloud} & 2022 & Data Governance & IEEE TKDE & Operate, Evolve \\
+S24 & Databases in Cloud Computing: A Literature Review~\cite{Bhatti2017CloudDBReview} & 2017 & Cloud-Native Arch. & IJITCS & 5.5 & Design, Deploy \\
 \end{longtable}
 \end{landscape}
 

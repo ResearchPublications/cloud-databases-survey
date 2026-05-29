@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.20)  29 MAY 2026 10:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.20)  29 MAY 2026 16:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1155,6 +1155,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks57
 \@floatcapt=\box88
 )
+\@float@every@figure=\toks58
+
 (/usr/local/texlive/2025/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
 
@@ -1163,8 +1165,8 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
 (/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks58
-\XKV@tempa@toks=\toks59
+\XKV@toks=\toks59
+\XKV@tempa@toks=\toks60
 )
 \XKV@depth=\count379
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
@@ -1210,47 +1212,47 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@roff=\dimen353
 ))
 LaTeX Font Info:    Trying to load font information for T1+stix on input line 4
-6.
+7.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/stix/t1stix.fd
 File: t1stix.fd 2015/04/17 v1.1.2-latex STIX T1 font definitions
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for LS1/stix/m/n on input line 47.
 LaTeX Font Info:    Trying to load font information for LS1+stix on input line 
-46.
+47.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/stix/ls1stix.fd
 File: ls1stix.fd 2015/04/17 v1.1.2-latex STIX LS1 font definitions
 )
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for LS2/stix/m/n on input line 47.
 LaTeX Font Info:    Trying to load font information for LS2+stix on input line 
-46.
+47.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/stix/ls2stix.fd
 File: ls2stix.fd 2015/04/17 v1.1.2-latex STIX LS2 font definitions
 )
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    ... okay on input line 47.
 
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1259,12 +1261,12 @@ LaTeX Font Info:    ... okay on input line 46.
 \scratchbox=\box91
 \nofMPsegments=\count383
 \nofMParguments=\count384
-\everyMPshowfont=\toks60
+\everyMPshowfont=\toks61
 \MPscratchCnt=\count385
 \MPscratchDim=\dimen355
 \MPnumerator=\count386
 \makeMPintoPDFobject=\count387
-\everyMPtoPDFconversion=\toks61
+\everyMPtoPDFconversion=\toks62
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1274,9 +1276,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Command `\dddot' is already robust on input line 46.
-LaTeX Info: Command `\ddddot' is already robust on input line 46.
-Package hyperref Info: Link coloring ON on input line 46.
+LaTeX Info: Command `\dddot' is already robust on input line 47.
+LaTeX Info: Command `\ddddot' is already robust on input line 47.
+Package hyperref Info: Link coloring ON on input line 47.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -1324,81 +1326,81 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 \openout5 = `main.abs'.
 
 LaTeX Font Info:    Trying to load font information for LS1+stixscr on input li
-ne 80.
+ne 81.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/stix/ls1stixscr.fd
 File: ls1stixscr.fd 2015/04/17 v1.1.2-latex STIX script LS1 font definitions
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixex on input lin
-e 80.
+e 81.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/stix/ls2stixex.fd
 File: ls2stixex.fd 2015/04/17 v1.1.2-latex STIX extentions LS2 font definitions
 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 80.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
 
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
 
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for LS1+stixfrak on input l
-ine 80.
+ine 81.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/stix/ls1stixfrak.fd
 File: ls1stixfrak.fd 2015/04/17 v1.1.2-latex STIX fraktur LS1 font definitions
 )
 LaTeX Font Info:    Trying to load font information for LS1+stixbb on input lin
-e 80.
+e 81.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/stix/ls1stixbb.fd
 File: ls1stixbb.fd 2015/04/17 v1.1.2-latex STIX blackboard LS1 font definitions
 
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixcal on input li
-ne 80.
+ne 81.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/stix/ls2stixcal.fd
 File: ls2stixcal.fd 2015/04/17 v1.1.2-latex STIX calligraphic LS2 font definiti
 ons
 )
 LaTeX Font Info:    Trying to load font information for LS1+stixsf on input lin
-e 80.
+e 81.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/stix/ls1stixsf.fd
 File: ls1stixsf.fd 2015/04/17 v1.1.2-latex STIX sans-serif LS1 font definitions
 
 )
 LaTeX Font Info:    Trying to load font information for LS2+stixtt on input lin
-e 80.
+e 81.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/stix/ls2stixtt.fd
 File: ls2stixtt.fd 2015/04/17 v1.1.2-latex STIX typewriter LS2 font definitions
 
 )
-Overfull \hbox (117.0831pt too wide) detected at line 80
+Overfull \hbox (117.0831pt too wide) detected at line 81
 []
  []
 
 (./main.abs)
 
-Package hyperref Warning: Ignoring empty anchor on input line 80.
+Package hyperref Warning: Ignoring empty anchor on input line 81.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 80.
+Package hyperref Warning: Ignoring empty anchor on input line 81.
 
 <thumbnails/cas-email.jpeg, id=7, 225.84375pt x 225.84375pt>
 File: thumbnails/cas-email.jpeg Graphic file (type jpg)
 <use thumbnails/cas-email.jpeg>
-Package pdftex.def Info: thumbnails/cas-email.jpeg  used on input line 80.
+Package pdftex.def Info: thumbnails/cas-email.jpeg  used on input line 81.
 (pdftex.def)             Requested size: 7.99838pt x 8.0pt.
 
-Package hyperref Warning: Ignoring empty anchor on input line 80.
+Package hyperref Warning: Ignoring empty anchor on input line 81.
 
 
 
@@ -1409,7 +1411,7 @@ al/texlive/2025/texmf-dist/fonts/enc/dvips/stix/stix-t1.enc}{/usr/local/texlive
 /2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} </usr/local/texlive/
 2025/texmf-dist/tex/latex/els-cas-templates/thumbnails/cas-email.jpeg>]
 LaTeX Font Info:    Trying to load font information for TS1+stix on input line 
-104.
+105.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/stix/ts1stix.fd
 File: ts1stix.fd 2015/04/17 v1.1.2-latex STIX TS1 font definitions
@@ -1420,63 +1422,61 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.151 \section
-              {Why Cloud Databases Matter---A Multi-Perspective Motivation}{/us
-r/local/texlive/2025/texmf-dist/fonts/enc/dvips/stix/stix-ts1.enc}]
-Overfull \hbox (8.0725pt too wide) in paragraph at lines 182--183
+l.167 \end{figure}
+                  {/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/stix/stix
+-ts1.enc}]
+
+[3]
+
+[4]
+Overfull \hbox (8.0725pt too wide) in paragraph at lines 227--228
 []\T1/stix/b/n/10 AI--knowledge en-gi-neer-ing con-ver-gence. \T1/stix/m/n/10 T
 he in-te-gra-tion of ma-chine learn-ing with database sys-tems (AI4DB) [[]]
  []
 
 
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 230--230
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
 []|\T1/cmss/m/n/9 Traditional DBMS
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
 []|\T1/cmss/m/n/9 DBMS de-signed from
  []
 
 
-Underfull \hbox (badness 2119) in paragraph at lines 231--231
+Underfull \hbox (badness 2119) in paragraph at lines 276--276
 []|\T1/cmss/m/n/9 Monolithic, tightly cou-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--231
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
 []|\T1/cmss/m/n/9 Disaggregated
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 []|\T1/cmss/m/n/9 Fully dis-ag-gre-gated,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
 []|\T1/cmss/m/n/9 Snowflake [[]], Neon,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 []|\T1/cmss/m/n/9 Disaggregated, shared
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 235--236
+Underfull \hbox (badness 2318) in paragraph at lines 280--281
 []|\T1/cmss/m/n/9 Native multi-tenant de-
  []
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `') on input line 255.
 
-
-
-[4]
+[5]
 Overfull \hbox (12.95755pt too wide) in paragraph at lines 304--305
 []\T1/stix/b/n/10 Fully dis-ag-gre-gated \T1/stix/m/n/10 ar-chi-tec-tures fur-t
 her de-com-pose the database en-gine into in-de-pen-dently scal-able microservi
@@ -1484,684 +1484,471 @@ ces---
  []
 
 
-Underfull \hbox (badness 1092) in paragraph at lines 320--320
-[]|\T1/cmss/m/n/9 ACID, SQL, ma-
- []
 
-
-Underfull \hbox (badness 2213) in paragraph at lines 320--320
-[]|\T1/cmss/m/n/9 Aurora, Cloud SQL,
- []
-
-
-Underfull \hbox (badness 1184) in paragraph at lines 324--324
-[]|\T1/cmss/m/n/9 Ultra-low la-tency,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
-[]|\T1/cmss/m/n/9 DynamoDB, Re-dis
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
-[]|\T1/cmss/m/n/9 Caching, ses-sion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
-[]|\T1/cmss/m/n/9 High write
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
-\T1/cmss/m/n/9 through-put,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
-[]|\T1/cmss/m/n/9 Bigtable, Cas-san-dra
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
-[]|\T1/cmss/m/n/9 Relationship
- []
-
-
-Underfull \hbox (badness 3128) in paragraph at lines 328--328
-\T1/cmss/m/n/9 traver-sal, pat-tern
- []
-
-
-Underfull \hbox (badness 4752) in paragraph at lines 330--330
-[]|\T1/cmss/m/n/9 Similarity search,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 330--330
-[]|\T1/cmss/m/n/9 Pinecone, Weav-i-ate,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 332--332
-[]|\T1/cmss/m/n/9 TimescaleDB,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 332--332
-\T1/cmss/m/n/9 In-fluxDB Cloud,
- []
-
-
-Underfull \hbox (badness 4168) in paragraph at lines 332--333
-[]|\T1/cmss/m/n/9 Monitoring, fi-nan-cial ticks,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
-[]|\T1/cmss/m/n/9 Cosmos DB,
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `') on input line 346.
-
-
-
-[5
+[6
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.404 
+l.350 
       ]
-Underfull \hbox (badness 10000) in paragraph at lines 423--423
+Underfull \hbox (badness 1092) in paragraph at lines 365--365
+[]|\T1/cmss/m/n/9 ACID, SQL, ma-
+ []
+
+
+Underfull \hbox (badness 2213) in paragraph at lines 365--365
+[]|\T1/cmss/m/n/9 Aurora, Cloud SQL,
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 369--369
+[]|\T1/cmss/m/n/9 Ultra-low la-tency,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--369
+[]|\T1/cmss/m/n/9 DynamoDB, Re-dis
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
+[]|\T1/cmss/m/n/9 Caching, ses-sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--371
+[]|\T1/cmss/m/n/9 High write
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--371
+\T1/cmss/m/n/9 through-put,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--371
+[]|\T1/cmss/m/n/9 Bigtable, Cas-san-dra
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--373
+[]|\T1/cmss/m/n/9 Relationship
+ []
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 373--373
+\T1/cmss/m/n/9 traver-sal, pat-tern
+ []
+
+
+Underfull \hbox (badness 4752) in paragraph at lines 375--375
+[]|\T1/cmss/m/n/9 Similarity search,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--375
+[]|\T1/cmss/m/n/9 Pinecone, Weav-i-ate,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--377
+[]|\T1/cmss/m/n/9 TimescaleDB,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--377
+\T1/cmss/m/n/9 In-fluxDB Cloud,
+ []
+
+
+Underfull \hbox (badness 4168) in paragraph at lines 377--378
+[]|\T1/cmss/m/n/9 Monitoring, fi-nan-cial ticks,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
+[]|\T1/cmss/m/n/9 Cosmos DB,
+ []
+
+
+
+[7]
+
+[8
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.449 
+      ]
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
 []|\T1/cmss/m/n/9 ScienceDirect
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 439--439
+Underfull \hbox (badness 10000) in paragraph at lines 484--484
 []\T1/cmtt/m/n/9 ("cloud database" OR "cloud-native database" OR "DBaaS" OR "da
 tabase-as-a-service" OR
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 439--439
+Underfull \hbox (badness 10000) in paragraph at lines 484--484
 \T1/cmtt/m/n/9 "serverless database" OR "HTAP" OR "NewSQL" OR "data lakehouse" 
 OR "vector database" OR
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 439--439
+Underfull \hbox (badness 10000) in paragraph at lines 484--484
 \T1/cmtt/m/n/9 "AI4DB" OR "learned index" OR "NoSQL" OR "distributed database" 
 OR "multi-model database"
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 439--439
+Underfull \hbox (badness 10000) in paragraph at lines 484--484
 \T1/cmtt/m/n/9 ("survey" OR "review" OR "tutorial" OR "taxonomy" OR "systematic
 " OR "state-of-the-art" OR
  []
 
 
 
-[6
-pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.441 
-      
+[9
 pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.441 
+l.582 
       ]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `') on input line 504.
+Overfull \vbox (37.6884pt too high) has occurred while \output is active []
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `') on input line 540.
 
-Package pgfplots info on input line 557: Using 'lua backend=false' for axis: x 
-coord trafo unsupported.
-
-
-[7
+[10
 pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.563 \end{figure}
-                  
+l.582 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.563 \end{figure}
-                  ]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `') on input line 567.
-
+l.582 
+      ]
 Package pgfplots info on input line 602: Using 'lua backend=false' for axis: x 
 coord trafo unsupported.
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `') on input line 629.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `') on input line 687.
+Package pgfplots info on input line 645: Using 'lua backend=false' for axis: x 
+coord trafo unsupported.
 
 
+[11]
 
-[8]
-
-[9
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.722 \begin{landscape}
-                       
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.722 \begin{landscape}
-                       ]
-
-[10
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.722 \begin{landscape}
-                       
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.722 \begin{landscape}
-                       ]
-
-[11
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.722 \begin{landscape}
-                       
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.722 \begin{landscape}
-                       
-pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.722 \begin{landscape}
-                       ] [12
-
-]
+[12]
 
 [13] [14
 
-
-] [15]
-
-[16]
-
-[17
-
 ]
+
+[15] [16
+
+
+] [17]
 
 [18]
 
-[19]
+[19
 
-[20]
+
+]
+
+[20
+
+]
 
 [21]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `') on input line 1180.
-
-
-Overfull \hbox (28.49365pt too wide) in paragraph at lines 1209--1210
- [][] 
- []
-
-
 
 [22]
 
 [23]
-Overfull \hbox (2.8925pt too wide) in paragraph at lines 1275--1276
+
+[24]
+
+[25
+pdfTeX warning (ext4): destination with the same identifier (name{table.10}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1238 ...{Provider selection and vendor lock-in.}
+                                                   Choosing a cloud database...
+]
+
+[26]
+Overfull \hbox (2.8925pt too wide) in paragraph at lines 1281--1282
 []\T1/stix/b/n/10 Adapting to new paradigms. \T1/stix/m/n/10 The emer-gence of 
 vec-tor databases for AI work-loads [[]], the lake-house paradigm [[]],
  []
 
 
 
-[24]
-
-[25]
-
-[26]
-
 [27]
 
-[28
-pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1402 \begin{landscape}
-                        ]
-Underfull \hbox (badness 10000) in paragraph at lines 1418--1418
+[28]
+
+[29]
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 1421--1421
+[]|\T1/stix/b/n/10 Primary
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1425--1425
+[]|\T1/stix/b/n/10 Primary
+ []
+
+
+Underfull \hbox (badness 6063) in paragraph at lines 1433--1433
+[]|\T1/stix/m/n/10 Cloud-Native Databases: A
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1433--1433
 []|\T1/stix/m/n/10 Cloud-Native
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1426--1426
-[]|\T1/stix/m/n/10 ACM Comp.
+Underfull \hbox (badness 10000) in paragraph at lines 1435--1435
+[]|\T1/stix/m/n/10 HTAP Databases: A
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1430--1430
-[]|\T1/stix/m/n/10 Survey on NoSQL
+Underfull \hbox (badness 10000) in paragraph at lines 1435--1435
+[]|\T1/stix/m/n/10 HTAP
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1430--1430
-\T1/stix/m/n/10 Dis-tributed Database
+Underfull \hbox (badness 3568) in paragraph at lines 1437--1437
+[]|\T1/stix/m/n/10 Survey of Vec-tor Database
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1430--1430
-[]|\T1/stix/m/n/10 ACM Comp.
+Underfull \hbox (badness 10000) in paragraph at lines 1437--1437
+[]|\T1/stix/m/n/10 Vector
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1434--1434
-[]|\T1/stix/m/n/10 Serverless Data
+Underfull \hbox (badness 1038) in paragraph at lines 1439--1439
+[]|\T1/stix/m/n/10 Database Meets AI: A Sur-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1434--1434
-\T1/stix/m/n/10 Man-age-ment: Sur-vey
+Underfull \hbox (badness 2495) in paragraph at lines 1441--1441
+[]|\T1/stix/m/n/10 Learned In-dex: A Com-pre-
  []
 
 
-Underfull \hbox (badness 6592) in paragraph at lines 1436--1436
-[]|\T1/stix/m/n/10 Learned Query Op-ti-miza-
- []
-
-
-Underfull \hbox (badness 7704) in paragraph at lines 1436--1436
-\T1/stix/m/n/10 tion: A Sur-vey and Be-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1436--1436
+Overfull \hbox (5.43906pt too wide) in paragraph at lines 1441--1441
 []|\T1/stix/m/n/10 AI4DB/Learned
  []
 
 
-Underfull \hbox (badness 1838) in paragraph at lines 1438--1438
-[]|\T1/stix/m/n/10 Learned In-dexes: A Com-
+Underfull \hbox (badness 10000) in paragraph at lines 1443--1443
+[]|\T1/stix/m/n/10 A Sur-vey on NoSQL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1438--1438
-[]|\T1/stix/m/n/10 AI4DB/Learned
+Overfull \hbox (11.46904pt too wide) in paragraph at lines 1443--1443
+[]|\T1/stix/m/n/10 NoSQL/NewSQL| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1444--1444
-[]|\T1/stix/m/n/10 Graph Database
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1444--1444
-\T1/stix/m/n/10 Man-age-ment: Con-cepts
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1444--1444
+Underfull \hbox (badness 10000) in paragraph at lines 1443--1443
 []|\T1/stix/m/n/10 ACM Comp.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1446--1446
-[]|\T1/stix/m/n/10 Multi-Model Data
+Underfull \hbox (badness 10000) in paragraph at lines 1445--1445
+\T1/stix/m/n/10 Databases: A Com-par-a-tive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1446--1446
-\T1/stix/m/n/10 Man-age-ment: Sur-vey
+Overfull \hbox (11.46904pt too wide) in paragraph at lines 1445--1445
+[]|\T1/stix/m/n/10 NoSQL/NewSQL| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1446--1446
-[]|\T1/stix/m/n/10 Distributed &
+Overfull \hbox (11.46904pt too wide) in paragraph at lines 1447--1447
+[]|\T1/stix/m/n/10 NoSQL/NewSQL| 
  []
 
 
-Underfull \hbox (badness 3009) in paragraph at lines 1450--1450
-[]|\T1/stix/m/n/10 Automatic Database Knob
+Overfull \hbox (11.46904pt too wide) in paragraph at lines 1449--1449
+[]|\T1/stix/m/n/10 NoSQL/NewSQL| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1452--1452
-[]|\T1/stix/m/n/10 Benchmarking Cloud
+Underfull \hbox (badness 4608) in paragraph at lines 1451--1451
+[]|\T1/stix/m/n/10 NoSQL Databases: A Sur-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1452--1452
-\T1/stix/m/n/10 Database Sys-tems: A
+Overfull \hbox (11.46904pt too wide) in paragraph at lines 1451--1451
+[]|\T1/stix/m/n/10 NoSQL/NewSQL| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1456--1456
-[]|\T1/stix/m/n/10 Data Gov-er-nance in the
+Overfull \hbox (11.46904pt too wide) in paragraph at lines 1453--1453
+[]|\T1/stix/m/n/10 NoSQL/NewSQL| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1458--1458
-[]|\T1/stix/m/n/10 Cloud-Native
+Underfull \hbox (badness 10000) in paragraph at lines 1453--1453
+[]|\T1/stix/m/n/10 Big Data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1460--1460
-[]|\T1/stix/m/n/10 Cloud-Native
+Underfull \hbox (badness 10000) in paragraph at lines 1455--1455
+[]|\T1/stix/m/n/10 Multi-Model Databases: A
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1462--1462
-[]|\T1/stix/m/n/10 Cloud-Native
+Underfull \hbox (badness 10000) in paragraph at lines 1455--1455
+[]|\T1/stix/m/n/10 Multi-Model
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1462--1462
-[]|\T1/stix/m/n/10 J. Su-per-com-put-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1466--1466
-[]|\T1/stix/m/n/10 Time-Series Databases in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1466--1466
-[]|\T1/stix/m/n/10 Cloud-Native
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1468--1468
-[]|\T1/stix/m/n/10 Privacy-Preserving Data
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1470--1470
-[]|\T1/stix/m/n/10 Green Cloud Databases:
- []
-
-
-Underfull \hbox (badness 5022) in paragraph at lines 1472--1472
-[]|\T1/stix/m/n/10 Vendor Lock-in in Cloud
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1474--1474
-[]|\T1/stix/m/n/10 Cloud-Native
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1474--1474
+Underfull \hbox (badness 10000) in paragraph at lines 1455--1455
 []|\T1/stix/m/n/10 ACM Comp.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1478--1478
+Underfull \hbox (badness 2005) in paragraph at lines 1457--1457
+[]|\T1/stix/m/n/10 Foundations of Query Lan-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1457--1457
+[]|\T1/stix/m/n/10 Graph
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1457--1457
+[]|\T1/stix/m/n/10 ACM Comp.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1459--1459
+[]|\T1/stix/m/n/10 ACM Comp.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
+[]|\T1/stix/m/n/10 From Data Ware-house to
+ []
+
+
+Underfull \hbox (badness 6252) in paragraph at lines 1461--1461
+\T1/stix/m/n/10 Lake-house: A Com-par-a-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1461--1461
+[]|\T1/stix/m/n/10 Data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1463--1463
+[]|\T1/stix/m/n/10 Data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1465--1465
+[]|\T1/stix/m/n/10 Open Source Time Se-ries
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1465--1465
+[]|\T1/stix/m/n/10 Time-Series
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1467--1467
+[]|\T1/stix/m/n/10 Recent NL In-ter-faces for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1467--1467
+\T1/stix/m/n/10 Databases: A Com-par-a-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1467--1467
+[]|\T1/stix/m/n/10 NL/LLM-
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 1469--1469
+[]|\T1/stix/m/n/10 Retrieval-Augmented Gen-er-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1469--1469
+[]|\T1/stix/m/n/10 NL/LLM-
+ []
+
+
+Underfull \hbox (badness 4429) in paragraph at lines 1471--1471
+[]|\T1/stix/m/n/10 Cloud Com-put-ing Se-cu-rity:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1471--1471
+\T1/stix/m/n/10 Threats & Mitigation---An
+ []
+
+
+Overfull \hbox (7.09901pt too wide) in paragraph at lines 1471--1471
+[]|\T1/stix/m/n/10 Security/Privacy| 
+ []
+
+
+Overfull \hbox (7.09901pt too wide) in paragraph at lines 1473--1473
+[]|\T1/stix/m/n/10 Security/Privacy| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1473--1473
+[]|\T1/stix/m/n/10 Trans. Emerg.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1479--1479
 []|\T1/stix/m/n/10 Cloud-Native
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1482--1482
-[]|\T1/stix/m/n/10 Workload Char-ac-ter-i-za-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1484--1484
-[]|\T1/stix/m/n/10 Cloud-Native
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1486--1486
-[]|\T1/stix/m/n/10 Approximate Query
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1486--1486
-[]|\T1/stix/m/n/10 AI4DB/Learned
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1486--1486
-[]|\T1/stix/m/n/10 ACM Comp.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1488--1488
-[]|\T1/stix/m/n/10 Cloud-Native
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1488--1488
-[]|\T1/stix/m/n/10 Distributed
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1490--1490
-[]|\T1/stix/m/n/10 Cardinality Es-ti-ma-tion:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1490--1490
-\T1/stix/m/n/10 A Learned Ap-proach
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1490--1490
-[]|\T1/stix/m/n/10 AI4DB/Learned
- []
-
-
-Underfull \hbox (badness 2088) in paragraph at lines 1492--1492
-[]|\T1/stix/m/n/10 Cloud-Native Stor-age Sys-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1492--1492
-[]|\T1/stix/m/n/10 Cloud-Native
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1492--1492
-[]|\T1/stix/m/n/10 ACM Comp.
- []
-
-
-Underfull \hbox (badness 1910) in paragraph at lines 1494--1494
-[]|\T1/stix/m/n/10 NoSQL Query Lan-guages:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1494--1494
-\T1/stix/m/n/10 A Com-par-a-tive
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1496--1496
-[]|\T1/stix/m/n/10 Data In-te-gra-tion in the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1498--1498
-[]|\T1/stix/m/n/10 Autonomous
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1498--1498
-\T1/stix/m/n/10 Cloud Database
- []
-
-
-Overfull \hbox (12.59811pt too wide) in paragraph at lines 1498--1498
-[]|\T1/stix/m/n/10 AI4DB/Autonomous| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1500
-[]|\T1/stix/m/n/10 Vector Sim-i-lar-ity
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1500
-\T1/stix/m/n/10 Search: Al-go-rithms and
- []
-
-
-Underfull \hbox (badness 2617) in paragraph at lines 1502--1502
-[]|\T1/stix/m/n/10 Encryption Tech-niques for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1502--1502
-[]|\T1/stix/m/n/10 ACM Comp.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1504--1504
-[]|\T1/stix/m/n/10 Cloud Database
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1504--1504
-\T1/stix/m/n/10 Per-for-mance Tun-ing: A
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1510--1510
-[]|\T1/stix/m/n/10 Consensus Pro-to-cols for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1510--1510
-[]|\T1/stix/m/n/10 Cloud-Native
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1510--1510
-[]|\T1/stix/m/n/10 ACM Comp.
- []
-
-
-Underfull \hbox (badness 6808) in paragraph at lines 1514--1514
-[]|\T1/stix/m/n/10 Data & Knowl.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1516--1516
-[]|\T1/stix/m/n/10 Cloud-Native
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1518--1518
-[]|\T1/stix/m/n/10 Retrieval-Augmented
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1520--1520
-[]|\T1/stix/m/n/10 Cloud Database Ac-cess
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1520--1520
-[]|\T1/stix/m/n/10 ACM Comp.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1522--1522
-[]|\T1/stix/m/n/10 Serverless Com-put-ing for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1522--1522
-[]|\T1/stix/m/n/10 ACM Comp.
- []
-
-
-Underfull \hbox (badness 3029) in paragraph at lines 1524--1524
-[]|\T1/stix/m/n/10 LLM-Augmented Database
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1526--1526
-[]|\T1/stix/m/n/10 Graph Query Lan-guages:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1526--1526
-\T1/stix/m/n/10 Stan-dard-iza-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1526--1526
-[]|\T1/stix/m/n/10 ACM Comp.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1528--1528
-[]|\T1/stix/m/n/10 NoSQL Data Mi-gra-tion
- []
-
-
-Underfull \hbox (badness 4518) in paragraph at lines 1530--1530
-[]|\T1/stix/m/n/10 Cost Mod-el-ing for Cloud
- []
-
-
-Underfull \hbox (badness 1360) in paragraph at lines 1532--1532
-[]|\T1/stix/m/n/10 Data Prove-nance in Cloud
- []
-
-[29
-
-] [30] [31] [32]
-
-[33] (./main.bbl
-
-[34
+[31
 
 ]
 
-[35]
+[32] (./main.bbl
 
-[36]
+[33
 
-[37])
+]
 
-[38] (./main.aux)
+[34]
+Underfull \hbox (badness 1033) in paragraph at lines 534--537
+[]\T1/stix/m/n/8 International En-ergy Agency, Data cen-tres and data trans-mis
+-sion net-works, [][]$\T1/cmtt/m/n/8 https : / / www . iea . org / energy-[]sys
+tem / buildings /
+ []
+
+
+
+[35])
+
+[36] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -2170,32 +1957,31 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 41180 strings out of 473190
- 910538 string characters out of 5715799
- 1445088 words of memory out of 5000000
- 63464 multiletter control sequences out of 15000+600000
- 660056 words of font info for 162 fonts, out of 8000000 for 9000
+ 41265 strings out of 473190
+ 909609 string characters out of 5715799
+ 1401532 words of memory out of 5000000
+ 63589 multiletter control sequences out of 15000+600000
+ 679127 words of font info for 179 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,12n,93p,1965b,2431s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,12n,93p,2010b,2315s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.
 pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bol
 dItalic.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/STIXGen
 eral-Italic.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/STI
 XGeneral-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-
-super/sfsi0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-su
-per/sfsi0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-supe
-r/sfss0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/
-sfss0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sf
-sx0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt
-0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt09
-00.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathcal
-.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathit.pf
-b></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb><
-/usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathscr.pfb>
-Output written on main.pdf (38 pages, 508931 bytes).
+super/sfsi0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-su
+per/sfso0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-supe
+r/sfss0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/
+sfsx0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sf
+tt0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt
+0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathc
+al.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathit.
+pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathrm.pfb
+></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix/stix-mathscr.pfb>
+Output written on main.pdf (36 pages, 497113 bytes).
 PDF statistics:
- 938 PDF objects out of 1000 (max. 8388607)
- 856 compressed objects within 9 object streams
- 267 named destinations out of 1000 (max. 500000)
+ 862 PDF objects out of 1000 (max. 8388607)
+ 784 compressed objects within 8 object streams
+ 228 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
