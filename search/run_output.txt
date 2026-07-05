@@ -1,0 +1,40 @@
+OpenAlex sweep (18 term queries)...
+  openalex 'cloud database': 297/297
+  openalex 'cloud-native database': 11/11
+  openalex 'DBaaS': 48/48
+  openalex 'database-as-a-service': 452/452
+  openalex 'serverless database': 4/4
+  openalex 'HTAP': 72/72
+  openalex 'NewSQL': 47/47
+  openalex 'data lakehouse': 37/37
+  openalex 'vector database': 266/266
+  openalex 'AI4DB': 4/4
+  openalex 'learned index': 142/142
+  openalex 'NoSQL': 777/776
+  openalex 'distributed database': 749/749
+  openalex 'multi-model database': 28/28
+  openalex 'graph database': 703/703
+  openalex 'edge database': 14/14
+  openalex 'fog database': 5/5
+  openalex 'autonomous database': 28/28
+arXiv sweep (cs.DB x title indicators)...
+  arxiv cs.DB: 356/356
+Crossref supplementary sweep...
+  crossref 'cloud database survey': fetched 100 (relevance-ranked top 100)
+  crossref 'cloud-native database survey': fetched 100 (relevance-ranked top 100)
+  crossref 'database as a service survey': fetched 100 (relevance-ranked top 100)
+  crossref 'data lakehouse survey': fetched 100 (relevance-ranked top 100)
+  crossref 'NoSQL database survey': fetched 100 (relevance-ranked top 100)
+  crossref 'distributed database survey review': fetched 100 (relevance-ranked top 100)
+Semantic Scholar supplementary sweep...
+  s2 'cloud database survey': fetched 1000 of 1340
+  s2 'cloud-native database survey': fetched 20 of 20
+  s2 'database as a service survey': fetched 999 of 12022
+  s2 'data lakehouse survey': fetched 6 of 6
+  s2 'NoSQL database survey': fetched 184 of 184
+  s2 'distributed database survey review': fetched 826 of 826
+Deduplicating...
+
+Raw records: 7675
+Final candidates: 6613
+Wrote /Users/aibrah03/WebstormProjects/ResearchPublications/cloud-databases-survey/search/candidates.csv, candidates.json, search_log.json

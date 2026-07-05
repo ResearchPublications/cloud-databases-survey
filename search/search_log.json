@@ -1,0 +1,263 @@
+{
+  "search_date_utc": "2026-07-05T12:12:02.460476+00:00",
+  "window": {
+    "from": "1999-01-01",
+    "to": "2026-12-31"
+  },
+  "queries": [
+    {
+      "api": "openalex",
+      "term": "cloud database",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22cloud%20database%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 297,
+      "hits_fetched": 297,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "openalex",
+      "term": "cloud-native database",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22cloud-native%20database%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 11,
+      "hits_fetched": 11,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "openalex",
+      "term": "DBaaS",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22DBaaS%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 48,
+      "hits_fetched": 48,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "openalex",
+      "term": "database-as-a-service",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22database-as-a-service%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 452,
+      "hits_fetched": 452,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "openalex",
+      "term": "serverless database",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22serverless%20database%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 4,
+      "hits_fetched": 4,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "openalex",
+      "term": "HTAP",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22HTAP%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 72,
+      "hits_fetched": 72,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "openalex",
+      "term": "NewSQL",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22NewSQL%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 47,
+      "hits_fetched": 47,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "openalex",
+      "term": "data lakehouse",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22data%20lakehouse%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 37,
+      "hits_fetched": 37,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "openalex",
+      "term": "vector database",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22vector%20database%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 266,
+      "hits_fetched": 266,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "openalex",
+      "term": "AI4DB",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22AI4DB%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 4,
+      "hits_fetched": 4,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "openalex",
+      "term": "learned index",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22learned%20index%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 142,
+      "hits_fetched": 142,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "openalex",
+      "term": "NoSQL",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22NoSQL%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 776,
+      "hits_fetched": 777,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "openalex",
+      "term": "distributed database",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22distributed%20database%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 749,
+      "hits_fetched": 749,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "openalex",
+      "term": "multi-model database",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22multi-model%20database%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 28,
+      "hits_fetched": 28,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "openalex",
+      "term": "graph database",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22graph%20database%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 703,
+      "hits_fetched": 703,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "openalex",
+      "term": "edge database",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22edge%20database%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 14,
+      "hits_fetched": 14,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "openalex",
+      "term": "fog database",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22fog%20database%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 5,
+      "hits_fetched": 5,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "openalex",
+      "term": "autonomous database",
+      "url": "https://api.openalex.org/works?filter=title_and_abstract.search:%22autonomous%20database%22%20%28survey%20OR%20review%20OR%20tutorial%20OR%20taxonomy%20OR%20systematic%20OR%20%22state%20of%20the%20art%22%20OR%20overview%29,from_publication_date:1999-01-01,to_publication_date:2026-12-31,type:article|review|preprint,language:en&select=id,doi,title,display_name,publication_year,type,language,primary_location,open_access,cited_by_count,abstract_inverted_index,ids&per-page=200&mailto=hello@swiftride.net",
+      "hits_reported": 28,
+      "hits_fetched": 28,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "arxiv",
+      "term": "cs.DB x title indicators",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.DB%20AND%20%28ti%3Asurvey%20OR%20ti%3Areview%20OR%20ti%3Aoverview%20OR%20ti%3Atutorial%20OR%20ti%3Ataxonomy%20OR%20ti%3Asystematic%20OR%20ti%3A%22state%20of%20the%20art%22%29&max_results=100&sortBy=submittedDate&sortOrder=descending",
+      "hits_reported": 356,
+      "hits_fetched": 356,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "crossref",
+      "term": "cloud database survey",
+      "url": "https://api.crossref.org/works?query.bibliographic=cloud%20database%20survey&filter=from-pub-date:1999-01-01,type:journal-article&rows=100&select=DOI,title,container-title,published,type,is-referenced-by-count,abstract&mailto=hello@swiftride.net",
+      "hits_reported": 644390,
+      "hits_fetched": 100,
+      "truncated_at_page_cap": true
+    },
+    {
+      "api": "crossref",
+      "term": "cloud-native database survey",
+      "url": "https://api.crossref.org/works?query.bibliographic=cloud-native%20database%20survey&filter=from-pub-date:1999-01-01,type:journal-article&rows=100&select=DOI,title,container-title,published,type,is-referenced-by-count,abstract&mailto=hello@swiftride.net",
+      "hits_reported": 731541,
+      "hits_fetched": 100,
+      "truncated_at_page_cap": true
+    },
+    {
+      "api": "crossref",
+      "term": "database as a service survey",
+      "url": "https://api.crossref.org/works?query.bibliographic=database%20as%20a%20service%20survey&filter=from-pub-date:1999-01-01,type:journal-article&rows=100&select=DOI,title,container-title,published,type,is-referenced-by-count,abstract&mailto=hello@swiftride.net",
+      "hits_reported": 905959,
+      "hits_fetched": 100,
+      "truncated_at_page_cap": true
+    },
+    {
+      "api": "crossref",
+      "term": "data lakehouse survey",
+      "url": "https://api.crossref.org/works?query.bibliographic=data%20lakehouse%20survey&filter=from-pub-date:1999-01-01,type:journal-article&rows=100&select=DOI,title,container-title,published,type,is-referenced-by-count,abstract&mailto=hello@swiftride.net",
+      "hits_reported": 1554464,
+      "hits_fetched": 100,
+      "truncated_at_page_cap": true
+    },
+    {
+      "api": "crossref",
+      "term": "NoSQL database survey",
+      "url": "https://api.crossref.org/works?query.bibliographic=NoSQL%20database%20survey&filter=from-pub-date:1999-01-01,type:journal-article&rows=100&select=DOI,title,container-title,published,type,is-referenced-by-count,abstract&mailto=hello@swiftride.net",
+      "hits_reported": 526440,
+      "hits_fetched": 100,
+      "truncated_at_page_cap": true
+    },
+    {
+      "api": "crossref",
+      "term": "distributed database survey review",
+      "url": "https://api.crossref.org/works?query.bibliographic=distributed%20database%20survey%20review&filter=from-pub-date:1999-01-01,type:journal-article&rows=100&select=DOI,title,container-title,published,type,is-referenced-by-count,abstract&mailto=hello@swiftride.net",
+      "hits_reported": 4574224,
+      "hits_fetched": 100,
+      "truncated_at_page_cap": true
+    },
+    {
+      "api": "s2",
+      "term": "cloud database survey",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/bulk?query=cloud%20database%20survey&fields=title,year,venue,externalIds,citationCount,openAccessPdf,abstract&year=1999-2026",
+      "hits_reported": 1340,
+      "hits_fetched": 1000,
+      "truncated_at_page_cap": true
+    },
+    {
+      "api": "s2",
+      "term": "cloud-native database survey",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/bulk?query=cloud-native%20database%20survey&fields=title,year,venue,externalIds,citationCount,openAccessPdf,abstract&year=1999-2026",
+      "hits_reported": 20,
+      "hits_fetched": 20,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "s2",
+      "term": "database as a service survey",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/bulk?query=database%20as%20a%20service%20survey&fields=title,year,venue,externalIds,citationCount,openAccessPdf,abstract&year=1999-2026",
+      "hits_reported": 12022,
+      "hits_fetched": 999,
+      "truncated_at_page_cap": true
+    },
+    {
+      "api": "s2",
+      "term": "data lakehouse survey",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/bulk?query=data%20lakehouse%20survey&fields=title,year,venue,externalIds,citationCount,openAccessPdf,abstract&year=1999-2026",
+      "hits_reported": 6,
+      "hits_fetched": 6,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "s2",
+      "term": "NoSQL database survey",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/bulk?query=NoSQL%20database%20survey&fields=title,year,venue,externalIds,citationCount,openAccessPdf,abstract&year=1999-2026",
+      "hits_reported": 184,
+      "hits_fetched": 184,
+      "truncated_at_page_cap": false
+    },
+    {
+      "api": "s2",
+      "term": "distributed database survey review",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search/bulk?query=distributed%20database%20survey%20review&fields=title,year,venue,externalIds,citationCount,openAccessPdf,abstract&year=1999-2026",
+      "hits_reported": 826,
+      "hits_fetched": 826,
+      "truncated_at_page_cap": false
+    }
+  ],
+  "dedup": {
+    "raw_records": 7675,
+    "after_key_dedup": 6659,
+    "fuzzy_merged": 46,
+    "final_candidates": 6613
+  }
+}

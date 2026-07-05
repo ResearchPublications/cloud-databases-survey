@@ -1,0 +1,52 @@
+{
+  "comment": "Frozen query definitions for the systematic search. Terms are taken verbatim from the canonical search string in main.tex (Section 4.1). Survey indicators are combined into one OR block per cloud-DB term for OpenAlex; arXiv uses title-field indicators over cat:cs.DB.",
+  "window": {"from": "1999-01-01", "to": "2026-12-31"},
+  "cloud_db_terms": [
+    "cloud database",
+    "cloud-native database",
+    "DBaaS",
+    "database-as-a-service",
+    "serverless database",
+    "HTAP",
+    "NewSQL",
+    "data lakehouse",
+    "vector database",
+    "AI4DB",
+    "learned index",
+    "NoSQL",
+    "distributed database",
+    "multi-model database",
+    "graph database",
+    "edge database",
+    "fog database",
+    "autonomous database"
+  ],
+  "survey_indicators": [
+    "survey",
+    "review",
+    "tutorial",
+    "taxonomy",
+    "systematic",
+    "state of the art",
+    "overview"
+  ],
+  "openalex": {
+    "type_filter": "article|review|preprint",
+    "language": "en",
+    "per_page": 200,
+    "max_pages_per_query": 25
+  },
+  "arxiv": {
+    "category": "cs.DB",
+    "title_indicators": ["survey", "review", "overview", "tutorial", "taxonomy", "systematic", "state of the art"],
+    "page_size": 100
+  },
+  "crossref_terms": [
+    "cloud database survey",
+    "cloud-native database survey",
+    "database as a service survey",
+    "data lakehouse survey",
+    "NoSQL database survey",
+    "distributed database survey review"
+  ]
+}
