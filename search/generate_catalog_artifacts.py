@@ -39,12 +39,19 @@ def main():
             r["sid"] = f"S{i}"
     N = len(rows)
 
+    phase_code = {"Design": "D", "Deploy": "Dp", "Operate": "O", "Optimize": "Op", "Evolve": "E"}
+
+    def fmt_qa(q):
+        return str(int(float(q))) if float(q) == int(float(q)) else str(q)
+
     print(f"%% ===== 1. tab:catalog rows (N={N}) =====")
     for i, r in enumerate(rows):
         sep = " \\\\\n\\addlinespace" if i < N - 1 else " \\\\"
-        print(f"{r['sid']} & {esc(r['title_abbrev'])}~\\cite{{{r['bibkey']}}} & {r['year']} & "
-              f"{esc(r['primary_topic'])} & {esc(r['venue_abbrev'])} & {r['qa']} & "
-              f"{esc(', '.join(r['phases'].split(';')))}{sep}")
+        codes = " ".join(phase_code[p] for p in r["phases"].split(";") if p)
+        typ = r.get("type", "S")
+        print(f"{r['sid']} & {esc(r['title_abbrev'])}~\\cite{{{r['bibkey']}}} & {r['year']} & {typ} & "
+              f"{esc(r['primary_topic'])} & {esc(r['venue_abbrev'])} & {fmt_qa(r['qa'])} & "
+              f"{codes}{sep}")
 
     years = Counter(int(r["year"]) for r in rows)
     y0, y1 = min(years), max(years)

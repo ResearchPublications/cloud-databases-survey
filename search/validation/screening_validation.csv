@@ -1,0 +1,201 @@
+record_id,title,year,pass1_sonnet,pass2_opus,agree
+CAND-0019,Increasing the Expressiveness of Analytical Performance Models for Replicated Databases,1999,exclude,exclude,Y
+CAND-0047,EUROPE ' S SINGLE UNIFIED MARKET-1992-A SPUR TO THE DEVELOPMENT OF ELECTRONIC DATA INTERCHANGE ?,2000,exclude,exclude,Y
+CAND-0065,Short report: medical informatics. How do family medicine educators at McMaster University use it and teach it?,2000,exclude,exclude,Y
+CAND-0075,Analysis of a database of subsidence damage,2001,exclude,exclude,Y
+CAND-0093,On faint companions in the close environment of star-forming dwarf galaxies. Possible external star formation triggers?,2001,exclude,exclude,Y
+CAND-0101,Report on DISC'00,2001,exclude,exclude,Y
+CAND-0130,DATABASE ON SALINITY PATTERNS IN FLORIDA BAY,2002,exclude,exclude,Y
+CAND-0177,Three-question depression screener used for lumbar disc herniations and spinal stenosis.,2002,exclude,exclude,Y
+CAND-0189,A Meaning of 9/11: Failure in Race Relations at Home Has Led to a Failed US Foreign Policy Overseas,2003,exclude,exclude,Y
+CAND-0205,"Fresh Ideas, Perspectives, and Protocols Associated with Forest Inventory and Analysis Surveys: Graduate Reports, 1974 to July 2001",2003,exclude,exclude,Y
+CAND-0262,Design and implementation of a Web-based land evaluation system and its application to land value tax assessment using .Net technology,2004,exclude,exclude,Y
+CAND-0361,Free and Open Access to Bird Specimen Data: Why?,2005,exclude,exclude,Y
+CAND-0366,Health and Quality of Life Outcomes,2005,exclude,exclude,Y
+CAND-0427,"Competing information realities: Digital libraries, repositories, and the commons",2006,exclude,exclude,Y
+CAND-0494,Changing indications for red cell transfusion,2007,exclude,exclude,Y
+CAND-0551,WebGIS per la documentazione dei siti archeologici,2007,exclude,exclude,Y
+CAND-0569,Biodiversity informatics: the challenge of linking data and the role of shared identifiers,2008,exclude,exclude,Y
+CAND-0574,Databases applicable to quantitative hazard/risk assessment—Towards a predictive systems toxicology,2008,exclude,exclude,Y
+CAND-0612,Query processing for mobile wireless sensor networks: State-of-the-art and research challenges,2008,exclude,include,N
+CAND-0623,Specialty and full-service hospitals: a comparative cost analysis.,2008,exclude,exclude,Y
+CAND-0660,Co-ordinated approach to healthcare worker influenza vaccination in an area health service.,2009,exclude,exclude,Y
+CAND-0685,"Information Systems Security : 5th International Conference, ICISS 2009 Kolkata, India, December 14-18, 2009 Proceedings",2009,exclude,exclude,Y
+CAND-0701,Physical Properties of the Local Interstellar Medium,2009,exclude,exclude,Y
+CAND-0715,"SLoWPoKES: A Catalog of Very Wide, Low‐Mass Binary Stars",2009,exclude,exclude,Y
+CAND-0731,"The role of fire in the ecology of Leichhardt's grasshopper (Petasida ephippigera) and its food plants, Pityrodia spp.",2009,exclude,exclude,Y
+CAND-0796,Development of a new galaxy classification technique and its application to the zCOSMOS survey,2010,exclude,exclude,Y
+CAND-0892,"A Multidisciplinary GIS-Based Approach for Mapping Paleoriver Migration: A Case Study of the Serchio River (Lucca Alluvial Plain, Tuscany)",2011,exclude,exclude,Y
+CAND-0905,A Survey of Cloud Storage Facilities,2011,exclude,include,N
+CAND-0910,Atlas and Catalog of Dark Clouds Based on the 2 Micron All Sky Survey,2011,exclude,exclude,Y
+CAND-0911,Benchmarking Inter and Intra Operator Parallelism on Contemporary Desktop Hardware.,2011,exclude,include,N
+CAND-0932,Do You See What I See: Comparing Student and Librarian Perceptions of Learning Outcomes,2011,exclude,exclude,Y
+CAND-0998,RDBMS to NoSQL: Reviewing Some Next-Generation Non-Relational Database's,2011,exclude,include,N
+CAND-1003,Research on stigma related to mental disorders in Finland: a systematic literature review,2011,exclude,exclude,Y
+CAND-1076,A Runtime Quality Measurement Framework for Cloud Database Service Systems,2012,exclude,exclude,Y
+CAND-1092,"A Survey on Web Application Vulnerabilities (SQLIA, XSS) Exploitation and Security Engine for SQL Injection",2012,exclude,exclude,Y
+CAND-1109,Constructability database knowledge model and guidelines of industrial plant at construction stage,2012,exclude,exclude,Y
+CAND-1178,"Mobile Me, Mobile Library Services: CUHK's Perspectives",2012,exclude,exclude,Y
+CAND-1280,An investigation into the relevance and acceptance of green wines in South Africa.,2013,exclude,exclude,Y
+CAND-1305,A Survey on Querying Encrypted Data for Database as a Service,2013,include,include,Y
+CAND-1358,Improving the Libyan customers' trust and acceptance for online banking technology,2013,exclude,exclude,Y
+CAND-1361,"Information Usage Patterns of Postgraduate Students at Nishter Medical College, Multan, Pakistan",2013,exclude,exclude,Y
+CAND-1395,PERIODIC AND APERIODIC VARIABILITY IN THE MOLECULAR CLOUD ρ OPHIUCHUS,2013,exclude,exclude,Y
+CAND-1414,Sensitivity Evaluation of MEPDG Performance Prediction,2013,exclude,exclude,Y
+CAND-1420,Survey of Confidentiality and Integrity in Outsourced Databases,2013,include,include,Y
+CAND-1441,Towards database virtualization for database as a service,2013,include,exclude,N
+CAND-1449,Using Smartphones and Sensor Technologies to Automate Collection of Travel Data,2013,exclude,exclude,Y
+CAND-1450,Using The Healthie Platform To Build A Comprehensive National Disease Registry,2013,exclude,exclude,Y
+CAND-1502,A Survey on Spatial Co-location Patterns Discovery from Spatial Datasets,2014,exclude,exclude,Y
+CAND-1569,Fault tolerance for distributed explicit-state model checking,2014,exclude,exclude,Y
+CAND-1570,Forest Cover Database Updates Using Multi-Seasonal RapidEye Data—Storm Event Assessment in the Bavarian Forest National Park,2014,exclude,exclude,Y
+CAND-1574,Gender Differences in Time Spent on Parenting and Domestic Responsibilities by High-Achieving Young Physician-Researchers,2014,exclude,exclude,Y
+CAND-1583,"Harbor Porpoise, Phocoena phocoena vomerina, in Cook Inlet, Alaska",2014,exclude,exclude,Y
+CAND-1596,"Internet-based Information Usage Pattern of Paediatricians: A Survey of Southern Punjab, Pakistan",2014,exclude,exclude,Y
+CAND-1597,Introduction for the special Issue on BIG DATA,2014,exclude,exclude,Y
+CAND-1611,MG7: A fast horizontally scalable tool based on cloud computing and graph databases for microbial community profiling.,2014,exclude,exclude,Y
+CAND-1620,NoSQL OLTP Benchmarking: A Survey,2014,include,include,Y
+CAND-1651,Review on Fragmentation in Distributed Database Environment,2014,include,include,Y
+CAND-1700,Towards a Framework for Supporting Web Search of Complex Objects via Multidimensional Paradigms,2014,exclude,exclude,Y
+CAND-1719,What explains the quality and price of GP services? An investigation using linked survey and administrative data.,2014,exclude,exclude,Y
+CAND-1725,"Abstracts From the Neuroanaesthestic and Critical Care Society of Great Britain and Ireland’s Annual Scientific Meeting – Manchester, May 7–8, 2015",2015,exclude,exclude,Y
+CAND-1781,A Survey on Security Issues in Big Data and NoSQL,2015,include,include,Y
+CAND-1931,PRAMOD: A Privacy-Preserving Framework for Supporting Efficient and Secure Database-as-a-Service.,2015,exclude,exclude,Y
+CAND-1938,Public conveyance system for shortest path nding for real road network,2015,exclude,exclude,Y
+CAND-1959,Schema Matching Bibtex,2015,exclude,exclude,Y
+CAND-1961,Security maturity in NoSQL databases - are they secure enough to haul the modern IT applications?,2015,include,include,Y
+CAND-1985,SURVEY ON SECURITY ENHANCEMENT ON QUERY TRANSFORMATION WITH RANDOM SPACE PERTURBATION,2015,exclude,include,N
+CAND-1992,The Biobank Economic Modeling Tool (BEMT): Online Financial Planning to Facilitate Biobank Sustainability,2015,exclude,exclude,Y
+CAND-2013,"Third-party online surveys-science, selling, or sugging?",2015,exclude,exclude,Y
+CAND-2022,Unwanted Warriors: The Rejected Volunteers of the Canadian Expeditionary Force,2015,exclude,exclude,Y
+CAND-2125,"COMPARISON OF SQL, NOSQL AND NEW SQL DATABASES IN LIGHT OF INTERNET OF THINGS – A SURVEY",2016,include,include,Y
+CAND-2137,Database Management Challenges in Cloud Environment,2016,include,include,Y
+CAND-2151,Distributed texture-based land cover classification algorithm using hidden Markov model for multispectral data,2016,exclude,exclude,Y
+CAND-2215,NoSQL database systems: a survey and decision guidance,2016,include,include,Y
+CAND-2303,The Implications of Multimedia Realism and Uses and Gratifications Theory,2016,exclude,exclude,Y
+CAND-2353,A Join Operator for Property Graphs,2017,exclude,exclude,Y
+CAND-2423,Bigdata : A survey on RDBMS and various NoSQL Databases on Storing Medical Images,2017,exclude,include,N
+CAND-2506,Fog Computing Using NoSQL Database to avoid Data Integrity Checking Overheads : A Survey 1,2017,include,include,Y
+CAND-2515,Graph Data Management of Evolving Dependency Graphs for Multi-versioned Codebases,2017,exclude,exclude,Y
+CAND-2575,P-171 Gastroenterologists Infrequently Evaluate Health Literacy in Women and African-Americans with Inflammatory Bowel Disease,2017,exclude,exclude,Y
+CAND-2610,Schema design support for semi-structured data: Finding the sweet spot between NF and De-NF,2017,exclude,exclude,Y
+CAND-2611,Scientific publications on hepatocellular carcinoma: a global survey of the literature with a special emphasis on China’s contributions,2017,exclude,exclude,Y
+CAND-2625,SQL versus NoSQL databases for geospatial applications,2017,include,include,Y
+CAND-2680,Towards a Unifying Attribute Based Access Control Approach for NoSQL Datastores,2017,exclude,exclude,Y
+CAND-2712,A Comparative Study of Secondary Indexing Techniques in LSM-based NoSQL Databases,2018,exclude,include,N
+CAND-2715,Adverse drug reaction reporting in institutions across six Chinese provinces: a cross-sectional study,2018,exclude,exclude,Y
+CAND-2730,ANALYSIS OF RECORDS MANAGEMENT IN UNIVERSITIES IN RIVERS STATE THROUGH ELECTRONIC DATABASE MANAGEMENT SYSTEMS,2018,exclude,exclude,Y
+CAND-2747,A Review of New Trends in Cyber Attacks: A Zoom into Distributed Database Systems,2018,include,include,Y
+CAND-2775,A Survey on Multi-Keyword Ranked Search over Encrypted Outsourced Cloud Data,2018,exclude,include,N
+CAND-2882,Interleukins and their signaling pathways in the Reactome biological pathway database,2018,exclude,exclude,Y
+CAND-2921,NOSQL Database Engines for Big Data Management,2018,exclude,include,N
+CAND-2963,Review of Blockchain Technology: Types of Blockchain and Their Application,2018,exclude,exclude,Y
+CAND-3021,"The Rise of Cloud Computing: Minding Your P’S, Q's and K's",2018,exclude,exclude,Y
+CAND-3039,Validity and reliability of maternal recall of pregnancy history and service use among signing Deaf women: a cross-sectional descriptive study from South Africa,2018,exclude,exclude,Y
+CAND-3056,Access Control Models in NoSQL Databases: An Overview,2019,include,include,Y
+CAND-3064,"Advancing forest structure product validation with ground, space and unmanned aerial vehicle sensors",2019,exclude,exclude,Y
+CAND-3085,APPLICATION OF NON-RELATIONAL DATABASES IN THE SOCIAL NETWORKS,2019,exclude,include,N
+CAND-3096,A Short Survey of Data Compression Techniques for Column Oriented Databases,2019,exclude,include,N
+CAND-3150,COMPARATIVE ANALYTICS AND PREDICTIVE MODELING OF STUDENT PERFORMANCE THROUGH DATA MINING TECHNIQUES,2019,exclude,exclude,Y
+CAND-3181,Efficient Encoding and Decoding Extended Geocodes for Massive Point Cloud Data,2019,exclude,exclude,Y
+CAND-3200,FL-RMQ: A Learned Approach to Range Minimum Queries,2019,exclude,exclude,Y
+CAND-3233,Integrity Authentication for SQL Query Evaluation on Outsourced Databases: A Survey,2019,include,include,Y
+CAND-3272,Notable Internet Applications of NoSQL Cassandra Database,2019,exclude,exclude,Y
+CAND-3289,Outcomes for Pressure Ulcer Trials (OUTPUTs): protocol for the development of a core domain set for trials evaluating the clinical efficacy or effectiveness of pressure ulcer prevention interventions,2019,exclude,exclude,Y
+CAND-3325,Resolving Conflict of Interests in Recommending Reviewers for Academic Publications Using Link Prediction Techniques,2019,exclude,exclude,Y
+CAND-3358,STORING RDF DATA: A BRIEF SURVEY,2019,exclude,include,N
+CAND-3426,When Relational-Based Applications Go to NoSQL Databases: A Survey,2019,include,include,Y
+CAND-3444,"A Digital Infrastructure for Storing & Sharing Internet of Things, Wearables and App-Based Research Study Data.",2020,exclude,exclude,Y
+CAND-3480,An Overview on the Mapping Techniques in NoSQL Databases,2020,include,include,Y
+CAND-3482,Applied Services Trade Policy: A Guide to the Services Trade Policy Database and the Services Trade Restrictions Index,2020,exclude,exclude,Y
+CAND-3485,Architecture to Enhance Transparency in Supply Chain Management using Blockchain Technology,2020,exclude,exclude,Y
+CAND-3518,A survey on RDBMS and NoSQL Databases MySQL vs MongoDB,2020,include,include,Y
+CAND-3529,A Trio Model for Network Performance Evaluation,2020,exclude,exclude,Y
+CAND-3569,Comparison of MySQL and MongoDB with focus on performance,2020,include,include,Y
+CAND-3676,How well a multi-model database performs against its single-model variants: Benchmarking OrientDB with Neo4j and MongoDB,2020,include,include,Y
+CAND-3734,New Perspectives for NoSQL Database Design: A Systematic Review,2020,include,include,Y
+CAND-3755,P338: summarizing measures of proficiency in transanal total mesorectal excision—a systematic review,2020,exclude,exclude,Y
+CAND-3838,Survey On Hyperelliptic Curve Cryptography To Secure Cloud Computing,2020,exclude,exclude,Y
+CAND-3841,"Task scheduling mechanisms in fog computing: review, trends, and perspectives",2020,exclude,exclude,Y
+CAND-3854,The Rise of NoSQL Systems,2020,include,include,Y
+CAND-3883,What Skills do Students Need? A Multi-Year Study of IT/IS Knowledge and Skills in Demand by Employers,2020,exclude,exclude,Y
+CAND-3911,AI Meets Database: AI4DB and DB4AI,2021,include,include,Y
+CAND-3949,AQUA+: Query Optimization for Hybrid Database-MapReduce System,2021,exclude,exclude,Y
+CAND-3966,A smart plantation for cloning and greenery – A research plan and equitable review,2021,exclude,exclude,Y
+CAND-3967,Assessing the outcome and influencing factors of a behavioral tobacco cessation intervention within a workplace setting: A mixed methods study,2021,exclude,exclude,Y
+CAND-3980,A Survey on Locality Sensitive Hashing Algorithms and their Applications,2021,exclude,exclude,Y
+CAND-3981,A Survey on Mapping NoSQL Data to Relational Data,2021,include,include,Y
+CAND-4031,Constructing and analyzing the LSM compaction design space,2021,include,include,Y
+CAND-4043,Data Lakes: A Survey of Functions and Systems,2021,exclude,include,N
+CAND-4058,Deterministic Parallel Hypergraph Partitioning,2021,exclude,exclude,Y
+CAND-4092,"Evaluation of Distributed Databases in Hybrid Clouds and Edge Computing: Energy, Bandwidth, and Storage Consumption",2021,include,include,Y
+CAND-4110,Frameworks for Querying Databases Using Natural Language,2021,include,exclude,N
+CAND-4128,"HEALTH INFORMATION SYSTEM AS CORRELATE OF MONITORING AND EVALUATION OF PRIMARY HEALTH CARE SERVICES IN IFE CENTRAL LOCAL GOVERNMENT AREA, ILE-IFE, OSUN STATE, NIGERIA",2021,exclude,exclude,Y
+CAND-4170,Learned Sorted Table Search and Static Indexes in Small Model Space,2021,exclude,exclude,Y
+CAND-4187,Multi-Model Data Modeling and Representation: State of the Art and Research Challenges,2021,include,include,Y
+CAND-4198,Operations Research in the Blockchain Technology,2021,exclude,exclude,Y
+CAND-4293,Symbolic execution of NoSQL applications using versioned schemas,2021,exclude,exclude,Y
+CAND-4323,TopicBERT: A cognitive approach for topic detection from multimodal post stream using BERT and memory–graph,2021,exclude,exclude,Y
+CAND-4398,Analysis of Enterprise's Financial Management under Financial Sharing Service,2022,exclude,exclude,Y
+CAND-4436,A Review on Concurrency Control Techniques in Database Management Systems,2022,include,include,Y
+CAND-4444,Association of Clinical Timing with Self-Efficacy Among Student Registered Nurse Anesthetists,2022,exclude,exclude,Y
+CAND-4483,"Biometrics as a Matrix: The Short Distance between Crime and Security Systems, Prompting an Artificial Intelligence to Invent Electronic Biometrics ID!",2022,exclude,exclude,Y
+CAND-4606,Identification of research priorities in CHD: empowering patients and families through participation in the development of formal research agendas,2022,exclude,exclude,Y
+CAND-4638,LSI: A Learned Secondary Index Structure,2022,exclude,exclude,Y
+CAND-4708,RELIABILITY OF DTMS OBTAINED WITH MOBILE FAST SURVEYS TECHNIQUES,2022,exclude,exclude,Y
+CAND-4822,A framework for cognitive chatbots based on abductive–deductive inference,2023,exclude,exclude,Y
+CAND-4853,A REVIEW ON CLOUD DATABASE SERVICE,2023,include,include,Y
+CAND-4873,A Survey on Property-Preserving Database Encryption Techniques in the Cloud,2023,include,include,Y
+CAND-4932,Crime Prediction Using Machine Learning and Deep Learning: A Systematic Review and Future Directions,2023,exclude,exclude,Y
+CAND-4940,Database Meets Artificial Intelligence: A Survey (Extended Abstract),2023,include,include,Y
+CAND-4950,Deep Reinforcement Learning in Cloud Elasticity Through Offline Learning and Return Based Scaling,2023,exclude,exclude,Y
+CAND-4972,Distributed Database Systems for Large-Scale Data Management,2023,exclude,include,N
+CAND-5050,Knowledge Graphs Querying,2023,include,exclude,N
+CAND-5090,Multi-model query languages: taming the variety of big data,2023,include,include,Y
+CAND-5126,PROFESSIONAL AND PEDAGOGICAL COMPETENCE OF EDUCATIONAL AND METHODOLOGICAL CENTERS TEACHERS IN THE SPHERE OF CIVIL DEFENSE: STRUCTURE AND CONTENT,2023,exclude,exclude,Y
+CAND-5131,"Public services, environmental quality and subjective well-being in a European city: the case of Strasbourg metropolitan area",2023,exclude,exclude,Y
+CAND-5259,Advanced Encryption Techniques for Database Security in Cloud Environments,2024,include,include,Y
+CAND-5301,Artificial Intelligence Text Processing Using Retrieval-Augmented Generation: Applications in Business and Education Fields,2024,exclude,exclude,Y
+CAND-5314,A Survey on Data Markets,2024,exclude,exclude,Y
+CAND-5316,"A Survey on Federated Analytics: Taxonomy, Enabling Techniques, Applications and Open Issues",2024,exclude,exclude,Y
+CAND-5320,A synthesis of the National-scale Geochemical Survey in the last 50 years in Brazil,2024,exclude,exclude,Y
+CAND-5350,Building Trustworthy Generative Artificial Intelligence for Diabetes Care and Limb Preservation: A Medical Knowledge Extraction Case,2024,exclude,exclude,Y
+CAND-5398,CUTTANA: Scalable Graph Partitioning for Faster Distributed Graph Databases and Analytics,2024,exclude,exclude,Y
+CAND-5479,From IFCX to CXMMI: Validation and Evolution of a Customer Experience Management Maturity Model,2024,exclude,exclude,Y
+CAND-5503,How to Evaluate Distributed Coordination Systems? -- A Survey and Analysis,2024,include,include,Y
+CAND-5523,Integrating OLAP with NoSQL Databases in Big Data Environments: Systematic Mapping,2024,include,include,Y
+CAND-5544,LearnedFTL: A Learning-Based Page-Level FTL for Reducing Double Reads in Flash-Based SSDs,2024,exclude,exclude,Y
+CAND-5611,"Optimizing Blockchain Querying: A Comprehensive Review of Techniques, Challenges, and Future Directions",2024,include,include,Y
+CAND-5621,Path Querying in Graph Databases: A Systematic Mapping Study,2024,include,include,Y
+CAND-5662,Review of the Literature on Big Data and Performance Analysis of Multimodel and Polyglot Persistence,2024,include,include,Y
+CAND-5698,Testing the veracity of satellite-derived end-of-season snowline altitudes as a proxy for the glacier ELA.,2024,exclude,exclude,Y
+CAND-5706,The evolution of data storage architectures: examining the secure value of the Data Lakehouse,2024,include,include,Y
+CAND-5726,Trajectory Data Management and Mining: A Survey from Deep Learning to the LLM Era,2024,exclude,exclude,Y
+CAND-5731,Trends in colony sizes for five colonial waterbird species in the Atlantic flyway,2024,exclude,exclude,Y
+CAND-5733,Uma visão Geral de banco de dados NOSQL para big data,2024,exclude,exclude,Y
+CAND-5768,Advances in Indexing Techniques for Database Systems a Systematic Literature Review,2025,exclude,include,N
+CAND-5790,AI-Powered Database Management: Predictive Analytics for Performance Tuning,2025,include,include,Y
+CAND-5794,An AI Framework for Unlocking Actionable Insights from Text Reviews: A Cultural Heritage Case Study,2025,exclude,exclude,Y
+CAND-5815,A Review of Privacy Metrics for Privacy-Preserving Synthetic Data Generation,2025,exclude,exclude,Y
+CAND-5819,Artificial intelligence for secure and sustainable industrial control systems - A Survey of challenges and solutions,2025,exclude,exclude,Y
+CAND-5868,BigVectorBench: Heterogeneous Data Embedding and Compound Queries are Essential in Evaluating Vector Databases,2025,include,include,Y
+CAND-5967,Doctor Appointment Booking System Using MERN Stack: A Systematic Review and Analysis,2025,exclude,exclude,Y
+CAND-6072,HLN-Tree: A memory-efficient B+-Tree with huge leaf nodes and locality predictors,2025,exclude,exclude,Y
+CAND-6088,Improving Supply Chain Performance by Improving the Quality of Demand Forecasting: Theoretical Background and Bibliometric Analysis,2025,exclude,exclude,Y
+CAND-6101,"Investigating technological methods for information resource preservation in university libraries in Delta and Edo States, Nigeria",2025,exclude,exclude,Y
+CAND-6114,Large Language Model Insights for Graph Database Neo4J,2025,exclude,exclude,Y
+CAND-6118,"Learned Indexes From the One-dimensional to the Multi-dimensional Spaces: Challenges, Techniques, and Opportunities",2025,include,include,Y
+CAND-6126,LLM and Agent-Driven Data Analysis: A Systematic Approach for Enterprise Applications and System-level Deployment,2025,exclude,exclude,Y
+CAND-6131,Machine Learning for Graph Data Management and Query Processing,2025,include,include,Y
+CAND-6152,National and global glacier monitoring efforts &amp;#8211; a comparative assessment,2025,exclude,exclude,Y
+CAND-6161,"NoSQL Databases: Models, Architectures, and Trends for Scalable Data Management",2025,include,include,Y
+CAND-6171,OPTIMIZING DATA INTEGRITY AND CONSISTENCY IN DISTRIBUTED FINANCIAL REPORTING SYSTEMS: A COMPARATIVE ANALYSIS OF MODERN STORAGE TECHNIQUES,2025,exclude,include,N
+CAND-6172,Optimizing Data Lakehouse Architectures for Scalable Real-Time Analytics,2025,include,include,Y
+CAND-6194,Preface to the Special Issue on Cloud-native Database Technologies and Systems,2025,exclude,exclude,Y
+CAND-6259,Survey of Attacks and Defenses on Consensus Algorithms for Secure Data Replication in Distributed Systems,2025,include,include,Y
+CAND-6298,The Lakehouse Paradigm: Converging Data Lakes and Warehouses for Integrated Enterprise Analytics,2025,exclude,include,N
+CAND-6399,Bridging AI and Traffic Simulation: A Robust and Comprehensive Framework for LLM-Based AI Replanning Agents in MATSim,2026,exclude,exclude,Y
+CAND-6420,Data analytics algorithms in property graph databases: A survey,2026,include,include,Y
+CAND-6548,Physical availability and affordability: an analysis of residential water supply services in Brazilian capitals,2026,exclude,exclude,Y
+CAND-6561,Refining storage strategy through index selection methods in multi-model database systems: A survey,2026,include,include,Y
+CAND-6591,The meaning of life as an educational construct in scientific research from 1980 to 2024,2026,exclude,exclude,Y

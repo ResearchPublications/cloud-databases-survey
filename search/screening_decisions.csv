@@ -9724,3 +9724,4 @@ CAND-2970,Iancu2018DBaaS,,venue_audit,retain,QA7-tier,Informatica Economica: DOA
 CAND-2816,Segalin2018DBaaS,,venue_audit,retain,QA7-tier,iSys (SBC): society journal; QA7 remains 0.5,2026-07-05
 CAND-5445,Falcao2024Bench,,venue_audit,retain,QA7-tier,RITA (UFRGS): university journal; QA7 remains 0.5,2026-07-05
 Kaur2021NoSQLReview,Kaur2021NoSQLReview,,venue_audit,retain,QA7-tier,ARIMA (episciences): overlay journal; QA7 remains 0.5,2026-07-05
+Sanka2022CloudSecSurvey,Cloud Computing Security: Threats and Mitigation Strategies--A Systematic Literature Review,2021,scope_audit,exclude,EC2,general cloud-computing security SLR; no database-systems focus; retained as support citation,2026-07-05

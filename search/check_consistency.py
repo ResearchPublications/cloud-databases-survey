@@ -166,6 +166,44 @@ if dec_csv.exists():
         else:
             ok("all catalog entries meet the QA>=6 threshold")
 
+# ---- matrix <-> catalog cross-check ----
+mat_path = HERE / "challenge_matrix.csv"
+if mat_path.exists():
+    mat = list(csv.DictReader(open(mat_path)))
+    mat_sids = {r["sid"] for r in mat}
+    cat_sids = {f"S{i}" for i in range(1, N + 1)}
+    if mat_sids != cat_sids:
+        fail(f"challenge_matrix sids != catalog sids: {mat_sids ^ cat_sids}")
+    else:
+        ok(f"challenge_matrix covers all {N} catalog entries")
+    badv = [(r["sid"], k) for r in mat for k, v in r.items()
+            if k.startswith("c") and v not in ("0", "1", "2")]
+    if badv:
+        fail(f"non-0/1/2 codes in matrix: {badv[:5]}")
+    # Table 8 total (substantive pairs) equals matrix sum of code==2
+    subst = sum(1 for r in mat for k, v in r.items() if k.startswith("c") and v == "2")
+    tm = re.search(r"Total \(paper-challenge pairs\)\}\}(?:.*?)\\textbf\{(\d+)\} \\\\", TEX, re.S)
+    if tm and int(tm.group(1)) != subst:
+        fail(f"Table 8 grand total {tm.group(1)} != matrix substantive pairs {subst}")
+    elif tm:
+        ok(f"Table 8 grand total matches matrix ({subst})")
+
+# ---- lifecycle-example S-IDs carry that phase ----
+lc = re.search(r"\\label\{tab:lifecycle-phases\}.*?\\end\{tabular\}", TEX, re.S)
+if lc and (HERE / "catalog.csv").exists():
+    phases_by_sid = {}
+    for r in csv.DictReader(open(HERE / "catalog.csv")):
+        phases_by_sid[r["sid"]] = r["phases"]
+    phase_name = {"Design": "Design", "Deployment": "Deploy", "Operation": "Operate",
+                  "Optimization": "Optimize", "Evolution": "Evolve"}
+    for line in lc.group(0).split("\\\\"):
+        mrow = re.match(r"\s*(Design|Deployment|Operation|Optimization|Evolution)\b.*?&\s*((?:S\d+[,\s]*)+)&", line)
+        if mrow:
+            phase = phase_name[mrow.group(1)]
+            for sid in re.findall(r"S\d+", mrow.group(2)):
+                if phase not in phases_by_sid.get(sid, ""):
+                    fail(f"lifecycle table: {sid} listed under {phase} but catalog says {phases_by_sid.get(sid)}")
+
 print()
 if failures:
     print(f"{len(failures)} FAILURES")
