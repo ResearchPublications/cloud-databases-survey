@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
@@ -6,617 +6,392 @@
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
 \bibitem{gartner2024dbms}
-{Gartner, Inc.}, Magic quadrant for cloud database management systems, Gartner
-  Research, accessed: 2025-01-15 (2024).
+{Gartner, Inc.}, Magic quadrant for cloud database management systems, Gartner Research, accessed: 2025-01-15 (2024).
 
 \bibitem{Verbitski2017}
-A.~Verbitski, A.~Gupta, D.~Saha, M.~Brahmadesam, K.~Gupta, R.~Mittal,
-  S.~Krishnamurthy, S.~Maurice, T.~Kharatishvili, X.~Bao, Amazon {Aurora}:
-  Design considerations for high throughput cloud-native relational databases,
-  in: Proceedings of the ACM SIGMOD International Conference on Management of
-  Data, 2017, pp. 1041--1052.
-\newblock \href {https://doi.org/10.1145/3035918.3056101}
-  {\path{doi:10.1145/3035918.3056101}}.
+A.~Verbitski, A.~Gupta, D.~Saha, M.~Brahmadesam, K.~Gupta, R.~Mittal, S.~Krishnamurthy, S.~Maurice, T.~Kharatishvili, X.~Bao, Amazon {Aurora}: Design considerations for high throughput cloud-native relational databases, in: Proceedings of the ACM SIGMOD International Conference on Management of Data, 2017, pp. 1041--1052.
+\newblock \href {https://doi.org/10.1145/3035918.3056101} {\path{doi:10.1145/3035918.3056101}}.
 
 \bibitem{Dageville2016}
-B.~Dageville, T.~Cruanes, M.~Zukowski, V.~Antonov, A.~Avanes, J.~Bock,
-  J.~Claybaugh, D.~Engovatov, M.~Hentschel, J.~Huang, A.~W. Lee, A.~Motivala,
-  A.~Q. Munir, S.~Pelley, P.~Povinec, G.~Rahn, S.~Triantafyllis,
-  P.~Unterbrunner, The {Snowflake} elastic data warehouse, in: Proceedings of
-  the ACM SIGMOD International Conference on Management of Data, 2016, pp.
-  215--226.
-\newblock \href {https://doi.org/10.1145/2882903.2903741}
-  {\path{doi:10.1145/2882903.2903741}}.
+B.~Dageville, T.~Cruanes, M.~Zukowski, V.~Antonov, A.~Avanes, J.~Bock, J.~Claybaugh, D.~Engovatov, M.~Hentschel, J.~Huang, A.~W. Lee, A.~Motivala, A.~Q. Munir, S.~Pelley, P.~Povinec, G.~Rahn, S.~Triantafyllis, P.~Unterbrunner, The {Snowflake} elastic data warehouse, in: Proceedings of the ACM SIGMOD International Conference on Management of Data, 2016, pp. 215--226.
+\newblock \href {https://doi.org/10.1145/2882903.2903741} {\path{doi:10.1145/2882903.2903741}}.
 
 \bibitem{Antonopoulos2019}
-P.~Antonopoulos, A.~Budovski, C.~Diaconu, A.~H. Saenz, J.~Hu, H.~Kodavalla,
-  D.~Kossmann, S.~Lingam, U.~F. Minhas, N.~Prakash, V.~Purber, H.~Qu, C.~S.
-  Ravella, K.~Reisteter, S.~Shrotri, D.~Tang, V.~Wakade, {Socrates}: The new
-  {SQL} server in the cloud, in: Proceedings of the ACM SIGMOD International
-  Conference on Management of Data, 2019, pp. 1743--1756.
-\newblock \href {https://doi.org/10.1145/3299869.3314047}
-  {\path{doi:10.1145/3299869.3314047}}.
+P.~Antonopoulos, A.~Budovski, C.~Diaconu, A.~H. Saenz, J.~Hu, H.~Kodavalla, D.~Kossmann, S.~Lingam, U.~F. Minhas, N.~Prakash, V.~Purber, H.~Qu, C.~S. Ravella, K.~Reisteter, S.~Shrotri, D.~Tang, V.~Wakade, {Socrates}: The new {SQL} server in the cloud, in: Proceedings of the ACM SIGMOD International Conference on Management of Data, 2019, pp. 1743--1756.
+\newblock \href {https://doi.org/10.1145/3299869.3314047} {\path{doi:10.1145/3299869.3314047}}.
 
 \bibitem{Pan2024VectorDB}
-J.~J. Pan, J.~Wang, G.~Li, Survey of vector database management systems, The
-  VLDB Journal 33~(5) (2024) 1371--1400.
-\newblock \href {https://doi.org/10.1007/s00778-024-00864-x}
-  {\path{doi:10.1007/s00778-024-00864-x}}.
+J.~J. Pan, J.~Wang, G.~Li, Survey of vector database management systems, The VLDB Journal 33~(5) (2024) 1371--1400.
+\newblock \href {https://doi.org/10.1007/s00778-024-00864-x} {\path{doi:10.1007/s00778-024-00864-x}}.
 
 \bibitem{Li2024CloudNativeSurvey}
-H.~Dong, C.~Zhang, G.~Li, H.~Zhang, Cloud-native databases: A survey, IEEE
-  Transactions on Knowledge and Data Engineering 36~(12) (2024) 7772--7791.
-\newblock \href {https://doi.org/10.1109/TKDE.2024.3397508}
-  {\path{doi:10.1109/TKDE.2024.3397508}}.
+H.~Dong, C.~Zhang, G.~Li, H.~Zhang, Cloud-native databases: A survey, IEEE Transactions on Knowledge and Data Engineering 36~(12) (2024) 7772--7791.
+\newblock \href {https://doi.org/10.1109/TKDE.2024.3397508} {\path{doi:10.1109/TKDE.2024.3397508}}.
 
 \bibitem{Haas2024HTAPSurvey}
-C.~Zhang, G.~Li, J.~Zhang, X.~Zhang, J.~Feng, {HTAP} databases: A survey, arXiv
-  preprint arXiv:2404.15670 (2024).
+C.~Zhang, G.~Li, J.~Zhang, X.~Zhang, J.~Feng, {HTAP} databases: A survey, arXiv preprint arXiv:2404.15670 (2024).
 \newblock \href {http://arxiv.org/abs/2404.15670} {\path{arXiv:2404.15670}}.
 
 \bibitem{Angles2020GraphDB}
-R.~Angles, M.~Arenas, P.~Barcel{\'o}, A.~Hogan, J.~Reutter, D.~Vrgoc,
-  Foundations of modern query languages for graph databases, ACM Computing
-  Surveys 50~(5) (2017) 1--40.
+R.~Angles, M.~Arenas, P.~Barcel{\'o}, A.~Hogan, J.~Reutter, D.~Vrgoc, Foundations of modern query languages for graph databases, ACM Computing Surveys 50~(5) (2017) 1--40.
 \newblock \href {https://doi.org/10.1145/3104031} {\path{doi:10.1145/3104031}}.
 
 \bibitem{Zhou2022AI4DB}
-X.~Zhou, C.~Chai, G.~Li, J.~Sun, Database meets artificial intelligence: A
-  survey, IEEE Transactions on Knowledge and Data Engineering 34~(3) (2022)
-  1096--1116.
-\newblock \href {https://doi.org/10.1109/TKDE.2020.2994641}
-  {\path{doi:10.1109/TKDE.2020.2994641}}.
+X.~Zhou, C.~Chai, G.~Li, J.~Sun, Database meets artificial intelligence: A survey, IEEE Transactions on Knowledge and Data Engineering 34~(3) (2022) 1096--1116.
+\newblock \href {https://doi.org/10.1109/TKDE.2020.2994641} {\path{doi:10.1109/TKDE.2020.2994641}}.
 
 \bibitem{Harby2022Lakehouse}
-A.~A. Harby, F.~Zulkernine, From data warehouse to lakehouse: A comparative
-  review, in: 2022 IEEE International Conference on Big Data (Big Data), IEEE,
-  2022, pp. 389--395.
-\newblock \href {https://doi.org/10.1109/BigData55660.2022.10020719}
-  {\path{doi:10.1109/BigData55660.2022.10020719}}.
+A.~A. Harby, F.~Zulkernine, From data warehouse to lakehouse: A comparative review, in: 2022 IEEE International Conference on Big Data (Big Data), IEEE, 2022, pp. 389--395.
+\newblock \href {https://doi.org/10.1109/BigData55660.2022.10020719} {\path{doi:10.1109/BigData55660.2022.10020719}}.
 
 \bibitem{Davoudian2018NoSQL}
-A.~Davoudian, L.~Chen, M.~Liu, A survey on {NoSQL} stores, ACM Computing
-  Surveys 51~(2) (2018) 1--43.
+A.~Davoudian, L.~Chen, M.~Liu, A survey on {NoSQL} stores, ACM Computing Surveys 51~(2) (2018) 1--43.
 \newblock \href {https://doi.org/10.1145/3158661} {\path{doi:10.1145/3158661}}.
 
 \bibitem{Kaur2021NoSQLReview}
-D.~Kpekpassi, D.~Faye, {NoSQL} databases: A survey, Revue Africaine de
-  Recherche en Informatique et Math{\'e}matiques Appliqu{\'e}es (ARIMA) (2025).
-\newblock \href {https://doi.org/10.46298/arima.13970}
-  {\path{doi:10.46298/arima.13970}}.
+D.~Kpekpassi, D.~Faye, {NoSQL} databases: A survey, Revue Africaine de Recherche en Informatique et Math{\'e}matiques Appliqu{\'e}es (ARIMA) (2025).
+\newblock \href {https://doi.org/10.46298/arima.13970} {\path{doi:10.46298/arima.13970}}.
 
 \bibitem{Gomes2024EdgeFog}
-L.~M.~M. Ferreira, F.~Coelho, J.~Pereira, Databases in edge and fog
-  environments: A survey, ACM Computing Surveys 56~(11) (2024) 1--40.
+L.~M.~M. Ferreira, F.~Coelho, J.~Pereira, Databases in edge and fog environments: A survey, ACM Computing Surveys 56~(11) (2024) 1--40.
 \newblock \href {https://doi.org/10.1145/3666001} {\path{doi:10.1145/3666001}}.
 
 \bibitem{Kitchenham2007}
-B.~Kitchenham, S.~Charters, Guidelines for performing systematic literature
-  reviews in software engineering, Technical Report EBSE-2007-01, Keele
-  University and Durham University (2007).
+B.~Kitchenham, S.~Charters, Guidelines for performing systematic literature reviews in software engineering, Technical Report EBSE-2007-01, Keele University and Durham University (2007).
 
 \bibitem{AmazonAurora2023}
-{Amazon Web Services}, Amazon {Aurora} documentation,
-  \url{https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/},
-  accessed: 2025-01-15 (2023).
+{Amazon Web Services}, Amazon {Aurora} documentation, \url{https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/}, accessed: 2025-01-15 (2023).
 
 \bibitem{Armbrust2021Lakehouse}
-M.~Armbrust, A.~Ghodsi, R.~Xin, M.~Zaharia, Lakehouse: A new generation of open
-  platforms that unify data warehousing and advanced analytics, in: Proceedings
-  of CIDR, 2021.
+M.~Armbrust, A.~Ghodsi, R.~Xin, M.~Zaharia, Lakehouse: A new generation of open platforms that unify data warehousing and advanced analytics, in: Proceedings of CIDR, 2021.
 
 \bibitem{Taft2020Cockroach}
-R.~Taft, I.~Sharif, A.~Matei, N.~VanBenschoten, J.~Lewis, T.~Grieger, K.~Niemi,
-  A.~Woods, A.~Biber, R.~Poss, P.~Bardea, A.~Ranade, B.~Darnell, B.~Gruneir,
-  J.~Jaffray, L.~Zhang, P.~Mattis, {CockroachDB}: The resilient geo-distributed
-  {SQL} database, in: Proceedings of the ACM SIGMOD International Conference on
-  Management of Data, 2020, pp. 1493--1509.
-\newblock \href {https://doi.org/10.1145/3318464.3386134}
-  {\path{doi:10.1145/3318464.3386134}}.
+R.~Taft, I.~Sharif, A.~Matei, N.~VanBenschoten, J.~Lewis, T.~Grieger, K.~Niemi, A.~Woods, A.~Biber, R.~Poss, P.~Bardea, A.~Ranade, B.~Darnell, B.~Gruneir, J.~Jaffray, L.~Zhang, P.~Mattis, {CockroachDB}: The resilient geo-distributed {SQL} database, in: Proceedings of the ACM SIGMOD International Conference on Management of Data, 2020, pp. 1493--1509.
+\newblock \href {https://doi.org/10.1145/3318464.3386134} {\path{doi:10.1145/3318464.3386134}}.
 
 \bibitem{Cao2021PolarDB}
-W.~Cao, Y.~Zhang, X.~Yang, F.~Li, S.~Wang, Q.~Hu, X.~Cheng, Z.~Chen, Z.~Liu,
-  J.~Fang, B.~Wang, Y.~Wang, H.~Sun, Z.~Yang, Z.~Cheng, S.~Chen, J.~Wu, W.~Hu,
-  J.~Zhao, Y.~Gao, S.~Cai, Y.~Zhang, J.~Tong, {PolarDB} serverless: A cloud
-  native database for disaggregated data centers, Proceedings of the ACM SIGMOD
-  International Conference on Management of Data (2021) 2477--2489\href
-  {https://doi.org/10.1145/3448016.3457560}
-  {\path{doi:10.1145/3448016.3457560}}.
+W.~Cao, Y.~Zhang, X.~Yang, F.~Li, S.~Wang, Q.~Hu, X.~Cheng, Z.~Chen, Z.~Liu, J.~Fang, B.~Wang, Y.~Wang, H.~Sun, Z.~Yang, Z.~Cheng, S.~Chen, J.~Wu, W.~Hu, J.~Zhao, Y.~Gao, S.~Cai, Y.~Zhang, J.~Tong, {PolarDB} serverless: A cloud native database for disaggregated data centers, Proceedings of the ACM SIGMOD International Conference on Management of Data (2021) 2477--2489\href {https://doi.org/10.1145/3448016.3457560} {\path{doi:10.1145/3448016.3457560}}.
 
 \bibitem{Huang2020TiDB}
-D.~Huang, Q.~Liu, Q.~Cui, Z.~Fang, X.~Ma, F.~Xu, L.~Shen, L.~Tang, Y.~Zhou,
-  M.~Huang, W.~Wei, C.~Liu, J.~Zhang, J.~Li, X.~Wu, L.~Song, R.~Sun, S.~Yu,
-  L.~Zhao, N.~Cameron, L.~Pei, X.~Tang, {TiDB}: A {Raft}-based {HTAP} database,
-  in: Proceedings of the VLDB Endowment, Vol.~13, 2020, pp. 3072--3084.
-\newblock \href {https://doi.org/10.14778/3415478.3415535}
-  {\path{doi:10.14778/3415478.3415535}}.
+D.~Huang, Q.~Liu, Q.~Cui, Z.~Fang, X.~Ma, F.~Xu, L.~Shen, L.~Tang, Y.~Zhou, M.~Huang, W.~Wei, C.~Liu, J.~Zhang, J.~Li, X.~Wu, L.~Song, R.~Sun, S.~Yu, L.~Zhao, N.~Cameron, L.~Pei, X.~Tang, {TiDB}: A {Raft}-based {HTAP} database, in: Proceedings of the VLDB Endowment, Vol.~13, 2020, pp. 3072--3084.
+\newblock \href {https://doi.org/10.14778/3415478.3415535} {\path{doi:10.14778/3415478.3415535}}.
 
 \bibitem{Yang2022OceanBase}
-Z.~Yang, C.~Yang, F.~Han, M.~Zhuang, B.~Yang, Z.~Lin, H.~Xu, G.~Li, L.~Ran,
-  S.~Wang, Y.~Li, R.~Pan, L.~Guo, {OceanBase}: A 707 million {tpmC} distributed
-  relational database system, in: Proceedings of the VLDB Endowment, Vol.~15,
-  2022, pp. 3385--3397.
-\newblock \href {https://doi.org/10.14778/3554821.3554830}
-  {\path{doi:10.14778/3554821.3554830}}.
+Z.~Yang, C.~Yang, F.~Han, M.~Zhuang, B.~Yang, Z.~Lin, H.~Xu, G.~Li, L.~Ran, S.~Wang, Y.~Li, R.~Pan, L.~Guo, {OceanBase}: A 707 million {tpmC} distributed relational database system, in: Proceedings of the VLDB Endowment, Vol.~15, 2022, pp. 3385--3397.
+\newblock \href {https://doi.org/10.14778/3554821.3554830} {\path{doi:10.14778/3554821.3554830}}.
 
 \bibitem{Farber2012}
-F.~F{\"a}rber, S.~K. Cha, J.~Primsch, C.~Bornh{\"o}vd, S.~Siber, W.~Lehner,
-  {SAP HANA} database: Data management for modern business applications, in:
-  SIGMOD Record, Vol.~40, 2012, pp. 45--51.
-\newblock \href {https://doi.org/10.1145/2094114.2094126}
-  {\path{doi:10.1145/2094114.2094126}}.
+F.~F{\"a}rber, S.~K. Cha, J.~Primsch, C.~Bornh{\"o}vd, S.~Siber, W.~Lehner, {SAP HANA} database: Data management for modern business applications, in: SIGMOD Record, Vol.~40, 2012, pp. 45--51.
+\newblock \href {https://doi.org/10.1145/2094114.2094126} {\path{doi:10.1145/2094114.2094126}}.
 
 \bibitem{Elbattah2015Freebase}
-M.~Elbattah, M.~Roushdy, M.~Aref, A.-B.~M. Salem, Large-scale ontology storage
-  and query using graph database-oriented approach: The case of {Freebase}, in:
-  2015 IEEE Seventh International Conference on Intelligent Computing and
-  Information Systems (ICICIS), IEEE, 2015.
+M.~Elbattah, M.~Roushdy, M.~Aref, A.-B.~M. Salem, Large-scale ontology storage and query using graph database-oriented approach: The case of {Freebase}, in: 2015 IEEE Seventh International Conference on Intelligent Computing and Information Systems (ICICIS), IEEE, 2015.
 
 \bibitem{Coimbra2025GraphDB}
-M.~E. Coimbra, L.~Svitakova, D.~Vrgo\v{c}, A.~P. Francisco, L.~Veiga, Survey:
-  Graph databases, arXiv preprint arXiv:2505.24758 (2025).
+M.~E. Coimbra, L.~Svitakova, D.~Vrgo\v{c}, A.~P. Francisco, L.~Veiga, Survey: Graph databases, arXiv preprint arXiv:2505.24758 (2025).
 \newblock \href {http://arxiv.org/abs/2505.24758} {\path{arXiv:2505.24758}}.
 
 \bibitem{Xiao2018OBDA}
-G.~Xiao, D.~Calvanese, R.~Kontchakov, D.~Lembo, A.~Poggi, R.~Rosati,
-  M.~Zakharyaschev, Ontology-based data access: A survey, Proceedings of the
-  International Joint Conference on Artificial Intelligence (2018) 5511--5519.
+G.~Xiao, D.~Calvanese, R.~Kontchakov, D.~Lembo, A.~Poggi, R.~Rosati, M.~Zakharyaschev, Ontology-based data access: A survey, Proceedings of the International Joint Conference on Artificial Intelligence (2018) 5511--5519.
 
 \bibitem{Halevy2016Goods}
-A.~Halevy, F.~Korn, N.~F. Noy, C.~Olston, N.~Polyzotis, S.~Roy, S.~E. Whang,
-  Goods: Organizing {Google}'s datasets, in: Proceedings of the ACM SIGMOD
-  International Conference on Management of Data, 2016, pp. 795--806.
-\newblock \href {https://doi.org/10.1145/2882903.2903730}
-  {\path{doi:10.1145/2882903.2903730}}.
+A.~Halevy, F.~Korn, N.~F. Noy, C.~Olston, N.~Polyzotis, S.~Roy, S.~E. Whang, Goods: Organizing {Google}'s datasets, in: Proceedings of the ACM SIGMOD International Conference on Management of Data, 2016, pp. 795--806.
+\newblock \href {https://doi.org/10.1145/2882903.2903730} {\path{doi:10.1145/2882903.2903730}}.
 
 \bibitem{Leis2023CloudPricing}
-V.~Leis, M.~Kuschewski, Towards cost-optimal query processing in the cloud, in:
-  Proceedings of the VLDB Endowment, Vol.~14, 2021, pp. 1606--1612.
-\newblock \href {https://doi.org/10.14778/3461535.3461549}
-  {\path{doi:10.14778/3461535.3461549}}.
+V.~Leis, M.~Kuschewski, Towards cost-optimal query processing in the cloud, in: Proceedings of the VLDB Endowment, Vol.~14, 2021, pp. 1606--1612.
+\newblock \href {https://doi.org/10.14778/3461535.3461549} {\path{doi:10.14778/3461535.3461549}}.
 
 \bibitem{Mateljan2010ROI}
-V.~Mateljan, D.~{\v{C}}i{\v{s}}i{\'c}, D.~Ogrizovi{\'c}, Cloud
-  database-as-a-service ({DaaS}) -- {ROI}, in: Proceedings of the 33rd
-  International Convention MIPRO, IEEE, 2010.
+V.~Mateljan, D.~{\v{C}}i{\v{s}}i{\'c}, D.~Ogrizovi{\'c}, Cloud database-as-a-service ({DaaS}) -- {ROI}, in: Proceedings of the 33rd International Convention MIPRO, IEEE, 2010.
 
 \bibitem{Muller2020Serverless}
-I.~M{\"u}ller, R.~Marroqu{\'i}n, G.~Alonso, Lambada: Interactive data analytics
-  on cold data using serverless cloud infrastructure, in: Proceedings of the
-  ACM SIGMOD International Conference on Management of Data, 2020, pp.
-  115--130.
-\newblock \href {https://doi.org/10.1145/3318464.3389758}
-  {\path{doi:10.1145/3318464.3389758}}.
+I.~M{\"u}ller, R.~Marroqu{\'i}n, G.~Alonso, Lambada: Interactive data analytics on cold data using serverless cloud infrastructure, in: Proceedings of the ACM SIGMOD International Conference on Management of Data, 2020, pp. 115--130.
+\newblock \href {https://doi.org/10.1145/3318464.3389758} {\path{doi:10.1145/3318464.3389758}}.
 
 \bibitem{GDPR2016}
-{European Parliament and Council of the European Union}, Regulation ({EU})
-  2016/679 of the {European Parliament} and of the {Council} ({General Data
-  Protection Regulation}), Official Journal of the European Union (2016).
+{European Parliament and Council of the European Union}, Regulation ({EU}) 2016/679 of the {European Parliament} and of the {Council} ({General Data Protection Regulation}), Official Journal of the European Union (2016).
 
 \bibitem{Politou2018GDPR}
-E.~Politou, E.~Alepis, C.~Patsakis, Forgetting personal data and revoking
-  consent under the {GDPR}: Challenges and proposed solutions, Journal of
-  Cybersecurity 4~(1) (2018) tyy001.
-\newblock \href {https://doi.org/10.1093/cybsec/tyy001}
-  {\path{doi:10.1093/cybsec/tyy001}}.
+E.~Politou, E.~Alepis, C.~Patsakis, Forgetting personal data and revoking consent under the {GDPR}: Challenges and proposed solutions, Journal of Cybersecurity 4~(1) (2018) tyy001.
+\newblock \href {https://doi.org/10.1093/cybsec/tyy001} {\path{doi:10.1093/cybsec/tyy001}}.
 
 \bibitem{Curino2011DBaaS}
-C.~Curino, E.~P. Jones, R.~A. Popa, N.~Malviya, E.~Wu, S.~Madden,
-  H.~Balakrishnan, N.~Zeldovich, Relational cloud: A database-as-a-service for
-  the cloud, in: Proceedings of CIDR, 2011.
+C.~Curino, E.~P. Jones, R.~A. Popa, N.~Malviya, E.~Wu, S.~Madden, H.~Balakrishnan, N.~Zeldovich, Relational cloud: A database-as-a-service for the cloud, in: Proceedings of CIDR, 2011.
 
 \bibitem{Lehner2010DBaaS}
-W.~Lehner, K.-U. Sattler, Database as a service ({DBaaS}), in: 2010 IEEE 26th
-  International Conference on Data Engineering (ICDE), IEEE, 2010, pp.
-  1216--1217.
+W.~Lehner, K.-U. Sattler, Database as a service ({DBaaS}), in: 2010 IEEE 26th International Conference on Data Engineering (ICDE), IEEE, 2010, pp. 1216--1217.
 
 \bibitem{AlShehri2013DBaaS}
-W.~A. Shehri, Cloud database database as a service, International Journal of
-  Database Management Systems (IJDMS) 5~(2) (2013) 1--12.
-\newblock \href {https://doi.org/10.5121/ijdms.2013.5201}
-  {\path{doi:10.5121/ijdms.2013.5201}}.
+W.~A. Shehri, Cloud database database as a service, International Journal of Database Management Systems (IJDMS) 5~(2) (2013) 1--12.
+\newblock \href {https://doi.org/10.5121/ijdms.2013.5201} {\path{doi:10.5121/ijdms.2013.5201}}.
 
 \bibitem{Grolinger2013CloudData}
-K.~Grolinger, W.~A. Higashino, A.~Tiwari, M.~A.~M. Capretz, Data management in
-  cloud environments: {NoSQL} and {NewSQL} data stores, Journal of Cloud
-  Computing: Advances, Systems and Applications 2~(1) (2013) 22.
-\newblock \href {https://doi.org/10.1186/2192-113X-2-22}
-  {\path{doi:10.1186/2192-113X-2-22}}.
+K.~Grolinger, W.~A. Higashino, A.~Tiwari, M.~A.~M. Capretz, Data management in cloud environments: {NoSQL} and {NewSQL} data stores, Journal of Cloud Computing: Advances, Systems and Applications 2~(1) (2013) 22.
+\newblock \href {https://doi.org/10.1186/2192-113X-2-22} {\path{doi:10.1186/2192-113X-2-22}}.
 
 \bibitem{Deka2014CloudDBSurvey}
-G.~C. Deka, A survey of cloud database systems, IT Professional 16~(2) (2014)
-  50--57.
+G.~C. Deka, A survey of cloud database systems, IT Professional 16~(2) (2014) 50--57.
 
 \bibitem{Pavlo2017SelfDriving}
-A.~Pavlo, G.~Angulo, J.~Arulraj, H.~Lin, J.~Lin, L.~Ma, P.~Menon, T.~C. Mowry,
-  M.~Perron, I.~Quah, S.~Santurkar, A.~Tomasic, S.~Toor, D.~V. Aken, Z.~Wang,
-  Y.~Wu, R.~Xian, T.~Zhang, Self-driving database management systems, in:
-  Proceedings of CIDR, 2017.
+A.~Pavlo, G.~Angulo, J.~Arulraj, H.~Lin, J.~Lin, L.~Ma, P.~Menon, T.~C. Mowry, M.~Perron, I.~Quah, S.~Santurkar, A.~Tomasic, S.~Toor, D.~V. Aken, Z.~Wang, Y.~Wu, R.~Xian, T.~Zhang, Self-driving database management systems, in: Proceedings of CIDR, 2017.
 
 \bibitem{Corbett2013Spanner}
-J.~C. Corbett, J.~Dean, M.~Epstein, A.~Fikes, C.~Frost, J.~J. Furman,
-  S.~Ghemawat, A.~Gubarev, C.~Heiser, P.~Hochschild, W.~Hsieh, S.~Kanthak,
-  E.~Kogan, H.~Li, A.~Lloyd, S.~Melnik, D.~Mwaura, D.~Nagle, S.~Quinlan,
-  R.~Rao, L.~Rolig, Y.~Saito, M.~Szymaniak, C.~Taylor, R.~Wang, D.~Woodford,
-  {Spanner}: {Google}'s globally distributed database, ACM Transactions on
-  Computer Systems 31~(3) (2013) 1--22.
+J.~C. Corbett, J.~Dean, M.~Epstein, A.~Fikes, C.~Frost, J.~J. Furman, S.~Ghemawat, A.~Gubarev, C.~Heiser, P.~Hochschild, W.~Hsieh, S.~Kanthak, E.~Kogan, H.~Li, A.~Lloyd, S.~Melnik, D.~Mwaura, D.~Nagle, S.~Quinlan, R.~Rao, L.~Rolig, Y.~Saito, M.~Szymaniak, C.~Taylor, R.~Wang, D.~Woodford, {Spanner}: {Google}'s globally distributed database, ACM Transactions on Computer Systems 31~(3) (2013) 1--22.
 \newblock \href {https://doi.org/10.1145/2491245} {\path{doi:10.1145/2491245}}.
 
 \bibitem{Gessert2016NoSQL}
-F.~Gessert, W.~Wingerath, S.~Friedrich, N.~Ritter, {NoSQL} database systems: a
-  survey and decision guidance, Computer Science -- Research and Development
-  32~(3--4) (2017) 353--365.
-\newblock \href {https://doi.org/10.1007/s00450-016-0334-3}
-  {\path{doi:10.1007/s00450-016-0334-3}}.
+F.~Gessert, W.~Wingerath, S.~Friedrich, N.~Ritter, {NoSQL} database systems: a survey and decision guidance, Computer Science -- Research and Development 32~(3--4) (2017) 353--365.
+\newblock \href {https://doi.org/10.1007/s00450-016-0334-3} {\path{doi:10.1007/s00450-016-0334-3}}.
 
 \bibitem{Khasawneh2020SQLNewSQL}
-T.~N. Khasawneh, M.~H. AL-Sahlee, A.~A. Safia, {SQL}, {NewSQL}, and {NoSQL}
-  databases: A comparative survey, in: 2020 11th International Conference on
-  Information and Communication Systems (ICICS), IEEE, 2020, pp. 013--021.
+T.~N. Khasawneh, M.~H. AL-Sahlee, A.~A. Safia, {SQL}, {NewSQL}, and {NoSQL} databases: A comparative survey, in: 2020 11th International Conference on Information and Communication Systems (ICICS), IEEE, 2020, pp. 013--021.
 
 \bibitem{Han2011NoSQL}
-J.~Han, H.~E, G.~Le, J.~Du, Survey on {NoSQL} database, in: 2011 6th
-  International Conference on Pervasive Computing and Applications (ICPCA),
-  IEEE, 2011, pp. 363--366.
+J.~Han, H.~E, G.~Le, J.~Du, Survey on {NoSQL} database, in: 2011 6th International Conference on Pervasive Computing and Applications (ICPCA), IEEE, 2011, pp. 363--366.
 
 \bibitem{Tudorica2011NoSQLCmp}
-B.~G. Tudorica, C.~Bucur, A comparison between several {NoSQL} databases with
-  comments and notes, in: 2011 RoEduNet International Conference 10th Edition:
-  Networking in Education and Research, IEEE, 2011.
+B.~G. Tudorica, C.~Bucur, A comparison between several {NoSQL} databases with comments and notes, in: 2011 RoEduNet International Conference 10th Edition: Networking in Education and Research, IEEE, 2011.
 
 \bibitem{Bader2017TSDB}
-A.~Bader, O.~Kopp, M.~Falkenthal, Survey and comparison of open source time
-  series databases, in: Datenbanksysteme f\"ur Business, Technologie und Web
-  (BTW 2017) -- Workshopband, Lecture Notes in Informatics (LNI), Gesellschaft
-  f\"ur Informatik, 2017.
+A.~Bader, O.~Kopp, M.~Falkenthal, Survey and comparison of open source time series databases, in: Datenbanksysteme f\"ur Business, Technologie und Web (BTW 2017) -- Workshopband, Lecture Notes in Informatics (LNI), Gesellschaft f\"ur Informatik, 2017.
 
 \bibitem{Ozsoyoglu1995Temporal}
-G.~\"Ozsoyo\u{g}lu, R.~T. Snodgrass, Temporal and real-time databases: A
-  survey, IEEE Transactions on Knowledge and Data Engineering 7~(4) (1995)
-  513--532.
-\newblock \href {https://doi.org/10.1109/69.404027}
-  {\path{doi:10.1109/69.404027}}.
+G.~\"Ozsoyo\u{g}lu, R.~T. Snodgrass, Temporal and real-time databases: A survey, IEEE Transactions on Knowledge and Data Engineering 7~(4) (1995) 513--532.
+\newblock \href {https://doi.org/10.1109/69.404027} {\path{doi:10.1109/69.404027}}.
+
+\bibitem{Ramanathan2011SimpleDBBigtable}
+S.~Ramanathan, S.~Goel, S.~Alagumalai, Comparison of cloud database: {Amazon}'s {SimpleDB} and {Google}'s {Bigtable}, in: 2011 International Conference on Recent Trends in Information Systems (ReTIS), 2011.
+\newblock \href {https://doi.org/10.1109/ReTIS.2011.6146861} {\path{doi:10.1109/ReTIS.2011.6146861}}.
 
 \bibitem{Lu2019MultiModel}
-J.~Lu, I.~Holubov{\'a}, Multi-model databases: A new journey to handle the
-  variety of data, ACM Computing Surveys 52~(3) (2019) 1--38.
+J.~Lu, I.~Holubov{\'a}, Multi-model databases: A new journey to handle the variety of data, ACM Computing Surveys 52~(3) (2019) 1--38.
 \newblock \href {https://doi.org/10.1145/3323214} {\path{doi:10.1145/3323214}}.
 
 \bibitem{Melnik2020Dremel}
-S.~Melnik, A.~Gubarev, J.~J. Long, G.~Romer, S.~Shivakumar, M.~Tolton,
-  T.~Vassilakis, H.~Ahmadi, D.~Delorey, S.~Min, M.~Pasumansky, J.~Shute,
-  Dremel: A decade of interactive {SQL} analysis at web scale, in: Proceedings
-  of the VLDB Endowment, Vol.~13, 2020, pp. 3461--3472.
-\newblock \href {https://doi.org/10.14778/3415478.3415568}
-  {\path{doi:10.14778/3415478.3415568}}.
+S.~Melnik, A.~Gubarev, J.~J. Long, G.~Romer, S.~Shivakumar, M.~Tolton, T.~Vassilakis, H.~Ahmadi, D.~Delorey, S.~Min, M.~Pasumansky, J.~Shute, Dremel: A decade of interactive {SQL} analysis at web scale, in: Proceedings of the VLDB Endowment, Vol.~13, 2020, pp. 3461--3472.
+\newblock \href {https://doi.org/10.14778/3415478.3415568} {\path{doi:10.14778/3415478.3415568}}.
 
 \bibitem{Pohl2024LakehouseTS}
-M.~Pohl, D.~Staegemann, K.~Turowski, Data lakehouse for time series data: A
-  systematic literature review, in: 2024 IEEE International Conference on Big
-  Data (BigData), IEEE, 2024.
+M.~Pohl, D.~Staegemann, K.~Turowski, Data lakehouse for time series data: A systematic literature review, in: 2024 IEEE International Conference on Big Data (BigData), IEEE, 2024.
 
 \bibitem{Salehi2016Granular}
-S.~Salehi, A.~Selamat, H.~Fujita, Systematic mapping study on granular
-  computing, Knowledge-Based Systems 80 (2015) 78--97.
-\newblock \href {https://doi.org/10.1016/j.knosys.2015.02.018}
-  {\path{doi:10.1016/j.knosys.2015.02.018}}.
+S.~Salehi, A.~Selamat, H.~Fujita, Systematic mapping study on granular computing, Knowledge-Based Systems 80 (2015) 78--97.
+\newblock \href {https://doi.org/10.1016/j.knosys.2015.02.018} {\path{doi:10.1016/j.knosys.2015.02.018}}.
 
 \bibitem{Murtaza2020BreastCancer}
-G.~Murtaza, L.~Shuib, A.~W.~A. Wahab, G.~Mujtaba, H.~F. Nweke, M.~A. Al-garadi,
-  F.~Zulfiqar, G.~Raza, N.~A. Azmi, Deep learning-based breast cancer
-  classification through medical imaging modalities: State of the art and
-  research challenges, Artificial Intelligence Review 53~(3) (2020) 1655--1720.
-\newblock \href {https://doi.org/10.1007/s10462-019-09716-7}
-  {\path{doi:10.1007/s10462-019-09716-7}}.
+G.~Murtaza, L.~Shuib, A.~W.~A. Wahab, G.~Mujtaba, H.~F. Nweke, M.~A. Al-garadi, F.~Zulfiqar, G.~Raza, N.~A. Azmi, Deep learning-based breast cancer classification through medical imaging modalities: State of the art and research challenges, Artificial Intelligence Review 53~(3) (2020) 1655--1720.
+\newblock \href {https://doi.org/10.1007/s10462-019-09716-7} {\path{doi:10.1007/s10462-019-09716-7}}.
 
 \bibitem{Qazi2015SolarANN}
-A.~Qazi, H.~Fayaz, A.~Wadi, R.~G. Raj, N.~Rahim, W.~A. Khan, The artificial
-  neural network for solar radiation prediction and designing solar systems: A
-  systematic literature review, Journal of Cleaner Production 104 (2015) 1--12.
-\newblock \href {https://doi.org/10.1016/j.jclepro.2015.04.041}
-  {\path{doi:10.1016/j.jclepro.2015.04.041}}.
+A.~Qazi, H.~Fayaz, A.~Wadi, R.~G. Raj, N.~Rahim, W.~A. Khan, The artificial neural network for solar radiation prediction and designing solar systems: A systematic literature review, Journal of Cleaner Production 104 (2015) 1--12.
+\newblock \href {https://doi.org/10.1016/j.jclepro.2015.04.041} {\path{doi:10.1016/j.jclepro.2015.04.041}}.
 
 \bibitem{Saeed2023XAI}
-W.~Saeed, C.~Omlin, Explainable {AI} ({XAI}): A systematic meta-survey of
-  current challenges and future opportunities, Knowledge-Based Systems 263
-  (2023) 110273.
-\newblock \href {https://doi.org/10.1016/j.knosys.2023.110273}
-  {\path{doi:10.1016/j.knosys.2023.110273}}.
+W.~Saeed, C.~Omlin, Explainable {AI} ({XAI}): A systematic meta-survey of current challenges and future opportunities, Knowledge-Based Systems 263 (2023) 110273.
+\newblock \href {https://doi.org/10.1016/j.knosys.2023.110273} {\path{doi:10.1016/j.knosys.2023.110273}}.
 
 \bibitem{Page2021PRISMA}
-M.~J. Page, J.~E. McKenzie, P.~M. Bossuyt, I.~Boutron, T.~C. Hoffmann, C.~D.
-  Mulrow, et~al., The {PRISMA} 2020 statement: an updated guideline for
-  reporting systematic reviews, BMJ 372 (2021) n71.
+M.~J. Page, J.~E. McKenzie, P.~M. Bossuyt, I.~Boutron, T.~C. Hoffmann, C.~D. Mulrow, et~al., The {PRISMA} 2020 statement: an updated guideline for reporting systematic reviews, BMJ 372 (2021) n71.
 \newblock \href {https://doi.org/10.1136/bmj.n71} {\path{doi:10.1136/bmj.n71}}.
 
+\bibitem{Dory2011Elasticity}
+T.~Dory, B.~Mej{\'i}as, P.~{Van Roy}, N.-L. Tran, Measuring elasticity for cloud databases, in: CLOUD COMPUTING 2011: The Second International Conference on Cloud Computing, GRIDs, and Virtualization, IARIA, 2011.
+
 \bibitem{Thara2013DaaSPerf}
-R.~J. Thara, S.~Shine, C.~Sanu, Optimizing the performance of database as a
-  service ({DaaS}) model -- a distributed approach, in: 2013 Fourth
-  International Conference on Computing, Communications and Networking
-  Technologies (ICCCNT), IEEE, 2013.
+R.~J. Thara, S.~Shine, C.~Sanu, Optimizing the performance of database as a service ({DaaS}) model -- a distributed approach, in: 2013 Fourth International Conference on Computing, Communications and Networking Technologies (ICCCNT), IEEE, 2013.
 
 \bibitem{Ma2021LearnedWorkload}
-L.~Ma, D.~V. Aken, A.~Hefny, G.~Mezerhane, A.~Pavlo, G.~J. Gordon, Query-based
-  workload forecasting for self-driving database management systems,
-  Proceedings of the ACM SIGMOD International Conference on Management of Data
-  (2018) 631--645\href {https://doi.org/10.1145/3183713.3196908}
-  {\path{doi:10.1145/3183713.3196908}}.
+L.~Ma, D.~V. Aken, A.~Hefny, G.~Mezerhane, A.~Pavlo, G.~J. Gordon, Query-based workload forecasting for self-driving database management systems, Proceedings of the ACM SIGMOD International Conference on Management of Data (2018) 631--645\href {https://doi.org/10.1145/3183713.3196908} {\path{doi:10.1145/3183713.3196908}}.
 
 \bibitem{Brewer2012CAP}
-E.~Brewer, {CAP} twelve years later: How the ``rules'' have changed, Computer
-  45~(2) (2012) 23--29.
-\newblock \href {https://doi.org/10.1109/MC.2012.37}
-  {\path{doi:10.1109/MC.2012.37}}.
+E.~Brewer, {CAP} twelve years later: How the ``rules'' have changed, Computer 45~(2) (2012) 23--29.
+\newblock \href {https://doi.org/10.1109/MC.2012.37} {\path{doi:10.1109/MC.2012.37}}.
 
 \bibitem{Abadi2012PACELC}
-D.~J. Abadi, Consistency tradeoffs in modern distributed database system
-  design: {CAP} is only part of the story, Computer 45~(2) (2012) 37--42.
-\newblock \href {https://doi.org/10.1109/MC.2012.33}
-  {\path{doi:10.1109/MC.2012.33}}.
+D.~J. Abadi, Consistency tradeoffs in modern distributed database system design: {CAP} is only part of the story, Computer 45~(2) (2012) 37--42.
+\newblock \href {https://doi.org/10.1109/MC.2012.33} {\path{doi:10.1109/MC.2012.33}}.
 
 \bibitem{Viotti2016Consistency}
-P.~Viotti, M.~Vukoli{\'c}, Consistency in non-transactional distributed storage
-  systems, ACM Computing Surveys 49~(1) (2016) 1--34.
+P.~Viotti, M.~Vukoli{\'c}, Consistency in non-transactional distributed storage systems, ACM Computing Surveys 49~(1) (2016) 1--34.
 \newblock \href {https://doi.org/10.1145/2926965} {\path{doi:10.1145/2926965}}.
 
 \bibitem{Rabl2019BenchmarkSurvey}
-T.~Rabl, M.~Danisch, M.~Frank, S.~Schindler, H.-A. Jacobsen, Just can't get
-  enough---synthesizing big data benchmarks, IEEE BigData Congress (2019).
+T.~Rabl, M.~Danisch, M.~Frank, S.~Schindler, H.-A. Jacobsen, Just can't get enough---synthesizing big data benchmarks, IEEE BigData Congress (2019).
 
 \bibitem{Marcus2021Bao}
-R.~Marcus, P.~Negi, H.~Mao, N.~Tatbul, M.~Alizadeh, T.~Kraska, Bao: Making
-  learned query optimization practical, Proceedings of the ACM SIGMOD
-  International Conference on Management of Data (2021) 1275--1288\href
-  {https://doi.org/10.1145/3448016.3452838}
-  {\path{doi:10.1145/3448016.3452838}}.
+R.~Marcus, P.~Negi, H.~Mao, N.~Tatbul, M.~Alizadeh, T.~Kraska, Bao: Making learned query optimization practical, Proceedings of the ACM SIGMOD International Conference on Management of Data (2021) 1275--1288\href {https://doi.org/10.1145/3448016.3452838} {\path{doi:10.1145/3448016.3452838}}.
 
 \bibitem{Kraska2018LearnedIndex}
-T.~Kraska, A.~Beutel, E.~H. Chi, J.~Dean, N.~Polyzotis, The case for learned
-  index structures, in: Proceedings of the ACM SIGMOD International Conference
-  on Management of Data, 2018, pp. 489--504.
-\newblock \href {https://doi.org/10.1145/3183713.3196909}
-  {\path{doi:10.1145/3183713.3196909}}.
+T.~Kraska, A.~Beutel, E.~H. Chi, J.~Dean, N.~Polyzotis, The case for learned index structures, in: Proceedings of the ACM SIGMOD International Conference on Management of Data, 2018, pp. 489--504.
+\newblock \href {https://doi.org/10.1145/3183713.3196909} {\path{doi:10.1145/3183713.3196909}}.
 
 \bibitem{Zhang2022CDBTune}
-J.~Zhang, Y.~Liu, K.~Zhou, G.~Li, Z.~Xiao, B.~Cheng, J.~Xing, Y.~Wang,
-  T.~Cheng, L.~Liu, M.~Ran, Z.~Li, An end-to-end automatic cloud database
-  tuning system using deep reinforcement learning, Proceedings of the ACM
-  SIGMOD International Conference on Management of Data (2019) 415--432\href
-  {https://doi.org/10.1145/3299869.3300085}
-  {\path{doi:10.1145/3299869.3300085}}.
+J.~Zhang, Y.~Liu, K.~Zhou, G.~Li, Z.~Xiao, B.~Cheng, J.~Xing, Y.~Wang, T.~Cheng, L.~Liu, M.~Ran, Z.~Li, An end-to-end automatic cloud database tuning system using deep reinforcement learning, Proceedings of the ACM SIGMOD International Conference on Management of Data (2019) 415--432\href {https://doi.org/10.1145/3299869.3300085} {\path{doi:10.1145/3299869.3300085}}.
 
 \bibitem{Taipalus2024DBMSPerf}
-T.~Taipalus, Database management system performance comparisons: A systematic
-  literature review, Journal of Systems and Software 208 (2024) 111872.
-\newblock \href {https://doi.org/10.1016/j.jss.2023.111872}
-  {\path{doi:10.1016/j.jss.2023.111872}}.
+T.~Taipalus, Database management system performance comparisons: A systematic literature review, Journal of Systems and Software 208 (2024) 111872.
+\newblock \href {https://doi.org/10.1016/j.jss.2023.111872} {\path{doi:10.1016/j.jss.2023.111872}}.
 
 \bibitem{Samarta2024SQLNoSQL}
-M.~T. Samarta, A.~A.~S. Gunawan, M.~E. Syahputra, Systematic literature review
-  and comparative performance analysis of {SQL} and {NoSQL} databases in big
-  data applications, in: 2024 International Conference on Informatics,
-  Multimedia, Cyber and Information System (ICIMCIS), IEEE, 2024.
+M.~T. Samarta, A.~A.~S. Gunawan, M.~E. Syahputra, Systematic literature review and comparative performance analysis of {SQL} and {NoSQL} databases in big data applications, in: 2024 International Conference on Informatics, Multimedia, Cyber and Information System (ICIMCIS), IEEE, 2024.
 
 \bibitem{Daundasekara2025MultiCloud}
-D.~M. P.~D. Daundasekara, et~al., Evaluating performance and user perceptions
-  of multi-cloud database-as-a-service solutions: A mixed-methods study, in:
-  2025 International Conference on Computing, 2025.
+D.~M. P.~D. Daundasekara, et~al., Evaluating performance and user perceptions of multi-cloud database-as-a-service solutions: A mixed-methods study, in: 2025 International Conference on Computing, 2025.
 
 \bibitem{Fuhrt2010CloudSecurity}
 B.~Furht, A.~Escalante, Handbook of cloud computing, Springer (2010).
-\newblock \href {https://doi.org/10.1007/978-1-4419-6524-0}
-  {\path{doi:10.1007/978-1-4419-6524-0}}.
+\newblock \href {https://doi.org/10.1007/978-1-4419-6524-0} {\path{doi:10.1007/978-1-4419-6524-0}}.
 
 \bibitem{Zubi2009DistSec}
-Z.~S. Zubi, On distributed database security aspects, in: 2009 International
-  Conference on Multimedia Computing and Systems (ICMCS), IEEE, 2009.
+Z.~S. Zubi, On distributed database security aspects, in: 2009 International Conference on Multimedia Computing and Systems (ICMCS), IEEE, 2009.
 
 \bibitem{Waghmare2015CloudDBSec}
-V.~Waghmare, K.~Gojre, A.~Watpade, Approach to enhancing concurrent and
-  self-reliant access to cloud database: A review, in: 2015 International
-  Conference on Computational Intelligence and Communication Networks (CICN),
-  IEEE, 2015.
-\newblock \href {https://doi.org/10.1109/CICN.2015.158}
-  {\path{doi:10.1109/CICN.2015.158}}.
+V.~Waghmare, K.~Gojre, A.~Watpade, Approach to enhancing concurrent and self-reliant access to cloud database: A review, in: 2015 International Conference on Computational Intelligence and Communication Networks (CICN), IEEE, 2015.
+\newblock \href {https://doi.org/10.1109/CICN.2015.158} {\path{doi:10.1109/CICN.2015.158}}.
 
 \bibitem{Sanka2022CloudSecSurvey}
-B.~Alouffi, M.~Hasnain, A.~Alharbi, W.~Alosaimi, H.~Alyami, M.~Ayaz, A
-  systematic literature review on cloud computing security: Threats and
-  mitigation strategies, IEEE Access 9 (2021) 57792--57807.
-\newblock \href {https://doi.org/10.1109/ACCESS.2021.3073203}
-  {\path{doi:10.1109/ACCESS.2021.3073203}}.
+B.~Alouffi, M.~Hasnain, A.~Alharbi, W.~Alosaimi, H.~Alyami, M.~Ayaz, A systematic literature review on cloud computing security: Threats and mitigation strategies, IEEE Access 9 (2021) 57792--57807.
+\newblock \href {https://doi.org/10.1109/ACCESS.2021.3073203} {\path{doi:10.1109/ACCESS.2021.3073203}}.
 
 \bibitem{Ferrari2009DBaaSSec}
-E.~Ferrari, Database as a service: Challenges and solutions for privacy and
-  security, in: 2009 IEEE Asia-Pacific Services Computing Conference (APSCC),
-  IEEE, 2009, pp. 46--51.
+E.~Ferrari, Database as a service: Challenges and solutions for privacy and security, in: 2009 IEEE Asia-Pacific Services Computing Conference (APSCC), IEEE, 2009, pp. 46--51.
 
 \bibitem{Munir2015DBaaSSec}
-K.~Munir, Security model for cloud database as a service ({DBaaS}), in: 2015
-  International Conference on Cloud Technologies and Applications (CloudTech),
-  IEEE, 2015.
+K.~Munir, Security model for cloud database as a service ({DBaaS}), in: 2015 International Conference on Cloud Technologies and Applications (CloudTech), IEEE, 2015.
 
 \bibitem{Khan2019DaaSAnalytic}
-F.~A. Khan, M.~Jamjoom, A.~Ahmad, M.~Asif, An analytic study of architecture,
-  security, privacy, query processing, and performance evaluation of
-  database-as-a-service, Transactions on Emerging Telecommunications
-  Technologies 30~(12) (2019) e3814.
-\newblock \href {https://doi.org/10.1002/ett.3814}
-  {\path{doi:10.1002/ett.3814}}.
+F.~A. Khan, M.~Jamjoom, A.~Ahmad, M.~Asif, An analytic study of architecture, security, privacy, query processing, and performance evaluation of database-as-a-service, Transactions on Emerging Telecommunications Technologies 30~(12) (2019) e3814.
+\newblock \href {https://doi.org/10.1002/ett.3814} {\path{doi:10.1002/ett.3814}}.
 
 \bibitem{Acar2018HE}
-A.~Acar, H.~Aksu, A.~S. Uluagac, M.~Conti, A survey on homomorphic encryption
-  schemes: Theory and implementation, ACM Computing Surveys 51~(4) (2018)
-  1--35.
+A.~Acar, H.~Aksu, A.~S. Uluagac, M.~Conti, A survey on homomorphic encryption schemes: Theory and implementation, ACM Computing Surveys 51~(4) (2018) 1--35.
 \newblock \href {https://doi.org/10.1145/3214303} {\path{doi:10.1145/3214303}}.
 
 \bibitem{Ravan2013EncQuery}
-R.~R. Ravan, N.~B. Idris, Z.~Mehrabani, A survey on querying encrypted data for
-  database as a service, in: 2013 International Conference on Cyber-Enabled
-  Distributed Computing and Knowledge Discovery (CyberC), IEEE, 2013.
-\newblock \href {https://doi.org/10.1109/CyberC.2013.12}
-  {\path{doi:10.1109/CyberC.2013.12}}.
+R.~R. Ravan, N.~B. Idris, Z.~Mehrabani, A survey on querying encrypted data for database as a service, in: 2013 International Conference on Cyber-Enabled Distributed Computing and Knowledge Discovery (CyberC), IEEE, 2013.
+\newblock \href {https://doi.org/10.1109/CyberC.2013.12} {\path{doi:10.1109/CyberC.2013.12}}.
+
+\bibitem{Ferretti2014Encrypted}
+L.~Ferretti, M.~Colajanni, M.~Marchetti, Distributed, concurrent, and independent access to encrypted cloud databases, IEEE Transactions on Parallel and Distributed Systems 25~(2) (2014) 437--446.
+\newblock \href {https://doi.org/10.1109/TPDS.2013.154} {\path{doi:10.1109/TPDS.2013.154}}.
+
+\bibitem{Cuzzocrea2016PrivateDB}
+A.~Cuzzocrea, C.~Mastroianni, G.~M. Grasso, Private databases on the cloud: Models, issues and research perspectives, in: 2016 IEEE International Conference on Big Data (Big Data), 2016, pp. 3656--3661.
+\newblock \href {https://doi.org/10.1109/BigData.2016.7841032} {\path{doi:10.1109/BigData.2016.7841032}}.
 
 \bibitem{Mathew2021CloudMigration}
-M.~F. Gholami, F.~Daneshgar, G.~Low, G.~Beydoun, Cloud migration process---a
-  survey, evaluation framework, and open challenges, Journal of Systems and
-  Software 120 (2016) 31--69.
-\newblock \href {https://doi.org/10.1016/j.jss.2016.06.068}
-  {\path{doi:10.1016/j.jss.2016.06.068}}.
+M.~F. Gholami, F.~Daneshgar, G.~Low, G.~Beydoun, Cloud migration process---a survey, evaluation framework, and open challenges, Journal of Systems and Software 120 (2016) 31--69.
+\newblock \href {https://doi.org/10.1016/j.jss.2016.06.068} {\path{doi:10.1016/j.jss.2016.06.068}}.
 
 \bibitem{Narasayya2015MultiTenant}
-V.~Narasayya, S.~Das, M.~Syamala, B.~Chandramouli, S.~Chaudhuri, {SQLVM}:
-  Performance isolation in multi-tenant relational database-as-a-service,
-  Proceedings of CIDR (2015).
+V.~Narasayya, S.~Das, M.~Syamala, B.~Chandramouli, S.~Chaudhuri, {SQLVM}: Performance isolation in multi-tenant relational database-as-a-service, Proceedings of CIDR (2015).
+
+\bibitem{Jain2016HighVariety}
+S.~Jain, D.~Moritz, B.~Howe, High variety cloud databases, in: 2016 IEEE 32nd International Conference on Data Engineering Workshops (ICDEW), 2016, pp. 12--19.
+\newblock \href {https://doi.org/10.1109/ICDEW.2016.7495609} {\path{doi:10.1109/ICDEW.2016.7495609}}.
 
 \bibitem{Baralis2017Geospatial}
-E.~Baralis, A.~D. Valle, P.~Garza, C.~Rossi, F.~Scullino, {SQL} versus {NoSQL}
-  databases for geospatial applications, in: 2017 IEEE International Conference
-  on Big Data (Big Data), IEEE, 2017, pp. 3388--3397.
+E.~Baralis, A.~D. Valle, P.~Garza, C.~Rossi, F.~Scullino, {SQL} versus {NoSQL} databases for geospatial applications, in: 2017 IEEE International Conference on Big Data (Big Data), IEEE, 2017, pp. 3388--3397.
 
 \bibitem{Mahmood2019NoSQLLog}
-K.~Mahmood, K.~Orsborn, T.~Risch, Comparison of {NoSQL} datastores for large
-  scale data stream log analytics, in: 2019 IEEE International Conference on
-  Smart Computing (SMARTCOMP), IEEE, 2019.
-\newblock \href {https://doi.org/10.1109/SMARTCOMP.2019.00093}
-  {\path{doi:10.1109/SMARTCOMP.2019.00093}}.
+K.~Mahmood, K.~Orsborn, T.~Risch, Comparison of {NoSQL} datastores for large scale data stream log analytics, in: 2019 IEEE International Conference on Smart Computing (SMARTCOMP), IEEE, 2019.
+\newblock \href {https://doi.org/10.1109/SMARTCOMP.2019.00093} {\path{doi:10.1109/SMARTCOMP.2019.00093}}.
 
 \bibitem{Tu2024CassandraMongo}
-H.~Tu, Cassandra vs. {MongoDB}: A systematic review of two {NoSQL} data stores
-  in their industry uses, in: 2024 IEEE 7th International Conference on Big
-  Data and Artificial Intelligence (BDAI), IEEE, 2024.
+H.~Tu, Cassandra vs. {MongoDB}: A systematic review of two {NoSQL} data stores in their industry uses, in: 2024 IEEE 7th International Conference on Big Data and Artificial Intelligence (BDAI), IEEE, 2024.
 
 \bibitem{Hendricks2019NoSQLReview}
-W.~Hendricks, Review of {NoSQL} data stores: Using a reactive three-tier
-  application for software developers to achieve a high availability
-  application design architecture, in: 2019 International Conference (IEEE),
-  IEEE, 2019.
+W.~Hendricks, Review of {NoSQL} data stores: Using a reactive three-tier application for software developers to achieve a high availability application design architecture, in: 2019 International Conference (IEEE), IEEE, 2019.
 
 \bibitem{Tripathi2025NoSQLEdu}
-N.~Tripathi, {NoSQL} database education: A review of models, tools and teaching
-  methods, Journal of Systems and Software 226 (2025) 112391.
-\newblock \href {https://doi.org/10.1016/j.jss.2025.112391}
-  {\path{doi:10.1016/j.jss.2025.112391}}.
+N.~Tripathi, {NoSQL} database education: A review of models, tools and teaching methods, Journal of Systems and Software 226 (2025) 112391.
+\newblock \href {https://doi.org/10.1016/j.jss.2025.112391} {\path{doi:10.1016/j.jss.2025.112391}}.
 
 \bibitem{Sheng2025MQRLD}
-M.~Sheng, S.~Wang, Y.~Zhang, K.~Wang, J.~Wang, Y.~Luo, R.~Hao, {MQRLD}: A
-  multimodal data retrieval platform with query-aware feature representation
-  and learned index based on data lake, Information Processing \& Management
-  62~(5) (2025) 104101.
-\newblock \href {https://doi.org/10.1016/j.ipm.2025.104101}
-  {\path{doi:10.1016/j.ipm.2025.104101}}.
+M.~Sheng, S.~Wang, Y.~Zhang, K.~Wang, J.~Wang, Y.~Luo, R.~Hao, {MQRLD}: A multimodal data retrieval platform with query-aware feature representation and learned index based on data lake, Information Processing \& Management 62~(5) (2025) 104101.
+\newblock \href {https://doi.org/10.1016/j.ipm.2025.104101} {\path{doi:10.1016/j.ipm.2025.104101}}.
 
 \bibitem{Opara2017LockIn}
-C.~Pahl, P.~Jamshidi, O.~Zimmermann, Architectural principles for cloud
-  software, ACM Transactions on Internet Technology 18~(2) (2018) 1--23.
+C.~Pahl, P.~Jamshidi, O.~Zimmermann, Architectural principles for cloud software, ACM Transactions on Internet Technology 18~(2) (2018) 1--23.
 \newblock \href {https://doi.org/10.1145/3104028} {\path{doi:10.1145/3104028}}.
 
+\bibitem{Phan2014IoTCloudDB}
+T.~A.~M. Phan, J.~K. Nurminen, M.~{Di Francesco}, Cloud databases for internet-of-things data, in: 2014 IEEE International Conference on Internet of Things (iThings), 2014, pp. 117--124.
+\newblock \href {https://doi.org/10.1109/iThings.2014.26} {\path{doi:10.1109/iThings.2014.26}}.
+
 \bibitem{Zhao2026SpatialIndex}
-X.~Zhao, K.-Y. Lam, Density based learned spatial index for clustered data,
-  Information Systems 135 (2026) 102606.
-\newblock \href {https://doi.org/10.1016/j.is.2025.102606}
-  {\path{doi:10.1016/j.is.2025.102606}}.
+X.~Zhao, K.-Y. Lam, Density based learned spatial index for clustered data, Information Systems 135 (2026) 102606.
+\newblock \href {https://doi.org/10.1016/j.is.2025.102606} {\path{doi:10.1016/j.is.2025.102606}}.
 
 \bibitem{Woltmann2023DNNIndex}
-Z.~Sun, X.~Zhou, G.~Li, Learned index: A comprehensive experimental evaluation,
-  Proceedings of the VLDB Endowment 16~(8) (2023) 1992--2004.
-\newblock \href {https://doi.org/10.14778/3594512.3594528}
-  {\path{doi:10.14778/3594512.3594528}}.
+Z.~Sun, X.~Zhou, G.~Li, Learned index: A comprehensive experimental evaluation, Proceedings of the VLDB Endowment 16~(8) (2023) 1992--2004.
+\newblock \href {https://doi.org/10.14778/3594512.3594528} {\path{doi:10.14778/3594512.3594528}}.
+
+\bibitem{Tan2019iBTune}
+J.~Tan, T.~Zhang, F.~Li, J.~Chen, Q.~Zheng, P.~Zhang, H.~Qiao, Y.~Shi, W.~Cao, R.~Zhang, {iBTune}: Individualized buffer tuning for large-scale cloud databases, in: Proceedings of the VLDB Endowment, Vol.~12, 2019, pp. 1221--1234.
+\newblock \href {https://doi.org/10.14778/3339490.3339503} {\path{doi:10.14778/3339490.3339503}}.
+
+\bibitem{Hilprecht2020Partitioning}
+B.~Hilprecht, C.~Binnig, U.~R{\"o}hm, Learning a partitioning advisor for cloud databases, in: Proceedings of the 2020 ACM SIGMOD International Conference on Management of Data, 2020, pp. 143--157.
+\newblock \href {https://doi.org/10.1145/3318464.3389704} {\path{doi:10.1145/3318464.3389704}}.
 
 \bibitem{Dritsas2026MLDB}
-E.~Dritsas, M.~Trigka, Machine learning in modern database systems: Techniques,
-  architectures, and deployment challenges, Engineering Applications of
-  Artificial Intelligence 170 (2026) 114225.
-\newblock \href {https://doi.org/10.1016/j.engappai.2026.114225}
-  {\path{doi:10.1016/j.engappai.2026.114225}}.
+E.~Dritsas, M.~Trigka, Machine learning in modern database systems: Techniques, architectures, and deployment challenges, Engineering Applications of Artificial Intelligence 170 (2026) 114225.
+\newblock \href {https://doi.org/10.1016/j.engappai.2026.114225} {\path{doi:10.1016/j.engappai.2026.114225}}.
 
 \bibitem{IEA2024DataCenters}
-{International Energy Agency}, Data centres and data transmission networks,
-  \url{https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks},
-  accessed: 2025-01-15 (2024).
+{International Energy Agency}, Data centres and data transmission networks, \url{https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks}, accessed: 2025-01-15 (2024).
 
 \bibitem{Mouhibha2025NoSQLDW}
-M.~Mouhibha, A.~Mabrouk, Nosql data warehouse optimizing models: A comparative
-  study of column-oriented approaches, Big Data Research 40 (2025) 100523.
-\newblock \href {https://doi.org/10.1016/j.bdr.2025.100523}
-  {\path{doi:10.1016/j.bdr.2025.100523}}.
+M.~Mouhibha, A.~Mabrouk, Nosql data warehouse optimizing models: A comparative study of column-oriented approaches, Big Data Research 40 (2025) 100523.
+\newblock \href {https://doi.org/10.1016/j.bdr.2025.100523} {\path{doi:10.1016/j.bdr.2025.100523}}.
 
 \bibitem{Ferreira2023NoSQLMD}
-L.~M. Ferreira, et~al., Multidimensional modelling in {NoSQL} database: A
-  systematic review, in: 2023 18th Iberian Conference on Information Systems
-  and Technologies (CISTI), IEEE, 2023.
+L.~M. Ferreira, et~al., Multidimensional modelling in {NoSQL} database: A systematic review, in: 2023 18th Iberian Conference on Information Systems and Technologies (CISTI), IEEE, 2023.
 
 \bibitem{Mouhibha2026Clustering}
-M.~Mouhibha, A.~Mabrouk, An empirically-driven clustering framework for {NoSQL}
-  data warehouse conversion: Optimizing column family design from relational
-  big data using {HDBSCAN}, Information and Software Technology 195 (2026)
-  108117.
-\newblock \href {https://doi.org/10.1016/j.infsof.2026.108117}
-  {\path{doi:10.1016/j.infsof.2026.108117}}.
+M.~Mouhibha, A.~Mabrouk, An empirically-driven clustering framework for {NoSQL} data warehouse conversion: Optimizing column family design from relational big data using {HDBSCAN}, Information and Software Technology 195 (2026) 108117.
+\newblock \href {https://doi.org/10.1016/j.infsof.2026.108117} {\path{doi:10.1016/j.infsof.2026.108117}}.
+
+\bibitem{Ma2020SlowQuery}
+M.~Ma, Z.~Yin, S.~Zhang, S.~Wang, C.~Zheng, X.~Jiang, H.~Hu, C.~Luo, Y.~Li, N.~Qiu, F.~Li, C.~Chen, D.~Pei, Diagnosing root causes of intermittent slow queries in cloud databases, in: Proceedings of the VLDB Endowment, Vol.~13, 2020, pp. 1176--1189.
+\newblock \href {https://doi.org/10.14778/3389133.3389136} {\path{doi:10.14778/3389133.3389136}}.
 
 \bibitem{Affolter2019NLIDB}
-K.~Affolter, K.~Stockinger, A.~Bernstein, A comparative survey of recent
-  natural language interfaces for databases, The VLDB Journal 28~(5) (2019)
-  793--819.
-\newblock \href {https://doi.org/10.1007/s00778-019-00567-8}
-  {\path{doi:10.1007/s00778-019-00567-8}}.
+K.~Affolter, K.~Stockinger, A.~Bernstein, A comparative survey of recent natural language interfaces for databases, The VLDB Journal 28~(5) (2019) 793--819.
+\newblock \href {https://doi.org/10.1007/s00778-019-00567-8} {\path{doi:10.1007/s00778-019-00567-8}}.
 
 \bibitem{Pourreza2023DINSQL}
-M.~Pourreza, D.~Rafiei, {DIN-SQL}: Decomposed in-context learning of
-  text-to-{SQL} with self-correction, Advances in Neural Information Processing
-  Systems 36 (2023).
+M.~Pourreza, D.~Rafiei, {DIN-SQL}: Decomposed in-context learning of text-to-{SQL} with self-correction, Advances in Neural Information Processing Systems 36 (2023).
 
 \bibitem{Gao2023DAILSQL}
-D.~Gao, H.~Wang, Y.~Li, X.~Sun, Y.~Qian, B.~Ding, J.~Zhou, Text-to-{SQL}
-  empowered by large language models: A benchmark evaluation, Proceedings of
-  the VLDB Endowment 17~(5) (2024) 1132--1145.
-\newblock \href {https://doi.org/10.14778/3641204.3641221}
-  {\path{doi:10.14778/3641204.3641221}}.
+D.~Gao, H.~Wang, Y.~Li, X.~Sun, Y.~Qian, B.~Ding, J.~Zhou, Text-to-{SQL} empowered by large language models: A benchmark evaluation, Proceedings of the VLDB Endowment 17~(5) (2024) 1132--1145.
+\newblock \href {https://doi.org/10.14778/3641204.3641221} {\path{doi:10.14778/3641204.3641221}}.
 
 \bibitem{Wang2024MACSQL}
-B.~Wang, C.~Ren, J.~Yang, X.~Liang, J.~Bai, L.~Chai, Z.~Yan, Q.-W. Zhang,
-  D.~Yin, X.~Sun, Z.~Li, {MAC-SQL}: A multi-agent collaborative framework for
-  text-to-{SQL}, arXiv preprint arXiv:2312.11242 (2024).
+B.~Wang, C.~Ren, J.~Yang, X.~Liang, J.~Bai, L.~Chai, Z.~Yan, Q.-W. Zhang, D.~Yin, X.~Sun, Z.~Li, {MAC-SQL}: A multi-agent collaborative framework for text-to-{SQL}, arXiv preprint arXiv:2312.11242 (2024).
 
 \bibitem{Yu2018Spider}
-T.~Yu, R.~Zhang, K.~Yang, M.~Yasunaga, D.~Wang, Z.~Li, J.~Ma, I.~Li, Q.~Yao,
-  S.~Roman, Z.~Zhang, D.~Radev, Spider: A large-scale human-labeled dataset for
-  complex and cross-database semantic parsing and text-to-{SQL} task, in:
-  Proceedings of the 2018 Conference on Empirical Methods in Natural Language
-  Processing, 2018, pp. 3911--3921.
-\newblock \href {https://doi.org/10.18653/v1/D18-1425}
-  {\path{doi:10.18653/v1/D18-1425}}.
+T.~Yu, R.~Zhang, K.~Yang, M.~Yasunaga, D.~Wang, Z.~Li, J.~Ma, I.~Li, Q.~Yao, S.~Roman, Z.~Zhang, D.~Radev, Spider: A large-scale human-labeled dataset for complex and cross-database semantic parsing and text-to-{SQL} task, in: Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, 2018, pp. 3911--3921.
+\newblock \href {https://doi.org/10.18653/v1/D18-1425} {\path{doi:10.18653/v1/D18-1425}}.
 
 \bibitem{Zhou2024DBot}
-X.~Zhou, G.~Li, Z.~Sun, Z.~Liu, W.~Chen, J.~Wu, J.~Liu, R.~Feng, G.~Zeng,
-  D-bot: Database diagnosis system using large language models, in: Proceedings
-  of the VLDB Endowment, Vol.~17, 2024, pp. 748--761.
-\newblock \href {https://doi.org/10.14778/3636218.3636230}
-  {\path{doi:10.14778/3636218.3636230}}.
+X.~Zhou, G.~Li, Z.~Sun, Z.~Liu, W.~Chen, J.~Wu, J.~Liu, R.~Feng, G.~Zeng, D-bot: Database diagnosis system using large language models, in: Proceedings of the VLDB Endowment, Vol.~17, 2024, pp. 2514--2527.
+\newblock \href {https://doi.org/10.14778/3675034.3675043} {\path{doi:10.14778/3675034.3675043}}.
 
 \bibitem{Xue2024DBGPT}
-S.~Xue, C.~Jiang, W.~Shi, F.~Cheng, K.~Chen, H.~Yang, Z.~Zhang, J.~He,
-  H.~Zhang, G.~Wei, W.~Zhao, F.~Zhou, D.~Qi, H.~Yi, S.~Liu, F.~Chen, {DB-GPT}:
-  Empowering database interactions with private large language models, arXiv
-  preprint arXiv:2312.17449 (2024).
+S.~Xue, C.~Jiang, W.~Shi, F.~Cheng, K.~Chen, H.~Yang, Z.~Zhang, J.~He, H.~Zhang, G.~Wei, W.~Zhao, F.~Zhou, D.~Qi, H.~Yi, S.~Liu, F.~Chen, {DB-GPT}: Empowering database interactions with private large language models, arXiv preprint arXiv:2312.17449 (2024).
 
 \bibitem{Lao2024GPTuner}
-J.~Lao, Y.~Wang, Y.~Li, J.~Wang, Y.~Zhang, Z.~Cheng, W.~Chen, M.~Tang, J.~Wang,
-  {GPTuner}: A manual-reading database tuning system via {GPT}-guided bayesian
-  optimization, Proceedings of the VLDB Endowment 17~(8) (2024) 1939--1952.
-\newblock \href {https://doi.org/10.14778/3659437.3659449}
-  {\path{doi:10.14778/3659437.3659449}}.
+J.~Lao, Y.~Wang, Y.~Li, J.~Wang, Y.~Zhang, Z.~Cheng, W.~Chen, M.~Tang, J.~Wang, {GPTuner}: A manual-reading database tuning system via {GPT}-guided bayesian optimization, Proceedings of the VLDB Endowment 17~(8) (2024) 1939--1952.
+\newblock \href {https://doi.org/10.14778/3659437.3659449} {\path{doi:10.14778/3659437.3659449}}.
 
 \bibitem{Gao2024RAGSurvey}
-Y.~Gao, Y.~Xiong, X.~Gao, K.~Jia, J.~Pan, Y.~Bi, Y.~Dai, J.~Sun, M.~Wang,
-  H.~Wang, Retrieval-augmented generation for large language models: A survey,
-  arXiv preprint arXiv:2312.10997 (2024).
+Y.~Gao, Y.~Xiong, X.~Gao, K.~Jia, J.~Pan, Y.~Bi, Y.~Dai, J.~Sun, M.~Wang, H.~Wang, Retrieval-augmented generation for large language models: A survey, arXiv preprint arXiv:2312.10997 (2024).
 
 \bibitem{Bhatti2017CloudDBReview}
-H.~J. Bhatti, B.~B. Rad, Databases in cloud computing: A literature review,
-  International Journal of Information Technology and Computer Science 9~(4)
-  (2017) 9--17.
-\newblock \href {https://doi.org/10.5815/ijitcs.2017.04.02}
-  {\path{doi:10.5815/ijitcs.2017.04.02}}.
+H.~J. Bhatti, B.~B. Rad, Databases in cloud computing: A literature review, International Journal of Information Technology and Computer Science 9~(4) (2017) 9--17.
+\newblock \href {https://doi.org/10.5815/ijitcs.2017.04.02} {\path{doi:10.5815/ijitcs.2017.04.02}}.
 
 \end{thebibliography}

@@ -16,16 +16,18 @@ The "survey-of-surveys" catalog was rebuilt from verified papers only. The previ
 
 **New catalog entry added:** `Bhatti2017CloudDBReview` (Bhatti & Rad, "Databases in Cloud Computing: A Literature Review", IJITCS 2017, [10.5815/ijitcs.2017.04.02](https://doi.org/10.5815/ijitcs.2017.04.02)).
 
-**Removed from the bibliography (fabricated / unverifiable):** `Jainaga2023Lakehouse` (its DOI `10.1186/s40537-023-00808-2` resolves to Rahul et al.'s big-data/healthcare review, not a lakehouse survey) and `Thirumuruganathan2024DBLLMSurvey` (`arXiv:2404.06234` resolves to an astronomy paper). Both were dropped; lakehouse and LLM--DB coverage is carried by `Harby2022Lakehouse`/`Pohl2024LakehouseTS` and `Affolter2019NLIDB`/`Gao2024RAGSurvey` respectively.
+**Removed from the bibliography (fabricated / unverifiable):** `Jainaga2023Lakehouse` (its DOI `10.1186/s40537-023-00808-2` resolves to Rahul et al.'s big-data/healthcare review, not a lakehouse survey) and `Thirumuruganathan2024DBLLMSurvey` (`arXiv:2404.06234` resolves to an astronomy paper). Both were dropped; lakehouse and LLM--DB coverage is carried by `Harby2022Lakehouse`/`Pohl2024LakehouseTS` and `Affolter2019NLIDB`/`Gao2024RAGSurvey` respectively. **2026-07-05:** their orphan PDFs (whose content matched neither the fabricated citations nor their filenames) have been deleted from this folder.
 
-**Content-mismatched PDF files (filename ≠ content) — do not cite under these names:** `Li2023LLMQueryOpt.pdf` (a statistics paper), `Zhou2023LLM4DB.pdf` (ML-theory), `Zhou2024DBot.pdf` (time-series forecasting; the real D-Bot DOI in the bib is correct), `Zhu2023Pilot.pdf` (differential privacy), `BDCC-06-00111-v2.pdf` (COVID review), and `Sun2019Learned.pdf` (a duplicate of `Abraham2019DataGovernance.pdf`).
+**Content-mismatched PDF files — resolved 2026-07-05.** The previously flagged files whose content did not match their filenames have been deleted: `Li2023LLMQueryOpt.pdf` (a statistics paper), `Zhou2023LLM4DB.pdf` (ML-theory), `Zhu2023Pilot.pdf` (differential privacy), `BDCC-06-00111-v2.pdf` (COVID review), and `Sun2019Learned.pdf` (a duplicate of `Abraham2019DataGovernance.pdf`) — none of these keys is cited in the manuscript. `Zhou2024DBot.pdf` has been **replaced with the real D-Bot paper** (arXiv:2312.01454v2, page-1 title verified). Note: the earlier claim that "the real D-Bot DOI in the bib is correct" was itself wrong — the bib carried `10.14778/3636218.3636230`, which resolves to "Multiple Time Series Forecasting with Dynamic Graph Modeling" (which is exactly why the downloader fetched a time-series paper). The bib entry has been corrected to the Crossref-verified record: PVLDB 17(10), pp.\ 2514--2527, DOI [10.14778/3675034.3675043](https://doi.org/10.14778/3675034.3675043).
+
+**Supporting primary studies integrated (2026-07-05, per `plans/new-papers-v1.md` §1c):** nine previously unnamed PDFs were renamed to `<CitationKey>.pdf`, their metadata verified against Crossref, bib entries added, and in-text citations placed: `Tan2019iBTune` (PVLDB 12(10), [10.14778/3339490.3339503](https://doi.org/10.14778/3339490.3339503)), `Ma2020SlowQuery` (PVLDB 13(8), [10.14778/3389133.3389136](https://doi.org/10.14778/3389133.3389136)), `Hilprecht2020Partitioning` (SIGMOD 2020, [10.1145/3318464.3389704](https://doi.org/10.1145/3318464.3389704)), `Ferretti2014Encrypted` (IEEE TPDS 25(2), [10.1109/TPDS.2013.154](https://doi.org/10.1109/TPDS.2013.154)), `Cuzzocrea2016PrivateDB` (IEEE BigData 2016, [10.1109/BigData.2016.7841032](https://doi.org/10.1109/BigData.2016.7841032)), `Dory2011Elasticity` (IARIA CLOUD COMPUTING 2011, no DOI), `Phan2014IoTCloudDB` (IEEE iThings 2014, [10.1109/iThings.2014.26](https://doi.org/10.1109/iThings.2014.26)), `Jain2016HighVariety` (IEEE ICDEW 2016, [10.1109/ICDEW.2016.7495609](https://doi.org/10.1109/ICDEW.2016.7495609); note the new-papers plan guessed 2014 — Crossref says 2016), and `Ramanathan2011SimpleDBBigtable` (IEEE ReTIS 2011, [10.1109/ReTIS.2011.6146861](https://doi.org/10.1109/ReTIS.2011.6146861)). The 21 MB PVLDB proceedings dump `010086183.pdf` (a duplicate flagged in §1a of the plan) was deleted.
 
 ## Summary
 
-- **Total tracked references:** 98
-- **✅ Verified (PDF on disk):** 95
+- **Total tracked references:** 101
+- **✅ Verified (PDF on disk):** 98
 - **⚠️ Missing (no PDF, but real & cited):** 3
-- **➕ Additional sources (not among the 166):** 44
+- **➕ Additional sources (not among the 166):** 43
 
 ## Cited references
 
@@ -50,29 +52,34 @@ The "survey-of-surveys" catalog was rebuilt from verified papers only. The previ
 | `Cooper2010YCSB` | — | ✅ Verified | [Cooper2010YCSB.pdf](Cooper2010YCSB.pdf) | [10.1145/1807128.1807152](https://doi.org/10.1145/1807128.1807152) |
 | `Corbett2013Spanner` | Spanner: Google's Globally Distributed Database | ✅ Verified | [Corbett2013Spanner.pdf](Corbett2013Spanner.pdf) | [10.1145/2491245](https://doi.org/10.1145/2491245) |
 | `Curino2011DBaaS` | Relational Cloud: A Database-as-a-Service for the Cloud | ✅ Verified | [Curino2011DBaaS.pdf](Curino2011DBaaS.pdf) | — |
+| `Cuzzocrea2016PrivateDB` | Private Databases on the Cloud: Models, Issues and Research Perspectives | ✅ Verified | [Cuzzocrea2016PrivateDB.pdf](Cuzzocrea2016PrivateDB.pdf) | [10.1109/BigData.2016.7841032](https://doi.org/10.1109/BigData.2016.7841032) |
 | `Dageville2016` | The Snowflake Elastic Data Warehouse | ✅ Verified | [Dageville2016.pdf](Dageville2016.pdf) | [10.1145/2882903.2903741](https://doi.org/10.1145/2882903.2903741) |
 | `Davoudian2018NoSQL` | A Survey on NoSQL Stores | ✅ Verified | [Davoudian2018NoSQL.pdf](Davoudian2018NoSQL.pdf) | [10.1145/3158661](https://doi.org/10.1145/3158661) |
 | `DeCandia2007Dynamo` | — | ✅ Verified | [DeCandia2007Dynamo.pdf](DeCandia2007Dynamo.pdf) | [10.1145/1323293.1294281](https://doi.org/10.1145/1323293.1294281) |
 | `Depoutovitch2020Taurus` | — | ✅ Verified | [Depoutovitch2020Taurus.pdf](Depoutovitch2020Taurus.pdf) | [arXiv:2412.02792](http://arxiv.org/pdf/2412.02792) |
 | `Deutsch2022GQL` | Graph Pattern Matching in GQL and SQL/PGQ | ✅ Verified | [Deutsch2022GQL.pdf](Deutsch2022GQL.pdf) | [10.1145/3514221.3526057](https://doi.org/10.1145/3514221.3526057) |
+| `Dory2011Elasticity` | Measuring Elasticity for Cloud Databases | ✅ Verified | [Dory2011Elasticity.pdf](Dory2011Elasticity.pdf) | IARIA CLOUD COMPUTING 2011 (no DOI) |
 | `Farber2012` | SAP HANA Database: Data Management for Modern Business Applications | ✅ Verified | [Farber2012.pdf](Farber2012.pdf) | [10.1145/2094114.2094126](https://doi.org/10.1145/2094114.2094126) |
 | `Fernandez2023DataMarketplace` | — | ✅ Verified | [Fernandez2023DataMarketplace.pdf](Fernandez2023DataMarketplace.pdf) | [arXiv:2002.01047](https://arxiv.org/pdf/2002.01047.pdf) |
+| `Ferretti2014Encrypted` | Distributed, Concurrent, and Independent Access to Encrypted Cloud Databases | ✅ Verified | [Ferretti2014Encrypted.pdf](Ferretti2014Encrypted.pdf) | [10.1109/TPDS.2013.154](https://doi.org/10.1109/TPDS.2013.154) |
 | `Francis2018GQL` | — | ✅ Verified | [Francis2018GQL.pdf](Francis2018GQL.pdf) | [PDF](https://hal.archives-ouvertes.fr/hal-01803524/file/paper.pdf) |
 | `Fuhrt2010CloudSecurity` | Handbook of Cloud Computing | ✅ Verified | [Fuhrt2010CloudSecurity.pdf](Fuhrt2010CloudSecurity.pdf) | [10.1007/978-1-4419-6524-0](https://doi.org/10.1007/978-1-4419-6524-0) |
-| `GDPR2016` | Regulation (EU) 2016/679 of the European Parliament and of the Council (General Data Protection Regulation) | ✅ Verified | [GDPR2016.pdf](GDPR2016.pdf) | — |
 | `Gao2023DAILSQL` | Text-to-SQL Empowered by Large Language Models: A Benchmark Evaluation | ✅ Verified | [Gao2023DAILSQL.pdf](Gao2023DAILSQL.pdf) | [10.14778/3641204.3641221](https://doi.org/10.14778/3641204.3641221) |
 | `Gao2024RAGSurvey` | Retrieval-Augmented Generation for Large Language Models: A Survey | ✅ Verified | [Gao2024RAGSurvey.pdf](Gao2024RAGSurvey.pdf) | [arXiv:2312.10997](https://arxiv.org/abs/2312.10997) |
+| `gartner2024dbms` | Magic Quadrant for Cloud Database Management Systems | ⚠️ Missing | — | — |
+| `GDPR2016` | Regulation (EU) 2016/679 of the European Parliament and of the Council (General Data Protection Regulation) | ✅ Verified | [GDPR2016.pdf](GDPR2016.pdf) | — |
 | `Gomes2024EdgeFog` | Databases in Edge and Fog Environments: A Survey | ✅ Verified | [Gomes2024EdgeFog.pdf](Gomes2024EdgeFog.pdf) | [10.1145/3666001](https://doi.org/10.1145/3666001) |
 | `Graefe1993QueryOptSurvey` | — | ✅ Verified | [Graefe1993QueryOptSurvey.pdf](Graefe1993QueryOptSurvey.pdf) | [10.1145/152610.152611](https://doi.org/10.1145/152610.152611) |
 | `Haas2024HTAPSurvey` | HTAP Databases: A Survey | ✅ Verified | [Haas2024HTAPSurvey.pdf](Haas2024HTAPSurvey.pdf) | [10.1109/TKDE.2023.3298514](https://doi.org/10.1109/TKDE.2023.3298514) |
 | `Halevy2016Goods` | Goods: Organizing Google's Datasets | ✅ Verified | [Halevy2016Goods.pdf](Halevy2016Goods.pdf) | [10.1145/2882903.2903730](https://doi.org/10.1145/2882903.2903730) |
 | `Harby2022Lakehouse` | From Data Warehouse to Lakehouse: A Comparative Review | ✅ Verified | [Harby2022Lakehouse.pdf](Harby2022Lakehouse.pdf) | [10.1109/BigData55660.2022.10020719](https://doi.org/10.1109/BigData55660.2022.10020719) |
+| `Hilprecht2020Partitioning` | Learning a Partitioning Advisor for Cloud Databases | ✅ Verified | [Hilprecht2020Partitioning.pdf](Hilprecht2020Partitioning.pdf) | [10.1145/3318464.3389704](https://doi.org/10.1145/3318464.3389704) |
 | `Hilprecht2022CardinalityEstimation` | DeepDB: Learn from Data, not from Queries! | ✅ Verified | [Hilprecht2022CardinalityEstimation.pdf](Hilprecht2022CardinalityEstimation.pdf) | [10.14778/3384345.3384349](https://doi.org/10.14778/3384345.3384349) |
 | `Hilprecht2022Zero` | — | ✅ Verified | [Hilprecht2022Zero.pdf](Hilprecht2022Zero.pdf) | [arXiv:2201.00561](http://arxiv.org/pdf/2201.00561) |
 | `Hogan2021KGSurvey` | — | ✅ Verified | [Hogan2021KGSurvey.pdf](Hogan2021KGSurvey.pdf) | [arXiv:2003.02320](https://arxiv.org/pdf/2003.02320.pdf) |
 | `Huang2020TiDB` | TiDB: A Raft-Based HTAP Database | ✅ Verified | [Huang2020TiDB.pdf](Huang2020TiDB.pdf) | [10.14778/3415478.3415535](https://doi.org/10.14778/3415478.3415535) |
 | `IEA2024DataCenters` | Data Centres and Data Transmission Networks | ⚠️ Missing | — | [link](https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks) |
-| `Jainaga2023Lakehouse` | Data Lakehouse: A Survey and Experimental Study | ✅ Verified | [Jainaga2023Lakehouse.pdf](Jainaga2023Lakehouse.pdf) | [10.1186/s40537-023-00808-2](https://doi.org/10.1186/s40537-023-00808-2) |
+| `Jain2016HighVariety` | High Variety Cloud Databases | ✅ Verified | [Jain2016HighVariety.pdf](Jain2016HighVariety.pdf) | [10.1109/ICDEW.2016.7495609](https://doi.org/10.1109/ICDEW.2016.7495609) |
 | `Johnson2021FAISS` | — | ✅ Verified | [Johnson2021FAISS.pdf](Johnson2021FAISS.pdf) | [arXiv:1702.08734](https://arxiv.org/pdf/1702.08734) |
 | `Kaur2021NoSQLReview` | NoSQL Databases: A Survey | ✅ Verified | [Kaur2021NoSQLReview.pdf](Kaur2021NoSQLReview.pdf) | [10.46298/arima.13970](https://doi.org/10.46298/arima.13970) |
 | `Kipf2019LearnedCardinality` | — | ✅ Verified | [Kipf2019LearnedCardinality.pdf](Kipf2019LearnedCardinality.pdf) | [arXiv:1809.00677](https://arxiv.org/pdf/1809.00677.pdf) |
@@ -83,9 +90,9 @@ The "survey-of-surveys" catalog was rebuilt from verified papers only. The previ
 | `Lamport1998Paxos` | — | ✅ Verified | [Lamport1998Paxos.pdf](Lamport1998Paxos.pdf) | [10.1145/279227.279229](https://doi.org/10.1145/279227.279229) |
 | `Lao2024GPTuner` | GPTuner: A Manual-Reading Database Tuning System via GPT-Guided Bayesian Optimization | ✅ Verified | [Lao2024GPTuner.pdf](Lao2024GPTuner.pdf) | [10.14778/3659437.3659449](https://doi.org/10.14778/3659437.3659449) |
 | `Leis2023CloudPricing` | Towards Cost-Optimal Query Processing in the Cloud | ✅ Verified | [Leis2023CloudPricing.pdf](Leis2023CloudPricing.pdf) | [10.14778/3461535.3461549](https://doi.org/10.14778/3461535.3461549) |
-| `Li2023LLMQueryOpt` | — | ✅ Verified | [Li2023LLMQueryOpt.pdf](Li2023LLMQueryOpt.pdf) | [arXiv:2404.03548](https://arxiv.org/pdf/2404.03548.pdf) |
 | `Li2024CloudNativeSurvey` | Cloud-Native Database Systems: A Survey and Future Directions | ✅ Verified | [Li2024CloudNativeSurvey.pdf](Li2024CloudNativeSurvey.pdf) | [10.1109/TKDE.2023.3313441](https://doi.org/10.1109/TKDE.2023.3313441) |
 | `Lu2019MultiModel` | Multi-Model Databases: A New Journey to Handle the Variety of Data | ✅ Verified | [Lu2019MultiModel.pdf](Lu2019MultiModel.pdf) | [10.1145/3323214](https://doi.org/10.1145/3323214) |
+| `Ma2020SlowQuery` | Diagnosing Root Causes of Intermittent Slow Queries in Cloud Databases | ✅ Verified | [Ma2020SlowQuery.pdf](Ma2020SlowQuery.pdf) | [10.14778/3389133.3389136](https://doi.org/10.14778/3389133.3389136) |
 | `Ma2021LearnedWorkload` | Query-based Workload Forecasting for Self-Driving Database Management Systems | ✅ Verified | [Ma2021LearnedWorkload.pdf](Ma2021LearnedWorkload.pdf) | [10.1145/3183713.3196908](https://doi.org/10.1145/3183713.3196908) |
 | `Ma2022MBAQO` | — | ✅ Verified | [Ma2022MBAQO.pdf](Ma2022MBAQO.pdf) | [10.1145/3514221.3517869](https://doi.org/10.1145/3514221.3517869) |
 | `Malkov2020HNSW` | — | ✅ Verified | [Malkov2020HNSW.pdf](Malkov2020HNSW.pdf) | [arXiv:1603.09320](http://arxiv.org/pdf/1603.09320) |
@@ -100,16 +107,17 @@ The "survey-of-surveys" catalog was rebuilt from verified papers only. The previ
 | `Pan2024VectorDB` | Survey of Vector Database Management Systems | ✅ Verified | [Pan2024VectorDB.pdf](Pan2024VectorDB.pdf) | [10.1007/s00778-024-00864-x](https://doi.org/10.1007/s00778-024-00864-x) |
 | `Patterson2022CarbonAI` | — | ✅ Verified | [Patterson2022CarbonAI.pdf](Patterson2022CarbonAI.pdf) | [10.1109/MC.2022.3148714](https://doi.org/10.1109/MC.2022.3148714) |
 | `Pavlo2017SelfDriving` | Self-Driving Database Management Systems | ✅ Verified | [Pavlo2017SelfDriving.pdf](Pavlo2017SelfDriving.pdf) | — |
+| `Phan2014IoTCloudDB` | Cloud Databases for Internet-of-Things Data | ✅ Verified | [Phan2014IoTCloudDB.pdf](Phan2014IoTCloudDB.pdf) | [10.1109/iThings.2014.26](https://doi.org/10.1109/iThings.2014.26) |
 | `Politou2018GDPR` | Forgetting Personal Data and Revoking Consent Under the GDPR: Challenges and Proposed Solutions | ✅ Verified | [Politou2018GDPR.pdf](Politou2018GDPR.pdf) | [10.1093/cybsec/tyy001](https://doi.org/10.1093/cybsec/tyy001) |
 | `Pourreza2023DINSQL` | DIN-SQL: Decomposed In-Context Learning of Text-to-SQL with Self-Correction | ✅ Verified | [Pourreza2023DINSQL.pdf](Pourreza2023DINSQL.pdf) | — |
 | `Rabl2019BenchmarkSurvey` | Just Can't Get Enough---Synthesizing Big Data Benchmarks | ✅ Verified | [Rabl2019BenchmarkSurvey.pdf](Rabl2019BenchmarkSurvey.pdf) | — |
 | `Rahm2001SchemaMatching` | — | ✅ Verified | [Rahm2001SchemaMatching.pdf](Rahm2001SchemaMatching.pdf) | [PDF](https://ul.qucosa.de/api/qucosa%3A31968/attachment/ATT-0/) |
+| `Ramanathan2011SimpleDBBigtable` | Comparison of Cloud Database: Amazon's SimpleDB and Google's Bigtable | ✅ Verified | [Ramanathan2011SimpleDBBigtable.pdf](Ramanathan2011SimpleDBBigtable.pdf) | [10.1109/ReTIS.2011.6146861](https://doi.org/10.1109/ReTIS.2011.6146861) |
 | `Saeed2023XAI` | Explainable AI (XAI): A Systematic Meta-Survey of Current Challenges and Future Opportunities | ✅ Verified | [Saeed2023XAI.pdf](Saeed2023XAI.pdf) | [10.1016/j.knosys.2023.110273](https://doi.org/10.1016/j.knosys.2023.110273) |
 | `Sanka2022CloudSecSurvey` | A Systematic Literature Review on Cloud Computing Security: Threats and Mitigation Strategies | ✅ Verified | [Sanka2022CloudSecSurvey.pdf](Sanka2022CloudSecSurvey.pdf) | [10.1109/ACCESS.2021.3073203](https://doi.org/10.1109/ACCESS.2021.3073203) |
 | `Strubell2019Energy` | — | ✅ Verified | [Strubell2019Energy.pdf](Strubell2019Energy.pdf) | [PDF](https://www.aclweb.org/anthology/P19-1355.pdf) |
-| `Sun2019Learned` | — | ✅ Verified | [Sun2019Learned.pdf](Sun2019Learned.pdf) | [arXiv:1906.02560](https://arxiv.org/pdf/1906.02560) |
 | `Taft2020Cockroach` | CockroachDB: The Resilient Geo-Distributed SQL Database | ✅ Verified | [Taft2020Cockroach.pdf](Taft2020Cockroach.pdf) | [10.1145/3318464.3386134](https://doi.org/10.1145/3318464.3386134) |
-| `Thirumuruganathan2024DBLLMSurvey` | A Survey on Integrating LLMs with Databases | ✅ Verified | [Thirumuruganathan2024DBLLMSurvey.pdf](Thirumuruganathan2024DBLLMSurvey.pdf) | [arXiv:2404.06234](https://arxiv.org/abs/2404.06234) |
+| `Tan2019iBTune` | iBTune: Individualized Buffer Tuning for Large-scale Cloud Databases | ✅ Verified | [Tan2019iBTune.pdf](Tan2019iBTune.pdf) | [10.14778/3339490.3339503](https://doi.org/10.14778/3339490.3339503) |
 | `Tomarchio2020CloudOrchestration` | — | ✅ Verified | [Tomarchio2020CloudOrchestration.pdf](Tomarchio2020CloudOrchestration.pdf) | [PDF](https://journalofcloudcomputing.springeropen.com/track/pdf/10.1186/s13677-020-00194-7) |
 | `Verbitski2017` | Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases | ✅ Verified | [Verbitski2017.pdf](Verbitski2017.pdf) | [10.1145/3035918.3056101](https://doi.org/10.1145/3035918.3056101) |
 | `Viotti2016Consistency` | Consistency in Non-Transactional Distributed Storage Systems | ✅ Verified | [Viotti2016Consistency.pdf](Viotti2016Consistency.pdf) | [10.1145/2926965](https://doi.org/10.1145/2926965) |
@@ -125,10 +133,7 @@ The "survey-of-surveys" catalog was rebuilt from verified papers only. The previ
 | `Zamanian2017Chiller` | — | ✅ Verified | [Zamanian2017Chiller.pdf](Zamanian2017Chiller.pdf) | [10.14778/3055330.3055335](https://doi.org/10.14778/3055330.3055335) |
 | `Zhang2022CDBTune` | An End-to-End Automatic Cloud Database Tuning System Using Deep Reinforcement Learning | ✅ Verified | [Zhang2022CDBTune.pdf](Zhang2022CDBTune.pdf) | [10.1145/3299869.3300085](https://doi.org/10.1145/3299869.3300085) |
 | `Zhou2022AI4DB` | Database Meets Artificial Intelligence: A Survey | ✅ Verified | [Zhou2022AI4DB.pdf](Zhou2022AI4DB.pdf) | [10.1109/TKDE.2020.2994641](https://doi.org/10.1109/TKDE.2020.2994641) |
-| `Zhou2023LLM4DB` | — | ✅ Verified | [Zhou2023LLM4DB.pdf](Zhou2023LLM4DB.pdf) | [arXiv:2311.09858](https://arxiv.org/pdf/2311.09858.pdf) |
-| `Zhou2024DBot` | D-Bot: Database Diagnosis System using Large Language Models | ✅ Verified | [Zhou2024DBot.pdf](Zhou2024DBot.pdf) | [10.14778/3636218.3636230](https://doi.org/10.14778/3636218.3636230) |
-| `Zhu2023Pilot` | — | ✅ Verified | [Zhu2023Pilot.pdf](Zhu2023Pilot.pdf) | [PDF](http://eprints.lse.ac.uk/120493/1/Rosenblatt_et_al_Epistemic_parity_published.pdf) |
-| `gartner2024dbms` | Magic Quadrant for Cloud Database Management Systems | ⚠️ Missing | — | — |
+| `Zhou2024DBot` | D-Bot: Database Diagnosis System using Large Language Models | ✅ Verified | [Zhou2024DBot.pdf](Zhou2024DBot.pdf) | [10.14778/3675034.3675043](https://doi.org/10.14778/3675034.3675043) |
 
 ## Missing references (cited, no local PDF)
 
@@ -161,7 +166,6 @@ Real, verified papers downloaded during the search that are **not** among the 16
 | [Cloud_Database-as-a-Service_DaaS_-_ROI.pdf](Cloud_Database-as-a-Service_DaaS_-_ROI.pdf) | Cloud Database-as-a-Service (DaaS) - ROI | — |
 | [Comparison_of_NoSQL_Datastores_for_Large_Scale_Data_Stream_Log_Analytics.pdf](Comparison_of_NoSQL_Datastores_for_Large_Scale_Data_Stream_Log_Analytics.pdf) | Comparison of NoSQL Datastores for Large Scale Data Stream Log Analytics | [10.1109/SMARTCOMP.2019.00093](https://doi.org/10.1109/SMARTCOMP.2019.00093) |
 | [206476.206480.pdf](206476.206480.pdf) | A Survey of Current Object-Oriented Databases | [10.1145/206476.206480](https://doi.org/10.1145/206476.206480) |
-| [BDCC-06-00111-v2.pdf](BDCC-06-00111-v2.pdf) | Contact Tracing Strategies for COVID-19 Prevention and Containment: A Scoping Review ⚠️ likely a mis-download (filename matches `Harby2022Lakehouse`'s journal issue, but content is an unrelated COVID paper) | — |
 | [Data_Lakehouse_for_Time_Series_Data_A_Systematic_Literature_Review.pdf](Data_Lakehouse_for_Time_Series_Data_A_Systematic_Literature_Review.pdf) | Data Lakehouse for Time Series Data: A Systematic Literature Review | [10.1109/BigData62323.2024.10825961](https://doi.org/10.1109/BigData62323.2024.10825961) |
 | [Database_as_a_service_DBaaS.pdf](Database_as_a_service_DBaaS.pdf) | Database as a service (DBaaS) | — |
 | [Database_as_a_Service_Challenges_and_solutions_for_privacy_and_security.pdf](Database_as_a_Service_Challenges_and_solutions_for_privacy_and_security.pdf) | Database as a Service: Challenges and solutions for privacy and security | — |
