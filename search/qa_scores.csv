@@ -1,0 +1,156 @@
+record_id,qa1,qa2,qa3,qa4,qa5,qa6,qa7,qa8,total,verdict,primary_topic,phases,venue_abbrev,venue_type,first_author,pages,title
+CAND-0663,1,1,0,1,1,1,1,0,6,include,Security/Privacy,Operate,IEEE APSCC,conference,Ferrari,6,Database as a Service: Challenges and Solutions for Privacy and Security
+CAND-0780,,,,,,,,,,EC3,,,,,,,Cloud Database-as-a-Service (DaaS) - ROI
+CAND-0789,,,,,,,,,,EC3,,,,,,,Database as a service (DBaaS)
+CAND-1029,,,,,,,,,,EC3,,,,,,,Survey on NoSQL Database
+CAND-1069,1,1,0.5,1,1,1,1,0,6.5,include,Graph Databases,Optimize,PVLDB,journal,Lee,12,An In-depth Comparison of Subgraph Isomorphism Algorithms in Graph Databases
+CAND-1296,1,1,0.5,1,1,0.5,1,0,6,include,NoSQL/NewSQL,Design;Operate;Optimize,IEEE IT Professional,journal,Deka,8,A Survey of Cloud Database Systems
+CAND-1305,,,,,,,,,,EC3,,,,,,,A Survey on Querying Encrypted Data for Database as a Service
+CAND-1651,,,,,,,,,,EC3,,,,,,,Review on Fragmentation in Distributed Database Environment
+CAND-1671,,,,,,,,,,EC3,,,,,,,Study on Database Virtualization for Database as a Service (DBaaS)
+CAND-1728,,,,,,,,,,EC1,,,,,,,
+CAND-1748,,,,,,,,,,EC3,,,,,,,
+CAND-1753,0.5,0.5,0,0,0.5,0,0,0,1.5,below-qa,,,,,,,
+CAND-1806,1,1,0.5,1,1,1,1,1,7.5,include,NoSQL/NewSQL,Design;Operate;Optimize,J. Big Data,journal,Lourenco,26,Choosing the right NoSQL database for the job: a quality attribute evaluation
+CAND-1818,1,1,0.5,1,1,1,1,1,7.5,include,Security/Privacy,Design;Operate;Optimize,J. Cloud Comput.,journal,Kohler,14,Confidential database-as-a-service approaches: taxonomy and survey
+CAND-1843,1,1,0,1,1,0.5,0.5,0,5,include,NoSQL/NewSQL,Design;Operate;Optimize,Trakia J. Sci.,journal,Klisarova-Belcheva,6,Distributed databases - some approaches; models and current trends
+CAND-1986,,,,,,,,,,EC3,,,,,,,
+CAND-2020,1,1,0.5,1,1,1,0.5,1,7,include,Distributed DBs,Design;Operate;Optimize,IJDMS,journal,Waqas,19,Transaction Management Techniques and Practices in Current Cloud Computing Environments : A Survey
+CAND-2136,1,1,0.5,1,1,1,0.5,1,7,include,DBaaS,Design;Deploy;Operate;Optimize,IJACSA,journal,Abourezq,21,Database-as-a-Service for Big Data: An Overview
+CAND-2245,1,1,0.5,1,1,1,0.5,1,7,include,Graph Databases,Optimize,IJDMS,journal,Ben Ammar,14,Query Optimization Techniques in Graph Databases
+CAND-2272,1,1,0.5,1,1,1,0.5,1,7,include,Graph Databases,Optimize,Proc. ISP RAS,journal,Guralnik,12,Some problems on graph databases
+CAND-2383,,,,,,,,,,EC1,,,,,,,
+CAND-2384,,,,,,,,,,EC3,,,,,,,
+CAND-2400,1,1,0,1,1,1,0.5,1,6.5,include,Graph Databases,Optimize,IJCNIS,journal,Dinari,9,A Survey on Graph Queries Processing: Techniques and Methods
+CAND-2427,1,1,0.5,1,1,1,1,1,7.5,include,NoSQL/NewSQL,Design;Operate,Front. Inf. Technol. Electron. Eng.,journal,Siddiqa,31,Big data storage technologies: a survey
+CAND-2433,,,,,,,,,,EC3,,,,,,,
+CAND-2461,1,1,0,0.5,0.5,1,0.5,0,4.5,include,DBaaS,Deploy;Operate,IJITCS,journal,Bhatti,9,Databases in Cloud Computing: A Literature Review
+CAND-2492,1,1,0.5,1,1,1,0,1,6.5,include,Security/Privacy,Operate;Optimize,arXiv,arxiv,Sobati Moghadam,14,Enforcing Privacy in Cloud Databases
+CAND-2574,,,,,,,,,,EC3,,,,,,,
+CAND-2576,,,,,,,,,,EC3,,,,,,,
+CAND-2625,1,1,0.5,1,1,0.5,1,0,6,include,DBaaS,Design;Deploy;Optimize,IEEE Big Data (BIGDATA),conference,Baralis,10,SQL versus NoSQL Databases for Geospatial Applications
+CAND-2631,1,1,0.5,1,1,1,0.5,0,6,include,Security/Privacy,Operate,IJARCS,journal,Dindoliwala,6,Survey on Security Mechanisms In NoSQL Databases
+CAND-2741,0.5,1,0,1,1,0.5,0,0,4,include,Distributed DBs,Operate;Optimize,IJRASET,journal,Solanki,9,An overview of Concurrency Control Techniques in Distributed Database
+CAND-2774,1,1,0.5,1,1,1,0.5,1,7,include,Graph Databases,Design;Optimize,IJECE,journal,Patil,10,A Survey on Graph Database Management Techniques for Huge Unstructured Data
+CAND-2816,1,1,0.5,1,1,1,0.5,1,7,include,DBaaS,Deploy;Operate;Optimize,iSys,journal,Segalin,13,DBaaS Multitenancy; Auto-tuning and SLA Maintenance in Cloud Environments: a Brief Survey
+CAND-2844,1,1,0.5,1,1,0,0.5,1,6,include,AI4DB/Learned Opt.,Optimize,ADCAIJ,journal,Ali,14,Evolutionary Algorithms for Query Optimization in Distributed Database Systems: A review
+CAND-2970,1,1,0.5,1,1,1,0.5,0,6,include,DBaaS,Design;Deploy,Informatica Economica,journal,Iancu,12,Saving Large Semantic Data in Cloud: A Survey of the Main DBaaS Solutions
+CAND-3002,1,1,0.5,1,1,0,0.5,0,5,include,Benchmarking,Design;Optimize,Vojnotehnicki glasnik,journal,Krstic,26,Testing the performance of NoSQL databases via the database benchmark tool
+CAND-3028,,,,,,,,,,EC3,,,,,,,
+CAND-3057,1,1,0.5,1,1,1,1,1,7.5,include,Distributed DBs,Operate;Optimize,J. Parallel Distrib. Comput.,journal,Khelaifa,32,A comparative analysis of adaptive consistency approaches in cloud storage
+CAND-3112,1,1,0,1,1,1,0,0,5,include,Distributed DBs,Operate;Optimize,IJSRCSEIT,journal,Arika,10,A Survey on Efficient Concurrency Control Algorithm in Distributed Database Systems
+CAND-3117,,,,,,,,,,EC3,,,,,,,
+CAND-3134,1,1,0.5,1,1,0.5,0,1,6,include,Distributed DBs,Design;Operate;Optimize,arXiv,arxiv,Ruan,22,Blockchains vs. Distributed Databases: Dichotomy and Fusion
+CAND-3142,,,,,,,,,,EC3,,,,,,,
+CAND-3151,,,,,,,,,,EC3,,,,,,,
+CAND-3154,1,1,0,1,1,1,0,1,6,include,Distributed DBs,Operate;Optimize,arXiv,arxiv,Aldin,52,Consistency models in distributed systems: A survey on definitions; disciplines; challenges and applications
+CAND-3161,1,1,1,1,1,1,0.5,1,7.5,include,AI4DB/Learned Opt.,Optimize,IJATCSE,journal,Chande,11,Database Query Optimization using Genetic Algorithms: A Systematic Literature Review
+CAND-3162,1,1,0,1,1,1,0.5,0,5.5,include,Security/Privacy,Deploy;Operate,Econ. Comput. Econ. Cybern. Stud. Res.,journal,Nica,17,Databases Security Issues - A Short Analysis on the Emergent Security Problems Generated By NoSQL Databases
+CAND-3204,1,1,1,1,1,0.5,0,1,6.5,include,NL/LLM-Database,Optimize,arXiv,arxiv,Dar,18,Frameworks for Querying Databases Using Natural Language: A Literature Review
+CAND-3223,,,,,,,,,,EC1,,,,,,,
+CAND-3233,1,1,0.5,1,1,1,1,1,7.5,include,Security/Privacy,Operate,IEEE TKDE,journal,Zhang,17,Integrity Authentication for SQL Query Evaluation on Outsourced Databases: A Survey
+CAND-3251,1,1,0.5,1,1,1,1,1,7.5,include,NoSQL/NewSQL,Design;Optimize,VLDB J.,journal,Luo,25,LSM-based Storage Techniques: A Survey
+CAND-3309,,,,,,,,,,EC2,,,,,,,
+CAND-3317,1,1,0,1,0.5,0,0,0,3.5,below-qa,,,,,,,
+CAND-3370,,,,,,,,,,EC3,,,,,,,
+CAND-3392,1,1,0.5,1,1,1,0,1,6.5,include,Multi-Model DBs,Optimize,arXiv,arxiv,Mami,25,The Query Translation Landscape: a Survey
+CAND-3487,1,1,0,1,0.5,1,0.5,1,6.0,include,Security/Privacy,Operate,IJATCSE,journal,Nwankwo,7,A Review of Critical Security Challenges in SQL-based and NoSQL Systems from 2010 to 2019
+CAND-3518,0.5,1,0,1,0.5,0.5,1,0,4.5,include,NoSQL/NewSQL,Design;Optimize,ICCCI 2020,conference,Palanisamy,7,A survey on RDBMS and NoSQL Databases MySQL vs MongoDB
+CAND-3536,1,1,0.5,1,1,1,0,1,6.5,include,Benchmarking,Optimize,arXiv,arxiv,Dayarathna,26,Benchmarking Graph Data Management and Processing Systems: A Survey
+CAND-3537,1,1,0.5,1,1,1,1,1,7.5,include,AI4DB/Learned Opt.,Optimize,PVLDB,journal,Marcus,14,Benchmarking Learned Indexes
+CAND-3652,1,1,0,1,0.5,0.5,0.5,0,4.5,include,Distributed DBs,Design;Optimize,IJSECS,journal,Sharifah Hafizah,7,Fragmentation Techniques with Ideal Performance in Distributed Database - A Review
+CAND-3660,,,,,,,,,,EC1,,,,,,,
+CAND-3740,1,1,0,1,1,1,0,1,6,include,NoSQL/NewSQL,Design;Operate,arXiv,arxiv,Asaad,18,NoSQL Databases: Yearning for Disambiguation
+CAND-3778,1,1,0,1,1,1,0.5,1,6.5,include,HTAP Systems,Design;Optimize,Proc. ISP RAS,journal,Kuznetsov,14,Real-Time Analytics; Hybrid Transactional/Analytical Processing; In-Memory Data Management; and Non-Volatile Memory
+CAND-3784,,,,,,,,,,EC3,,,,,,,
+CAND-3935,1,1,0.5,1,1,1,1,1,7.5,include,Graph Databases,Design;Optimize,Database (Oxford),journal,Timon-Reina,22,An overview of graph databases and their applications in the biomedical domain
+CAND-3961,,,,,,,,,,EC3,,,,,,,
+CAND-3979,1,0.5,0,1,0.5,1,0,1,5,include,Distributed DBs,Design;Optimize,Research Square,arxiv,Taki,18,A Survey On Fragmentation In Distributed Database Systems
+CAND-4000,1,1,0,1,1,1,1,1,7,include,NoSQL/NewSQL,Design;Operate;Optimize;Evolve,Springer (book chpt.),journal,Strohbach,23,Big Data Storage
+CAND-4002,1,1,1,1,1,1,1,1,8,include,NoSQL/NewSQL,Design;Operate;Optimize;Evolve,Computing and Informatics,journal,Faridoon,33,Big Data Storage Tools Using NoSQL Databases and Their Applications in Various Domains: A Systematic Review
+CAND-4029,1,1,0.5,1,1,1,1,1,7.5,include,NoSQL/NewSQL,Optimize,VLDB J.,journal,Mao,18,Comparison and evaluation of state-of-the-art LSM merge policies
+CAND-4031,1,1,0.5,1,1,1,1,1,7.5,include,NoSQL/NewSQL,Design;Optimize,PVLDB,conference,Sarkar,14,Constructing and Analyzing the LSM Compaction Design Space
+CAND-4092,1,1,0.5,1,1,1,0,1,6.5,include,Edge/Fog DBs,Design;Deploy;Optimize,arXiv (Cornell University),arxiv,Mansouri,19,Resource Utilization of Distributed Databases in Edge-Cloud Environment
+CAND-4219,1,1,0.5,1,1,1,1,1,7.5,include,Graph Databases,Design;Optimize,IEEE TPDS,journal,Besta,24,Practice of Streaming Processing of Dynamic Graphs: Concepts; Models; and Systems
+CAND-4226,1,1,0,1,0.5,1,1,1,6.5,include,Graph Databases,Design;Optimize,ACM SIGMOD Record,journal,Arenas,11,Querying in the Age of Graph Databases and Knowledge Graphs
+CAND-4309,1,1,0.5,1,1,1,1,1,7.5,include,NoSQL/NewSQL,Design;Optimize,Big Data Research,journal,Truica,28,The Forgotten Document-Oriented Database Management Systems: An Overview and Benchmark of Native XML DODBMSes in Comparison with JSON DODBMSes
+CAND-4367,,,,,,,,,,EC1,,,,,,,
+CAND-4460,,,,,,,,,,EC2,,,,,,,
+CAND-4464,,,,,,,,,,EC3,,,,,,,
+CAND-4468,,,,,,,,,,EC1,,,,,,,
+CAND-4519,,,,,,,,,,EC1,,,,,,,
+CAND-4523,,,,,,,,,,EC3,,,,,,,
+CAND-4672,1,1,0,0.5,1,1,0.5,0,5.0,include,Distributed DBs,Design;Operate,Vestnik NSU Ser. IT,journal,Zlygostev,9,On Quantitative Metrics for the Consistency and Availability in Distributed Databases
+CAND-4791,1,1,0.5,1,1,1,0,1,6.5,include,Multi-Model DBs,Design;Optimize,arXiv,arxiv,Glake,45,Towards Polyglot Data Stores -- Overview and Open Research Questions
+CAND-4818,1,1,0.5,1,1,1,0.5,1,7.0,include,Vector Databases,Design;Optimize;Operate,arXiv,arxiv,Ma,25,A Comprehensive Survey on Vector Database: Storage and Retrieval Technique; Challenge
+CAND-4844,1,1,0,1,1,0.5,0,1,5.5,include,DBaaS,Design;Deploy;Operate;Optimize,arXiv,arxiv,Vikiru,9,An Overview on Cloud Distributed Databases for Business Environments
+CAND-4873,1,1,0.5,1,1,1,0,1,6.5,include,Security/Privacy,Design;Operate;Optimize,arXiv,arxiv,Koppenwallner,34,A Survey on Property-Preserving Database Encryption Techniques in the Cloud
+CAND-4927,1,1,0.5,1,1,1,0.5,1,7,include,Distributed DBs,Design;Operate;Optimize,Radioelectron. Comput. Syst.,journal,Ahmed,9,Consistency Issue and Related Trade-offs in Distributed Replicated Systems and Databases: A Review
+CAND-4941,,,,,,,,,,EC2,,,,,,,
+CAND-4953,1,1,1,1,1,1,1,1,8,include,Graph Databases,Design;Operate;Optimize,ACM Comput. Surv.,journal,Besta,46,Demystifying Graph Databases: Analysis and Taxonomy of Data Organization; System Designs; and Graph Queries
+CAND-4994,,,,,,,,,,EC3,,,,,,6,Evolution of Database Management System in Hybrid and Multi Cloud Platform: Challenges; Solutions and Innovations
+CAND-5009,,,,,,,,,,EC3,,,,,,,
+CAND-5050,1,1,0.5,1,1,1,1,1,7.5,include,Graph Databases,Design;Optimize,ACM SIGMOD Rec.,journal,Khan,12,Knowledge Graphs Querying
+CAND-5089,1,1,1,1,1,0.5,1,1,7.5,include,NoSQL/NewSQL,Design,CISTI,conference,Ferreira,6,Multidimensional Modelling in NoSQL Database: A Systematic Review
+CAND-5090,1,1,0.5,1,1,1,1,1,7.5,include,Multi-Model DBs,Design;Optimize,Distrib. Parallel Databases,journal,Guo,41,Multi-model query languages: taming the variety of big data
+CAND-5175,1,1,1,1,1,1,1,1,8,include,NoSQL/NewSQL,Design;Deploy;Optimize,Big Data Cogn. Comput.,journal,Khan,57,SQL and NoSQL Databases Software architectures performance analysis and assessments - A Systematic Literature review
+CAND-5182,,,,,,,,,,EC1,,,,,,,
+CAND-5206,1,1,0.5,1,1,1,1,1,7.5,include,Graph Databases,Design;Operate;Optimize,ACM SIGMOD Rec.,journal,Tian,8,The World of Graph Databases from An Industry Perspective
+CAND-5215,,,,,,,,,,EC1,,,,,,,
+CAND-5259,1,1,0,0.5,0.5,0.5,0,0,3.5,below-qa,,,,,,,
+CAND-5309,1,1,0.5,1,1,1,1,1,7.5,include,NoSQL/NewSQL,Design;Optimize,IEEE SCEECS,conference,Mishra,6,A survey of LSM-Tree based Indexes; Data Systems and KV-stores
+CAND-5317,1,1,0.5,1,1,1,1,1,7.5,include,HTAP Systems,Design;Optimize,VLDB J.,journal,Song,31,A survey on hybrid transactional and analytical processing
+CAND-5323,1,1,1,1,1,1,0.5,1,7.5,include,AI4DB/Learned Opt.,Optimize;Operate,Comput. Syst. Sci. Eng.,journal,Nurhadi,31,A Systematic Review of Automated Classification for Simple and Complex Query SQL on NoSQL Database
+CAND-5330,1,1,0.5,1,1,1,0,1,6.5,include,AI4DB/Learned Opt.,Optimize;Operate,arXiv,arxiv,Zhang,17,Automatic Configuration Tuning on Cloud Database: A Survey
+CAND-5333,1,1,0,1,0.5,0,0,1,4.5,include,Cloud-Native Arch.,Deploy;Operate;Optimize,IJSRST,journal,Kola,11,Automation Frameworks and Best Practices for Cloud-Native Database Lifecycle Management
+CAND-5401,1,1,0.5,1,1,1,0,1,6.5,include,Security/Privacy,Design;Operate,IJRITCC,journal,Satish,7,Database Security Issues and Challenges in Cloud Computing
+CAND-5413,1,1,1,1,1,1,0,1,7,include,Graph Databases,Design;Evolve,arXiv,arxiv,Santos,21,Data Modeling for Connected Data: A systematic literature review
+CAND-5445,1,1,1,0.5,1,1,0.5,1,7,include,Benchmarking,Design;Optimize,R. Inform. Teor. Apl.,journal,Falcao,9,Energy Consumption and Performance Evaluation of Multi-Model NoSQL DBMSs
+CAND-5503,1,1,0.5,1,1,1,0,1,6.5,include,Benchmarking,Operate;Optimize,arXiv,arxiv,Turkkan,15,How to Evaluate Distributed Coordination Systems? A Survey and Analysis
+CAND-5504,1,1,0.5,1,1,1,0,1,6.5,include,HTAP Systems,Design;Operate;Optimize,arXiv,arxiv,Zhang,20,HTAP Databases: A Survey
+CAND-5543,1,1,0,1,0.5,1,0,1,5.5,include,AI4DB/Learned Opt.,Optimize,arXiv,arxiv,Liu,9,Learned Data Compression: Challenges and Opportunities for the Future
+CAND-5582,,,,,,,,,,EC3,,,,,,,
+CAND-5595,1,1,0.5,1,1,1,0,0,5.5,include,Graph Databases,Design;Operate,arXiv,arxiv,Santos,29,NoSQL Graph Databases: an overview
+CAND-5596,1,0.5,0.5,1,0.5,1,0,0,4.5,include,NoSQL/NewSQL,Design;Operate;Optimize,IJFMR,journal,Gajiwala,13,NoSQL Technologies in Big Data Ecosystems: A Comprehensive Review of Architectural Paradigms and Performance Metrics
+CAND-5634,1,1,0.5,1,1,1,1,1,7.5,include,NoSQL/NewSQL,Design;Deploy;Operate;Optimize,ARIMA,journal,Kpekpassi,73,NoSQL databases: A survey
+CAND-5677,1,1,0,1,1,1,0,1,6,include,Distributed DBs,Design;Operate;Optimize,arXiv,arxiv,Solat,19,Sharding Distributed Databases: A Critical Review
+CAND-5687,1,1,0.5,1,1,1,1,1,7.5,include,Vector Databases,Design;Optimize,VLDB J.,journal,Pan,25,Survey of Vector Database Management Systems
+CAND-5706,1,1,0.5,1,1,1,1,1,7.5,include,Data Lakehouse,Design;Operate;Evolve,J. Data Inf. Manag.,journal,Janssen,26,The evolution of data storage architectures: examining the secure value of the Data Lakehouse
+CAND-5732,1,1,0,0,0.5,1,0,0,3.5,below-qa,,,,,,,
+CAND-5735,1,1,0,1,1,1,0,1,6,include,Graph Databases,Design;Optimize,arXiv,arxiv,Anuyah,29,Understanding Graph Databases: A Comprehensive Tutorial and Survey
+CAND-5743,1,1,0.5,1,1,1,1,1,7.5,include,Vector Databases,Design;Operate;Optimize,Cogn. Syst. Res.,journal,Taipalus,9,Vector database management systems: Fundamental concepts; use-cases; and current challenges
+CAND-5782,1,1,0,1,1,1,0,1,6,include,AI4DB/Learned Opt.,Optimize;Operate,Int. J. Sci. World,journal,Othman,9,AI-Driven Database Optimization: Machine Learning Applications in Database Management Systems
+CAND-5790,1,1,1,1,1,1,0,1,7,include,AI4DB/Learned Opt.,Optimize;Operate,Eng. Technol. J.,journal,Ali,13,AI-Powered Database Management: Predictive Analytics for Performance Tuning
+CAND-5814,,,,,,,,,,EC3,,,,,,,A Review of Fuzzy Database Modeling Usage in the Modern World
+CAND-5834,1,1,0.5,1,1,1,1,1,7.5,include,AI4DB/Learned Opt.,Design;Optimize,ACM Comput. Surv.,journal,Abdullah-Al-Mamun,37,A Survey of Learned Indexes for the Multi-dimensional Space
+CAND-5839,,,,,,,,,,EC3,,,,,,,
+CAND-5841,1,1,0.5,0.5,1,1,0,1,6,include,Distributed DBs,Design;Operate;Optimize,Eng. Technol. J.,journal,Hasan,12,A Survey on Distributed Database Systems in the Era of Big Data
+CAND-5906,1,1,0.5,1,1,1,0.5,1,7,include,NoSQL/NewSQL,Design;Operate;Optimize,Info. Res. Commun.,journal,Ying,24,Comparative Analysis of SQL and NoSQL Databases: Data Models; Use Cases; and Performance Insights
+CAND-5940,1,1,0.5,1,1,1,0,1,6.5,include,Distributed DBs,Design;Operate;Optimize,Eng. Technol. J.,journal,Mahmoud,10,Data Integrity and Consistency Challenges in Distributed Database Systems
+CAND-5983,1,1,0,1,1,1,0.5,1,6.5,include,NoSQL/NewSQL,Design;Deploy;Operate;Optimize;Evolve,EPJ Web Conf.,conference,Bhande,8,Emerging Trends in Database Design: Toward Improved Modeling and Development Practices
+CAND-6005,1,1,0.5,1,1,1,0,1,6.5,include,AI4DB/Learned Opt.,Optimize,arXiv,arxiv,Liu,14,Evaluating Learned Indexes in LSM-tree Systems: Benchmarks; Insights and Design Choices
+CAND-6006,1,1,0.5,0.5,0.5,1,1,1,6.5,include,DBaaS,Deploy;Operate;Optimize,IEEE ICAC,conference,Daundasekara,6,Evaluating Performance and User Perceptions of Multi-Cloud Database-as-a-Service Solutions: A Mixed-Methods Study
+CAND-6008,1,1,1,1,1,1,0.5,1,7.5,include,NoSQL/NewSQL,Deploy;Optimize,HighTech Innov. J.,journal,Topcu,23,Evaluating the Performance of NoSQL Databases for Big Data in Cloud Computing Environments
+CAND-6054,,,,,,,,,,EC2,,,,,,,
+CAND-6058,1,1,0.5,1,1,1,0,1,6.5,include,AI4DB/Learned Opt.,Optimize,arXiv,arxiv,Li,9,Graph Neural Networks for Databases: A Survey
+CAND-6075,1,1,0.5,1,1,1,1,1,7.5,include,Benchmarking,Optimize,VLDB J.,journal,Liu,29,How good are multi-dimensional learned indexes? An experimental survey
+CAND-6099,1,0.5,0,0.5,0.5,1,0,1,4.5,include,Vector Databases,Design;Deploy;Optimize,IARJSET,journal,Joshi,15,Introduction to Vector Databases for Generative AI: Applications; Performance; Future Projections; and Cost Considerations
+CAND-6119,1,1,0.5,1,1,1,1,1,7.5,include,AI4DB/Learned Opt.,Optimize,Front. Comput. Sci.,journal,Qiao,24,Learning database optimization techniques: the state-of-the-art and prospects
+CAND-6172,1,0.5,0,0.5,1,1,0,0,4,include,Data Lakehouse,Design;Deploy;Operate;Optimize,IJSRSET,journal,Chaudhari,14,Optimizing Data Lakehouse Architectures for Scalable Real-Time Analytics
+CAND-6240,,,,,,,,,,EC1,,,,,,,
+CAND-6245,,,,,,,,,,EC3,,,,,,,
+CAND-6261,1,1,1,1,1,1,0.5,1,7.5,include,Security/Privacy,Operate;Optimize,EPJ Web Conf.,conference,Mahule,13,Survey on Cloud Database Security: Cryptographic Techniques; Intrusion Detection and Intelligent Defense Mechanisms
+CAND-6263,1,1,1,1,1,1,0,1,7,include,Graph Databases,Design;Deploy;Operate;Optimize,arXiv,arxiv,Coimbra,66,Survey: On the Landscape of Graph Databases
+CAND-6266,,,,,,,,,,EC2,,,,,,,
+CAND-6292,0.5,0.5,0,1,1,0.5,0,1,4.5,include,Cloud-Native Arch.,Design;Deploy;Operate;Optimize;Evolve,IJITC,journal,Tama,12,The evolution of database in navigating data driven cloud technology
+CAND-6312,1,1,1,1,1,1,0,1,7,include,Vector Databases,Deploy;Operate;Optimize,arXiv,arxiv,Xie,12,Toward Understanding Bugs in Vector Database Management Systems
+CAND-6329,1,1,0,1,0,1,0,0,4,include,Vector Databases,Operate;Optimize,IJRTI,journal,Patel,12,Vector Databases and Embedding Stores for Pipeline Observability
+CAND-6334,1,1,0.5,1,1,1,0.5,1,7,include,NL/LLM-Database,Design;Optimize,arXiv,arxiv,Jing,9,When Large Language Models Meet Vector Databases: A Survey
+CAND-6347,,,,,,,,,,EC3,,,,,,,
+CAND-6376,1,1,0.5,1,1,1,0,1,6.5,include,Distributed DBs,Design;Operate;Optimize,IJARSCT,journal,Upadhyay,11,A Survey of Data Storage; Retrieval; and Optimization Methods in Modern Databases
+CAND-6377,1,1,1,1,1,1,0.5,1,7.5,include,Cloud-Native Arch.,Design;Deploy;Operate;Optimize;Evolve,JSAA,journal,Allam,25,A Survey of Emerging Trends and Algorithmic Solutions in Cloud-Native Data Management
+CAND-M-001,1,1,0,1,1,1,0,1,6,include,DBaaS,Design;Deploy;Operate;Optimize,arXiv,arxiv,Vikiru,9,An Overview on Cloud Distributed Databases for Business Environments
+CAND-M-002,1,1,0,0,0.5,1,0,0,3.5,below-qa,,,,,,,
+CAND-M-003,1,1,0.5,1,1,1,0,0,5.5,include,Cloud DB Migration,Design;Deploy;Operate;Optimize;Evolve,Sage Sci. Rev. Appl. ML,journal,Kansara,17,Advancements in Cloud Database Migration: Current Innovations and Future Prospects for Scalable and Secure Transitions
+CAND-M-004,1,1,0.5,1,1,1,0.5,1,7,include,NoSQL/NewSQL,Design;Deploy;Operate;Optimize,Passer J.,journal,Shareef,13,A Survey of Comparing Different Cloud Database Performance: SQL and NoSQL
+CAND-M-005,1,1,1,1,1,1,1,1,8,include,DBaaS,Design;Deploy;Operate;Optimize;Evolve,AMCIS,conference,Litchfield,19,A Systematic Review of Cloud Computing; Big Data and Databases on the Cloud

@@ -1,0 +1,93 @@
+record_id,bibkey,outcome,source,note
+CAND-0009,CAND-0009,not-retrieved,,no OA source
+CAND-0068,CAND-0068,not-retrieved,,no OA source
+CAND-0566,CAND-0566,not-retrieved,,no OA source
+CAND-0626,CAND-0626,not-retrieved,,no OA source
+CAND-0663,CAND-0663,not-retrieved,,no OA source
+CAND-0780,CAND-0780,not-retrieved,,no OA source
+CAND-0789,CAND-0789,not-retrieved,,no OA source
+CAND-0792,CAND-0792,not-retrieved,,no OA source
+CAND-0817,CAND-0817,not-retrieved,,no OA source
+CAND-0838,CAND-0838,not-retrieved,,no OA source
+CAND-0980,CAND-0980,not-retrieved,,no OA source
+CAND-0981,CAND-0981,not-retrieved,,no OA source
+CAND-1006,CAND-1006,not-retrieved,,no OA source
+CAND-1010,CAND-1010,not-retrieved,,no OA source
+CAND-1029,CAND-1029,not-retrieved,,no OA source
+CAND-1060,CAND-1060,not-retrieved,,no OA source
+CAND-1069,CAND-1069,fetched,s2,overlap=1.00
+CAND-1089,CAND-1089,not-retrieved,,no OA source
+CAND-1103,CAND-1103,not-retrieved,,no OA source
+CAND-1108,CAND-1108,not-retrieved,,no OA source
+CAND-1167,CAND-1167,not-retrieved,,no OA source
+CAND-1203,CAND-1203,not-retrieved,,no OA source
+CAND-1225,CAND-1225,not-retrieved,,no OA source
+CAND-1283,CAND-1283,not-retrieved,,no OA source
+CAND-1296,CAND-1296,not-retrieved,,no OA source
+CAND-1302,CAND-1302,not-retrieved,,no OA source
+CAND-1305,CAND-1305,not-retrieved,,no OA source
+CAND-1341,CAND-1341,not-retrieved,,no OA source
+CAND-1344,CAND-1344,not-retrieved,,no OA source
+CAND-1357,CAND-1357,not-retrieved,,no OA source
+CAND-1392,CAND-1392,not-retrieved,,no OA source
+CAND-1399,CAND-1399,not-retrieved,,no OA source
+CAND-1408,CAND-1408,not-retrieved,,no OA source
+CAND-1420,CAND-1420,not-retrieved,,no OA source
+CAND-1441,CAND-1441,not-retrieved,,no OA source
+CAND-1482,CAND-1482,not-retrieved,,no OA source
+CAND-1485,CAND-1485,not-retrieved,,no OA source
+CAND-1539,CAND-1539,not-retrieved,,no OA source
+CAND-1553,CAND-1553,not-retrieved,,no OA source
+CAND-1561,CAND-1561,not-retrieved,,no OA source
+CAND-1571,CAND-1571,not-retrieved,,no OA source
+CAND-1592,CAND-1592,not-retrieved,,no OA source
+CAND-1618,CAND-1618,not-retrieved,,no OA source
+CAND-1620,CAND-1620,not-retrieved,,no OA source
+CAND-1621,CAND-1621,not-retrieved,,no OA source
+CAND-1639,CAND-1639,not-retrieved,,no OA source
+CAND-1644,CAND-1644,not-retrieved,,no OA source
+CAND-1645,CAND-1645,not-retrieved,,no OA source
+CAND-1651,CAND-1651,fetched,oa_pdf_url,overlap=1.00
+CAND-1660,CAND-1660,not-retrieved,,no OA source
+CAND-1671,CAND-1671,fetched,oa_pdf_url,overlap=1.00
+CAND-1680,CAND-1680,not-retrieved,,no OA source
+CAND-1695,CAND-1695,not-retrieved,,no OA source
+CAND-1720,CAND-1720,not-retrieved,,no OA source
+CAND-1728,CAND-1728,fetched,arxiv,overlap=1.00
+CAND-1742,CAND-1742,not-retrieved,,no OA source
+CAND-1748,CAND-1748,not-retrieved,,no OA source
+CAND-1751,CAND-1751,not-retrieved,,no OA source
+CAND-1753,CAND-1753,fetched,oa_pdf_url,overlap=1.00
+CAND-1763,CAND-1763,not-retrieved,,no OA source
+CAND-1776,CAND-1776,not-retrieved,,no OA source
+CAND-1781,CAND-1781,not-retrieved,,no OA source
+CAND-1795,CAND-1795,not-retrieved,,no OA source
+CAND-1806,CAND-1806,fetched,oa_pdf_url,overlap=1.00
+CAND-1810,CAND-1810,not-retrieved,,no OA source
+CAND-1818,CAND-1818,fetched,oa_pdf_url,overlap=1.00
+CAND-1830,CAND-1830,not-retrieved,,no OA source
+CAND-1843,CAND-1843,fetched,oa_pdf_url,overlap=1.00
+CAND-1876,CAND-1876,not-retrieved,,no OA source
+CAND-1878,CAND-1878,not-retrieved,,no OA source
+CAND-1897,CAND-1897,not-retrieved,,no OA source
+CAND-1916,CAND-1916,not-retrieved,,no OA source
+CAND-1958,CAND-1958,not-retrieved,,no OA source
+CAND-1960,CAND-1960,not-retrieved,,no OA source
+CAND-1961,CAND-1961,not-retrieved,,no OA source
+CAND-1970,CAND-1970,not-retrieved,,no OA source
+CAND-1977,CAND-1977,not-retrieved,,no OA source
+CAND-1982,CAND-1982,not-retrieved,,no OA source
+CAND-1986,CAND-1986,fetched,oa_pdf_url,overlap=1.00
+CAND-2005,CAND-2005,not-retrieved,,no OA source
+CAND-2015,CAND-2015,not-retrieved,,no OA source
+CAND-2020,CAND-2020,fetched,oa_pdf_url,overlap=1.00
+CAND-2021,CAND-2021,not-retrieved,,no OA source
+CAND-2028,CAND-2028,not-retrieved,,no OA source
+CAND-2034,CAND-2034,not-retrieved,,no OA source
+CAND-2044,CAND-2044,not-retrieved,,no OA source
+CAND-2056,CAND-2056,not-retrieved,,no OA source
+CAND-2067,CAND-2067,not-retrieved,,no OA source
+CAND-2070,CAND-2070,not-retrieved,,no OA source
+CAND-2085,CAND-2085,not-retrieved,,no OA source
+CAND-2087,CAND-2087,not-retrieved,,no OA source
+CAND-2092,CAND-2092,not-retrieved,,no OA source

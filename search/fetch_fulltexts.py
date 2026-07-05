@@ -112,7 +112,11 @@ def candidate_urls(rec):
 
 
 def main():
+    global REFS
     targets_path = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / "fulltext_targets.csv"
+    if len(sys.argv) > 2:
+        REFS = Path(sys.argv[2])
+        REFS.mkdir(parents=True, exist_ok=True)
     QUAR.mkdir(exist_ok=True)
     rows = list(csv.DictReader(open(targets_path)))
     log_rows, todo = [], []

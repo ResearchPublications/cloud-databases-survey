@@ -1,0 +1,1401 @@
+{
+ "CAND-0663": {
+  "bibkey": "Ferrari2009DBaaSSec",
+  "existing": true,
+  "authors": [
+   "Elena Ferrari"
+  ],
+  "title": "Database as a Service: Challenges and solutions for privacy and security",
+  "venue": "2009 IEEE Asia-Pacific Services Computing Conference (APSCC)",
+  "year": 2009,
+  "doi": "10.1109/apscc.2009.5394141",
+  "arxiv": "",
+  "pages_pp": "46-51",
+  "volume": "",
+  "number": "",
+  "source": "crossref"
+ },
+ "CAND-1069": {
+  "bibkey": "Lee2012GraphDB",
+  "existing": false,
+  "authors": [
+   "Jinsoo Lee",
+   "Wook-Shin Han",
+   "Romans Kasperovics",
+   "Jeong-Hoon Lee"
+  ],
+  "title": "An in-depth comparison of subgraph isomorphism algorithms in graph databases",
+  "venue": "Proceedings of the VLDB Endowment",
+  "year": 2012,
+  "doi": "10.14778/2535568.2448946",
+  "arxiv": "",
+  "pages_pp": "133-144",
+  "volume": "6",
+  "number": "2",
+  "source": "crossref"
+ },
+ "CAND-1296": {
+  "bibkey": "Deka2014CloudDBSurvey",
+  "existing": true,
+  "authors": [
+   "Ganesh Chandra Deka"
+  ],
+  "title": "A Survey of Cloud Database Systems",
+  "venue": "IT Professional",
+  "year": 2014,
+  "doi": "10.1109/mitp.2013.1",
+  "arxiv": "",
+  "pages_pp": "50-57",
+  "volume": "16",
+  "number": "2",
+  "source": "crossref"
+ },
+ "CAND-1806": {
+  "bibkey": "Lourenco2015NoSQL",
+  "existing": false,
+  "authors": [
+   "Jo\u00e3o Ricardo Louren\u00e7o",
+   "Bruno Cabral",
+   "Paulo Carreiro",
+   "Marco Vieira",
+   "Jorge Bernardino"
+  ],
+  "title": "Choosing the right NoSQL database for the job: a quality attribute evaluation",
+  "venue": "Journal of Big Data",
+  "year": 2015,
+  "doi": "10.1186/s40537-015-0025-0",
+  "arxiv": "",
+  "pages_pp": "",
+  "volume": "2",
+  "number": "1",
+  "source": "crossref"
+ },
+ "CAND-1818": {
+  "bibkey": "Kohler2015Sec",
+  "existing": false,
+  "authors": [
+   "Jens K\u00f6hler",
+   "Konrad J\u00fcnemann",
+   "Hannes Hartenstein"
+  ],
+  "title": "Confidential database-as-a-service approaches: taxonomy and survey",
+  "venue": "Journal of Cloud Computing",
+  "year": 2015,
+  "doi": "10.1186/s13677-014-0025-1",
+  "arxiv": "",
+  "pages_pp": "",
+  "volume": "4",
+  "number": "1",
+  "source": "crossref"
+ },
+ "CAND-2020": {
+  "bibkey": "Waqas2015DistDB",
+  "existing": false,
+  "authors": [
+   "Ahmad Waqas",
+   "Abdul Waheed Mahessar",
+   "Nadeem Mahmood",
+   "Zeeshan Bhatti",
+   "Mostafa Karbasi",
+   "Asadullah Shah"
+  ],
+  "title": "Transaction Management Techniques and Practices in Current Cloud Computing Environments : A Survey",
+  "venue": "International Journal of Database Management Systems",
+  "year": 2015,
+  "doi": "10.5121/ijdms.2015.7104",
+  "arxiv": "",
+  "pages_pp": "41-59",
+  "volume": "7",
+  "number": "1",
+  "source": "crossref"
+ },
+ "CAND-2136": {
+  "bibkey": "Abourezq2016DBaaS",
+  "existing": false,
+  "authors": [
+   "Manar Abourezq",
+   "Abdellah Idrissi"
+  ],
+  "title": "Database-as-a-Service for Big Data: An Overview",
+  "venue": "International Journal of Advanced Computer Science and Applications",
+  "year": 2016,
+  "doi": "10.14569/ijacsa.2016.070124",
+  "arxiv": "",
+  "pages_pp": "",
+  "volume": "7",
+  "number": "1",
+  "source": "crossref"
+ },
+ "CAND-2245": {
+  "bibkey": "Ammar2016GraphDB",
+  "existing": false,
+  "authors": [
+   "Ali Ben Ammar"
+  ],
+  "title": "Query Optimization Techniques in Graph Databases",
+  "venue": "International Journal of Database Management Systems",
+  "year": 2016,
+  "doi": "10.5121/ijdms.2016.8401",
+  "arxiv": "",
+  "pages_pp": "01-14",
+  "volume": "8",
+  "number": "4",
+  "source": "crossref"
+ },
+ "CAND-2272": {
+  "bibkey": "Guralnik2016GraphDB",
+  "existing": false,
+  "authors": [
+   "R.I. Guralnik"
+  ],
+  "title": "Some problems on graph databases",
+  "venue": "Proceedings of the Institute for System Programming of the RAS",
+  "year": 2016,
+  "doi": "10.15514/ispras-2016-28(4)-12",
+  "arxiv": "",
+  "pages_pp": "193-216",
+  "volume": "28",
+  "number": "4",
+  "source": "crossref"
+ },
+ "CAND-2400": {
+  "bibkey": "Dinari2017GraphDB",
+  "existing": false,
+  "authors": [
+   "",
+   "Hamed Dinari"
+  ],
+  "title": "A Survey on Graph Queries Processing: Techniques and Methods",
+  "venue": "International Journal of Computer Network and Information Security",
+  "year": 2017,
+  "doi": "10.5815/ijcnis.2017.04.06",
+  "arxiv": "",
+  "pages_pp": "48-56",
+  "volume": "9",
+  "number": "4",
+  "source": "crossref"
+ },
+ "CAND-2427": {
+  "bibkey": "Siddiqa2017NoSQL",
+  "existing": false,
+  "authors": [
+   "Aisha Siddiqa",
+   "Ahmad Karim",
+   "Abdullah Gani"
+  ],
+  "title": "Big data storage technologies: a survey",
+  "venue": "Frontiers of Information Technology &amp; Electronic Engineering",
+  "year": 2017,
+  "doi": "10.1631/fitee.1500441",
+  "arxiv": "",
+  "pages_pp": "1040-1070",
+  "volume": "18",
+  "number": "8",
+  "source": "crossref"
+ },
+ "CAND-2492": {
+  "bibkey": "Moghadam2017Sec",
+  "existing": false,
+  "authors": [
+   "Somayeh Sobati Moghadam",
+   "J\u00e9r\u00f4me Darmont",
+   "G\u00e9rald Gavin"
+  ],
+  "title": "Enforcing Privacy in Cloud Databases",
+  "venue": "arXiv",
+  "year": 2017,
+  "doi": "10.48550/arxiv.1708.09171",
+  "arxiv": "1708.09171",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "arxiv"
+ },
+ "CAND-2631": {
+  "bibkey": "Dindoliwala2017Sec",
+  "existing": false,
+  "authors": [
+   "Dindoliwala Vaishali J",
+   "D Morena Rustom"
+  ],
+  "title": "Survey on Security Mechanisms In NoSQL Databases",
+  "venue": "IJARCS",
+  "year": 2017,
+  "doi": "10.26483/ijarcs.v8i5.3302",
+  "arxiv": "",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "openalex"
+ },
+ "CAND-2774": {
+  "bibkey": "Patil2018GraphDB",
+  "existing": false,
+  "authors": [
+   "Patil N. S.",
+   "Kiran P",
+   "Kiran N. P.",
+   "Naresh Patel K. M."
+  ],
+  "title": "A Survey on Graph Database Management Techniques for Huge Unstructured Data",
+  "venue": "International Journal of Electrical and Computer Engineering (IJECE)",
+  "year": 2018,
+  "doi": "10.11591/ijece.v8i2.pp1140-1149",
+  "arxiv": "",
+  "pages_pp": "1140",
+  "volume": "8",
+  "number": "2",
+  "source": "crossref"
+ },
+ "CAND-2816": {
+  "bibkey": "Segalin2018DBaaS",
+  "existing": false,
+  "authors": [
+   "Vinicius Da Silveira Segalin",
+   "Carina Friedrich Dorneles",
+   "Mario Antonio Ribeiro Dantas"
+  ],
+  "title": "DBaaS Multitenancy, Auto-tuning and SLA Maintenance in Cloud Environments: a Brief Survey",
+  "venue": "iSys - Brazilian Journal of Information Systems",
+  "year": 2018,
+  "doi": "10.5753/isys.2018.362",
+  "arxiv": "",
+  "pages_pp": "30-42",
+  "volume": "11",
+  "number": "2",
+  "source": "crossref"
+ },
+ "CAND-2844": {
+  "bibkey": "Ali2018AI4DB",
+  "existing": false,
+  "authors": [
+   "Zulfiqar Ali",
+   "Hafiza Maria Kiran",
+   "Waseem Shahzad"
+  ],
+  "title": "Evolutionary Algorithms for Query Op-timization in Distributed Database Sys-tems: A review",
+  "venue": "ADCAIJ: Advances in Distributed Computing and Artificial Intelligence Journal",
+  "year": 2018,
+  "doi": "10.14201/adcaij201873115128",
+  "arxiv": "",
+  "pages_pp": "115-128",
+  "volume": "7",
+  "number": "3",
+  "source": "crossref"
+ },
+ "CAND-2970": {
+  "bibkey": "Iancu2018DBaaS",
+  "existing": false,
+  "authors": [
+   "Bogdan IANCU",
+   "Tiberiu Marian GEORGESCU"
+  ],
+  "title": "Saving Large Semantic Data in Cloud: A Survey of the Main DBaaS Solutions",
+  "venue": "Informatica Economica",
+  "year": 2018,
+  "doi": "10.12948/issn14531305/22.1.2018.01",
+  "arxiv": "",
+  "pages_pp": "5-16",
+  "volume": "22",
+  "number": "1/2018",
+  "source": "crossref"
+ },
+ "CAND-3057": {
+  "bibkey": "Khelaifa2019DistDB",
+  "existing": false,
+  "authors": [
+   "Abdennacer Khelaifa",
+   "Saber Benharzallah",
+   "Laid Kahloul",
+   "Reinhardt Euler",
+   "Abdelkader Laouid",
+   "Ahc\u00e8ne Bounceur"
+  ],
+  "title": "A comparative analysis of adaptive consistency approaches in cloud storage",
+  "venue": "Journal of Parallel and Distributed Computing",
+  "year": 2019,
+  "doi": "10.1016/j.jpdc.2019.03.006",
+  "arxiv": "",
+  "pages_pp": "36-49",
+  "volume": "129",
+  "number": "",
+  "source": "crossref"
+ },
+ "CAND-3134": {
+  "bibkey": "Ruan2019DistDB",
+  "existing": false,
+  "authors": [
+   "Pingcheng Ruan",
+   "Tien Tuan Anh Dinh",
+   "Dumitrel Loghin",
+   "Meihui Zhang",
+   "Gang Chen",
+   "Qian Lin",
+   "Beng Chin Ooi"
+  ],
+  "title": "Blockchains vs. Distributed Databases: Dichotomy and Fusion",
+  "venue": "arXiv",
+  "year": 2019,
+  "doi": "10.48550/arxiv.1910.01310",
+  "arxiv": "",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "openalex"
+ },
+ "CAND-3154": {
+  "bibkey": "Aldin2019DistDB",
+  "existing": false,
+  "authors": [
+   "Hesam Nejati Sharif Aldin",
+   "Hossein Deldari",
+   "Mohammad Hossein Moattar",
+   "Mostafa Razavi Ghods"
+  ],
+  "title": "Consistency models in distributed systems: A survey on definitions, disciplines, challenges and applications",
+  "venue": "arXiv",
+  "year": 2019,
+  "doi": "10.48550/arxiv.1902.03305",
+  "arxiv": "",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "openalex"
+ },
+ "CAND-3161": {
+  "bibkey": "Chande2019AI4DB",
+  "existing": false,
+  "authors": [
+   "",
+   "Swati V. Chande"
+  ],
+  "title": "Database Query Optimization using Genetic Algorithms: A Systematic Literature Review",
+  "venue": "International Journal of Advanced Trends in Computer Science and Engineering",
+  "year": 2019,
+  "doi": "10.30534/ijatcse/2019/14852019",
+  "arxiv": "",
+  "pages_pp": "1903-1913",
+  "volume": "8",
+  "number": "5",
+  "source": "crossref"
+ },
+ "CAND-3204": {
+  "bibkey": "Dar2019NLIDB",
+  "existing": false,
+  "authors": [
+   "Hafsa Shareef Dar",
+   "M. Ikramullah Lali",
+   "Moin Ul Din",
+   "Khalid Mahmood Malik",
+   "Syed Ahmad Chan Bukhari"
+  ],
+  "title": "Frameworks for Querying Databases Using Natural Language: A Literature Review",
+  "venue": "arXiv",
+  "year": 2019,
+  "doi": "10.48550/arxiv.1909.01822",
+  "arxiv": "1909.01822",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "arxiv"
+ },
+ "CAND-3233": {
+  "bibkey": "Zhang2021Sec",
+  "existing": false,
+  "authors": [
+   "Bo Zhang",
+   "Boxiang Dong",
+   "Wendy Hui Wang"
+  ],
+  "title": "Integrity Authentication for SQL Query Evaluation on Outsourced Databases: A Survey",
+  "venue": "IEEE Transactions on Knowledge and Data Engineering",
+  "year": 2021,
+  "doi": "10.1109/tkde.2019.2947061",
+  "arxiv": "1808.08313",
+  "pages_pp": "1601-1618",
+  "volume": "33",
+  "number": "4",
+  "source": "crossref"
+ },
+ "CAND-3251": {
+  "bibkey": "Luo2019NoSQL",
+  "existing": false,
+  "authors": [
+   "Chen Luo",
+   "Michael J. Carey"
+  ],
+  "title": "LSM-based storage techniques: a survey",
+  "venue": "The VLDB Journal",
+  "year": 2019,
+  "doi": "10.1007/s00778-019-00555-y",
+  "arxiv": "1812.07527",
+  "pages_pp": "393-418",
+  "volume": "29",
+  "number": "1",
+  "source": "crossref"
+ },
+ "CAND-3392": {
+  "bibkey": "Mami2019MultiModel",
+  "existing": false,
+  "authors": [
+   "Mohamed Nadjib Mami",
+   "Damien Graux",
+   "Harsh Thakkar",
+   "Simon Scerri",
+   "S\u00f6ren Auer",
+   "Jens Lehmann"
+  ],
+  "title": "The Query Translation Landscape: a Survey",
+  "venue": "arXiv",
+  "year": 2019,
+  "doi": "10.48550/arxiv.1910.03118",
+  "arxiv": "1910.03118",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "arxiv"
+ },
+ "CAND-3536": {
+  "bibkey": "Dayarathna2020Bench",
+  "existing": false,
+  "authors": [
+   "Miyuru Dayarathna",
+   "Toyotaro Suzumura"
+  ],
+  "title": "Benchmarking Graph Data Management and Processing Systems: A Survey",
+  "venue": "arXiv",
+  "year": 2020,
+  "doi": "10.48550/arxiv.2005.12873",
+  "arxiv": "2005.12873",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "arxiv"
+ },
+ "CAND-3537": {
+  "bibkey": "Marcus2020AI4DB",
+  "existing": false,
+  "authors": [
+   "Ryan Marcus",
+   "Andreas Kipf",
+   "Alexander van Renen",
+   "Mihail Stoian",
+   "Sanchit Misra",
+   "Alfons Kemper",
+   "Thomas Neumann",
+   "Tim Kraska"
+  ],
+  "title": "Benchmarking learned indexes",
+  "venue": "Proceedings of the VLDB Endowment",
+  "year": 2020,
+  "doi": "10.14778/3421424.3421425",
+  "arxiv": "",
+  "pages_pp": "1-13",
+  "volume": "14",
+  "number": "1",
+  "source": "crossref"
+ },
+ "CAND-3740": {
+  "bibkey": "Asaad2020NoSQL",
+  "existing": false,
+  "authors": [
+   "Chaimae Asaad",
+   "Karim Ba\u00efna",
+   "Mounir Ghogho"
+  ],
+  "title": "NoSQL Databases: Yearning for Disambiguation",
+  "venue": "arXiv",
+  "year": 2020,
+  "doi": "10.48550/arxiv.2003.04074",
+  "arxiv": "2003.04074",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "arxiv"
+ },
+ "CAND-3778": {
+  "bibkey": "Kuznetsov2020HTAP",
+  "existing": false,
+  "authors": [
+   "Sergey D. Kuznetsov",
+   "Pavel E. Velikhov",
+   "Qiang Fu"
+  ],
+  "title": "Real-time analytics, hybrid transactional/analytical processing, in-memory data management, and non-volatile memory",
+  "venue": "2020 Ivannikov Ispras Open Conference (ISPRAS)",
+  "year": 2020,
+  "doi": "10.1109/ispras51486.2020.00019",
+  "arxiv": "",
+  "pages_pp": "78-90",
+  "volume": "",
+  "number": "",
+  "source": "crossref"
+ },
+ "CAND-4002": {
+  "bibkey": "Faridoon2021NoSQL",
+  "existing": false,
+  "authors": [
+   "Amen Faridoon",
+   "Muhammad Imran"
+  ],
+  "title": "Big Data Storage Tools Using NoSQL Databases and Their Applications in Various Domains: A Systematic Review",
+  "venue": "Computing and Informatics",
+  "year": 2021,
+  "doi": "10.31577/cai_2021_3_489",
+  "arxiv": "",
+  "pages_pp": "489-521",
+  "volume": "40",
+  "number": "3",
+  "source": "crossref"
+ },
+ "CAND-4029": {
+  "bibkey": "Mao2021NoSQL",
+  "existing": false,
+  "authors": [
+   "Qizhong Mao",
+   "Steven Jacobs",
+   "Waleed Amjad",
+   "Vagelis Hristidis",
+   "Vassilis J. Tsotras",
+   "Neal E. Young"
+  ],
+  "title": "Comparison and evaluation of state-of-the-art LSM merge policies",
+  "venue": "The VLDB Journal",
+  "year": 2021,
+  "doi": "10.1007/s00778-020-00638-1",
+  "arxiv": "",
+  "pages_pp": "361-378",
+  "volume": "30",
+  "number": "3",
+  "source": "crossref"
+ },
+ "CAND-4031": {
+  "bibkey": "Sarkar2021NoSQL",
+  "existing": false,
+  "authors": [
+   "Subhadeep Sarkar",
+   "Dimitris Staratzis",
+   "Ziehen Zhu",
+   "Manos Athanassoulis"
+  ],
+  "title": "Constructing and analyzing the LSM compaction design space",
+  "venue": "Proceedings of the VLDB Endowment",
+  "year": 2021,
+  "doi": "10.14778/3476249.3476274",
+  "arxiv": "",
+  "pages_pp": "2216-2229",
+  "volume": "14",
+  "number": "11",
+  "source": "crossref"
+ },
+ "CAND-4092": {
+  "bibkey": "Mansouri2021EdgeFog",
+  "existing": false,
+  "authors": [
+   "Yaser Mansouri",
+   "Victor Prokhorenko",
+   "Faheem Ullah",
+   "Muhammad Ali Babar"
+  ],
+  "title": "Evaluation of Distributed Databases in Hybrid Clouds and Edge Computing: Energy, Bandwidth, and Storage Consumption",
+  "venue": "arXiv (Cornell University)",
+  "year": 2021,
+  "doi": "10.48550/arxiv.2109.07260",
+  "arxiv": "",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "openalex"
+ },
+ "CAND-4226": {
+  "bibkey": "Arenas2021GraphDB",
+  "existing": false,
+  "authors": [
+   "Marcelo Arenas",
+   "Claudio Gutierrez",
+   "Juan F. Sequeda"
+  ],
+  "title": "Querying in the Age of Graph Databases and Knowledge Graphs",
+  "venue": "Proceedings of the 2021 International Conference on Management of Data",
+  "year": 2021,
+  "doi": "10.1145/3448016.3457545",
+  "arxiv": "",
+  "pages_pp": "2821-2828",
+  "volume": "",
+  "number": "",
+  "source": "crossref"
+ },
+ "CAND-4309": {
+  "bibkey": "Truica2021NoSQL",
+  "existing": false,
+  "authors": [
+   "Ciprian-Octavian Truic\u0103",
+   "Elena-Simona Apostol",
+   "J\u00e9r\u00f4me Darmont",
+   "Torben Bach Pedersen"
+  ],
+  "title": "The Forgotten Document-Oriented Database Management Systems: An Overview and Benchmark of Native XML DODBMSes in Comparison with JSON DODBMSes",
+  "venue": "Big Data Research",
+  "year": 2021,
+  "doi": "10.1016/j.bdr.2021.100205",
+  "arxiv": "2102.02246",
+  "pages_pp": "100205",
+  "volume": "25",
+  "number": "",
+  "source": "crossref"
+ },
+ "CAND-4791": {
+  "bibkey": "Glake2022MultiModel",
+  "existing": false,
+  "authors": [
+   "Daniel Glake",
+   "Felix Kiehn",
+   "Mareike Schmidt",
+   "Fabian Panse",
+   "Norbert Ritter"
+  ],
+  "title": "Towards Polyglot Data Stores -- Overview and Open Research Questions",
+  "venue": "arXiv",
+  "year": 2022,
+  "doi": "10.48550/arxiv.2204.05779",
+  "arxiv": "2204.05779",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "arxiv"
+ },
+ "CAND-4818": {
+  "bibkey": "Ma2023VectorDB",
+  "existing": false,
+  "authors": [
+   "Le Ma",
+   "Ran Zhang",
+   "Yikun Han",
+   "Shirui Yu",
+   "Zaitian Wang",
+   "Zhiyuan Ning",
+   "Jinghan Zhang",
+   "Ping Xu",
+   "Pengjiang Li",
+   "Ziyue Qiao",
+   "Wei Ju",
+   "Chong Chen",
+   "Dongjie Wang",
+   "Kunpeng Liu",
+   "Pengyang Wang",
+   "Pengfei Wang",
+   "Yanjie Fu",
+   "Chunjiang Liu",
+   "Yuanchun Zhou",
+   "Chang-Tien Lu"
+  ],
+  "title": "A Comprehensive Survey on Vector Database: Storage and Retrieval Technique, Challenge",
+  "venue": "arXiv",
+  "year": 2023,
+  "doi": "10.48550/arxiv.2310.11703",
+  "arxiv": "2310.11703",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "arxiv"
+ },
+ "CAND-4873": {
+  "bibkey": "Koppenwallner2023Sec",
+  "existing": false,
+  "authors": [
+   "Johannes Koppenwallner",
+   "Erich Schikuta"
+  ],
+  "title": "A Survey on Property-Preserving Database Encryption Techniques in the Cloud",
+  "venue": "arXiv",
+  "year": 2023,
+  "doi": "10.48550/arxiv.2312.12075",
+  "arxiv": "2312.12075",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "arxiv"
+ },
+ "CAND-4927": {
+  "bibkey": "Ahmed2023DistDB",
+  "existing": false,
+  "authors": [
+   "Jaafar Ahmed",
+   "Andrii Karpenko",
+   "Olga Tarasyuk",
+   "Anatoliy Gorbenko",
+   "Akbar Sheikh-Akbari"
+  ],
+  "title": "Consistency issue and related trade-offs in distributed replicated systems and databases: a review",
+  "venue": "Radioelectronic and Computer Systems",
+  "year": 2023,
+  "doi": "10.32620/reks.2023.2.14",
+  "arxiv": "",
+  "pages_pp": "171-179",
+  "volume": "",
+  "number": "2",
+  "source": "crossref"
+ },
+ "CAND-4953": {
+  "bibkey": "Besta2023GraphDB",
+  "existing": false,
+  "authors": [
+   "Maciej Besta",
+   "Robert Gerstenberger",
+   "Emanuel Peter",
+   "Marc Fischer",
+   "Micha\u0142 Podstawski",
+   "Claude Barthels",
+   "Gustavo Alonso",
+   "Torsten Hoefler"
+  ],
+  "title": "Demystifying Graph Databases: Analysis and Taxonomy of Data Organization, System Designs, and Graph Queries",
+  "venue": "ACM Computing Surveys",
+  "year": 2023,
+  "doi": "10.1145/3604932",
+  "arxiv": "1910.09017",
+  "pages_pp": "1-40",
+  "volume": "56",
+  "number": "2",
+  "source": "crossref"
+ },
+ "CAND-5089": {
+  "bibkey": "Ferreira2023NoSQLMD",
+  "existing": true,
+  "authors": [
+   "Leandro Mendes Ferreira",
+   "Solange Nice Alves-Souza",
+   "Luciana Maria Da Silva"
+  ],
+  "title": "Multidimensional Modelling in NoSQL Database : A Systematic Review",
+  "venue": "2023 18th Iberian Conference on Information Systems and Technologies (CISTI)",
+  "year": 2023,
+  "doi": "10.23919/cisti58278.2023.10211592",
+  "arxiv": "",
+  "pages_pp": "1-6",
+  "volume": "",
+  "number": "",
+  "source": "crossref"
+ },
+ "CAND-5090": {
+  "bibkey": "Guo2023MultiModel",
+  "existing": false,
+  "authors": [
+   "Qingsong Guo",
+   "Chao Zhang",
+   "Shuxun Zhang",
+   "Jiaheng Lu"
+  ],
+  "title": "Multi-model query languages: taming the variety of big data",
+  "venue": "Distributed and Parallel Databases",
+  "year": 2023,
+  "doi": "10.1007/s10619-023-07433-1",
+  "arxiv": "",
+  "pages_pp": "31-71",
+  "volume": "42",
+  "number": "1",
+  "source": "crossref"
+ },
+ "CAND-5175": {
+  "bibkey": "Khan2023NoSQL",
+  "existing": false,
+  "authors": [
+   "Wisal Khan",
+   "Teerath Kumar",
+   "Cheng Zhang",
+   "Kislay Raj",
+   "Arunabha M. Roy",
+   "Bin Luo"
+  ],
+  "title": "SQL and NoSQL Database Software Architecture Performance Analysis and Assessments\u2014A Systematic Literature Review",
+  "venue": "Big Data and Cognitive Computing",
+  "year": 2023,
+  "doi": "10.3390/bdcc7020097",
+  "arxiv": "2209.06977",
+  "pages_pp": "97",
+  "volume": "7",
+  "number": "2",
+  "source": "crossref"
+ },
+ "CAND-5206": {
+  "bibkey": "Tian2023GraphDB",
+  "existing": false,
+  "authors": [
+   "Yuanyuan Tian"
+  ],
+  "title": "The World of Graph Databases from An Industry Perspective",
+  "venue": "ACM SIGMOD Record",
+  "year": 2023,
+  "doi": "10.1145/3582302.3582320",
+  "arxiv": "",
+  "pages_pp": "60-67",
+  "volume": "51",
+  "number": "4",
+  "source": "crossref"
+ },
+ "CAND-5309": {
+  "bibkey": "Mishra2024NoSQL",
+  "existing": false,
+  "authors": [
+   "Supriya Mishra"
+  ],
+  "title": "A survey of LSM-Tree based Indexes, Data Systems and KV-stores",
+  "venue": "2024 IEEE International Students' Conference on Electrical, Electronics and Computer Science (SCEECS)",
+  "year": 2024,
+  "doi": "10.1109/sceecs61402.2024.10482249",
+  "arxiv": "2402.10460",
+  "pages_pp": "1-6",
+  "volume": "",
+  "number": "",
+  "source": "crossref"
+ },
+ "CAND-5317": {
+  "bibkey": "Song2024HTAP",
+  "existing": false,
+  "authors": [
+   "Haoze Song",
+   "Wenchao Zhou",
+   "Heming Cui",
+   "Xiang Peng",
+   "Feifei Li"
+  ],
+  "title": "A survey on hybrid transactional and analytical processing",
+  "venue": "The VLDB Journal",
+  "year": 2024,
+  "doi": "10.1007/s00778-024-00858-9",
+  "arxiv": "",
+  "pages_pp": "1485-1515",
+  "volume": "33",
+  "number": "5",
+  "source": "crossref"
+ },
+ "CAND-5323": {
+  "bibkey": "Nurhadi2024AI4DB",
+  "existing": false,
+  "authors": [
+   "Rabiah Abdul Kadir",
+   "Ely Salwana Mat Surin",
+   "Mahidur R. Sarker"
+  ],
+  "title": "A Systematic Review of Automated Classification for Simple and Complex Query SQL on NoSQL Database",
+  "venue": "Computer Systems Science and Engineering",
+  "year": 2024,
+  "doi": "10.32604/csse.2024.051851",
+  "arxiv": "",
+  "pages_pp": "1405-1435",
+  "volume": "48",
+  "number": "6",
+  "source": "crossref"
+ },
+ "CAND-5330": {
+  "bibkey": "Zhang2024AI4DB",
+  "existing": false,
+  "authors": [
+   "Limeng Zhang",
+   "M. Ali Babar"
+  ],
+  "title": "Automatic Configuration Tuning on Cloud Database: A Survey",
+  "venue": "arXiv",
+  "year": 2024,
+  "doi": "10.48550/arxiv.2404.06043",
+  "arxiv": "2404.06043",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "arxiv"
+ },
+ "CAND-5401": {
+  "bibkey": "Satish2024Sec",
+  "existing": false,
+  "authors": [
+   "Karuturi S R V Satish"
+  ],
+  "title": "Database Security Issues and Challenges in Cloud Computing",
+  "venue": "International Journal on Recent and Innovation Trends in Computing and Communication",
+  "year": 2024,
+  "doi": "10.17762/ijritcc.v11i11.10396",
+  "arxiv": "",
+  "pages_pp": "937-943",
+  "volume": "11",
+  "number": "11",
+  "source": "crossref"
+ },
+ "CAND-5413": {
+  "bibkey": "Santos2024GraphDB",
+  "existing": false,
+  "authors": [
+   "Veronica Santos"
+  ],
+  "title": "Data Modeling for Connected Data -- A systematic literature review",
+  "venue": "arXiv",
+  "year": 2024,
+  "doi": "10.48550/arxiv.2410.10081",
+  "arxiv": "2410.10081",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "arxiv"
+ },
+ "CAND-5445": {
+  "bibkey": "Falcao2024Bench",
+  "existing": false,
+  "authors": [
+   "F\u00falvio Falc\u00e3o",
+   "Jo\u00e3o Moura",
+   "Gabriel Silva",
+   "Carlos Araujo",
+   "Erica Sousa",
+   "Eduardo Tavares"
+  ],
+  "title": "Energy Consumption and Performance Evaluation of Multi-Model NoSQL DBMSs",
+  "venue": "Revista de Inform\u00e1tica Te\u00f3rica e Aplicada",
+  "year": 2024,
+  "doi": "10.22456/2175-2745.136568",
+  "arxiv": "",
+  "pages_pp": "132-140",
+  "volume": "30",
+  "number": "2",
+  "source": "crossref"
+ },
+ "CAND-5677": {
+  "bibkey": "Solat2024DistDB",
+  "existing": false,
+  "authors": [
+   "Siamak Solat"
+  ],
+  "title": "Sharding Distributed Databases: A Critical Review",
+  "venue": "arXiv",
+  "year": 2024,
+  "doi": "10.48550/arxiv.2404.04384",
+  "arxiv": "",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "openalex"
+ },
+ "CAND-5706": {
+  "bibkey": "Janssen2024Lakehouse",
+  "existing": false,
+  "authors": [
+   "Nathalie Janssen",
+   "Tharaka Ilayperuma",
+   "Jeewanie Jayasinghe",
+   "Faiza Bukhsh",
+   "Maya Daneva"
+  ],
+  "title": "The evolution of data storage architectures: examining the secure value of the Data Lakehouse",
+  "venue": "Journal of Data, Information and Management",
+  "year": 2024,
+  "doi": "10.1007/s42488-024-00132-1",
+  "arxiv": "",
+  "pages_pp": "309-334",
+  "volume": "6",
+  "number": "4",
+  "source": "crossref"
+ },
+ "CAND-5735": {
+  "bibkey": "Anuyah2024GraphDB",
+  "existing": false,
+  "authors": [
+   "Sydney Anuyah",
+   "Victor Bolade",
+   "Oluwatosin Agbaakin"
+  ],
+  "title": "Understanding Graph Databases: A Comprehensive Tutorial and Survey",
+  "venue": "arXiv",
+  "year": 2024,
+  "doi": "10.48550/arxiv.2411.09999",
+  "arxiv": "2411.09999",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "arxiv"
+ },
+ "CAND-5743": {
+  "bibkey": "Taipalus2024VectorDB",
+  "existing": false,
+  "authors": [
+   "Toni Taipalus"
+  ],
+  "title": "Vector database management systems: Fundamental concepts, use-cases, and current challenges",
+  "venue": "Cognitive Systems Research",
+  "year": 2024,
+  "doi": "10.1016/j.cogsys.2024.101216",
+  "arxiv": "",
+  "pages_pp": "101216",
+  "volume": "85",
+  "number": "",
+  "source": "crossref"
+ },
+ "CAND-5790": {
+  "bibkey": "Ali2025AI4DB",
+  "existing": false,
+  "authors": [
+   "",
+   "Shahwan Younis Ali",
+   "Hajar Maseeh",
+   ""
+  ],
+  "title": "AI-Powered Database Management: Predictive Analytics for Performance Tuning",
+  "venue": "Engineering and Technology Journal",
+  "year": 2025,
+  "doi": "10.47191/etj/v10i05.38",
+  "arxiv": "",
+  "pages_pp": "",
+  "volume": "10",
+  "number": "05",
+  "source": "crossref"
+ },
+ "CAND-5834": {
+  "bibkey": "AbdullahAlMamun2025AI4DB",
+  "existing": false,
+  "authors": [
+   "Abdullah Al-Mamun",
+   "Hao Wu",
+   "Qiyang He",
+   "Jianguo Wang",
+   "Walid G. Aref"
+  ],
+  "title": "A Survey of Learned Indexes for the Multi-dimensional Space",
+  "venue": "ACM Computing Surveys",
+  "year": 2025,
+  "doi": "10.1145/3768575",
+  "arxiv": "2403.06456",
+  "pages_pp": "1-37",
+  "volume": "58",
+  "number": "4",
+  "source": "crossref"
+ },
+ "CAND-5841": {
+  "bibkey": "Hasan2025DistDB",
+  "existing": false,
+  "authors": [
+   "",
+   "Kazheen Ismael Hasan",
+   "Hajar Maseeh Yasin",
+   ""
+  ],
+  "title": "A Survey on Distributed Database Systems in the Era of Big Data",
+  "venue": "Engineering and Technology Journal",
+  "year": 2025,
+  "doi": "10.47191/etj/v10i11.03",
+  "arxiv": "",
+  "pages_pp": "",
+  "volume": "10",
+  "number": "11",
+  "source": "crossref"
+ },
+ "CAND-5906": {
+  "bibkey": "Ying2025NoSQL",
+  "existing": false,
+  "authors": [
+   "Dionne Teh Wooi Ying",
+   "Choo Yan Jie",
+   "Cheah Shaoren",
+   "Hong Chang Eui",
+   "Chin Wey Ken",
+   "Sathishkumar Veerappampalayam Easwaramoorthy",
+   "Usha Moorthy"
+  ],
+  "title": "Comparative Analysis of SQL and NoSQL Databases: Data Models, Use Cases, and Performance Insights",
+  "venue": "Information Research Communications",
+  "year": 2025,
+  "doi": "10.5530/irc.2.1.5",
+  "arxiv": "",
+  "pages_pp": "47-70",
+  "volume": "2",
+  "number": "1",
+  "source": "crossref"
+ },
+ "CAND-5940": {
+  "bibkey": "Mahmoud2025DistDB",
+  "existing": false,
+  "authors": [
+   "",
+   "Hisham Ahmed Mahmoud",
+   "Hajar Maseeh Yasin",
+   ""
+  ],
+  "title": "Data Integrity and Consistency Challenges in Distributed Database Systems",
+  "venue": "Engineering and Technology Journal",
+  "year": 2025,
+  "doi": "10.47191/etj/v10i05.36",
+  "arxiv": "",
+  "pages_pp": "",
+  "volume": "10",
+  "number": "05",
+  "source": "crossref"
+ },
+ "CAND-6005": {
+  "bibkey": "Liu2025AI4DB",
+  "existing": false,
+  "authors": [
+   "Junfeng Liu",
+   "Jiarui Ye",
+   "Mengshi Chen",
+   "Meng Li",
+   "Siqiang Luo"
+  ],
+  "title": "Evaluating Learned Indexes in LSM-tree Systems: Benchmarks,Insights and Design Choices",
+  "venue": "arXiv",
+  "year": 2025,
+  "doi": "10.48550/arxiv.2506.08671",
+  "arxiv": "",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "openalex"
+ },
+ "CAND-6006": {
+  "bibkey": "Daundasekara2025MultiCloud",
+  "existing": true,
+  "authors": [
+   "D. M. P. D. Daundasekara",
+   "K. K. S. Malsha",
+   "R. Y. Ilangasinghe",
+   "R. A. K. D. Ranasinghe",
+   "Prasanna S. Haddela"
+  ],
+  "title": "Evaluating Performance and User Perceptions of Multi-Cloud Database-as-a-Service Solutions: A Mixed-Methods Study",
+  "venue": "2025 7th International Conference on Advancements in Computing (ICAC)",
+  "year": 2025,
+  "doi": "10.1109/icac69156.2025.11361452",
+  "arxiv": "",
+  "pages_pp": "1-6",
+  "volume": "",
+  "number": "",
+  "source": "crossref"
+ },
+ "CAND-6008": {
+  "bibkey": "Topcu2025NoSQL",
+  "existing": false,
+  "authors": [
+   "Ahmet E. Topcu",
+   "Aimen M. Rmis",
+   "Yehia I. Alzoubi",
+   "Ali O. \u00c7ibikdiken",
+   "Dababrata Chowdhury",
+   "Ersin Elbasi",
+   "Mohamed Abdel-Maguid",
+   "Salem Almadhun"
+  ],
+  "title": "Evaluating the Performance of NoSQL Databases for Big Data in Cloud Computing Environments",
+  "venue": "HighTech and Innovation Journal",
+  "year": 2025,
+  "doi": "10.28991/hij-2025-06-03-05",
+  "arxiv": "",
+  "pages_pp": "808-830",
+  "volume": "6",
+  "number": "3",
+  "source": "crossref"
+ },
+ "CAND-6058": {
+  "bibkey": "Li2025AI4DB",
+  "existing": false,
+  "authors": [
+   "Ziming Li",
+   "Youhuan Li",
+   "Yuyu Luo",
+   "Guoliang Li",
+   "Chuxu Zhang"
+  ],
+  "title": "Graph Neural Networks for Databases: A Survey",
+  "venue": "arXiv",
+  "year": 2025,
+  "doi": "10.48550/arxiv.2502.12908",
+  "arxiv": "2502.12908",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "arxiv"
+ },
+ "CAND-6075": {
+  "bibkey": "Liu2025Bench",
+  "existing": false,
+  "authors": [
+   "Qiyu Liu",
+   "Maocheng Li",
+   "Yuxiang Zeng",
+   "Yanyan Shen",
+   "Lei Chen"
+  ],
+  "title": "How good are multi-dimensional learned indexes? An experimental survey",
+  "venue": "The VLDB Journal",
+  "year": 2025,
+  "doi": "10.1007/s00778-024-00893-6",
+  "arxiv": "2405.05536",
+  "pages_pp": "",
+  "volume": "34",
+  "number": "2",
+  "source": "crossref"
+ },
+ "CAND-6119": {
+  "bibkey": "Qiao2025AI4DB",
+  "existing": false,
+  "authors": [
+   "Shao-Jie Qiao",
+   "Han-Lin Fan",
+   "Nan Han",
+   "Lan Du",
+   "Yu-Han Peng",
+   "Rong-Min Tang",
+   "Xiao Qin"
+  ],
+  "title": "Learning database optimization techniques: the state-of-the-art and prospects",
+  "venue": "Frontiers of Computer Science",
+  "year": 2025,
+  "doi": "10.1007/s11704-025-41116-7",
+  "arxiv": "",
+  "pages_pp": "",
+  "volume": "19",
+  "number": "12",
+  "source": "crossref"
+ },
+ "CAND-6261": {
+  "bibkey": "Mahule2025Sec",
+  "existing": false,
+  "authors": [
+   "Rachana V. Mahule",
+   "Sandeep M. Jadhav"
+  ],
+  "title": "Survey on Cloud Database Security: Cryptographic Techniques, Intrusion Detection and Intelligent Defense Mechanisms",
+  "venue": "EPJ Web Conf.",
+  "year": 2025,
+  "doi": "10.1051/epjconf/202534101015/pdf",
+  "arxiv": "",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "openalex"
+ },
+ "CAND-6263": {
+  "bibkey": "Coimbra2025GraphDB2",
+  "existing": false,
+  "authors": [
+   "Miguel E. Coimbra",
+   "Lucie Svit\u00e1kov\u00e1",
+   "Domagoj Vrgo\u010d",
+   "Alexandre P. Francisco",
+   "Lu\u00eds Veiga"
+  ],
+  "title": "Survey: On the Landscape of Graph Databases",
+  "venue": "arXiv",
+  "year": 2025,
+  "doi": "10.48550/arxiv.2505.24758",
+  "arxiv": "2505.24758",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "arxiv"
+ },
+ "CAND-6312": {
+  "bibkey": "Xie2025VectorDB",
+  "existing": false,
+  "authors": [
+   "Ying Xie",
+   "Xinyi Hou",
+   "Yanjie Zhao",
+   "Shenao Wang",
+   "Kai Chen",
+   "Wang, Haoyu"
+  ],
+  "title": "Toward Understanding Bugs in Vector Database Management Systems",
+  "venue": "arXiv",
+  "year": 2025,
+  "doi": "10.48550/arxiv.2506.02617",
+  "arxiv": "",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "openalex"
+ },
+ "CAND-6334": {
+  "bibkey": "Jing2025NLIDB",
+  "existing": false,
+  "authors": [
+   "Zhi Jing",
+   "Yongye Su",
+   "Yikun Han"
+  ],
+  "title": "When Large Language Models Meet Vector Databases: A Survey",
+  "venue": "2025 Conference on Artificial Intelligence x Multimedia (AIxMM)",
+  "year": 2025,
+  "doi": "10.1109/aixmm62960.2025.00008",
+  "arxiv": "2402.01763",
+  "pages_pp": "7-13",
+  "volume": "",
+  "number": "",
+  "source": "crossref"
+ },
+ "CAND-6377": {
+  "bibkey": "Allam2026CloudNative",
+  "existing": false,
+  "authors": [
+   "Howaida Allam",
+   "Hemant Gianey",
+   "Atharva Sharma",
+   "Amartya Sisodia",
+   "Bhumi Agrawal",
+   "Ananya Tiwari"
+  ],
+  "title": "A Survey of Emerging Trends and Algorithmic Solutions inCloud-Native Data Management",
+  "venue": "Journal of Smart Algorithms and Applications (JSAA)",
+  "year": 2026,
+  "doi": "10.66279/71rygy73",
+  "arxiv": "",
+  "pages_pp": "36-60",
+  "volume": "4",
+  "number": "1",
+  "source": "crossref"
+ },
+ "CAND-M-001": {
+  "bibkey": "Vikiru2023DBaaS",
+  "existing": false,
+  "authors": [
+   "Allan Vikiru",
+   "Mfadhili Muiruri",
+   "Ismail Ateya"
+  ],
+  "title": "An Overview on Cloud Distributed Databases for Business Environments",
+  "venue": "arXiv",
+  "year": 2023,
+  "doi": "",
+  "arxiv": "2301.10673",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": "arxiv"
+ },
+ "CAND-M-004": {
+  "bibkey": "Shareef2022NoSQL",
+  "existing": false,
+  "authors": [
+   "Twana Shareef",
+   "Karzan Sharif",
+   "Bilal Rashid"
+  ],
+  "title": "A Survey of Comparison Different Cloud Database Performance: SQL and NoSQL",
+  "venue": "Passer Journal of Basic and Applied Sciences",
+  "year": 2022,
+  "doi": "10.24271/psr.2022.301247.1104",
+  "arxiv": "",
+  "pages_pp": "45-57",
+  "volume": "4",
+  "number": "1",
+  "source": "crossref"
+ },
+ "CAND-M-005": {
+  "bibkey": "Litchfield2014DBaaS",
+  "existing": false,
+  "authors": [],
+  "title": "A Systematic Review of Cloud Computing, Big Data and Databases on the Cloud",
+  "venue": "AMCIS",
+  "year": 2014,
+  "doi": "",
+  "arxiv": "",
+  "pages_pp": "",
+  "volume": "",
+  "number": "",
+  "source": null
+ }
+}
