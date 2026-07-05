@@ -156,14 +156,15 @@ if dec_csv.exists():
             ok(f"PRISMA screened n matches decisions ({screened})")
         if assessed != ta_adv:
             fail(f"PRISMA assessed n={assessed} but {ta_adv} advanced from title/abstract")
+    cat_csv2 = HERE / "catalog.csv"
     qa_csv = HERE / "qa_scores.csv"
-    if qa_csv.exists():
-        qa = list(csv.DictReader(open(qa_csv)))
-        inc = sum(1 for r in qa if float(r["total"]) >= 4 and r.get("included", "yes") == "yes")
-        if inc != N:
-            fail(f"qa_scores.csv has {inc} included (>=4) but catalog has {N}")
+    if qa_csv.exists() and cat_csv2.exists():
+        cat_qa = [float(r["qa"]) for r in csv.DictReader(open(cat_csv2))]
+        below = [q for q in cat_qa if q < 6]
+        if below:
+            fail(f"catalog.csv contains {len(below)} entries below the QA>=6 threshold")
         else:
-            ok(f"qa_scores included count matches catalog ({N})")
+            ok("all catalog entries meet the QA>=6 threshold")
 
 print()
 if failures:

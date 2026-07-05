@@ -27,7 +27,8 @@ HERE = Path(__file__).resolve().parent
 
 
 def esc(s):
-    return s.replace("&", "\\&").replace("%", "\\%")
+    return (s.replace("&", "\\&").replace("%", "\\%").replace("#", "\\#")
+             .replace("…", "\\ldots{}").replace("_", "\\_"))
 
 
 def main():

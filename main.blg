@@ -10,14 +10,15 @@ Warning--can't use both volume and number fields in Farber2012
 Warning--empty pages in Elbattah2015Freebase
 Warning--can't use both volume and number fields in Leis2023CloudPricing
 Warning--empty pages in Mateljan2010ROI
+Warning--empty pages in Ramanathan2011SimpleDBBigtable
+Warning--empty pages in Dory2011Elasticity
+Warning--empty pages in Litchfield2014DBaaS
 Warning--empty pages in Curino2011DBaaS
 Warning--empty pages in Pavlo2017SelfDriving
 Warning--empty pages in Tudorica2011NoSQLCmp
 Warning--empty pages in Bader2017TSDB
-Warning--empty pages in Ramanathan2011SimpleDBBigtable
 Warning--can't use both volume and number fields in Melnik2020Dremel
 Warning--empty pages in Pohl2024LakehouseTS
-Warning--empty pages in Dory2011Elasticity
 Warning--empty pages in Thara2013DaaSPerf
 Warning--empty pages in Samarta2024SQLNoSQL
 Warning--empty pages in Daundasekara2025MultiCloud
@@ -32,45 +33,48 @@ Warning--can't use both volume and number fields in Tan2019iBTune
 Warning--empty pages in Ferreira2023NoSQLMD
 Warning--can't use both volume and number fields in Ma2020SlowQuery
 Warning--can't use both volume and number fields in Zhou2024DBot
-You've used 107 entries,
+Warning--can't use both volume and number fields in Sarkar2021NoSQL
+Warning--there's a number but no volume in Ahmed2023DistDB
+Warning--empty pages in Mahule2025Sec
+You've used 179 entries,
             2952 wiz_defined-function locations,
-            1379 strings with 31903 characters,
-and the built_in function-call counts, 39881 in all, are:
-= -- 3544
-> -- 1802
-< -- 35
-+ -- 672
-- -- 565
-* -- 3098
-:= -- 5362
-add.period$ -- 175
-call.type$ -- 107
-change.case$ -- 110
+            1846 strings with 48431 characters,
+and the built_in function-call counts, 62590 in all, are:
+= -- 5791
+> -- 2726
+< -- 38
++ -- 1028
+- -- 849
+* -- 4962
+:= -- 8508
+add.period$ -- 322
+call.type$ -- 179
+change.case$ -- 182
 chr.to.int$ -- 0
-cite$ -- 136
-duplicate$ -- 1240
-empty$ -- 4301
-format.name$ -- 657
-if$ -- 10158
+cite$ -- 212
+duplicate$ -- 1816
+empty$ -- 6678
+format.name$ -- 1002
+if$ -- 15930
 int.to.chr$ -- 0
-int.to.str$ -- 107
-missing$ -- 102
-newline$ -- 397
-num.names$ -- 107
-pop$ -- 752
+int.to.str$ -- 179
+missing$ -- 153
+newline$ -- 690
+num.names$ -- 179
+pop$ -- 1137
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2615
+skip$ -- 4118
 stack$ -- 0
-substring$ -- 1886
-swap$ -- 477
-text.length$ -- 35
+substring$ -- 2749
+swap$ -- 719
+text.length$ -- 38
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 29
-while$ -- 263
-width$ -- 110
-write$ -- 1038
-(There were 29 warnings)
+warning$ -- 33
+while$ -- 411
+width$ -- 182
+write$ -- 1778
+(There were 33 warnings)

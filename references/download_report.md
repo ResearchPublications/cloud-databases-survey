@@ -24,128 +24,204 @@ The "survey-of-surveys" catalog was rebuilt from verified papers only. The previ
 
 **Catalog PDFs normalized to `<CitationKey>.pdf` (2026-07-05):** ten catalog surveys whose PDFs were still stored under raw download filenames were renamed to their citation keys after page-1 content verification (100\% title-token overlap): `Khasawneh2020SQLNewSQL`, `Tu2024CassandraMongo`, `Samarta2024SQLNoSQL`, `Mouhibha2025NoSQLDW`, `Pohl2024LakehouseTS`, `Bader2017TSDB` (BTW 2017 Workshopband; no DOI exists, GI-DL link recorded), `Affolter2019NLIDB`, `Khan2019DaaSAnalytic`, `Taipalus2024DBMSPerf`, `Bhatti2017CloudDBReview`. Missing `doi` fields were added to the five bib entries that lacked them (verified against Crossref). `search/check_consistency.py` now enforces the catalog↔bib↔PDF invariant.
 
+## Systematic expansion to 1999--2026 (2026-07-05)
+
+The catalog was expanded from 24 to **96 surveys (S1--S96)** via a scripted, reproducible search of OpenAlex, arXiv, Crossref, and Semantic Scholar over the window January 1999 -- July 2026 (see `search/` for the scripts, the per-query log, all screening decisions, QA scores, and the frozen `catalog.csv`). The quality threshold was raised to **QA ≥ 6/8** for the expanded pool; two prior entries (`Bhatti2017CloudDBReview`, reassessed 4.5; `Samarta2024SQLNoSQL`, 5.5) fell below it and remain support citations only. Every catalog entry has a Crossref/arXiv-verified bibliography record and a content-verified PDF at `<CitationKey>.pdf`. Support-citation PDFs were likewise normalized from raw download filenames to `<CitationKey>.pdf` (title-verified). The remaining Missing entries are non-article sources (vendor docs, analyst and agency reports) or paywalled methodology examples with no open-access copy.
+
 ## Summary
 
-- **Total tracked references:** 111
-- **✅ Verified (PDF on disk):** 108
-- **⚠️ Missing (no PDF, but real & cited):** 3
-- **➕ Additional sources (not among the 166):** 33
+- **Total tracked references:** 183
+- **✅ Verified (PDF on disk):** 177
+- **⚠️ Missing (no PDF, but real & cited):** 6
+- **➕ Additional sources (not among the 166):** 5
 
 ## Cited references
 
 | Key | Title | Status | Local PDF | DOI / source |
 |-----|-------|--------|-----------|--------------|
 | `Abadi2012PACELC` | Consistency Tradeoffs in Modern Distributed Database System Design: CAP is Only Part of the Story | ✅ Verified | [Abadi2012PACELC.pdf](Abadi2012PACELC.pdf) | [10.1109/MC.2012.33](https://doi.org/10.1109/MC.2012.33) |
-| `Abraham2019DataGovernance` | Data governance: A conceptual framework, structured review, and research agenda | ✅ Verified | [Abraham2019DataGovernance.pdf](Abraham2019DataGovernance.pdf) | [10.1016/j.ijinfomgt.2019.07.008](https://doi.org/10.1016/j.ijinfomgt.2019.07.008) |
+| `AbdullahAlMamun2025AI4DB` | A Survey of Learned Indexes for the Multi-dimensional Space | ✅ Verified | [AbdullahAlMamun2025AI4DB.pdf](AbdullahAlMamun2025AI4DB.pdf) | [10.1145/3768575](https://doi.org/10.1145/3768575) |
+| `Abourezq2016DBaaS` | Database-as-a-Service for Big Data: An Overview | ✅ Verified | [Abourezq2016DBaaS.pdf](Abourezq2016DBaaS.pdf) | [10.14569/ijacsa.2016.070124](https://doi.org/10.14569/ijacsa.2016.070124) |
 | `Acar2018HE` | A Survey on Homomorphic Encryption Schemes: Theory and Implementation | ✅ Verified | [Acar2018HE.pdf](Acar2018HE.pdf) | [10.1145/3214303](https://doi.org/10.1145/3214303) |
-| `Affolter2019NLIDB` | A Comparative Survey of Recent Natural Language Interfaces for Databases | ✅ Verified | [Affolter2019NLIDB.pdf](Affolter2019NLIDB.pdf) | [10.1007/s00778-019-00567-8](https://doi.org/10.1007/s00778-019-00567-8) |
-| `Akidau2015Dataflow` | — | ✅ Verified | [Akidau2015Dataflow.pdf](Akidau2015Dataflow.pdf) | [10.14778/2824032.2824076](https://doi.org/10.14778/2824032.2824076) |
-| `AmazonAurora2023` | Amazon Aurora Documentation | ⚠️ Missing | — | [link](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/) |
+| `Affolter2019NLIDB` | A comparative survey of recent natural language interfaces for databases | ✅ Verified | [Affolter2019NLIDB.pdf](Affolter2019NLIDB.pdf) | [10.1007/s00778-019-00567-8](https://doi.org/10.1007/s00778-019-00567-8) |
+| `Ahmed2023DistDB` | Consistency issue and related trade-offs in distributed replicated systems and databases: a review | ✅ Verified | [Ahmed2023DistDB.pdf](Ahmed2023DistDB.pdf) | [10.32620/reks.2023.2.14](https://doi.org/10.32620/reks.2023.2.14) |
+| `Aldin2019DistDB` | Consistency models in distributed systems: A survey on definitions, disciplines, challenges and applications | ✅ Verified | [Aldin2019DistDB.pdf](Aldin2019DistDB.pdf) | [10.48550/arxiv.1902.03305](https://doi.org/10.48550/arxiv.1902.03305) |
+| `Ali2018AI4DB` | Evolutionary Algorithms for Query Op-timization in Distributed Database Sys-tems: A review | ✅ Verified | [Ali2018AI4DB.pdf](Ali2018AI4DB.pdf) | [10.14201/adcaij201873115128](https://doi.org/10.14201/adcaij201873115128) |
+| `Ali2025AI4DB` | AI-Powered Database Management: Predictive Analytics for Performance Tuning | ✅ Verified | [Ali2025AI4DB.pdf](Ali2025AI4DB.pdf) | [10.47191/etj/v10i05.38](https://doi.org/10.47191/etj/v10i05.38) |
+| `Allam2026CloudNative` | A Survey of Emerging Trends and Algorithmic Solutions inCloud-Native Data Management | ✅ Verified | [Allam2026CloudNative.pdf](Allam2026CloudNative.pdf) | [10.66279/71rygy73](https://doi.org/10.66279/71rygy73) |
+| `AlShehri2013DBaaS` | Cloud Database Database as a Service | ✅ Verified | [AlShehri2013DBaaS.pdf](AlShehri2013DBaaS.pdf) | [10.5121/ijdms.2013.5201](https://doi.org/10.5121/ijdms.2013.5201) |
+| `AmazonAurora2023` | Amazon Aurora Documentation | ⚠️ Missing | — | — |
+| `Ammar2016GraphDB` | Query Optimization Techniques in Graph Databases | ✅ Verified | [Ammar2016GraphDB.pdf](Ammar2016GraphDB.pdf) | [10.5121/ijdms.2016.8401](https://doi.org/10.5121/ijdms.2016.8401) |
 | `Angles2020GraphDB` | Foundations of Modern Query Languages for Graph Databases | ✅ Verified | [Angles2020GraphDB.pdf](Angles2020GraphDB.pdf) | [10.1145/3104031](https://doi.org/10.1145/3104031) |
 | `Antonopoulos2019` | Socrates: The New SQL Server in the Cloud | ✅ Verified | [Antonopoulos2019.pdf](Antonopoulos2019.pdf) | [10.1145/3299869.3314047](https://doi.org/10.1145/3299869.3314047) |
-| `Arenas2022MultiModelBenchmark` | — | ✅ Verified | [Arenas2022MultiModelBenchmark.pdf](Arenas2022MultiModelBenchmark.pdf) | [PDF](https://link.springer.com/content/pdf/10.1007/s41019-019-00110-3.pdf) |
-| `Armbrust2020DeltaLake` | — | ✅ Verified | [Armbrust2020DeltaLake.pdf](Armbrust2020DeltaLake.pdf) | [PDF](https://ir.cwi.nl/pub/32924/32924.pdf) |
+| `Anuyah2024GraphDB` | Understanding Graph Databases: A Comprehensive Tutorial and Survey | ✅ Verified | [Anuyah2024GraphDB.pdf](Anuyah2024GraphDB.pdf) | [10.48550/arxiv.2411.09999](https://doi.org/10.48550/arxiv.2411.09999) |
+| `Arenas2021GraphDB` | Querying in the Age of Graph Databases and Knowledge Graphs | ✅ Verified | [Arenas2021GraphDB.pdf](Arenas2021GraphDB.pdf) | [10.1145/3448016.3457545](https://doi.org/10.1145/3448016.3457545) |
 | `Armbrust2021Lakehouse` | Lakehouse: A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics | ✅ Verified | [Armbrust2021Lakehouse.pdf](Armbrust2021Lakehouse.pdf) | — |
-| `Bader2017TSDB` | Survey and Comparison of Open Source Time Series Databases | ✅ Verified | [Bader2017TSDB.pdf](Bader2017TSDB.pdf) | [GI-DL (BTW 2017 Workshopband, no DOI)](https://dl.gi.de/handle/20.500.12116/922) |
-| `Barker2014Empirical` | — | ✅ Verified | [Barker2014Empirical.pdf](Barker2014Empirical.pdf) | [arXiv:1406.4974](https://arxiv.org/pdf/1406.4974.pdf) |
-| `Bermbach2017Fog` | — | ✅ Verified | [Bermbach2017Fog.pdf](Bermbach2017Fog.pdf) | [arXiv:1912.06096](https://arxiv.org/pdf/1912.06096) |
+| `Arora2012CloudDB` | Cloud Databases: A Paradigm Shift in Databases | ✅ Verified | [Arora2012CloudDB.pdf](Arora2012CloudDB.pdf) | — |
+| `Asaad2020NoSQL` | NoSQL Databases: Yearning for Disambiguation | ✅ Verified | [Asaad2020NoSQL.pdf](Asaad2020NoSQL.pdf) | [10.48550/arxiv.2003.04074](https://doi.org/10.48550/arxiv.2003.04074) |
+| `Bader2017TSDB` | Survey and Comparison of Open Source Time Series Databases | ✅ Verified | [Bader2017TSDB.pdf](Bader2017TSDB.pdf) | [link](https://dl.gi.de/handle/20.500.12116/922) |
+| `Baralis2017Geospatial` | SQL versus NoSQL databases for geospatial applications | ✅ Verified | [Baralis2017Geospatial.pdf](Baralis2017Geospatial.pdf) | — |
+| `Besta2023GraphDB` | Demystifying Graph Databases: Analysis and Taxonomy of Data Organization, System Designs, and Graph Queries | ✅ Verified | [Besta2023GraphDB.pdf](Besta2023GraphDB.pdf) | [10.1145/3604932](https://doi.org/10.1145/3604932) |
 | `Bhatti2017CloudDBReview` | Databases in Cloud Computing: A Literature Review | ✅ Verified | [Bhatti2017CloudDBReview.pdf](Bhatti2017CloudDBReview.pdf) | [10.5815/ijitcs.2017.04.02](https://doi.org/10.5815/ijitcs.2017.04.02) |
 | `Brewer2012CAP` | CAP Twelve Years Later: How the ``Rules'' Have Changed | ✅ Verified | [Brewer2012CAP.pdf](Brewer2012CAP.pdf) | [10.1109/MC.2012.37](https://doi.org/10.1109/MC.2012.37) |
 | `Cao2021PolarDB` | PolarDB Serverless: A Cloud Native Database for Disaggregated Data Centers | ✅ Verified | [Cao2021PolarDB.pdf](Cao2021PolarDB.pdf) | [10.1145/3448016.3457560](https://doi.org/10.1145/3448016.3457560) |
-| `Cattell2011Scalable` | — | ✅ Verified | [Cattell2011Scalable.pdf](Cattell2011Scalable.pdf) | [PDF](http://www.cattell.net/datastores/Datastores.pdf) |
-| `Chang2008Bigtable` | — | ✅ Verified | [Chang2008Bigtable.pdf](Chang2008Bigtable.pdf) | [10.1145/1365815.1365816](https://doi.org/10.1145/1365815.1365816) |
-| `Cooper2010YCSB` | — | ✅ Verified | [Cooper2010YCSB.pdf](Cooper2010YCSB.pdf) | [10.1145/1807128.1807152](https://doi.org/10.1145/1807128.1807152) |
+| `Cattell2011Scalable` | Scalable SQL and NoSQL Data Stores | ✅ Verified | [Cattell2011Scalable.pdf](Cattell2011Scalable.pdf) | [10.1145/1978915.1978919](https://doi.org/10.1145/1978915.1978919) |
+| `Chande2019AI4DB` | Database Query Optimization using Genetic Algorithms: A Systematic Literature Review | ✅ Verified | [Chande2019AI4DB.pdf](Chande2019AI4DB.pdf) | [10.30534/ijatcse/2019/14852019](https://doi.org/10.30534/ijatcse/2019/14852019) |
+| `Chang2008Bigtable` | Bigtable: A Distributed Storage System for Structured Data | ✅ Verified | [Chang2008Bigtable.pdf](Chang2008Bigtable.pdf) | [10.1145/1365815.1365816](https://doi.org/10.1145/1365815.1365816) |
+| `Coimbra2025GraphDB` | Survey: Graph Databases | ✅ Verified | [Coimbra2025GraphDB.pdf](Coimbra2025GraphDB.pdf) | — |
+| `Coimbra2025GraphDB2` | Survey: On the Landscape of Graph Databases | ✅ Verified | [Coimbra2025GraphDB2.pdf](Coimbra2025GraphDB2.pdf) | [10.48550/arxiv.2505.24758](https://doi.org/10.48550/arxiv.2505.24758) |
 | `Corbett2013Spanner` | Spanner: Google's Globally Distributed Database | ✅ Verified | [Corbett2013Spanner.pdf](Corbett2013Spanner.pdf) | [10.1145/2491245](https://doi.org/10.1145/2491245) |
 | `Curino2011DBaaS` | Relational Cloud: A Database-as-a-Service for the Cloud | ✅ Verified | [Curino2011DBaaS.pdf](Curino2011DBaaS.pdf) | — |
 | `Cuzzocrea2016PrivateDB` | Private Databases on the Cloud: Models, Issues and Research Perspectives | ✅ Verified | [Cuzzocrea2016PrivateDB.pdf](Cuzzocrea2016PrivateDB.pdf) | [10.1109/BigData.2016.7841032](https://doi.org/10.1109/BigData.2016.7841032) |
 | `Dageville2016` | The Snowflake Elastic Data Warehouse | ✅ Verified | [Dageville2016.pdf](Dageville2016.pdf) | [10.1145/2882903.2903741](https://doi.org/10.1145/2882903.2903741) |
+| `Dar2019NLIDB` | Frameworks for Querying Databases Using Natural Language: A Literature Review | ✅ Verified | [Dar2019NLIDB.pdf](Dar2019NLIDB.pdf) | [10.48550/arxiv.1909.01822](https://doi.org/10.48550/arxiv.1909.01822) |
+| `Daundasekara2025MultiCloud` | Evaluating Performance and User Perceptions of Multi-Cloud Database-as-a-Service Solutions: A Mixed-Methods Study | ✅ Verified | [Daundasekara2025MultiCloud.pdf](Daundasekara2025MultiCloud.pdf) | [10.1109/ICAC69156.2025.11361452](https://doi.org/10.1109/ICAC69156.2025.11361452) |
 | `Davoudian2018NoSQL` | A Survey on NoSQL Stores | ✅ Verified | [Davoudian2018NoSQL.pdf](Davoudian2018NoSQL.pdf) | [10.1145/3158661](https://doi.org/10.1145/3158661) |
-| `DeCandia2007Dynamo` | — | ✅ Verified | [DeCandia2007Dynamo.pdf](DeCandia2007Dynamo.pdf) | [10.1145/1323293.1294281](https://doi.org/10.1145/1323293.1294281) |
-| `Depoutovitch2020Taurus` | — | ✅ Verified | [Depoutovitch2020Taurus.pdf](Depoutovitch2020Taurus.pdf) | [arXiv:2412.02792](http://arxiv.org/pdf/2412.02792) |
+| `Dayarathna2020Bench` | Benchmarking Graph Data Management and Processing Systems: A Survey | ✅ Verified | [Dayarathna2020Bench.pdf](Dayarathna2020Bench.pdf) | [10.48550/arxiv.2005.12873](https://doi.org/10.48550/arxiv.2005.12873) |
+| `Deka2014CloudDBSurvey` | A Survey of Cloud Database Systems | ✅ Verified | [Deka2014CloudDBSurvey.pdf](Deka2014CloudDBSurvey.pdf) | [10.1109/MITP.2013.1](https://doi.org/10.1109/MITP.2013.1) |
 | `Deutsch2022GQL` | Graph Pattern Matching in GQL and SQL/PGQ | ✅ Verified | [Deutsch2022GQL.pdf](Deutsch2022GQL.pdf) | [10.1145/3514221.3526057](https://doi.org/10.1145/3514221.3526057) |
-| `Dory2011Elasticity` | Measuring Elasticity for Cloud Databases | ✅ Verified | [Dory2011Elasticity.pdf](Dory2011Elasticity.pdf) | IARIA CLOUD COMPUTING 2011 (no DOI) |
+| `Dinari2017GraphDB` | A Survey on Graph Queries Processing: Techniques and Methods | ✅ Verified | [Dinari2017GraphDB.pdf](Dinari2017GraphDB.pdf) | [10.5815/ijcnis.2017.04.06](https://doi.org/10.5815/ijcnis.2017.04.06) |
+| `Dindoliwala2017Sec` | Survey on Security Mechanisms In NoSQL Databases | ✅ Verified | [Dindoliwala2017Sec.pdf](Dindoliwala2017Sec.pdf) | [10.26483/ijarcs.v8i5.3302](https://doi.org/10.26483/ijarcs.v8i5.3302) |
+| `Dory2011Elasticity` | Measuring Elasticity for Cloud Databases | ✅ Verified | [Dory2011Elasticity.pdf](Dory2011Elasticity.pdf) | — |
+| `Dritsas2026MLDB` | Machine learning in modern database systems: Techniques, architectures, and deployment challenges | ✅ Verified | [Dritsas2026MLDB.pdf](Dritsas2026MLDB.pdf) | [10.1016/j.engappai.2026.114225](https://doi.org/10.1016/j.engappai.2026.114225) |
+| `Elbattah2015Freebase` | Large-Scale Ontology Storage and Query Using Graph Database-Oriented Approach: The Case of Freebase | ✅ Verified | [Elbattah2015Freebase.pdf](Elbattah2015Freebase.pdf) | — |
+| `Falcao2024Bench` | Energy Consumption and Performance Evaluation of Multi-Model NoSQL DBMSs | ✅ Verified | [Falcao2024Bench.pdf](Falcao2024Bench.pdf) | [10.22456/2175-2745.136568](https://doi.org/10.22456/2175-2745.136568) |
 | `Farber2012` | SAP HANA Database: Data Management for Modern Business Applications | ✅ Verified | [Farber2012.pdf](Farber2012.pdf) | [10.1145/2094114.2094126](https://doi.org/10.1145/2094114.2094126) |
-| `Fernandez2023DataMarketplace` | — | ✅ Verified | [Fernandez2023DataMarketplace.pdf](Fernandez2023DataMarketplace.pdf) | [arXiv:2002.01047](https://arxiv.org/pdf/2002.01047.pdf) |
+| `Faridoon2021NoSQL` | Big Data Storage Tools Using NoSQL Databases and Their Applications in Various Domains: A Systematic Review | ✅ Verified | [Faridoon2021NoSQL.pdf](Faridoon2021NoSQL.pdf) | [10.31577/cai_2021_3_489](https://doi.org/10.31577/cai_2021_3_489) |
+| `Ferrari2009DBaaSSec` | Database as a Service: Challenges and Solutions for Privacy and Security | ✅ Verified | [Ferrari2009DBaaSSec.pdf](Ferrari2009DBaaSSec.pdf) | [10.1109/APSCC.2009.5394141](https://doi.org/10.1109/APSCC.2009.5394141) |
+| `Ferreira2023NoSQLMD` | Multidimensional Modelling in NoSQL Database: A Systematic Review | ✅ Verified | [Ferreira2023NoSQLMD.pdf](Ferreira2023NoSQLMD.pdf) | [10.23919/CISTI58278.2023.10211592](https://doi.org/10.23919/CISTI58278.2023.10211592) |
 | `Ferretti2014Encrypted` | Distributed, Concurrent, and Independent Access to Encrypted Cloud Databases | ✅ Verified | [Ferretti2014Encrypted.pdf](Ferretti2014Encrypted.pdf) | [10.1109/TPDS.2013.154](https://doi.org/10.1109/TPDS.2013.154) |
-| `Francis2018GQL` | — | ✅ Verified | [Francis2018GQL.pdf](Francis2018GQL.pdf) | [PDF](https://hal.archives-ouvertes.fr/hal-01803524/file/paper.pdf) |
 | `Fuhrt2010CloudSecurity` | Handbook of Cloud Computing | ✅ Verified | [Fuhrt2010CloudSecurity.pdf](Fuhrt2010CloudSecurity.pdf) | [10.1007/978-1-4419-6524-0](https://doi.org/10.1007/978-1-4419-6524-0) |
 | `Gao2023DAILSQL` | Text-to-SQL Empowered by Large Language Models: A Benchmark Evaluation | ✅ Verified | [Gao2023DAILSQL.pdf](Gao2023DAILSQL.pdf) | [10.14778/3641204.3641221](https://doi.org/10.14778/3641204.3641221) |
-| `Gao2024RAGSurvey` | Retrieval-Augmented Generation for Large Language Models: A Survey | ✅ Verified | [Gao2024RAGSurvey.pdf](Gao2024RAGSurvey.pdf) | [arXiv:2312.10997](https://arxiv.org/abs/2312.10997) |
+| `Gao2024RAGSurvey` | Retrieval-Augmented Generation for Large Language Models: A Survey | ✅ Verified | [Gao2024RAGSurvey.pdf](Gao2024RAGSurvey.pdf) | — |
 | `gartner2024dbms` | Magic Quadrant for Cloud Database Management Systems | ⚠️ Missing | — | — |
 | `GDPR2016` | Regulation (EU) 2016/679 of the European Parliament and of the Council (General Data Protection Regulation) | ✅ Verified | [GDPR2016.pdf](GDPR2016.pdf) | — |
+| `Gessert2016NoSQL` | NoSQL database systems: a survey and decision guidance | ✅ Verified | [Gessert2016NoSQL.pdf](Gessert2016NoSQL.pdf) | [10.1007/s00450-016-0334-3](https://doi.org/10.1007/s00450-016-0334-3) |
+| `Glake2022MultiModel` | Towards Polyglot Data Stores -- Overview and Open Research Questions | ✅ Verified | [Glake2022MultiModel.pdf](Glake2022MultiModel.pdf) | [10.48550/arxiv.2204.05779](https://doi.org/10.48550/arxiv.2204.05779) |
 | `Gomes2024EdgeFog` | Databases in Edge and Fog Environments: A Survey | ✅ Verified | [Gomes2024EdgeFog.pdf](Gomes2024EdgeFog.pdf) | [10.1145/3666001](https://doi.org/10.1145/3666001) |
-| `Graefe1993QueryOptSurvey` | — | ✅ Verified | [Graefe1993QueryOptSurvey.pdf](Graefe1993QueryOptSurvey.pdf) | [10.1145/152610.152611](https://doi.org/10.1145/152610.152611) |
-| `Haas2024HTAPSurvey` | HTAP Databases: A Survey | ✅ Verified | [Haas2024HTAPSurvey.pdf](Haas2024HTAPSurvey.pdf) | [10.1109/TKDE.2023.3298514](https://doi.org/10.1109/TKDE.2023.3298514) |
+| `Grolinger2013CloudData` | Data management in cloud environments: NoSQL and NewSQL data stores | ✅ Verified | [Grolinger2013CloudData.pdf](Grolinger2013CloudData.pdf) | [10.1186/2192-113X-2-22](https://doi.org/10.1186/2192-113X-2-22) |
+| `Guo2023MultiModel` | Multi-model query languages: taming the variety of big data | ✅ Verified | [Guo2023MultiModel.pdf](Guo2023MultiModel.pdf) | [10.1007/s10619-023-07433-1](https://doi.org/10.1007/s10619-023-07433-1) |
+| `Guralnik2016GraphDB` | Some problems on graph databases | ✅ Verified | [Guralnik2016GraphDB.pdf](Guralnik2016GraphDB.pdf) | [10.15514/ispras-2016-28(4)-12](https://doi.org/10.15514/ispras-2016-28(4)-12) |
+| `Haas2024HTAPSurvey` | HTAP Databases: A Survey | ✅ Verified | [Haas2024HTAPSurvey.pdf](Haas2024HTAPSurvey.pdf) | — |
 | `Halevy2016Goods` | Goods: Organizing Google's Datasets | ✅ Verified | [Halevy2016Goods.pdf](Halevy2016Goods.pdf) | [10.1145/2882903.2903730](https://doi.org/10.1145/2882903.2903730) |
+| `Han2011NoSQL` | Survey on NoSQL Database | ✅ Verified | [Han2011NoSQL.pdf](Han2011NoSQL.pdf) | — |
 | `Harby2022Lakehouse` | From Data Warehouse to Lakehouse: A Comparative Review | ✅ Verified | [Harby2022Lakehouse.pdf](Harby2022Lakehouse.pdf) | [10.1109/BigData55660.2022.10020719](https://doi.org/10.1109/BigData55660.2022.10020719) |
+| `Hasan2025DistDB` | A Survey on Distributed Database Systems in the Era of Big Data | ✅ Verified | [Hasan2025DistDB.pdf](Hasan2025DistDB.pdf) | [10.47191/etj/v10i11.03](https://doi.org/10.47191/etj/v10i11.03) |
+| `Hendricks2019NoSQLReview` | Review of NoSQL Data Stores: Using a Reactive Three-Tier Application for Software Developers to Achieve a High Availability Application Design Architecture | ✅ Verified | [Hendricks2019NoSQLReview.pdf](Hendricks2019NoSQLReview.pdf) | — |
 | `Hilprecht2020Partitioning` | Learning a Partitioning Advisor for Cloud Databases | ✅ Verified | [Hilprecht2020Partitioning.pdf](Hilprecht2020Partitioning.pdf) | [10.1145/3318464.3389704](https://doi.org/10.1145/3318464.3389704) |
 | `Hilprecht2022CardinalityEstimation` | DeepDB: Learn from Data, not from Queries! | ✅ Verified | [Hilprecht2022CardinalityEstimation.pdf](Hilprecht2022CardinalityEstimation.pdf) | [10.14778/3384345.3384349](https://doi.org/10.14778/3384345.3384349) |
-| `Hilprecht2022Zero` | — | ✅ Verified | [Hilprecht2022Zero.pdf](Hilprecht2022Zero.pdf) | [arXiv:2201.00561](http://arxiv.org/pdf/2201.00561) |
-| `Hogan2021KGSurvey` | — | ✅ Verified | [Hogan2021KGSurvey.pdf](Hogan2021KGSurvey.pdf) | [arXiv:2003.02320](https://arxiv.org/pdf/2003.02320.pdf) |
 | `Huang2020TiDB` | TiDB: A Raft-Based HTAP Database | ✅ Verified | [Huang2020TiDB.pdf](Huang2020TiDB.pdf) | [10.14778/3415478.3415535](https://doi.org/10.14778/3415478.3415535) |
-| `IEA2024DataCenters` | Data Centres and Data Transmission Networks | ⚠️ Missing | — | [link](https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks) |
+| `Iancu2018DBaaS` | Saving Large Semantic Data in Cloud: A Survey of the Main DBaaS Solutions | ✅ Verified | [Iancu2018DBaaS.pdf](Iancu2018DBaaS.pdf) | [10.12948/issn14531305/22.1.2018.01](https://doi.org/10.12948/issn14531305/22.1.2018.01) |
+| `IEA2024DataCenters` | Data Centres and Data Transmission Networks | ⚠️ Missing | — | — |
 | `Jain2016HighVariety` | High Variety Cloud Databases | ✅ Verified | [Jain2016HighVariety.pdf](Jain2016HighVariety.pdf) | [10.1109/ICDEW.2016.7495609](https://doi.org/10.1109/ICDEW.2016.7495609) |
-| `Johnson2021FAISS` | — | ✅ Verified | [Johnson2021FAISS.pdf](Johnson2021FAISS.pdf) | [arXiv:1702.08734](https://arxiv.org/pdf/1702.08734) |
+| `Janssen2024Lakehouse` | The evolution of data storage architectures: examining the secure value of the Data Lakehouse | ✅ Verified | [Janssen2024Lakehouse.pdf](Janssen2024Lakehouse.pdf) | [10.1007/s42488-024-00132-1](https://doi.org/10.1007/s42488-024-00132-1) |
+| `Jing2025NLIDB` | When Large Language Models Meet Vector Databases: A Survey | ✅ Verified | [Jing2025NLIDB.pdf](Jing2025NLIDB.pdf) | [10.1109/aixmm62960.2025.00008](https://doi.org/10.1109/aixmm62960.2025.00008) |
 | `Kaur2021NoSQLReview` | NoSQL Databases: A Survey | ✅ Verified | [Kaur2021NoSQLReview.pdf](Kaur2021NoSQLReview.pdf) | [10.46298/arima.13970](https://doi.org/10.46298/arima.13970) |
-| `Khan2019DaaSAnalytic` | An Analytic Study of Architecture, Security, Privacy, Query Processing, and Performance Evaluation of Database-as-a-Service | ✅ Verified | [Khan2019DaaSAnalytic.pdf](Khan2019DaaSAnalytic.pdf) | [10.1002/ett.3814](https://doi.org/10.1002/ett.3814) |
+| `Khan2019DaaSAnalytic` | An analytic study of architecture, security, privacy, query processing, and performance evaluation of database-as-a-service | ✅ Verified | [Khan2019DaaSAnalytic.pdf](Khan2019DaaSAnalytic.pdf) | [10.1002/ett.3814](https://doi.org/10.1002/ett.3814) |
+| `Khan2023NoSQL` | SQL and NoSQL Database Software Architecture Performance Analysis and Assessments—A Systematic Literature Review | ✅ Verified | [Khan2023NoSQL.pdf](Khan2023NoSQL.pdf) | [10.3390/bdcc7020097](https://doi.org/10.3390/bdcc7020097) |
 | `Khasawneh2020SQLNewSQL` | SQL, NewSQL, and NoSQL Databases: A Comparative Survey | ✅ Verified | [Khasawneh2020SQLNewSQL.pdf](Khasawneh2020SQLNewSQL.pdf) | [10.1109/ICICS49469.2020.239513](https://doi.org/10.1109/ICICS49469.2020.239513) |
-| `Kipf2019LearnedCardinality` | — | ✅ Verified | [Kipf2019LearnedCardinality.pdf](Kipf2019LearnedCardinality.pdf) | [arXiv:1809.00677](https://arxiv.org/pdf/1809.00677.pdf) |
+| `Khelaifa2019DistDB` | A comparative analysis of adaptive consistency approaches in cloud storage | ✅ Verified | [Khelaifa2019DistDB.pdf](Khelaifa2019DistDB.pdf) | [10.1016/j.jpdc.2019.03.006](https://doi.org/10.1016/j.jpdc.2019.03.006) |
 | `Kitchenham2007` | Guidelines for Performing Systematic Literature Reviews in Software Engineering | ✅ Verified | [Kitchenham2007.pdf](Kitchenham2007.pdf) | — |
+| `Kohler2015Sec` | Confidential database-as-a-service approaches: taxonomy and survey | ✅ Verified | [Kohler2015Sec.pdf](Kohler2015Sec.pdf) | [10.1186/s13677-014-0025-1](https://doi.org/10.1186/s13677-014-0025-1) |
+| `Koppenwallner2023Sec` | A Survey on Property-Preserving Database Encryption Techniques in the Cloud | ✅ Verified | [Koppenwallner2023Sec.pdf](Koppenwallner2023Sec.pdf) | [10.48550/arxiv.2312.12075](https://doi.org/10.48550/arxiv.2312.12075) |
 | `Kraska2018LearnedIndex` | The Case for Learned Index Structures | ✅ Verified | [Kraska2018LearnedIndex.pdf](Kraska2018LearnedIndex.pdf) | [10.1145/3183713.3196909](https://doi.org/10.1145/3183713.3196909) |
-| `Lakshman2010Cassandra` | — | ✅ Verified | [Lakshman2010Cassandra.pdf](Lakshman2010Cassandra.pdf) | [10.1145/1773912.1773922](https://doi.org/10.1145/1773912.1773922) |
-| `Lamb2012Vertica` | — | ✅ Verified | [Lamb2012Vertica.pdf](Lamb2012Vertica.pdf) | [arXiv:1208.4173](https://arxiv.org/pdf/1208.4173.pdf) |
-| `Lamport1998Paxos` | — | ✅ Verified | [Lamport1998Paxos.pdf](Lamport1998Paxos.pdf) | [10.1145/279227.279229](https://doi.org/10.1145/279227.279229) |
+| `Kuznetsov2020HTAP` | Real-time analytics, hybrid transactional/analytical processing, in-memory data management, and non-volatile memory | ✅ Verified | [Kuznetsov2020HTAP.pdf](Kuznetsov2020HTAP.pdf) | [10.1109/ispras51486.2020.00019](https://doi.org/10.1109/ispras51486.2020.00019) |
 | `Lao2024GPTuner` | GPTuner: A Manual-Reading Database Tuning System via GPT-Guided Bayesian Optimization | ✅ Verified | [Lao2024GPTuner.pdf](Lao2024GPTuner.pdf) | [10.14778/3659437.3659449](https://doi.org/10.14778/3659437.3659449) |
+| `Lee2012GraphDB` | An in-depth comparison of subgraph isomorphism algorithms in graph databases | ✅ Verified | [Lee2012GraphDB.pdf](Lee2012GraphDB.pdf) | [10.14778/2535568.2448946](https://doi.org/10.14778/2535568.2448946) |
+| `Lehner2010DBaaS` | Database as a Service (DBaaS) | ✅ Verified | [Lehner2010DBaaS.pdf](Lehner2010DBaaS.pdf) | — |
 | `Leis2023CloudPricing` | Towards Cost-Optimal Query Processing in the Cloud | ✅ Verified | [Leis2023CloudPricing.pdf](Leis2023CloudPricing.pdf) | [10.14778/3461535.3461549](https://doi.org/10.14778/3461535.3461549) |
-| `Li2024CloudNativeSurvey` | Cloud-Native Database Systems: A Survey and Future Directions | ✅ Verified | [Li2024CloudNativeSurvey.pdf](Li2024CloudNativeSurvey.pdf) | [10.1109/TKDE.2023.3313441](https://doi.org/10.1109/TKDE.2023.3313441) |
+| `Li2024CloudNativeSurvey` | Cloud-Native Databases: A Survey | ✅ Verified | [Li2024CloudNativeSurvey.pdf](Li2024CloudNativeSurvey.pdf) | [10.1109/TKDE.2024.3397508](https://doi.org/10.1109/TKDE.2024.3397508) |
+| `Li2025AI4DB` | Graph Neural Networks for Databases: A Survey | ✅ Verified | [Li2025AI4DB.pdf](Li2025AI4DB.pdf) | [10.48550/arxiv.2502.12908](https://doi.org/10.48550/arxiv.2502.12908) |
+| `Litchfield2014DBaaS` | A Systematic Review of Cloud Computing, Big Data and Databases on the Cloud | ✅ Verified | [Litchfield2014DBaaS.pdf](Litchfield2014DBaaS.pdf) | [link](https://aisel.aisnet.org/amcis2014/ServiceSystems/GeneralPresentations/1) |
+| `Liu2025AI4DB` | Evaluating Learned Indexes in LSM-tree Systems: Benchmarks,Insights and Design Choices | ✅ Verified | [Liu2025AI4DB.pdf](Liu2025AI4DB.pdf) | [10.48550/arxiv.2506.08671](https://doi.org/10.48550/arxiv.2506.08671) |
+| `Liu2025Bench` | How good are multi-dimensional learned indexes? An experimental survey | ✅ Verified | [Liu2025Bench.pdf](Liu2025Bench.pdf) | [10.1007/s00778-024-00893-6](https://doi.org/10.1007/s00778-024-00893-6) |
+| `Lourenco2015NoSQL` | Choosing the right NoSQL database for the job: a quality attribute evaluation | ✅ Verified | [Lourenco2015NoSQL.pdf](Lourenco2015NoSQL.pdf) | [10.1186/s40537-015-0025-0](https://doi.org/10.1186/s40537-015-0025-0) |
 | `Lu2019MultiModel` | Multi-Model Databases: A New Journey to Handle the Variety of Data | ✅ Verified | [Lu2019MultiModel.pdf](Lu2019MultiModel.pdf) | [10.1145/3323214](https://doi.org/10.1145/3323214) |
+| `Luo2019NoSQL` | LSM-based storage techniques: a survey | ✅ Verified | [Luo2019NoSQL.pdf](Luo2019NoSQL.pdf) | [10.1007/s00778-019-00555-y](https://doi.org/10.1007/s00778-019-00555-y) |
 | `Ma2020SlowQuery` | Diagnosing Root Causes of Intermittent Slow Queries in Cloud Databases | ✅ Verified | [Ma2020SlowQuery.pdf](Ma2020SlowQuery.pdf) | [10.14778/3389133.3389136](https://doi.org/10.14778/3389133.3389136) |
 | `Ma2021LearnedWorkload` | Query-based Workload Forecasting for Self-Driving Database Management Systems | ✅ Verified | [Ma2021LearnedWorkload.pdf](Ma2021LearnedWorkload.pdf) | [10.1145/3183713.3196908](https://doi.org/10.1145/3183713.3196908) |
-| `Ma2022MBAQO` | — | ✅ Verified | [Ma2022MBAQO.pdf](Ma2022MBAQO.pdf) | [10.1145/3514221.3517869](https://doi.org/10.1145/3514221.3517869) |
-| `Malkov2020HNSW` | — | ✅ Verified | [Malkov2020HNSW.pdf](Malkov2020HNSW.pdf) | [arXiv:1603.09320](http://arxiv.org/pdf/1603.09320) |
+| `Ma2023VectorDB` | A Comprehensive Survey on Vector Database: Storage and Retrieval Technique, Challenge | ✅ Verified | [Ma2023VectorDB.pdf](Ma2023VectorDB.pdf) | [10.48550/arxiv.2310.11703](https://doi.org/10.48550/arxiv.2310.11703) |
+| `Mahmood2019NoSQLLog` | Comparison of NoSQL Datastores for Large Scale Data Stream Log Analytics | ✅ Verified | [Mahmood2019NoSQLLog.pdf](Mahmood2019NoSQLLog.pdf) | [10.1109/SMARTCOMP.2019.00093](https://doi.org/10.1109/SMARTCOMP.2019.00093) |
+| `Mahmoud2025DistDB` | Data Integrity and Consistency Challenges in Distributed Database Systems | ✅ Verified | [Mahmoud2025DistDB.pdf](Mahmoud2025DistDB.pdf) | [10.47191/etj/v10i05.36](https://doi.org/10.47191/etj/v10i05.36) |
+| `Mahule2025Sec` | Survey on Cloud Database Security: Cryptographic Techniques, Intrusion Detection and Intelligent Defense Mechanisms | ✅ Verified | [Mahule2025Sec.pdf](Mahule2025Sec.pdf) | [10.1051/epjconf/202534101015/pdf](https://doi.org/10.1051/epjconf/202534101015/pdf) |
+| `Mami2019MultiModel` | The Query Translation Landscape: a Survey | ✅ Verified | [Mami2019MultiModel.pdf](Mami2019MultiModel.pdf) | [10.48550/arxiv.1910.03118](https://doi.org/10.48550/arxiv.1910.03118) |
+| `Mansouri2021EdgeFog` | Evaluation of Distributed Databases in Hybrid Clouds and Edge Computing: Energy, Bandwidth, and Storage Consumption | ✅ Verified | [Mansouri2021EdgeFog.pdf](Mansouri2021EdgeFog.pdf) | [10.48550/arxiv.2109.07260](https://doi.org/10.48550/arxiv.2109.07260) |
+| `Mao2021NoSQL` | Comparison and evaluation of state-of-the-art LSM merge policies | ✅ Verified | [Mao2021NoSQL.pdf](Mao2021NoSQL.pdf) | [10.1007/s00778-020-00638-1](https://doi.org/10.1007/s00778-020-00638-1) |
+| `Marcus2020AI4DB` | Benchmarking learned indexes | ✅ Verified | [Marcus2020AI4DB.pdf](Marcus2020AI4DB.pdf) | [10.14778/3421424.3421425](https://doi.org/10.14778/3421424.3421425) |
 | `Marcus2021Bao` | Bao: Making Learned Query Optimization Practical | ✅ Verified | [Marcus2021Bao.pdf](Marcus2021Bao.pdf) | [10.1145/3448016.3452838](https://doi.org/10.1145/3448016.3452838) |
-| `Mathew2021CloudMigration` | Cloud Migration Process—A Survey, Evaluation Framework, and Open Challenges | ✅ Verified | [Mathew2021CloudMigration.pdf](Mathew2021CloudMigration.pdf) | [10.1016/j.jss.2016.06.068](https://doi.org/10.1016/j.jss.2016.06.068) |
+| `Mateljan2010ROI` | Cloud Database-as-a-Service (DaaS) -- ROI | ✅ Verified | [Mateljan2010ROI.pdf](Mateljan2010ROI.pdf) | — |
+| `Mathew2021CloudMigration` | Cloud Migration Process---A Survey, Evaluation Framework, and Open Challenges | ✅ Verified | [Mathew2021CloudMigration.pdf](Mathew2021CloudMigration.pdf) | [10.1016/j.jss.2016.06.068](https://doi.org/10.1016/j.jss.2016.06.068) |
 | `Melnik2020Dremel` | Dremel: A Decade of Interactive SQL Analysis at Web Scale | ✅ Verified | [Melnik2020Dremel.pdf](Melnik2020Dremel.pdf) | [10.14778/3415478.3415568](https://doi.org/10.14778/3415478.3415568) |
-| `Moher2009PRISMA` | — | ✅ Verified | [Moher2009PRISMA.pdf](Moher2009PRISMA.pdf) | [PDF](https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1000097&type=printable) |
-| `Mouhibha2025NoSQLDW` | NoSQL Data Warehouse Optimizing Models: A Comparative Study of Column-Oriented Approaches | ✅ Verified | [Mouhibha2025NoSQLDW.pdf](Mouhibha2025NoSQLDW.pdf) | [10.1016/j.bdr.2025.100523](https://doi.org/10.1016/j.bdr.2025.100523) |
+| `Mishra2024NoSQL` | A survey of LSM-Tree based Indexes, Data Systems and KV-stores | ✅ Verified | [Mishra2024NoSQL.pdf](Mishra2024NoSQL.pdf) | [10.1109/sceecs61402.2024.10482249](https://doi.org/10.1109/sceecs61402.2024.10482249) |
+| `Moghadam2017Sec` | Enforcing Privacy in Cloud Databases | ✅ Verified | [Moghadam2017Sec.pdf](Moghadam2017Sec.pdf) | [10.48550/arxiv.1708.09171](https://doi.org/10.48550/arxiv.1708.09171) |
+| `Mouhibha2025NoSQLDW` | NoSQL data warehouse optimizing models: A comparative study of column-oriented approaches | ✅ Verified | [Mouhibha2025NoSQLDW.pdf](Mouhibha2025NoSQLDW.pdf) | [10.1016/j.bdr.2025.100523](https://doi.org/10.1016/j.bdr.2025.100523) |
+| `Mouhibha2026Clustering` | An empirically-driven clustering framework for NoSQL data warehouse conversion: Optimizing column family design from relational big data using HDBSCAN | ✅ Verified | [Mouhibha2026Clustering.pdf](Mouhibha2026Clustering.pdf) | [10.1016/j.infsof.2026.108117](https://doi.org/10.1016/j.infsof.2026.108117) |
 | `Muller2020Serverless` | Lambada: Interactive Data Analytics on Cold Data Using Serverless Cloud Infrastructure | ✅ Verified | [Muller2020Serverless.pdf](Muller2020Serverless.pdf) | [10.1145/3318464.3389758](https://doi.org/10.1145/3318464.3389758) |
+| `Munir2015DBaaSSec` | Security Model for Cloud Database as a Service (DBaaS) | ✅ Verified | [Munir2015DBaaSSec.pdf](Munir2015DBaaSSec.pdf) | — |
+| `Murtaza2020BreastCancer` | Deep Learning-Based Breast Cancer Classification Through Medical Imaging Modalities: State of the Art and Research Challenges | ⚠️ Missing | — | [10.1007/s10462-019-09716-7](https://doi.org/10.1007/s10462-019-09716-7) |
 | `Narasayya2015MultiTenant` | SQLVM: Performance Isolation in Multi-Tenant Relational Database-as-a-Service | ✅ Verified | [Narasayya2015MultiTenant.pdf](Narasayya2015MultiTenant.pdf) | — |
-| `Noy2019KGSurvey` | — | ✅ Verified | [Noy2019KGSurvey.pdf](Noy2019KGSurvey.pdf) | [10.1145/3331166](https://doi.org/10.1145/3331166) |
+| `Nurhadi2024AI4DB` | A Systematic Review of Automated Classification for Simple and Complex Query SQL on NoSQL Database | ✅ Verified | [Nurhadi2024AI4DB.pdf](Nurhadi2024AI4DB.pdf) | [10.32604/csse.2024.051851](https://doi.org/10.32604/csse.2024.051851) |
 | `Opara2017LockIn` | Architectural Principles for Cloud Software | ✅ Verified | [Opara2017LockIn.pdf](Opara2017LockIn.pdf) | [10.1145/3104028](https://doi.org/10.1145/3104028) |
+| `Ozsoyoglu1995Temporal` | Temporal and Real-Time Databases: A Survey | ✅ Verified | [Ozsoyoglu1995Temporal.pdf](Ozsoyoglu1995Temporal.pdf) | [10.1109/69.404027](https://doi.org/10.1109/69.404027) |
+| `Page2021PRISMA` | The PRISMA 2020 statement: an updated guideline for reporting systematic reviews | ✅ Verified | [Page2021PRISMA.pdf](Page2021PRISMA.pdf) | [10.1136/bmj.n71](https://doi.org/10.1136/bmj.n71) |
 | `Pan2024VectorDB` | Survey of Vector Database Management Systems | ✅ Verified | [Pan2024VectorDB.pdf](Pan2024VectorDB.pdf) | [10.1007/s00778-024-00864-x](https://doi.org/10.1007/s00778-024-00864-x) |
-| `Patterson2022CarbonAI` | — | ✅ Verified | [Patterson2022CarbonAI.pdf](Patterson2022CarbonAI.pdf) | [10.1109/MC.2022.3148714](https://doi.org/10.1109/MC.2022.3148714) |
+| `Patil2018GraphDB` | A Survey on Graph Database Management Techniques for Huge Unstructured Data | ✅ Verified | [Patil2018GraphDB.pdf](Patil2018GraphDB.pdf) | [10.11591/ijece.v8i2.pp1140-1149](https://doi.org/10.11591/ijece.v8i2.pp1140-1149) |
 | `Pavlo2017SelfDriving` | Self-Driving Database Management Systems | ✅ Verified | [Pavlo2017SelfDriving.pdf](Pavlo2017SelfDriving.pdf) | — |
 | `Phan2014IoTCloudDB` | Cloud Databases for Internet-of-Things Data | ✅ Verified | [Phan2014IoTCloudDB.pdf](Phan2014IoTCloudDB.pdf) | [10.1109/iThings.2014.26](https://doi.org/10.1109/iThings.2014.26) |
 | `Pohl2024LakehouseTS` | Data Lakehouse for Time Series Data: A Systematic Literature Review | ✅ Verified | [Pohl2024LakehouseTS.pdf](Pohl2024LakehouseTS.pdf) | [10.1109/BigData62323.2024.10825961](https://doi.org/10.1109/BigData62323.2024.10825961) |
 | `Politou2018GDPR` | Forgetting Personal Data and Revoking Consent Under the GDPR: Challenges and Proposed Solutions | ✅ Verified | [Politou2018GDPR.pdf](Politou2018GDPR.pdf) | [10.1093/cybsec/tyy001](https://doi.org/10.1093/cybsec/tyy001) |
 | `Pourreza2023DINSQL` | DIN-SQL: Decomposed In-Context Learning of Text-to-SQL with Self-Correction | ✅ Verified | [Pourreza2023DINSQL.pdf](Pourreza2023DINSQL.pdf) | — |
+| `Qazi2015SolarANN` | The Artificial Neural Network for Solar Radiation Prediction and Designing Solar Systems: A Systematic Literature Review | ⚠️ Missing | — | [10.1016/j.jclepro.2015.04.041](https://doi.org/10.1016/j.jclepro.2015.04.041) |
+| `Qiao2025AI4DB` | Learning database optimization techniques: the state-of-the-art and prospects | ✅ Verified | [Qiao2025AI4DB.pdf](Qiao2025AI4DB.pdf) | [10.1007/s11704-025-41116-7](https://doi.org/10.1007/s11704-025-41116-7) |
 | `Rabl2019BenchmarkSurvey` | Just Can't Get Enough---Synthesizing Big Data Benchmarks | ✅ Verified | [Rabl2019BenchmarkSurvey.pdf](Rabl2019BenchmarkSurvey.pdf) | — |
-| `Rahm2001SchemaMatching` | — | ✅ Verified | [Rahm2001SchemaMatching.pdf](Rahm2001SchemaMatching.pdf) | [PDF](https://ul.qucosa.de/api/qucosa%3A31968/attachment/ATT-0/) |
 | `Ramanathan2011SimpleDBBigtable` | Comparison of Cloud Database: Amazon's SimpleDB and Google's Bigtable | ✅ Verified | [Ramanathan2011SimpleDBBigtable.pdf](Ramanathan2011SimpleDBBigtable.pdf) | [10.1109/ReTIS.2011.6146861](https://doi.org/10.1109/ReTIS.2011.6146861) |
+| `Ravan2013EncQuery` | A Survey on Querying Encrypted Data for Database as a Service | ✅ Verified | [Ravan2013EncQuery.pdf](Ravan2013EncQuery.pdf) | [10.1109/CyberC.2013.12](https://doi.org/10.1109/CyberC.2013.12) |
+| `Ruan2019DistDB` | Blockchains vs. Distributed Databases: Dichotomy and Fusion | ✅ Verified | [Ruan2019DistDB.pdf](Ruan2019DistDB.pdf) | [10.48550/arxiv.1910.01310](https://doi.org/10.48550/arxiv.1910.01310) |
 | `Saeed2023XAI` | Explainable AI (XAI): A Systematic Meta-Survey of Current Challenges and Future Opportunities | ✅ Verified | [Saeed2023XAI.pdf](Saeed2023XAI.pdf) | [10.1016/j.knosys.2023.110273](https://doi.org/10.1016/j.knosys.2023.110273) |
+| `Salehi2016Granular` | Systematic Mapping Study on Granular Computing | ⚠️ Missing | — | [10.1016/j.knosys.2015.02.018](https://doi.org/10.1016/j.knosys.2015.02.018) |
 | `Samarta2024SQLNoSQL` | Systematic Literature Review and Comparative Performance Analysis of SQL and NoSQL Databases in Big Data Applications | ✅ Verified | [Samarta2024SQLNoSQL.pdf](Samarta2024SQLNoSQL.pdf) | [10.1109/ICIMCIS63449.2024.10957463](https://doi.org/10.1109/ICIMCIS63449.2024.10957463) |
 | `Sanka2022CloudSecSurvey` | A Systematic Literature Review on Cloud Computing Security: Threats and Mitigation Strategies | ✅ Verified | [Sanka2022CloudSecSurvey.pdf](Sanka2022CloudSecSurvey.pdf) | [10.1109/ACCESS.2021.3073203](https://doi.org/10.1109/ACCESS.2021.3073203) |
-| `Strubell2019Energy` | — | ✅ Verified | [Strubell2019Energy.pdf](Strubell2019Energy.pdf) | [PDF](https://www.aclweb.org/anthology/P19-1355.pdf) |
+| `Santos2024GraphDB` | Data Modeling for Connected Data -- A systematic literature review | ✅ Verified | [Santos2024GraphDB.pdf](Santos2024GraphDB.pdf) | [10.48550/arxiv.2410.10081](https://doi.org/10.48550/arxiv.2410.10081) |
+| `Sarkar2021NoSQL` | Constructing and analyzing the LSM compaction design space | ✅ Verified | [Sarkar2021NoSQL.pdf](Sarkar2021NoSQL.pdf) | [10.14778/3476249.3476274](https://doi.org/10.14778/3476249.3476274) |
+| `Satish2024Sec` | Database Security Issues and Challenges in Cloud Computing | ✅ Verified | [Satish2024Sec.pdf](Satish2024Sec.pdf) | [10.17762/ijritcc.v11i11.10396](https://doi.org/10.17762/ijritcc.v11i11.10396) |
+| `Segalin2018DBaaS` | DBaaS Multitenancy, Auto-tuning and SLA Maintenance in Cloud Environments: a Brief Survey | ✅ Verified | [Segalin2018DBaaS.pdf](Segalin2018DBaaS.pdf) | [10.5753/isys.2018.362](https://doi.org/10.5753/isys.2018.362) |
+| `Shareef2022NoSQL` | A Survey of Comparison Different Cloud Database Performance: SQL and NoSQL | ✅ Verified | [Shareef2022NoSQL.pdf](Shareef2022NoSQL.pdf) | [10.24271/psr.2022.301247.1104](https://doi.org/10.24271/psr.2022.301247.1104) |
+| `Sheng2025MQRLD` | MQRLD: A multimodal data retrieval platform with query-aware feature representation and learned index based on data lake | ✅ Verified | [Sheng2025MQRLD.pdf](Sheng2025MQRLD.pdf) | [10.1016/j.ipm.2025.104101](https://doi.org/10.1016/j.ipm.2025.104101) |
+| `Siddiqa2017NoSQL` | Big data storage technologies: a survey | ✅ Verified | [Siddiqa2017NoSQL.pdf](Siddiqa2017NoSQL.pdf) | [10.1631/fitee.1500441](https://doi.org/10.1631/fitee.1500441) |
+| `Solat2024DistDB` | Sharding Distributed Databases: A Critical Review | ✅ Verified | [Solat2024DistDB.pdf](Solat2024DistDB.pdf) | [10.48550/arxiv.2404.04384](https://doi.org/10.48550/arxiv.2404.04384) |
+| `Song2024HTAP` | A survey on hybrid transactional and analytical processing | ✅ Verified | [Song2024HTAP.pdf](Song2024HTAP.pdf) | [10.1007/s00778-024-00858-9](https://doi.org/10.1007/s00778-024-00858-9) |
+| `Stefanidis2011Prefs` | A survey on representation, composition and application of preferences in database systems | ✅ Verified | [Stefanidis2011Prefs.pdf](Stefanidis2011Prefs.pdf) | [10.1145/2000824.2000829](https://doi.org/10.1145/2000824.2000829) |
 | `Taft2020Cockroach` | CockroachDB: The Resilient Geo-Distributed SQL Database | ✅ Verified | [Taft2020Cockroach.pdf](Taft2020Cockroach.pdf) | [10.1145/3318464.3386134](https://doi.org/10.1145/3318464.3386134) |
-| `Taipalus2024DBMSPerf` | Database Management System Performance Comparisons: A Systematic Literature Review | ✅ Verified | [Taipalus2024DBMSPerf.pdf](Taipalus2024DBMSPerf.pdf) | [10.1016/j.jss.2023.111872](https://doi.org/10.1016/j.jss.2023.111872) |
+| `Taipalus2024DBMSPerf` | Database management system performance comparisons: A systematic literature review | ✅ Verified | [Taipalus2024DBMSPerf.pdf](Taipalus2024DBMSPerf.pdf) | [10.1016/j.jss.2023.111872](https://doi.org/10.1016/j.jss.2023.111872) |
+| `Taipalus2024VectorDB` | Vector database management systems: Fundamental concepts, use-cases, and current challenges | ✅ Verified | [Taipalus2024VectorDB.pdf](Taipalus2024VectorDB.pdf) | [10.1016/j.cogsys.2024.101216](https://doi.org/10.1016/j.cogsys.2024.101216) |
 | `Tan2019iBTune` | iBTune: Individualized Buffer Tuning for Large-scale Cloud Databases | ✅ Verified | [Tan2019iBTune.pdf](Tan2019iBTune.pdf) | [10.14778/3339490.3339503](https://doi.org/10.14778/3339490.3339503) |
-| `Tomarchio2020CloudOrchestration` | — | ✅ Verified | [Tomarchio2020CloudOrchestration.pdf](Tomarchio2020CloudOrchestration.pdf) | [PDF](https://journalofcloudcomputing.springeropen.com/track/pdf/10.1186/s13677-020-00194-7) |
+| `Thara2013DaaSPerf` | Optimizing the performance of Database as a Service (DaaS) model -- A distributed approach | ✅ Verified | [Thara2013DaaSPerf.pdf](Thara2013DaaSPerf.pdf) | — |
+| `Tian2023GraphDB` | The World of Graph Databases from An Industry Perspective | ✅ Verified | [Tian2023GraphDB.pdf](Tian2023GraphDB.pdf) | [10.1145/3582302.3582320](https://doi.org/10.1145/3582302.3582320) |
+| `Topcu2025NoSQL` | Evaluating the Performance of NoSQL Databases for Big Data in Cloud Computing Environments | ✅ Verified | [Topcu2025NoSQL.pdf](Topcu2025NoSQL.pdf) | [10.28991/hij-2025-06-03-05](https://doi.org/10.28991/hij-2025-06-03-05) |
+| `Tripathi2025NoSQLEdu` | NoSQL database education: A review of models, tools and teaching methods | ✅ Verified | [Tripathi2025NoSQLEdu.pdf](Tripathi2025NoSQLEdu.pdf) | [10.1016/j.jss.2025.112391](https://doi.org/10.1016/j.jss.2025.112391) |
+| `Truica2021NoSQL` | The Forgotten Document-Oriented Database Management Systems: An Overview and Benchmark of Native XML DODBMSes in Comparison with JSON DODBMSes | ✅ Verified | [Truica2021NoSQL.pdf](Truica2021NoSQL.pdf) | [10.1016/j.bdr.2021.100205](https://doi.org/10.1016/j.bdr.2021.100205) |
 | `Tu2024CassandraMongo` | Cassandra vs. MongoDB: A Systematic Review of Two NoSQL Data Stores in Their Industry Uses | ✅ Verified | [Tu2024CassandraMongo.pdf](Tu2024CassandraMongo.pdf) | [10.1109/BDAI62182.2024.10692676](https://doi.org/10.1109/BDAI62182.2024.10692676) |
+| `Tudorica2011NoSQLCmp` | A comparison between several NoSQL databases with comments and notes | ✅ Verified | [Tudorica2011NoSQLCmp.pdf](Tudorica2011NoSQLCmp.pdf) | — |
 | `Verbitski2017` | Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases | ✅ Verified | [Verbitski2017.pdf](Verbitski2017.pdf) | [10.1145/3035918.3056101](https://doi.org/10.1145/3035918.3056101) |
+| `Vikiru2023DBaaS` | An Overview on Cloud Distributed Databases for Business Environments | ✅ Verified | [Vikiru2023DBaaS.pdf](Vikiru2023DBaaS.pdf) | [arXiv:2301.10673](https://arxiv.org/abs/2301.10673) |
 | `Viotti2016Consistency` | Consistency in Non-Transactional Distributed Storage Systems | ✅ Verified | [Viotti2016Consistency.pdf](Viotti2016Consistency.pdf) | [10.1145/2926965](https://doi.org/10.1145/2926965) |
-| `Wang2024MACSQL` | MAC-SQL: A Multi-Agent Collaborative Framework for Text-to-SQL | ✅ Verified | [Wang2024MACSQL.pdf](Wang2024MACSQL.pdf) | [arXiv:2312.11242](https://arxiv.org/abs/2312.11242) |
-| `Woltmann2023DNNIndex` | Learned Indexes: A Comprehensive Experimental Evaluation | ✅ Verified | [Woltmann2023DNNIndex.pdf](Woltmann2023DNNIndex.pdf) | — |
-| `Wu2022FactorJoin` | — | ✅ Verified | [Wu2022FactorJoin.pdf](Wu2022FactorJoin.pdf) | [arXiv:2212.05526](https://arxiv.org/pdf/2212.05526.pdf) |
-| `Xiao2018OBDA` | Ontology-Based Data Access: A Survey | ✅ Verified | [Xiao2018OBDA.pdf](Xiao2018OBDA.pdf) | [PDF](https://www.ijcai.org/proceedings/2018/0777.pdf) |
-| `Xue2024DBGPT` | DB-GPT: Empowering Database Interactions with Private Large Language Models | ✅ Verified | [Xue2024DBGPT.pdf](Xue2024DBGPT.pdf) | [arXiv:2312.17449](https://arxiv.org/abs/2312.17449) |
-| `Yang2020NeuroCard` | — | ✅ Verified | [Yang2020NeuroCard.pdf](Yang2020NeuroCard.pdf) | [arXiv:2006.08109](https://arxiv.org/pdf/2006.08109.pdf) |
+| `Waghmare2015CloudDBSec` | Approach to Enhancing Concurrent and Self-Reliant Access to Cloud Database: A Review | ✅ Verified | [Waghmare2015CloudDBSec.pdf](Waghmare2015CloudDBSec.pdf) | [10.1109/CICN.2015.158](https://doi.org/10.1109/CICN.2015.158) |
+| `Wang2024MACSQL` | MAC-SQL: A Multi-Agent Collaborative Framework for Text-to-SQL | ✅ Verified | [Wang2024MACSQL.pdf](Wang2024MACSQL.pdf) | — |
+| `Waqas2015DistDB` | Transaction Management Techniques and Practices in Current Cloud Computing Environments : A Survey | ✅ Verified | [Waqas2015DistDB.pdf](Waqas2015DistDB.pdf) | [10.5121/ijdms.2015.7104](https://doi.org/10.5121/ijdms.2015.7104) |
+| `Woltmann2023DNNIndex` | Learned Index: A Comprehensive Experimental Evaluation | ✅ Verified | [Woltmann2023DNNIndex.pdf](Woltmann2023DNNIndex.pdf) | [10.14778/3594512.3594528](https://doi.org/10.14778/3594512.3594528) |
+| `Xiao2018OBDA` | Ontology-Based Data Access: A Survey | ✅ Verified | [Xiao2018OBDA.pdf](Xiao2018OBDA.pdf) | — |
+| `Xie2025VectorDB` | Toward Understanding Bugs in Vector Database Management Systems | ✅ Verified | [Xie2025VectorDB.pdf](Xie2025VectorDB.pdf) | [10.48550/arxiv.2506.02617](https://doi.org/10.48550/arxiv.2506.02617) |
+| `Xue2024DBGPT` | DB-GPT: Empowering Database Interactions with Private Large Language Models | ✅ Verified | [Xue2024DBGPT.pdf](Xue2024DBGPT.pdf) | — |
 | `Yang2022OceanBase` | OceanBase: A 707 Million tpmC Distributed Relational Database System | ✅ Verified | [Yang2022OceanBase.pdf](Yang2022OceanBase.pdf) | [10.14778/3554821.3554830](https://doi.org/10.14778/3554821.3554830) |
+| `Ying2025NoSQL` | Comparative Analysis of SQL and NoSQL Databases: Data Models, Use Cases, and Performance Insights | ✅ Verified | [Ying2025NoSQL.pdf](Ying2025NoSQL.pdf) | [10.5530/irc.2.1.5](https://doi.org/10.5530/irc.2.1.5) |
 | `Yu2018Spider` | Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Database Semantic Parsing and Text-to-SQL Task | ✅ Verified | [Yu2018Spider.pdf](Yu2018Spider.pdf) | [10.18653/v1/D18-1425](https://doi.org/10.18653/v1/D18-1425) |
-| `Zaharia2016Spark` | — | ✅ Verified | [Zaharia2016Spark.pdf](Zaharia2016Spark.pdf) | [10.1145/2934664](https://doi.org/10.1145/2934664) |
-| `Zamanian2017Chiller` | — | ✅ Verified | [Zamanian2017Chiller.pdf](Zamanian2017Chiller.pdf) | [10.14778/3055330.3055335](https://doi.org/10.14778/3055330.3055335) |
+| `Zhang2021Sec` | Integrity Authentication for SQL Query Evaluation on Outsourced Databases: A Survey | ✅ Verified | [Zhang2021Sec.pdf](Zhang2021Sec.pdf) | [10.1109/tkde.2019.2947061](https://doi.org/10.1109/tkde.2019.2947061) |
 | `Zhang2022CDBTune` | An End-to-End Automatic Cloud Database Tuning System Using Deep Reinforcement Learning | ✅ Verified | [Zhang2022CDBTune.pdf](Zhang2022CDBTune.pdf) | [10.1145/3299869.3300085](https://doi.org/10.1145/3299869.3300085) |
+| `Zhang2024AI4DB` | Automatic Configuration Tuning on Cloud Database: A Survey | ✅ Verified | [Zhang2024AI4DB.pdf](Zhang2024AI4DB.pdf) | [10.48550/arxiv.2404.06043](https://doi.org/10.48550/arxiv.2404.06043) |
+| `Zhao2026SpatialIndex` | Density based learned spatial index for clustered data | ✅ Verified | [Zhao2026SpatialIndex.pdf](Zhao2026SpatialIndex.pdf) | [10.1016/j.is.2025.102606](https://doi.org/10.1016/j.is.2025.102606) |
 | `Zhou2022AI4DB` | Database Meets Artificial Intelligence: A Survey | ✅ Verified | [Zhou2022AI4DB.pdf](Zhou2022AI4DB.pdf) | [10.1109/TKDE.2020.2994641](https://doi.org/10.1109/TKDE.2020.2994641) |
 | `Zhou2024DBot` | D-Bot: Database Diagnosis System using Large Language Models | ✅ Verified | [Zhou2024DBot.pdf](Zhou2024DBot.pdf) | [10.14778/3675034.3675043](https://doi.org/10.14778/3675034.3675043) |
+| `Zubi2009DistSec` | On distributed database security aspects | ✅ Verified | [Zubi2009DistSec.pdf](Zubi2009DistSec.pdf) | — |
 
 ## Missing references (cited, no local PDF)
 
@@ -163,36 +239,8 @@ Real, verified papers downloaded during the search that are **not** among the 16
 
 | File | Title | DOI |
 |------|-------|-----|
-| [A_comparison_between_several_NoSQL_databases_with_comments_and_notes.pdf](A_comparison_between_several_NoSQL_databases_with_comments_and_notes.pdf) | A comparison between several NoSQL databases with comments and notes | — |
 | [1-s2.0-S0950705125005490-main.pdf](1-s2.0-S0950705125005490-main.pdf) | A comprehensive survey on integrating large language models with knowledge-based methods | [10.1016/j.knosys.2025.113503](https://doi.org/10.1016/j.knosys.2025.113503) |
-| [A_Survey_of_Cloud_Database_Systems.pdf](A_Survey_of_Cloud_Database_Systems.pdf) | A Survey of Cloud Database Systems | — |
-| [A_Survey_on_Querying_Encrypted_Data_for_Database_as_a_Service.pdf](A_Survey_on_Querying_Encrypted_Data_for_Database_as_a_Service.pdf) | A Survey on Querying Encrypted Data for Database as a Service | [10.1109/CyberC.2013.12](https://doi.org/10.1109/CyberC.2013.12) |
 | [A_survey_on_RDBMS_and_NoSQL_Databases_MySQL_vs_MongoDB.pdf](A_survey_on_RDBMS_and_NoSQL_Databases_MySQL_vs_MongoDB.pdf) | A survey on RDBMS and NoSQL Databases MySQL vs MongoDB | — |
-| [2000824.2000829.pdf](2000824.2000829.pdf) | A survey on representation, composition and application of preferences in database systems | [10.1145/2000824.2000829](https://doi.org/10.1145/2000824.2000829) |
 | [1-s2.0-S0022437526000800-main.pdf](1-s2.0-S0022437526000800-main.pdf) | A systematic review of traffic safety data collection methods and challenges: From crash databases to AI-augmented sensors | [10.1016/j.jsr.2026.05.005](https://doi.org/10.1016/j.jsr.2026.05.005) |
-| [1-s2.0-S0950584926001060-main.pdf](1-s2.0-S0950584926001060-main.pdf) | An empirically-driven clustering framework for NoSQL data warehouse conversion: Optimizing column family design from relational big data using HDBSCAN | [10.1016/j.infsof.2026.108117](https://doi.org/10.1016/j.infsof.2026.108117) |
-| [Approach_to_Enhancing_Concurrent_and_Self-Reliant_Access_to_Cloud_Database_A_Review.pdf](Approach_to_Enhancing_Concurrent_and_Self-Reliant_Access_to_Cloud_Database_A_Review.pdf) | Approach to Enhancing Concurrent and Self-Reliant Access to Cloud Database: A Review | [10.1109/CICN.2015.158](https://doi.org/10.1109/CICN.2015.158) |
-| [Cloud_Database-as-a-Service_DaaS_-_ROI.pdf](Cloud_Database-as-a-Service_DaaS_-_ROI.pdf) | Cloud Database-as-a-Service (DaaS) - ROI | — |
-| [Comparison_of_NoSQL_Datastores_for_Large_Scale_Data_Stream_Log_Analytics.pdf](Comparison_of_NoSQL_Datastores_for_Large_Scale_Data_Stream_Log_Analytics.pdf) | Comparison of NoSQL Datastores for Large Scale Data Stream Log Analytics | [10.1109/SMARTCOMP.2019.00093](https://doi.org/10.1109/SMARTCOMP.2019.00093) |
 | [206476.206480.pdf](206476.206480.pdf) | A Survey of Current Object-Oriented Databases | [10.1145/206476.206480](https://doi.org/10.1145/206476.206480) |
-| [Database_as_a_service_DBaaS.pdf](Database_as_a_service_DBaaS.pdf) | Database as a service (DBaaS) | — |
-| [Database_as_a_Service_Challenges_and_solutions_for_privacy_and_security.pdf](Database_as_a_Service_Challenges_and_solutions_for_privacy_and_security.pdf) | Database as a Service: Challenges and solutions for privacy and security | — |
-| [1-s2.0-S0306437925000900-main.pdf](1-s2.0-S0306437925000900-main.pdf) | Density based learned spatial index for clustered data | [10.1016/j.is.2025.102606](https://doi.org/10.1016/j.is.2025.102606) |
-| [Evaluating_Performance_and_User_Perceptions_of_Multi-Cloud_Database-as-a-Service_Solutions_A_Mixed-Methods_Study.pdf](Evaluating_Performance_and_User_Perceptions_of_Multi-Cloud_Database-as-a-Service_Solutions_A_Mixed-Methods_Study.pdf) | Evaluating Performance and User Perceptions of Multi-Cloud Database-as-a-Service Solutions: A Mixed-Methods Study | [10.1109/ICAC69156.2025.11361452](https://doi.org/10.1109/ICAC69156.2025.11361452) |
 | [Exploring_the_Landscape_of_Tourism_Knowledge_Graphs_A_Systematic_Literature_Review.pdf](Exploring_the_Landscape_of_Tourism_Knowledge_Graphs_A_Systematic_Literature_Review.pdf) | Exploring the Landscape of Tourism Knowledge Graphs: A Systematic Literature Review | [10.1109/ICITDA64560.2024.10809644](https://doi.org/10.1109/ICITDA64560.2024.10809644) |
-| [2192-113x-2-22.pdf](2192-113x-2-22.pdf) | Data management in cloud environments: NoSQL and NewSQL data stores | [10.1186/2192-113X-2-22](https://doi.org/10.1186/2192-113X-2-22) |
-| [Large-scale_ontology_storage_and_query_using_graph_database-oriented_approach_The_case_of_Freebase.pdf](Large-scale_ontology_storage_and_query_using_graph_database-oriented_approach_The_case_of_Freebase.pdf) | Large-scale ontology storage and query using graph database-oriented approach: The case of Freebase | — |
-| [1-s2.0-S0952197626005063-main.pdf](1-s2.0-S0952197626005063-main.pdf) | Machine learning in modern database systems: Techniques, architectures, and deployment challenges | [10.1016/j.engappai.2026.114225](https://doi.org/10.1016/j.engappai.2026.114225) |
-| [1-s2.0-S0306457325000433-main.pdf](1-s2.0-S0306457325000433-main.pdf) | MQRLD: A multimodal data retrieval platform with query-aware feature representation and learned index based on data lake | [10.1016/j.ipm.2025.104101](https://doi.org/10.1016/j.ipm.2025.104101) |
-| [Multidimensional_Modelling_in_NoSQL_Database__A_Systematic_Review.pdf](Multidimensional_Modelling_in_NoSQL_Database__A_Systematic_Review.pdf) | Multidimensional Modelling in NoSQL Database : A Systematic Review | — |
-| [1-s2.0-S0164121225000597-main.pdf](1-s2.0-S0164121225000597-main.pdf) | NoSQL database education: A review of models, tools and teaching methods | [10.1016/j.jss.2025.112391](https://doi.org/10.1016/j.jss.2025.112391) |
-| [wingerath-2016-csrd-nosql-toolbox.pdf](wingerath-2016-csrd-nosql-toolbox.pdf) | NoSQL database systems: a survey and decision guidance | [10.1007/s00450-016-0334-3](https://doi.org/10.1007/s00450-016-0334-3) |
-| [On_distributed_database_security_aspects.pdf](On_distributed_database_security_aspects.pdf) | On distributed database security aspects | — |
-| [Optimizing_the_performance_of_Database_as_a_Service_DaaS_model__A_distributed_approach.pdf](Optimizing_the_performance_of_Database_as_a_Service_DaaS_model__A_distributed_approach.pdf) | Optimizing the performance of Database as a Service (DaaS) model &#x2014; A distributed approach | — |
-| [Review_of_NoSQL_Data_Stores_Using_a_reactive_three-tier_application_for_software_developers_to_achieve_a_high_availability_application_design_architecture.pdf](Review_of_NoSQL_Data_Stores_Using_a_reactive_three-tier_application_for_software_developers_to_achieve_a_high_availability_application_design_architecture.pdf) | Review of NoSQL Data Stores: Using a reactive three-tier application for software developers to achieve a high availability application design architecture | — |
-| [Security_model_for_cloud_database_as_a_service_DBaaS.pdf](Security_model_for_cloud_database_as_a_service_DBaaS.pdf) | Security model for cloud database as a service (DBaaS) | — |
-| [SQL_versus_NoSQL_databases_for_geospatial_applications.pdf](SQL_versus_NoSQL_databases_for_geospatial_applications.pdf) | SQL versus NoSQL Databases for Geospatial Applications | — |
-| [Survey_on_NoSQL_database.pdf](Survey_on_NoSQL_database.pdf) | Survey on NoSQL database | — |
-| [2505.24758v3.pdf](2505.24758v3.pdf) | Survey: Graph Databases | — |
-| [Temporal_and_real-time_databases_a_survey.pdf](Temporal_and_real-time_databases_a_survey.pdf) | Temporal and real-time databases: a survey | — |
-| [CLOUD_DATABASE_DATABASE_AS_A_SERVICE.pdf](CLOUD_DATABASE_DATABASE_AS_A_SERVICE.pdf) | Cloud Database — Database as a Service | [10.5121/ijdms.2013.5201](https://doi.org/10.5121/ijdms.2013.5201) |

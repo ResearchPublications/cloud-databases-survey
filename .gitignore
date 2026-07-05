@@ -11,3 +11,6 @@ out/
 # latexmk transient files
 *.fdb_latexmk
 *.fls
+search/fulltext/
+search/quarantine/
+search/run_output.txt

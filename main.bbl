@@ -116,6 +116,47 @@ I.~M{\"u}ller, R.~Marroqu{\'i}n, G.~Alonso, Lambada: Interactive data analytics 
 E.~Politou, E.~Alepis, C.~Patsakis, Forgetting personal data and revoking consent under the {GDPR}: Challenges and proposed solutions, Journal of Cybersecurity 4~(1) (2018) tyy001.
 \newblock \href {https://doi.org/10.1093/cybsec/tyy001} {\path{doi:10.1093/cybsec/tyy001}}.
 
+\bibitem{Ferrari2009DBaaSSec}
+E.~Ferrari, Database as a service: Challenges and solutions for privacy and security, in: 2009 IEEE Asia-Pacific Services Computing Conference (APSCC), IEEE, 2009, pp. 46--51.
+\newblock \href {https://doi.org/10.1109/APSCC.2009.5394141} {\path{doi:10.1109/APSCC.2009.5394141}}.
+
+\bibitem{Kohler2015Sec}
+J.~Köhler, K.~Jünemann, H.~Hartenstein, Confidential database-as-a-service approaches: taxonomy and survey, Journal of Cloud Computing 4~(1) (2015).
+\newblock \href {https://doi.org/10.1186/s13677-014-0025-1} {\path{doi:10.1186/s13677-014-0025-1}}.
+
+\bibitem{Chang2008Bigtable}
+F.~Chang, J.~Dean, S.~Ghemawat, W.~C. Hsieh, D.~A. Wallach, M.~Burrows, T.~Chandra, A.~Fikes, R.~E. Gruber, Bigtable: A distributed storage system for structured data, ACM Transactions on Computer Systems 26~(2) (2008) 1--26.
+\newblock \href {https://doi.org/10.1145/1365815.1365816} {\path{doi:10.1145/1365815.1365816}}.
+
+\bibitem{Ramanathan2011SimpleDBBigtable}
+S.~Ramanathan, S.~Goel, S.~Alagumalai, Comparison of cloud database: {Amazon}'s {SimpleDB} and {Google}'s {Bigtable}, in: 2011 International Conference on Recent Trends in Information Systems (ReTIS), 2011.
+\newblock \href {https://doi.org/10.1109/ReTIS.2011.6146861} {\path{doi:10.1109/ReTIS.2011.6146861}}.
+
+\bibitem{Dory2011Elasticity}
+T.~Dory, B.~Mej{\'i}as, P.~{Van Roy}, N.-L. Tran, Measuring elasticity for cloud databases, in: CLOUD COMPUTING 2011: The Second International Conference on Cloud Computing, GRIDs, and Virtualization, IARIA, 2011.
+
+\bibitem{Cattell2011Scalable}
+R.~Cattell, Scalable {SQL} and {NoSQL} data stores, ACM SIGMOD Record 39~(4) (2011) 12--27.
+\newblock \href {https://doi.org/10.1145/1978915.1978919} {\path{doi:10.1145/1978915.1978919}}.
+
+\bibitem{Han2011NoSQL}
+J.~Han, H.~E, G.~Le, J.~Du, Survey on {NoSQL} database, in: 2011 6th International Conference on Pervasive Computing and Applications (ICPCA), IEEE, 2011, pp. 363--366.
+
+\bibitem{Deka2014CloudDBSurvey}
+G.~C. Deka, A survey of cloud database systems, IT Professional 16~(2) (2014) 50--57.
+\newblock \href {https://doi.org/10.1109/MITP.2013.1} {\path{doi:10.1109/MITP.2013.1}}.
+
+\bibitem{Litchfield2014DBaaS}
+A.~T. Litchfield, J.~Althouse, \href{https://aisel.aisnet.org/amcis2014/ServiceSystems/GeneralPresentations/1}{A systematic review of cloud computing, big data and databases on the cloud}, in: AMCIS, 2014.
+\newline\urlprefix\url{https://aisel.aisnet.org/amcis2014/ServiceSystems/GeneralPresentations/1}
+
+\bibitem{Arora2012CloudDB}
+I.~Arora, A.~Gupta, Cloud databases: A paradigm shift in databases, International Journal of Computer Science Issues 9~(4) (2012).
+
+\bibitem{Lourenco2015NoSQL}
+J.~R. Lourenço, B.~Cabral, P.~Carreiro, M.~Vieira, J.~Bernardino, Choosing the right nosql database for the job: a quality attribute evaluation, Journal of Big Data 2~(1) (2015).
+\newblock \href {https://doi.org/10.1186/s40537-015-0025-0} {\path{doi:10.1186/s40537-015-0025-0}}.
+
 \bibitem{Curino2011DBaaS}
 C.~Curino, E.~P. Jones, R.~A. Popa, N.~Malviya, E.~Wu, S.~Madden, H.~Balakrishnan, N.~Zeldovich, Relational cloud: A database-as-a-service for the cloud, in: Proceedings of CIDR, 2011.
 
@@ -130,9 +171,6 @@ W.~A. Shehri, Cloud database database as a service, International Journal of Dat
 K.~Grolinger, W.~A. Higashino, A.~Tiwari, M.~A.~M. Capretz, Data management in cloud environments: {NoSQL} and {NewSQL} data stores, Journal of Cloud Computing: Advances, Systems and Applications 2~(1) (2013) 22.
 \newblock \href {https://doi.org/10.1186/2192-113X-2-22} {\path{doi:10.1186/2192-113X-2-22}}.
 
-\bibitem{Deka2014CloudDBSurvey}
-G.~C. Deka, A survey of cloud database systems, IT Professional 16~(2) (2014) 50--57.
-
 \bibitem{Pavlo2017SelfDriving}
 A.~Pavlo, G.~Angulo, J.~Arulraj, H.~Lin, J.~Lin, L.~Ma, P.~Menon, T.~C. Mowry, M.~Perron, I.~Quah, S.~Santurkar, A.~Tomasic, S.~Toor, D.~V. Aken, Z.~Wang, Y.~Wu, R.~Xian, T.~Zhang, Self-driving database management systems, in: Proceedings of CIDR, 2017.
 
@@ -146,23 +184,18 @@ F.~Gessert, W.~Wingerath, S.~Friedrich, N.~Ritter, {NoSQL} database systems: a s
 
 \bibitem{Khasawneh2020SQLNewSQL}
 T.~N. Khasawneh, M.~H. AL-Sahlee, A.~A. Safia, {SQL}, {NewSQL}, and {NoSQL} databases: A comparative survey, in: 2020 11th International Conference on Information and Communication Systems (ICICS), IEEE, 2020, pp. 013--021.
-
-\bibitem{Han2011NoSQL}
-J.~Han, H.~E, G.~Le, J.~Du, Survey on {NoSQL} database, in: 2011 6th International Conference on Pervasive Computing and Applications (ICPCA), IEEE, 2011, pp. 363--366.
+\newblock \href {https://doi.org/10.1109/ICICS49469.2020.239513} {\path{doi:10.1109/ICICS49469.2020.239513}}.
 
 \bibitem{Tudorica2011NoSQLCmp}
 B.~G. Tudorica, C.~Bucur, A comparison between several {NoSQL} databases with comments and notes, in: 2011 RoEduNet International Conference 10th Edition: Networking in Education and Research, IEEE, 2011.
 
 \bibitem{Bader2017TSDB}
-A.~Bader, O.~Kopp, M.~Falkenthal, Survey and comparison of open source time series databases, in: Datenbanksysteme f\"ur Business, Technologie und Web (BTW 2017) -- Workshopband, Lecture Notes in Informatics (LNI), Gesellschaft f\"ur Informatik, 2017.
+A.~Bader, O.~Kopp, M.~Falkenthal, \href{https://dl.gi.de/handle/20.500.12116/922}{Survey and comparison of open source time series databases}, in: Datenbanksysteme f\"ur Business, Technologie und Web (BTW 2017) -- Workshopband, Lecture Notes in Informatics (LNI), Gesellschaft f\"ur Informatik, 2017.
+\newline\urlprefix\url{https://dl.gi.de/handle/20.500.12116/922}
 
 \bibitem{Ozsoyoglu1995Temporal}
 G.~\"Ozsoyo\u{g}lu, R.~T. Snodgrass, Temporal and real-time databases: A survey, IEEE Transactions on Knowledge and Data Engineering 7~(4) (1995) 513--532.
 \newblock \href {https://doi.org/10.1109/69.404027} {\path{doi:10.1109/69.404027}}.
-
-\bibitem{Ramanathan2011SimpleDBBigtable}
-S.~Ramanathan, S.~Goel, S.~Alagumalai, Comparison of cloud database: {Amazon}'s {SimpleDB} and {Google}'s {Bigtable}, in: 2011 International Conference on Recent Trends in Information Systems (ReTIS), 2011.
-\newblock \href {https://doi.org/10.1109/ReTIS.2011.6146861} {\path{doi:10.1109/ReTIS.2011.6146861}}.
 
 \bibitem{Lu2019MultiModel}
 J.~Lu, I.~Holubov{\'a}, Multi-model databases: A new journey to handle the variety of data, ACM Computing Surveys 52~(3) (2019) 1--38.
@@ -174,6 +207,7 @@ S.~Melnik, A.~Gubarev, J.~J. Long, G.~Romer, S.~Shivakumar, M.~Tolton, T.~Vassil
 
 \bibitem{Pohl2024LakehouseTS}
 M.~Pohl, D.~Staegemann, K.~Turowski, Data lakehouse for time series data: A systematic literature review, in: 2024 IEEE International Conference on Big Data (BigData), IEEE, 2024.
+\newblock \href {https://doi.org/10.1109/BigData62323.2024.10825961} {\path{doi:10.1109/BigData62323.2024.10825961}}.
 
 \bibitem{Salehi2016Granular}
 S.~Salehi, A.~Selamat, H.~Fujita, Systematic mapping study on granular computing, Knowledge-Based Systems 80 (2015) 78--97.
@@ -194,9 +228,6 @@ W.~Saeed, C.~Omlin, Explainable {AI} ({XAI}): A systematic meta-survey of curren
 \bibitem{Page2021PRISMA}
 M.~J. Page, J.~E. McKenzie, P.~M. Bossuyt, I.~Boutron, T.~C. Hoffmann, C.~D. Mulrow, et~al., The {PRISMA} 2020 statement: an updated guideline for reporting systematic reviews, BMJ 372 (2021) n71.
 \newblock \href {https://doi.org/10.1136/bmj.n71} {\path{doi:10.1136/bmj.n71}}.
-
-\bibitem{Dory2011Elasticity}
-T.~Dory, B.~Mej{\'i}as, P.~{Van Roy}, N.-L. Tran, Measuring elasticity for cloud databases, in: CLOUD COMPUTING 2011: The Second International Conference on Cloud Computing, GRIDs, and Virtualization, IARIA, 2011.
 
 \bibitem{Thara2013DaaSPerf}
 R.~J. Thara, S.~Shine, C.~Sanu, Optimizing the performance of database as a service ({DaaS}) model -- a distributed approach, in: 2013 Fourth International Conference on Computing, Communications and Networking Technologies (ICCCNT), IEEE, 2013.
@@ -235,9 +266,11 @@ T.~Taipalus, Database management system performance comparisons: A systematic li
 
 \bibitem{Samarta2024SQLNoSQL}
 M.~T. Samarta, A.~A.~S. Gunawan, M.~E. Syahputra, Systematic literature review and comparative performance analysis of {SQL} and {NoSQL} databases in big data applications, in: 2024 International Conference on Informatics, Multimedia, Cyber and Information System (ICIMCIS), IEEE, 2024.
+\newblock \href {https://doi.org/10.1109/ICIMCIS63449.2024.10957463} {\path{doi:10.1109/ICIMCIS63449.2024.10957463}}.
 
 \bibitem{Daundasekara2025MultiCloud}
 D.~M. P.~D. Daundasekara, et~al., Evaluating performance and user perceptions of multi-cloud database-as-a-service solutions: A mixed-methods study, in: 2025 International Conference on Computing, 2025.
+\newblock \href {https://doi.org/10.1109/ICAC69156.2025.11361452} {\path{doi:10.1109/ICAC69156.2025.11361452}}.
 
 \bibitem{Fuhrt2010CloudSecurity}
 B.~Furht, A.~Escalante, Handbook of cloud computing, Springer (2010).
@@ -253,9 +286,6 @@ V.~Waghmare, K.~Gojre, A.~Watpade, Approach to enhancing concurrent and self-rel
 \bibitem{Sanka2022CloudSecSurvey}
 B.~Alouffi, M.~Hasnain, A.~Alharbi, W.~Alosaimi, H.~Alyami, M.~Ayaz, A systematic literature review on cloud computing security: Threats and mitigation strategies, IEEE Access 9 (2021) 57792--57807.
 \newblock \href {https://doi.org/10.1109/ACCESS.2021.3073203} {\path{doi:10.1109/ACCESS.2021.3073203}}.
-
-\bibitem{Ferrari2009DBaaSSec}
-E.~Ferrari, Database as a service: Challenges and solutions for privacy and security, in: 2009 IEEE Asia-Pacific Services Computing Conference (APSCC), IEEE, 2009, pp. 46--51.
 
 \bibitem{Munir2015DBaaSSec}
 K.~Munir, Security model for cloud database as a service ({DBaaS}), in: 2015 International Conference on Cloud Technologies and Applications (CloudTech), IEEE, 2015.
@@ -300,6 +330,7 @@ K.~Mahmood, K.~Orsborn, T.~Risch, Comparison of {NoSQL} datastores for large sca
 
 \bibitem{Tu2024CassandraMongo}
 H.~Tu, Cassandra vs. {MongoDB}: A systematic review of two {NoSQL} data stores in their industry uses, in: 2024 IEEE 7th International Conference on Big Data and Artificial Intelligence (BDAI), IEEE, 2024.
+\newblock \href {https://doi.org/10.1109/BDAI62182.2024.10692676} {\path{doi:10.1109/BDAI62182.2024.10692676}}.
 
 \bibitem{Hendricks2019NoSQLReview}
 W.~Hendricks, Review of {NoSQL} data stores: Using a reactive three-tier application for software developers to achieve a high availability application design architecture, in: 2019 International Conference (IEEE), IEEE, 2019.
@@ -349,6 +380,7 @@ M.~Mouhibha, A.~Mabrouk, Nosql data warehouse optimizing models: A comparative s
 
 \bibitem{Ferreira2023NoSQLMD}
 L.~M. Ferreira, et~al., Multidimensional modelling in {NoSQL} database: A systematic review, in: 2023 18th Iberian Conference on Information Systems and Technologies (CISTI), IEEE, 2023.
+\newblock \href {https://doi.org/10.23919/CISTI58278.2023.10211592} {\path{doi:10.23919/CISTI58278.2023.10211592}}.
 
 \bibitem{Mouhibha2026Clustering}
 M.~Mouhibha, A.~Mabrouk, An empirically-driven clustering framework for {NoSQL} data warehouse conversion: Optimizing column family design from relational big data using {HDBSCAN}, Information and Software Technology 195 (2026) 108117.
@@ -387,11 +419,272 @@ S.~Xue, C.~Jiang, W.~Shi, F.~Cheng, K.~Chen, H.~Yang, Z.~Zhang, J.~He, H.~Zhang,
 J.~Lao, Y.~Wang, Y.~Li, J.~Wang, Y.~Zhang, Z.~Cheng, W.~Chen, M.~Tang, J.~Wang, {GPTuner}: A manual-reading database tuning system via {GPT}-guided bayesian optimization, Proceedings of the VLDB Endowment 17~(8) (2024) 1939--1952.
 \newblock \href {https://doi.org/10.14778/3659437.3659449} {\path{doi:10.14778/3659437.3659449}}.
 
+\bibitem{Lee2012GraphDB}
+J.~Lee, W.-S. Han, R.~Kasperovics, J.-H. Lee, An in-depth comparison of subgraph isomorphism algorithms in graph databases, Proceedings of the VLDB Endowment 6~(2) (2012) 133--144.
+\newblock \href {https://doi.org/10.14778/2535568.2448946} {\path{doi:10.14778/2535568.2448946}}.
+
+\bibitem{Waqas2015DistDB}
+A.~Waqas, A.~W. Mahessar, N.~Mahmood, Z.~Bhatti, M.~Karbasi, A.~Shah, Transaction management techniques and practices in current cloud computing environments : A survey, International Journal of Database Management Systems 7~(1) (2015) 41--59.
+\newblock \href {https://doi.org/10.5121/ijdms.2015.7104} {\path{doi:10.5121/ijdms.2015.7104}}.
+
+\bibitem{Abourezq2016DBaaS}
+M.~Abourezq, A.~Idrissi, Database-as-a-service for big data: An overview, International Journal of Advanced Computer Science and Applications 7~(1) (2016).
+\newblock \href {https://doi.org/10.14569/ijacsa.2016.070124} {\path{doi:10.14569/ijacsa.2016.070124}}.
+
+\bibitem{Ammar2016GraphDB}
+A.~B. Ammar, Query optimization techniques in graph databases, International Journal of Database Management Systems 8~(4) (2016) 01--14.
+\newblock \href {https://doi.org/10.5121/ijdms.2016.8401} {\path{doi:10.5121/ijdms.2016.8401}}.
+
+\bibitem{Guralnik2016GraphDB}
+R.~Guralnik, Some problems on graph databases, Proceedings of the Institute for System Programming of the RAS 28~(4) (2016) 193--216.
+\newblock \href {https://doi.org/10.15514/ispras-2016-28(4)-12} {\path{doi:10.15514/ispras-2016-28(4)-12}}.
+
+\bibitem{Dinari2017GraphDB}
+and Hamed~Dinari, A survey on graph queries processing: Techniques and methods, International Journal of Computer Network and Information Security 9~(4) (2017) 48--56.
+\newblock \href {https://doi.org/10.5815/ijcnis.2017.04.06} {\path{doi:10.5815/ijcnis.2017.04.06}}.
+
+\bibitem{Dindoliwala2017Sec}
+D.~V. J, D.~M. Rustom, Survey on security mechanisms in nosql databases, IJARCS (2017).
+\newblock \href {https://doi.org/10.26483/ijarcs.v8i5.3302} {\path{doi:10.26483/ijarcs.v8i5.3302}}.
+
+\bibitem{Moghadam2017Sec}
+S.~S. Moghadam, J.~Darmont, G.~Gavin, Enforcing privacy in cloud databases, arXiv:1708.09171 (2017).
+\newblock \href {https://doi.org/10.48550/arxiv.1708.09171} {\path{doi:10.48550/arxiv.1708.09171}}.
+
+\bibitem{Siddiqa2017NoSQL}
+A.~Siddiqa, A.~Karim, A.~Gani, Big data storage technologies: a survey, Frontiers of Information Technology \&amp; Electronic Engineering 18~(8) (2017) 1040--1070.
+\newblock \href {https://doi.org/10.1631/fitee.1500441} {\path{doi:10.1631/fitee.1500441}}.
+
+\bibitem{Ali2018AI4DB}
+Z.~Ali, H.~M. Kiran, W.~Shahzad, Evolutionary algorithms for query op-timization in distributed database sys-tems: A review, ADCAIJ: Advances in Distributed Computing and Artificial Intelligence Journal 7~(3) (2018) 115--128.
+\newblock \href {https://doi.org/10.14201/adcaij201873115128} {\path{doi:10.14201/adcaij201873115128}}.
+
+\bibitem{Iancu2018DBaaS}
+B.~IANCU, T.~M. GEORGESCU, Saving large semantic data in cloud: A survey of the main dbaas solutions, Informatica Economica 22~(1/2018) (2018) 5--16.
+\newblock \href {https://doi.org/10.12948/issn14531305/22.1.2018.01} {\path{doi:10.12948/issn14531305/22.1.2018.01}}.
+
+\bibitem{Patil2018GraphDB}
+P.~N. S., K.~P, K.~N. P., N.~P.~K. M., A survey on graph database management techniques for huge unstructured data, International Journal of Electrical and Computer Engineering (IJECE) 8~(2) (2018) 1140.
+\newblock \href {https://doi.org/10.11591/ijece.v8i2.pp1140-1149} {\path{doi:10.11591/ijece.v8i2.pp1140-1149}}.
+
+\bibitem{Segalin2018DBaaS}
+V.~D.~S. Segalin, C.~F. Dorneles, M.~A.~R. Dantas, Dbaas multitenancy, auto-tuning and sla maintenance in cloud environments: a brief survey, iSys - Brazilian Journal of Information Systems 11~(2) (2018) 30--42.
+\newblock \href {https://doi.org/10.5753/isys.2018.362} {\path{doi:10.5753/isys.2018.362}}.
+
+\bibitem{Aldin2019DistDB}
+H.~N.~S. Aldin, H.~Deldari, M.~H. Moattar, M.~R. Ghods, Consistency models in distributed systems: A survey on definitions, disciplines, challenges and applications, arXiv: (2019).
+\newblock \href {https://doi.org/10.48550/arxiv.1902.03305} {\path{doi:10.48550/arxiv.1902.03305}}.
+
+\bibitem{Chande2019AI4DB}
+and Swati V.~Chande, Database query optimization using genetic algorithms: A systematic literature review, International Journal of Advanced Trends in Computer Science and Engineering 8~(5) (2019) 1903--1913.
+\newblock \href {https://doi.org/10.30534/ijatcse/2019/14852019} {\path{doi:10.30534/ijatcse/2019/14852019}}.
+
+\bibitem{Dar2019NLIDB}
+H.~S. Dar, M.~I. Lali, M.~U. Din, K.~M. Malik, S.~A.~C. Bukhari, Frameworks for querying databases using natural language: A literature review, arXiv:1909.01822 (2019).
+\newblock \href {https://doi.org/10.48550/arxiv.1909.01822} {\path{doi:10.48550/arxiv.1909.01822}}.
+
+\bibitem{Khelaifa2019DistDB}
+A.~Khelaifa, S.~Benharzallah, L.~Kahloul, R.~Euler, A.~Laouid, A.~Bounceur, A comparative analysis of adaptive consistency approaches in cloud storage, Journal of Parallel and Distributed Computing 129 (2019) 36--49.
+\newblock \href {https://doi.org/10.1016/j.jpdc.2019.03.006} {\path{doi:10.1016/j.jpdc.2019.03.006}}.
+
+\bibitem{Luo2019NoSQL}
+C.~Luo, M.~J. Carey, Lsm-based storage techniques: a survey, The VLDB Journal 29~(1) (2019) 393--418.
+\newblock \href {https://doi.org/10.1007/s00778-019-00555-y} {\path{doi:10.1007/s00778-019-00555-y}}.
+
+\bibitem{Mami2019MultiModel}
+M.~N. Mami, D.~Graux, H.~Thakkar, S.~Scerri, S.~Auer, J.~Lehmann, The query translation landscape: a survey, arXiv:1910.03118 (2019).
+\newblock \href {https://doi.org/10.48550/arxiv.1910.03118} {\path{doi:10.48550/arxiv.1910.03118}}.
+
+\bibitem{Ruan2019DistDB}
+P.~Ruan, T.~T.~A. Dinh, D.~Loghin, M.~Zhang, G.~Chen, Q.~Lin, B.~C. Ooi, Blockchains vs. distributed databases: Dichotomy and fusion, arXiv: (2019).
+\newblock \href {https://doi.org/10.48550/arxiv.1910.01310} {\path{doi:10.48550/arxiv.1910.01310}}.
+
+\bibitem{Asaad2020NoSQL}
+C.~Asaad, K.~Baïna, M.~Ghogho, Nosql databases: Yearning for disambiguation, arXiv:2003.04074 (2020).
+\newblock \href {https://doi.org/10.48550/arxiv.2003.04074} {\path{doi:10.48550/arxiv.2003.04074}}.
+
+\bibitem{Dayarathna2020Bench}
+M.~Dayarathna, T.~Suzumura, Benchmarking graph data management and processing systems: A survey, arXiv:2005.12873 (2020).
+\newblock \href {https://doi.org/10.48550/arxiv.2005.12873} {\path{doi:10.48550/arxiv.2005.12873}}.
+
+\bibitem{Kuznetsov2020HTAP}
+S.~D. Kuznetsov, P.~E. Velikhov, Q.~Fu, Real-time analytics, hybrid transactional/analytical processing, in-memory data management, and non-volatile memory, 2020 Ivannikov Ispras Open Conference (ISPRAS) (2020) 78--90\href {https://doi.org/10.1109/ispras51486.2020.00019} {\path{doi:10.1109/ispras51486.2020.00019}}.
+
+\bibitem{Marcus2020AI4DB}
+R.~Marcus, A.~Kipf, A.~van Renen, M.~Stoian, S.~Misra, A.~Kemper, T.~Neumann, T.~Kraska, Benchmarking learned indexes, Proceedings of the VLDB Endowment 14~(1) (2020) 1--13.
+\newblock \href {https://doi.org/10.14778/3421424.3421425} {\path{doi:10.14778/3421424.3421425}}.
+
+\bibitem{Arenas2021GraphDB}
+M.~Arenas, C.~Gutierrez, J.~F. Sequeda, Querying in the age of graph databases and knowledge graphs, Proceedings of the 2021 International Conference on Management of Data (2021) 2821--2828\href {https://doi.org/10.1145/3448016.3457545} {\path{doi:10.1145/3448016.3457545}}.
+
+\bibitem{Faridoon2021NoSQL}
+A.~Faridoon, M.~Imran, Big data storage tools using nosql databases and their applications in various domains: A systematic review, Computing and Informatics 40~(3) (2021) 489--521.
+\newblock \href {https://doi.org/10.31577/cai_2021_3_489} {\path{doi:10.31577/cai_2021_3_489}}.
+
+\bibitem{Mansouri2021EdgeFog}
+Y.~Mansouri, V.~Prokhorenko, F.~Ullah, M.~A. Babar, Evaluation of distributed databases in hybrid clouds and edge computing: Energy, bandwidth, and storage consumption, arXiv: (2021).
+\newblock \href {https://doi.org/10.48550/arxiv.2109.07260} {\path{doi:10.48550/arxiv.2109.07260}}.
+
+\bibitem{Mao2021NoSQL}
+Q.~Mao, S.~Jacobs, W.~Amjad, V.~Hristidis, V.~J. Tsotras, N.~E. Young, Comparison and evaluation of state-of-the-art lsm merge policies, The VLDB Journal 30~(3) (2021) 361--378.
+\newblock \href {https://doi.org/10.1007/s00778-020-00638-1} {\path{doi:10.1007/s00778-020-00638-1}}.
+
+\bibitem{Sarkar2021NoSQL}
+S.~Sarkar, D.~Staratzis, Z.~Zhu, M.~Athanassoulis, Constructing and analyzing the lsm compaction design space, in: Proceedings of the VLDB Endowment, Vol.~14, 2021, pp. 2216--2229.
+\newblock \href {https://doi.org/10.14778/3476249.3476274} {\path{doi:10.14778/3476249.3476274}}.
+
+\bibitem{Truica2021NoSQL}
+C.-O. Truică, E.-S. Apostol, J.~Darmont, T.~B. Pedersen, The forgotten document-oriented database management systems: An overview and benchmark of native xml dodbmses in comparison with json dodbmses, Big Data Research 25 (2021) 100205.
+\newblock \href {https://doi.org/10.1016/j.bdr.2021.100205} {\path{doi:10.1016/j.bdr.2021.100205}}.
+
+\bibitem{Zhang2021Sec}
+B.~Zhang, B.~Dong, W.~H. Wang, Integrity authentication for sql query evaluation on outsourced databases: A survey, IEEE Transactions on Knowledge and Data Engineering 33~(4) (2021) 1601--1618.
+\newblock \href {https://doi.org/10.1109/tkde.2019.2947061} {\path{doi:10.1109/tkde.2019.2947061}}.
+
+\bibitem{Glake2022MultiModel}
+D.~Glake, F.~Kiehn, M.~Schmidt, F.~Panse, N.~Ritter, Towards polyglot data stores -- overview and open research questions, arXiv:2204.05779 (2022).
+\newblock \href {https://doi.org/10.48550/arxiv.2204.05779} {\path{doi:10.48550/arxiv.2204.05779}}.
+
+\bibitem{Shareef2022NoSQL}
+T.~Shareef, K.~Sharif, B.~Rashid, A survey of comparison different cloud database performance: Sql and nosql, Passer Journal of Basic and Applied Sciences 4~(1) (2022) 45--57.
+\newblock \href {https://doi.org/10.24271/psr.2022.301247.1104} {\path{doi:10.24271/psr.2022.301247.1104}}.
+
+\bibitem{Ahmed2023DistDB}
+J.~Ahmed, A.~Karpenko, O.~Tarasyuk, A.~Gorbenko, A.~Sheikh-Akbari, Consistency issue and related trade-offs in distributed replicated systems and databases: a review, Radioelectronic and Computer Systems~(2) (2023) 171--179.
+\newblock \href {https://doi.org/10.32620/reks.2023.2.14} {\path{doi:10.32620/reks.2023.2.14}}.
+
+\bibitem{Besta2023GraphDB}
+M.~Besta, R.~Gerstenberger, E.~Peter, M.~Fischer, M.~Podstawski, C.~Barthels, G.~Alonso, T.~Hoefler, Demystifying graph databases: Analysis and taxonomy of data organization, system designs, and graph queries, ACM Computing Surveys 56~(2) (2023) 1--40.
+\newblock \href {https://doi.org/10.1145/3604932} {\path{doi:10.1145/3604932}}.
+
+\bibitem{Guo2023MultiModel}
+Q.~Guo, C.~Zhang, S.~Zhang, J.~Lu, Multi-model query languages: taming the variety of big data, Distributed and Parallel Databases 42~(1) (2023) 31--71.
+\newblock \href {https://doi.org/10.1007/s10619-023-07433-1} {\path{doi:10.1007/s10619-023-07433-1}}.
+
+\bibitem{Khan2023NoSQL}
+W.~Khan, T.~Kumar, C.~Zhang, K.~Raj, A.~M. Roy, B.~Luo, Sql and nosql database software architecture performance analysis and assessments—a systematic literature review, Big Data and Cognitive Computing 7~(2) (2023) 97.
+\newblock \href {https://doi.org/10.3390/bdcc7020097} {\path{doi:10.3390/bdcc7020097}}.
+
+\bibitem{Koppenwallner2023Sec}
+J.~Koppenwallner, E.~Schikuta, A survey on property-preserving database encryption techniques in the cloud, arXiv:2312.12075 (2023).
+\newblock \href {https://doi.org/10.48550/arxiv.2312.12075} {\path{doi:10.48550/arxiv.2312.12075}}.
+
+\bibitem{Ma2023VectorDB}
+L.~Ma, R.~Zhang, Y.~Han, S.~Yu, Z.~Wang, Z.~Ning, J.~Zhang, P.~Xu, P.~Li, Z.~Qiao, W.~Ju, C.~Chen, D.~Wang, K.~Liu, P.~Wang, P.~Wang, Y.~Fu, C.~Liu, Y.~Zhou, C.-T. Lu, A comprehensive survey on vector database: Storage and retrieval technique, challenge, arXiv:2310.11703 (2023).
+\newblock \href {https://doi.org/10.48550/arxiv.2310.11703} {\path{doi:10.48550/arxiv.2310.11703}}.
+
+\bibitem{Tian2023GraphDB}
+Y.~Tian, The world of graph databases from an industry perspective, ACM SIGMOD Record 51~(4) (2023) 60--67.
+\newblock \href {https://doi.org/10.1145/3582302.3582320} {\path{doi:10.1145/3582302.3582320}}.
+
+\bibitem{Vikiru2023DBaaS}
+A.~Vikiru, M.~Muiruri, I.~Ateya, An overview on cloud distributed databases for business environments, arXiv:2301.10673 (2023).
+
+\bibitem{Anuyah2024GraphDB}
+S.~Anuyah, V.~Bolade, O.~Agbaakin, Understanding graph databases: A comprehensive tutorial and survey, arXiv:2411.09999 (2024).
+\newblock \href {https://doi.org/10.48550/arxiv.2411.09999} {\path{doi:10.48550/arxiv.2411.09999}}.
+
+\bibitem{Falcao2024Bench}
+F.~Falcão, J.~Moura, G.~Silva, C.~Araujo, E.~Sousa, E.~Tavares, Energy consumption and performance evaluation of multi-model nosql dbmss, Revista de Informática Teórica e Aplicada 30~(2) (2024) 132--140.
+\newblock \href {https://doi.org/10.22456/2175-2745.136568} {\path{doi:10.22456/2175-2745.136568}}.
+
 \bibitem{Gao2024RAGSurvey}
 Y.~Gao, Y.~Xiong, X.~Gao, K.~Jia, J.~Pan, Y.~Bi, Y.~Dai, J.~Sun, M.~Wang, H.~Wang, Retrieval-augmented generation for large language models: A survey, arXiv preprint arXiv:2312.10997 (2024).
 
-\bibitem{Bhatti2017CloudDBReview}
-H.~J. Bhatti, B.~B. Rad, Databases in cloud computing: A literature review, International Journal of Information Technology and Computer Science 9~(4) (2017) 9--17.
-\newblock \href {https://doi.org/10.5815/ijitcs.2017.04.02} {\path{doi:10.5815/ijitcs.2017.04.02}}.
+\bibitem{Janssen2024Lakehouse}
+N.~Janssen, T.~Ilayperuma, J.~Jayasinghe, F.~Bukhsh, M.~Daneva, The evolution of data storage architectures: examining the secure value of the data lakehouse, Journal of Data, Information and Management 6~(4) (2024) 309--334.
+\newblock \href {https://doi.org/10.1007/s42488-024-00132-1} {\path{doi:10.1007/s42488-024-00132-1}}.
+
+\bibitem{Mishra2024NoSQL}
+S.~Mishra, A survey of lsm-tree based indexes, data systems and kv-stores, in: 2024 IEEE International Students' Conference on Electrical, Electronics and Computer Science (SCEECS), 2024, pp. 1--6.
+\newblock \href {https://doi.org/10.1109/sceecs61402.2024.10482249} {\path{doi:10.1109/sceecs61402.2024.10482249}}.
+
+\bibitem{Nurhadi2024AI4DB}
+R.~A. Kadir, E.~S.~M. Surin, M.~R. Sarker, A systematic review of automated classification for simple and complex query sql on nosql database, Computer Systems Science and Engineering 48~(6) (2024) 1405--1435.
+\newblock \href {https://doi.org/10.32604/csse.2024.051851} {\path{doi:10.32604/csse.2024.051851}}.
+
+\bibitem{Santos2024GraphDB}
+V.~Santos, Data modeling for connected data -- a systematic literature review, arXiv:2410.10081 (2024).
+\newblock \href {https://doi.org/10.48550/arxiv.2410.10081} {\path{doi:10.48550/arxiv.2410.10081}}.
+
+\bibitem{Satish2024Sec}
+K.~S. R.~V. Satish, Database security issues and challenges in cloud computing, International Journal on Recent and Innovation Trends in Computing and Communication 11~(11) (2024) 937--943.
+\newblock \href {https://doi.org/10.17762/ijritcc.v11i11.10396} {\path{doi:10.17762/ijritcc.v11i11.10396}}.
+
+\bibitem{Solat2024DistDB}
+S.~Solat, Sharding distributed databases: A critical review, arXiv: (2024).
+\newblock \href {https://doi.org/10.48550/arxiv.2404.04384} {\path{doi:10.48550/arxiv.2404.04384}}.
+
+\bibitem{Song2024HTAP}
+H.~Song, W.~Zhou, H.~Cui, X.~Peng, F.~Li, A survey on hybrid transactional and analytical processing, The VLDB Journal 33~(5) (2024) 1485--1515.
+\newblock \href {https://doi.org/10.1007/s00778-024-00858-9} {\path{doi:10.1007/s00778-024-00858-9}}.
+
+\bibitem{Taipalus2024VectorDB}
+T.~Taipalus, Vector database management systems: Fundamental concepts, use-cases, and current challenges, Cognitive Systems Research 85 (2024) 101216.
+\newblock \href {https://doi.org/10.1016/j.cogsys.2024.101216} {\path{doi:10.1016/j.cogsys.2024.101216}}.
+
+\bibitem{Zhang2024AI4DB}
+L.~Zhang, M.~A. Babar, Automatic configuration tuning on cloud database: A survey, arXiv:2404.06043 (2024).
+\newblock \href {https://doi.org/10.48550/arxiv.2404.06043} {\path{doi:10.48550/arxiv.2404.06043}}.
+
+\bibitem{AbdullahAlMamun2025AI4DB}
+A.~Al-Mamun, H.~Wu, Q.~He, J.~Wang, W.~G. Aref, A survey of learned indexes for the multi-dimensional space, ACM Computing Surveys 58~(4) (2025) 1--37.
+\newblock \href {https://doi.org/10.1145/3768575} {\path{doi:10.1145/3768575}}.
+
+\bibitem{Ali2025AI4DB}
+and Shahwan Younis~Ali, H.~M. and, Ai-powered database management: Predictive analytics for performance tuning, Engineering and Technology Journal 10~(05) (2025).
+\newblock \href {https://doi.org/10.47191/etj/v10i05.38} {\path{doi:10.47191/etj/v10i05.38}}.
+
+\bibitem{Coimbra2025GraphDB2}
+M.~E. Coimbra, L.~Svitáková, D.~Vrgoč, A.~P. Francisco, L.~Veiga, Survey: On the landscape of graph databases, arXiv:2505.24758 (2025).
+\newblock \href {https://doi.org/10.48550/arxiv.2505.24758} {\path{doi:10.48550/arxiv.2505.24758}}.
+
+\bibitem{Hasan2025DistDB}
+and Kazheen Ismael~Hasan, H.~M.~Y. and, A survey on distributed database systems in the era of big data, Engineering and Technology Journal 10~(11) (2025).
+\newblock \href {https://doi.org/10.47191/etj/v10i11.03} {\path{doi:10.47191/etj/v10i11.03}}.
+
+\bibitem{Jing2025NLIDB}
+Z.~Jing, Y.~Su, Y.~Han, When large language models meet vector databases: A survey, arXiv:2402.01763 (2025).
+\newblock \href {https://doi.org/10.1109/aixmm62960.2025.00008} {\path{doi:10.1109/aixmm62960.2025.00008}}.
+
+\bibitem{Li2025AI4DB}
+Z.~Li, Y.~Li, Y.~Luo, G.~Li, C.~Zhang, Graph neural networks for databases: A survey, arXiv:2502.12908 (2025).
+\newblock \href {https://doi.org/10.48550/arxiv.2502.12908} {\path{doi:10.48550/arxiv.2502.12908}}.
+
+\bibitem{Liu2025AI4DB}
+J.~Liu, J.~Ye, M.~Chen, M.~Li, S.~Luo, Evaluating learned indexes in lsm-tree systems: Benchmarks,insights and design choices, arXiv: (2025).
+\newblock \href {https://doi.org/10.48550/arxiv.2506.08671} {\path{doi:10.48550/arxiv.2506.08671}}.
+
+\bibitem{Liu2025Bench}
+Q.~Liu, M.~Li, Y.~Zeng, Y.~Shen, L.~Chen, How good are multi-dimensional learned indexes? an experimental survey, The VLDB Journal 34~(2) (2025).
+\newblock \href {https://doi.org/10.1007/s00778-024-00893-6} {\path{doi:10.1007/s00778-024-00893-6}}.
+
+\bibitem{Mahmoud2025DistDB}
+and Hisham Ahmed~Mahmoud, H.~M.~Y. and, Data integrity and consistency challenges in distributed database systems, Engineering and Technology Journal 10~(05) (2025).
+\newblock \href {https://doi.org/10.47191/etj/v10i05.36} {\path{doi:10.47191/etj/v10i05.36}}.
+
+\bibitem{Mahule2025Sec}
+R.~V. Mahule, S.~M. Jadhav, Survey on cloud database security: Cryptographic techniques, intrusion detection and intelligent defense mechanisms, in: EPJ Web Conf., 2025.
+\newblock \href {https://doi.org/10.1051/epjconf/202534101015/pdf} {\path{doi:10.1051/epjconf/202534101015/pdf}}.
+
+\bibitem{Qiao2025AI4DB}
+S.-J. Qiao, H.-L. Fan, N.~Han, L.~Du, Y.-H. Peng, R.-M. Tang, X.~Qin, Learning database optimization techniques: the state-of-the-art and prospects, Frontiers of Computer Science 19~(12) (2025).
+\newblock \href {https://doi.org/10.1007/s11704-025-41116-7} {\path{doi:10.1007/s11704-025-41116-7}}.
+
+\bibitem{Topcu2025NoSQL}
+A.~E. Topcu, A.~M. Rmis, Y.~I. Alzoubi, A.~O. Çibikdiken, D.~Chowdhury, E.~Elbasi, M.~Abdel-Maguid, S.~Almadhun, Evaluating the performance of nosql databases for big data in cloud computing environments, HighTech and Innovation Journal 6~(3) (2025) 808--830.
+\newblock \href {https://doi.org/10.28991/hij-2025-06-03-05} {\path{doi:10.28991/hij-2025-06-03-05}}.
+
+\bibitem{Xie2025VectorDB}
+Y.~Xie, X.~Hou, Y.~Zhao, S.~Wang, K.~Chen, H.~Wang, Toward understanding bugs in vector database management systems, arXiv: (2025).
+\newblock \href {https://doi.org/10.48550/arxiv.2506.02617} {\path{doi:10.48550/arxiv.2506.02617}}.
+
+\bibitem{Ying2025NoSQL}
+D.~T.~W. Ying, C.~Y. Jie, C.~Shaoren, H.~C. Eui, C.~W. Ken, S.~V. Easwaramoorthy, U.~Moorthy, Comparative analysis of sql and nosql databases: Data models, use cases, and performance insights, Information Research Communications 2~(1) (2025) 47--70.
+\newblock \href {https://doi.org/10.5530/irc.2.1.5} {\path{doi:10.5530/irc.2.1.5}}.
+
+\bibitem{Allam2026CloudNative}
+H.~Allam, H.~Gianey, A.~Sharma, A.~Sisodia, B.~Agrawal, A.~Tiwari, A survey of emerging trends and algorithmic solutions incloud-native data management, Journal of Smart Algorithms and Applications (JSAA) 4~(1) (2026) 36--60.
+\newblock \href {https://doi.org/10.66279/71rygy73} {\path{doi:10.66279/71rygy73}}.
 
 \end{thebibliography}
