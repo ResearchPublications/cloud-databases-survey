@@ -63,12 +63,12 @@
 \cortext[1]{Corresponding author.}
 
 \begin{abstract}
-Cloud databases have become the backbone of modern data-driven applications, enabling organizations to store, process, and analyze data at unprecedented scale and elasticity. Over more than two decades (1999--2026), 96 survey papers satisfying systematic inclusion and quality criteria have examined various facets of cloud database technology---spanning cloud-native architectures, hybrid transactional and/or analytical processing (HTAP), NoSQL/NewSQL systems, vector and graph databases, AI-for-database optimization (AI4DB), data lakehouses, time-series databases, cloud database migration, and edge--cloud data management. However, the challenges, open problems, and research directions identified in these surveys remain fragmented across disparate communities and publication venues. This paper presents the first \emph{systematic meta-survey} of cloud database research: a survey of surveys that synthesizes findings from carefully selected survey papers using a rigorous methodology grounded in the Kitchenham--Charters systematic literature review protocol. The scattered landscape of cloud database challenges is organized into a structured, dual-theme taxonomy: (1)~\emph{eighteen cross-cutting challenges} that transcend individual system categories, including scalability, consistency trade-offs, security, cost optimization, AI--database convergence, and sustainability; and (2)~\emph{five lifecycle-phase challenges} spanning design, deployment, operation, optimization, and evolution of cloud database systems. The convergence of cloud databases with large language models (LLMs) is further examined as an illustrative case study, and a consolidated set of open research directions is distilled from the cross-survey synthesis. By providing a consolidated, thematically organized view of the field, this meta-survey serves as both a comprehensive reference for researchers entering the cloud database space and a strategic guide for practitioners navigating the rapidly evolving landscape of cloud data management.
+Cloud databases have become the backbone of modern data-driven applications, enabling organizations to store, process, and analyze data at unprecedented scale and elasticity. Over more than two decades (1999--2026), 85 survey papers satisfying systematic inclusion and quality criteria have examined various facets of cloud database technology---spanning cloud-native architectures, hybrid transactional and/or analytical processing (HTAP), NoSQL/NewSQL systems, vector and graph databases, AI-for-database optimization (AI4DB), data lakehouses, time-series databases, cloud database migration, and edge--cloud data management. However, the challenges, open problems, and research directions identified in these surveys remain fragmented across disparate communities and publication venues. This paper presents the first \emph{systematic meta-survey} of cloud database research: a survey of surveys that synthesizes findings from carefully selected survey papers using a rigorous methodology grounded in the Kitchenham--Charters systematic literature review protocol. The scattered landscape of cloud database challenges is organized into a structured, dual-theme taxonomy: (1)~\emph{eighteen cross-cutting challenges} that transcend individual system categories, including scalability, consistency trade-offs, security, cost optimization, AI--database convergence, and sustainability; and (2)~\emph{five lifecycle-phase challenges} spanning design, deployment, operation, optimization, and evolution of cloud database systems. The convergence of cloud databases with large language models (LLMs) is further examined as an illustrative case study, and a consolidated set of open research directions is distilled from the cross-survey synthesis. The result is a single, thematically organized map of two decades of cloud database research---one that newcomers can use to orient themselves in the literature and that system builders and researchers can use to locate the open problems where new work is most needed.
 \end{abstract}
 
 %% Highlights are submitted to Elsevier as a separate file (not a manuscript page).
 %% Kept here for reference:
-%% - First systematic meta-survey of 96 cloud database surveys (1999--2026 search window)
+%% - First systematic meta-survey of 85 cloud database surveys (1999--2026 search window)
 %% - Dual-theme taxonomy: 18 cross-cutting and 5 lifecycle-phase challenges
 %% - Cross-survey synthesis of consensus and divergence on each challenge
 %% - Cloud database and large language model convergence as a case study
@@ -86,9 +86,9 @@ cloud databases \sep systematic meta-survey \sep cloud-native databases \sep dat
 \section{Introduction}
 \label{sec:introduction}
 
-The cloud database market has experienced explosive growth over the past decade, with global revenues projected to exceed \$200 billion by 2028~\cite{gartner2024dbms}. This growth reflects a fundamental shift in how organizations manage data: from on-premises, monolithic database servers to elastic, globally distributed, cloud-native data platforms that can scale storage and compute independently on demand~\cite{Verbitski2017,Dageville2016}. Major cloud providers---Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), and Alibaba Cloud---now offer dozens of specialized database services, from relational engines like Amazon Aurora~\cite{Verbitski2017} and Azure SQL~\cite{Antonopoulos2019} to purpose-built systems for documents, graphs, time series, key-value pairs, and, most recently, vector embeddings for AI workloads~\cite{Pan2024VectorDB}.
+The cloud database market has experienced explosive growth over the past decade, and industry analysts consistently project continued double-digit growth in cloud database spending~\cite{gartner2024dbms}. This growth reflects a fundamental shift in how organizations manage data: from on-premises, monolithic database servers to elastic, globally distributed, cloud-native data platforms that can scale storage and compute independently on demand~\cite{Verbitski2017,Dageville2016}. Major cloud providers---Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), and Alibaba Cloud---now offer dozens of specialized database services, from relational engines like Amazon Aurora~\cite{Verbitski2017} and Azure SQL~\cite{Antonopoulos2019} to purpose-built systems for documents, graphs, time series, key-value pairs, and, most recently, vector embeddings for AI workloads~\cite{Pan2024VectorDB}.
 
-This rapid evolution has attracted significant research attention. A scripted search across four scholarly indexing services (OpenAlex, arXiv, Crossref, and Semantic Scholar) covering January 1999 to July 2026 identifies \textbf{96 survey papers} meeting the inclusion and quality criteria, each examining a particular facet of cloud database technology. These surveys span a wide spectrum of topics: cloud-native database architectures~\cite{Li2024CloudNativeSurvey}, hybrid transactional/analytical processing (HTAP)~\cite{Haas2024HTAPSurvey}, graph databases~\cite{Angles2020GraphDB}, vector database management systems~\cite{Pan2024VectorDB}, AI-driven database optimization (AI4DB)~\cite{Zhou2022AI4DB}, data lakehouses~\cite{Harby2022Lakehouse}, NoSQL and NewSQL systems~\cite{Davoudian2018NoSQL,Kaur2021NoSQLReview}, edge and fog database systems~\cite{Gomes2024EdgeFog}, and many more.
+This rapid evolution has attracted significant research attention. A scripted search across four scholarly indexing services (OpenAlex, arXiv, Crossref, and Semantic Scholar) covering January 1999 to July 2026 identifies \textbf{85 survey papers} meeting the inclusion and quality criteria, each examining a particular facet of cloud database technology. These surveys span a wide spectrum of topics: cloud-native database architectures~\cite{Li2024CloudNativeSurvey}, hybrid transactional/analytical processing (HTAP)~\cite{Haas2024HTAPSurvey}, graph databases~\cite{Angles2020GraphDB}, vector database management systems~\cite{Pan2024VectorDB}, AI-driven database optimization (AI4DB)~\cite{Zhou2022AI4DB}, data lakehouses~\cite{Harby2022Lakehouse}, NoSQL and NewSQL systems~\cite{Davoudian2018NoSQL,Kaur2021NoSQLReview}, edge and fog database systems~\cite{Gomes2024EdgeFog}, and many more.
 
 Despite this wealth of individual surveys, the field lacks a \emph{meta-level synthesis}---a comprehensive, systematic effort to consolidate the challenges, open problems, and research directions scattered across these surveys into a unified framework. Each survey naturally focuses on its own domain, leading to a fragmented understanding of the cloud database landscape as a whole. Cross-cutting challenges such as cost optimization, security, consistency trade-offs, and AI--database convergence are discussed in many surveys but from different angles, without a common organizing framework.
 
@@ -98,7 +98,7 @@ Despite this wealth of individual surveys, the field lacks a \emph{meta-level sy
 This paper addresses the gap by presenting the \textbf{first systematic meta-survey of cloud database research}---a survey of surveys. A rigorous systematic literature review (SLR) protocol based on the Kitchenham--Charters guidelines~\cite{Kitchenham2007} is applied to identify, evaluate, and synthesize cloud database surveys. The contributions of this work are as follows:
 
 \begin{enumerate}[label=\textbf{C\arabic*}]
-    \item \textbf{Systematic identification and classification.} Four scholarly APIs are searched with a fully scripted, reproducible protocol over the window January 1999 to July 2026, yielding 96 quality-assessed survey papers on cloud databases, classified by topic, scope, methodology, and venue.
+    \item \textbf{Systematic identification and classification.} Four scholarly APIs are searched with a fully scripted, reproducible protocol over the window January 1999 to July 2026, yielding 85 quality-assessed survey papers on cloud databases, classified by topic, scope, methodology, and venue.
 
     \item \textbf{Dual-theme challenge taxonomy.} The scattered challenges are organized into a structured taxonomy with two complementary themes:
     \begin{itemize}
@@ -201,7 +201,7 @@ Understanding the significance of cloud databases requires examining the topic f
 \subsection{Industry perspective}
 \label{subsec:industry}
 
-The global database management system (DBMS) market reached \$101 billion in 2023, with cloud deployments accounting for over 65\% of total revenue---up from approximately 40\% in 2019~\cite{gartner2024dbms}. Gartner projects that by 2026, 75\% of all databases will be deployed on cloud platforms~\cite{gartner2024dbms}. This shift is driven by digital transformation initiatives across industries, from financial services adopting cloud databases for real-time fraud detection to healthcare organizations leveraging cloud data platforms for genomics and precision medicine~\cite{AmazonAurora2023}.
+Analyst assessments of the database management system (DBMS) market agree on two structural trends: cloud deployments now account for well over half of total DBMS revenue, and their share continues to grow at the expense of on-premises deployments~\cite{gartner2024dbms}. Gartner's widely cited 2019 projection that three quarters of all databases would be deployed or migrated to cloud platforms by 2022 has, by most industry accounts, been broadly borne out~\cite{gartner2024dbms}. This shift is driven by digital transformation initiatives across industries, from financial services adopting cloud databases for real-time fraud detection to healthcare organizations leveraging cloud data platforms for genomics and precision medicine.
 
 The vendor landscape has also diversified significantly. Beyond the hyperscale cloud providers (AWS, Azure, GCP), specialized cloud database vendors such as Snowflake~\cite{Dageville2016}, Databricks~\cite{Armbrust2021Lakehouse}, CockroachDB~\cite{Taft2020Cockroach}, PlanetScale, and Neon have gained substantial market share. China's cloud database ecosystem---including Alibaba PolarDB~\cite{Cao2021PolarDB}, TiDB~\cite{Huang2020TiDB}, and OceanBase~\cite{Yang2022OceanBase}---has matured rapidly. This fragmentation makes it difficult for practitioners to navigate the landscape without a systematic overview.
 
@@ -503,7 +503,7 @@ The inclusion and exclusion criteria listed in Table~\ref{tab:criteria} were app
 \textbf{ID} & \textbf{Criterion} \\
 \midrule
 \multicolumn{2}{l}{\textit{Inclusion Criteria}} \\
-IC1 & The paper is a survey, review, tutorial, or systematic mapping study \\
+IC1 & The paper is a survey, review, tutorial, systematic mapping study, or cross-system comparative experimental evaluation \\
 IC2 & The paper focuses primarily on cloud-hosted, cloud-native, or cloud-relevant database technologies \\
 IC3 & The paper was published between January 1999 and the search date (July 2026) \\
 IC4 & The paper is written in English \\
@@ -515,6 +515,7 @@ EC2 & The paper surveys cloud computing in general without database-specific foc
 EC3 & The paper is a short paper ($<$6 pages) or workshop position paper \\
 EC4 & The paper is a duplicate or substantially overlapping earlier version \\
 EC5 & The full text could not be retrieved (no open-access copy and no manually obtainable copy) \\
+EC6 & The venue exhibits predatory indicators: self-claimed impact factors, discontinued or absent reputable indexing (Scopus/DOAJ), a watchlisted publisher, or an unverifiable editorial process \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -522,7 +523,7 @@ EC5 & The full text could not be retrieved (no open-access copy and no manually 
 \subsection{Quality assessment}
 \label{subsec:quality}
 
-Each candidate survey was evaluated against eight quality assessment criteria (QA1--QA8), scored on a 3-point scale (0 = No, 0.5 = Partially, 1 = Yes). Given the breadth of the expanded 1999--2026 identification pool, the inclusion threshold was set at 6 out of 8; papers scoring below this threshold were excluded (papers scoring between 4 and 6 are reported explicitly in the selection flow).
+Each candidate survey was evaluated against eight quality assessment criteria (QA1--QA8), scored on a 3-point scale (0 = No, 0.5 = Partially, 1 = Yes). Given the breadth of the expanded 1999--2026 identification pool, the inclusion threshold was set at 6 out of 8; papers scoring below this threshold were excluded (papers scoring between 4 and 6 are reported explicitly in the selection flow). QA7 was scored under an explicit venue-tier rule---1 for venues of established reputation, 0.5 for minor but verifiable outlets (university, society, or currently Scopus-/DOAJ-indexed publishers), and 0 otherwise---and, independently of the QA total, papers from venues meeting the EC6 predatory-indicator test were excluded in a dedicated venue-integrity audit reported in the selection flow.
 
 \begin{table}[H]
 \centering
@@ -548,7 +549,7 @@ QA8 & Is the survey sufficiently comprehensive ($\geq$30 references)? \\
 \subsection{Results: study selection and demographics}
 \label{subsec:results}
 
-Figure~\ref{fig:prisma} presents the PRISMA~2020 flow diagram of the selection process, with two identification arms: records identified through the scripted database search, and records identified through other methods (the previous version of this catalog, manually collected reports, and backward snowballing). From 7,675 raw database records, 96 surveys were ultimately included in the meta-survey.
+Figure~\ref{fig:prisma} presents the PRISMA~2020 flow diagram of the selection process, with two identification arms: records identified through the scripted database search, and records identified through other methods (the previous version of this catalog, manually collected reports, and backward snowballing). From 7,675 raw database records, 85 surveys were ultimately included in the meta-survey.
 
 \begin{figure}[H]
 \centering
@@ -570,8 +571,8 @@ Figure~\ref{fig:prisma} presents the PRISMA~2020 flow diagram of the selection p
 \node[box=cgreen, below=1.35cm of sc] (el) {\textbf{Retrieval}\\Reports sought (n=442)};
 \node[excl, below=0.5cm of ex1] (ex2) {Reports not retrieved\\(n=292)};
 \node[box=cgreen, below=1cm of el] (ft) {\textbf{Eligibility}\\Full-text reports assessed (n=150)};
-\node[excl, below=0.8cm of ex2] (ex3) {Full-text exclusions (n=77):\\short/tutorial (n=28), primary study (n=10),\\out of scope (n=5), QA $<$ 6 (n=23),\\scope re-check (n=10), merged duplicate (n=1)};
-\node[box=cpurple, below=1.15cm of ft] (inc) {\textbf{Included}\\Surveys in the catalog (n=96)\\databases: 73;~~manual: 3;~~prior catalog: 20};
+\node[excl, below=0.8cm of ex2] (ex3) {Full-text exclusions (n=88):\\short/tutorial (n=28), primary study (n=10),\\out of scope (n=5), QA $<$ 6 (n=23),\\scope re-check (n=10), merged duplicate (n=1),\\venue integrity, EC6 (n=11)};
+\node[box=cpurple, below=1.15cm of ft] (inc) {\textbf{Included}\\Surveys in the catalog (n=85)\\databases: 62;~~manual: 3;~~prior catalog: 20};
 
 \draw[arrow] (id) -- (sc);
 \draw[arrow] (sc) -- (el);
@@ -584,7 +585,7 @@ Figure~\ref{fig:prisma} presents the PRISMA~2020 flow diagram of the selection p
 \draw[arrow] (oth.south) ++(1.6,0) |- (inc.east);
 
 \end{tikzpicture}
-\caption{PRISMA~2020 flow diagram of the study selection process~\cite{Page2021PRISMA}. All figures are scripted tallies over the archived screening-decision log. The full-text exclusion box aggregates one merged duplicate of a prior-catalog entry; of the six snowball candidates, one was retrieved and excluded below the quality threshold and five could not be retrieved. Two prior-catalog entries failed the raised quality threshold and were removed.}
+\caption{PRISMA~2020 flow diagram of the study selection process~\cite{Page2021PRISMA}. All figures are scripted tallies over the archived screening-decision log. The full-text exclusion box aggregates one merged duplicate of a prior-catalog entry; of the six snowball candidates, one was retrieved and excluded below the quality threshold and five could not be retrieved. Of the 24 prior-catalog entries, two failed the raised quality threshold and two were re-identified by the database search and are counted in the databases arm, leaving 20 carried forward via the other-methods arm.}
 \label{fig:prisma}
 \end{figure}
 
@@ -600,23 +601,23 @@ Figure~\ref{fig:byyear} shows the distribution of selected surveys by publicatio
     height=6.2cm,
     ylabel={Number of surveys},
     xlabel={Publication year},
-    xmin=2008.2, xmax=2026.8,
+    xmin=2008.2, xmax=2025.8,
     xtick={2009,2011,2013,2015,2017,2019,2021,2023,2025},
     xticklabel style={/pgf/number format/1000 sep=},
     ymin=0,
-    ymax=21,
+    ymax=20,
     nodes near coords,
     nodes near coords align={vertical},
     every node near coord/.append style={font=\scriptsize, text=black},
 ]
-\addplot[fill=cblue!60, draw=black] coordinates {(2009,1) (2010,0) (2011,0) (2012,1) (2013,0) (2014,2) (2015,3) (2016,4) (2017,6) (2018,5) (2019,10) (2020,5) (2021,8) (2022,4) (2023,10) (2024,19) (2025,17) (2026,1)};
+\addplot[fill=cblue!60, draw=black] coordinates {(2009,1) (2010,0) (2011,0) (2012,1) (2013,0) (2014,2) (2015,2) (2016,3) (2017,4) (2018,5) (2019,9) (2020,5) (2021,8) (2022,4) (2023,10) (2024,18) (2025,13)};
 \end{axis}
 \end{tikzpicture}
-\caption{Distribution of the 96 selected surveys by publication year. Although the search window opens in January 1999, the earliest survey satisfying all inclusion and quality criteria dates from 2009; the 2026 bar covers only the months up to the search date (July 2026).}
+\caption{Distribution of the 85 selected surveys by publication year. Although the search window opens in January 1999 and extends to the search date (July 2026), the earliest survey satisfying all inclusion and quality criteria dates from 2009 and the latest from 2025.}
 \label{fig:byyear}
 \end{figure}
 
-Figure~\ref{fig:bytopic} shows the distribution by primary topic domain (each survey is assigned a single primary topic, so the counts sum to 96). NoSQL/NewSQL systems are the most frequently surveyed topic, reflecting the maturity and breadth of that body of literature, followed by graph databases and AI4DB/learned database components.
+Figure~\ref{fig:bytopic} shows the distribution by primary topic domain (each survey is assigned a single primary topic, so the counts sum to 85). NoSQL/NewSQL systems are the most frequently surveyed topic, reflecting the maturity and breadth of that body of literature, followed by graph databases and AI4DB/learned database components.
 
 \begin{figure}[H]
 \centering
@@ -628,7 +629,7 @@ Figure~\ref{fig:bytopic} shows the distribution by primary topic domain (each su
     height=10cm,
     xlabel={Number of surveys},
     xmin=0,
-    xmax=22,
+    xmax=21,
     ytick=data,
     symbolic y coords={
         {Time-Series DBs},
@@ -641,8 +642,8 @@ Figure~\ref{fig:bytopic} shows the distribution by primary topic domain (each su
         {Benchmarking},
         {Multi-Model DBs},
         {NL/LLM-Database},
-        {DBaaS},
         {Distributed DBs},
+        {DBaaS},
         {Security/Privacy},
         {AI4DB/Learned Opt.},
         {Graph Databases},
@@ -654,12 +655,12 @@ Figure~\ref{fig:bytopic} shows the distribution by primary topic domain (each su
     enlarge y limits={abs=0.4cm},
 ]
 \addplot[fill=cblue!60, draw=black] coordinates {
-    (20,{NoSQL/NewSQL})
-    (12,{Graph Databases})
-    (12,{AI4DB/Learned Opt.})
-    (10,{Security/Privacy})
-    (8,{Distributed DBs})
+    (19,{NoSQL/NewSQL})
+    (10,{Graph Databases})
+    (10,{AI4DB/Learned Opt.})
+    (8,{Security/Privacy})
     (6,{DBaaS})
+    (5,{Distributed DBs})
     (4,{NL/LLM-Database})
     (4,{Multi-Model DBs})
     (4,{Benchmarking})
@@ -667,13 +668,13 @@ Figure~\ref{fig:bytopic} shows the distribution by primary topic domain (each su
     (3,{HTAP Systems})
     (3,{Data Lakehouse})
     (2,{Edge/Fog DBs})
-    (2,{Cloud-Native Arch.})
+    (1,{Cloud-Native Arch.})
     (1,{Cloud DB Migration})
     (1,{Time-Series DBs})
 };
 \end{axis}
 \end{tikzpicture}
-\caption{Distribution of the 96 selected surveys by primary topic domain.}
+\caption{Distribution of the 85 selected surveys by primary topic domain.}
 \label{fig:bytopic}
 \end{figure}
 
@@ -684,27 +685,27 @@ Figure~\ref{fig:byvenue} shows the distribution by venue type. Journal publicati
 \begin{tikzpicture}
   %% Pie chart drawn manually with TikZ (counts from the frozen catalog.csv;
   %% angles generated by search/generate_catalog_artifacts.py).
-  %% Journals (61): 63.5% = 228.8 deg, Conferences (12): 12.5% = 45 deg, arXiv (23): 24.0% = 86.2 deg
+  %% Journals (50): 58.8% = 211.8 deg, Conferences (13): 15.3% = 55 deg, arXiv (22): 25.9% = 93.2 deg
   \def\radius{2.5}
 
   %% Slice 1: Journals (0 to 228.8)
-  \filldraw[fill=cblue!60, draw=black, thin] (0,0) -- (0:\radius) arc (0:228.8:\radius) -- cycle;
-  \node at (114.4:1.6) {\small\textbf{63.5\%}};
+  \filldraw[fill=cblue!60, draw=black, thin] (0,0) -- (0:\radius) arc (0:211.8:\radius) -- cycle;
+  \node at (105.9:1.6) {\small\textbf{58.8\%}};
 
   %% Slice 2: Conferences (228.8 to 273.8)
-  \filldraw[fill=corange!60, draw=black, thin] (0,0) -- (228.8:\radius) arc (228.8:273.8:\radius) -- cycle;
-  \node at (251.2:1.8) {\small\textbf{12.5\%}};
+  \filldraw[fill=corange!60, draw=black, thin] (0,0) -- (211.8:\radius) arc (211.8:266.8:\radius) -- cycle;
+  \node at (239.3:1.8) {\small\textbf{15.3\%}};
 
   %% Slice 3: arXiv (273.8 to 360)
-  \filldraw[fill=cgreen!60, draw=black, thin] (0,0) -- (273.8:\radius) arc (273.8:360:\radius) -- cycle;
-  \node at (316.9:1.8) {\small\textbf{24.0\%}};
+  \filldraw[fill=cgreen!60, draw=black, thin] (0,0) -- (266.8:\radius) arc (266.8:360:\radius) -- cycle;
+  \node at (313.4:1.8) {\small\textbf{25.9\%}};
 
   %% Legend
-  \node[anchor=west] at (3.5, 1.2) {\small\tikz\filldraw[fill=cblue!60,draw=black] (0,0) rectangle (0.3,0.3); \;Journals (61)};
-  \node[anchor=west] at (3.5, 0.45) {\small\tikz\filldraw[fill=corange!60,draw=black] (0,0) rectangle (0.3,0.3); \;Conferences (12)};
-  \node[anchor=west] at (3.5, -0.3) {\small\tikz\filldraw[fill=cgreen!60,draw=black] (0,0) rectangle (0.3,0.3); \;arXiv (23)};
+  \node[anchor=west] at (3.5, 1.2) {\small\tikz\filldraw[fill=cblue!60,draw=black] (0,0) rectangle (0.3,0.3); \;Journals (50)};
+  \node[anchor=west] at (3.5, 0.45) {\small\tikz\filldraw[fill=corange!60,draw=black] (0,0) rectangle (0.3,0.3); \;Conferences (13)};
+  \node[anchor=west] at (3.5, -0.3) {\small\tikz\filldraw[fill=cgreen!60,draw=black] (0,0) rectangle (0.3,0.3); \;arXiv (22)};
 \end{tikzpicture}
-\caption{Distribution of the 96 selected surveys by venue type.}
+\caption{Distribution of the 85 selected surveys by venue type.}
 \label{fig:byvenue}
 \end{figure}
 
@@ -715,7 +716,7 @@ As with any systematic review, this meta-survey is subject to validity threats, 
 
 \textbf{Construct validity.} The search string and the choice of indexing services may not capture every relevant survey, particularly those using non-standard terminology or absent from the OpenAlex, arXiv, Crossref, and Semantic Scholar indexes; abstract availability in these indexes is also uneven, which affects the automated eligibility marking. These threats are mitigated by (i)~running fully scripted queries whose logs are archived and re-executable, (ii)~taking the union of four independent APIs rather than relying on a single index, (iii)~carrying forward the previous version of the catalog as a separate identification arm, and (iv)~a backward-snowballing pass over the reference lists of the highest-scoring included surveys, which surfaced no additional qualifying survey---evidence that the search had reached saturation. The English-language filter may exclude relevant surveys in other languages.
 
-\textbf{Internal validity.} Study selection, quality assessment, and data extraction were performed by a single reviewer, introducing a risk of subjective bias and a lack of inter-rater agreement. To reduce this threat, explicit inclusion/exclusion criteria (Table~\ref{tab:criteria}) and a documented quality-assessment rubric (Table~\ref{tab:qa}) were applied uniformly, and borderline decisions were re-examined in a second pass. Every included survey was additionally verified against a resolvable DOI or arXiv identifier and a retained full-text copy, so that the catalog contains only confirmable publications. The absence of a second independent reviewer nonetheless remains a limitation.
+\textbf{Internal validity.} Title/abstract screening, full-text assessment, and quality-assessment scoring were performed with the assistance of a large-language-model tool operating under fixed written rubrics (disclosed in the AI-use declaration), with every record's decision and rationale logged; a strict second re-check pass was applied to all provisional inclusions, a dedicated venue-integrity audit re-examined venue quality, and all borderline and final decisions were adjudicated by the author. Every included survey was additionally verified against a resolvable DOI or arXiv identifier and a retained, content-verified full-text copy, so that the catalog contains only confirmable publications. The absence of a second independent \emph{human} reviewer, and the reliance on AI assistance in screening, nonetheless remain limitations.
 
 \textbf{External validity.} As a survey of surveys, the findings inherit the scope and currency limitations of the primary surveys; rapidly evolving topics (e.g., LLM--database convergence) may be underrepresented relative to their current activity. The corpus is further subject to an open-access retrieval bias: every included survey must have a content-verified full text on file, and 292 otherwise-eligible reports could not be retrieved through any open-access channel (reported explicitly in the PRISMA flow), so paywalled surveys---particularly from the early 2000s---are underrepresented. Notably, no survey published before 2009 satisfied all criteria, so the 1999--2008 portion of the window is represented in the narrative (Section~\ref{subsec:history}) rather than the catalog. The synthesis is therefore intended as a structured map of the field rather than an exhaustive account of every primary system.
 
@@ -728,7 +729,7 @@ As with any systematic review, this meta-survey is subject to validity threats, 
 \section{Discussion---Challenges and Research Directions}
 \label{sec:discussion}
 
-This section presents the core contribution of this meta-survey: a comprehensive, structured analysis of the challenges and research directions identified across the 96 surveyed papers. Following the dual-theme approach of Saeed and Omlin~\cite{Saeed2023XAI}, the discussion is organized into two complementary themes:
+This section presents the core contribution of this meta-survey: a comprehensive, structured analysis of the challenges and research directions identified across the 85 surveyed papers. Following the dual-theme approach of Saeed and Omlin~\cite{Saeed2023XAI}, the discussion is organized into two complementary themes:
 
 \begin{enumerate}
     \item \textbf{Theme~1: Cross-cutting challenges} (Section~\ref{subsec:theme1})---eighteen recurring challenges that transcend individual system categories.
@@ -856,7 +857,7 @@ C18  & Standardization \& interoperability & \PART &      & \PART  &        & \F
 \setlength{\LTcapwidth}{\linewidth}
 \begin{small}
 \begin{longtable}{c >{\raggedright\arraybackslash}p{2.2cm} >{\raggedright\arraybackslash}p{2.5cm} >{\raggedright\arraybackslash}p{7.2cm} >{\raggedright\arraybackslash}p{7.2cm}}
-\caption{Synthesis of cross-cutting challenges: key similarities (consensus) and differences (divergences) across the 96 surveyed papers, referenced at survey-domain granularity (domain sizes as in Figure~\ref{fig:bytopic}).}
+\caption{Synthesis of cross-cutting challenges: key similarities (consensus) and differences (divergences) across the 85 surveyed papers, referenced at survey-domain granularity (domain sizes as in Figure~\ref{fig:bytopic}).}
 \label{tab:challenge-synthesis}\\
 \toprule
 \# & Challenge & Survey domains (\textit{n}) & Key Similarities (Consensus) & Key Differences (Divergences) \\
@@ -874,64 +875,64 @@ C18  & Standardization \& interoperability & \PART &      & \PART  &        & \F
 \endlastfoot
 %% Foundational
 C1 & Scalability \& elasticity &
-49 surveys in Cloud-Native, HTAP, NoSQL/NewSQL, Lakehouse, Time-Series, Edge/Fog, Benchmarking, Distributed DBs, DBaaS &
+44 surveys in Cloud-Native, HTAP, NoSQL/NewSQL, Lakehouse, Time-Series, Edge/Fog, Benchmarking, Distributed DBs, DBaaS &
 All surveys agree that disaggregated storage enables elastic scaling; horizontal scale-out is preferred over vertical scaling; auto-scaling is a baseline cloud capability. &
 Cloud-native surveys focus on component-level elasticity; NoSQL surveys emphasize partition-based data scaling; HTAP surveys and edge/fog surveys stress elasticity under mixed and intermittently connected workloads, respectively. \\
 \addlinespace
 C2 & Consistency \& CAP/PACELC &
-35 surveys in Cloud-Native, HTAP, NoSQL/NewSQL, Edge/Fog, Distributed DBs &
+30 surveys in Cloud-Native, HTAP, NoSQL/NewSQL, Edge/Fog, Distributed DBs &
 CAP/PACELC trade-offs are universally acknowledged; all surveys recognize a spectrum from strong to eventual consistency; configurable consistency is a key cloud differentiator. &
 NoSQL surveys accept eventual consistency as pragmatic; HTAP surveys insist on strong consistency for transactional correctness; cloud-native surveys present tunable consistency as an application-level choice. \\
 \addlinespace
 C3 & Performance \& benchmarking &
-52 surveys in Cloud-Native, HTAP, NoSQL/NewSQL, AI4DB/Learned, Lakehouse, Benchmarking, Distributed DBs &
+45 surveys in Cloud-Native, HTAP, NoSQL/NewSQL, AI4DB/Learned, Lakehouse, Benchmarking, Distributed DBs &
 Cloud-specific factors (network latency, multi-tenancy, cold starts) complicate optimization; existing benchmarks (TPC-C/H, YCSB) are widely considered inadequate for cloud settings. &
 AI4DB surveys emphasize learned optimizers and indexes; benchmarking surveys focus on measurement methodology and fairness; cloud-native surveys focus on disaggregation overhead. \\
 \addlinespace
 C4 & Security \& privacy &
-20 surveys in Cloud-Native, Edge/Fog, Security/Privacy, DBaaS &
+17 surveys in Cloud-Native, Edge/Fog, Security/Privacy, DBaaS &
 Encryption at rest and in transit is a baseline requirement; the shared responsibility model is universally acknowledged; GDPR compliance is a common concern. &
 Security surveys deeply analyze threat models and advanced techniques (homomorphic encryption, confidential computing); cloud-native surveys treat security as one concern among many; edge/fog surveys emphasize privacy-preserving aggregation. \\
 \addlinespace
 C5 & Cost modeling \& optimization &
-16 surveys in Cloud-Native, Lakehouse, Benchmarking, Migration, DBaaS &
+15 surveys in Cloud-Native, Lakehouse, Benchmarking, Migration, DBaaS &
 Cost is a primary driver of cloud adoption; pricing complexity (10--100$\times$ variation) is widely noted; pay-per-use models are a defining benefit. &
 Benchmarking surveys focus on total cost of ownership comparison; lakehouse surveys weigh storage--compute cost trade-offs; migration surveys highlight hidden migration and lock-in costs; cloud-native surveys note multi-dimensional pricing complexity. \\
 \addlinespace
 %% Data Architecture
 C6 & Multi-tenancy \& isolation &
-22 surveys in Cloud-Native, Security/Privacy, Benchmarking, DBaaS &
+19 surveys in Cloud-Native, Security/Privacy, Benchmarking, DBaaS &
 Noisy-neighbor performance interference is universally recognized; the trade-off between resource sharing efficiency and isolation is a fundamental tension. &
 Cloud-native surveys focus on architectural isolation levels (shared-nothing to shared-table); security surveys emphasize tenant data isolation; benchmarking surveys measure interference under controlled conditions. \\
 \addlinespace
 C7 & Data model diversity &
-44 surveys in NoSQL/NewSQL, Vector/Graph/Multi-Model, Lakehouse, Time-Series &
+41 surveys in NoSQL/NewSQL, Vector/Graph/Multi-Model, Lakehouse, Time-Series &
 Polyglot persistence is the operational reality; cross-model query support is needed; multi-model databases are gaining traction. &
 NoSQL surveys favor model-specific optimization; multi-model surveys advocate unified backends; specialized surveys argue that model-native operations (vector, graph, time-series) cannot be efficiently reduced to a single backend. \\
 \addlinespace
 C8 & Heterogeneous query processing &
-52 surveys in Cloud-Native, HTAP, AI4DB/Learned, Vector/Graph/Multi-Model, Lakehouse, NL/LLM--DB, Distributed DBs &
+44 surveys in Cloud-Native, HTAP, AI4DB/Learned, Vector/Graph/Multi-Model, Lakehouse, NL/LLM--DB, Distributed DBs &
 Federated query processing across engines is increasingly necessary; predicate pushdown is the baseline optimization technique. &
 HTAP surveys focus on OLTP--OLAP workload routing; lakehouse surveys emphasize open-format access layers; multi-model surveys and natural-language interface surveys address cross-model and intent-driven query routing. \\
 \addlinespace
 C9 & Storage disaggregation &
-28 surveys in Cloud-Native, HTAP, Lakehouse, NoSQL/NewSQL &
+26 surveys in Cloud-Native, HTAP, Lakehouse, NoSQL/NewSQL &
 Compute-storage separation is the defining cloud-native architectural principle; write amplification reduction is a key benefit; independent layer scaling is a primary motivation. &
 Cloud-native surveys focus on log-as-database architectures (Aurora, PolarDB); lakehouse surveys emphasize open table formats; HTAP surveys address separate analytical and transactional storage tiers. \\
 \addlinespace
 C10 & Distributed transactions &
-33 surveys in Cloud-Native, HTAP, NoSQL/NewSQL, Distributed DBs &
+28 surveys in Cloud-Native, HTAP, NoSQL/NewSQL, Distributed DBs &
 2PC and consensus protocols (Paxos/Raft) are the dominant approaches; the consistency--latency trade-off is universally acknowledged. &
 Cloud-native surveys cite clock synchronization innovations (TrueTime, HLC); NoSQL surveys accept weaker guarantees (CRDTs, eventual consistency); HTAP surveys focus on OLTP--OLAP transaction isolation. \\
 \addlinespace
 %% Operations
 C11 & Fault tolerance \& HA &
-32 surveys in Cloud-Native, NoSQL/NewSQL, Edge/Fog, Distributed DBs &
+27 surveys in Cloud-Native, NoSQL/NewSQL, Edge/Fog, Distributed DBs &
 Multi-AZ replication is the baseline approach; automated failover is expected; RTO/RPO targets drive architectural decisions. &
 Cloud-native surveys focus on quorum protocols (e.g., Aurora's 4/6 write quorum); NoSQL surveys emphasize tunable replication factors; edge/fog surveys must handle intermittent connectivity. \\
 \addlinespace
 C12 & Migration \& portability &
-9 surveys in Cloud-Native, Migration, DBaaS &
+8 surveys in Cloud-Native, Migration, DBaaS &
 Migration is complex, error-prone, and labor-intensive; schema heterogeneity is the primary technical barrier; vendor lock-in is widely criticized. &
 Migration surveys focus on methodology and zero-downtime techniques; cloud-native surveys treat migration as a cloud adoption path; NoSQL surveys highlight data model mismatch challenges. \\
 \addlinespace
@@ -941,18 +942,18 @@ Data placement across edge--fog--cloud tiers requires intelligent policies; inte
 Edge/fog surveys focus on resource-constrained processing and synchronization; cloud-native surveys view edge as a cloud extension; security surveys emphasize privacy-preserving edge aggregation. \\
 \addlinespace
 C14 & AI--database convergence &
-21 surveys in Cloud-Native, AI4DB/Learned, Lakehouse, NL/LLM--DB &
+18 surveys in Cloud-Native, AI4DB/Learned, Lakehouse, NL/LLM--DB &
 Both AI4DB and DB4AI directions are growing rapidly; production deployment of learned components remains limited; training data management is a shared challenge. &
 AI4DB surveys focus on individual learned components (indexes, optimizers); natural-language and retrieval-augmented surveys address LLM-driven querying and retrieval; cloud-native surveys view AI as a system enhancement. \\
 \addlinespace
 C15 & Serverless \& autonomy &
-20 surveys in Cloud-Native, AI4DB/Learned, DBaaS &
+17 surveys in Cloud-Native, AI4DB/Learned, DBaaS &
 Serverless abstracts infrastructure management; cold-start latency is a known limitation; pay-per-query suits variable workloads. &
 Cloud-native surveys treat serverless as one deployment model and catalog autoscaling mechanisms; AI4DB surveys envision full-stack autonomous databases that self-tune beyond the serverless abstraction. \\
 \addlinespace
 %% Emerging
 C16 & Governance \& lineage &
-13 surveys in Lakehouse, Security/Privacy &
+11 surveys in Lakehouse, Security/Privacy &
 End-to-end lineage tracking is increasingly important; regulatory compliance (GDPR, CCPA) drives governance adoption; metadata management is fragmented across tools. &
 Security surveys focus on access control and audit logging; lakehouse surveys emphasize unified data cataloging; migration surveys track lineage across system transitions; cloud-native and NL-interface surveys note metadata's role in querying. \\
 \addlinespace
@@ -962,7 +963,7 @@ Energy-proportional computing is an aspirational goal; carbon-aware data placeme
 Cloud-native surveys note the energy implications of disaggregation; AI4DB surveys flag the training cost of learned components; benchmarking surveys propose adding energy and carbon metrics; most other survey domains do not yet address sustainability. \\
 \addlinespace
 C18 & Standardization \& interoperability &
-46 surveys in Cloud-Native, NoSQL/NewSQL, Vector/Graph/Multi-Model, Lakehouse, Migration &
+42 surveys in Cloud-Native, NoSQL/NewSQL, Vector/Graph/Multi-Model, Lakehouse, Migration &
 Vendor lock-in is widely criticized; SQL remains the primary query lingua franca; open formats (Iceberg, Delta Lake, Hudi) are gaining traction. &
 Graph and specialized surveys highlight query-language fragmentation (Cypher, SPARQL, GQL); NoSQL surveys focus on API heterogeneity; multi-model and natural-language interface surveys push unified access, while migration surveys stress portable formats. \\
 \end{longtable}
@@ -990,26 +991,26 @@ Graph and specialized surveys highlight query-language fragmentation (Cypher, SP
 \endfoot
 \bottomrule
 \endlastfoot
-C1 & Scalability \& elasticity & \cellcolor{cgray!36}4 & \cellcolor{cgray!60}10 & \cellcolor{cgray!64}11 & \cellcolor{cgray!80}15 & \cellcolor{cgray!56}9 & 49 \\
-C2 & Consistency \& CAP/PACELC & \cellcolor{cgray!38}3 & \cellcolor{cgray!56}6 & \cellcolor{cgray!74}9 & \cellcolor{cgray!80}10 & \cellcolor{cgray!62}7 & 35 \\
-C3 & Performance \& benchmarking & \cellcolor{cgray!31}3 & \cellcolor{cgray!50}8 & \cellcolor{cgray!65}12 & \cellcolor{cgray!80}16 & \cellcolor{cgray!68}13 & 52 \\
-C4 & Security \& privacy & \cellcolor{cgray!50}3 & \cellcolor{cgray!80}6 & \cellcolor{cgray!50}3 & \cellcolor{cgray!70}5 & \cellcolor{cgray!50}3 & 20 \\
-C5 & Cost modeling \& optimization & \cellcolor{cgray!30}1 & \cellcolor{cgray!60}4 & \cellcolor{cgray!40}2 & \cellcolor{cgray!80}6 & \cellcolor{cgray!50}3 & 16 \\
-C6 & Multi-tenancy \& isolation & \cellcolor{cgray!50}3 & \cellcolor{cgray!80}6 & \cellcolor{cgray!50}3 & \cellcolor{cgray!80}6 & \cellcolor{cgray!60}4 & 22 \\
-C7 & Data model diversity & \cellcolor{cgray!32}3 & \cellcolor{cgray!67}11 & \cellcolor{cgray!62}10 & \cellcolor{cgray!80}14 & \cellcolor{cgray!45}6 & 44 \\
-C8 & Heterogeneous query processing & \cellcolor{cgray!26}2 & \cellcolor{cgray!64}14 & \cellcolor{cgray!38}6 & \cellcolor{cgray!80}19 & \cellcolor{cgray!54}11 & 52 \\
-C9 & Storage disaggregation & \cellcolor{cgray!33}2 & \cellcolor{cgray!40}3 & \cellcolor{cgray!80}9 & \cellcolor{cgray!80}9 & \cellcolor{cgray!53}5 & 28 \\
-C10 & Distributed transactions & \cellcolor{cgray!40}3 & \cellcolor{cgray!60}6 & \cellcolor{cgray!73}8 & \cellcolor{cgray!80}9 & \cellcolor{cgray!66}7 & 33 \\
-C11 & Fault tolerance \& HA & \cellcolor{cgray!42}3 & \cellcolor{cgray!65}6 & \cellcolor{cgray!80}8 & \cellcolor{cgray!80}8 & \cellcolor{cgray!72}7 & 32 \\
-C12 & Migration \& portability & \cellcolor{cgray!35}1 & \cellcolor{cgray!80}4 &   & \cellcolor{cgray!50}2 & \cellcolor{cgray!50}2 & 9 \\
+C1 & Scalability \& elasticity & \cellcolor{cgray!32}3 & \cellcolor{cgray!60}10 & \cellcolor{cgray!64}11 & \cellcolor{cgray!80}15 & \cellcolor{cgray!40}5 & 44 \\
+C2 & Consistency \& CAP/PACELC & \cellcolor{cgray!32}2 & \cellcolor{cgray!56}6 & \cellcolor{cgray!74}9 & \cellcolor{cgray!80}10 & \cellcolor{cgray!38}3 & 30 \\
+C3 & Performance \& benchmarking & \cellcolor{cgray!27}2 & \cellcolor{cgray!46}7 & \cellcolor{cgray!65}12 & \cellcolor{cgray!80}16 & \cellcolor{cgray!50}8 & 45 \\
+C4 & Security \& privacy & \cellcolor{cgray!56}3 & \cellcolor{cgray!80}5 & \cellcolor{cgray!56}3 & \cellcolor{cgray!68}4 & \cellcolor{cgray!44}2 & 17 \\
+C5 & Cost modeling \& optimization & \cellcolor{cgray!30}1 & \cellcolor{cgray!60}4 & \cellcolor{cgray!40}2 & \cellcolor{cgray!80}6 & \cellcolor{cgray!40}2 & 15 \\
+C6 & Multi-tenancy \& isolation & \cellcolor{cgray!56}3 & \cellcolor{cgray!80}5 & \cellcolor{cgray!56}3 & \cellcolor{cgray!80}5 & \cellcolor{cgray!56}3 & 19 \\
+C7 & Data model diversity & \cellcolor{cgray!32}3 & \cellcolor{cgray!58}9 & \cellcolor{cgray!62}10 & \cellcolor{cgray!80}14 & \cellcolor{cgray!41}5 & 41 \\
+C8 & Heterogeneous query processing & \cellcolor{cgray!23}1 & \cellcolor{cgray!54}11 & \cellcolor{cgray!38}6 & \cellcolor{cgray!80}19 & \cellcolor{cgray!42}7 & 44 \\
+C9 & Storage disaggregation & \cellcolor{cgray!33}2 & \cellcolor{cgray!40}3 & \cellcolor{cgray!80}9 & \cellcolor{cgray!80}9 & \cellcolor{cgray!40}3 & 26 \\
+C10 & Distributed transactions & \cellcolor{cgray!33}2 & \cellcolor{cgray!60}6 & \cellcolor{cgray!73}8 & \cellcolor{cgray!80}9 & \cellcolor{cgray!40}3 & 28 \\
+C11 & Fault tolerance \& HA & \cellcolor{cgray!35}2 & \cellcolor{cgray!65}6 & \cellcolor{cgray!80}8 & \cellcolor{cgray!80}8 & \cellcolor{cgray!42}3 & 27 \\
+C12 & Migration \& portability & \cellcolor{cgray!35}1 & \cellcolor{cgray!80}4 &   & \cellcolor{cgray!50}2 & \cellcolor{cgray!35}1 & 8 \\
 C13 & Edge--cloud continuum &   &   & \cellcolor{cgray!80}1 & \cellcolor{cgray!80}1 &   & 2 \\
-C14 & AI--database convergence &   & \cellcolor{cgray!54}4 & \cellcolor{cgray!45}3 & \cellcolor{cgray!80}7 & \cellcolor{cgray!80}7 & 21 \\
-C15 & Serverless \& autonomy & \cellcolor{cgray!28}1 & \cellcolor{cgray!62}5 & \cellcolor{cgray!37}2 & \cellcolor{cgray!62}5 & \cellcolor{cgray!80}7 & 20 \\
-C16 & Governance \& lineage & \cellcolor{cgray!50}2 & \cellcolor{cgray!65}3 & \cellcolor{cgray!65}3 & \cellcolor{cgray!80}4 & \cellcolor{cgray!35}1 & 13 \\
+C14 & AI--database convergence &   & \cellcolor{cgray!45}3 & \cellcolor{cgray!45}3 & \cellcolor{cgray!80}7 & \cellcolor{cgray!62}5 & 18 \\
+C15 & Serverless \& autonomy & \cellcolor{cgray!32}1 & \cellcolor{cgray!68}4 & \cellcolor{cgray!44}2 & \cellcolor{cgray!80}5 & \cellcolor{cgray!80}5 & 17 \\
+C16 & Governance \& lineage & \cellcolor{cgray!60}2 & \cellcolor{cgray!60}2 & \cellcolor{cgray!80}3 & \cellcolor{cgray!80}3 & \cellcolor{cgray!40}1 & 11 \\
 C17 & Sustainability &   &   & \cellcolor{cgray!50}1 & \cellcolor{cgray!80}2 & \cellcolor{cgray!50}1 & 4 \\
-C18 & Standardization \& interop. & \cellcolor{cgray!32}3 & \cellcolor{cgray!64}11 & \cellcolor{cgray!60}10 & \cellcolor{cgray!80}15 & \cellcolor{cgray!48}7 & 46 \\
+C18 & Standardization \& interop. & \cellcolor{cgray!32}3 & \cellcolor{cgray!56}9 & \cellcolor{cgray!60}10 & \cellcolor{cgray!80}15 & \cellcolor{cgray!40}5 & 42 \\
 \midrule
-\multicolumn{2}{l}{\textbf{Total (challenge-mentions)}} & \textbf{37} & \textbf{107} & \textbf{101} & \textbf{153} & \textbf{100} & \textbf{498} \\
+\multicolumn{2}{l}{\textbf{Total (challenge-mentions)}} & \textbf{31} & \textbf{94} & \textbf{101} & \textbf{150} & \textbf{62} & \textbf{438} \\
 \end{longtable}
 \end{small}
 \end{landscape}
@@ -1209,22 +1210,22 @@ Complementing the cross-cutting perspective, challenges are organized by the fiv
 
 \begin{table}[t]
 \centering
-\caption{Surveyed papers grouped by the lifecycle phase(s) they address (derived from the catalog in Table~\ref{tab:catalog}; a survey may span several phases, so the counts sum to more than~96). Representative examples are cited by S-ID; the complete per-phase assignment is part of the archived catalog data.}
+\caption{Surveyed papers grouped by the lifecycle phase(s) they address (derived from the catalog in Table~\ref{tab:catalog}; a survey may span several phases, so the counts sum to more than~85). Representative examples are cited by S-ID; the complete per-phase assignment is part of the archived catalog data.}
 \label{tab:lifecycle-phases}
 \small
 \begin{tabular}{p{1.9cm} >{\raggedright\arraybackslash}p{6.4cm} >{\raggedright\arraybackslash}p{3.2cm} c}
 \toprule
 \textbf{Phase} & \textbf{Representative challenges} & \textbf{Examples} & \textbf{\textit{n}} \\
 \midrule
-Design & Schema design, data-model selection, workload characterization, compliance-by-design & S6, S12, S53, S72, S91 & 60 \\
+Design & Schema design, data-model selection, workload characterization, compliance-by-design & S5, S11, S47, S64, S82 & 54 \\
 \addlinespace
-Deployment & Provider selection \& lock-in, configuration automation, data ingestion/migration, multi-region setup & S4, S11, S22, S62, S93 & 23 \\
+Deployment & Provider selection \& lock-in, configuration automation, data ingestion/migration, multi-region setup & S4, S9, S18, S57, S84 & 22 \\
 \addlinespace
-Operation & Monitoring \& observability, backup/recovery, security operations, HTAP workload management & S1, S5, S16, S45, S80 & 47 \\
+Operation & Monitoring \& observability, backup/recovery, security operations, HTAP workload management & S1, S5, S13, S40, S72 & 39 \\
 \addlinespace
-Optimization & Learned query optimization, index/materialized-view selection, knob tuning, cost--performance balance & S2, S25, S37, S59, S88 & 74 \\
+Optimization & Learned query optimization, index/materialized-view selection, knob tuning, cost--performance balance & S2, S21, S32, S54, S78 & 65 \\
 \addlinespace
-Evolution & Schema evolution \& online DDL, technology migration, new-paradigm adoption, LLM integration & S4, S11, S39, S49, S65 & 7 \\
+Evolution & Schema evolution \& online DDL, technology migration, new-paradigm adoption, LLM integration & S4, S9, S34, S44, S60 & 6 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1389,7 +1390,7 @@ These questions show how the cross-cutting and lifecycle challenges of Section~\
 \section{Conclusions}
 \label{sec:conclusion}
 
-This paper has presented the first systematic meta-survey of cloud database research, synthesizing findings from 96 content-verified survey papers identified through a reproducible, scripted search covering January 1999 to July 2026. Applying the Kitchenham--Charters protocol with PRISMA~2020 reporting, the scattered landscape of cloud database challenges has been consolidated into a structured, dual-theme taxonomy.
+This paper has presented the first systematic meta-survey of cloud database research, synthesizing findings from 85 content-verified survey papers identified through a reproducible, scripted search covering January 1999 to July 2026. Applying the Kitchenham--Charters protocol with PRISMA~2020 reporting, the scattered landscape of cloud database challenges has been consolidated into a structured, dual-theme taxonomy.
 
 For the first theme, eighteen cross-cutting challenges are identified and synthesized: (1)~scalability and elasticity; (2)~consistency and the CAP/PACELC trade-offs; (3)~performance optimization and benchmarking; (4)~security and privacy; (5)~cost modeling and optimization; (6)~multi-tenancy and resource isolation; (7)~data-model diversity and multi-model integration; (8)~heterogeneous query processing; (9)~storage disaggregation and the log-as-database pattern; (10)~distributed transaction processing; (11)~fault tolerance, recovery, and high availability; (12)~data migration and cross-cloud portability; (13)~the edge--cloud data continuum; (14)~AI--database convergence; (15)~serverless and autonomous operation; (16)~data governance, provenance, and lineage; (17)~sustainability and energy efficiency; and (18)~standardization and interoperability. Across these, \emph{scalability}, \emph{consistency}, \emph{security}, \emph{cost}, and \emph{AI--database convergence} recur in the majority of the surveyed domains (Table~\ref{tab:challenge-year}), indicating where progress would benefit the field most broadly.
 
@@ -1403,7 +1404,7 @@ Accordingly, this meta-survey is intended to serve three purposes: (1)~as a comp
 
 \subsection*{Future work}
 
-Based on the analysis of 96 surveys and the challenges discussed in Sections~\ref{sec:discussion} and~\ref{sec:llm}, several priority research directions emerge:
+Based on the analysis of 85 surveys and the challenges discussed in Sections~\ref{sec:discussion} and~\ref{sec:llm}, several priority research directions emerge:
 \begin{itemize}
   \item \textbf{Foundational systems.} Cloud-native benchmarks that capture elasticity, multi-tenancy, and pricing; the transition of learned optimizers, learned indexes, and ML-based tuning from prototypes to production-ready, safely-degrading components; and a maturing vector-database ecosystem with standardized APIs and retrieval-quality metrics.
   \item \textbf{Architecture and query processing.} Cross-cloud middleware and portable open formats that reduce vendor lock-in; and federated query processing with consistent transactions across heterogeneous engines and the edge--fog--cloud continuum.
@@ -1413,6 +1414,9 @@ Based on the analysis of 96 surveys and the challenges discussed in Sections~\re
 
 \section*{Declaration of competing interest}
 The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+\section*{Declaration of Generative AI and AI-assisted technologies in the writing process}
+During the preparation of this work the authors used a generative AI large-language-model assistant (i)~to help draft, edit, and format portions of the manuscript and to prepare its figures and tables, and (ii)~to assist in executing the systematic review pipeline---running the scripted literature search, applying the written screening rubrics at the title/abstract and full-text stages, and proposing quality-assessment scores---with every machine-assisted decision logged in the archived screening records (see the Data availability statement). After using this tool, the authors reviewed and edited the content, re-checked all provisional inclusion decisions, adjudicated every borderline case and the venue-integrity audit, and take full responsibility for the content of the publication.
 
 \section*{Data availability}
 This study analyzes previously published survey papers, all of which are cited in the manuscript. The complete identification and selection pipeline is archived with the manuscript sources: the search scripts (\texttt{search/search\_surveys.py} and companions), the per-query search log (\texttt{search\_log.json}), the deduplicated candidate pool (\texttt{candidates.csv}), the per-record screening-decision log covering every stage of the PRISMA flow (\texttt{screening\_decisions.csv}), the quality-assessment scores (\texttt{qa\_scores.csv}), and the frozen machine-readable catalog (\texttt{catalog.csv}) from which every figure and table in Section~\ref{subsec:results} is generated. This permits verbatim re-execution of the search and independent audit of every inclusion decision.
@@ -1424,11 +1428,11 @@ This study analyzes previously published survey papers, all of which are cited i
 \section{Complete List of Surveyed Papers with Classification}
 \label{app:catalog}
 
-Table~\ref{tab:catalog} presents the complete catalog of the 96 surveyed papers, classified by primary topic, year, venue, quality-assessment score, and lifecycle phases covered.
+Table~\ref{tab:catalog} presents the complete catalog of the 85 surveyed papers, classified by primary topic, year, venue, quality-assessment score, and lifecycle phases covered.
 
 \begin{landscape}
 \begin{longtable}{c p{4.2cm} c p{2.1cm} p{2.4cm} c p{3.2cm}}
-\caption{Master catalog of surveyed papers (S1--S96), ordered chronologically. QA = quality-assessment score (out of 8; inclusion threshold $\geq$6).} \label{tab:catalog} \\
+\caption{Master catalog of surveyed papers (S1--S85), ordered chronologically. QA = quality-assessment score (out of 8; inclusion threshold $\geq$6).} \label{tab:catalog} \\
 \toprule
 \textbf{ID} & \textbf{Title (Abbreviated)} & \textbf{Year} & \textbf{Primary Topic} & \textbf{Venue} & \textbf{QA} & \textbf{Lifecycle Phases} \\
 \midrule
@@ -1454,185 +1458,163 @@ S5 & Confidential database-as-a-service approaches: taxonomy and sur\ldots{}~\ci
 \addlinespace
 S6 & Choosing the right NoSQL database for the job: a quality attrib\ldots{}~\cite{Lourenco2015NoSQL} & 2015 & NoSQL/NewSQL & J. Big Data & 7.5 & Design, Operate, Optimize \\
 \addlinespace
-S7 & Transaction Management Techniques and Practices in Current Clou\ldots{}~\cite{Waqas2015DistDB} & 2015 & Distributed DBs & IJDMS & 7 & Design, Operate, Optimize \\
+S7 & Database-as-a-Service for Big Data: An Overview~\cite{Abourezq2016DBaaS} & 2016 & DBaaS & IJACSA & 7 & Design, Deploy, Operate, Optimize \\
 \addlinespace
-S8 & Database-as-a-Service for Big Data: An Overview~\cite{Abourezq2016DBaaS} & 2016 & DBaaS & IJACSA & 7 & Design, Deploy, Operate, Optimize \\
+S8 & Some problems on graph databases~\cite{Guralnik2016GraphDB} & 2016 & Graph Databases & Proc. ISP RAS & 7 & Optimize \\
 \addlinespace
-S9 & Query Optimization Techniques in Graph Databases~\cite{Ammar2016GraphDB} & 2016 & Graph Databases & IJDMS & 7 & Optimize \\
+S9 & Cloud Migration Process: A Survey~\cite{Mathew2021CloudMigration} & 2016 & Cloud DB Migration & J. Syst. Softw. & 7.5 & Deploy, Evolve \\
 \addlinespace
-S10 & Some problems on graph databases~\cite{Guralnik2016GraphDB} & 2016 & Graph Databases & Proc. ISP RAS & 7 & Optimize \\
+S10 & Foundations of Query Languages for Graph DBs~\cite{Angles2020GraphDB} & 2017 & Graph Databases & ACM Comp. Surv. & 8 & Design, Optimize \\
 \addlinespace
-S11 & Cloud Migration Process: A Survey~\cite{Mathew2021CloudMigration} & 2016 & Cloud DB Migration & J. Syst. Softw. & 7.5 & Deploy, Evolve \\
+S11 & Open Source Time Series Databases: A Survey~\cite{Bader2017TSDB} & 2017 & Time-Series DBs & BTW & 6 & Design, Operate \\
 \addlinespace
-S12 & Foundations of Query Languages for Graph DBs~\cite{Angles2020GraphDB} & 2017 & Graph Databases & ACM Comp. Surv. & 8 & Design, Optimize \\
+S12 & Enforcing Privacy in Cloud Databases~\cite{Moghadam2017Sec} & 2017 & Security/Privacy & arXiv & 6.5 & Operate, Optimize \\
 \addlinespace
-S13 & Open Source Time Series Databases: A Survey~\cite{Bader2017TSDB} & 2017 & Time-Series DBs & BTW & 6 & Design, Operate \\
+S13 & Big data storage technologies: a survey~\cite{Siddiqa2017NoSQL} & 2017 & NoSQL/NewSQL & Front. Inf. Technol. Electron. Eng. & 7.5 & Design, Operate \\
 \addlinespace
-S14 & A Survey on Graph Queries Processing: Techniques and Methods~\cite{Dinari2017GraphDB} & 2017 & Graph Databases & IJCNIS & 6.5 & Optimize \\
+S14 & Evolutionary Algorithms for Query Op-timization in Distributed \ldots{}~\cite{Ali2018AI4DB} & 2018 & AI4DB/Learned Opt. & ADCAIJ & 6 & Optimize \\
 \addlinespace
-S15 & Survey on Security Mechanisms In NoSQL Databases~\cite{Dindoliwala2017Sec} & 2017 & Security/Privacy & IJARCS & 6 & Operate \\
+S15 & A Survey on NoSQL Stores~\cite{Davoudian2018NoSQL} & 2018 & NoSQL/NewSQL & ACM Comp. Surv. & 8 & Design, Deploy \\
 \addlinespace
-S16 & Enforcing Privacy in Cloud Databases~\cite{Moghadam2017Sec} & 2017 & Security/Privacy & arXiv & 6.5 & Operate, Optimize \\
+S16 & Saving Large Semantic Data in Cloud: A Survey of the Main DBaaS\ldots{}~\cite{Iancu2018DBaaS} & 2018 & DBaaS & Informatica Economica & 6 & Design, Deploy \\
 \addlinespace
-S17 & Big data storage technologies: a survey~\cite{Siddiqa2017NoSQL} & 2017 & NoSQL/NewSQL & Front. Inf. Technol. Electron. Eng. & 7.5 & Design, Operate \\
+S17 & A Survey on Graph Database Management Techniques for Huge Unstr\ldots{}~\cite{Patil2018GraphDB} & 2018 & Graph Databases & IJECE & 7 & Design, Optimize \\
 \addlinespace
-S18 & Evolutionary Algorithms for Query Op-timization in Distributed \ldots{}~\cite{Ali2018AI4DB} & 2018 & AI4DB/Learned Opt. & ADCAIJ & 6 & Optimize \\
+S18 & DBaaS Multitenancy, Auto-tuning and SLA Maintenance in Cloud En\ldots{}~\cite{Segalin2018DBaaS} & 2018 & DBaaS & iSys & 7 & Deploy, Operate, Optimize \\
 \addlinespace
-S19 & A Survey on NoSQL Stores~\cite{Davoudian2018NoSQL} & 2018 & NoSQL/NewSQL & ACM Comp. Surv. & 8 & Design, Deploy \\
+S19 & Recent NL Interfaces for Databases: A Comparative Survey~\cite{Affolter2019NLIDB} & 2019 & NL/LLM-Database & VLDB Journal & 7.5 & Optimize \\
 \addlinespace
-S20 & Saving Large Semantic Data in Cloud: A Survey of the Main DBaaS\ldots{}~\cite{Iancu2018DBaaS} & 2018 & DBaaS & Informatica Economica & 6 & Design, Deploy \\
+S20 & Consistency models in distributed systems: A survey on definiti\ldots{}~\cite{Aldin2019DistDB} & 2019 & Distributed DBs & arXiv & 6 & Operate, Optimize \\
 \addlinespace
-S21 & A Survey on Graph Database Management Techniques for Huge Unstr\ldots{}~\cite{Patil2018GraphDB} & 2018 & Graph Databases & IJECE & 7 & Design, Optimize \\
+S21 & Frameworks for Querying Databases Using Natural Language: A Lit\ldots{}~\cite{Dar2019NLIDB} & 2019 & NL/LLM-Database & arXiv & 6.5 & Optimize \\
 \addlinespace
-S22 & DBaaS Multitenancy, Auto-tuning and SLA Maintenance in Cloud En\ldots{}~\cite{Segalin2018DBaaS} & 2018 & DBaaS & iSys & 7 & Deploy, Operate, Optimize \\
+S22 & Architecture, Security \& Performance of DBaaS~\cite{Khan2019DaaSAnalytic} & 2019 & Security/Privacy & Trans. Emerg. Telecom. Tech. & 6.5 & Design, Operate \\
 \addlinespace
-S23 & Recent NL Interfaces for Databases: A Comparative Survey~\cite{Affolter2019NLIDB} & 2019 & NL/LLM-Database & VLDB Journal & 7.5 & Optimize \\
+S23 & A comparative analysis of adaptive consistency approaches in cl\ldots{}~\cite{Khelaifa2019DistDB} & 2019 & Distributed DBs & J. Parallel Distrib. Comput. & 7.5 & Operate, Optimize \\
 \addlinespace
-S24 & Consistency models in distributed systems: A survey on definiti\ldots{}~\cite{Aldin2019DistDB} & 2019 & Distributed DBs & arXiv & 6 & Operate, Optimize \\
+S24 & Multi-Model Databases: A New Journey~\cite{Lu2019MultiModel} & 2019 & Multi-Model DBs & ACM Comp. Surv. & 8 & Design, Deploy \\
 \addlinespace
-S25 & Database Query Optimization using Genetic Algorithms: A Systema\ldots{}~\cite{Chande2019AI4DB} & 2019 & AI4DB/Learned Opt. & IJATCSE & 7.5 & Optimize \\
+S25 & LSM-based storage techniques: a survey~\cite{Luo2019NoSQL} & 2019 & NoSQL/NewSQL & VLDB J. & 7.5 & Design, Optimize \\
 \addlinespace
-S26 & Frameworks for Querying Databases Using Natural Language: A Lit\ldots{}~\cite{Dar2019NLIDB} & 2019 & NL/LLM-Database & arXiv & 6.5 & Optimize \\
+S26 & The Query Translation Landscape: a Survey~\cite{Mami2019MultiModel} & 2019 & Multi-Model DBs & arXiv & 6.5 & Optimize \\
 \addlinespace
-S27 & Architecture, Security \& Performance of DBaaS~\cite{Khan2019DaaSAnalytic} & 2019 & Security/Privacy & Trans. Emerg. Telecom. Tech. & 6.5 & Design, Operate \\
+S27 & Blockchains vs. Distributed Databases: Dichotomy and Fusion~\cite{Ruan2019DistDB} & 2019 & Distributed DBs & arXiv & 6 & Design, Operate, Optimize \\
 \addlinespace
-S28 & A comparative analysis of adaptive consistency approaches in cl\ldots{}~\cite{Khelaifa2019DistDB} & 2019 & Distributed DBs & J. Parallel Distrib. Comput. & 7.5 & Operate, Optimize \\
+S28 & NoSQL Databases: Yearning for Disambiguation~\cite{Asaad2020NoSQL} & 2020 & NoSQL/NewSQL & arXiv & 6 & Design, Operate \\
 \addlinespace
-S29 & Multi-Model Databases: A New Journey~\cite{Lu2019MultiModel} & 2019 & Multi-Model DBs & ACM Comp. Surv. & 8 & Design, Deploy \\
+S29 & Benchmarking Graph Data Management and Processing Systems: A Su\ldots{}~\cite{Dayarathna2020Bench} & 2020 & Benchmarking & arXiv & 6.5 & Optimize \\
 \addlinespace
-S30 & LSM-based storage techniques: a survey~\cite{Luo2019NoSQL} & 2019 & NoSQL/NewSQL & VLDB J. & 7.5 & Design, Optimize \\
+S30 & SQL, NewSQL, and NoSQL Databases: A Comparative Survey~\cite{Khasawneh2020SQLNewSQL} & 2020 & NoSQL/NewSQL & IEEE ICICS & 6 & Design, Deploy \\
 \addlinespace
-S31 & The Query Translation Landscape: a Survey~\cite{Mami2019MultiModel} & 2019 & Multi-Model DBs & arXiv & 6.5 & Optimize \\
+S31 & Real-time analytics, hybrid transactional/analytical processing\ldots{}~\cite{Kuznetsov2020HTAP} & 2020 & HTAP Systems & Proc. ISP RAS & 6.5 & Design, Optimize \\
 \addlinespace
-S32 & Blockchains vs. Distributed Databases: Dichotomy and Fusion~\cite{Ruan2019DistDB} & 2019 & Distributed DBs & arXiv & 6 & Design, Operate, Optimize \\
+S32 & Benchmarking learned indexes~\cite{Marcus2020AI4DB} & 2020 & AI4DB/Learned Opt. & PVLDB & 7.5 & Optimize \\
 \addlinespace
-S33 & NoSQL Databases: Yearning for Disambiguation~\cite{Asaad2020NoSQL} & 2020 & NoSQL/NewSQL & arXiv & 6 & Design, Operate \\
+S33 & Querying in the Age of Graph Databases and Knowledge Graphs~\cite{Arenas2021GraphDB} & 2021 & Graph Databases & ACM SIGMOD Record & 6.5 & Design, Optimize \\
 \addlinespace
-S34 & Benchmarking Graph Data Management and Processing Systems: A Su\ldots{}~\cite{Dayarathna2020Bench} & 2020 & Benchmarking & arXiv & 6.5 & Optimize \\
+S34 & Big Data Storage Tools Using NoSQL Databases and Their Applicat\ldots{}~\cite{Faridoon2021NoSQL} & 2021 & NoSQL/NewSQL & Computing and Informatics & 8 & Design, Operate, Optimize, Evolve \\
 \addlinespace
-S35 & SQL, NewSQL, and NoSQL Databases: A Comparative Survey~\cite{Khasawneh2020SQLNewSQL} & 2020 & NoSQL/NewSQL & IEEE ICICS & 6 & Design, Deploy \\
+S35 & Evaluation of Distributed Databases in Hybrid Clouds and Edge C\ldots{}~\cite{Mansouri2021EdgeFog} & 2021 & Edge/Fog DBs & arXiv (Cornell University) & 6.5 & Design, Deploy, Optimize \\
 \addlinespace
-S36 & Real-time analytics, hybrid transactional/analytical processing\ldots{}~\cite{Kuznetsov2020HTAP} & 2020 & HTAP Systems & Proc. ISP RAS & 6.5 & Design, Optimize \\
+S36 & Comparison and evaluation of state-of-the-art LSM merge policies~\cite{Mao2021NoSQL} & 2021 & NoSQL/NewSQL & VLDB J. & 7.5 & Optimize \\
 \addlinespace
-S37 & Benchmarking learned indexes~\cite{Marcus2020AI4DB} & 2020 & AI4DB/Learned Opt. & PVLDB & 7.5 & Optimize \\
+S37 & Cloud Computing Security: Threats \& Mitigation--An SLR~\cite{Sanka2022CloudSecSurvey} & 2021 & Security/Privacy & IEEE Access & 7 & Operate \\
 \addlinespace
-S38 & Querying in the Age of Graph Databases and Knowledge Graphs~\cite{Arenas2021GraphDB} & 2021 & Graph Databases & ACM SIGMOD Record & 6.5 & Design, Optimize \\
+S38 & Constructing and analyzing the LSM compaction design space~\cite{Sarkar2021NoSQL} & 2021 & NoSQL/NewSQL & PVLDB & 7.5 & Design, Optimize \\
 \addlinespace
-S39 & Big Data Storage Tools Using NoSQL Databases and Their Applicat\ldots{}~\cite{Faridoon2021NoSQL} & 2021 & NoSQL/NewSQL & Computing and Informatics & 8 & Design, Operate, Optimize, Evolve \\
+S39 & The Forgotten Document-Oriented Database Management Systems: An\ldots{}~\cite{Truica2021NoSQL} & 2021 & NoSQL/NewSQL & Big Data Research & 7.5 & Design, Optimize \\
 \addlinespace
-S40 & Evaluation of Distributed Databases in Hybrid Clouds and Edge C\ldots{}~\cite{Mansouri2021EdgeFog} & 2021 & Edge/Fog DBs & arXiv (Cornell University) & 6.5 & Design, Deploy, Optimize \\
+S40 & Integrity Authentication for SQL Query Evaluation on Outsourced\ldots{}~\cite{Zhang2021Sec} & 2021 & Security/Privacy & IEEE TKDE & 7.5 & Operate \\
 \addlinespace
-S41 & Comparison and evaluation of state-of-the-art LSM merge policies~\cite{Mao2021NoSQL} & 2021 & NoSQL/NewSQL & VLDB J. & 7.5 & Optimize \\
+S41 & Towards Polyglot Data Stores -- Overview and Open Research Ques\ldots{}~\cite{Glake2022MultiModel} & 2022 & Multi-Model DBs & arXiv & 6.5 & Design, Optimize \\
 \addlinespace
-S42 & Cloud Computing Security: Threats \& Mitigation--An SLR~\cite{Sanka2022CloudSecSurvey} & 2021 & Security/Privacy & IEEE Access & 7 & Operate \\
+S42 & From Data Warehouse to Lakehouse: A Comparative Review~\cite{Harby2022Lakehouse} & 2022 & Data Lakehouse & IEEE BigData & 6.5 & Design, Deploy \\
 \addlinespace
-S43 & Constructing and analyzing the LSM compaction design space~\cite{Sarkar2021NoSQL} & 2021 & NoSQL/NewSQL & PVLDB & 7.5 & Design, Optimize \\
+S43 & A Survey of Comparison Different Cloud Database Performance: SQ\ldots{}~\cite{Shareef2022NoSQL} & 2022 & NoSQL/NewSQL & Passer J. & 7 & Design, Deploy, Operate, Optimize \\
 \addlinespace
-S44 & The Forgotten Document-Oriented Database Management Systems: An\ldots{}~\cite{Truica2021NoSQL} & 2021 & NoSQL/NewSQL & Big Data Research & 7.5 & Design, Optimize \\
+S44 & Database Meets AI: A Survey~\cite{Zhou2022AI4DB} & 2022 & AI4DB/Learned Opt. & IEEE TKDE & 8 & Optimize, Evolve \\
 \addlinespace
-S45 & Integrity Authentication for SQL Query Evaluation on Outsourced\ldots{}~\cite{Zhang2021Sec} & 2021 & Security/Privacy & IEEE TKDE & 7.5 & Operate \\
+S45 & Consistency issue and related trade-offs in distributed replica\ldots{}~\cite{Ahmed2023DistDB} & 2023 & Distributed DBs & Radioelectron. Comput. Syst. & 7 & Design, Operate, Optimize \\
 \addlinespace
-S46 & Towards Polyglot Data Stores -- Overview and Open Research Ques\ldots{}~\cite{Glake2022MultiModel} & 2022 & Multi-Model DBs & arXiv & 6.5 & Design, Optimize \\
+S46 & Demystifying Graph Databases: Analysis and Taxonomy of Data Org\ldots{}~\cite{Besta2023GraphDB} & 2023 & Graph Databases & ACM Comput. Surv. & 8 & Design, Operate, Optimize \\
 \addlinespace
-S47 & From Data Warehouse to Lakehouse: A Comparative Review~\cite{Harby2022Lakehouse} & 2022 & Data Lakehouse & IEEE BigData & 6.5 & Design, Deploy \\
+S47 & Multidimensional Modelling in NoSQL Database : A Systematic Rev\ldots{}~\cite{Ferreira2023NoSQLMD} & 2023 & NoSQL/NewSQL & CISTI & 7.5 & Design \\
 \addlinespace
-S48 & A Survey of Comparison Different Cloud Database Performance: SQ\ldots{}~\cite{Shareef2022NoSQL} & 2022 & NoSQL/NewSQL & Passer J. & 7 & Design, Deploy, Operate, Optimize \\
+S48 & Multi-model query languages: taming the variety of big data~\cite{Guo2023MultiModel} & 2023 & Multi-Model DBs & Distrib. Parallel Databases & 7.5 & Design, Optimize \\
 \addlinespace
-S49 & Database Meets AI: A Survey~\cite{Zhou2022AI4DB} & 2022 & AI4DB/Learned Opt. & IEEE TKDE & 8 & Optimize, Evolve \\
+S49 & SQL and NoSQL Database Software Architecture Performance Analys\ldots{}~\cite{Khan2023NoSQL} & 2023 & NoSQL/NewSQL & Big Data Cogn. Comput. & 8 & Design, Deploy, Optimize \\
 \addlinespace
-S50 & Consistency issue and related trade-offs in distributed replica\ldots{}~\cite{Ahmed2023DistDB} & 2023 & Distributed DBs & Radioelectron. Comput. Syst. & 7 & Design, Operate, Optimize \\
+S50 & A Survey on Property-Preserving Database Encryption Techniques \ldots{}~\cite{Koppenwallner2023Sec} & 2023 & Security/Privacy & arXiv & 6.5 & Design, Operate, Optimize \\
 \addlinespace
-S51 & Demystifying Graph Databases: Analysis and Taxonomy of Data Org\ldots{}~\cite{Besta2023GraphDB} & 2023 & Graph Databases & ACM Comput. Surv. & 8 & Design, Operate, Optimize \\
+S51 & A Comprehensive Survey on Vector Database: Storage and Retrieva\ldots{}~\cite{Ma2023VectorDB} & 2023 & Vector Databases & arXiv & 7.0 & Design, Optimize, Operate \\
 \addlinespace
-S52 & Multidimensional Modelling in NoSQL Database : A Systematic Rev\ldots{}~\cite{Ferreira2023NoSQLMD} & 2023 & NoSQL/NewSQL & CISTI & 7.5 & Design \\
+S52 & The World of Graph Databases from An Industry Perspective~\cite{Tian2023GraphDB} & 2023 & Graph Databases & ACM SIGMOD Rec. & 7.5 & Design, Operate, Optimize \\
 \addlinespace
-S53 & Multi-model query languages: taming the variety of big data~\cite{Guo2023MultiModel} & 2023 & Multi-Model DBs & Distrib. Parallel Databases & 7.5 & Design, Optimize \\
+S53 & An Overview on Cloud Distributed Databases for Business Environ\ldots{}~\cite{Vikiru2023DBaaS} & 2023 & DBaaS & arXiv & 6 & Design, Deploy, Operate, Optimize \\
 \addlinespace
-S54 & SQL and NoSQL Database Software Architecture Performance Analys\ldots{}~\cite{Khan2023NoSQL} & 2023 & NoSQL/NewSQL & Big Data Cogn. Comput. & 8 & Design, Deploy, Optimize \\
+S54 & Learned Index: A Comprehensive Experimental Evaluation~\cite{Woltmann2023DNNIndex} & 2023 & AI4DB/Learned Opt. & PVLDB & 7 & Optimize \\
 \addlinespace
-S55 & A Survey on Property-Preserving Database Encryption Techniques \ldots{}~\cite{Koppenwallner2023Sec} & 2023 & Security/Privacy & arXiv & 6.5 & Design, Operate, Optimize \\
+S55 & Understanding Graph Databases: A Comprehensive Tutorial and Sur\ldots{}~\cite{Anuyah2024GraphDB} & 2024 & Graph Databases & arXiv & 6 & Design, Optimize \\
 \addlinespace
-S56 & A Comprehensive Survey on Vector Database: Storage and Retrieva\ldots{}~\cite{Ma2023VectorDB} & 2023 & Vector Databases & arXiv & 7.0 & Design, Optimize, Operate \\
+S56 & Energy Consumption and Performance Evaluation of Multi-Model No\ldots{}~\cite{Falcao2024Bench} & 2024 & Benchmarking & R. Inform. Teor. Apl. & 7 & Design, Optimize \\
 \addlinespace
-S57 & The World of Graph Databases from An Industry Perspective~\cite{Tian2023GraphDB} & 2023 & Graph Databases & ACM SIGMOD Rec. & 7.5 & Design, Operate, Optimize \\
+S57 & Retrieval-Augmented Generation for LLMs: A Survey~\cite{Gao2024RAGSurvey} & 2024 & NL/LLM-Database & arXiv & 7 & Deploy, Operate \\
 \addlinespace
-S58 & An Overview on Cloud Distributed Databases for Business Environ\ldots{}~\cite{Vikiru2023DBaaS} & 2023 & DBaaS & arXiv & 6 & Design, Deploy, Operate, Optimize \\
+S58 & Databases in Edge and Fog Environments: A Survey~\cite{Gomes2024EdgeFog} & 2024 & Edge/Fog DBs & ACM Comp. Surv. & 7.5 & Design, Deploy, Operate \\
 \addlinespace
-S59 & Learned Index: A Comprehensive Experimental Evaluation~\cite{Woltmann2023DNNIndex} & 2023 & AI4DB/Learned Opt. & PVLDB & 7 & Optimize \\
+S59 & HTAP Databases: A Survey~\cite{Haas2024HTAPSurvey} & 2024 & HTAP Systems & arXiv & 6.5 & Design, Operate, Optimize \\
 \addlinespace
-S60 & Understanding Graph Databases: A Comprehensive Tutorial and Sur\ldots{}~\cite{Anuyah2024GraphDB} & 2024 & Graph Databases & arXiv & 6 & Design, Optimize \\
+S60 & The evolution of data storage architectures: examining the secu\ldots{}~\cite{Janssen2024Lakehouse} & 2024 & Data Lakehouse & J. Data Inf. Manag. & 7.5 & Design, Operate, Evolve \\
 \addlinespace
-S61 & Energy Consumption and Performance Evaluation of Multi-Model No\ldots{}~\cite{Falcao2024Bench} & 2024 & Benchmarking & R. Inform. Teor. Apl. & 7 & Design, Optimize \\
+S61 & Cloud-Native Databases: A Survey~\cite{Li2024CloudNativeSurvey} & 2024 & Cloud-Native Arch. & IEEE TKDE & 8 & Design, Deploy, Operate, Optimize \\
 \addlinespace
-S62 & Retrieval-Augmented Generation for LLMs: A Survey~\cite{Gao2024RAGSurvey} & 2024 & NL/LLM-Database & arXiv & 7 & Deploy, Operate \\
+S62 & A survey of LSM-Tree based Indexes, Data Systems and KV-stores~\cite{Mishra2024NoSQL} & 2024 & NoSQL/NewSQL & IEEE SCEECS & 7.5 & Design, Optimize \\
 \addlinespace
-S63 & Databases in Edge and Fog Environments: A Survey~\cite{Gomes2024EdgeFog} & 2024 & Edge/Fog DBs & ACM Comp. Surv. & 7.5 & Design, Deploy, Operate \\
+S63 & A Systematic Review of Automated Classification for Simple and \ldots{}~\cite{Nurhadi2024AI4DB} & 2024 & AI4DB/Learned Opt. & Comput. Syst. Sci. Eng. & 7.5 & Optimize, Operate \\
 \addlinespace
-S64 & HTAP Databases: A Survey~\cite{Haas2024HTAPSurvey} & 2024 & HTAP Systems & arXiv & 6.5 & Design, Operate, Optimize \\
+S64 & Survey of Vector Database Management Systems~\cite{Pan2024VectorDB} & 2024 & Vector Databases & VLDB Journal & 7.5 & Design, Deploy, Optimize \\
 \addlinespace
-S65 & The evolution of data storage architectures: examining the secu\ldots{}~\cite{Janssen2024Lakehouse} & 2024 & Data Lakehouse & J. Data Inf. Manag. & 7.5 & Design, Operate, Evolve \\
+S65 & Data Lakehouse for Time Series Data: An SLR~\cite{Pohl2024LakehouseTS} & 2024 & Data Lakehouse & IEEE BigData & 6.5 & Design, Operate \\
 \addlinespace
-S66 & Cloud-Native Databases: A Survey~\cite{Li2024CloudNativeSurvey} & 2024 & Cloud-Native Arch. & IEEE TKDE & 8 & Design, Deploy, Operate, Optimize \\
+S66 & Data Modeling for Connected Data -- A systematic literature rev\ldots{}~\cite{Santos2024GraphDB} & 2024 & Graph Databases & arXiv & 7 & Design, Evolve \\
 \addlinespace
-S67 & A survey of LSM-Tree based Indexes, Data Systems and KV-stores~\cite{Mishra2024NoSQL} & 2024 & NoSQL/NewSQL & IEEE SCEECS & 7.5 & Design, Optimize \\
+S67 & Sharding Distributed Databases: A Critical Review~\cite{Solat2024DistDB} & 2024 & Distributed DBs & arXiv & 6 & Design, Operate, Optimize \\
 \addlinespace
-S68 & A Systematic Review of Automated Classification for Simple and \ldots{}~\cite{Nurhadi2024AI4DB} & 2024 & AI4DB/Learned Opt. & Comput. Syst. Sci. Eng. & 7.5 & Optimize, Operate \\
+S68 & A survey on hybrid transactional and analytical processing~\cite{Song2024HTAP} & 2024 & HTAP Systems & VLDB J. & 7.5 & Design, Optimize \\
 \addlinespace
-S69 & Survey of Vector Database Management Systems~\cite{Pan2024VectorDB} & 2024 & Vector Databases & VLDB Journal & 7.5 & Design, Deploy, Optimize \\
+S69 & DBMS Performance Comparisons: An SLR~\cite{Taipalus2024DBMSPerf} & 2024 & Benchmarking & J. Syst. Softw. & 7.5 & Optimize \\
 \addlinespace
-S70 & Data Lakehouse for Time Series Data: An SLR~\cite{Pohl2024LakehouseTS} & 2024 & Data Lakehouse & IEEE BigData & 6.5 & Design, Operate \\
+S70 & Vector database management systems: Fundamental concepts, use-c\ldots{}~\cite{Taipalus2024VectorDB} & 2024 & Vector Databases & Cogn. Syst. Res. & 7.5 & Design, Operate, Optimize \\
 \addlinespace
-S71 & Data Modeling for Connected Data -- A systematic literature rev\ldots{}~\cite{Santos2024GraphDB} & 2024 & Graph Databases & arXiv & 7 & Design, Evolve \\
+S71 & Cassandra vs. MongoDB: A Systematic Review~\cite{Tu2024CassandraMongo} & 2024 & NoSQL/NewSQL & IEEE BDAI & 6 & Design, Optimize \\
 \addlinespace
-S72 & Database Security Issues and Challenges in Cloud Computing~\cite{Satish2024Sec} & 2024 & Security/Privacy & IJRITCC & 6.5 & Design, Operate \\
+S72 & Automatic Configuration Tuning on Cloud Database: A Survey~\cite{Zhang2024AI4DB} & 2024 & AI4DB/Learned Opt. & arXiv & 6.5 & Optimize, Operate \\
 \addlinespace
-S73 & Sharding Distributed Databases: A Critical Review~\cite{Solat2024DistDB} & 2024 & Distributed DBs & arXiv & 6 & Design, Operate, Optimize \\
+S73 & A Survey of Learned Indexes for the Multi-dimensional Space~\cite{AbdullahAlMamun2025AI4DB} & 2025 & AI4DB/Learned Opt. & ACM Comput. Surv. & 7.5 & Design, Optimize \\
 \addlinespace
-S74 & A survey on hybrid transactional and analytical processing~\cite{Song2024HTAP} & 2024 & HTAP Systems & VLDB J. & 7.5 & Design, Optimize \\
+S74 & Survey: On the Landscape of Graph Databases~\cite{Coimbra2025GraphDB2} & 2025 & Graph Databases & arXiv & 7 & Design, Deploy, Operate, Optimize \\
 \addlinespace
-S75 & DBMS Performance Comparisons: An SLR~\cite{Taipalus2024DBMSPerf} & 2024 & Benchmarking & J. Syst. Softw. & 7.5 & Optimize \\
+S75 & Evaluating Performance and User Perceptions of Multi-Cloud Data\ldots{}~\cite{Daundasekara2025MultiCloud} & 2025 & DBaaS & IEEE ICAC & 6.5 & Deploy, Operate, Optimize \\
 \addlinespace
-S76 & Vector database management systems: Fundamental concepts, use-c\ldots{}~\cite{Taipalus2024VectorDB} & 2024 & Vector Databases & Cogn. Syst. Res. & 7.5 & Design, Operate, Optimize \\
+S76 & When Large Language Models Meet Vector Databases: A Survey~\cite{Jing2025NLIDB} & 2025 & NL/LLM-Database & IEEE AIxMM & 7 & Design, Optimize \\
 \addlinespace
-S77 & Cassandra vs. MongoDB: A Systematic Review~\cite{Tu2024CassandraMongo} & 2024 & NoSQL/NewSQL & IEEE BDAI & 6 & Design, Optimize \\
+S77 & NoSQL Databases: A Survey~\cite{Kaur2021NoSQLReview} & 2025 & NoSQL/NewSQL & ARIMA & 7.5 & Design, Deploy \\
 \addlinespace
-S78 & Automatic Configuration Tuning on Cloud Database: A Survey~\cite{Zhang2024AI4DB} & 2024 & AI4DB/Learned Opt. & arXiv & 6.5 & Optimize, Operate \\
+S78 & Graph Neural Networks for Databases: A Survey~\cite{Li2025AI4DB} & 2025 & AI4DB/Learned Opt. & arXiv & 6.5 & Optimize \\
 \addlinespace
-S79 & A Survey of Learned Indexes for the Multi-dimensional Space~\cite{AbdullahAlMamun2025AI4DB} & 2025 & AI4DB/Learned Opt. & ACM Comput. Surv. & 7.5 & Design, Optimize \\
+S79 & Evaluating Learned Indexes in LSM-tree Systems: Benchmarks,Insi\ldots{}~\cite{Liu2025AI4DB} & 2025 & AI4DB/Learned Opt. & arXiv & 6.5 & Optimize \\
 \addlinespace
-S80 & AI-Powered Database Management: Predictive Analytics for Perfor\ldots{}~\cite{Ali2025AI4DB} & 2025 & AI4DB/Learned Opt. & Eng. Technol. J. & 7 & Optimize, Operate \\
+S80 & How good are multi-dimensional learned indexes? An experimental\ldots{}~\cite{Liu2025Bench} & 2025 & Benchmarking & VLDB J. & 7.5 & Optimize \\
 \addlinespace
-S81 & Survey: On the Landscape of Graph Databases~\cite{Coimbra2025GraphDB2} & 2025 & Graph Databases & arXiv & 7 & Design, Deploy, Operate, Optimize \\
+S81 & Survey on Cloud Database Security: Cryptographic Techniques, In\ldots{}~\cite{Mahule2025Sec} & 2025 & Security/Privacy & EPJ Web Conf. & 7.5 & Operate, Optimize \\
 \addlinespace
-S82 & Evaluating Performance and User Perceptions of Multi-Cloud Data\ldots{}~\cite{Daundasekara2025MultiCloud} & 2025 & DBaaS & IEEE ICAC & 6.5 & Deploy, Operate, Optimize \\
+S82 & NoSQL Data Warehouse Optimizing Models~\cite{Mouhibha2025NoSQLDW} & 2025 & NoSQL/NewSQL & Big Data Research & 6 & Design, Optimize \\
 \addlinespace
-S83 & A Survey on Distributed Database Systems in the Era of Big Data~\cite{Hasan2025DistDB} & 2025 & Distributed DBs & Eng. Technol. J. & 6 & Design, Operate, Optimize \\
+S83 & Learning database optimization techniques: the state-of-the-art\ldots{}~\cite{Qiao2025AI4DB} & 2025 & AI4DB/Learned Opt. & Front. Comput. Sci. & 7.5 & Optimize \\
 \addlinespace
-S84 & When Large Language Models Meet Vector Databases: A Survey~\cite{Jing2025NLIDB} & 2025 & NL/LLM-Database & arXiv & 7 & Design, Optimize \\
+S84 & Evaluating the Performance of NoSQL Databases for Big Data in C\ldots{}~\cite{Topcu2025NoSQL} & 2025 & NoSQL/NewSQL & HighTech Innov. J. & 7.5 & Deploy, Optimize \\
 \addlinespace
-S85 & NoSQL Databases: A Survey~\cite{Kaur2021NoSQLReview} & 2025 & NoSQL/NewSQL & ARIMA & 7.5 & Design, Deploy \\
-\addlinespace
-S86 & Graph Neural Networks for Databases: A Survey~\cite{Li2025AI4DB} & 2025 & AI4DB/Learned Opt. & arXiv & 6.5 & Optimize \\
-\addlinespace
-S87 & Evaluating Learned Indexes in LSM-tree Systems: Benchmarks,Insi\ldots{}~\cite{Liu2025AI4DB} & 2025 & AI4DB/Learned Opt. & arXiv & 6.5 & Optimize \\
-\addlinespace
-S88 & How good are multi-dimensional learned indexes? An experimental\ldots{}~\cite{Liu2025Bench} & 2025 & Benchmarking & VLDB J. & 7.5 & Optimize \\
-\addlinespace
-S89 & Data Integrity and Consistency Challenges in Distributed Databa\ldots{}~\cite{Mahmoud2025DistDB} & 2025 & Distributed DBs & Eng. Technol. J. & 6.5 & Design, Operate, Optimize \\
-\addlinespace
-S90 & Survey on Cloud Database Security: Cryptographic Techniques, In\ldots{}~\cite{Mahule2025Sec} & 2025 & Security/Privacy & EPJ Web Conf. & 7.5 & Operate, Optimize \\
-\addlinespace
-S91 & NoSQL Data Warehouse Optimizing Models~\cite{Mouhibha2025NoSQLDW} & 2025 & NoSQL/NewSQL & Big Data Research & 6 & Design, Optimize \\
-\addlinespace
-S92 & Learning database optimization techniques: the state-of-the-art\ldots{}~\cite{Qiao2025AI4DB} & 2025 & AI4DB/Learned Opt. & Front. Comput. Sci. & 7.5 & Optimize \\
-\addlinespace
-S93 & Evaluating the Performance of NoSQL Databases for Big Data in C\ldots{}~\cite{Topcu2025NoSQL} & 2025 & NoSQL/NewSQL & HighTech Innov. J. & 7.5 & Deploy, Optimize \\
-\addlinespace
-S94 & Toward Understanding Bugs in Vector Database Management Systems~\cite{Xie2025VectorDB} & 2025 & Vector Databases & arXiv & 7 & Deploy, Operate, Optimize \\
-\addlinespace
-S95 & Comparative Analysis of SQL and NoSQL Databases: Data Models, U\ldots{}~\cite{Ying2025NoSQL} & 2025 & NoSQL/NewSQL & Info. Res. Commun. & 7 & Design, Operate, Optimize \\
-\addlinespace
-S96 & A Survey of Emerging Trends and Algorithmic Solutions inCloud-N\ldots{}~\cite{Allam2026CloudNative} & 2026 & Cloud-Native Arch. & JSAA & 7.5 & Design, Deploy, Operate, Optimize, Evolve \\
+S85 & Toward Understanding Bugs in Vector Database Management Systems~\cite{Xie2025VectorDB} & 2025 & Vector Databases & arXiv & 7 & Deploy, Operate, Optimize \\
 \end{longtable}
 \end{landscape}
 

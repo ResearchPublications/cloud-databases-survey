@@ -115,7 +115,9 @@ def main():
         fr = [d for d in dec if d["stage"] == "freeze_review" and arm(d["record_id"]) == "api"]
         fr_ex = sum(1 for d in fr if d["decision"] == "exclude")
         fr_merge = sum(1 for d in fr if d["decision"] == "merge")
-        api_included = ft_inc - fr_ex - fr_merge
+        va = [d for d in dec if d["stage"] == "venue_audit" and d["decision"] == "exclude"]
+        va_api = sum(1 for d in va if arm(d["record_id"]) == "api")
+        api_included = ft_inc - fr_ex - fr_merge - va_api
         # NOTE: full_text 'include' rows above are QA>=6 includes only if the
         # threshold was applied upstream; below-threshold appear as QA-threshold rows.
         man_inc = sum(1 for d in dec if arm(d["record_id"]) == "manual"
@@ -134,7 +136,7 @@ def main():
         print(f"  screened (title/abstract): {len(ta)} -> excluded {ta_ex} + strict-recheck {rc_ex - rc_ov}")
         print(f"  reports sought: {sought}; not retrieved (EC5): {nr}; assessed: {assessed}")
         print(f"  full-text excluded by code: {ft_by}")
-        print(f"  full-text includes: {ft_inc}; freeze-review exclusions: {fr_ex}; merged duplicate: {fr_merge}")
+        print(f"  full-text includes: {ft_inc}; freeze-review exclusions: {fr_ex}; merged duplicate: {fr_merge}; venue-integrity exclusions (EC6): {va_api}")
         print(f"  included via databases: {api_included}")
         print(f"ARM B - other methods: prior catalog 24 (2 fail raised QA bar -> {prior} carried), "
               f"manual PDFs 5 -> included {man_inc}, snowballing {len(sb_ids)} -> not retrieved {sb_nr}, included 0")

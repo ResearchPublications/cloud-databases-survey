@@ -9704,3 +9704,23 @@ CAND-6172,Optimizing Data Lakehouse Architectures for Scalable Real-Time Analyti
 CAND-6292,The evolution of database in navigating data driven cloud technology,,freeze_review,exclude,QA-threshold-raised,QA=4.5 below the raised inclusion threshold (>=6/8) adopted for the expanded pool,2026-07-05
 CAND-6329,Vector Databases and Embedding Stores for Pipeline Observability,,freeze_review,exclude,QA-threshold-raised,QA=4 below the raised inclusion threshold (>=6/8) adopted for the expanded pool,2026-07-05
 CAND-M-003,Advancements in Cloud Database Migration: Current Innovations and Future Prospects for Scalable and Secure Transitions,,freeze_review,exclude,QA-threshold-raised,QA=5.5 below the raised inclusion threshold (>=6/8) adopted for the expanded pool,2026-07-05
+CAND-5790,Ali2025AI4DB,,venue_audit,exclude,EC6,Eng. Technol. J. (Everant): self-claimed impact factor printed on pages; no reputable indexing,2026-07-05
+CAND-5841,Hasan2025DistDB,,venue_audit,exclude,EC6,Eng. Technol. J. (Everant): self-claimed impact factor printed on pages; no reputable indexing,2026-07-05
+CAND-5940,Mahmoud2025DistDB,,venue_audit,exclude,EC6,Eng. Technol. J. (Everant): self-claimed impact factor printed on pages; no reputable indexing,2026-07-05
+CAND-6377,Allam2026CloudNative,,venue_audit,exclude,EC6,JSAA: nonstandard DOI registrant prefix 10.66279; venue unverifiable,2026-07-05
+CAND-5401,Satish2024Sec,,venue_audit,exclude,EC6,IJRITCC (Auricle): Scopus coverage discontinued; watchlisted publisher,2026-07-05
+CAND-3161,Chande2019AI4DB,,venue_audit,exclude,EC6,IJATCSE (WARSE): Scopus coverage discontinued 2021; watchlisted publisher,2026-07-05
+CAND-2631,Dindoliwala2017Sec,,venue_audit,exclude,EC6,IJARCS: watchlisted low-tier venue; no reputable indexing,2026-07-05
+CAND-2020,Waqas2015DistDB,,venue_audit,exclude,EC6,IJDMS (AIRCC): Beall-listed publisher; not in Scopus or DOAJ,2026-07-05
+CAND-2245,Ammar2016GraphDB,,venue_audit,exclude,EC6,IJDMS (AIRCC): Beall-listed publisher; not in Scopus or DOAJ,2026-07-05
+CAND-5906,Ying2025NoSQL,,venue_audit,exclude,EC6,Info. Res. Commun.: venue could not be verified as a functioning peer-reviewed outlet,2026-07-05
+CAND-2400,Dinari2017GraphDB,,venue_audit,exclude,EC6,IJCNIS (MECS Press): watchlisted publisher; not in Scopus or DOAJ,2026-07-05
+CAND-2136,Abourezq2016DBaaS,,venue_audit,retain,QA7-tier,IJACSA (SAI): currently Scopus-indexed; QA7 remains 0.5,2026-07-05
+CAND-2774,Patil2018GraphDB,,venue_audit,retain,QA7-tier,IJECE (IAES): currently Scopus-indexed; QA7 remains 0.5,2026-07-05
+CAND-6008,Topcu2025NoSQL,,venue_audit,retain,QA7-tier,HighTech Innov. J.: currently Scopus-indexed; QA7 remains 0.5,2026-07-05
+CAND-M-004,Shareef2022NoSQL,,venue_audit,retain,QA7-tier,Passer J.: DOAJ-listed university journal; QA7 remains 0.5,2026-07-05
+CAND-2844,Ali2018AI4DB,,venue_audit,retain,QA7-tier,ADCAIJ: DOAJ-listed university press journal; QA7 remains 0.5,2026-07-05
+CAND-2970,Iancu2018DBaaS,,venue_audit,retain,QA7-tier,Informatica Economica: DOAJ-listed; QA7 remains 0.5,2026-07-05
+CAND-2816,Segalin2018DBaaS,,venue_audit,retain,QA7-tier,iSys (SBC): society journal; QA7 remains 0.5,2026-07-05
+CAND-5445,Falcao2024Bench,,venue_audit,retain,QA7-tier,RITA (UFRGS): university journal; QA7 remains 0.5,2026-07-05
+Kaur2021NoSQLReview,Kaur2021NoSQLReview,,venue_audit,retain,QA7-tier,ARIMA (episciences): overlay journal; QA7 remains 0.5,2026-07-05

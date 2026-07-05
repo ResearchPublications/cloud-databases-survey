@@ -97,8 +97,10 @@ def main():
             data = http_json(f"https://api.crossref.org/works/{urllib.parse.quote(doi)}")
             if data:
                 m = data["message"]
-                meta["authors"] = [f"{a.get('given','')} {a.get('family','')}".strip()
-                                    for a in m.get("author", [])]
+                meta["authors"] = [n for n in
+                                   ((a.get("name") or f"{a.get('given','')} {a.get('family','')}").strip()
+                                    for a in m.get("author", []))
+                                   if n]
                 if m.get("title"): meta["title"] = m["title"][0]
                 if m.get("container-title"): meta["venue"] = m["container-title"][0]
                 dp = m.get("published", {}).get("date-parts", [[None]])

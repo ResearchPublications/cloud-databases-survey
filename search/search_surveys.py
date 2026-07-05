@@ -74,6 +74,9 @@ def norm_doi(doi):
         return ""
     doi = doi.strip().lower()
     doi = re.sub(r"^https?://(dx\.)?doi\.org/", "", doi)
+    doi = re.sub(r"/(pdf|full|abstract)$", "", doi)
+    if not re.match(r"^10\.\d{4,9}/\S+$", doi):
+        return ""
     return doi
 
 

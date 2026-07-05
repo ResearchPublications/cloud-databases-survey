@@ -36,45 +36,45 @@ Warning--can't use both volume and number fields in Zhou2024DBot
 Warning--can't use both volume and number fields in Sarkar2021NoSQL
 Warning--there's a number but no volume in Ahmed2023DistDB
 Warning--empty pages in Mahule2025Sec
-You've used 179 entries,
+You've used 167 entries,
             2952 wiz_defined-function locations,
-            1846 strings with 48431 characters,
-and the built_in function-call counts, 62590 in all, are:
-= -- 5791
-> -- 2726
-< -- 38
-+ -- 1028
-- -- 849
-* -- 4962
-:= -- 8508
-add.period$ -- 322
-call.type$ -- 179
-change.case$ -- 182
+            1771 strings with 45869 characters,
+and the built_in function-call counts, 59235 in all, are:
+= -- 5437
+> -- 2618
+< -- 39
++ -- 984
+- -- 817
+* -- 4696
+:= -- 8035
+add.period$ -- 299
+call.type$ -- 167
+change.case$ -- 170
 chr.to.int$ -- 0
-cite$ -- 212
-duplicate$ -- 1816
-empty$ -- 6678
-format.name$ -- 1002
-if$ -- 15930
+cite$ -- 200
+duplicate$ -- 1735
+empty$ -- 6319
+format.name$ -- 963
+if$ -- 15067
 int.to.chr$ -- 0
-int.to.str$ -- 179
-missing$ -- 153
-newline$ -- 690
-num.names$ -- 179
-pop$ -- 1137
+int.to.str$ -- 167
+missing$ -- 143
+newline$ -- 643
+num.names$ -- 167
+pop$ -- 1087
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 4118
+skip$ -- 3887
 stack$ -- 0
-substring$ -- 2749
-swap$ -- 719
-text.length$ -- 38
+substring$ -- 2617
+swap$ -- 689
+text.length$ -- 39
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 33
-while$ -- 411
-width$ -- 182
-write$ -- 1778
+while$ -- 388
+width$ -- 170
+write$ -- 1658
 (There were 33 warnings)

@@ -5,93 +5,82 @@ S3,Deka2014CloudDBSurvey,CAND-1296,A Survey of Cloud Database Systems,2014,IEEE 
 S4,Litchfield2014DBaaS,CAND-M-005,"A Systematic Review of Cloud Computing, Big Data and Databases …",2014,AMCIS,conference,DBaaS,8,Design;Deploy;Operate;Optimize;Evolve
 S5,Kohler2015Sec,CAND-1818,Confidential database-as-a-service approaches: taxonomy and sur…,2015,J. Cloud Comput.,journal,Security/Privacy,7.5,Design;Operate;Optimize
 S6,Lourenco2015NoSQL,CAND-1806,Choosing the right NoSQL database for the job: a quality attrib…,2015,J. Big Data,journal,NoSQL/NewSQL,7.5,Design;Operate;Optimize
-S7,Waqas2015DistDB,CAND-2020,Transaction Management Techniques and Practices in Current Clou…,2015,IJDMS,journal,Distributed DBs,7,Design;Operate;Optimize
-S8,Abourezq2016DBaaS,CAND-2136,Database-as-a-Service for Big Data: An Overview,2016,IJACSA,journal,DBaaS,7,Design;Deploy;Operate;Optimize
-S9,Ammar2016GraphDB,CAND-2245,Query Optimization Techniques in Graph Databases,2016,IJDMS,journal,Graph Databases,7,Optimize
-S10,Guralnik2016GraphDB,CAND-2272,Some problems on graph databases,2016,Proc. ISP RAS,journal,Graph Databases,7,Optimize
-S11,Mathew2021CloudMigration,,Cloud Migration Process: A Survey,2016,J. Syst. Softw.,journal,Cloud DB Migration,7.5,Deploy;Evolve
-S12,Angles2020GraphDB,,Foundations of Query Languages for Graph DBs,2017,ACM Comp. Surv.,journal,Graph Databases,8,Design;Optimize
-S13,Bader2017TSDB,,Open Source Time Series Databases: A Survey,2017,BTW,conference,Time-Series DBs,6,Design;Operate
-S14,Dinari2017GraphDB,CAND-2400,A Survey on Graph Queries Processing: Techniques and Methods,2017,IJCNIS,journal,Graph Databases,6.5,Optimize
-S15,Dindoliwala2017Sec,CAND-2631,Survey on Security Mechanisms In NoSQL Databases,2017,IJARCS,journal,Security/Privacy,6,Operate
-S16,Moghadam2017Sec,CAND-2492,Enforcing Privacy in Cloud Databases,2017,arXiv,arxiv,Security/Privacy,6.5,Operate;Optimize
-S17,Siddiqa2017NoSQL,CAND-2427,Big data storage technologies: a survey,2017,Front. Inf. Technol. Electron. Eng.,journal,NoSQL/NewSQL,7.5,Design;Operate
-S18,Ali2018AI4DB,CAND-2844,Evolutionary Algorithms for Query Op-timization in Distributed …,2018,ADCAIJ,journal,AI4DB/Learned Opt.,6,Optimize
-S19,Davoudian2018NoSQL,,A Survey on NoSQL Stores,2018,ACM Comp. Surv.,journal,NoSQL/NewSQL,8,Design;Deploy
-S20,Iancu2018DBaaS,CAND-2970,Saving Large Semantic Data in Cloud: A Survey of the Main DBaaS…,2018,Informatica Economica,journal,DBaaS,6,Design;Deploy
-S21,Patil2018GraphDB,CAND-2774,A Survey on Graph Database Management Techniques for Huge Unstr…,2018,IJECE,journal,Graph Databases,7,Design;Optimize
-S22,Segalin2018DBaaS,CAND-2816,"DBaaS Multitenancy, Auto-tuning and SLA Maintenance in Cloud En…",2018,iSys,journal,DBaaS,7,Deploy;Operate;Optimize
-S23,Affolter2019NLIDB,,Recent NL Interfaces for Databases: A Comparative Survey,2019,VLDB Journal,journal,NL/LLM-Database,7.5,Optimize
-S24,Aldin2019DistDB,CAND-3154,Consistency models in distributed systems: A survey on definiti…,2019,arXiv,arxiv,Distributed DBs,6,Operate;Optimize
-S25,Chande2019AI4DB,CAND-3161,Database Query Optimization using Genetic Algorithms: A Systema…,2019,IJATCSE,journal,AI4DB/Learned Opt.,7.5,Optimize
-S26,Dar2019NLIDB,CAND-3204,Frameworks for Querying Databases Using Natural Language: A Lit…,2019,arXiv,arxiv,NL/LLM-Database,6.5,Optimize
-S27,Khan2019DaaSAnalytic,,"Architecture, Security & Performance of DBaaS",2019,Trans. Emerg. Telecom. Tech.,journal,Security/Privacy,6.5,Design;Operate
-S28,Khelaifa2019DistDB,CAND-3057,A comparative analysis of adaptive consistency approaches in cl…,2019,J. Parallel Distrib. Comput.,journal,Distributed DBs,7.5,Operate;Optimize
-S29,Lu2019MultiModel,,Multi-Model Databases: A New Journey,2019,ACM Comp. Surv.,journal,Multi-Model DBs,8,Design;Deploy
-S30,Luo2019NoSQL,CAND-3251,LSM-based storage techniques: a survey,2019,VLDB J.,journal,NoSQL/NewSQL,7.5,Design;Optimize
-S31,Mami2019MultiModel,CAND-3392,The Query Translation Landscape: a Survey,2019,arXiv,arxiv,Multi-Model DBs,6.5,Optimize
-S32,Ruan2019DistDB,CAND-3134,Blockchains vs. Distributed Databases: Dichotomy and Fusion,2019,arXiv,arxiv,Distributed DBs,6,Design;Operate;Optimize
-S33,Asaad2020NoSQL,CAND-3740,NoSQL Databases: Yearning for Disambiguation,2020,arXiv,arxiv,NoSQL/NewSQL,6,Design;Operate
-S34,Dayarathna2020Bench,CAND-3536,Benchmarking Graph Data Management and Processing Systems: A Su…,2020,arXiv,arxiv,Benchmarking,6.5,Optimize
-S35,Khasawneh2020SQLNewSQL,,"SQL, NewSQL, and NoSQL Databases: A Comparative Survey",2020,IEEE ICICS,conference,NoSQL/NewSQL,6,Design;Deploy
-S36,Kuznetsov2020HTAP,CAND-3778,"Real-time analytics, hybrid transactional/analytical processing…",2020,Proc. ISP RAS,journal,HTAP Systems,6.5,Design;Optimize
-S37,Marcus2020AI4DB,CAND-3537,Benchmarking learned indexes,2020,PVLDB,journal,AI4DB/Learned Opt.,7.5,Optimize
-S38,Arenas2021GraphDB,CAND-4226,Querying in the Age of Graph Databases and Knowledge Graphs,2021,ACM SIGMOD Record,journal,Graph Databases,6.5,Design;Optimize
-S39,Faridoon2021NoSQL,CAND-4002,Big Data Storage Tools Using NoSQL Databases and Their Applicat…,2021,Computing and Informatics,journal,NoSQL/NewSQL,8,Design;Operate;Optimize;Evolve
-S40,Mansouri2021EdgeFog,CAND-4092,Evaluation of Distributed Databases in Hybrid Clouds and Edge C…,2021,arXiv (Cornell University),arxiv,Edge/Fog DBs,6.5,Design;Deploy;Optimize
-S41,Mao2021NoSQL,CAND-4029,Comparison and evaluation of state-of-the-art LSM merge policies,2021,VLDB J.,journal,NoSQL/NewSQL,7.5,Optimize
-S42,Sanka2022CloudSecSurvey,,Cloud Computing Security: Threats & Mitigation--An SLR,2021,IEEE Access,journal,Security/Privacy,7,Operate
-S43,Sarkar2021NoSQL,CAND-4031,Constructing and analyzing the LSM compaction design space,2021,PVLDB,conference,NoSQL/NewSQL,7.5,Design;Optimize
-S44,Truica2021NoSQL,CAND-4309,The Forgotten Document-Oriented Database Management Systems: An…,2021,Big Data Research,journal,NoSQL/NewSQL,7.5,Design;Optimize
-S45,Zhang2021Sec,CAND-3233,Integrity Authentication for SQL Query Evaluation on Outsourced…,2021,IEEE TKDE,journal,Security/Privacy,7.5,Operate
-S46,Glake2022MultiModel,CAND-4791,Towards Polyglot Data Stores -- Overview and Open Research Ques…,2022,arXiv,arxiv,Multi-Model DBs,6.5,Design;Optimize
-S47,Harby2022Lakehouse,,From Data Warehouse to Lakehouse: A Comparative Review,2022,IEEE BigData,conference,Data Lakehouse,6.5,Design;Deploy
-S48,Shareef2022NoSQL,CAND-M-004,A Survey of Comparison Different Cloud Database Performance: SQ…,2022,Passer J.,journal,NoSQL/NewSQL,7,Design;Deploy;Operate;Optimize
-S49,Zhou2022AI4DB,,Database Meets AI: A Survey,2022,IEEE TKDE,journal,AI4DB/Learned Opt.,8,Optimize;Evolve
-S50,Ahmed2023DistDB,CAND-4927,Consistency issue and related trade-offs in distributed replica…,2023,Radioelectron. Comput. Syst.,journal,Distributed DBs,7,Design;Operate;Optimize
-S51,Besta2023GraphDB,CAND-4953,Demystifying Graph Databases: Analysis and Taxonomy of Data Org…,2023,ACM Comput. Surv.,journal,Graph Databases,8,Design;Operate;Optimize
-S52,Ferreira2023NoSQLMD,CAND-5089,Multidimensional Modelling in NoSQL Database : A Systematic Rev…,2023,CISTI,conference,NoSQL/NewSQL,7.5,Design
-S53,Guo2023MultiModel,CAND-5090,Multi-model query languages: taming the variety of big data,2023,Distrib. Parallel Databases,journal,Multi-Model DBs,7.5,Design;Optimize
-S54,Khan2023NoSQL,CAND-5175,SQL and NoSQL Database Software Architecture Performance Analys…,2023,Big Data Cogn. Comput.,journal,NoSQL/NewSQL,8,Design;Deploy;Optimize
-S55,Koppenwallner2023Sec,CAND-4873,A Survey on Property-Preserving Database Encryption Techniques …,2023,arXiv,arxiv,Security/Privacy,6.5,Design;Operate;Optimize
-S56,Ma2023VectorDB,CAND-4818,A Comprehensive Survey on Vector Database: Storage and Retrieva…,2023,arXiv,arxiv,Vector Databases,7.0,Design;Optimize;Operate
-S57,Tian2023GraphDB,CAND-5206,The World of Graph Databases from An Industry Perspective,2023,ACM SIGMOD Rec.,journal,Graph Databases,7.5,Design;Operate;Optimize
-S58,Vikiru2023DBaaS,CAND-M-001,An Overview on Cloud Distributed Databases for Business Environ…,2023,arXiv,arxiv,DBaaS,6,Design;Deploy;Operate;Optimize
-S59,Woltmann2023DNNIndex,,Learned Index: A Comprehensive Experimental Evaluation,2023,PVLDB,journal,AI4DB/Learned Opt.,7,Optimize
-S60,Anuyah2024GraphDB,CAND-5735,Understanding Graph Databases: A Comprehensive Tutorial and Sur…,2024,arXiv,arxiv,Graph Databases,6,Design;Optimize
-S61,Falcao2024Bench,CAND-5445,Energy Consumption and Performance Evaluation of Multi-Model No…,2024,R. Inform. Teor. Apl.,journal,Benchmarking,7,Design;Optimize
-S62,Gao2024RAGSurvey,,Retrieval-Augmented Generation for LLMs: A Survey,2024,arXiv,arxiv,NL/LLM-Database,7,Deploy;Operate
-S63,Gomes2024EdgeFog,,Databases in Edge and Fog Environments: A Survey,2024,ACM Comp. Surv.,journal,Edge/Fog DBs,7.5,Design;Deploy;Operate
-S64,Haas2024HTAPSurvey,,HTAP Databases: A Survey,2024,arXiv,arxiv,HTAP Systems,6.5,Design;Operate;Optimize
-S65,Janssen2024Lakehouse,CAND-5706,The evolution of data storage architectures: examining the secu…,2024,J. Data Inf. Manag.,journal,Data Lakehouse,7.5,Design;Operate;Evolve
-S66,Li2024CloudNativeSurvey,,Cloud-Native Databases: A Survey,2024,IEEE TKDE,journal,Cloud-Native Arch.,8,Design;Deploy;Operate;Optimize
-S67,Mishra2024NoSQL,CAND-5309,"A survey of LSM-Tree based Indexes, Data Systems and KV-stores",2024,IEEE SCEECS,conference,NoSQL/NewSQL,7.5,Design;Optimize
-S68,Nurhadi2024AI4DB,CAND-5323,A Systematic Review of Automated Classification for Simple and …,2024,Comput. Syst. Sci. Eng.,journal,AI4DB/Learned Opt.,7.5,Optimize;Operate
-S69,Pan2024VectorDB,,Survey of Vector Database Management Systems,2024,VLDB Journal,journal,Vector Databases,7.5,Design;Deploy;Optimize
-S70,Pohl2024LakehouseTS,,Data Lakehouse for Time Series Data: An SLR,2024,IEEE BigData,conference,Data Lakehouse,6.5,Design;Operate
-S71,Santos2024GraphDB,CAND-5413,Data Modeling for Connected Data -- A systematic literature rev…,2024,arXiv,arxiv,Graph Databases,7,Design;Evolve
-S72,Satish2024Sec,CAND-5401,Database Security Issues and Challenges in Cloud Computing,2024,IJRITCC,journal,Security/Privacy,6.5,Design;Operate
-S73,Solat2024DistDB,CAND-5677,Sharding Distributed Databases: A Critical Review,2024,arXiv,arxiv,Distributed DBs,6,Design;Operate;Optimize
-S74,Song2024HTAP,CAND-5317,A survey on hybrid transactional and analytical processing,2024,VLDB J.,journal,HTAP Systems,7.5,Design;Optimize
-S75,Taipalus2024DBMSPerf,,DBMS Performance Comparisons: An SLR,2024,J. Syst. Softw.,journal,Benchmarking,7.5,Optimize
-S76,Taipalus2024VectorDB,CAND-5743,"Vector database management systems: Fundamental concepts, use-c…",2024,Cogn. Syst. Res.,journal,Vector Databases,7.5,Design;Operate;Optimize
-S77,Tu2024CassandraMongo,,Cassandra vs. MongoDB: A Systematic Review,2024,IEEE BDAI,conference,NoSQL/NewSQL,6,Design;Optimize
-S78,Zhang2024AI4DB,CAND-5330,Automatic Configuration Tuning on Cloud Database: A Survey,2024,arXiv,arxiv,AI4DB/Learned Opt.,6.5,Optimize;Operate
-S79,AbdullahAlMamun2025AI4DB,CAND-5834,A Survey of Learned Indexes for the Multi-dimensional Space,2025,ACM Comput. Surv.,journal,AI4DB/Learned Opt.,7.5,Design;Optimize
-S80,Ali2025AI4DB,CAND-5790,AI-Powered Database Management: Predictive Analytics for Perfor…,2025,Eng. Technol. J.,journal,AI4DB/Learned Opt.,7,Optimize;Operate
-S81,Coimbra2025GraphDB2,CAND-6263,Survey: On the Landscape of Graph Databases,2025,arXiv,arxiv,Graph Databases,7,Design;Deploy;Operate;Optimize
-S82,Daundasekara2025MultiCloud,CAND-6006,Evaluating Performance and User Perceptions of Multi-Cloud Data…,2025,IEEE ICAC,conference,DBaaS,6.5,Deploy;Operate;Optimize
-S83,Hasan2025DistDB,CAND-5841,A Survey on Distributed Database Systems in the Era of Big Data,2025,Eng. Technol. J.,journal,Distributed DBs,6,Design;Operate;Optimize
-S84,Jing2025NLIDB,CAND-6334,When Large Language Models Meet Vector Databases: A Survey,2025,arXiv,arxiv,NL/LLM-Database,7,Design;Optimize
-S85,Kaur2021NoSQLReview,,NoSQL Databases: A Survey,2025,ARIMA,journal,NoSQL/NewSQL,7.5,Design;Deploy
-S86,Li2025AI4DB,CAND-6058,Graph Neural Networks for Databases: A Survey,2025,arXiv,arxiv,AI4DB/Learned Opt.,6.5,Optimize
-S87,Liu2025AI4DB,CAND-6005,"Evaluating Learned Indexes in LSM-tree Systems: Benchmarks,Insi…",2025,arXiv,arxiv,AI4DB/Learned Opt.,6.5,Optimize
-S88,Liu2025Bench,CAND-6075,How good are multi-dimensional learned indexes? An experimental…,2025,VLDB J.,journal,Benchmarking,7.5,Optimize
-S89,Mahmoud2025DistDB,CAND-5940,Data Integrity and Consistency Challenges in Distributed Databa…,2025,Eng. Technol. J.,journal,Distributed DBs,6.5,Design;Operate;Optimize
-S90,Mahule2025Sec,CAND-6261,"Survey on Cloud Database Security: Cryptographic Techniques, In…",2025,EPJ Web Conf.,conference,Security/Privacy,7.5,Operate;Optimize
-S91,Mouhibha2025NoSQLDW,,NoSQL Data Warehouse Optimizing Models,2025,Big Data Research,journal,NoSQL/NewSQL,6,Design;Optimize
-S92,Qiao2025AI4DB,CAND-6119,Learning database optimization techniques: the state-of-the-art…,2025,Front. Comput. Sci.,journal,AI4DB/Learned Opt.,7.5,Optimize
-S93,Topcu2025NoSQL,CAND-6008,Evaluating the Performance of NoSQL Databases for Big Data in C…,2025,HighTech Innov. J.,journal,NoSQL/NewSQL,7.5,Deploy;Optimize
-S94,Xie2025VectorDB,CAND-6312,Toward Understanding Bugs in Vector Database Management Systems,2025,arXiv,arxiv,Vector Databases,7,Deploy;Operate;Optimize
-S95,Ying2025NoSQL,CAND-5906,"Comparative Analysis of SQL and NoSQL Databases: Data Models, U…",2025,Info. Res. Commun.,journal,NoSQL/NewSQL,7,Design;Operate;Optimize
-S96,Allam2026CloudNative,CAND-6377,A Survey of Emerging Trends and Algorithmic Solutions inCloud-N…,2026,JSAA,journal,Cloud-Native Arch.,7.5,Design;Deploy;Operate;Optimize;Evolve
+S7,Abourezq2016DBaaS,CAND-2136,Database-as-a-Service for Big Data: An Overview,2016,IJACSA,journal,DBaaS,7,Design;Deploy;Operate;Optimize
+S8,Guralnik2016GraphDB,CAND-2272,Some problems on graph databases,2016,Proc. ISP RAS,journal,Graph Databases,7,Optimize
+S9,Mathew2021CloudMigration,,Cloud Migration Process: A Survey,2016,J. Syst. Softw.,journal,Cloud DB Migration,7.5,Deploy;Evolve
+S10,Angles2020GraphDB,,Foundations of Query Languages for Graph DBs,2017,ACM Comp. Surv.,journal,Graph Databases,8,Design;Optimize
+S11,Bader2017TSDB,,Open Source Time Series Databases: A Survey,2017,BTW,conference,Time-Series DBs,6,Design;Operate
+S12,Moghadam2017Sec,CAND-2492,Enforcing Privacy in Cloud Databases,2017,arXiv,arxiv,Security/Privacy,6.5,Operate;Optimize
+S13,Siddiqa2017NoSQL,CAND-2427,Big data storage technologies: a survey,2017,Front. Inf. Technol. Electron. Eng.,journal,NoSQL/NewSQL,7.5,Design;Operate
+S14,Ali2018AI4DB,CAND-2844,Evolutionary Algorithms for Query Op-timization in Distributed …,2018,ADCAIJ,journal,AI4DB/Learned Opt.,6,Optimize
+S15,Davoudian2018NoSQL,,A Survey on NoSQL Stores,2018,ACM Comp. Surv.,journal,NoSQL/NewSQL,8,Design;Deploy
+S16,Iancu2018DBaaS,CAND-2970,Saving Large Semantic Data in Cloud: A Survey of the Main DBaaS…,2018,Informatica Economica,journal,DBaaS,6,Design;Deploy
+S17,Patil2018GraphDB,CAND-2774,A Survey on Graph Database Management Techniques for Huge Unstr…,2018,IJECE,journal,Graph Databases,7,Design;Optimize
+S18,Segalin2018DBaaS,CAND-2816,"DBaaS Multitenancy, Auto-tuning and SLA Maintenance in Cloud En…",2018,iSys,journal,DBaaS,7,Deploy;Operate;Optimize
+S19,Affolter2019NLIDB,,Recent NL Interfaces for Databases: A Comparative Survey,2019,VLDB Journal,journal,NL/LLM-Database,7.5,Optimize
+S20,Aldin2019DistDB,CAND-3154,Consistency models in distributed systems: A survey on definiti…,2019,arXiv,arxiv,Distributed DBs,6,Operate;Optimize
+S21,Dar2019NLIDB,CAND-3204,Frameworks for Querying Databases Using Natural Language: A Lit…,2019,arXiv,arxiv,NL/LLM-Database,6.5,Optimize
+S22,Khan2019DaaSAnalytic,,"Architecture, Security & Performance of DBaaS",2019,Trans. Emerg. Telecom. Tech.,journal,Security/Privacy,6.5,Design;Operate
+S23,Khelaifa2019DistDB,CAND-3057,A comparative analysis of adaptive consistency approaches in cl…,2019,J. Parallel Distrib. Comput.,journal,Distributed DBs,7.5,Operate;Optimize
+S24,Lu2019MultiModel,,Multi-Model Databases: A New Journey,2019,ACM Comp. Surv.,journal,Multi-Model DBs,8,Design;Deploy
+S25,Luo2019NoSQL,CAND-3251,LSM-based storage techniques: a survey,2019,VLDB J.,journal,NoSQL/NewSQL,7.5,Design;Optimize
+S26,Mami2019MultiModel,CAND-3392,The Query Translation Landscape: a Survey,2019,arXiv,arxiv,Multi-Model DBs,6.5,Optimize
+S27,Ruan2019DistDB,CAND-3134,Blockchains vs. Distributed Databases: Dichotomy and Fusion,2019,arXiv,arxiv,Distributed DBs,6,Design;Operate;Optimize
+S28,Asaad2020NoSQL,CAND-3740,NoSQL Databases: Yearning for Disambiguation,2020,arXiv,arxiv,NoSQL/NewSQL,6,Design;Operate
+S29,Dayarathna2020Bench,CAND-3536,Benchmarking Graph Data Management and Processing Systems: A Su…,2020,arXiv,arxiv,Benchmarking,6.5,Optimize
+S30,Khasawneh2020SQLNewSQL,,"SQL, NewSQL, and NoSQL Databases: A Comparative Survey",2020,IEEE ICICS,conference,NoSQL/NewSQL,6,Design;Deploy
+S31,Kuznetsov2020HTAP,CAND-3778,"Real-time analytics, hybrid transactional/analytical processing…",2020,Proc. ISP RAS,journal,HTAP Systems,6.5,Design;Optimize
+S32,Marcus2020AI4DB,CAND-3537,Benchmarking learned indexes,2020,PVLDB,journal,AI4DB/Learned Opt.,7.5,Optimize
+S33,Arenas2021GraphDB,CAND-4226,Querying in the Age of Graph Databases and Knowledge Graphs,2021,ACM SIGMOD Record,journal,Graph Databases,6.5,Design;Optimize
+S34,Faridoon2021NoSQL,CAND-4002,Big Data Storage Tools Using NoSQL Databases and Their Applicat…,2021,Computing and Informatics,journal,NoSQL/NewSQL,8,Design;Operate;Optimize;Evolve
+S35,Mansouri2021EdgeFog,CAND-4092,Evaluation of Distributed Databases in Hybrid Clouds and Edge C…,2021,arXiv (Cornell University),arxiv,Edge/Fog DBs,6.5,Design;Deploy;Optimize
+S36,Mao2021NoSQL,CAND-4029,Comparison and evaluation of state-of-the-art LSM merge policies,2021,VLDB J.,journal,NoSQL/NewSQL,7.5,Optimize
+S37,Sanka2022CloudSecSurvey,,Cloud Computing Security: Threats & Mitigation--An SLR,2021,IEEE Access,journal,Security/Privacy,7,Operate
+S38,Sarkar2021NoSQL,CAND-4031,Constructing and analyzing the LSM compaction design space,2021,PVLDB,conference,NoSQL/NewSQL,7.5,Design;Optimize
+S39,Truica2021NoSQL,CAND-4309,The Forgotten Document-Oriented Database Management Systems: An…,2021,Big Data Research,journal,NoSQL/NewSQL,7.5,Design;Optimize
+S40,Zhang2021Sec,CAND-3233,Integrity Authentication for SQL Query Evaluation on Outsourced…,2021,IEEE TKDE,journal,Security/Privacy,7.5,Operate
+S41,Glake2022MultiModel,CAND-4791,Towards Polyglot Data Stores -- Overview and Open Research Ques…,2022,arXiv,arxiv,Multi-Model DBs,6.5,Design;Optimize
+S42,Harby2022Lakehouse,,From Data Warehouse to Lakehouse: A Comparative Review,2022,IEEE BigData,conference,Data Lakehouse,6.5,Design;Deploy
+S43,Shareef2022NoSQL,CAND-M-004,A Survey of Comparison Different Cloud Database Performance: SQ…,2022,Passer J.,journal,NoSQL/NewSQL,7,Design;Deploy;Operate;Optimize
+S44,Zhou2022AI4DB,,Database Meets AI: A Survey,2022,IEEE TKDE,journal,AI4DB/Learned Opt.,8,Optimize;Evolve
+S45,Ahmed2023DistDB,CAND-4927,Consistency issue and related trade-offs in distributed replica…,2023,Radioelectron. Comput. Syst.,journal,Distributed DBs,7,Design;Operate;Optimize
+S46,Besta2023GraphDB,CAND-4953,Demystifying Graph Databases: Analysis and Taxonomy of Data Org…,2023,ACM Comput. Surv.,journal,Graph Databases,8,Design;Operate;Optimize
+S47,Ferreira2023NoSQLMD,CAND-5089,Multidimensional Modelling in NoSQL Database : A Systematic Rev…,2023,CISTI,conference,NoSQL/NewSQL,7.5,Design
+S48,Guo2023MultiModel,CAND-5090,Multi-model query languages: taming the variety of big data,2023,Distrib. Parallel Databases,journal,Multi-Model DBs,7.5,Design;Optimize
+S49,Khan2023NoSQL,CAND-5175,SQL and NoSQL Database Software Architecture Performance Analys…,2023,Big Data Cogn. Comput.,journal,NoSQL/NewSQL,8,Design;Deploy;Optimize
+S50,Koppenwallner2023Sec,CAND-4873,A Survey on Property-Preserving Database Encryption Techniques …,2023,arXiv,arxiv,Security/Privacy,6.5,Design;Operate;Optimize
+S51,Ma2023VectorDB,CAND-4818,A Comprehensive Survey on Vector Database: Storage and Retrieva…,2023,arXiv,arxiv,Vector Databases,7.0,Design;Optimize;Operate
+S52,Tian2023GraphDB,CAND-5206,The World of Graph Databases from An Industry Perspective,2023,ACM SIGMOD Rec.,journal,Graph Databases,7.5,Design;Operate;Optimize
+S53,Vikiru2023DBaaS,CAND-M-001,An Overview on Cloud Distributed Databases for Business Environ…,2023,arXiv,arxiv,DBaaS,6,Design;Deploy;Operate;Optimize
+S54,Woltmann2023DNNIndex,,Learned Index: A Comprehensive Experimental Evaluation,2023,PVLDB,journal,AI4DB/Learned Opt.,7,Optimize
+S55,Anuyah2024GraphDB,CAND-5735,Understanding Graph Databases: A Comprehensive Tutorial and Sur…,2024,arXiv,arxiv,Graph Databases,6,Design;Optimize
+S56,Falcao2024Bench,CAND-5445,Energy Consumption and Performance Evaluation of Multi-Model No…,2024,R. Inform. Teor. Apl.,journal,Benchmarking,7,Design;Optimize
+S57,Gao2024RAGSurvey,,Retrieval-Augmented Generation for LLMs: A Survey,2024,arXiv,arxiv,NL/LLM-Database,7,Deploy;Operate
+S58,Gomes2024EdgeFog,,Databases in Edge and Fog Environments: A Survey,2024,ACM Comp. Surv.,journal,Edge/Fog DBs,7.5,Design;Deploy;Operate
+S59,Haas2024HTAPSurvey,,HTAP Databases: A Survey,2024,arXiv,arxiv,HTAP Systems,6.5,Design;Operate;Optimize
+S60,Janssen2024Lakehouse,CAND-5706,The evolution of data storage architectures: examining the secu…,2024,J. Data Inf. Manag.,journal,Data Lakehouse,7.5,Design;Operate;Evolve
+S61,Li2024CloudNativeSurvey,,Cloud-Native Databases: A Survey,2024,IEEE TKDE,journal,Cloud-Native Arch.,8,Design;Deploy;Operate;Optimize
+S62,Mishra2024NoSQL,CAND-5309,"A survey of LSM-Tree based Indexes, Data Systems and KV-stores",2024,IEEE SCEECS,conference,NoSQL/NewSQL,7.5,Design;Optimize
+S63,Nurhadi2024AI4DB,CAND-5323,A Systematic Review of Automated Classification for Simple and …,2024,Comput. Syst. Sci. Eng.,journal,AI4DB/Learned Opt.,7.5,Optimize;Operate
+S64,Pan2024VectorDB,,Survey of Vector Database Management Systems,2024,VLDB Journal,journal,Vector Databases,7.5,Design;Deploy;Optimize
+S65,Pohl2024LakehouseTS,,Data Lakehouse for Time Series Data: An SLR,2024,IEEE BigData,conference,Data Lakehouse,6.5,Design;Operate
+S66,Santos2024GraphDB,CAND-5413,Data Modeling for Connected Data -- A systematic literature rev…,2024,arXiv,arxiv,Graph Databases,7,Design;Evolve
+S67,Solat2024DistDB,CAND-5677,Sharding Distributed Databases: A Critical Review,2024,arXiv,arxiv,Distributed DBs,6,Design;Operate;Optimize
+S68,Song2024HTAP,CAND-5317,A survey on hybrid transactional and analytical processing,2024,VLDB J.,journal,HTAP Systems,7.5,Design;Optimize
+S69,Taipalus2024DBMSPerf,,DBMS Performance Comparisons: An SLR,2024,J. Syst. Softw.,journal,Benchmarking,7.5,Optimize
+S70,Taipalus2024VectorDB,CAND-5743,"Vector database management systems: Fundamental concepts, use-c…",2024,Cogn. Syst. Res.,journal,Vector Databases,7.5,Design;Operate;Optimize
+S71,Tu2024CassandraMongo,,Cassandra vs. MongoDB: A Systematic Review,2024,IEEE BDAI,conference,NoSQL/NewSQL,6,Design;Optimize
+S72,Zhang2024AI4DB,CAND-5330,Automatic Configuration Tuning on Cloud Database: A Survey,2024,arXiv,arxiv,AI4DB/Learned Opt.,6.5,Optimize;Operate
+S73,AbdullahAlMamun2025AI4DB,CAND-5834,A Survey of Learned Indexes for the Multi-dimensional Space,2025,ACM Comput. Surv.,journal,AI4DB/Learned Opt.,7.5,Design;Optimize
+S74,Coimbra2025GraphDB2,CAND-6263,Survey: On the Landscape of Graph Databases,2025,arXiv,arxiv,Graph Databases,7,Design;Deploy;Operate;Optimize
+S75,Daundasekara2025MultiCloud,CAND-6006,Evaluating Performance and User Perceptions of Multi-Cloud Data…,2025,IEEE ICAC,conference,DBaaS,6.5,Deploy;Operate;Optimize
+S76,Jing2025NLIDB,CAND-6334,When Large Language Models Meet Vector Databases: A Survey,2025,IEEE AIxMM,conference,NL/LLM-Database,7,Design;Optimize
+S77,Kaur2021NoSQLReview,,NoSQL Databases: A Survey,2025,ARIMA,journal,NoSQL/NewSQL,7.5,Design;Deploy
+S78,Li2025AI4DB,CAND-6058,Graph Neural Networks for Databases: A Survey,2025,arXiv,arxiv,AI4DB/Learned Opt.,6.5,Optimize
+S79,Liu2025AI4DB,CAND-6005,"Evaluating Learned Indexes in LSM-tree Systems: Benchmarks,Insi…",2025,arXiv,arxiv,AI4DB/Learned Opt.,6.5,Optimize
+S80,Liu2025Bench,CAND-6075,How good are multi-dimensional learned indexes? An experimental…,2025,VLDB J.,journal,Benchmarking,7.5,Optimize
+S81,Mahule2025Sec,CAND-6261,"Survey on Cloud Database Security: Cryptographic Techniques, In…",2025,EPJ Web Conf.,conference,Security/Privacy,7.5,Operate;Optimize
+S82,Mouhibha2025NoSQLDW,,NoSQL Data Warehouse Optimizing Models,2025,Big Data Research,journal,NoSQL/NewSQL,6,Design;Optimize
+S83,Qiao2025AI4DB,CAND-6119,Learning database optimization techniques: the state-of-the-art…,2025,Front. Comput. Sci.,journal,AI4DB/Learned Opt.,7.5,Optimize
+S84,Topcu2025NoSQL,CAND-6008,Evaluating the Performance of NoSQL Databases for Big Data in C…,2025,HighTech Innov. J.,journal,NoSQL/NewSQL,7.5,Deploy;Optimize
+S85,Xie2025VectorDB,CAND-6312,Toward Understanding Bugs in Vector Database Management Systems,2025,arXiv,arxiv,Vector Databases,7,Deploy;Operate;Optimize
